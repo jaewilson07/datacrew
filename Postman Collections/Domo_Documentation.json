@@ -1462,14 +1462,21 @@
           "response": []
         },
         {
-          "name": "Search a Publish Job",
+          "name": "Search a Publish Job by ID",
           "id": "3e6094c0-9bc2-44e6-a81f-5af30c8f623f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
           "request": {
             "method": "GET",
-            "header": []
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{domo_instance}}.domo.com/api/publish/v2/publication/{{publish_id}}"
           },
           "response": [
             {
