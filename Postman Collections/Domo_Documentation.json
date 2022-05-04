@@ -1025,7 +1025,7 @@
             },
             {
               "id": "647ae937-222f-4a56-b196-847989f65d67",
-              "name": "Alter PDP Group",
+              "name": "Alter Policy Begins With",
               "originalRequest": {
                 "method": "PUT",
                 "header": [
