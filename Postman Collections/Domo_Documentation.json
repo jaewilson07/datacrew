@@ -708,8 +708,7 @@
                 }
               }
             },
-            "url": "https://{{domo_instance}}.domo.com/api/query/v1/data-control/{{dataset_id}}/filter-groups",
-            "description": "Body > Parameters > Type\n\n*   use \"dynamic\" for trusted attributes\n*   use \"column\" for a 'simple filter'"
+            "url": "https://{{domo_instance}}.domo.com/api/query/v1/data-control/{{dataset_id}}/filter-groups"
           },
           "response": [
             {
