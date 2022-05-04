@@ -579,139 +579,6 @@
       "name": "PDP",
       "item": [
         {
-          "name": "Alter PDP Group",
-          "id": "3e874ece-736e-402d-aa0b-8815166481b1",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "PUT",
-            "header": [
-              {
-                "key": "x-domo-authentication",
-                "value": "{{session_token}}",
-                "type": "text"
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json;charset=utf-8",
-                "type": "text"
-              },
-              {
-                "key": "Accept",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n    \"name\": \"Test_DO NOT DELETE\",\r\n    \"filterGroupId\": 593,\r\n    \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\r\n    \"userIds\": [],\r\n    \"virtualUserIds\": [],\r\n    \"groupIds\": [\r\n        1324037627\r\n    ],\r\n    \"dataSourcePermissions\": false,\r\n    \"parameters\": [\r\n        {\r\n            \"type\": \"COLUMN\",\r\n            \"name\": \"Action\",\r\n            \"values\": [\r\n                \"ACCOUNT_LOCKED\"\r\n            ],\r\n            \"operator\": \"EQUALS\",\r\n            \"ignoreCase\": false\r\n        },\r\n        {\r\n            \"type\": \"COLUMN\",\r\n            \"name\": \"Department\",\r\n            \"values\": [\r\n                \"Crystal Ballers\"\r\n            ],\r\n            \"operator\": \"EQUALS\",\r\n            \"ignoreCase\": false\r\n        }\r\n    ]\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": "https://{{domo_instance}}.domo.com/api/query/v1/data-control/{{dataset_id}}/filter-groups/{{filter_group_id}}"
-          },
-          "response": [
-            {
-              "id": "feead598-82ad-481d-afc6-c774ccaaca6e",
-              "name": "Alter PDP Group",
-              "originalRequest": {
-                "method": "PUT",
-                "header": [
-                  {
-                    "key": "x-domo-authentication",
-                    "value": "{{session_token}}",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json;charset=utf-8",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Accept",
-                    "value": "application/json",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n    \"name\": \"Test_DO NOT DELETE\",\r\n    \"filterGroupId\": 593,\r\n    \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\r\n    \"userIds\": [],\r\n    \"virtualUserIds\": [],\r\n    \"groupIds\": [\r\n        1324037627\r\n    ],\r\n    \"dataSourcePermissions\": false,\r\n    \"parameters\": [\r\n        {\r\n            \"type\": \"COLUMN\",\r\n            \"name\": \"Action\",\r\n            \"values\": [\r\n                \"ACCOUNT_LOCKED\"\r\n            ],\r\n            \"operator\": \"EQUALS\",\r\n            \"ignoreCase\": false\r\n        },\r\n        {\r\n            \"type\": \"COLUMN\",\r\n            \"name\": \"Department\",\r\n            \"values\": [\r\n                \"Crystal Ballers\"\r\n            ],\r\n            \"operator\": \"EQUALS\",\r\n            \"ignoreCase\": false\r\n        }\r\n    ]\r\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": "https://{{domo_instance}}.domo.com/api/query/v1/data-control/{{dataset_id}}/filter-groups/{{filter_group_id}}"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Server",
-                  "value": "nginx"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 04 May 2022 20:14:10 GMT"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json;charset=utf-8"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                },
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache, no-store, max-age=0, must-revalidate"
-                },
-                {
-                  "key": "Content-Security-Policy",
-                  "value": "frame-ancestors 'self';"
-                },
-                {
-                  "key": "Expires",
-                  "value": "0"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Frame-Options",
-                  "value": "DENY"
-                },
-                {
-                  "key": "X-Xss-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "Strict-Transport-Security",
-                  "value": "max-age=31536000; includeSubDomains"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"name\": \"Test_DO NOT DELETE\",\n    \"filterGroupId\": 593,\n    \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n    \"groupIds\": [\n        1324037627\n    ],\n    \"dataSourcePermissions\": false,\n    \"parameters\": [\n        {\n            \"name\": \"Action\",\n            \"value\": \"ACCOUNT_LOCKED\",\n            \"values\": [\n                \"ACCOUNT_LOCKED\"\n            ],\n            \"type\": \"COLUMN\",\n            \"operator\": \"EQUALS\",\n            \"not\": false,\n            \"ignoreCase\": false\n        },\n        {\n            \"name\": \"Department\",\n            \"value\": \"Crystal Ballers\",\n            \"values\": [\n                \"Crystal Ballers\"\n            ],\n            \"type\": \"COLUMN\",\n            \"operator\": \"EQUALS\",\n            \"not\": false,\n            \"ignoreCase\": false\n        }\n    ]\n}"
-            }
-          ]
-        },
-        {
           "name": "Get PDP Groups",
           "id": "775ba65a-c3b3-42e8-a2c7-a55090f6451e",
           "protocolProfileBehavior": {
@@ -841,7 +708,8 @@
                 }
               }
             },
-            "url": "https://{{domo_instance}}.domo.com/api/query/v1/data-control/{{dataset_id}}/filter-groups"
+            "url": "https://{{domo_instance}}.domo.com/api/query/v1/data-control/{{dataset_id}}/filter-groups",
+            "description": "Body > Parameters > Type\n\n*   use \"dynamic\" for trusted attributes\n*   use \"column\" for a 'simple filter'"
           },
           "response": [
             {
@@ -927,6 +795,139 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"name\": \"Policy_trusted_attribute\",\n    \"filterGroupId\": 595,\n    \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n    \"policySetId\": 474,\n    \"groupIds\": [\n        1324037627\n    ],\n    \"dataSourcePermissions\": false,\n    \"parameters\": [\n        {\n            \"name\": \"Email\",\n            \"value\": \"domo.policy.managed_user_department\",\n            \"values\": [\n                \"domo.policy.managed_user_department\"\n            ],\n            \"type\": \"DYNAMIC\",\n            \"operator\": \"EQUALS\",\n            \"not\": false,\n            \"ignoreCase\": false\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Alter PDP Group",
+          "id": "3e874ece-736e-402d-aa0b-8815166481b1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json;charset=utf-8",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Test_DO NOT DELETE\",\r\n    \"filterGroupId\": 593,\r\n    \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\r\n    \"userIds\": [],\r\n    \"virtualUserIds\": [],\r\n    \"groupIds\": [\r\n        1324037627\r\n    ],\r\n    \"dataSourcePermissions\": false,\r\n    \"parameters\": [\r\n        {\r\n            \"type\": \"COLUMN\",\r\n            \"name\": \"Action\",\r\n            \"values\": [\r\n                \"ACCOUNT_LOCKED\"\r\n            ],\r\n            \"operator\": \"EQUALS\",\r\n            \"ignoreCase\": false\r\n        },\r\n        {\r\n            \"type\": \"COLUMN\",\r\n            \"name\": \"Department\",\r\n            \"values\": [\r\n                \"Crystal Ballers\"\r\n            ],\r\n            \"operator\": \"EQUALS\",\r\n            \"ignoreCase\": false\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://{{domo_instance}}.domo.com/api/query/v1/data-control/{{dataset_id}}/filter-groups/{{filter_group_id}}"
+          },
+          "response": [
+            {
+              "id": "feead598-82ad-481d-afc6-c774ccaaca6e",
+              "name": "Alter PDP Group",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "x-domo-authentication",
+                    "value": "{{session_token}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json;charset=utf-8",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"Test_DO NOT DELETE\",\r\n    \"filterGroupId\": 593,\r\n    \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\r\n    \"userIds\": [],\r\n    \"virtualUserIds\": [],\r\n    \"groupIds\": [\r\n        1324037627\r\n    ],\r\n    \"dataSourcePermissions\": false,\r\n    \"parameters\": [\r\n        {\r\n            \"type\": \"COLUMN\",\r\n            \"name\": \"Action\",\r\n            \"values\": [\r\n                \"ACCOUNT_LOCKED\"\r\n            ],\r\n            \"operator\": \"EQUALS\",\r\n            \"ignoreCase\": false\r\n        },\r\n        {\r\n            \"type\": \"COLUMN\",\r\n            \"name\": \"Department\",\r\n            \"values\": [\r\n                \"Crystal Ballers\"\r\n            ],\r\n            \"operator\": \"EQUALS\",\r\n            \"ignoreCase\": false\r\n        }\r\n    ]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://{{domo_instance}}.domo.com/api/query/v1/data-control/{{dataset_id}}/filter-groups/{{filter_group_id}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 04 May 2022 20:14:10 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self';"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"name\": \"Test_DO NOT DELETE\",\n    \"filterGroupId\": 593,\n    \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n    \"groupIds\": [\n        1324037627\n    ],\n    \"dataSourcePermissions\": false,\n    \"parameters\": [\n        {\n            \"name\": \"Action\",\n            \"value\": \"ACCOUNT_LOCKED\",\n            \"values\": [\n                \"ACCOUNT_LOCKED\"\n            ],\n            \"type\": \"COLUMN\",\n            \"operator\": \"EQUALS\",\n            \"not\": false,\n            \"ignoreCase\": false\n        },\n        {\n            \"name\": \"Department\",\n            \"value\": \"Crystal Ballers\",\n            \"values\": [\n                \"Crystal Ballers\"\n            ],\n            \"type\": \"COLUMN\",\n            \"operator\": \"EQUALS\",\n            \"not\": false,\n            \"ignoreCase\": false\n        }\n    ]\n}"
             }
           ]
         }
