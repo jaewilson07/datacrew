@@ -429,8 +429,14 @@
                 "key": "Content-Type",
                 "value": "application/json",
                 "type": "text"
+              },
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
               }
-            ]
+            ],
+            "url": "http://{{domo_instance}}/api/query/v1/data-control/{{dataset_id}}/filter-groups/"
           },
           "response": [
             {
