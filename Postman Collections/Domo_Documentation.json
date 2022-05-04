@@ -573,14 +573,30 @@
           ]
         },
         {
-          "name": "https://{{domo_instance}}/api/data/ui/v3/datasources/search",
+          "name": "Search Data Sources",
           "id": "a530b941-65a6-4ff7-a466-5e9963912acb",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
-            "header": []
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"entities\": [\r\n        \"DATASET\"\r\n    ],\r\n    \"filters\": [],\r\n    \"combineResults\": \"true\",\r\n    \"query\": \"*\",\r\n    \"count\": 1000,\r\n    \"offset\": 0,\r\n    \"sort\": {\r\n        \"isRelevance\": \"false\",\r\n        \"fieldSorts\": [\r\n            {\r\n                \"field\": \"create_date\",\r\n                \"sortOrder\": \"DESC\"\r\n            }\r\n        ]\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://{{domo_instance}}.domo.com/api/data/ui/v3/datasources/search"
           },
           "response": []
         }
