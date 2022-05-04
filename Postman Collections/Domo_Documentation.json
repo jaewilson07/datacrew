@@ -518,7 +518,7 @@
           ]
         },
         {
-          "name": "New Request",
+          "name": "Get Dataset Schema",
           "id": "c908814f-db92-4110-bbc3-19013b6d6a9d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
