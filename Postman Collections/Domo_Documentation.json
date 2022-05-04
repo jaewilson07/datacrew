@@ -843,7 +843,92 @@
             },
             "url": "https://{{domo_instance}}.domo.com/api/query/v1/data-control/{{dataset_id}}/filter-groups"
           },
-          "response": []
+          "response": [
+            {
+              "id": "6947b5b7-08e2-4815-ba8a-6e26bd64973a",
+              "name": "Create PDP Group",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "x-domo-authentication",
+                    "value": "{{session_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"Policy_trusted_attribute\",\r\n    \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\r\n    \"userIds\": [],\r\n    \"virtualUserIds\": [],\r\n    \"groupIds\": [\r\n        \"1324037627\"\r\n    ],\r\n    \"dataSourcePermissions\": false,\r\n    \"parameters\": [\r\n        {\r\n            \"type\": \"DYNAMIC\",\r\n            \"name\": \"Email\",\r\n            \"values\": [\r\n                \"domo.policy.managed_user_department\"\r\n            ],\r\n            \"operator\": \"EQUALS\",\r\n            \"ignoreCase\": false\r\n        }\r\n    ]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://{{domo_instance}}.domo.com/api/query/v1/data-control/{{dataset_id}}/filter-groups"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 04 May 2022 20:17:51 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self';"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"name\": \"Policy_trusted_attribute\",\n    \"filterGroupId\": 595,\n    \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n    \"policySetId\": 474,\n    \"groupIds\": [\n        1324037627\n    ],\n    \"dataSourcePermissions\": false,\n    \"parameters\": [\n        {\n            \"name\": \"Email\",\n            \"value\": \"domo.policy.managed_user_department\",\n            \"values\": [\n                \"domo.policy.managed_user_department\"\n            ],\n            \"type\": \"DYNAMIC\",\n            \"operator\": \"EQUALS\",\n            \"not\": false,\n            \"ignoreCase\": false\n        }\n    ]\n}"
+            }
+          ]
         }
       ],
       "id": "43430adf-ea26-4091-919b-362ef72de03c"
