@@ -516,6 +516,18 @@
               "body": "[\n    {\n        \"name\": \"Test_DO NOT DELETE\",\n        \"filterGroupId\": 593,\n        \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n        \"type\": \"user\",\n        \"groupIds\": [\n            1324037627\n        ],\n        \"dataSourcePermissions\": false,\n        \"resources\": {\n            \"GROUP\": [\n                \"1324037627\"\n            ]\n        },\n        \"parameters\": [\n            {\n                \"name\": \"Action\",\n                \"value\": \"ACCOUNT_LOCKED\",\n                \"values\": [\n                    \"ACCOUNT_LOCKED\"\n                ],\n                \"type\": \"COLUMN\",\n                \"operator\": \"EQUALS\",\n                \"not\": false,\n                \"ignoreCase\": false\n            }\n        ]\n    }\n]"
             }
           ]
+        },
+        {
+          "name": "New Request",
+          "id": "c908814f-db92-4110-bbc3-19013b6d6a9d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
         }
       ],
       "id": "87e12295-1ca7-42ec-80d7-8c8943dd17e8"
