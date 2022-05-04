@@ -931,7 +931,7 @@
             },
             {
               "id": "6768e333-97a2-4d71-8f85-21f2364df2b9",
-              "name": "Alter PDP Group",
+              "name": "Alter Policy - Simple Filter",
               "originalRequest": {
                 "method": "PUT",
                 "header": [
