@@ -829,6 +829,119 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"DATAFLOW60\": {\n        \"type\": \"DATAFLOW\",\n        \"id\": \"60\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {\n            \"DATA_SOURCE\": 2\n        },\n        \"complete\": true,\n        \"children\": [\n            {\n                \"type\": \"DATA_SOURCE\",\n                \"id\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ],\n        \"parents\": [\n            {\n                \"type\": \"DATA_SOURCE\",\n                \"id\": \"61c4e63d-0627-41f7-b138-74968ebd7634\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            },\n            {\n                \"type\": \"DATA_SOURCE\",\n                \"id\": \"241025d7-3cca-4369-b7c0-b3264277c0e1\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ]\n    },\n    \"DATA_SOURCE94a4edfa-5926-4f0c-ad1e-a341f53f6113\": {\n        \"type\": \"DATA_SOURCE\",\n        \"id\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {\n            \"DATA_SOURCE\": 2,\n            \"DATAFLOW\": 1\n        },\n        \"complete\": true,\n        \"children\": [],\n        \"parents\": [\n            {\n                \"type\": \"DATAFLOW\",\n                \"id\": \"60\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ]\n    },\n    \"DATA_SOURCE241025d7-3cca-4369-b7c0-b3264277c0e1\": {\n        \"type\": \"DATA_SOURCE\",\n        \"id\": \"241025d7-3cca-4369-b7c0-b3264277c0e1\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {},\n        \"complete\": true,\n        \"children\": [\n            {\n                \"type\": \"DATAFLOW\",\n                \"id\": \"60\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ],\n        \"parents\": []\n    },\n    \"DATA_SOURCE61c4e63d-0627-41f7-b138-74968ebd7634\": {\n        \"type\": \"DATA_SOURCE\",\n        \"id\": \"61c4e63d-0627-41f7-b138-74968ebd7634\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {},\n        \"complete\": true,\n        \"children\": [\n            {\n                \"type\": \"DATAFLOW\",\n                \"id\": \"60\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ],\n        \"parents\": []\n    }\n}"
+            },
+            {
+              "id": "4e382700-3a25-4754-ae14-206c8c33711e",
+              "name": "New Request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "x-domo-authentication",
+                    "value": "{{session_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "https://{{domo_instance}}.domo.com/api/data/v1/lineage/DATA_SOURCE/{{dataset_id}}?traverseUp=false&maxDepth=3&requestEntities=DATA_SOURCE,DATAFLOW,CARD",
+                  "protocol": "https",
+                  "host": [
+                    "{{domo_instance}}",
+                    "domo",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "data",
+                    "v1",
+                    "lineage",
+                    "DATA_SOURCE",
+                    "{{dataset_id}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "traverseUp",
+                      "value": "false"
+                    },
+                    {
+                      "key": "maxDepth",
+                      "value": "3"
+                    },
+                    {
+                      "key": "requestEntities",
+                      "value": "DATA_SOURCE,DATAFLOW,CARD"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 04 May 2022 20:59:29 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self';"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"CARD1213683184\": {\n        \"type\": \"CARD\",\n        \"id\": \"1213683184\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {},\n        \"complete\": true,\n        \"children\": [],\n        \"parents\": [\n            {\n                \"type\": \"DATA_SOURCE\",\n                \"id\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ]\n    },\n    \"CARD1886527481\": {\n        \"type\": \"CARD\",\n        \"id\": \"1886527481\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {},\n        \"complete\": true,\n        \"children\": [],\n        \"parents\": [\n            {\n                \"type\": \"DATA_SOURCE\",\n                \"id\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ]\n    },\n    \"DATA_SOURCE94a4edfa-5926-4f0c-ad1e-a341f53f6113\": {\n        \"type\": \"DATA_SOURCE\",\n        \"id\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n        \"descendantCounts\": {\n            \"ALERT\": 0,\n            \"DATA_SOURCE\": 0,\n            \"DATAFLOW\": 0,\n            \"CARD\": 9\n        },\n        \"ancestorCounts\": {},\n        \"complete\": true,\n        \"children\": [\n            {\n                \"type\": \"CARD\",\n                \"id\": \"719830190\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            },\n            {\n                \"type\": \"CARD\",\n                \"id\": \"1443806171\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            },\n            {\n                \"type\": \"CARD\",\n                \"id\": \"21881038\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            },\n            {\n                \"type\": \"CARD\",\n                \"id\": \"445566049\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            },\n            {\n                \"type\": \"CARD\",\n                \"id\": \"1886527481\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            },\n            {\n                \"type\": \"CARD\",\n                \"id\": \"1213683184\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            },\n            {\n                \"type\": \"CARD\",\n                \"id\": \"1584458802\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            },\n            {\n                \"type\": \"CARD\",\n                \"id\": \"484502275\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            },\n            {\n                \"type\": \"CARD\",\n                \"id\": \"1820287493\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ],\n        \"parents\": []\n    },\n    \"CARD1584458802\": {\n        \"type\": \"CARD\",\n        \"id\": \"1584458802\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {},\n        \"complete\": true,\n        \"children\": [],\n        \"parents\": [\n            {\n                \"type\": \"DATA_SOURCE\",\n                \"id\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ]\n    },\n    \"CARD1820287493\": {\n        \"type\": \"CARD\",\n        \"id\": \"1820287493\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {},\n        \"complete\": true,\n        \"children\": [],\n        \"parents\": [\n            {\n                \"type\": \"DATA_SOURCE\",\n                \"id\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ]\n    },\n    \"CARD21881038\": {\n        \"type\": \"CARD\",\n        \"id\": \"21881038\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {},\n        \"complete\": true,\n        \"children\": [],\n        \"parents\": [\n            {\n                \"type\": \"DATA_SOURCE\",\n                \"id\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ]\n    },\n    \"CARD1443806171\": {\n        \"type\": \"CARD\",\n        \"id\": \"1443806171\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {},\n        \"complete\": true,\n        \"children\": [],\n        \"parents\": [\n            {\n                \"type\": \"DATA_SOURCE\",\n                \"id\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ]\n    },\n    \"CARD484502275\": {\n        \"type\": \"CARD\",\n        \"id\": \"484502275\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {},\n        \"complete\": true,\n        \"children\": [],\n        \"parents\": [\n            {\n                \"type\": \"DATA_SOURCE\",\n                \"id\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ]\n    },\n    \"CARD719830190\": {\n        \"type\": \"CARD\",\n        \"id\": \"719830190\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {},\n        \"complete\": true,\n        \"children\": [],\n        \"parents\": [\n            {\n                \"type\": \"DATA_SOURCE\",\n                \"id\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ]\n    },\n    \"CARD445566049\": {\n        \"type\": \"CARD\",\n        \"id\": \"445566049\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {},\n        \"complete\": true,\n        \"children\": [],\n        \"parents\": [\n            {\n                \"type\": \"DATA_SOURCE\",\n                \"id\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ]\n    }\n}"
             }
           ]
         }
