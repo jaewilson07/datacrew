@@ -573,7 +573,7 @@
           ]
         },
         {
-          "name": "New Request",
+          "name": "https://{{domo_instance}}/api/data/ui/v3/datasources/search",
           "id": "a530b941-65a6-4ff7-a466-5e9963912acb",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
