@@ -1551,7 +1551,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "[\n    {\n        \"id\": \"32eafd19-601c-4291-8744-d5d32c502fc2\",\n        \"publisherDomain\": \"\",\n        \"customerId\": \"mmmm-0010-8793\",\n        \"subscriberCustomerId\": null,\n        \"subscriberDomain\": \"\",\n        \"virtualUserId\": \"fc:33c3a3a5-1432-45a7-b2e7-a0897c0ba331\",\n        \"tenantId\": null,\n        \"created\": 1600463895000\n    }\n]"
+              "body": "[\n    {\n        \"id\": \"32eafd19-601c-4291-8744-d5d32c502fc2\",\n        \"publisherDomain\": \"\",\n        \"customerId\": \"\",\n        \"subscriberCustomerId\": null,\n        \"subscriberDomain\": \"\",\n        \"virtualUserId\": \"fc:33c3a3a5-1432-45a7-b2e7-a0897c0ba331\",\n        \"tenantId\": null,\n        \"created\": 1600463895000\n    }\n]"
             }
           ]
         }
