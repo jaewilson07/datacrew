@@ -1563,14 +1563,7 @@
           },
           "request": {
             "method": "GET",
-            "header": [
-              {
-                "key": "x-domo-authentication",
-                "value": "{{session_token}}",
-                "type": "text"
-              }
-            ],
-            "url": "https://{{domo_instance}}.domo.com/api/publish/v2/publication/status"
+            "header": []
           },
           "response": [
             {
