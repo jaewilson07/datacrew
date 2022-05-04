@@ -818,7 +818,7 @@
           ]
         },
         {
-          "name": "New Request",
+          "name": "Create PDP Group",
           "id": "f12f2fa2-3733-4670-9aea-067c82b3ae1f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
