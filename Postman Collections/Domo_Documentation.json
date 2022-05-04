@@ -722,7 +722,8 @@
           },
           "request": {
             "method": "GET",
-            "header": []
+            "header": [],
+            "description": "**traverseDown** \\= false will retrieve the upstream or ancestor objects for the datasource.\n\n*   Note lineage will also include the current object in the response\n    \n\n**traverseUp** \\= false will retrieve the downstream"
           },
           "response": [
             {
