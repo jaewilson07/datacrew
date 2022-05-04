@@ -543,7 +543,7 @@
               }
             ],
             "url": {
-              "raw": "https://{{domo_instance}}.domo.com/api/query/v1/datasources/{{dataset_id}}/schema/indexed?includeHidden=true",
+              "raw": "https://{{domo_instance}}.domo.com/api/query/v1/datasources/{{dataset_id}}/schema/indexed?includeHidden=false",
               "protocol": "https",
               "host": [
                 "{{domo_instance}}",
@@ -562,7 +562,7 @@
               "query": [
                 {
                   "key": "includeHidden",
-                  "value": "true"
+                  "value": "false"
                 }
               ]
             }
