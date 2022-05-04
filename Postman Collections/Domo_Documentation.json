@@ -1663,7 +1663,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Get all Publish Jobs",
           "id": "57c4ad14-cf3d-4e74-8681-9041d9fabbea",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
