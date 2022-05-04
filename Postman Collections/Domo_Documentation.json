@@ -694,7 +694,7 @@
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
+                "value": "application/json;charset=utf-8",
                 "type": "text"
               },
               {
@@ -712,7 +712,7 @@
                 }
               }
             },
-            "url": "https://{{domo_instance}}.domo.com/api/query/v1/data-control/{{dataset_id}}/filter-groups"
+            "url": "https://{{domo_instance}}.domo.com/api/query/v1/data-control/{{dataset_id}}/filter-groups/{{filter_group_id}}"
           },
           "response": []
         }
