@@ -1563,12 +1563,19 @@
           },
           "request": {
             "method": "GET",
-            "header": []
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{domo_instance}}.domo.com/api/publish/v2/publication/status"
           },
           "response": [
             {
               "id": "747a4a4f-65bd-48ce-b72e-597cc1572185",
-              "name": "New Request",
+              "name": "Get Publish Status",
               "originalRequest": {
                 "method": "GET",
                 "header": [
