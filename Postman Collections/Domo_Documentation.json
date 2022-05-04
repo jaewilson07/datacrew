@@ -1441,7 +1441,36 @@
     },
     {
       "name": "Publish",
-      "item": [],
+      "item": [
+        {
+          "name": "Get Virtual Users",
+          "id": "1b5c550e-8a8a-4bec-91cf-c9c0220da355",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"domains\": [\r\n        \"{{domo_instance}}.domo.com\",\r\n        \"{{domo_subscriber_instance}}.domo.com\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://playstationpartners-test.domo.com/api/publish/v2/proxy_user/domain/"
+          },
+          "response": []
+        }
+      ],
       "id": "1d951c97-b085-48dc-adbe-6da8bcc0401c"
     }
   ]
