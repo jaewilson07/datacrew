@@ -722,7 +722,44 @@
           },
           "request": {
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://{{domo_instance}}.domo.com/api/data/v1/lineage/DATA_SOURCE/{{dataset_id}}?traverseUp=false&maxDepth=3&requestEntities=DATA_SOURCE,DATAFLOW,CARD",
+              "protocol": "https",
+              "host": [
+                "{{domo_instance}}",
+                "domo",
+                "com"
+              ],
+              "path": [
+                "api",
+                "data",
+                "v1",
+                "lineage",
+                "DATA_SOURCE",
+                "{{dataset_id}}"
+              ],
+              "query": [
+                {
+                  "key": "traverseUp",
+                  "value": "false"
+                },
+                {
+                  "key": "maxDepth",
+                  "value": "3"
+                },
+                {
+                  "key": "requestEntities",
+                  "value": "DATA_SOURCE,DATAFLOW,CARD"
+                }
+              ]
+            },
             "description": "Go to the dataset's data lineage page to monitor network traffic.\n\n**traverseDown** \\= false will retrieve the upstream or ancestor objects for the datasource.\n\n*   Note lineage will also include the current object in the response\n    \n\n**traverseUp** \\= false will retrieve the downstream"
           },
           "response": [
