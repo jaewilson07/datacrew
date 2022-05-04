@@ -1563,7 +1563,14 @@
           },
           "request": {
             "method": "GET",
-            "header": []
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{domo_instance}}.domo.com/api/publish/v2/publication/status"
           },
           "response": [
             {
@@ -1642,6 +1649,18 @@
               "body": "{\n    \"status\": \"READY\"\n}"
             }
           ]
+        },
+        {
+          "name": "New Request",
+          "id": "c0363259-22b8-4518-8cbb-e25f1c0c42c0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
         }
       ],
       "id": "1d951c97-b085-48dc-adbe-6da8bcc0401c"
