@@ -1471,7 +1471,7 @@
           "response": [
             {
               "id": "d1e05d94-1b3e-4295-8841-a5c03c8fb3a4",
-              "name": "Get Virtual Users",
+              "name": "Get Virtual User",
               "originalRequest": {
                 "method": "POST",
                 "header": [
