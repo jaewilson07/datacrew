@@ -1,0 +1,119 @@
+{
+  "info": {
+    "_postman_id": "d4b2f432-ee61-488e-92eb-63944bad9690",
+    "name": "Domo Documentation",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Full Authentication",
+      "_postman_id": "a1f7d902-e66d-4d1d-8b6a-89b36fd31bdc",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"method\": \"password\",\r\n    \"emailAddress\": \"{{username}}\",\r\n    \"password\": \"{{password}}\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://{{domo_instance}}.domo.com/api/content/v2/authentication",
+        "description": "Undocumented public apis require a **x-domo-authentication** header with the session token.  \nUse Full Authentication request to get a session token."
+      },
+      "response": [
+        {
+          "id": "ea2e7bd2-0837-4b9d-8c34-f09e7b44f036",
+          "name": "Full Authentication",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"method\": \"password\",\r\n    \"emailAddress\": \"{{username}}\",\r\n    \"password\": \"{{password}}\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://{{domo_instance}}.domo.com/api/content/v2/authentication"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Server",
+              "value": "nginx"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 04 May 2022 18:08:21 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json;charset=utf-8"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Content-Security-Policy",
+              "value": "frame-ancestors 'self';"
+            },
+            {
+              "key": "Expires",
+              "value": "0"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding, User-Agent"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "X-Xss-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536000; includeSubDomains"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"userId\": 1893952720,\n    \"success\": true,\n    \"sessionToken\": \"\",\n    \"twoFactorInfo\": {\n        \"token\": null,\n        \"key\": null,\n        \"status\": \"VALID\",\n        \"phoneMask\": null\n    }\n}"
+        }
+      ]
+    }
+  ]
+}
