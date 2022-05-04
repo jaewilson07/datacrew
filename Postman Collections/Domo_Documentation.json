@@ -11,6 +11,11 @@
       "id": "9029bb43-dcaf-4558-ac58-41debd4624f2"
     },
     {
+      "name": "New Folder",
+      "item": [],
+      "id": "ed3d96aa-cf69-49e4-bc0e-25bb73c45f10"
+    },
+    {
       "name": "Full Authentication",
       "id": "a1f7d902-e66d-4d1d-8b6a-89b36fd31bdc",
       "protocolProfileBehavior": {
