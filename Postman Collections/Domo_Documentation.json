@@ -1468,7 +1468,92 @@
             },
             "url": "https://playstationpartners-test.domo.com/api/publish/v2/proxy_user/domain/"
           },
-          "response": []
+          "response": [
+            {
+              "id": "d1e05d94-1b3e-4295-8841-a5c03c8fb3a4",
+              "name": "Get Virtual Users",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "x-domo-authentication",
+                    "value": "{{session_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"domains\": [\r\n        \"{{domo_instance}}.domo.com\",\r\n        \"{{domo_subscriber_instance}}.domo.com\"\r\n    ]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://playstationpartners-test.domo.com/api/publish/v2/proxy_user/domain/"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 04 May 2022 21:25:17 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self';"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"id\": \"32eafd19-601c-4291-8744-d5d32c502fc2\",\n        \"publisherDomain\": \"playstationpartners-test.domo.com\",\n        \"customerId\": \"mmmm-0010-8793\",\n        \"subscriberCustomerId\": null,\n        \"subscriberDomain\": \"playstationpartners-test.domo.com\",\n        \"virtualUserId\": \"fc:33c3a3a5-1432-45a7-b2e7-a0897c0ba331\",\n        \"tenantId\": null,\n        \"created\": 1600463895000\n    },\n    {\n        \"id\": \"6f036700-9582-48c5-a3eb-0e7a93c0a7c7\",\n        \"publisherDomain\": \"playstationpartners-test.domo.com\",\n        \"customerId\": \"mmmm-0010-8793\",\n        \"subscriberCustomerId\": null,\n        \"subscriberDomain\": \"playstation-beta.domo.com\",\n        \"virtualUserId\": \"fc:1e7b3862-795d-4abd-8d45-64c7315efd7b\",\n        \"tenantId\": null,\n        \"created\": 1647357362000\n    }\n]"
+            }
+          ]
         }
       ],
       "id": "1d951c97-b085-48dc-adbe-6da8bcc0401c"
