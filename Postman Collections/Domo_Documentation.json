@@ -679,7 +679,7 @@
           ]
         },
         {
-          "name": "New Request",
+          "name": "Alter PDP Group",
           "id": "3e874ece-736e-402d-aa0b-8815166481b1",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
