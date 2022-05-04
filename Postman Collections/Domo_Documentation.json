@@ -715,7 +715,7 @@
           ]
         },
         {
-          "name": "New Request",
+          "name": "https://domo-dojo.domo.com/api/data/v1/lineage/DATA_SOURCE/2c485bb2-43ee-43fb-b5bf-b4c22facd50e?traverseDown=false",
           "id": "91c9356f-0114-4bbd-96b1-23382d64b105",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
