@@ -1556,7 +1556,7 @@
           ]
         },
         {
-          "name": "New Request",
+          "name": "Get Publish Status",
           "id": "204b8089-7704-423d-ab5b-851093af0dee",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
