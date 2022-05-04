@@ -436,7 +436,7 @@
                 "type": "text"
               }
             ],
-            "url": "http://{{domo_instance}}/api/query/v1/data-control/{{dataset_id}}/filter-groups/"
+            "url": "http://{{domo_instance}}.domo.com/api/query/v1/data-control/{{dataset_id}}/filter-groups/"
           },
           "response": [
             {
