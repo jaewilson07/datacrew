@@ -1026,7 +1026,8 @@
           ]
         }
       ],
-      "id": "43430adf-ea26-4091-919b-362ef72de03c"
+      "id": "43430adf-ea26-4091-919b-362ef72de03c",
+      "description": "PDP Policies can be set for multiple filter types (simple, calculated and trusted attributes), see the Alter Policy documentation for multiple examples\n\n[Domo KB Article](https://domohelp.domo.com/hc/en-us/sections/360007334593-Personalized-Data-Permissions-PDP-)"
     }
   ]
 }
