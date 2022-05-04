@@ -928,6 +928,100 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"name\": \"Policy_Column_Begins_With\",\n    \"filterGroupId\": 593,\n    \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n    \"groupIds\": [\n        1324037627\n    ],\n    \"dataSourcePermissions\": false,\n    \"parameters\": [\n        {\n            \"name\": \"Email\",\n            \"value\": \"801\",\n            \"values\": [\n                \"801\"\n            ],\n            \"type\": \"COLUMN\",\n            \"operator\": \"BEGINS_WITH\",\n            \"not\": false,\n            \"ignoreCase\": false\n        },\n        {\n            \"name\": \"Email\",\n            \"value\": \"702\",\n            \"values\": [\n                \"702\"\n            ],\n            \"type\": \"COLUMN\",\n            \"operator\": \"BEGINS_WITH\",\n            \"not\": false,\n            \"ignoreCase\": false\n        }\n    ]\n}"
+            },
+            {
+              "id": "6768e333-97a2-4d71-8f85-21f2364df2b9",
+              "name": "Alter PDP Group",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "x-domo-authentication",
+                    "value": "{{session_token}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json;charset=utf-8",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"Simple Filter\",\r\n    \"filterGroupId\": 593,\r\n    \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\r\n    \"userIds\": [],\r\n    \"virtualUserIds\": [],\r\n    \"groupIds\": [\r\n        1324037627\r\n    ],\r\n    \"dataSourcePermissions\": false,\r\n    \"parameters\": [\r\n        {\r\n            \"type\": \"COLUMN\",\r\n            \"name\": \"Action\",\r\n            \"values\": [\r\n                \"ACCOUNT_LOCKED\"\r\n            ],\r\n            \"operator\": \"EQUALS\",\r\n            \"ignoreCase\": false\r\n        },\r\n        {\r\n            \"type\": \"COLUMN\",\r\n            \"name\": \"Department\",\r\n            \"values\": [\r\n                \"Crystal Ballers\"\r\n            ],\r\n            \"operator\": \"EQUALS\",\r\n            \"ignoreCase\": false\r\n        }\r\n    ]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://{{domo_instance}}.domo.com/api/query/v1/data-control/{{dataset_id}}/filter-groups/{{filter_group_id}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 04 May 2022 20:30:46 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self';"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"name\": \"Simple Filter\",\n    \"filterGroupId\": 593,\n    \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n    \"groupIds\": [\n        1324037627\n    ],\n    \"dataSourcePermissions\": false,\n    \"parameters\": [\n        {\n            \"name\": \"Action\",\n            \"value\": \"ACCOUNT_LOCKED\",\n            \"values\": [\n                \"ACCOUNT_LOCKED\"\n            ],\n            \"type\": \"COLUMN\",\n            \"operator\": \"EQUALS\",\n            \"not\": false,\n            \"ignoreCase\": false\n        },\n        {\n            \"name\": \"Department\",\n            \"value\": \"Crystal Ballers\",\n            \"values\": [\n                \"Crystal Ballers\"\n            ],\n            \"type\": \"COLUMN\",\n            \"operator\": \"EQUALS\",\n            \"not\": false,\n            \"ignoreCase\": false\n        }\n    ]\n}"
             }
           ]
         }
