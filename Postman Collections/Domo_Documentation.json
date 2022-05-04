@@ -1440,7 +1440,7 @@
       "description": "PDP Policies can be set for multiple filter types (simple, calculated and trusted attributes), see the Alter Policy documentation for multiple examples\n\n[Domo KB Article](https://domohelp.domo.com/hc/en-us/sections/360007334593-Personalized-Data-Permissions-PDP-)"
     },
     {
-      "name": "New Folder",
+      "name": "Publish",
       "item": [],
       "id": "1d951c97-b085-48dc-adbe-6da8bcc0401c"
     }
