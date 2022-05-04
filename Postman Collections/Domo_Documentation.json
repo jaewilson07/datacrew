@@ -1471,7 +1471,83 @@
             "method": "GET",
             "header": []
           },
-          "response": []
+          "response": [
+            {
+              "id": "c081887c-e58a-449d-b0cc-9521b9d35794",
+              "name": "Search a Publish Job",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "x-domo-authentication",
+                    "value": "{{session_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": "https://{{domo_instance}}.domo.com/api/publish/v2/publication/{{publish_id}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 04 May 2022 21:53:04 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self';"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"id\": \"8a2b6276-6001-42f7-8d15-07b176876e30\",\n    \"name\": \"haleua test of form viewer\",\n    \"customer_id\": \"mmmm-0010-8793\",\n    \"created\": 1651701184880,\n    \"content\": {\n        \"id\": \"917a9757-632e-4361-97c7-8cbb4c080a65\",\n        \"domain\": \"\",\n        \"customerId\": \"\",\n        \"userId\": \"Fake User Id\",\n        \"type\": \"UNDEFINED\",\n        \"updated\": 1651701184880,\n        \"hash\": \"237f7b97-ba57-4d61-abbf-6a26f4868e79\"\n    },\n    \"description\": \"share form viewer instead of builder\",\n    \"children\": [\n        {\n            \"id\": \"23b63afb-47e7-44ed-a31e-f2605d1af766\",\n            \"customer_id\": \"\",\n            \"created\": 1651701184879,\n            \"content\": {\n                \"id\": \"43433b62-e67c-47be-ac59-6be9ce0cec88\",\n                \"domain\": \"playstationpartners-test.domo.com\",\n                \"customerId\": \"\",\n                \"userId\": \"Fake User Id\",\n                \"domoObjectId\": \"955478113\",\n                \"type\": \"PAGE\",\n                \"updated\": 1651701184879,\n                \"hash\": \"c9b617c9-1810-49c1-96cf-0cc0966cdda6\"\n            },\n            \"children\": [],\n            \"subscription_authorizations\": [],\n            \"subscribers\": [],\n            \"useDirectContent\": true,\n            \"type\": \"CONTENT\",\n            \"isV2\": true,\n            \"hasDuplicate\": false,\n            \"isBackup\": false,\n            \"childIds\": []\n        },\n        {\n            \"id\": \"64b456f7-27aa-463a-a863-1558a585ae09\",\n            \"customer_id\": \"\",\n            \"created\": 1651701184879,\n            \"content\": {\n                \"id\": \"a8de9ca6-ad28-4159-99cf-650b7937e4cc\",\n                \"domain\": \"playstationpartners-test.domo.com\",\n                \"customerId\": \"\",\n                \"userId\": \"Fake User Id\",\n                \"domoObjectId\": \"78bae9ed-a715-4130-aa63-476e7ccfbfd3\",\n                \"type\": \"DATASET\",\n                \"updated\": 1651701184879,\n                \"hash\": \"cf5f6e9c-4416-4103-8720-52b8d674f429\"\n            },\n            \"children\": [],\n            \"subscription_authorizations\": [],\n            \"subscribers\": [],\n            \"useDirectContent\": true,\n            \"type\": \"CONTENT\",\n            \"isV2\": true,\n            \"hasDuplicate\": false,\n            \"isBackup\": false,\n            \"childIds\": []\n        }\n    ],\n    \"subscription_authorizations\": [\n        {\n            \"id\": \"4f2f7c1c-357e-46bf-9880-1909c7bd57e9\",\n            \"domain\": \"playstationpartners-test-15013.domo.com\",\n            \"created\": 1623382254328,\n            \"publicationId\": \"8a2b6276-6001-42f7-8d15-07b176876e30\"\n        }\n    ],\n    \"subscribers\": [],\n    \"useDirectContent\": true,\n    \"type\": \"CONTENT\",\n    \"isV2\": true,\n    \"hasDuplicate\": false,\n    \"isBackup\": false,\n    \"childIds\": []\n}"
+            }
+          ]
         },
         {
           "name": "Get Virtual Users",
