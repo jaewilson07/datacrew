@@ -715,7 +715,7 @@
           ]
         },
         {
-          "name": "https://domo-dojo.domo.com/api/data/v1/lineage/DATA_SOURCE/2c485bb2-43ee-43fb-b5bf-b4c22facd50e?traverseDown=false",
+          "name": "Get Data Lineage",
           "id": "91c9356f-0114-4bbd-96b1-23382d64b105",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -724,7 +724,113 @@
             "method": "GET",
             "header": []
           },
-          "response": []
+          "response": [
+            {
+              "id": "dad4f5f9-6bbe-4dd8-80f9-02be379df77f",
+              "name": "New Request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "x-domo-authentication",
+                    "value": "{{session_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "https://{{domo_instance}}.domo.com/api/data/v1/lineage/DATA_SOURCE/{{dataset_id}}?traverseDown=false",
+                  "protocol": "https",
+                  "host": [
+                    "{{domo_instance}}",
+                    "domo",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "data",
+                    "v1",
+                    "lineage",
+                    "DATA_SOURCE",
+                    "{{dataset_id}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "traverseDown",
+                      "value": "false"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 04 May 2022 20:51:41 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self';"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"DATAFLOW60\": {\n        \"type\": \"DATAFLOW\",\n        \"id\": \"60\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {\n            \"DATA_SOURCE\": 2\n        },\n        \"complete\": true,\n        \"children\": [\n            {\n                \"type\": \"DATA_SOURCE\",\n                \"id\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ],\n        \"parents\": [\n            {\n                \"type\": \"DATA_SOURCE\",\n                \"id\": \"61c4e63d-0627-41f7-b138-74968ebd7634\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            },\n            {\n                \"type\": \"DATA_SOURCE\",\n                \"id\": \"241025d7-3cca-4369-b7c0-b3264277c0e1\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ]\n    },\n    \"DATA_SOURCE94a4edfa-5926-4f0c-ad1e-a341f53f6113\": {\n        \"type\": \"DATA_SOURCE\",\n        \"id\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {\n            \"DATA_SOURCE\": 2,\n            \"DATAFLOW\": 1\n        },\n        \"complete\": true,\n        \"children\": [],\n        \"parents\": [\n            {\n                \"type\": \"DATAFLOW\",\n                \"id\": \"60\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ]\n    },\n    \"DATA_SOURCE241025d7-3cca-4369-b7c0-b3264277c0e1\": {\n        \"type\": \"DATA_SOURCE\",\n        \"id\": \"241025d7-3cca-4369-b7c0-b3264277c0e1\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {},\n        \"complete\": true,\n        \"children\": [\n            {\n                \"type\": \"DATAFLOW\",\n                \"id\": \"60\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ],\n        \"parents\": []\n    },\n    \"DATA_SOURCE61c4e63d-0627-41f7-b138-74968ebd7634\": {\n        \"type\": \"DATA_SOURCE\",\n        \"id\": \"61c4e63d-0627-41f7-b138-74968ebd7634\",\n        \"descendantCounts\": {},\n        \"ancestorCounts\": {},\n        \"complete\": true,\n        \"children\": [\n            {\n                \"type\": \"DATAFLOW\",\n                \"id\": \"60\",\n                \"complete\": true,\n                \"children\": [],\n                \"parents\": []\n            }\n        ],\n        \"parents\": []\n    }\n}"
+            }
+          ]
         }
       ],
       "id": "87e12295-1ca7-42ec-80d7-8c8943dd17e8"
