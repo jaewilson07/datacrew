@@ -1443,6 +1443,30 @@
       "name": "Publish",
       "item": [
         {
+          "name": "Get all Publish Jobs",
+          "id": "57c4ad14-cf3d-4e74-8681-9041d9fabbea",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "Search a Publish Job",
+          "id": "3e6094c0-9bc2-44e6-a81f-5af30c8f623f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
           "name": "Get Virtual Users",
           "id": "1b5c550e-8a8a-4bec-91cf-c9c0220da355",
           "protocolProfileBehavior": {
@@ -1653,18 +1677,6 @@
         {
           "name": "Create a Publish Job",
           "id": "c0363259-22b8-4518-8cbb-e25f1c0c42c0",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": []
-          },
-          "response": []
-        },
-        {
-          "name": "Get all Publish Jobs",
-          "id": "57c4ad14-cf3d-4e74-8681-9041d9fabbea",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
