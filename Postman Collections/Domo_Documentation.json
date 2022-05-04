@@ -6,8 +6,13 @@
   },
   "item": [
     {
+      "name": "New Folder",
+      "item": [],
+      "id": "9029bb43-dcaf-4558-ac58-41debd4624f2"
+    },
+    {
       "name": "Full Authentication",
-      "_postman_id": "a1f7d902-e66d-4d1d-8b6a-89b36fd31bdc",
+      "id": "a1f7d902-e66d-4d1d-8b6a-89b36fd31bdc",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -112,6 +117,287 @@
           "cookie": [],
           "responseTime": null,
           "body": "{\n    \"userId\": 1893952720,\n    \"success\": true,\n    \"sessionToken\": \"\",\n    \"twoFactorInfo\": {\n        \"token\": null,\n        \"key\": null,\n        \"status\": \"VALID\",\n        \"phoneMask\": null\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Search Groups by Name",
+      "id": "8da7c456-f4bb-478a-b6df-46cad5e48972",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-domo-authentication",
+            "value": "{{session_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://domo-dojo.domo.com/api/content/v2/groups/grouplist?ascending=true&limit=50&offset=0&search={{search_criteria}}&sort=name",
+          "protocol": "https",
+          "host": [
+            "domo-dojo",
+            "domo",
+            "com"
+          ],
+          "path": [
+            "api",
+            "content",
+            "v2",
+            "groups",
+            "grouplist"
+          ],
+          "query": [
+            {
+              "key": "ascending",
+              "value": "true"
+            },
+            {
+              "key": "limit",
+              "value": "50"
+            },
+            {
+              "key": "offset",
+              "value": "0"
+            },
+            {
+              "key": "search",
+              "value": "{{search_criteria}}"
+            },
+            {
+              "key": "sort",
+              "value": "name"
+            }
+          ]
+        },
+        "description": "Search Groups by Name\n\nReturns a list of groups that meet search criteria"
+      },
+      "response": [
+        {
+          "id": "d625b7de-5e37-4327-8038-d7d8e20b3bbd",
+          "name": "Groups - Search Groups by Name",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://domo-dojo.domo.com/api/content/v2/groups/grouplist?ascending=true&limit=50&offset=0&search={{search_criteria}}&sort=name",
+              "protocol": "https",
+              "host": [
+                "domo-dojo",
+                "domo",
+                "com"
+              ],
+              "path": [
+                "api",
+                "content",
+                "v2",
+                "groups",
+                "grouplist"
+              ],
+              "query": [
+                {
+                  "key": "ascending",
+                  "value": "true"
+                },
+                {
+                  "key": "limit",
+                  "value": "50"
+                },
+                {
+                  "key": "offset",
+                  "value": "0"
+                },
+                {
+                  "key": "search",
+                  "value": "{{search_criteria}}"
+                },
+                {
+                  "key": "sort",
+                  "value": "name"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Server",
+              "value": "nginx"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 04 May 2022 18:18:59 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json;charset=utf-8"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Content-Security-Policy",
+              "value": "frame-ancestors 'self';"
+            },
+            {
+              "key": "Expires",
+              "value": "0"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding, User-Agent"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "X-Xss-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536000; includeSubDomains"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "[\n    {\n        \"name\": \"Power User Group\",\n        \"groupId\": 1063525969,\n        \"owners\": [],\n        \"groupType\": \"adHoc\",\n        \"groupMembers\": [\n            {\n                \"type\": \"USER\",\n                \"id\": \"269129820\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1345408759\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1095515127\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1768567034\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"587894148\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"827093373\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1144220331\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"149943626\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"55874022\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"796785200\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1079474652\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1893952720\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"2072302260\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"756306366\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1504505648\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"699075231\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1227422648\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1229264718\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1318781111\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"617808774\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"826020125\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1446165056\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"966365811\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"693722501\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1167580245\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1154339157\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1354070971\"\n            }\n        ],\n        \"memberCount\": 27,\n        \"created\": \"2020-05-15 16:58:56.0\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get All Groups",
+      "id": "77dd774d-920d-47ad-a5e9-55a825dbaa0b",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-domo-authentication",
+            "value": "{{session_token}}",
+            "type": "text"
+          }
+        ],
+        "url": "https://{{domo_instance}}.domo.com/api/content/v2/groups"
+      },
+      "response": [
+        {
+          "id": "e08b15b9-becd-47b9-8cb3-23b0ee15589c",
+          "name": "Groups - Get All Groups",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{domo_instance}}.domo.com/api/content/v2/groups"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Server",
+              "value": "nginx"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 04 May 2022 18:11:51 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json;charset=utf-8"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Content-Security-Policy",
+              "value": "frame-ancestors 'self';"
+            },
+            {
+              "key": "Expires",
+              "value": "0"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding, User-Agent"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "X-Xss-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536000; includeSubDomains"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "[\n    {\n        \"id\": 180920085,\n        \"name\": \"Content\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 0,\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1063525969,\n        \"name\": \"Power User Group\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1589561936000,\n        \"memberCount\": 27,\n        \"guid\": \"14ebea60-9155-11ea-a6eb-12affd108866\",\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1324037627,\n        \"name\": \"Default\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 294,\n        \"active\": true,\n        \"default\": true\n    },\n    {\n        \"id\": 2088006361,\n        \"name\": \"_Inline_Edit_Owners\",\n        \"type\": \"closed\",\n        \"userIds\": [],\n        \"created\": 1617953643000,\n        \"memberCount\": 7,\n        \"guid\": \"f5231ce5-9905-11eb-8e8b-0a775c76e4e4\",\n        \"description\": \"Inline Editor_Owner\",\n        \"active\": true,\n        \"default\": false\n    }\n]"
         }
       ]
     }
