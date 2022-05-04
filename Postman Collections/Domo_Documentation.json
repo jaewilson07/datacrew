@@ -585,6 +585,16 @@
                 "key": "x-domo-authentication",
                 "value": "{{session_token}}",
                 "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
               }
             ],
             "body": {
