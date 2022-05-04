@@ -713,7 +713,7 @@
             },
             {
               "id": "9e8a1266-d799-4033-b73c-384b0340ae03",
-              "name": "Search Data Sources",
+              "name": "Search by Owner and Name",
               "originalRequest": {
                 "method": "POST",
                 "header": [
