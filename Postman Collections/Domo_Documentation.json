@@ -1551,7 +1551,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "[\n    {\n        \"id\": \"32eafd19-601c-4291-8744-d5d32c502fc2\",\n        \"publisherDomain\": \"playstationpartners-test.domo.com\",\n        \"customerId\": \"mmmm-0010-8793\",\n        \"subscriberCustomerId\": null,\n        \"subscriberDomain\": \"playstationpartners-test.domo.com\",\n        \"virtualUserId\": \"fc:33c3a3a5-1432-45a7-b2e7-a0897c0ba331\",\n        \"tenantId\": null,\n        \"created\": 1600463895000\n    },\n    {\n        \"id\": \"6f036700-9582-48c5-a3eb-0e7a93c0a7c7\",\n        \"publisherDomain\": \"playstationpartners-test.domo.com\",\n        \"customerId\": \"mmmm-0010-8793\",\n        \"subscriberCustomerId\": null,\n        \"subscriberDomain\": \"playstation-beta.domo.com\",\n        \"virtualUserId\": \"fc:1e7b3862-795d-4abd-8d45-64c7315efd7b\",\n        \"tenantId\": null,\n        \"created\": 1647357362000\n    }\n]"
+              "body": "[\n    {\n        \"id\": \"32eafd19-601c-4291-8744-d5d32c502fc2\",\n        \"publisherDomain\": \"\",\n        \"customerId\": \"mmmm-0010-8793\",\n        \"subscriberCustomerId\": null,\n        \"subscriberDomain\": \"\",\n        \"virtualUserId\": \"fc:33c3a3a5-1432-45a7-b2e7-a0897c0ba331\",\n        \"tenantId\": null,\n        \"created\": 1600463895000\n    }\n]"
             }
           ]
         }
