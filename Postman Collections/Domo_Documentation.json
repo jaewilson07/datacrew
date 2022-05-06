@@ -778,7 +778,28 @@
                 "type": "text"
               }
             ],
-            "url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}"
+            "url": {
+              "raw": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/:id",
+              "protocol": "https",
+              "host": [
+                "{{domo_instance}}",
+                "domo",
+                "com"
+              ],
+              "path": [
+                "api",
+                "data",
+                "v3",
+                "datasources",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{dataset_id}}"
+                }
+              ]
+            }
           },
           "response": [
             {
