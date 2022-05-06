@@ -2015,7 +2015,8 @@
           },
           "request": {
             "method": "GET",
-            "header": []
+            "header": [],
+            "description": "This API allows the return of multiple Domo Entities\n\n**Body Parameters**\n\n**{ combineResults:False }** - will return add a nested key-value pair, **searchResultsMap**, with a dictionary of entity types containing arrays of entities.\n\nThe **searchObjects** key will always have an array of results.\n\nThe **totalResultCount** key can be used to support building a loop function if you limit the **count** of your responses in the filter body."
           },
           "response": [
             {
