@@ -2659,7 +2659,20 @@
     },
     {
       "name": "User",
-      "item": [],
+      "item": [
+        {
+          "name": "New Request",
+          "id": "713bb6e1-c36f-48d7-9292-606fb6d3453c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ],
       "id": "9d632591-53a3-429d-b358-4232e3fba85e",
       "description": "### User folder\n\n<p>Folder contains the set of documented API about users followed by the list of API:</p>"
     }
