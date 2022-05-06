@@ -2163,7 +2163,7 @@
           "response": [
             {
               "id": "c97d9c15-fe99-4c69-9ac1-24285098132e",
-              "name": "Get Domo Configuration - Bootstrap API",
+              "name": "Instance Configuration",
               "originalRequest": {
                 "method": "GET",
                 "header": [
