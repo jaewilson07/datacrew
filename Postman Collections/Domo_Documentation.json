@@ -2366,8 +2366,24 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
-            "header": [],
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"entities\": [\r\n        \"DATASET\"\r\n    ],\r\n    \"filters\": [],\r\n    \"combineResults\": true,\r\n    \"query\": \"*\",\r\n    \"count\": 1,\r\n    \"offset\": 0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://{{domo_instance}}.domo.com/api/search/v1/query",
             "description": "This API allows the return of multiple Domo Entities\n\n**Body Parameters**\n\n**{ combineResults:False }** - will return add a nested key-value pair, **searchResultsMap**, with a dictionary of entity types containing arrays of entities.\n\nThe **searchObjects** key will always have an array of results.\n\nThe **totalResultCount** key can be used to support building a loop function if you limit the **count** of your responses in the filter body."
           },
           "response": [
