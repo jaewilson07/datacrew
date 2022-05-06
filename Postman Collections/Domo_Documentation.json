@@ -2668,7 +2668,13 @@
           },
           "request": {
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              }
+            ],
             "url": "https://{{domo_instance}}.domo.com/api/content/v2/users",
             "description": "#### Description (usage)\n\nGet the list of users\n\n#### **UI reference**\n\nAdmin section -> People\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934314-Generating-a-List-of-Users)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of users with properties\n    \n\nPlease refer to the example below:"
           },
