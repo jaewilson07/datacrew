@@ -2877,7 +2877,7 @@
             },
             {
               "id": "220db4d1-b3d5-4cc0-b8dd-b96f1bf7f82c",
-              "name": "Search Users",
+              "name": "Search Users - example",
               "originalRequest": {
                 "method": "GET",
                 "header": [
