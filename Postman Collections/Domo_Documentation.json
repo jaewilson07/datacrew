@@ -2114,7 +2114,7 @@
           ]
         },
         {
-          "name": "New Request",
+          "name": "Get Domo Configuration - Bootstrap API",
           "id": "d6ee0920-d02b-4468-8a9f-813822e04a4b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
