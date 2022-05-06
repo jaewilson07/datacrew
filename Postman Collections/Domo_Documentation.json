@@ -632,7 +632,7 @@
               }
             },
             "url": "https://{{domo_instance}}.domo.com/api/data/ui/v3/datasources/search",
-            "description": "Monitor network traffic in the Data Center, https://{{domo_instance}}[.](https://domo-dojo.domo.com/datacenter/datasources)domo.com/datacenter/datasources, to see permutations of the filters you can apply to your dataset.\n\n**Body Parameter Notes**\n\nStartFragment\n\n{\"query\": \"*\" } - appears to be required to return any results\n\nEndFragment"
+            "description": "Monitor network traffic in the Data Center, https://{{domo_instance}}[.](https://domo-dojo.domo.com/datacenter/datasources)domo.com/datacenter/datasources, to see permutations of the filters you can apply to your dataset.\n\n**Body Parameter Notes**\n\n{\"query\": \"*\" } - appears to be required to return any results\n\n**Additional Notes**\n\nThis API appears to be a repackaging of \"https://{{domo_instance}}.domo.com/api/search/v1/query\"\n\n*   If you are experiencing odd timeout issues try switching apis."
           },
           "response": [
             {
