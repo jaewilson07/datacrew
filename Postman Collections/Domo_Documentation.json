@@ -416,7 +416,36 @@
                     "type": "text"
                   }
                 ],
-                "url": "https://{{domo_instance}}.domo.com/api/content/v2/groups"
+                "url": {
+                  "raw": "https://{{domo_instance}}.domo.com/api/content/v2/groups/get?ignoreCache=false&includeActive=false&includeUsers=false",
+                  "protocol": "https",
+                  "host": [
+                    "{{domo_instance}}",
+                    "domo",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "content",
+                    "v2",
+                    "groups",
+                    "get"
+                  ],
+                  "query": [
+                    {
+                      "key": "ignoreCache",
+                      "value": "false"
+                    },
+                    {
+                      "key": "includeActive",
+                      "value": "false"
+                    },
+                    {
+                      "key": "includeUsers",
+                      "value": "false"
+                    }
+                  ]
+                }
               },
               "_postman_previewlanguage": null,
               "header": null,
