@@ -524,7 +524,7 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [
               {
                 "key": "x-domo-authentication",
@@ -532,7 +532,32 @@
                 "type": "text"
               }
             ],
-            "url": "https://{{domo_instance}}.domo.com/api/content/v2/groups",
+            "url": {
+              "raw": "https://{{domo_instance}}.domo.com/api/content/v2/groups/permissions?checkOwnership=true&includeUsers=false",
+              "protocol": "https",
+              "host": [
+                "{{domo_instance}}",
+                "domo",
+                "com"
+              ],
+              "path": [
+                "api",
+                "content",
+                "v2",
+                "groups",
+                "permissions"
+              ],
+              "query": [
+                {
+                  "key": "checkOwnership",
+                  "value": "true"
+                },
+                {
+                  "key": "includeUsers",
+                  "value": "false"
+                }
+              ]
+            },
             "description": "#### Description (usage)\n\nGet the list of group owners\n\n#### **UI reference**\n\nAdmin section -> Groups\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934294-Creating-and-Managing-User-Groups#1.1.)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\n*   checkOwnership (true/false)\n*   includeUsers (true/false)\n    \n\n#### **Return value**\n\n*   Array of group owners with properties\n    \n\nPlease refer to the example below:"
           },
           "response": [
