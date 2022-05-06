@@ -2006,7 +2006,20 @@
     },
     {
       "name": "DataCenter",
-      "item": [],
+      "item": [
+        {
+          "name": "New Request",
+          "id": "cd86f68d-fb2a-476b-a153-3e329e3d61c2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ],
       "id": "05de9f97-3be7-4488-928e-587c9009d633"
     }
   ]
