@@ -405,55 +405,6 @@
               "body": "[\n    {\n        \"id\": 180920085,\n        \"name\": \"Content\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 0,\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1063525969,\n        \"name\": \"Power User Group\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1589561936000,\n        \"memberCount\": 27,\n        \"guid\": \"14ebea60-9155-11ea-a6eb-12affd108866\",\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1324037627,\n        \"name\": \"Default\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 294,\n        \"active\": true,\n        \"default\": true\n    },\n    {\n        \"id\": 2088006361,\n        \"name\": \"_Inline_Edit_Owners\",\n        \"type\": \"closed\",\n        \"userIds\": [],\n        \"created\": 1617953643000,\n        \"memberCount\": 7,\n        \"guid\": \"f5231ce5-9905-11eb-8e8b-0a775c76e4e4\",\n        \"description\": \"Inline Editor_Owner\",\n        \"active\": true,\n        \"default\": false\n    }\n]"
             },
             {
-              "id": "5c2b3fc9-68b6-4859-919e-6ef567d03a88",
-              "name": "Get All Groups",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "x-domo-authentication",
-                    "value": "{{session_token}}",
-                    "type": "text"
-                  }
-                ],
-                "url": {
-                  "raw": "https://{{domo_instance}}.domo.com/api/content/v2/groups/get?ignoreCache=false&includeActive=false&includeUsers=false",
-                  "protocol": "https",
-                  "host": [
-                    "{{domo_instance}}",
-                    "domo",
-                    "com"
-                  ],
-                  "path": [
-                    "api",
-                    "content",
-                    "v2",
-                    "groups",
-                    "get"
-                  ],
-                  "query": [
-                    {
-                      "key": "ignoreCache",
-                      "value": "false"
-                    },
-                    {
-                      "key": "includeActive",
-                      "value": "false"
-                    },
-                    {
-                      "key": "includeUsers",
-                      "value": "false"
-                    }
-                  ]
-                }
-              },
-              "_postman_previewlanguage": null,
-              "header": null,
-              "cookie": [],
-              "responseTime": null,
-              "body": null
-            },
-            {
               "id": "efec1163-cf5f-4b3f-a094-191412491b94",
               "name": "Get All Groups with optional parameters",
               "originalRequest": {
