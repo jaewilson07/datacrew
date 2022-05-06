@@ -455,7 +455,7 @@
             },
             {
               "id": "efec1163-cf5f-4b3f-a094-191412491b94",
-              "name": "Get All Groups",
+              "name": "Get All Groups with optional parameters",
               "originalRequest": {
                 "method": "GET",
                 "header": [
