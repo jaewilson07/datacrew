@@ -2120,7 +2120,7 @@
       "name": "Domo Instance Configuration",
       "item": [
         {
-          "name": "Get Domo Configuration - Bootstrap API",
+          "name": "Bootstrap API - Domo Instance Configuration",
           "id": "d6ee0920-d02b-4468-8a9f-813822e04a4b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
