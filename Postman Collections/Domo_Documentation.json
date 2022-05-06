@@ -514,7 +514,7 @@
             },
             {
               "id": "a64211fe-3d03-4693-a0ee-8bc402472526",
-              "name": "Get Dataset by ID",
+              "name": "Connector Dataset Response",
               "originalRequest": {
                 "method": "GET",
                 "header": [
