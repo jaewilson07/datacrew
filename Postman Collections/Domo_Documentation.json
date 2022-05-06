@@ -1012,7 +1012,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Get Dataset by ID",
           "id": "30097141-b2ad-48e3-b195-5700f0441989",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
