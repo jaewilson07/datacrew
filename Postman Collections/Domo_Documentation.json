@@ -2781,7 +2781,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"showCount\": true,\n    \"count\": false,\n    \"includeDeleted\": false,\n    \"includeSupport\": false,\n    \"filters\": [\n      {\n        \"field\": \"id\",\n        \"values\": [\"0\"]\n        \"operator\": \"EQ\",\n        \"filterType\": \"value\"\n      }\n    ]\n  }",
+              "raw": "{\n    \"showCount\": true,\n    \"count\": false,\n    \"includeDeleted\": false,\n    \"includeSupport\": false,\n    \"filters\": [\n      {\n        \"field\": \"id\",\n        \"values\": [\"0\"],\n        \"operator\": \"EQ\",\n        \"filterType\": \"value\"\n      }\n    ]\n  }",
               "options": {
                 "raw": {
                   "language": "json"
