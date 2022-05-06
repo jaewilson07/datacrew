@@ -2874,6 +2874,90 @@
               "cookie": [],
               "responseTime": null,
               "body": "[\n    {\n        \"id\": 0,\n        \"invitorUserId\": 2,\n        \"displayName\": \"monitor\",\n        \"userName\": \"monitor\",\n        \"emailAddress\": \"monitor@domo.com\",\n        \"accepted\": false,\n        \"userType\": \"DOMO_SUPPORT\",\n        \"timeZone\": \"Etc/GMT+7\",\n        \"modified\": 1588877394091,\n        \"created\": 1464820854,\n        \"role\": \"Privileged\",\n        \"roleId\": 1,\n        \"rights\": 31,\n        \"active\": true,\n        \"systemUser\": true,\n        \"anonymous\": true,\n        \"pending\": true\n    }\n   \n]"
+            },
+            {
+              "id": "220db4d1-b3d5-4cc0-b8dd-b96f1bf7f82c",
+              "name": "Search Users",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "x-domo-authentication",
+                    "value": "{{session_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"showCount\": true,\n    \"count\": false,\n    \"includeDeleted\": false,\n    \"includeSupport\": false,\n    \"filters\": [\n      {\n          \"field\" : \"id\",\n          \"filterType\" : \"value\",\n          \"values\" : [\"1069862308\"],\n          \"operator\": \"EQ\"\n\n\n\n\n      }\n    ]\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://{{domo_instance}}.domo.com/api/identity/v1/users/search"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 May 2022 16:55:28 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self';"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"count\": 1,\n    \"users\": [\n        {\n            \"attributes\": [\n                {\n                    \"key\": \"id\",\n                    \"values\": [\n                        1069862308\n                    ]\n                },\n                {\n                    \"key\": \"displayName\",\n                    \"values\": [\n                        \"Iain Congdon - Domo\"\n                    ]\n                },\n                {\n                    \"key\": \"userName\",\n                    \"values\": [\n                        \"iain.congdon@domo.com\"\n                    ]\n                },\n                {\n                    \"key\": \"emailAddress\",\n                    \"values\": [\n                        \"iain.congdon@domo.com\"\n                    ]\n                },\n                {\n                    \"key\": \"roleId\",\n                    \"values\": [\n                        1\n                    ]\n                }\n            ],\n            \"roleId\": 1,\n            \"emailAddress\": \"iain.congdon@domo.com\",\n            \"userName\": \"iain.congdon@domo.com\",\n            \"displayName\": \"Iain Congdon - Domo\",\n            \"id\": 1069862308\n        }\n    ]\n}"
             }
           ]
         }
