@@ -2008,7 +2008,7 @@
       "name": "DataCenter",
       "item": [
         {
-          "name": "New Request",
+          "name": "Query Datacenter",
           "id": "cd86f68d-fb2a-476b-a153-3e329e3d61c2",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
