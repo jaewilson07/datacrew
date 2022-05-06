@@ -2127,7 +2127,38 @@
           },
           "request": {
             "method": "GET",
-            "header": []
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json; charset=utf-8",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://{{domo_instance}}.domo.com/api/domoweb/bootstrap?v2Navigation=true",
+              "protocol": "https",
+              "host": [
+                "{{domo_instance}}",
+                "domo",
+                "com"
+              ],
+              "path": [
+                "api",
+                "domoweb",
+                "bootstrap"
+              ],
+              "query": [
+                {
+                  "key": "v2Navigation",
+                  "value": "true"
+                }
+              ]
+            }
           },
           "response": [
             {
