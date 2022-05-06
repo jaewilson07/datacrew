@@ -2020,7 +2020,7 @@
           "response": [
             {
               "id": "f3a67458-8252-42fc-ab09-08f9e553a12e",
-              "name": "New Request",
+              "name": "Query DataCenter for multple object types",
               "originalRequest": {
                 "method": "POST",
                 "header": [
