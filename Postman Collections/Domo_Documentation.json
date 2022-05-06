@@ -1021,7 +1021,91 @@
             "method": "GET",
             "header": []
           },
-          "response": []
+          "response": [
+            {
+              "id": "1bb4e88b-f600-4417-b169-2740753dd128",
+              "name": "Get Dataset by ID",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "x-domo-authentication",
+                    "value": "{{session_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 May 2022 00:15:07 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self';"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"id\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n    \"displayType\": \"DataFlow\",\n    \"type\": \"DataFlow\",\n    \"name\": \"DomoStats People with Activity Log\",\n    \"owner\": {\n        \"id\": \"1893952720\",\n        \"name\": \"Jae Wilson\",\n        \"type\": \"USER\",\n        \"group\": false\n    },\n    \"status\": \"SUCCESS\",\n    \"created\": 1624432428000,\n    \"lastTouched\": 1651769881000,\n    \"lastUpdated\": 1651769880787,\n    \"rowCount\": 833556,\n    \"columnCount\": 18,\n    \"cardInfo\": {\n        \"cardCount\": 9,\n        \"cardViewCount\": 0\n    },\n    \"properties\": {\n        \"formulas\": {\n            \"formulas\": {\n                \"calculation_534c74ab-37aa-48dc-8322-34bb5784a9f0\": {\n                    \"templateId\": 1109,\n                    \"id\": \"calculation_534c74ab-37aa-48dc-8322-34bb5784a9f0\",\n                    \"name\": \"Content Creation Filter\",\n                    \"formula\": \"(CASE WHEN ((`Object_Type` = 'CARD') AND `Action` IN ('CREATED', 'UPDATED’, ‘ADDED’, ‘DUPLICATED’, ‘SHARED')) THEN 1 WHEN ((`Object_Type` = 'DRILL_VIEW') AND (`Action` = 'ADD_DRILL_VIEW')) THEN 1 WHEN (`Object_Type` IN ('PAGE', 'PAGE_COLLECTION') AND `Action` IN ('CREATED', 'DUPLICATED', 'UPDATED', 'REORDERED CARDS ON')) THEN 1 WHEN ((`Object_Type` = 'DATAFLOW_TYPE') AND `Action` IN ('CREATED', 'UPDATED')) THEN 1 WHEN ((`Object_Type` = 'DATA_SOURCE') AND `Action` IN ('CREATED', 'UPDATED')) THEN 1 WHEN ((`Object_Type` = 'ADC_POLICY') AND (`Action` = 'CREATED')) THEN 1 WHEN ((`Object_Type` = 'BEAST_MODE_FORMULA') AND `Action` IN ('CREATED', 'DELETED', 'UPDATED')) THEN 1 ELSE 0 END)\",\n                    \"status\": \"VALID\",\n                    \"persistedOnDataSource\": true,\n                    \"isAggregatable\": false,\n                    \"bignumber\": false,\n                    \"columnPositions\": [\n                        {\n                            \"columnName\": \"`Object_Type`\",\n                            \"columnPosition\": 13\n                        },\n                        {\n                            \"columnName\": \"`Action`\",\n                            \"columnPosition\": 41\n                        },\n                        {\n                            \"columnName\": \"`Object_Type`\",\n                            \"columnPosition\": 124\n                        },\n                        {\n                            \"columnName\": \"`Action`\",\n                            \"columnPosition\": 159\n                        },\n                        {\n                            \"columnName\": \"`Object_Type`\",\n                            \"columnPosition\": 202\n                        },\n                        {\n                            \"columnName\": \"`Action`\",\n                            \"columnPosition\": 251\n                        },\n                        {\n                            \"columnName\": \"`Object_Type`\",\n                            \"columnPosition\": 337\n                        },\n                        {\n                            \"columnName\": \"`Action`\",\n                            \"columnPosition\": 374\n                        },\n                        {\n                            \"columnName\": \"`Object_Type`\",\n                            \"columnPosition\": 424\n                        },\n                        {\n                            \"columnName\": \"`Action`\",\n                            \"columnPosition\": 459\n                        },\n                        {\n                            \"columnName\": \"`Object_Type`\",\n                            \"columnPosition\": 509\n                        },\n                        {\n                            \"columnName\": \"`Action`\",\n                            \"columnPosition\": 544\n                        },\n                        {\n                            \"columnName\": \"`Object_Type`\",\n                            \"columnPosition\": 581\n                        },\n                        {\n                            \"columnName\": \"`Action`\",\n                            \"columnPosition\": 623\n                        }\n                    ]\n                },\n                \"calculation_5ad1b149-fcda-497d-87d0-5d95c016c2af\": {\n                    \"templateId\": 1102,\n                    \"id\": \"calculation_5ad1b149-fcda-497d-87d0-5d95c016c2af\",\n                    \"name\": \"Date of Event Time\",\n                    \"formula\": \"DATE(`Event_Time`)\",\n                    \"status\": \"VALID\",\n                    \"persistedOnDataSource\": true,\n                    \"isAggregatable\": false,\n                    \"bignumber\": false,\n                    \"columnPositions\": [\n                        {\n                            \"columnName\": \"`Event_Time`\",\n                            \"columnPosition\": 5\n                        }\n                    ]\n                }\n            }\n        }\n    },\n    \"validConfiguration\": true,\n    \"validAccount\": true,\n    \"adc\": true,\n    \"adcExternal\": false,\n    \"cloudId\": \"domo\",\n    \"cloudName\": \"Domo\",\n    \"permissions\": \"READ_WRITE_DELETE_SHARE_ADMIN\",\n    \"hidden\": false,\n    \"tags\": \"[\\\"s_domostats\\\",\\\"domoStats\\\",\\\"domostats\\\",\\\"c_people\\\"]\",\n    \"cryoStatus\": \"ADRENALINE\"\n}"
+            }
+          ]
         }
       ],
       "id": "87e12295-1ca7-42ec-80d7-8c8943dd17e8"
