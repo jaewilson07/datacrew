@@ -2674,7 +2674,7 @@
           "response": [
             {
               "id": "43fcc8b8-d153-4329-9879-1562b5eab4e6",
-              "name": "Get All Users",
+              "name": "Get All Users - exampe",
               "originalRequest": {
                 "method": "GET",
                 "header": [
