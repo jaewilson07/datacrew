@@ -2763,6 +2763,110 @@
               "body": "[\n    {\n        \"id\": 0,\n        \"invitorUserId\": 2,\n        \"displayName\": \"monitor\",\n        \"userName\": \"monitor\",\n        \"emailAddress\": \"monitor@domo.com\",\n        \"accepted\": false,\n        \"userType\": \"DOMO_SUPPORT\",\n        \"timeZone\": \"Etc/GMT+7\",\n        \"modified\": 1588877394091,\n        \"created\": 1464820854,\n        \"role\": \"Privileged\",\n        \"roleId\": 1,\n        \"rights\": 31,\n        \"active\": true,\n        \"systemUser\": true,\n        \"anonymous\": true,\n        \"pending\": true\n    }\n   \n]"
             }
           ]
+        },
+        {
+          "name": "Search Users",
+          "id": "2a9510ee-f07d-41b5-b95d-540de4a77e25",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{domo_instance}}.domo.com/api/content/v2/users",
+            "description": "#### Description (usage)\n\nGet the list of users\n\n#### **UI reference**\n\nAdmin section -> People\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934314-Generating-a-List-of-Users)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of users with properties\n    \n\nPlease refer to the example below:"
+          },
+          "response": [
+            {
+              "id": "89c38cf0-0a29-48fc-bcbb-629ce6a4b821",
+              "name": "Get All Users - exampe",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "x-domo-authentication",
+                    "value": "{{session_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": "https://{{domo_instance}}.domo.com/api/content/v2/users"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 06 May 2022 16:24:27 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self';"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding, User-Agent"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"id\": 0,\n        \"invitorUserId\": 2,\n        \"displayName\": \"monitor\",\n        \"userName\": \"monitor\",\n        \"emailAddress\": \"monitor@domo.com\",\n        \"accepted\": false,\n        \"userType\": \"DOMO_SUPPORT\",\n        \"timeZone\": \"Etc/GMT+7\",\n        \"modified\": 1588877394091,\n        \"created\": 1464820854,\n        \"role\": \"Privileged\",\n        \"roleId\": 1,\n        \"rights\": 31,\n        \"active\": true,\n        \"systemUser\": true,\n        \"anonymous\": true,\n        \"pending\": true\n    }\n   \n]"
+            }
+          ]
         }
       ],
       "id": "9d632591-53a3-429d-b358-4232e3fba85e",
