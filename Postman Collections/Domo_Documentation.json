@@ -2661,7 +2661,7 @@
       "name": "User",
       "item": [
         {
-          "name": "New Request",
+          "name": "Get All Users",
           "id": "713bb6e1-c36f-48d7-9292-606fb6d3453c",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
