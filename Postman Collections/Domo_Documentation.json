@@ -2692,7 +2692,36 @@
           ]
         }
       ],
-      "id": "6a0f34da-4182-41e5-b458-c5552f0f72ee"
+      "id": "6a0f34da-4182-41e5-b458-c5552f0f72ee",
+      "auth": {
+        "type": "apikey",
+        "apikey": {
+          "value": "{{session_token}}",
+          "key": "x-domo-authentication"
+        }
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "dc8ad807-a681-4d51-befb-a4632315eee8",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "d49bd4fc-49f0-4e7a-8a8d-ef80d7adbbd7",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
     },
     {
       "name": "User",
