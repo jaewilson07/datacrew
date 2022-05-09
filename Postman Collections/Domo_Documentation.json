@@ -3542,7 +3542,20 @@
     },
     {
       "name": "Governance",
-      "item": [],
+      "item": [
+        {
+          "name": "New Request",
+          "id": "8167a008-3b39-43e7-8eb4-a042cef8d177",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ],
       "id": "8ff6ea67-c24c-48a0-b7a1-810b493c6a30"
     }
   ]
