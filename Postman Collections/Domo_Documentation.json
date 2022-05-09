@@ -3293,7 +3293,8 @@
           },
           "request": {
             "method": "GET",
-            "header": []
+            "header": [],
+            "url": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows"
           },
           "response": []
         }
