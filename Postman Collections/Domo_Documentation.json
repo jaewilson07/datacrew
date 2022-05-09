@@ -1367,7 +1367,8 @@
                 }
               }
             },
-            "url": "https://{{domo_instance}}.domo.com/api/query/v1/execute/{{dataset_id}}"
+            "url": "https://{{domo_instance}}.domo.com/api/query/v1/execute/{{dataset_id}}",
+            "description": "#### Description (usage)\n\nQuery Dataset by SQL Query in the body.\n\n**UI reference**\n\nN/A\n\n#### **Ressources**\n\nN/A\n\n#### Required parameters\n\n*   Dataset ID\n*   **SQL Query**\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Output table the result of query\n    \n\nPlease refer to the example below:"
           },
           "response": [
             {
