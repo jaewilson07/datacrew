@@ -3293,7 +3293,13 @@
           },
           "request": {
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              }
+            ],
             "url": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows"
           },
           "response": []
