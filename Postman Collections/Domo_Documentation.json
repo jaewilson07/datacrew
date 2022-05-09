@@ -3286,7 +3286,7 @@
       "name": "Dataflow",
       "item": [
         {
-          "name": "Get Dataflows",
+          "name": "Get All Dataflows",
           "id": "d666f445-0dd7-40fc-bfd0-5f2c51f1c9b4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
