@@ -1120,7 +1120,7 @@
                 }
               ]
             },
-            "description": "Go to the dataset's data lineage page to monitor network traffic.\n\n**traverseDown** \\= false will retrieve the upstream or ancestor objects for the datasource.\n\n*   Note lineage will also include the current object in the response\n    \n\n**traverseUp** \\= false will retrieve the downstream"
+            "description": "#### Description (usage)\n\nGet Data Lineage by Dataset ID.\n\n#### **UI reference**\n\nLeft bar menu -> Datasets -> Lineage\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042926234-Viewing-the-Impact-of-Changes-to-DataSets)\n\n#### Required parameters\n\n*   Dataset ID\n*   **traverseDown** = false will retrieve the upstream or ancestor objects for the datasource.\n*   **traverseUp** = false will retrieve the downstream\n*   maxDepth Number of levels to get\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Dataset lineage with cards, dataflows,, etc.\n    \n\n*   Note lineage will also include the current object in the response\n    \n\nPlease refer to the example below:"
           },
           "response": [
             {
