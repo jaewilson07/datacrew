@@ -3429,7 +3429,113 @@
             },
             "description": "#### Description (usage)\n\nGet the list of all dataflows from instance\n\n#### **UI reference**\n\nLeft bar menu -> Dataflows\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/sections/360007295494-DataFlow-Management)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of dataflows with dataset inputs and outputs with properties\n    \n\nPlease refer to the example below:"
           },
-          "response": []
+          "response": [
+            {
+              "id": "36ecdeb2-8c30-4a6d-80d7-4a2b43a965cb",
+              "name": "Get Dataflow by Id",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "x-domo-authentication",
+                    "value": "{{session_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows/:id",
+                  "protocol": "https",
+                  "host": [
+                    "{{domo_instance}}",
+                    "domo",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "dataprocessing",
+                    "v1",
+                    "dataflows",
+                    ":id"
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "{{dataflow_id}}",
+                      "description": "Dataflow id   "
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 09 May 2022 09:22:19 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self';"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"id\": 60,\n    \"name\": \"DomoStats People with Activity Log\",\n    \"dapDataFlowId\": \"33c46931-4f9b-4834-91ec-82359da4e777\",\n    \"responsibleUserId\": 1893952720,\n    \"runState\": \"ENABLED\",\n    \"onboardFlowVersion\": {\n        \"id\": 242,\n        \"timeStamp\": 1624449225000,\n        \"authorId\": 1893952720,\n        \"numInputs\": 2,\n        \"numOutputs\": 1,\n        \"executionCount\": 0,\n        \"executionSuccessCount\": 0,\n        \"versionNumber\": 4\n    },\n    \"lastExecution\": {\n        \"id\": 162077,\n        \"onboardFlowId\": 60,\n        \"previewRows\": 0,\n        \"dapDataFlowExecutionId\": \"19ddcae5-4d1e-45b6-b04c-ac6fe2076006\",\n        \"beginTime\": 1652028913000,\n        \"endTime\": 1652029078000,\n        \"lastUpdated\": 1652029078000,\n        \"failed\": false,\n        \"state\": \"SUCCESS\",\n        \"dataFlowVersion\": 0\n    },\n    \"created\": 1624432428000,\n    \"modified\": 1624449224000,\n    \"actions\": [\n        {\n            \"type\": \"LoadFromVault\",\n            \"id\": \"0\",\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            },\n            \"targetTableName\": \"activity_log\",\n            \"dataSourceId\": \"61c4e63d-0627-41f7-b138-74968ebd7634\",\n            \"executeFlowWhenUpdated\": true,\n            \"pseudoDataSource\": false,\n            \"truncateTextColumns\": false,\n            \"truncateRows\": false,\n            \"onlyLoadNewVersions\": false\n        },\n        {\n            \"type\": \"LoadFromVault\",\n            \"id\": \"1\",\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            },\n            \"targetTableName\": \"people\",\n            \"dataSourceId\": \"241025d7-3cca-4369-b7c0-b3264277c0e1\",\n            \"executeFlowWhenUpdated\": true,\n            \"pseudoDataSource\": false,\n            \"truncateTextColumns\": false,\n            \"truncateRows\": false,\n            \"onlyLoadNewVersions\": false\n        },\n        {\n            \"type\": \"SqlAction\",\n            \"id\": \"2\",\n            \"dependsOn\": [\n                \"0\",\n                \"1\"\n            ],\n            \"notes\": [],\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            },\n            \"statements\": [\n                \"CREATE INDEX activity_user_id ON activity_log(`User_ID`)\"\n            ],\n            \"columnSettings\": {}\n        },\n        {\n            \"type\": \"SqlAction\",\n            \"id\": \"3\",\n            \"dependsOn\": [\n                \"2\"\n            ],\n            \"notes\": [],\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            },\n            \"statements\": [\n                \"CREATE INDEX people_user_id ON people(`User ID`)\"\n            ],\n            \"columnSettings\": {}\n        },\n        {\n            \"type\": \"GenerateTableAction\",\n            \"id\": \"4\",\n            \"dependsOn\": [\n                \"3\"\n            ],\n            \"tableName\": \"people_with_activity_log\",\n            \"selectStatement\": \"SELECT \\nb.`Display Name`\\n, b.`Role`\\n, b.`User ID`\\n, b.`Created Date`\\n, b.`Department`\\n, b.`Email`\\n, a.`Type`\\n, a.`Source_ID`\\n, a.`Action`\\n, a.`Object_Type`\\n, a.`Object_ID`\\n, a.`Object_Name`\\n, a.`IP_Address`\\n, a.`Event_Time`\\n, a.`Device`\\n, a.`Browser_Details`\\n, b.`Last Login`\\nFROM activity_log a\\nLEFT JOIN\\npeople b\\nON a.`User_ID` = b.`User ID`\\nWHERE a.`Type` = UPPER('USER')\",\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            }\n        },\n        {\n            \"type\": \"PublishToVault\",\n            \"id\": \"5\",\n            \"dependsOn\": [\n                \"4\"\n            ],\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            },\n            \"query\": \"SELECT \\n`Display Name`\\n,`Role`\\n,`User ID`\\n,`Created Date`\\n,`Department`\\n,`Email`\\n,`Type`\\n,`Source_ID`\\n,`Action`\\n,`Object_Type`\\n,`Object_ID`\\n,`Object_Name`\\n,`IP_Address`\\n,`Event_Time`\\n,`Device`\\n,`Browser_Details`\\n,`Last Login`\\n, cast(`Event_Time` as Date) `Event_Date`\\nFROM people_with_activity_log\",\n            \"dataSource\": {\n                \"guid\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n                \"type\": \"DataFlow\",\n                \"name\": \"DomoStats People with Activity Log\"\n            },\n            \"versionChainType\": \"REPLACE\",\n            \"schemaSource\": \"DATAFLOW\",\n            \"partitioned\": false\n        }\n    ],\n    \"engineProperties\": {\n        \"mysql.mode\": \"DEFAULT\"\n    },\n    \"inputs\": [\n        {\n            \"dataSourceId\": \"241025d7-3cca-4369-b7c0-b3264277c0e1\",\n            \"executeFlowWhenUpdated\": true,\n            \"dataSourceName\": \"DomoStats - People\",\n            \"onlyLoadNewVersions\": false\n        },\n        {\n            \"dataSourceId\": \"61c4e63d-0627-41f7-b138-74968ebd7634\",\n            \"executeFlowWhenUpdated\": true,\n            \"dataSourceName\": \"DomoStats - Activity Log\",\n            \"onlyLoadNewVersions\": false\n        }\n    ],\n    \"outputs\": [\n        {\n            \"onboardFlowId\": null,\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"dataSourceName\": \"DomoStats People with Activity Log\",\n            \"versionChainType\": \"REPLACE\"\n        }\n    ],\n    \"executionCount\": 184,\n    \"executionSuccessCount\": 184,\n    \"hydrationState\": \"DEHYDRATED\",\n    \"useLegacyTriggerBehavior\": false,\n    \"passwordProtected\": false,\n    \"deleted\": false,\n    \"abandoned\": false,\n    \"neverAbandon\": false,\n    \"settings\": {},\n    \"paused\": false,\n    \"magic\": false,\n    \"restricted\": false,\n    \"editable\": true,\n    \"enabled\": true,\n    \"container\": false,\n    \"databaseType\": \"MYSQL\",\n    \"triggeredByInput\": true,\n    \"draft\": false,\n    \"numInputs\": 2,\n    \"numOutputs\": 1\n}"
+            }
+          ]
         }
       ],
       "id": "77a2a0ef-e029-4b17-8d03-4a5f0fbd7f21"
