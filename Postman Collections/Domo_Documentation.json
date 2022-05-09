@@ -3405,7 +3405,7 @@
               }
             ],
             "url": {
-              "raw": "https://{{domo_instance}}.domo.com/datacenter/dataflows/:id/details#datasets",
+              "raw": "https://{{domo_instance}}.domo.com/datacenter/dataflows/:id",
               "protocol": "https",
               "host": [
                 "{{domo_instance}}",
@@ -3415,10 +3415,8 @@
               "path": [
                 "datacenter",
                 "dataflows",
-                ":id",
-                "details"
+                ":id"
               ],
-              "hash": "datasets",
               "variable": [
                 {
                   "key": "id",
