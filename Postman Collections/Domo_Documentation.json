@@ -3584,7 +3584,7 @@
           "response": [
             {
               "id": "9f1494ec-ad22-44e7-aab4-a21ed7d459da",
-              "name": "Get IP Whitelist",
+              "name": "Get IP Whitelist - example of empty array",
               "originalRequest": {
                 "method": "GET",
                 "header": [
