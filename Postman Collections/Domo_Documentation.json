@@ -1369,7 +1369,92 @@
             },
             "url": "https://{{domo_instance}}.domo.com/api/query/v1/execute/{{dataset_id}}"
           },
-          "response": []
+          "response": [
+            {
+              "id": "e3925647-7b8d-453b-9f13-938f2388040f",
+              "name": "KO - Query Dataset with SQL",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "x-domo-authentication",
+                    "value": "{{session_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{ \"sql\": \"select * from table limit 5\" }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://{{domo_instance}}.domo.com/api/query/v1/execute/{{dataset_id}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 09 May 2022 14:54:35 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "3844"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self';"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"datasource\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n    \"device\": \"ad3-prod1-40\",\n    \"queryUrl\": \"/query/mmmm-0012-0200/94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n    \"columns\": [\n        \"Display Name\",\n        \"Role\",\n        \"User ID\",\n        \"Created Date\",\n        \"Department\",\n        \"Email\",\n        \"Type\",\n        \"Source_ID\",\n        \"Action\",\n        \"Object_Type\",\n        \"Object_ID\",\n        \"Object_Name\",\n        \"IP_Address\",\n        \"Event_Time\",\n        \"Device\",\n        \"Browser_Details\",\n        \"Last Login\",\n        \"Event_Date\"\n    ],\n    \"metadata\": [\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"DATETIME\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"DATETIME\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"DATETIME\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"DATE\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        }\n    ],\n    \"fromcache\": \"false\",\n    \"numColumns\": 18,\n    \"rows\": [\n        [\n            \"Bryan Van Kampen\",\n            \"Admin\",\n            \"587894148\",\n            \"2020-05-07T17:57:47\",\n            \"BT Partners\",\n            \"BVanKampen@btpartners.com\",\n            \"USER\",\n            \"587894148\",\n            \"VIEWED\",\n            \"PAGE\",\n            \"522373865\",\n            \"Learn Domo\",\n            \"\",\n            \"2020-05-15T16:57:36\",\n            \"desktop\",\n            \"\",\n            \"2022-04-29T16:15:24\",\n            \"2020-05-15\"\n        ],\n        [\n            \"Robyn Linden\",\n            \"Editor\",\n            \"1446165056\",\n            \"2020-05-08T17:55:25\",\n            \"\",\n            \"Robyn.Linden@broadwayacrossamerica.com\",\n            \"USER\",\n            \"1446165056\",\n            \"VIEWED\",\n            \"PAGE\",\n            \"30507758\",\n            \"Welcome\",\n            \"\",\n            \"2020-05-15T16:57:37\",\n            \"desktop\",\n            \"\",\n            \"2021-11-16T23:33:16\",\n            \"2020-05-15\"\n        ],\n        [\n            \"Robyn Linden\",\n            \"Editor\",\n            \"1446165056\",\n            \"2020-05-08T17:55:25\",\n            \"\",\n            \"Robyn.Linden@broadwayacrossamerica.com\",\n            \"USER\",\n            \"1446165056\",\n            \"VIEWED\",\n            \"PAGE\",\n            \"1845973736\",\n            \"DomoStats Activity Log\",\n            \"\",\n            \"2020-05-15T16:57:42\",\n            \"desktop\",\n            \"\",\n            \"2021-11-16T23:33:16\",\n            \"2020-05-15\"\n        ],\n        [\n            \"Bryan Van Kampen\",\n            \"Admin\",\n            \"587894148\",\n            \"2020-05-07T17:57:47\",\n            \"BT Partners\",\n            \"BVanKampen@btpartners.com\",\n            \"USER\",\n            \"587894148\",\n            \"VIEWED\",\n            \"PAGE\",\n            \"127044793\",\n            \"JaeW_AtOnyx\",\n            \"\",\n            \"2020-05-15T16:58:02\",\n            \"desktop\",\n            \"\",\n            \"2022-04-29T16:15:24\",\n            \"2020-05-15\"\n        ],\n        [\n            \"Ashleigh Stevenson\",\n            \"Editor\",\n            \"1768567034\",\n            \"2020-05-08T17:55:24\",\n            \"\",\n            \"Ashleigh.Stevenson@caemilusa.com\",\n            \"USER\",\n            \"1768567034\",\n            \"VIEWED\",\n            \"PAGE\",\n            \"30507758\",\n            \"Welcome\",\n            \"\",\n            \"2020-05-15T16:58:46\",\n            \"desktop\",\n            \"\",\n            \"2022-03-11T17:37:29\",\n            \"2020-05-15\"\n        ]\n    ],\n    \"numRows\": 5,\n    \"duration\": \"133\"\n}"
+            }
+          ]
         }
       ],
       "id": "87e12295-1ca7-42ec-80d7-8c8943dd17e8"
