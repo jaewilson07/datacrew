@@ -3604,7 +3604,7 @@
           "response": []
         },
         {
-          "name": "Get Company Pages Copy",
+          "name": "Get Company Cards",
           "id": "cfd2e4f8-2e67-4a8a-a27f-48400ac1f7fd",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
