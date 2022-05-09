@@ -2955,7 +2955,20 @@
     },
     {
       "name": "Cards",
-      "item": [],
+      "item": [
+        {
+          "name": "New Request",
+          "id": "8c533210-e69b-4515-8db4-558593979165",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ],
       "id": "0a57d077-cac2-4425-8d32-20c623f7bd7f"
     }
   ]
