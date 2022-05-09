@@ -3422,7 +3422,7 @@
               "variable": [
                 {
                   "key": "id",
-                  "value": null
+                  "value": "{{dataflow_id}}"
                 }
               ]
             },
