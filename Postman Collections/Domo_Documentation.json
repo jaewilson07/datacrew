@@ -1934,7 +1934,8 @@
                 "type": "text"
               }
             ],
-            "url": "https://{{domo_instance}}.domo.com/api/publish/v2/publication"
+            "url": "https://{{domo_instance}}.domo.com/api/publish/v2/publication",
+            "description": "#### Description (usage)\n\nGet all publish jobs from Domo instance\n\n#### **UI reference**\n\nAdmin -> Domo everywhere -> Publish\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/4403486465687-Domo-Everywhere-Launch-Page#4.)\n\n#### Required parameters\n\n*   Dataset id\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   PDP Group with all properties\n    \n\nPlease refer to the example below:"
           },
           "response": []
         },
