@@ -3045,7 +3045,36 @@
               "name": "Get Card List",
               "originalRequest": {
                 "method": "GET",
-                "header": []
+                "header": [],
+                "url": {
+                  "raw": "https://{{domo_instance}}/api/content/v2/cards/adminsummary?offset={{offest}}&limit={{limit}}&x-domo-authentication={{session_token}}",
+                  "protocol": "https",
+                  "host": [
+                    "{{domo_instance}}"
+                  ],
+                  "path": [
+                    "api",
+                    "content",
+                    "v2",
+                    "cards",
+                    "adminsummary"
+                  ],
+                  "query": [
+                    {
+                      "key": "offset",
+                      "value": "{{offest}}"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "{{limit}}"
+                    },
+                    {
+                      "key": "x-domo-authentication",
+                      "value": "{{session_token}}",
+                      "type": "text"
+                    }
+                  ]
+                }
               },
               "_postman_previewlanguage": null,
               "header": null,
