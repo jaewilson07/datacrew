@@ -3005,7 +3005,21 @@
             "method": "GET",
             "header": []
           },
-          "response": []
+          "response": [
+            {
+              "id": "dbd7ab05-ed98-4a8a-a030-46c10dc969f1",
+              "name": "Get Card List",
+              "originalRequest": {
+                "method": "GET",
+                "header": []
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "responseTime": null,
+              "body": null
+            }
+          ]
         },
         {
           "name": "Get Card Details",
