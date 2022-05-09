@@ -1718,7 +1718,8 @@
                 }
               }
             },
-            "url": "https://{{domo_instance}}.domo.com/api/query/v1/data-control/{{dataset_id}}/filter-groups/{{filter_group_id}}"
+            "url": "https://{{domo_instance}}.domo.com/api/query/v1/data-control/{{dataset_id}}/filter-groups/{{filter_group_id}}",
+            "description": "#### Description (usage)\n\nUpdate PDP Groups for specified dataset id and for specified policy-group-id. Policy parameters are specified in the body\n\n#### **UI reference**\n\nLeft bar menu -> Datasets -> PDP\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934614-Creating-and-Deleting-PDP-Policies)\n\n#### Required parameters\n\n*   Dataset id\n*   Filter-group-id\n*   Body (please refer to example)\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Update of PDP Group with all properties\n    \n\nPlease refer to the example below:"
           },
           "response": [
             {
