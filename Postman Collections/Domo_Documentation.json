@@ -1112,7 +1112,7 @@
             },
             {
               "id": "3cf18550-e5eb-437c-add4-95200fcbe821",
-              "name": "Search Data Sources",
+              "name": "Get Certified Datasets",
               "originalRequest": {
                 "method": "POST",
                 "header": [
