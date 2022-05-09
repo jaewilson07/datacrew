@@ -3305,7 +3305,7 @@
           "response": [
             {
               "id": "00b25db8-5422-4f90-af3a-b8b471c9e7c6",
-              "name": "Get All Dataflows",
+              "name": "Get All dataflows - example",
               "originalRequest": {
                 "method": "GET",
                 "header": [
