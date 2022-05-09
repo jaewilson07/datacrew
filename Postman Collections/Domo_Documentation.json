@@ -1372,7 +1372,7 @@
           "response": [
             {
               "id": "e3925647-7b8d-453b-9f13-938f2388040f",
-              "name": "KO - Query Dataset with SQL",
+              "name": "Query Dataset with SQL - sample",
               "originalRequest": {
                 "method": "POST",
                 "header": [
