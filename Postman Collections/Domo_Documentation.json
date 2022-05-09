@@ -3199,7 +3199,38 @@
           },
           "request": {
             "method": "GET",
-            "header": []
+            "header": [],
+            "url": {
+              "raw": "https://{{domo_instance}}/api/social/v4/alerts?all=true&fields=all&limit={{limit}}&offset={{offset}}",
+              "protocol": "https",
+              "host": [
+                "{{domo_instance}}"
+              ],
+              "path": [
+                "api",
+                "social",
+                "v4",
+                "alerts"
+              ],
+              "query": [
+                {
+                  "key": "all",
+                  "value": "true"
+                },
+                {
+                  "key": "fields",
+                  "value": "all"
+                },
+                {
+                  "key": "limit",
+                  "value": "{{limit}}"
+                },
+                {
+                  "key": "offset",
+                  "value": "{{offset}}"
+                }
+              ]
+            }
           },
           "response": []
         }
