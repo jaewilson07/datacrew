@@ -3036,8 +3036,47 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
-            "header": []
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"includeCardCertificationClause\":true,\"cardCertification\":[{\"state\":\"CERTIFIED\"}],\"includeCardTypeClause\":true,\"cardTypes\":[\"kpi\",\"badge\"],\"ascending\":false,\"orderBy\":\"lastModified\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://{{domo_instance}}/api/content/v2/cards/adminsummary?offset={{offest}}&limit={{limit}}",
+              "protocol": "https",
+              "host": [
+                "{{domo_instance}}"
+              ],
+              "path": [
+                "api",
+                "content",
+                "v2",
+                "cards",
+                "adminsummary"
+              ],
+              "query": [
+                {
+                  "key": "offset",
+                  "value": "{{offest}}"
+                },
+                {
+                  "key": "limit",
+                  "value": "{{limit}}"
+                }
+              ]
+            }
           },
           "response": [
             {
