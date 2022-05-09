@@ -3564,6 +3564,26 @@
           "response": []
         },
         {
+          "name": "Get Company Settings",
+          "id": "1d0ba38a-df98-4cf3-a516-7cc4488e5268",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{domo_instance}}.domo.com/api/content/v1/customer-states/authorized-domains",
+            "description": "#### Description (usage)\n\nGet the list of all authorized domains from instance\n\n#### **UI reference**\n\nAdmin -> Invite authorized domains\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934534-Specifying-Authorized-Domains-for-Invited-Users)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of authorized domains for invited users\n    \n\nPlease refer to the example below:"
+          },
+          "response": []
+        },
+        {
           "name": "Get IP Whitelist",
           "id": "1c24b129-9232-4d8d-bde9-2e79637f320b",
           "protocolProfileBehavior": {
