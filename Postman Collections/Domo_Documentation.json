@@ -2838,7 +2838,7 @@
             },
             {
               "id": "d67ad100-b8d0-4e30-9069-0f7b203e9d1a",
-              "name": "Search Users",
+              "name": "search by email",
               "originalRequest": {
                 "method": "POST",
                 "header": [
