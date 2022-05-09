@@ -3192,7 +3192,7 @@
       "name": "Alerts",
       "item": [
         {
-          "name": "New Request",
+          "name": "List Alerts",
           "id": "0fef4b55-8202-4ad4-8853-39f7a953484e",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
