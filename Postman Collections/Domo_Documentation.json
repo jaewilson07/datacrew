@@ -3581,7 +3581,99 @@
             "url": "https://{{domo_instance}}.domo.com/admin/companysettings/whitelist",
             "description": "#### Description (usage)\n\nGet the list of all authorized domains from instance\n\n#### **UI reference**\n\nAdmin -> Invite authorized domains\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934534-Specifying-Authorized-Domains-for-Invited-Users)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of authorized domains for invited users\n    \n\nPlease refer to the example below:"
           },
-          "response": []
+          "response": [
+            {
+              "id": "9f1494ec-ad22-44e7-aab4-a21ed7d459da",
+              "name": "Get IP Whitelist",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "x-domo-authentication",
+                    "value": "{{session_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": "https://{{domo_instance}}.domo.com/admin/companysettings/whitelist"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 09 May 2022 09:39:59 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "18"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache,no-store, must-revalidate"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self';"
+                },
+                {
+                  "key": "Expires",
+                  "value": "Thu, 01 Jan 1970 00:00:00 GMT"
+                },
+                {
+                  "key": "P3p",
+                  "value": "CP='This is not a P3P policy! See https://www.domo.com/company/privacy-policy for more info.'"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Set-Cookie",
+                  "value": "SESSION_TOE=8CV1QUL50E; Path=/; Secure; SameSite=None"
+                },
+                {
+                  "key": "Set-Cookie",
+                  "value": "PLAY_ERRORS=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; HttpOnly; Secure; SameSite=None"
+                },
+                {
+                  "key": "Set-Cookie",
+                  "value": "PLAY_FLASH=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; HttpOnly; Secure; SameSite=None"
+                },
+                {
+                  "key": "Set-Cookie",
+                  "value": "PLAY_SESSION=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; HttpOnly; Secure; SameSite=None"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"addresses\": [\n        \"\"\n    ]\n}"
+            }
+          ]
         }
       ],
       "id": "8ff6ea67-c24c-48a0-b7a1-810b493c6a30"
