@@ -2835,6 +2835,90 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"count\": 1,\n    \"users\": [\n        {\n            \"attributes\": [\n                {\n                    \"key\": \"id\",\n                    \"values\": [\n                        1069862308\n                    ]\n                },\n                {\n                    \"key\": \"displayName\",\n                    \"values\": [\n                        \"Thomas Brown\"\n                    ]\n                },\n                {\n                    \"key\": \"userName\",\n                    \"values\": [\n                        \"Thomas.Brown@everywhere.com\"\n                    ]\n                },\n                {\n                    \"key\": \"emailAddress\",\n                    \"values\": [\n                        \"Thomas.Brown@everywhere.com\"\n                    ]\n                },\n                {\n                    \"key\": \"roleId\",\n                    \"values\": [\n                        1\n                    ]\n                }\n            ],\n            \"roleId\": 1,\n            \"emailAddress\": \"Thomas.Brown@everywhere.com\",\n            \"userName\": \"Thomas.Brown@everywhere.com\",\n            \"displayName\": \"Thomas\",\n            \"id\": 1069862308\n        }\n    ]\n}"
+            },
+            {
+              "id": "d67ad100-b8d0-4e30-9069-0f7b203e9d1a",
+              "name": "Search Users",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "x-domo-authentication",
+                    "value": "{{session_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"showCount\": true,\n    \"count\": false,\n    \"includeDeleted\": false,\n    \"includeSupport\": false,\n    \"limit\": 200,\n    \"offset\": 0,\n    \"sort\": {\n        \"field\": \"displayName\",\n        \"order\": \"ASC\"\n    },\n    \"filters\": [\n        {\n            \"filterType\": \"text\",\n            \"field\" : \"emailAddress\",\n            \"text\": \"iain.congdon@domo.com\"\n        }\n    ]\n\n}\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://{{domo_instance}}.domo.com/api/identity/v1/users/search"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 09 May 2022 18:58:23 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self';"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"count\": 1,\n    \"users\": [\n        {\n            \"attributes\": [\n                {\n                    \"key\": \"id\",\n                    \"values\": [\n                        1069862308\n                    ]\n                },\n                {\n                    \"key\": \"displayName\",\n                    \"values\": [\n                        \"Iain Congdon - Domo\"\n                    ]\n                },\n                {\n                    \"key\": \"userName\",\n                    \"values\": [\n                        \"iain.congdon@domo.com\"\n                    ]\n                },\n                {\n                    \"key\": \"emailAddress\",\n                    \"values\": [\n                        \"iain.congdon@domo.com\"\n                    ]\n                },\n                {\n                    \"key\": \"roleId\",\n                    \"values\": [\n                        1\n                    ]\n                }\n            ],\n            \"roleId\": 1,\n            \"emailAddress\": \"iain.congdon@domo.com\",\n            \"userName\": \"iain.congdon@domo.com\",\n            \"displayName\": \"Iain Congdon - Domo\",\n            \"id\": 1069862308\n        }\n    ]\n}"
             }
           ]
         }
