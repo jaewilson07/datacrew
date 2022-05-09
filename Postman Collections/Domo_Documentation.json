@@ -3232,7 +3232,52 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "id": "2b946f8f-b44c-4c89-a218-2445e4716416",
+              "name": "List Alerts",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://{{domo_instance}}/api/social/v4/alerts?all=true&fields=all&limit={{limit}}&offset={{offset}}",
+                  "protocol": "https",
+                  "host": [
+                    "{{domo_instance}}"
+                  ],
+                  "path": [
+                    "api",
+                    "social",
+                    "v4",
+                    "alerts"
+                  ],
+                  "query": [
+                    {
+                      "key": "all",
+                      "value": "true"
+                    },
+                    {
+                      "key": "fields",
+                      "value": "all"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "{{limit}}"
+                    },
+                    {
+                      "key": "offset",
+                      "value": "{{offset}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "responseTime": null,
+              "body": null
+            }
+          ]
         }
       ],
       "id": "880a1c2c-d3b2-4177-8f82-0542a3ef8f0b"
