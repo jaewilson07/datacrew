@@ -3031,7 +3031,21 @@
             "method": "GET",
             "header": []
           },
-          "response": []
+          "response": [
+            {
+              "id": "399de3e7-8734-42b8-8118-29bb4b43878e",
+              "name": "Get Card Details",
+              "originalRequest": {
+                "method": "GET",
+                "header": []
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "responseTime": null,
+              "body": null
+            }
+          ]
         }
       ],
       "id": "0a57d077-cac2-4425-8d32-20c623f7bd7f"
