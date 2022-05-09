@@ -3584,7 +3584,7 @@
           "response": []
         },
         {
-          "name": "Get Admin Pages",
+          "name": "Get Company Pages",
           "id": "9c961cf4-5aea-46c8-88b9-974c763afd40",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
