@@ -2969,7 +2969,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Get Card Details",
           "id": "e114980b-3353-4642-992c-a9a0a4668eff",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
