@@ -3284,7 +3284,20 @@
     },
     {
       "name": "Dataflow",
-      "item": [],
+      "item": [
+        {
+          "name": "New Request",
+          "id": "d666f445-0dd7-40fc-bfd0-5f2c51f1c9b4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ],
       "id": "77a2a0ef-e029-4b17-8d03-4a5f0fbd7f21"
     }
   ]
