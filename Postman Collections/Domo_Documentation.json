@@ -2991,7 +2991,7 @@
       "name": "Page",
       "item": [
         {
-          "name": "New Request",
+          "name": "Get Pages",
           "id": "8c485ef7-11c5-4843-b068-ed964b6e9c3f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
