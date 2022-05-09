@@ -3604,6 +3604,26 @@
           "response": []
         },
         {
+          "name": "Get Company Pages Copy",
+          "id": "cfd2e4f8-2e67-4a8a-a27f-48400ac1f7fd",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-domo-authentication",
+                "value": "{{session_token}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{domo_instance}}.domo.com/api/content/v2/cards/adminsummary",
+            "description": "#### Description (usage)\n\nGet the Company pages from Domo instance\n\n#### **UI reference**\n\nAdmin -> Company Settings -> Company pages\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934414-Adding-Company-Pages)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of company pages\n    \n\nPlease refer to the example below:"
+          },
+          "response": []
+        },
+        {
           "name": "Get IP Whitelist",
           "id": "1c24b129-9232-4d8d-bde9-2e79637f320b",
           "protocolProfileBehavior": {
