@@ -2440,7 +2440,8 @@
                   "value": "true"
                 }
               ]
-            }
+            },
+            "description": "#### Description (usage)\n\nGet the Domo Instance configuration details with enabled features\n\n#### **UI reference**\n\nN/A\n\n#### **Ressources**\n\nN/A\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of Domo instance configuration\n    \n\nPlease refer to the example below:"
           },
           "response": [
             {
