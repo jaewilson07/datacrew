@@ -3000,7 +3000,21 @@
             "method": "GET",
             "header": []
           },
-          "response": []
+          "response": [
+            {
+              "id": "1a9a3c70-468e-471a-92bc-87a788ee5c83",
+              "name": "Get Pages",
+              "originalRequest": {
+                "method": "GET",
+                "header": []
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "responseTime": null,
+              "body": null
+            }
+          ]
         }
       ],
       "id": "74817d42-2567-46fb-a6cd-dfefbfc2cd22"
