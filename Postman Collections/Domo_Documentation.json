@@ -3544,7 +3544,7 @@
       "name": "Governance",
       "item": [
         {
-          "name": "Authorized Domains",
+          "name": "Get Authorized Domains",
           "id": "8167a008-3b39-43e7-8eb4-a042cef8d177",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
