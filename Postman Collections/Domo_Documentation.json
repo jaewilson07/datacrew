@@ -2040,7 +2040,7 @@
           ]
         },
         {
-          "name": "Get Virtual Users",
+          "name": "KO - Get Virtual Users",
           "id": "1b5c550e-8a8a-4bec-91cf-c9c0220da355",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
