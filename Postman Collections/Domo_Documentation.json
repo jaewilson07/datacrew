@@ -2749,7 +2749,7 @@
               }
             },
             "url": "https://{{domo_instance}}.domo.com/api/identity/v1/users/search",
-            "description": "#### Description (usage)\n\nGet the list of users\n\n#### **UI reference**\n\nAdmin section -> People\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934314-Generating-a-List-of-Users)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of users with properties\n    \n\nPlease refer to the example below:"
+            "description": "#### Description (usage)\n\nGet the list of users\n\nNOTE - the difference between POST and GET is unclear. Admin >People appears to use POST, but GET also works occassionally\n\n#### **UI reference**\n\nAdmin section -> People\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934314-Generating-a-List-of-Users)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of users with properties\n    \n\nPlease refer to the example below:"
           },
           "response": [
             {
