@@ -3190,7 +3190,20 @@
     },
     {
       "name": "Alerts",
-      "item": [],
+      "item": [
+        {
+          "name": "New Request",
+          "id": "0fef4b55-8202-4ad4-8853-39f7a953484e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ],
       "id": "880a1c2c-d3b2-4177-8f82-0542a3ef8f0b"
     }
   ]
