@@ -3300,7 +3300,8 @@
                 "type": "text"
               }
             ],
-            "url": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows"
+            "url": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows",
+            "description": "#### Description (usage)\n\nGet the list of all dataflows from instance\n\n#### **UI reference**\n\nLeft bar menu -> Dataflows\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/sections/360007295494-DataFlow-Management)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of dataflows with dataset inputs and outputs with properties\n    \n\nPlease refer to the example below:"
           },
           "response": [
             {
