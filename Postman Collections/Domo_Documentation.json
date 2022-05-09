@@ -2557,13 +2557,13 @@
             "method": "GET",
             "header": [
               {
-                "key": "x-domo-authentication",
-                "value": "{{session_token}}",
+                "key": "Content-Type",
+                "value": "application/json",
                 "type": "text"
               },
               {
-                "key": "Content-Type",
-                "value": "application/json; charset=utf-8",
+                "key": "Accept",
+                "value": "application/json",
                 "type": "text"
               }
             ],
