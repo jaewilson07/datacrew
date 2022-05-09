@@ -2298,7 +2298,7 @@
               }
             },
             "url": "https://{{domo_instance}}.domo.com/api/search/v1/query",
-            "description": "This API allows the return of multiple Domo Entities\n\n**Body Parameters**\n\n**{ combineResults:False }** - will return add a nested key-value pair, **searchResultsMap**, with a dictionary of entity types containing arrays of entities.\n\nThe **searchObjects** key will always have an array of results.\n\nThe **totalResultCount** key can be used to support building a loop function if you limit the **count** of your responses in the filter body."
+            "description": "#### Description (usage)\n\nThis API allows the return of multiple Domo Entities\n\n**UI reference**\n\nN/A\n\n#### **Ressources**\n\nN/A\n\n#### Required parameters\n\n**{ combineResults:False }** - will return add a nested key-value pair,\n\n**searchResultsMap**, with a dictionary of entity types containing arrays of entities.\n\nThe **searchObjects** key will always have an array of results.\n\nThe **totalResultCount** key can be used to support building a loop function if you limit the **count** of your responses in the filter body.\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Query result\n    \n\nPlease refer to the example below:"
           },
           "response": [
             {
