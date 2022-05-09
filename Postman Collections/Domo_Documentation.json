@@ -3071,7 +3071,36 @@
               "name": "Get Card Details",
               "originalRequest": {
                 "method": "GET",
-                "header": []
+                "header": [
+                  {
+                    "key": "x-domo-authentication",
+                    "value": "{{session_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "https://{{domo_instance}}/api/content/v1/cards?parts=metadata,certification&urns={{card_id_csv}}",
+                  "protocol": "https",
+                  "host": [
+                    "{{domo_instance}}"
+                  ],
+                  "path": [
+                    "api",
+                    "content",
+                    "v1",
+                    "cards"
+                  ],
+                  "query": [
+                    {
+                      "key": "parts",
+                      "value": "metadata,certification"
+                    },
+                    {
+                      "key": "urns",
+                      "value": "{{card_id_csv}}"
+                    }
+                  ]
+                }
               },
               "_postman_previewlanguage": null,
               "header": null,
