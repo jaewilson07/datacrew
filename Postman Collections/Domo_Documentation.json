@@ -961,7 +961,7 @@
                 }
               ]
             },
-            "description": "#### Description (usage)\n\nGet Dataset Schéma by Dataset ID.\n\n#### **UI reference**\n\nLeft bar menu -> Datasets\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/categories/4418219258647-Working-with-DataSets-in-Domo)\n\n#### Required parameters\n\n*   Dataset ID\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Dataset schema with columns, their types, ids, etc.\n    \n\nPlease refer to the example below:"
+            "description": "#### Description (usage)\n\nGet Dataset Schema by Dataset ID.\n\n#### **UI reference**\n\nLeft bar menu -> Datasets\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/categories/4418219258647-Working-with-DataSets-in-Domo)\n\n#### Required parameters\n\n*   Dataset ID\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Dataset schema with columns, their types, ids, etc.\n    \n\nPlease refer to the example below:"
           },
           "response": [
             {
