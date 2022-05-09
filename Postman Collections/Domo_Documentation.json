@@ -3405,7 +3405,7 @@
               }
             ],
             "url": {
-              "raw": "https://{{domo_instance}}.domo.com/datacenter/dataflows/:id",
+              "raw": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows/:id",
               "protocol": "https",
               "host": [
                 "{{domo_instance}}",
@@ -3413,14 +3413,16 @@
                 "com"
               ],
               "path": [
-                "datacenter",
+                "api",
+                "dataprocessing",
+                "v1",
                 "dataflows",
                 ":id"
               ],
               "variable": [
                 {
                   "key": "id",
-                  "value": "{{dataflow_id}}"
+                  "value": null
                 }
               ]
             },
