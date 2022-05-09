@@ -2731,7 +2731,7 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [
               {
                 "key": "x-domo-authentication",
@@ -2741,7 +2741,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"showCount\": true,\n    \"count\": false,\n    \"includeDeleted\": false,\n    \"includeSupport\": false,\n    \"filters\": [\n      {\n          \"field\" : \"id\",\n          \"filterType\" : \"value\",\n          \"values\" : [\"1069862308\"],\n          \"operator\": \"EQ\"\n\n\n\n\n      }\n    ]\n  }",
+              "raw": "{\n    \"showCount\": true,\n    \"count\": false,\n    \"includeDeleted\": false,\n    \"includeSupport\": false,\n    \"limit\": 200,\n    \"offset\": 0,\n    \"sort\": {\n        \"field\": \"displayName\",\n        \"order\": \"ASC\"\n    },\n    \"filters\": [\n        {\n            \"filterType\": \"text\",\n            \"field\" : \"emailAddress\",\n            \"text\": \"iain.congdon@domo.com\"\n        }\n    ]\n\n}\n",
               "options": {
                 "raw": {
                   "language": "json"
