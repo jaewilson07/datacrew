@@ -3080,7 +3080,8 @@
           },
           "request": {
             "method": "GET",
-            "header": []
+            "header": [],
+            "url": ".domo.com/api/content/v1/cards"
           },
           "response": [
             {
