@@ -3092,7 +3092,94 @@
             },
             "url": "https://{{domo_instance}}.domo.com/api/content/v3/cards/kpi/definition"
           },
-          "response": []
+          "response": [
+            {
+              "id": "dd53e32e-b5bb-4ba5-b4d3-b84c64d2e872",
+              "name": "https://{{domo_instance.domo.com/api/content/v3/cards",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"urn\": \"{{card_id}}\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://{{domo_instance}}.domo.com/api/content/v3/cards/kpi/definition"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 10 May 2022 23:21:55 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self';"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding, User-Agent"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"id\": 1581024515,\n    \"urn\": \"1581024515\",\n    \"definition\": {\n        \"subscriptions\": {\n            \"big_number\": {\n                \"name\": \"big_number\",\n                \"columns\": [\n                    {\n                        \"column\": \"Name\",\n                        \"aggregation\": \"COUNT\",\n                        \"alias\": \"Count of Name\",\n                        \"format\": {\n                            \"type\": \"abbreviated\",\n                            \"format\": \"#\"\n                        }\n                    }\n                ],\n                \"filters\": [],\n                \"orderBy\": [],\n                \"groupBy\": [],\n                \"fiscal\": false,\n                \"projection\": false,\n                \"distinct\": false,\n                \"limit\": 1\n            },\n            \"main\": {\n                \"name\": \"main\",\n                \"columns\": [\n                    {\n                        \"column\": \"Name\",\n                        \"mapping\": \"VALUE\"\n                    },\n                    {\n                        \"formulaId\": \"calculation_4a039d7e-094b-41fe-a6de-49225607683e\",\n                        \"mapping\": \"VALUE\",\n                        \"alias\": \"First Name\"\n                    },\n                    {\n                        \"formulaId\": \"calculation_58d401a0-f074-48fc-9c09-c3681aa90b7c\",\n                        \"mapping\": \"VALUE\"\n                    },\n                    {\n                        \"formulaId\": \"calculation_5b4d86a9-d185-4ca7-b677-2df17ab2221d\",\n                        \"mapping\": \"VALUE\"\n                    },\n                    {\n                        \"formulaId\": \"calculation_18207bf6-d820-43ad-b1cf-56801191faeb\",\n                        \"mapping\": \"VALUE\"\n                    }\n                ],\n                \"filters\": [],\n                \"orderBy\": [],\n                \"groupBy\": [],\n                \"fiscal\": false,\n                \"projection\": false,\n                \"distinct\": false\n            }\n        },\n        \"formulas\": [\n            {\n                \"templateId\": 524,\n                \"id\": \"calculation_18207bf6-d820-43ad-b1cf-56801191faeb\",\n                \"name\": \"URL\",\n                \"formula\": \"CONCAT('<a href=\\\"http://en.wikipedia.org/wiki\\\"','\\\"target=\\\"_blank\\\">',`id`, '</a>')\",\n                \"status\": \"VALID\",\n                \"persistedOnDataSource\": false,\n                \"columnPositions\": [\n                    {\n                        \"columnName\": \"`id`\",\n                        \"columnPosition\": 68\n                    }\n                ],\n                \"cacheWindow\": \"non_dynamic\",\n                \"locked\": false,\n                \"owner\": 55874022,\n                \"usedByOtherCards\": false,\n                \"referenceCount\": 1,\n                \"dataType\": \"STRING\",\n                \"isAggregatable\": true,\n                \"bignumber\": false\n            },\n            {\n                \"templateId\": 520,\n                \"id\": \"calculation_58d401a0-f074-48fc-9c09-c3681aa90b7c\",\n                \"name\": \"Last Name\",\n                \"formula\": \"TRIM(SUBSTRING(`Name`, 1, INSTR(`Name`, ',') - 1))  -- -1 to ignore the comma\",\n                \"status\": \"VALID\",\n                \"persistedOnDataSource\": false,\n                \"columnPositions\": [\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 15\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 32\n                    }\n                ],\n                \"cacheWindow\": \"non_dynamic\",\n                \"locked\": false,\n                \"owner\": 55874022,\n                \"usedByOtherCards\": false,\n                \"referenceCount\": 1,\n                \"dataType\": \"STRING\",\n                \"isAggregatable\": true,\n                \"bignumber\": false\n            },\n            {\n                \"templateId\": 521,\n                \"id\": \"calculation_4a039d7e-094b-41fe-a6de-49225607683e\",\n                \"name\": \"First Name 2\",\n                \"formula\": \"TRIM(SUBSTRING(`Name`, INSTR(`Name`, ',') + 1, LENGTH(`Name`) - INSTR(`Name`, ',')))  -- + 1 to ignore comma\",\n                \"status\": \"VALID\",\n                \"persistedOnDataSource\": false,\n                \"columnPositions\": [\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 15\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 29\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 54\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 70\n                    }\n                ],\n                \"cacheWindow\": \"non_dynamic\",\n                \"locked\": false,\n                \"owner\": 55874022,\n                \"usedByOtherCards\": false,\n                \"referenceCount\": 1,\n                \"dataType\": \"STRING\",\n                \"isAggregatable\": true,\n                \"bignumber\": false\n            },\n            {\n                \"templateId\": 519,\n                \"id\": \"calculation_5b4d86a9-d185-4ca7-b677-2df17ab2221d\",\n                \"name\": \"First Last\",\n                \"formula\": \"CONCAT(\\n  TRIM(SUBSTRING(`Name`, INSTR(`Name`, ',') + 1, LENGTH(`Name`) - INSTR(`Name`, ',')))  -- + 1 to ignore comma\\n  , ' '\\n  , TRIM(SUBSTRING(`Name`, 1, INSTR(`Name`, ',') - 1))  -- -1 to ignore the comma\\n)\\n  \",\n                \"status\": \"VALID\",\n                \"persistedOnDataSource\": false,\n                \"columnPositions\": [\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 25\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 39\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 64\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 80\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 146\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 163\n                    }\n                ],\n                \"cacheWindow\": \"non_dynamic\",\n                \"locked\": false,\n                \"owner\": 55874022,\n                \"usedByOtherCards\": false,\n                \"referenceCount\": 1,\n                \"dataType\": \"STRING\",\n                \"isAggregatable\": true,\n                \"bignumber\": false\n            }\n        ],\n        \"conditionalFormats\": [],\n        \"annotations\": [],\n        \"slicers\": [\n            {\n                \"type\": \"string\",\n                \"displayType\": \"match_values_text_input\",\n                \"name\": \"First Last\",\n                \"column\": \"calculation_5b4d86a9-d185-4ca7-b677-2df17ab2221d\",\n                \"columnDisplayName\": \"First Last\",\n                \"operator\": \"CONTAINS\",\n                \"values\": [],\n                \"collapsed\": false,\n                \"controlType\": \"SLICER\"\n            }\n        ],\n        \"title\": \"Names - Last, First => First Last\",\n        \"description\": \"\",\n        \"chartVersion\": \"9\",\n        \"charts\": {\n            \"main\": {\n                \"component\": \"main\",\n                \"chartType\": \"badge_basic_table\",\n                \"overrides\": {},\n                \"goal\": null\n            }\n        },\n        \"allowTableDrill\": true,\n        \"segments\": {\n            \"active\": [],\n            \"definitions\": []\n        },\n        \"modified\": 1616172957000\n    },\n    \"columns\": [\n        {\n            \"id\": \"id\",\n            \"name\": \"id\",\n            \"type\": \"numeric\",\n            \"isCalculation\": false,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"sourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\"\n        },\n        {\n            \"id\": \"Name\",\n            \"name\": \"Name\",\n            \"type\": \"string\",\n            \"isCalculation\": false,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"sourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\"\n        },\n        {\n            \"id\": \"Column\",\n            \"name\": \"Column\",\n            \"type\": \"string\",\n            \"isCalculation\": false,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"sourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\"\n        },\n        {\n            \"id\": \"calculation_5b4d86a9-d185-4ca7-b677-2df17ab2221d\",\n            \"name\": \"First Last\",\n            \"type\": \"string\",\n            \"value\": \"CONCAT(\\n  TRIM(SUBSTRING(`Name`, INSTR(`Name`, ',') + 1, LENGTH(`Name`) - INSTR(`Name`, ',')))  -- + 1 to ignore comma\\n  , ' '\\n  , TRIM(SUBSTRING(`Name`, 1, INSTR(`Name`, ',') - 1))  -- -1 to ignore the comma\\n)\\n  \",\n            \"isCalculation\": true,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"templateId\": 519\n        },\n        {\n            \"id\": \"calculation_4a039d7e-094b-41fe-a6de-49225607683e\",\n            \"name\": \"First Name 2\",\n            \"type\": \"string\",\n            \"value\": \"TRIM(SUBSTRING(`Name`, INSTR(`Name`, ',') + 1, LENGTH(`Name`) - INSTR(`Name`, ',')))  -- + 1 to ignore comma\",\n            \"isCalculation\": true,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"templateId\": 521\n        },\n        {\n            \"id\": \"calculation_58d401a0-f074-48fc-9c09-c3681aa90b7c\",\n            \"name\": \"Last Name\",\n            \"type\": \"string\",\n            \"value\": \"TRIM(SUBSTRING(`Name`, 1, INSTR(`Name`, ',') - 1))  -- -1 to ignore the comma\",\n            \"isCalculation\": true,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"templateId\": 520\n        },\n        {\n            \"id\": \"calculation_18207bf6-d820-43ad-b1cf-56801191faeb\",\n            \"name\": \"URL\",\n            \"type\": \"string\",\n            \"value\": \"CONCAT('<a href=\\\"http://en.wikipedia.org/wiki\\\"','\\\"target=\\\"_blank\\\">',`id`, '</a>')\",\n            \"isCalculation\": true,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"templateId\": 524\n        }\n    ],\n    \"drillpath\": [],\n    \"embedded\": false,\n    \"dataSourceWrite\": true\n}"
+            }
+          ]
         }
       ],
       "id": "0a57d077-cac2-4425-8d32-20c623f7bd7f"
