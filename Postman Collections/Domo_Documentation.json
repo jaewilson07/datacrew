@@ -27,7 +27,7 @@
               }
             },
             "url": "https://{{domo_instance}}.domo.com/api/content/v2/authentication",
-            "description": "#### Description (usage)\n\nUndocumented public apis require a **x-domo-authentication** header with the session token.  \nUse Full Authentication request to get a session token.\n\n#### **UI reference**\n\nAuthentication prompt to Domo\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/categories/4418219258647-Working-with-DataSets-in-Domo)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Session token\n    \n\nPlease refer to the example below:"
+            "description": "StartFragmentStartFragment\n\n### Description (usage)\n\nUndocumented public apis require a **x-domo-authentication** header with the session token.Use Full Authentication request to get a session token.\n\n### **UI reference**\n\nAuthentication prompt to Domo\n\n### **Ressources**\n\n[Link to KB](https://desktop.postman.com/?desktopVersion=9.16.0&userId=5049119&teamId=352341)\n\n### Required parameters\n\nN/A\n\n### Optional parameters\n\nDID THIS WORK?\n\nN/A\n\n### **Return value**\n\n*   Session token\n    \n\nPlease refer to the example below:\n\nEndFragment"
           },
           "response": [
             {
