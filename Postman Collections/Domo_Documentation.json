@@ -3001,10 +3001,12 @@
               }
             },
             "url": {
-              "raw": "https://{{domo_instance}}/api/content/v2/cards/adminsummary?offset={{offest}}&limit={{limit}}",
+              "raw": "https://{{domo_instance}}.domo.com/api/content/v2/cards/adminsummary?offset={{offest}}&limit={{limit}}",
               "protocol": "https",
               "host": [
-                "{{domo_instance}}"
+                "{{domo_instance}}",
+                "domo",
+                "com"
               ],
               "path": [
                 "api",
