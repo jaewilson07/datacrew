@@ -3073,7 +3073,7 @@
           ]
         },
         {
-          "name": "Get KPI Definitions",
+          "name": "retrieve KPI Definitions",
           "id": "71866554-b186-4c1e-9bd5-4f669ce986f3",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
