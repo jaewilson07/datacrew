@@ -3647,5 +3647,34 @@
       ],
       "id": "8ff6ea67-c24c-48a0-b7a1-810b493c6a30"
     }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": {
+      "value": "{{session_token}}",
+      "key": "x-domo-authentication"
+    }
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "f4d9a257-ef18-4d53-91b4-cd83c1c55391",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "c4a749c9-4eea-4d1a-8bef-f8a17c2ed5a9",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
   ]
 }
