@@ -3081,7 +3081,16 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "https://{{domo_instance.domo.com/api/content/v3/cards"
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"urn\": \"{{card_id}}\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://{{domo_instance.domo.com/api/content/v3/cards/kpi/definition"
           },
           "response": []
         }
