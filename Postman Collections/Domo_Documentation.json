@@ -3071,68 +3071,6 @@
               "body": null
             }
           ]
-        },
-        {
-          "name": "KO - Get All Cards",
-          "id": "e114980b-3353-4642-992c-a9a0a4668eff",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "x-domo-authentication",
-                "value": "{{session_token}}",
-                "type": "text"
-              }
-            ],
-            "url": "https://{{domo_instance}}.domo.com/api/content/v1/cards"
-          },
-          "response": [
-            {
-              "id": "399de3e7-8734-42b8-8118-29bb4b43878e",
-              "name": "Get Card Details",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "x-domo-authentication",
-                    "value": "{{session_token}}",
-                    "type": "text"
-                  }
-                ],
-                "url": {
-                  "raw": "https://{{domo_instance}}/api/content/v1/cards?parts=metadata,certification&urns={{card_id_csv}}",
-                  "protocol": "https",
-                  "host": [
-                    "{{domo_instance}}"
-                  ],
-                  "path": [
-                    "api",
-                    "content",
-                    "v1",
-                    "cards"
-                  ],
-                  "query": [
-                    {
-                      "key": "parts",
-                      "value": "metadata,certification"
-                    },
-                    {
-                      "key": "urns",
-                      "value": "{{card_id_csv}}"
-                    }
-                  ]
-                }
-              },
-              "_postman_previewlanguage": null,
-              "header": null,
-              "cookie": [],
-              "responseTime": null,
-              "body": null
-            }
-          ]
         }
       ],
       "id": "0a57d077-cac2-4425-8d32-20c623f7bd7f"
