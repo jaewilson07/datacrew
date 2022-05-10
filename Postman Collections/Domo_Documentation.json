@@ -3071,6 +3071,19 @@
               "body": null
             }
           ]
+        },
+        {
+          "name": "https://{{domo_instance.domo.com/api/content/v3/cards",
+          "id": "71866554-b186-4c1e-9bd5-4f669ce986f3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "https://{{domo_instance.domo.com/api/content/v3/cards"
+          },
+          "response": []
         }
       ],
       "id": "0a57d077-cac2-4425-8d32-20c623f7bd7f"
