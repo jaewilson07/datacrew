@@ -3090,7 +3090,7 @@
                 }
               }
             },
-            "url": "https://{{domo_instance.domo.com/api/content/v3/cards/kpi/definition"
+            "url": "https://{{domo_instance}}.domo.com/api/content/v3/cards/kpi/definition"
           },
           "response": []
         }
