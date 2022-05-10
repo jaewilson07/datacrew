@@ -3073,7 +3073,7 @@
           ]
         },
         {
-          "name": "https://{{domo_instance.domo.com/api/content/v3/cards",
+          "name": "Get KPI Definitions",
           "id": "71866554-b186-4c1e-9bd5-4f669ce986f3",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
