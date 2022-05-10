@@ -2249,7 +2249,7 @@
           ]
         },
         {
-          "name": "KO - Create a Publish Job",
+          "name": "Create a Publish Job",
           "id": "c0363259-22b8-4518-8cbb-e25f1c0c42c0",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
