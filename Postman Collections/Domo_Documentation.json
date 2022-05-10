@@ -3095,7 +3095,7 @@
           "response": [
             {
               "id": "dd53e32e-b5bb-4ba5-b4d3-b84c64d2e872",
-              "name": "https://{{domo_instance.domo.com/api/content/v3/cards",
+              "name": "retrieve KPI Definitions",
               "originalRequest": {
                 "method": "PUT",
                 "header": [],
