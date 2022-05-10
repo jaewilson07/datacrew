@@ -3079,11 +3079,11 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "PUT",
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{ \"urn\": \"{{card_id}}\" }",
+              "raw": "{\r\n    \"urn\": \"{{card_id}}\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
