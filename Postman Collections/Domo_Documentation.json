@@ -3081,7 +3081,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": ".domo.com/api/content/v1/cards"
+            "url": "https://{{domo_instance}}.domo.com/api/content/v1/cards"
           },
           "response": [
             {
