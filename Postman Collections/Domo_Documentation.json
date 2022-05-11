@@ -2290,7 +2290,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"entities\": [\r\n        \"DATASET\"\r\n    ],\r\n    \"filters\": [],\r\n    \"combineResults\": true,\r\n    \"query\": \"*\",\r\n    \"count\": 1,\r\n    \"offset\": 0\r\n}",
+              "raw": "{\r\n    \"entities\": [\r\n        \"DATASET\"\r\n    ],\r\n    \"filters\": [],\r\n    \"combineResults\": false,\r\n    \"query\": \"*\",\r\n    \"count\": 5,\r\n    \"offset\": 0\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
