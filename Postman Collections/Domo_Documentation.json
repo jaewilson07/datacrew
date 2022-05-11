@@ -3194,7 +3194,7 @@
           "response": [
             {
               "id": "3f3822df-1d83-4ca8-b598-bbdf2a95b49d",
-              "name": "New Request",
+              "name": "get Card metadata",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
