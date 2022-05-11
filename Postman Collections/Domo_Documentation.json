@@ -3184,7 +3184,7 @@
           ]
         },
         {
-          "name": "Get Card metadata",
+          "name": "Get Card Metadata By Id",
           "id": "05c137e6-3d46-4440-8931-8450b2a223c2",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
