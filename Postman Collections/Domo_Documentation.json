@@ -3074,7 +3074,7 @@
           ]
         },
         {
-          "name": "Get Card KPI Definitions",
+          "name": "Get Card KPI Definitions By Id",
           "id": "71866554-b186-4c1e-9bd5-4f669ce986f3",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
