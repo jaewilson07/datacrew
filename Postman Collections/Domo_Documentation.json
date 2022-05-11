@@ -3192,6 +3192,35 @@
           "request": {
             "method": "GET",
             "header": [],
+            "url": {
+              "raw": "https://{{domo_instance}}.domo.com/api/content/v1/cards?urns={{card_id}}&parts=metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers&includeFiltered=true",
+              "protocol": "https",
+              "host": [
+                "{{domo_instance}}",
+                "domo",
+                "com"
+              ],
+              "path": [
+                "api",
+                "content",
+                "v1",
+                "cards"
+              ],
+              "query": [
+                {
+                  "key": "urns",
+                  "value": "{{card_id}}"
+                },
+                {
+                  "key": "parts",
+                  "value": "metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers"
+                },
+                {
+                  "key": "includeFiltered",
+                  "value": "true"
+                }
+              ]
+            },
             "description": "#### Description (usage)\n\nGet the list of KPI definitions cards with their properties\n\n#### **UI reference**\n\nAdmin section -> Cards\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934234-Admin-Settings-Layout#h_01F9HKWVSKH09K35DWT3PJFVKN)\n\n#### Required parameters\n\n*   offset - query offset\n*   limit - number of cards to retrieve\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of cards with properties\n    \n\nPlease refer to the example below:"
           },
           "response": [
