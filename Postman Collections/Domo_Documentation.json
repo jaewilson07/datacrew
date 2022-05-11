@@ -3191,7 +3191,113 @@
             "method": "GET",
             "header": []
           },
-          "response": []
+          "response": [
+            {
+              "id": "3f3822df-1d83-4ca8-b598-bbdf2a95b49d",
+              "name": "New Request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://{{domo_instance}}.domo.com/api/content/v1/cards?urns={{card_id}}&parts=metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers&includeFiltered=true",
+                  "protocol": "https",
+                  "host": [
+                    "{{domo_instance}}",
+                    "domo",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "content",
+                    "v1",
+                    "cards"
+                  ],
+                  "query": [
+                    {
+                      "key": "urns",
+                      "value": "{{card_id}}"
+                    },
+                    {
+                      "key": "parts",
+                      "value": "metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers"
+                    },
+                    {
+                      "key": "includeFiltered",
+                      "value": "true"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 11 May 2022 00:16:42 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json;charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-store, max-age=0, must-revalidate"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "frame-ancestors 'self';"
+                },
+                {
+                  "key": "Expires",
+                  "value": "0"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding, User-Agent"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "X-Xss-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"metadata\": {\n            \"chartType\": \"badge_basic_table\",\n            \"chartVersion\": \"7\",\n            \"currentLabel\": \"Count of Name\",\n            \"historyId\": \"e0eba383-fb01-4002-9430-f19ab7cafe22\",\n            \"calendar\": \"default\",\n            \"columnAliases\": \"{}\",\n            \"columnFormats\": \"{}\",\n            \"SummaryNumberFormat\": \"{\\\"type\\\":\\\"number\\\",\\\"format\\\":\\\"#A\\\"}\"\n        },\n        \"domoapp\": {\n            \"id\": null\n        },\n        \"drillPath\": {},\n        \"drillPathURNs\": [],\n        \"owners\": [\n            {\n                \"id\": \"55874022\",\n                \"type\": \"USER\",\n                \"displayName\": \"Grant Smith\"\n            }\n        ],\n        \"slicers\": [\n            {\n                \"type\": \"string\",\n                \"displayType\": \"match_values_text_input\",\n                \"dataSourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\",\n                \"name\": \"First Last\",\n                \"column\": \"calculation_5b4d86a9-d185-4ca7-b677-2df17ab2221d\",\n                \"columnDisplayName\": \"First Last\",\n                \"operator\": \"CONTAINS\",\n                \"values\": [],\n                \"collapsed\": false,\n                \"controlType\": \"SLICER\"\n            }\n        ],\n        \"metadataOverrides\": {\n            \"components\": [\n                {\n                    \"component\": \"main\",\n                    \"chartType\": \"badge_basic_table\",\n                    \"overrides\": {},\n                    \"goal\": null\n                }\n            ]\n        },\n        \"dateInfo\": {},\n        \"datasources\": [\n            {\n                \"dataSourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\",\n                \"dataSourceName\": \"Names - Last, First\",\n                \"displayType\": \"webform\",\n                \"dataType\": \"webform\",\n                \"providerType\": \"webform\",\n                \"isSampleData\": false,\n                \"lastUpdated\": 1615572227095,\n                \"adc\": false,\n                \"phase\": null,\n                \"state\": \"SUCCESS\"\n            }\n        ],\n        \"certification\": {\n            \"state\": \"NOT_CERTIFIED\",\n            \"adminCertified\": false\n        },\n        \"urn\": \"1581024515\",\n        \"id\": 1581024515,\n        \"type\": \"kpi\",\n        \"created\": 1596739618,\n        \"badgeUpdated\": 1616172957000,\n        \"creatorId\": 55874022,\n        \"ownerId\": 55874022,\n        \"description\": \"\",\n        \"title\": \"Names - Last, First => First Last\",\n        \"active\": true,\n        \"allowTableDrill\": true,\n        \"locked\": false,\n        \"access\": true,\n        \"isCurrentUserOwner\": false\n    }\n]"
+            }
+          ]
         }
       ],
       "id": "0a57d077-cac2-4425-8d32-20c623f7bd7f"
