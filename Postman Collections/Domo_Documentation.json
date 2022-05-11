@@ -3347,10 +3347,12 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://{{domo_instance}}/api/social/v4/alerts?all=true&fields=all&limit={{limit}}&offset={{offset}}",
+              "raw": "https://{{domo_instance}}.domo.com/api/social/v4/alerts?all=true&fields=all&limit={{limit}}&offset={{offset}}",
               "protocol": "https",
               "host": [
-                "{{domo_instance}}"
+                "{{domo_instance}}",
+                "domo",
+                "com"
               ],
               "path": [
                 "api",
