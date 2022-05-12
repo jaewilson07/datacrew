@@ -3031,7 +3031,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"includeCardTitleClause\": true,\r\n    \"cardTitleSearchText\": \"test\",\r\n    \"notOnPage\": false,\r\n    \"pageIds\": [],\r\n    \"includePageTitleClause\": false,\r\n    \"pageTitleSearchText\": \"Test\",\r\n    \"ascending\": true,\r\n    \"orderBy\": \"cardTitle\"\r\n}",
+									"raw": "{\r\n    \"includeCardCertificationClause\": true, \r\n    \"includeCardTitleClause\": true,\r\n    \"cardTitleSearchText\": \"test\",\r\n    \"notOnPage\": false,\r\n    \"pageIds\": [],\r\n    \"includePageTitleClause\": false,\r\n    \"pageTitleSearchText\": \"Test\",\r\n    \"ascending\": true,\r\n    \"orderBy\": \"cardTitle\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
