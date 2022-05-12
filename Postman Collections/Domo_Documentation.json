@@ -3022,7 +3022,127 @@
 						},
 						"description": "#### Description (usage)\n\nGet the list of cards with their properties\n\n#### **UI reference**\n\nAdmin section -> Cards\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934234-Admin-Settings-Layout#h_01F9HKWVSKH09K35DWT3PJFVKN)\n\n#### Required parameters\n\n*   skip - query offset\n*   limit - number of cards to retrieve\n    \n\n#### Optional parameters\n\n**Body Parameters**\n\n**includeCardTitleClause** and **includePageTitleClause** require matching **includeTitleSearchText** or **includePageTitleClause**.\n\n**pageIds** can include a list of specified **page_ids**\n\n#### **Return value**\n\n*   Array of cards with properties\n    \n\nPlease refer to the example below:"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "498f4563-2633-45c8-890a-637c60f2a254",
+							"name": "Get Card List",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"includeCardTitleClause\": true,\r\n    \"cardTitleSearchText\": \"test\",\r\n    \"notOnPage\": false,\r\n    \"pageIds\": [],\r\n    \"includePageTitleClause\": false,\r\n    \"pageTitleSearchText\": \"Test\",\r\n    \"ascending\": true,\r\n    \"orderBy\": \"cardTitle\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/content/v2/cards/adminsummary?limit={{limit}}&skip={{offset}}",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"content",
+										"v2",
+										"cards",
+										"adminsummary"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "{{limit}}"
+										},
+										{
+											"key": "skip",
+											"value": "{{offset}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 May 2022 19:15:21 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "frame-ancestors 'self';"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Ratelimit-Remaining",
+									"value": "6"
+								},
+								{
+									"key": "X-Ratelimit-Reset",
+									"value": "1652382960"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"cardAdminSummaries\": [\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1774387618\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Cadell Falconer\"\n                }\n            ],\n            \"id\": 1647061204,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1634778443000,\n            \"title\": \"Cadell 75th Percentile Test - Baseball Stats\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 384424178,\n                    \"title\": \"75th Percentile Test\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1774387618\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Cadell Falconer\"\n                }\n            ],\n            \"id\": 1027750237,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1634779630000,\n            \"title\": \"Cadell 75th Percentile Test - Chart\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 384424178,\n                    \"title\": \"75th Percentile Test\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"966365811\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Scott Thompson\"\n                }\n            ],\n            \"id\": 877027996,\n            \"type\": \"Text\",\n            \"badgeUpdated\": 1625687449000,\n            \"title\": \"Data Specialist Knowledge Test\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 443317966,\n                    \"title\": \"Course work\",\n                    \"parentPageId\": 1613954604,\n                    \"parentPageTitle\": \"_-ST Superman-_\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1345408759\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Alexis Lorenz (DataMaven)\"\n                }\n            ],\n            \"id\": 124619046,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1607465914000,\n            \"title\": \"Latest Unemployment Claims per 100 K\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 790951325,\n                    \"title\": \"Coronavirus (COVID-19) Dashboard\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"966365811\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Scott Thompson\"\n                }\n            ],\n            \"id\": 514002900,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1649363128000,\n            \"title\": \"Log to base test\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": -100000,\n                    \"title\": \"Overview\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"966365811\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Scott Thompson\"\n                }\n            ],\n            \"id\": 1762459853,\n            \"type\": \"document\",\n            \"badgeUpdated\": 1625758599000,\n            \"title\": \"practical test?\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 443317966,\n                    \"title\": \"Course work\",\n                    \"parentPageId\": 1613954604,\n                    \"parentPageTitle\": \"_-ST Superman-_\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1141078945\",\n                    \"type\": \"USER\",\n                    \"displayName\": \" Justin Pumford \"\n                }\n            ],\n            \"id\": 682075914,\n            \"type\": \"domoapp\",\n            \"badgeUpdated\": 1618976491000,\n            \"title\": \"React Test\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 1109905686,\n                    \"title\": \"Top 5\",\n                    \"parentPageId\": 127044793,\n                    \"parentPageTitle\": \"JaeW_AtOnyx\"\n                },\n                {\n                    \"pageId\": 989969396,\n                    \"title\": \"Custom Apps\",\n                    \"parentPageId\": 109096720,\n                    \"parentPageTitle\": \"Domo IDEA Exchange\"\n                },\n                {\n                    \"pageId\": -100000,\n                    \"title\": \"Overview\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1893952720\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Jae Wilson\"\n                }\n            ],\n            \"id\": 101681077,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1616777219000,\n            \"title\": \"RL test (filter out Domo Support)View of DomoStats - Activity Log\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": -100000,\n                    \"title\": \"Overview\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"612085674\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Oleksii Zakrevskyi\"\n                }\n            ],\n            \"id\": 663477078,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1652176913000,\n            \"title\": \"test\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": -100000,\n                    \"title\": \"Overview\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"827093373\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Dean.Wangerin\"\n                }\n            ],\n            \"id\": 1632703785,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1617378071000,\n            \"title\": \"test using a calc field from view\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 1109905686,\n                    \"title\": \"Top 5\",\n                    \"parentPageId\": 127044793,\n                    \"parentPageTitle\": \"JaeW_AtOnyx\"\n                },\n                {\n                    \"pageId\": -100000,\n                    \"title\": \"Overview\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1345408759\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Alexis Lorenz (DataMaven)\"\n                }\n            ],\n            \"id\": 1775967968,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1607465914000,\n            \"title\": \"Testing by state\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 790951325,\n                    \"title\": \"Coronavirus (COVID-19) Dashboard\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1898323170\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Creed Smith\"\n                }\n            ],\n            \"id\": 1548948000,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1631619767000,\n            \"title\": \"View of 75th Percentile Test - Baseball Stats\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 1761849366,\n                    \"title\": \"delete me\"\n                },\n                {\n                    \"pageId\": 384424178,\n                    \"title\": \"75th Percentile Test\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1893952720\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Jae Wilson\"\n                }\n            ],\n            \"id\": 1350520930,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1631900717000,\n            \"title\": \"View of 75th Percentile Test - Baseball Stats\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": -100002,\n                    \"title\": \"Shared\"\n                },\n                {\n                    \"pageId\": 423813863,\n                    \"title\": \"delete_prod me\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"2129297797\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"John Stevens\"\n                }\n            ],\n            \"id\": 615356809,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1618867780000,\n            \"title\": \"Women's Clothing test dataset\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 225044251,\n                    \"title\": \"Text Analytics\",\n                    \"parentPageId\": 109096720,\n                    \"parentPageTitle\": \"Domo IDEA Exchange\"\n                }\n            ]\n        }\n    ],\n    \"totalCardCount\": 14\n}"
+						}
+					]
 				},
 				{
 					"name": "Get Card KPI Definitions By Id",
