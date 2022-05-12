@@ -2984,16 +2984,10 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "x-domo-authentication",
-								"value": "{{session_token}}",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"includeVirtual\": true,\r\n    \"includePageTitleClause\": true,\r\n    \"orderBy\": \"parentPageTitlePageTitle\",\r\n    \"cardTitleSearchText\": \"test\",\r\n    \"pageTitleSearchText\": \"\"\r\n}",
+							"raw": "{\r\n    \"includeCardTitleClause\": true,\r\n    \"cardTitleSearchText\": \"test\",\r\n    \"notOnPage\": true,\r\n    \"pageIds\": [],\r\n    \"includePageTitleClause\": false,\r\n    \"pageTitleSearchText\": \"Test\",\r\n    \"ascending\": true,\r\n    \"orderBy\": \"cardTitle\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3001,7 +2995,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://{{domo_instance}}.domo.com/api/content/v2/cards/adminsummary?offset={{offset}}&limit={{limit}}",
+							"raw": "https://{{domo_instance}}.domo.com/api/content/v2/cards/adminsummary?limit={{limit}}&skip={{offset}}",
 							"protocol": "https",
 							"host": [
 								"{{domo_instance}}",
@@ -3017,12 +3011,12 @@
 							],
 							"query": [
 								{
-									"key": "offset",
-									"value": "{{offset}}"
-								},
-								{
 									"key": "limit",
 									"value": "{{limit}}"
+								},
+								{
+									"key": "skip",
+									"value": "{{offset}}"
 								}
 							]
 						},
