@@ -3036,7 +3036,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://{{domo_instance}}/api/content/v2/cards/adminsummary?offset={{offest}}&limit={{limit}}&x-domo-authentication={{session_token}}",
+									"raw": "https://{{domo_instance}}/api/content/v2/cards/adminsummary?offset={{offest}}&limit={{limit}}",
 									"protocol": "https",
 									"host": [
 										"{{domo_instance}}"
@@ -3056,11 +3056,6 @@
 										{
 											"key": "limit",
 											"value": "{{limit}}"
-										},
-										{
-											"key": "x-domo-authentication",
-											"value": "{{session_token}}",
-											"type": "text"
 										}
 									]
 								}
