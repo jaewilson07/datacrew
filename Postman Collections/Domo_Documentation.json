@@ -3020,7 +3020,7 @@
 								}
 							]
 						},
-						"description": "#### Description (usage)\n\nGet the list of cards with their properties\n\n#### **UI reference**\n\nAdmin section -> Cards\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934234-Admin-Settings-Layout#h_01F9HKWVSKH09K35DWT3PJFVKN)\n\n#### Required parameters\n\n*   offset - query offset\n*   limit - number of cards to retrieve\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of cards with properties\n    \n\nPlease refer to the example below:"
+						"description": "#### Description (usage)\n\nGet the list of cards with their properties\n\n#### **UI reference**\n\nAdmin section -> Cards\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934234-Admin-Settings-Layout#h_01F9HKWVSKH09K35DWT3PJFVKN)\n\n#### Required parameters\n\n*   skip - query offset\n*   limit - number of cards to retrieve\n    \n\n#### Optional parameters\n\n**Body Parameters**\n\n**includeCardTitleClause** and **includePageTitleClause** require matching **includeTitleSearchText** or **includePageTitleClause**.\n\n**pageIds** can include a list of specified **page_ids**\n\n#### **Return value**\n\n*   Array of cards with properties\n    \n\nPlease refer to the example below:"
 					},
 					"response": []
 				},
