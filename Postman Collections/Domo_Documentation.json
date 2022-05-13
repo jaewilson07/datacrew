@@ -2999,7 +2999,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"includeCardTitleClause\": true,\r\n    \"cardTitleSearchText\": \"test\",\r\n    \"notOnPage\": true,\r\n    \"pageIds\": [],\r\n    \"includePageTitleClause\": false,\r\n    \"pageTitleSearchText\": \"Test\",\r\n    \"ascending\": true,\r\n    \"orderBy\": \"cardTitle\"\r\n}",
+							"raw": "{\r\n    \"ascending\": true,\r\n    \"includeCardTitleClause\": false,\r\n    \"includePageTitleClause\": false,\r\n    \"notOnPage\": false,\r\n    \"orderBy\": \"cardTitle\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
