@@ -524,11 +524,6 @@
 			"name": "Dataset",
 			"item": [
 				{
-					"name": "New Folder",
-					"item": [],
-					"id": "f848149e-cfc7-4e56-a776-860b8305be71"
-				},
-				{
 					"name": "Get Dataset by ID",
 					"id": "30097141-b2ad-48e3-b195-5700f0441989",
 					"protocolProfileBehavior": {
