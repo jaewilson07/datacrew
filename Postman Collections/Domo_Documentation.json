@@ -1458,7 +1458,7 @@
 					]
 				},
 				{
-					"name": "New Request",
+					"name": "Get Cards for a Dataset ID",
 					"id": "afdb7202-888d-4c4b-99b5-a85a1e96a9d0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
