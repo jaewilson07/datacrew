@@ -4165,7 +4165,7 @@
 			"name": "BeastModes",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Statistics",
 					"id": "7deaf88f-6584-4f9a-a0bc-0fa6509b0488",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
