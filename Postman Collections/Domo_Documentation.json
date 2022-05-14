@@ -4174,7 +4174,21 @@
 						"method": "GET",
 						"header": []
 					},
-					"response": []
+					"response": [
+						{
+							"id": "78006e2f-04f0-4e7b-877c-1be7ac75814c",
+							"name": "Get Statistics",
+							"originalRequest": {
+								"method": "GET",
+								"header": []
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
 				}
 			],
 			"id": "281d654e-a92c-4b64-986c-fb5154edf52d"
