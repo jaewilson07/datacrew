@@ -1701,7 +1701,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\"permissions\":[{\"type\":\"GROUP\",\"id\":{{group_id}},\"accessLevel\":\"CAN_SHARE\"}],\"sendEmail\":false}",
+							"raw": "{\n    \"permissions\": [\n        {\n            \"type\": \"GROUP\",\n            \"id\": {{group_id}},\n            \"accessLevel\": \"CAN_SHARE\"\n        }\n    ],\n    \"sendEmail\": false\n}",
 							"options": {
 								"raw": {
 									"language": "json"
