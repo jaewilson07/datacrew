@@ -1691,7 +1691,8 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "https://{{domo_instance}}/api/data/v3/datasources/{{datasetId}}/share"
 					},
 					"response": []
 				}
