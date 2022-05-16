@@ -1602,7 +1602,8 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://{{domo_instance}}.domo.com/api/data/v1/streams/{{stream_id}}"
+						"url": "https://{{domo_instance}}.domo.com/api/data/v1/streams/{{stream_id}}",
+						"description": "#### Description (usage)\n\nGet Stream Configuration.\n\n#### **UI reference**\n\nN/A\n\n#### **Ressources**\n\nN/A\n\n#### Required parameters\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**"
 					},
 					"response": [
 						{
