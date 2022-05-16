@@ -1694,7 +1694,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\"permissions\":[{\"type\":\"GROUP\",\"id\":74677171,\"accessLevel\":f\"{accessLevel}\"}],\"sendEmail\":true}",
+							"raw": "{\"permissions\":[{\"type\":\"GROUP\",\"id\":74677171,\"accessLevel\":\"CAN_SHARE\"}],\"sendEmail\":false}",
 							"options": {
 								"raw": {
 									"language": "json"
