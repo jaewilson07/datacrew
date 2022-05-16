@@ -1708,7 +1708,7 @@
 								}
 							}
 						},
-						"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{datasetId}}/share"
+						"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/share"
 					},
 					"response": []
 				}
