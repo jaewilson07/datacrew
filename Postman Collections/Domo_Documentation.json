@@ -1692,7 +1692,16 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://{{domo_instance}}/api/data/v3/datasources/{{datasetId}}/share"
+						"body": {
+							"mode": "raw",
+							"raw": "{\"permissions\":[{\"type\":\"GROUP\",\"id\":74677171,\"accessLevel\":f\"{accessLevel}\"}],\"sendEmail\":true}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{datasetId}}/share"
 					},
 					"response": []
 				}
