@@ -1465,7 +1465,30 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://{{domo_instance}}.domo.com/api/content/v1/datasources/{{dataset_id}}/cards?drill=true",
+							"protocol": "https",
+							"host": [
+								"{{domo_instance}}",
+								"domo",
+								"com"
+							],
+							"path": [
+								"api",
+								"content",
+								"v1",
+								"datasources",
+								"{{dataset_id}}",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "drill",
+									"value": "true"
+								}
+							]
+						}
 					},
 					"response": [
 						{
