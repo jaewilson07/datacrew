@@ -1488,7 +1488,8 @@
 									"value": "true"
 								}
 							]
-						}
+						},
+						"description": "#### Description (usage)\n\nGet Cards by dataset id\n\n#### **UI reference**\n\nDatasets -> Cards\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/categories/4418219258647-Working-with-DataSets-in-Domo)\n\n#### Required parameters\n\n*   Dataset id\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of cards\n    \n\nPlease refer to the example below:"
 					},
 					"response": [
 						{
