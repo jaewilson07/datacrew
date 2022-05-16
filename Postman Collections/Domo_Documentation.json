@@ -1684,7 +1684,7 @@
 					]
 				},
 				{
-					"name": "New Request",
+					"name": "Create Dataset Sharing",
 					"id": "c29c6936-35a9-4e1e-965f-1ad027c821ae",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
