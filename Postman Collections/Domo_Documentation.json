@@ -2616,7 +2616,8 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://{{domo_instance}}.domo.com/api/publish/v2/subscription/invites"
+						"url": "https://{{domo_instance}}.domo.com/api/publish/v2/subscription/invites",
+						"description": "#### Description (usage)\n\nGet all jobs waiting to be accepted from Domo instance\n\n#### **UI reference**\n\nAdmin -> Domo everywhere -> Publish\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/4403486465687-Domo-Everywhere-Launch-Page#4.)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array wth subsctiptions jobs\n    \n\nPlease refer to the example below:"
 					},
 					"response": []
 				}
