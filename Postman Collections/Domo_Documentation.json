@@ -2622,7 +2622,7 @@
 					"response": [
 						{
 							"id": "bb91cc84-c172-4e08-945b-54ed6641c188",
-							"name": "Get Sub list",
+							"name": "Get Sub list example",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
