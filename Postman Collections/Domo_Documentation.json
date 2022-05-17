@@ -2619,7 +2619,77 @@
 						"url": "https://{{domo_instance}}.domo.com/api/publish/v2/subscription/invites",
 						"description": "#### Description (usage)\n\nGet all jobs waiting to be accepted from Domo instance\n\n#### **UI reference**\n\nAdmin -> Domo everywhere -> Publish\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/4403486465687-Domo-Everywhere-Launch-Page#4.)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array wth subsctiptions jobs\n    \n\nPlease refer to the example below:"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "bb91cc84-c172-4e08-945b-54ed6641c188",
+							"name": "Get Sub list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "https://{{domo_instance}}.domo.com/api/publish/v2/subscription/invites"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 May 2022 00:02:55 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "frame-ancestors 'self';"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "[\n    {\n        \"subscriptionId\": null,\n        \"publisherDomain\": \"datamavenllc-io.domo.com\",\n        \"publicationSummary\": {\n            \"id\": \"0f576510-f489-49a5-a2d0-d416221934ca\",\n            \"name\": \"MetaData Test\",\n            \"description\": null,\n            \"dataSets\": 8,\n            \"pages\": 3,\n            \"cards\": 42,\n            \"subscribers\": null,\n            \"isV2\": true,\n            \"hasDuplicate\": false,\n            \"refreshing\": false,\n            \"executionType\": null,\n            \"executionStatusDescription\": null,\n            \"executionEstimatedCompletionTime\": null,\n            \"executionStartTime\": null,\n            \"executionEndTime\": null\n        },\n        \"status\": \"READY\"\n    },\n    {\n        \"subscriptionId\": null,\n        \"publisherDomain\": \"datamavenllc-io.domo.com\",\n        \"publicationSummary\": {\n            \"id\": \"6c0c8f80-5eda-4eef-8267-6875ccd596fb\",\n            \"name\": \"Hoosac\",\n            \"description\": null,\n            \"dataSets\": 3,\n            \"pages\": 3,\n            \"cards\": 5,\n            \"subscribers\": null,\n            \"isV2\": true,\n            \"hasDuplicate\": false,\n            \"refreshing\": false,\n            \"executionType\": null,\n            \"executionStatusDescription\": null,\n            \"executionEstimatedCompletionTime\": null,\n            \"executionStartTime\": null,\n            \"executionEndTime\": null\n        },\n        \"status\": \"READY\"\n    }\n]"
+						}
+					]
 				}
 			],
 			"id": "1d951c97-b085-48dc-adbe-6da8bcc0401c"
