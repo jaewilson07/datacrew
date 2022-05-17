@@ -2608,7 +2608,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Get Sub list",
 					"id": "315abe5b-6761-4de2-9888-5ba976af15e9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
