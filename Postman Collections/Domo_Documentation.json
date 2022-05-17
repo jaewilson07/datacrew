@@ -2615,7 +2615,8 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "https://{{domo_instance}}.domo.com/api/publish/v2/subscription/invites"
 					},
 					"response": []
 				}
