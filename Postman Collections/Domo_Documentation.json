@@ -3396,7 +3396,7 @@
 					]
 				},
 				{
-					"name": "New Request",
+					"name": "Get Page by ID",
 					"id": "80d19a5f-d61e-45be-bd21-4aa308d84881",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
