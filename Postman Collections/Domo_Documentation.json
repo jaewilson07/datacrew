@@ -4236,7 +4236,7 @@
 							}
 						],
 						"url": "https://{{domo_instance}}.domo.com/companysettings",
-						"description": "#### Description (usage)\n\nGet the Company settings from Domo instance\n\n#### **UI reference**\n\nAdmin -> Company Settings\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/sections/360007296114-Specifying-Company-Settings)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of company settings\n    \n\nPlease refer to the example below:"
+						"description": "#### Description (usage)\n\nGet the Company settings from Domo instance\n\n#### **UI reference**\n\nAdmin -> Company Settings\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/sections/360007296114-Specifying-Company-Settings)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of company settings\n    \n\nPlease refer to the example below:"
 					},
 					"response": []
 				},
