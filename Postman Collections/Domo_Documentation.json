@@ -1489,7 +1489,7 @@
 								}
 							]
 						},
-						"description": "#### Description (usage)\n\nGet Cards by dataset id\n\n#### **UI reference**\n\nDatasets -> Cards\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/categories/4418219258647-Working-with-DataSets-in-Domo)\n\n#### Required parameters\n\n*   Dataset id\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of cards\n    \n\nPlease refer to the example below:"
+						"description": "#### Description (usage)\n\nGet Cards by dataset id\n\n#### **UI reference**\n\nDatasets -> Cards\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/categories/4418219258647-Working-with-DataSets-in-Domo)\n\n#### Required parameters\n\n*   Dataset id\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of cards\n    \n\nPlease refer to the example below:"
 					},
 					"response": [
 						{
@@ -1603,7 +1603,7 @@
 						"method": "GET",
 						"header": [],
 						"url": "https://{{domo_instance}}.domo.com/api/data/v1/streams/{{stream_id}}",
-						"description": "#### Description (usage)\n\nGet Stream Configuration.\n\n#### **UI reference**\n\nN/A\n\n#### **Ressources**\n\nN/A\n\n#### Required parameters\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**"
+						"description": "#### Description (usage)\n\nGet Stream Configuration.\n\n#### **UI reference**\n\nN/A\n\n#### **Resources**\n\nN/A\n\n#### Required parameters\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**"
 					},
 					"response": [
 						{
@@ -1711,7 +1711,7 @@
 							}
 						},
 						"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/share",
-						"description": "#### Description (usage)\n\nShare the dataset with specified user group with specified access level.\n\n#### **UI reference**\n\nDataset details -> Datasets\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/sections/4418223667863-Sharing-Access-to-DataSets)\n\n#### Required parameters\n\n*   Group id\n*   Object type\n*   Access level\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   N/A\n    \n\nPlease refer to the example below:"
+						"description": "#### Description (usage)\n\nShare the dataset with specified user group with specified access level.\n\n#### **UI reference**\n\nDataset details -> Datasets\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/sections/4418223667863-Sharing-Access-to-DataSets)\n\n#### Required parameters\n\n*   Group id\n*   Object type\n*   Access level\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   N/A\n    \n\nPlease refer to the example below:"
 					},
 					"response": [
 						{
