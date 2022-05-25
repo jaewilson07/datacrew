@@ -4296,7 +4296,7 @@
 							}
 						],
 						"url": "https://{{domo_instance}}.domo.com/admin/companysettings/whitelist",
-						"description": "#### Description (usage)\n\nGet the list of whitelist IP\n\n#### **UI reference**\n\nAdmin -> Network security -> IP adress whitelist\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360043439173-Whitelisting-IP-Addresses-in-Domo)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of whitelisted IP adresses\n    \n\nPlease refer to the example below:"
+						"description": "#### Description (usage)\n\nGet the list of whitelist IP\n\n#### **UI reference**\n\nAdmin -> Network security -> IP adress whitelist\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360043439173-Whitelisting-IP-Addresses-in-Domo)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of whitelisted IP adresses\n    \n\nPlease refer to the example below:"
 					},
 					"response": [
 						{
