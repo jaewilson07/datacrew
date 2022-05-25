@@ -524,8 +524,9 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "PUT",
+						"header": [],
+						"url": "https://{{domo_instance}}.domo.com/api/content/v2/groups/access"
 					},
 					"response": []
 				}
