@@ -3093,6 +3093,19 @@
 						"url": "https://{{domo_instance}}.domo.com/admin/companysettings/whitelist"
 					},
 					"response": []
+				},
+				{
+					"name": "IP Whitelist Config Copy",
+					"id": "1fa99927-7f17-4f2c-a03d-cb2a30c6a55a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://{{domo_instance}}.domo.com/admin/companysettings/whitelist"
+					},
+					"response": []
 				}
 			],
 			"id": "6a0f34da-4182-41e5-b458-c5552f0f72ee",
