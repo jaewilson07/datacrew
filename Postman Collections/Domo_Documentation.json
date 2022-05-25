@@ -528,7 +528,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\"groupId\" : {{group_id}},\n\"assOwners\": [{\"type\":\"GROUP\", \"id\":{{user_id}}}]}\n",
+							"raw": "{\"groupId\" : 804506650,\n\"addOwners\": [{\"type\":\"GROUP\", \"id\":612085674}]}\n",
 							"options": {
 								"raw": {
 									"language": "javascript"
