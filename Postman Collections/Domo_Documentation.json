@@ -1368,7 +1368,7 @@
 							}
 						},
 						"url": "https://{{domo_instance}}.domo.com/api/query/v1/execute/{{dataset_id}}",
-						"description": "#### Description (usage)\n\nQuery Dataset by SQL Query in the body.\n\n**UI reference**\n\nN/A\n\n#### **Ressources**\n\nN/A\n\n#### Required parameters\n\n*   Dataset ID\n*   **SQL Query**\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Output table the result of query\n    \n\nPlease refer to the example below:"
+						"description": "#### Description (usage)\n\nQuery Dataset by SQL Query in the body.\n\n**UI reference**\n\nN/A\n\n#### **Resources**\n\nN/A\n\n#### Required parameters\n\n*   Dataset ID\n*   **SQL Query**\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Output table the result of query\n    \n\nPlease refer to the example below:"
 					},
 					"response": [
 						{
@@ -1489,7 +1489,7 @@
 								}
 							]
 						},
-						"description": "#### Description (usage)\n\nGet Cards by dataset id\n\n#### **UI reference**\n\nDatasets -> Cards\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/categories/4418219258647-Working-with-DataSets-in-Domo)\n\n#### Required parameters\n\n*   Dataset id\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of cards\n    \n\nPlease refer to the example below:"
+						"description": "#### Description (usage)\n\nGet Cards by dataset id\n\n#### **UI reference**\n\nDatasets -> Cards\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/categories/4418219258647-Working-with-DataSets-in-Domo)\n\n#### Required parameters\n\n*   Dataset id\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of cards\n    \n\nPlease refer to the example below:"
 					},
 					"response": [
 						{
