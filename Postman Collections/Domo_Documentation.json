@@ -2726,6 +2726,18 @@
 						"description": "#### Description (usage)\n\nDelete a Publish job\n\n#### **UI reference**\n\nAdmin -> Domo everywhere -> Publish\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/4403486465687-Domo-Everywhere-Launch-Page#4.)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\nPlease refer to the example below:"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "1784d7b2-387f-4148-8c42-c652b5e84547",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "1d951c97-b085-48dc-adbe-6da8bcc0401c"
