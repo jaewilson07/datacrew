@@ -2734,8 +2734,9 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"url": "https://{{domo_instance}}.domo.com/api/publish/v2/subscription/{{subscription_id}}"
 					},
 					"response": []
 				}
