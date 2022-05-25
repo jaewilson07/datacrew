@@ -516,6 +516,18 @@
 							"body": "[\n    {\n        \"id\": 180920085,\n        \"name\": \"Content\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 0,\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1063525969,\n        \"name\": \"Power User Group\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1589561936000,\n        \"memberCount\": 27,\n        \"guid\": \"14ebea60-9155-11ea-a6eb-12affd108866\",\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1324037627,\n        \"name\": \"Default\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 294,\n        \"active\": true,\n        \"default\": true\n    },\n    {\n        \"id\": 2088006361,\n        \"name\": \"_Inline_Edit_Owners\",\n        \"type\": \"closed\",\n        \"userIds\": [],\n        \"created\": 1617953643000,\n        \"memberCount\": 7,\n        \"guid\": \"f5231ce5-9905-11eb-8e8b-0a775c76e4e4\",\n        \"description\": \"Inline Editor_Owner\",\n        \"active\": true,\n        \"default\": false\n    }\n]"
 						}
 					]
+				},
+				{
+					"name": "New Request",
+					"id": "9be80c90-8436-44df-a22a-aea8d48d2711",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "ed3d96aa-cf69-49e4-bc0e-25bb73c45f10"
