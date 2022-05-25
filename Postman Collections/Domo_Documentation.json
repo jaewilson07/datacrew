@@ -2693,7 +2693,7 @@
 					]
 				},
 				{
-					"name": "New Request",
+					"name": "Delete Job",
 					"id": "61a1ebb1-7578-4d14-8be5-5b1fbf2354d3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
