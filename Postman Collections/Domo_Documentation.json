@@ -3600,7 +3600,7 @@
 							}
 						},
 						"url": "https://{{domo_instance}}.domo.com/api/content/v3/cards/kpi/definition",
-						"description": "#### Description (usage)\n\nGet the list of KPI definitions by card ID\n\n#### **UI reference**\n\nN/A\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934234-Admin-Settings-Layout#h_01F9HKWVSKH09K35DWT3PJFVKN)\n\n#### Required parameters\n\n*   Card ID in the body\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of KPI definitions for specified card\n    \n\nPlease refer to the example below:"
+						"description": "#### Description (usage)\n\nGet the list of KPI definitions by card ID\n\n#### **UI reference**\n\nN/A\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934234-Admin-Settings-Layout#h_01F9HKWVSKH09K35DWT3PJFVKN)\n\n#### Required parameters\n\n*   Card ID in the body\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of KPI definitions for specified card\n    \n\nPlease refer to the example below:"
 					},
 					"response": [
 						{
