@@ -3082,7 +3082,7 @@
 					]
 				},
 				{
-					"name": "New Request",
+					"name": "Whitelist",
 					"id": "ff3ad520-0d4a-4fa7-8dc4-b95bdda5fd7a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
