@@ -1390,7 +1390,7 @@
 							}
 						},
 						"url": "https://{{domo_instance}}.domo.com/api/query/v1/execute/{{dataset_id}}",
-						"description": "#### Description (usage)\n\nQuery Dataset by SQL Query in the body.\n\n**UI reference**\n\nN/A\n\n#### **Resources**\n\nN/A\n\n#### Required parameters\n\n*   Dataset ID\n*   **SQL Query**\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Output table the result of query\n    \n\nPlease refer to the example below:"
+						"description": "## Authentication\n\nThe Query API requires the use of the domo-developer-token (Admin > Access Token). The full_auth token will not work.\n\nAnother equivalent that uses the public APIs\n\n[https://developer.domo.com/docs/dataset-api-reference/dataset#Query%20a%20DataSet](https://developer.domo.com/docs/dataset-api-reference/dataset#Query%20a%20DataSet)\n\n#### Description (usage)\n\nQuery Dataset by SQL Query in the body.\n\n**UI reference**\n\nN/A\n\n#### **Resources**\n\nN/A\n\n#### Required parameters\n\n*   Dataset ID\n*   **SQL Query**\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Output table the result of query\n    \n\nPlease refer to the example below:"
 					},
 					"response": [
 						{
