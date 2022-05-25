@@ -3887,7 +3887,7 @@
 								}
 							]
 						},
-						"description": "#### Description (usage)\n\nGet the list of alerts\n\n#### **UI reference**\n\nMain menu -> Alerts\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360043430373-Alert-Center-Layout)\n\n#### Required parameters\n\n*   all (true/false)\n*   fields (all)\n*   limit - number of retrieved alerts\n*   offset - query offset number\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of alerts with properties\n    \n\nPlease refer to the example below:"
+						"description": "#### Description (usage)\n\nGet the list of alerts\n\n#### **UI reference**\n\nMain menu -> Alerts\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360043430373-Alert-Center-Layout)\n\n#### Required parameters\n\n*   all (true/false)\n*   fields (all)\n*   limit - number of retrieved alerts\n*   offset - query offset number\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of alerts with properties\n    \n\nPlease refer to the example below:"
 					},
 					"response": [
 						{
