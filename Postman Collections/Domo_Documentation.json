@@ -518,7 +518,7 @@
 					]
 				},
 				{
-					"name": "New Request",
+					"name": "Add Group Owner",
 					"id": "9be80c90-8436-44df-a22a-aea8d48d2711",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
