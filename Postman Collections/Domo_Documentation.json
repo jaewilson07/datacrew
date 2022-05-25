@@ -3089,14 +3089,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "Accept-Encoding",
-								"value": "application/gzip",
-								"type": "text",
-								"disabled": true
-							}
-						],
+						"header": [],
 						"url": "https://{{domo_instance}}.domo.com/admin/companysettings/whitelist"
 					},
 					"response": []
