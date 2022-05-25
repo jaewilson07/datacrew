@@ -2699,8 +2699,30 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://{{domo_instance}}.domo.com/api/publish/v2/subscription/{{subscription_id}}?isOldSub=false",
+							"protocol": "https",
+							"host": [
+								"{{domo_instance}}",
+								"domo",
+								"com"
+							],
+							"path": [
+								"api",
+								"publish",
+								"v2",
+								"subscription",
+								"{{subscription_id}}"
+							],
+							"query": [
+								{
+									"key": "isOldSub",
+									"value": "false"
+								}
+							]
+						}
 					},
 					"response": []
 				}
