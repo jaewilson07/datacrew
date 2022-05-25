@@ -526,6 +526,15 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"groupId\" : {{group_id}},\n\"assOwners\": [{\"type\":\"GROUP\", \"id\":{{user_id}}}]}\n",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
 						"url": "https://{{domo_instance}}.domo.com/api/content/v2/groups/access"
 					},
 					"response": []
