@@ -3729,7 +3729,7 @@
 								}
 							]
 						},
-						"description": "#### Description (usage)\n\nGet the card metadata by card ID\n\n#### **UI reference**\n\nN/A\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934234-Admin-Settings-Layout#h_01F9HKWVSKH09K35DWT3PJFVKN)\n\n#### Required parameters\n\n*   urns - card id\n*   parts - what to include (i.e. metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers)\n*   includeFiltered (true/false)\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Metadata based on the input parameters\n    \n\nPlease refer to the example below:"
+						"description": "#### Description (usage)\n\nGet the card metadata by card ID\n\n#### **UI reference**\n\nN/A\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934234-Admin-Settings-Layout#h_01F9HKWVSKH09K35DWT3PJFVKN)\n\n#### Required parameters\n\n*   urns - card id\n*   parts - what to include (i.e. metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers)\n*   includeFiltered (true/false)\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Metadata based on the input parameters\n    \n\nPlease refer to the example below:"
 					},
 					"response": [
 						{
