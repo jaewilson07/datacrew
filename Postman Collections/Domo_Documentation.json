@@ -318,7 +318,7 @@
 							}
 						],
 						"url": "https://{{domo_instance}}.domo.com/api/content/v2/groups",
-						"description": "#### Description (usage)\n\nGet the list of groups\n\n#### **UI reference**\n\nAdmin section -> Groups\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934294-Creating-and-Managing-User-Groups#1.1.)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\n*   ignoreCache (true/false)\n*   includeActive (true/false)\n*   includeUsers (true/false)\n    \n\n#### **Return value**\n\n*   Array of groups with properties\n    \n\nPlease refer to the example below:"
+						"description": "#### Description (usage)\n\nGet the list of groups\n\n#### **UI reference**\n\nAdmin section -> Groups\n\n#### **Ressources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934294-Creating-and-Managing-User-Groups#1.1.)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\n*   ignoreCache (true/false)\n*   includeActive (true/false)\n*   includeUsers (true/false)\n    \n\n#### **Return value**\n\n*   Array of groups with properties\n    \n\nPlease refer to the example below:"
 					},
 					"response": [
 						{
