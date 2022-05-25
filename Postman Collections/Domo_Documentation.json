@@ -2722,7 +2722,8 @@
 									"value": "false"
 								}
 							]
-						}
+						},
+						"description": "#### Description (usage)\n\nDelete a Publish job\n\n#### **UI reference**\n\nAdmin -> Domo everywhere -> Publish\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/4403486465687-Domo-Everywhere-Launch-Page#4.)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\nPlease refer to the example below:"
 					},
 					"response": []
 				}
