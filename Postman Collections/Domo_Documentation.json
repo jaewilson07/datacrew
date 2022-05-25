@@ -2691,6 +2691,18 @@
 							"body": "[\n    {\n        \"subscriptionId\": null,\n        \"publisherDomain\": \"datamavenllc-io.domo.com\",\n        \"publicationSummary\": {\n            \"id\": \"0f576510-f489-49a5-a2d0-d416221934ca\",\n            \"name\": \"MetaData Test\",\n            \"description\": null,\n            \"dataSets\": 8,\n            \"pages\": 3,\n            \"cards\": 42,\n            \"subscribers\": null,\n            \"isV2\": true,\n            \"hasDuplicate\": false,\n            \"refreshing\": false,\n            \"executionType\": null,\n            \"executionStatusDescription\": null,\n            \"executionEstimatedCompletionTime\": null,\n            \"executionStartTime\": null,\n            \"executionEndTime\": null\n        },\n        \"status\": \"READY\"\n    },\n    {\n        \"subscriptionId\": null,\n        \"publisherDomain\": \"datamavenllc-io.domo.com\",\n        \"publicationSummary\": {\n            \"id\": \"6c0c8f80-5eda-4eef-8267-6875ccd596fb\",\n            \"name\": \"Hoosac\",\n            \"description\": null,\n            \"dataSets\": 3,\n            \"pages\": 3,\n            \"cards\": 5,\n            \"subscribers\": null,\n            \"isV2\": true,\n            \"hasDuplicate\": false,\n            \"refreshing\": false,\n            \"executionType\": null,\n            \"executionStatusDescription\": null,\n            \"executionEstimatedCompletionTime\": null,\n            \"executionStartTime\": null,\n            \"executionEndTime\": null\n        },\n        \"status\": \"READY\"\n    }\n]"
 						}
 					]
+				},
+				{
+					"name": "New Request",
+					"id": "61a1ebb1-7578-4d14-8be5-5b1fbf2354d3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "1d951c97-b085-48dc-adbe-6da8bcc0401c"
