@@ -3092,6 +3092,95 @@
 						"header": []
 					},
 					"response": []
+				},
+				{
+					"name": "Whitelist_2",
+					"id": "9b6d1886-3bee-458c-91d9-be42211cc0cb",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "playstation-data-ocean.domo.com",
+								"disabled": true
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*",
+								"disabled": true
+							},
+							{
+								"key": "accept-language",
+								"value": "en",
+								"disabled": true
+							},
+							{
+								"key": "cookie",
+								"value": "_ga=GA1.2.211859165.1643054497; _gid=GA1.2.320078036.1653322049; _pubweb_idc=mmmm-0019-4358_#_platform5; SESSION_TOE=1MF3CCQMPQ; redirectUrl=%2F; PLAY_SESSION=c36fa5593ab7be756ccf9fcecc80563927abcc89-isProxied=false; mbox=PC#c33bd94015ed4e3f83b376dbdbb914d9.35_0#1716730741|session#5c812ada979d43a697694eb1feb3c580#1653487801; _dsidv1=5685b911-055c-4173-8b06-a36febdb48c6; CENTERVIEWSESSIONID=1290298965-mmmm-0019-4358; csrf-token=e71a6a31-b856-4498-89f7-87ee2a75ceaa; amp_c68dc3=-nazUcMn27frkOp0aNW0-Q...1g3tt6fd4.1g3tugi24.4v.0.4v; DA-SID-prod15-mmmm-0019-4358=eyJjdXN0b21lcklkIjoibW1tbS0wMDE5LTQzNTgiLCJleHBpcmF0aW9uIjoxNjUzNTIyNTQ2MDAwLCJobWFjU2lnbmF0dXJlIjoiMjI3ODA4MDY1ZmY0MWI1MGZiYjQxZjdmNmQzMTYxYzY0OGVjYWQyZWE1M2ZmMTA3YmRiYTA5NzU4NzM5OWJlOCIsInNpZCI6IjY3ZDZmODM3LTkxMWYtNGNkNC1iZTExLThkNzdlYWMyZTc4YiIsInRpbWVzdGFtcCI6MTY1MzQ5Mzc0NjAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiIxMjkwMjk4OTY1In0%3D",
+								"disabled": true
+							},
+							{
+								"key": "referer",
+								"value": "https://playstation-data-ocean.domo.com/admin/security/whitelist",
+								"disabled": true
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\", \"Google Chrome\";v=\"101\"",
+								"disabled": true
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0",
+								"disabled": true
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty",
+								"disabled": true
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors",
+								"disabled": true
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin",
+								"disabled": true
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36",
+								"disabled": true
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "e71a6a31-b856-4498-89f7-87ee2a75ceaa",
+								"disabled": true
+							},
+							{
+								"key": "x-domo-requestcontext",
+								"value": "{\"clientToe\":\"1MF3CCQMPQ-FJA28\"}",
+								"disabled": true
+							},
+							{
+								"key": "x-requested-with",
+								"value": "XMLHttpRequest",
+								"disabled": true
+							}
+						],
+						"url": "https://playstation-data-ocean.domo.com/admin/companysettings/whitelist"
+					},
+					"response": []
 				}
 			],
 			"id": "6a0f34da-4182-41e5-b458-c5552f0f72ee",
