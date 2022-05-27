@@ -4693,7 +4693,13 @@
 		},
 		{
 			"name": "Public APIs",
-			"item": [],
+			"item": [
+				{
+					"name": "New Folder",
+					"item": [],
+					"id": "519c660d-b9c9-4732-97e4-450511008807"
+				}
+			],
 			"id": "383d058c-7df2-4d9d-b8c1-659f1a7d4310"
 		}
 	],
