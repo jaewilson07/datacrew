@@ -4526,7 +4526,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Put Landing page",
 					"id": "0ac52e1e-fefa-4453-8464-8f404a3c9629",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
