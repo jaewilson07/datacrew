@@ -4488,6 +4488,18 @@
 							"body": "{\n    \"addresses\": [\n        \"\"\n    ]\n}"
 						}
 					]
+				},
+				{
+					"name": "New Request",
+					"id": "b18e19bf-ffa8-472b-9a9b-c40ed31fb145",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "8ff6ea67-c24c-48a0-b7a1-810b493c6a30"
