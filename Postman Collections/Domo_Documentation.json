@@ -1408,120 +1408,6 @@
 					]
 				},
 				{
-					"name": "Query Dataset with SQL",
-					"id": "2e567a1a-fce0-4b6f-8c1c-2c2e9cf9cd34",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-domo-authentication",
-								"value": "{{session_token}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{ \"sql\": \"select * from table\" }",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "https://{{domo_instance}}.domo.com/api/query/v1/execute/{{dataset_id}}",
-						"description": "## Authentication\n\nThe Query API requires the use of the domo-developer-token (Admin > Access Token). The full_auth token will not work.\n\nAnother equivalent that uses the public APIs\n\n[https://developer.domo.com/docs/dataset-api-reference/dataset#Query%20a%20DataSet](https://developer.domo.com/docs/dataset-api-reference/dataset#Query%20a%20DataSet)\n\n#### Description (usage)\n\nQuery Dataset by SQL Query in the body.\n\n**UI reference**\n\nN/A\n\n#### **Resources**\n\nN/A\n\n#### Required parameters\n\n*   Dataset ID\n*   **SQL Query**\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Output table the result of query\n    \n\nPlease refer to the example below:"
-					},
-					"response": [
-						{
-							"id": "e3925647-7b8d-453b-9f13-938f2388040f",
-							"name": "Query Dataset with SQL - sample",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "x-domo-authentication",
-										"value": "{{session_token}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{ \"sql\": \"select * from table limit 5\" }",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://{{domo_instance}}.domo.com/api/query/v1/execute/{{dataset_id}}"
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Server",
-									"value": "nginx"
-								},
-								{
-									"key": "Date",
-									"value": "Mon, 09 May 2022 14:54:35 GMT"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json;charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "3844"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Cache-Control",
-									"value": "no-cache, no-store, max-age=0, must-revalidate"
-								},
-								{
-									"key": "Content-Security-Policy",
-									"value": "frame-ancestors 'self';"
-								},
-								{
-									"key": "Expires",
-									"value": "0"
-								},
-								{
-									"key": "Pragma",
-									"value": "no-cache"
-								},
-								{
-									"key": "X-Content-Type-Options",
-									"value": "nosniff"
-								},
-								{
-									"key": "X-Frame-Options",
-									"value": "DENY"
-								},
-								{
-									"key": "X-Xss-Protection",
-									"value": "1; mode=block"
-								},
-								{
-									"key": "Strict-Transport-Security",
-									"value": "max-age=31536000; includeSubDomains"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"datasource\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n    \"device\": \"ad3-prod1-40\",\n    \"queryUrl\": \"/query/mmmm-0012-0200/94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n    \"columns\": [\n        \"Display Name\",\n        \"Role\",\n        \"User ID\",\n        \"Created Date\",\n        \"Department\",\n        \"Email\",\n        \"Type\",\n        \"Source_ID\",\n        \"Action\",\n        \"Object_Type\",\n        \"Object_ID\",\n        \"Object_Name\",\n        \"IP_Address\",\n        \"Event_Time\",\n        \"Device\",\n        \"Browser_Details\",\n        \"Last Login\",\n        \"Event_Date\"\n    ],\n    \"metadata\": [\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"DATETIME\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"DATETIME\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"DATETIME\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"DATE\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        }\n    ],\n    \"fromcache\": \"false\",\n    \"numColumns\": 18,\n    \"rows\": [\n        [\n            \"Kevin Brown\",\n            \"Admin\",\n            \"0000\",\n            \"2009-12-07T17:57:47\",\n            \"Welcome\",\n            \"email.com\",\n            \"USER\",\n            \"94148\",\n            \"VIEWED\",\n            \"PAGE\",\n            \"900\",\n            \"Learn Domo\",\n            \"\",\n            \"2008-05-15T16:59:36\",\n            \"desktop\",\n            \"\",\n            \"2012-04-29T16:15:24\",\n            \"2008-05-15\"\n        ]\n    ],\n    \"numRows\": 1,\n    \"duration\": \"133\"\n}"
-						}
-					]
-				},
-				{
 					"name": "Get Cards for a Dataset ID",
 					"id": "afdb7202-888d-4c4b-99b5-a85a1e96a9d0",
 					"protocolProfileBehavior": {
@@ -4696,11 +4582,154 @@
 			"item": [
 				{
 					"name": "Dataset",
-					"item": [],
+					"item": [
+						{
+							"name": "Query Dataset with SQL",
+							"id": "2e567a1a-fce0-4b6f-8c1c-2c2e9cf9cd34",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \"sql\": \"select * from table\" }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/query/v1/execute/{{dataset_id}}",
+								"description": "## Authentication\n\nThe Query API requires the use of the domo-developer-token (Admin > Access Token). The full_auth token will not work.\n\nAnother equivalent that uses the public APIs\n\n[https://developer.domo.com/docs/dataset-api-reference/dataset#Query%20a%20DataSet](https://developer.domo.com/docs/dataset-api-reference/dataset#Query%20a%20DataSet)\n\n#### Description (usage)\n\nQuery Dataset by SQL Query in the body.\n\n**UI reference**\n\nN/A\n\n#### **Resources**\n\nN/A\n\n#### Required parameters\n\n*   Dataset ID\n*   **SQL Query**\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Output table the result of query\n    \n\nPlease refer to the example below:"
+							},
+							"response": [
+								{
+									"id": "e3925647-7b8d-453b-9f13-938f2388040f",
+									"name": "Query Dataset with SQL - sample",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-domo-authentication",
+												"value": "{{session_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{ \"sql\": \"select * from table limit 5\" }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://{{domo_instance}}.domo.com/api/query/v1/execute/{{dataset_id}}"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 09 May 2022 14:54:35 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "3844"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self';"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"datasource\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n    \"device\": \"ad3-prod1-40\",\n    \"queryUrl\": \"/query/mmmm-0012-0200/94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n    \"columns\": [\n        \"Display Name\",\n        \"Role\",\n        \"User ID\",\n        \"Created Date\",\n        \"Department\",\n        \"Email\",\n        \"Type\",\n        \"Source_ID\",\n        \"Action\",\n        \"Object_Type\",\n        \"Object_ID\",\n        \"Object_Name\",\n        \"IP_Address\",\n        \"Event_Time\",\n        \"Device\",\n        \"Browser_Details\",\n        \"Last Login\",\n        \"Event_Date\"\n    ],\n    \"metadata\": [\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"DATETIME\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"DATETIME\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"DATETIME\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"DATE\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        }\n    ],\n    \"fromcache\": \"false\",\n    \"numColumns\": 18,\n    \"rows\": [\n        [\n            \"Kevin Brown\",\n            \"Admin\",\n            \"0000\",\n            \"2009-12-07T17:57:47\",\n            \"Welcome\",\n            \"email.com\",\n            \"USER\",\n            \"94148\",\n            \"VIEWED\",\n            \"PAGE\",\n            \"900\",\n            \"Learn Domo\",\n            \"\",\n            \"2008-05-15T16:59:36\",\n            \"desktop\",\n            \"\",\n            \"2012-04-29T16:15:24\",\n            \"2008-05-15\"\n        ]\n    ],\n    \"numRows\": 1,\n    \"duration\": \"133\"\n}"
+								}
+							]
+						}
+					],
 					"id": "519c660d-b9c9-4732-97e4-450511008807"
 				}
 			],
-			"id": "383d058c-7df2-4d9d-b8c1-659f1a7d4310"
+			"id": "383d058c-7df2-4d9d-b8c1-659f1a7d4310",
+			"auth": {
+				"type": "bearer",
+				"bearer": {
+					"token": "{{developer_token}}"
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a133f30e-a47d-4bc0-bcf9-9ac0ccb25933",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "d1a3386a-bc2a-48a4-991c-272084d30d2d",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		}
 	],
 	"auth": {
