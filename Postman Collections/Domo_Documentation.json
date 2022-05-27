@@ -125,8 +125,38 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"password": "{{client_secret}}",
+								"username": "{{client_id}}"
+							}
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://api.domo.com/oauth/token?grant_type=client_credentials&scope=data",
+							"protocol": "https",
+							"host": [
+								"api",
+								"domo",
+								"com"
+							],
+							"path": [
+								"oauth",
+								"token"
+							],
+							"query": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials"
+								},
+								{
+									"key": "scope",
+									"value": "data"
+								}
+							]
+						}
 					},
 					"response": []
 				}
