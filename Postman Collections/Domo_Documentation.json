@@ -4590,24 +4590,53 @@
 								"disableBodyPruning": true
 							},
 							"request": {
+								"auth": {
+									"type": "noauth"
+								},
 								"method": "POST",
 								"header": [
 									{
-										"key": "x-domo-authentication",
-										"value": "{{session_token}}",
+										"key": "Accept",
+										"value": "text/csv,application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{developer_token}}",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{ \"sql\": \"select * from table\" }",
+									"raw": "{\r\n\r\n  \"sql\" : \"select * from table limit 50\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "https://{{domo_instance}}.domo.com/api/query/v1/execute/{{dataset_id}}",
+								"url": {
+									"raw": "https://api.domo.com/v1/datasets/query/execute/{{dataset_id}}?IncludeHeaders=true",
+									"protocol": "https",
+									"host": [
+										"api",
+										"domo",
+										"com"
+									],
+									"path": [
+										"v1",
+										"datasets",
+										"query",
+										"execute",
+										"{{dataset_id}}"
+									],
+									"query": [
+										{
+											"key": "IncludeHeaders",
+											"value": "true"
+										}
+									]
+								},
 								"description": "## Authentication\n\nThe Query API requires the use of the domo-developer-token (Admin > Access Token). The full_auth token will not work.\n\nAnother equivalent that uses the public APIs\n\n[https://developer.domo.com/docs/dataset-api-reference/dataset#Query%20a%20DataSet](https://developer.domo.com/docs/dataset-api-reference/dataset#Query%20a%20DataSet)\n\n#### Description (usage)\n\nQuery Dataset by SQL Query in the body.\n\n**UI reference**\n\nN/A\n\n#### **Resources**\n\nN/A\n\n#### Required parameters\n\n*   Dataset ID\n*   **SQL Query**\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Output table the result of query\n    \n\nPlease refer to the example below:"
 							},
 							"response": [
