@@ -119,7 +119,7 @@
 					]
 				},
 				{
-					"name": "New Request",
+					"name": "Developer Authentication",
 					"id": "99efac4a-a2ca-43de-8e34-f425136e366b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
