@@ -4499,7 +4499,7 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "https://{{domo_instance}}.domo.com/companysettings/savedefaultpageordering?parentPageId=",
+							"raw": "https://{{domo_instance}}.domo.com/companysettings/savedefaultpageordering?parentPageId={{parentPage_id}}&pageOrderList%5B%5D={{SubPage_id}}",
 							"protocol": "https",
 							"host": [
 								"{{domo_instance}}",
@@ -4513,7 +4513,11 @@
 							"query": [
 								{
 									"key": "parentPageId",
-									"value": ""
+									"value": "{{parentPage_id}}"
+								},
+								{
+									"key": "pageOrderList%5B%5D",
+									"value": "{{SubPage_id}}"
 								}
 							]
 						}
