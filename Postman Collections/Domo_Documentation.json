@@ -4532,8 +4532,9 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "PUT",
+						"header": [],
+						"url": "https://{{domo_instance}}.domo.com/api/content/v1/customer-states/content.virtual.page.landing_id"
 					},
 					"response": []
 				}
