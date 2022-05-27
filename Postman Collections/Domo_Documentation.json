@@ -4601,7 +4601,8 @@
 									{
 										"key": "Authorization",
 										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQWRtaW4iLCJzY29wZSI6WyJkYXRhIl0sImRvbWFpbiI6InBsYXlzdGF0aW9uLWJldGEuZG9tby5jb20iLCJleHAiOjE2NTM2ODQ0NTEsImVudiI6InByb2QxNSIsInVzZXJJZCI6OTY0ODI4MjA5LCJqdGkiOiJ6Lyt1clRENnNOL2s5Qlk4dkViNjR1M3J0bWc9IiwiY2xpZW50X2lkIjoiOTEyYjY5ZTMtOGE2ZS00MWE1LTgzOGYtZTRmN2JlOGUxNTRjIiwiY3VzdG9tZXIiOiJtbW1tLTAwMTItMDM1MCJ9.uyHQWZKUXm8SvKenPYttchNUrANSYeNRTqtH4UexQb1fLWb3Z7tQ9QBIL_C5d-ITHfKkGMdy8eMS5PbBZLv7_6k5Y_qNaWlw3T7fWnlSgfFu9d3K-YiP3YRTva0Kdikw-jnrT_9zPEEi3kjQPnD3veAtmFSdhP98nMKXSkBOh6rLMy-d_cj4wABhDqoWj_s5nN8www6NyF9GSPF4g9HHkEEhkP7UkhEJ1XdF_3JxonueqEVVUo2AZFSSBU_9bQ8vipJzNdvBnv3e6CXdcIxoJDiveWMa-U0zJS1W3MP8vTXyhyHEgMI-Gs-jFMlkQBRWNFaMeGQOs0_-SWDaB5y0kQ",
-										"type": "text"
+										"type": "text",
+										"disabled": true
 									},
 									{
 										"key": "Authorization",
@@ -4612,7 +4613,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{  \"sql\" : \"select * from table limit 50\" }",
+									"raw": "{\r\n    \"sql\": \"select * from table limit 50\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
