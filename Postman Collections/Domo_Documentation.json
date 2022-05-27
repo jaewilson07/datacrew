@@ -4490,7 +4490,7 @@
 					]
 				},
 				{
-					"name": "New Request",
+					"name": "Put Sub pages",
 					"id": "b18e19bf-ffa8-472b-9a9b-c40ed31fb145",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
