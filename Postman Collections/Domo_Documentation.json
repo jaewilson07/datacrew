@@ -4496,8 +4496,27 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://{{domo_instance}}.domo.com/companysettings/savedefaultpageordering?parentPageId=",
+							"protocol": "https",
+							"host": [
+								"{{domo_instance}}",
+								"domo",
+								"com"
+							],
+							"path": [
+								"companysettings",
+								"savedefaultpageordering"
+							],
+							"query": [
+								{
+									"key": "parentPageId",
+									"value": ""
+								}
+							]
+						}
 					},
 					"response": []
 				}
