@@ -4534,6 +4534,15 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\":\"content.virtual.page.landing_id\",\n\"value\":109096720\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": "https://{{domo_instance}}.domo.com/api/content/v1/customer-states/content.virtual.page.landing_id"
 					},
 					"response": []
