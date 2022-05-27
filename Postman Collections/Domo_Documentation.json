@@ -117,6 +117,18 @@
 							"body": "{\n    \"userId\": 1893952720,\n    \"success\": true,\n    \"sessionToken\": \"\",\n    \"twoFactorInfo\": {\n        \"token\": null,\n        \"key\": null,\n        \"status\": \"VALID\",\n        \"phoneMask\": null\n    }\n}"
 						}
 					]
+				},
+				{
+					"name": "New Request",
+					"id": "99efac4a-a2ca-43de-8e34-f425136e366b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "9029bb43-dcaf-4558-ac58-41debd4624f2"
