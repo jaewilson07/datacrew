@@ -1748,7 +1748,7 @@
 					]
 				},
 				{
-					"name": "New Request",
+					"name": "test public",
 					"id": "82182dcc-f1e8-42de-8f98-fda7256520ac",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
