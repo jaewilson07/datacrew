@@ -787,6 +787,736 @@
 					]
 				},
 				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Get All Users",
+							"id": "713bb6e1-c36f-48d7-9292-606fb6d3453c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}",
+										"type": "text"
+									}
+								],
+								"url": "https://{{domo_instance}}.domo.com/api/content/v2/users",
+								"description": "#### Description (usage)\n\nGet the list of users\n\n#### **UI reference**\n\nAdmin section -> People\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934314-Generating-a-List-of-Users)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of users with properties\n    \n\nPlease refer to the example below:"
+							},
+							"response": [
+								{
+									"id": "43fcc8b8-d153-4329-9879-1562b5eab4e6",
+									"name": "Get All Users - exampe",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-domo-authentication",
+												"value": "{{session_token}}",
+												"type": "text"
+											}
+										],
+										"url": "https://{{domo_instance}}.domo.com/api/content/v2/users"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 06 May 2022 16:24:27 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self';"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding, User-Agent"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "[\n    {\n        \"id\": 0,\n        \"invitorUserId\": 2,\n        \"displayName\": \"monitor\",\n        \"userName\": \"monitor\",\n        \"emailAddress\": \"monitor@domo.com\",\n        \"accepted\": false,\n        \"userType\": \"DOMO_SUPPORT\",\n        \"timeZone\": \"Etc/GMT+7\",\n        \"modified\": 1588877394091,\n        \"created\": 1464820854,\n        \"role\": \"Privileged\",\n        \"roleId\": 1,\n        \"rights\": 31,\n        \"active\": true,\n        \"systemUser\": true,\n        \"anonymous\": true,\n        \"pending\": true\n    }\n   \n]"
+								}
+							]
+						},
+						{
+							"name": "Search Users",
+							"id": "2a9510ee-f07d-41b5-b95d-540de4a77e25",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"showCount\": true,\n    \"count\": false,\n    \"includeDeleted\": false,\n    \"includeSupport\": false,\n    \"limit\": 200,\n    \"offset\": 0,\n    \"sort\": {\n        \"field\": \"displayName\",\n        \"order\": \"ASC\"\n    },\n    \"filters\": [\n        {\n            \"filterType\": \"text\",\n            \"field\" : \"emailAddress\",\n            \"text\": \"iain.congdon@domo.com\"\n        }\n    ]\n\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/identity/v1/users/search",
+								"description": "#### Description (usage)\n\nGet the list of users\n\nNOTE\n\n*   the difference between POST and GET is unclear. Admin >People appears to use POST, but GET also works occassionally\n*   the search does not appear to be case sensitive (tested on emailAddress)\n    \n\n#### **UI reference**\n\nAdmin section -> People\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934314-Generating-a-List-of-Users)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of users with properties\n    \n\nPlease refer to the example below:"
+							},
+							"response": [
+								{
+									"id": "220db4d1-b3d5-4cc0-b8dd-b96f1bf7f82c",
+									"name": "search by id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-domo-authentication",
+												"value": "{{session_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"showCount\": true,\n    \"count\": false,\n    \"includeDeleted\": false,\n    \"includeSupport\": false,\n    \"filters\": [\n      {\n          \"field\" : \"id\",\n          \"filterType\" : \"value\",\n          \"values\" : [\"1069862308\"],\n          \"operator\": \"EQ\"\n\n\n\n\n      }\n    ]\n  }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://{{domo_instance}}.domo.com/api/identity/v1/users/search"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 06 May 2022 16:55:28 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self';"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"count\": 1,\n    \"users\": [\n        {\n            \"attributes\": [\n                {\n                    \"key\": \"id\",\n                    \"values\": [\n                        1069862308\n                    ]\n                },\n                {\n                    \"key\": \"displayName\",\n                    \"values\": [\n                        \"Thomas Brown\"\n                    ]\n                },\n                {\n                    \"key\": \"userName\",\n                    \"values\": [\n                        \"Thomas.Brown@everywhere.com\"\n                    ]\n                },\n                {\n                    \"key\": \"emailAddress\",\n                    \"values\": [\n                        \"Thomas.Brown@everywhere.com\"\n                    ]\n                },\n                {\n                    \"key\": \"roleId\",\n                    \"values\": [\n                        1\n                    ]\n                }\n            ],\n            \"roleId\": 1,\n            \"emailAddress\": \"Thomas.Brown@everywhere.com\",\n            \"userName\": \"Thomas.Brown@everywhere.com\",\n            \"displayName\": \"Thomas\",\n            \"id\": 1069862308\n        }\n    ]\n}"
+								},
+								{
+									"id": "d67ad100-b8d0-4e30-9069-0f7b203e9d1a",
+									"name": "search by email",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-domo-authentication",
+												"value": "{{session_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"showCount\": true,\n    \"count\": false,\n    \"includeDeleted\": false,\n    \"includeSupport\": false,\n    \"limit\": 200,\n    \"offset\": 0,\n    \"sort\": {\n        \"field\": \"displayName\",\n        \"order\": \"ASC\"\n    },\n    \"filters\": [\n        {\n            \"filterType\": \"text\",\n            \"field\" : \"emailAddress\",\n            \"text\": \"iain.congdon@domo.com\"\n        }\n    ]\n\n}\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://{{domo_instance}}.domo.com/api/identity/v1/users/search"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 09 May 2022 18:58:23 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self';"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"count\": 1,\n    \"users\": [\n        {\n            \"attributes\": [\n                {\n                    \"key\": \"id\",\n                    \"values\": [\n                        1069862308\n                    ]\n                },\n                {\n                    \"key\": \"displayName\",\n                    \"values\": [\n                        \"Iain Congdon - Domo\"\n                    ]\n                },\n                {\n                    \"key\": \"userName\",\n                    \"values\": [\n                        \"iain.congdon@domo.com\"\n                    ]\n                },\n                {\n                    \"key\": \"emailAddress\",\n                    \"values\": [\n                        \"iain.congdon@domo.com\"\n                    ]\n                },\n                {\n                    \"key\": \"roleId\",\n                    \"values\": [\n                        1\n                    ]\n                }\n            ],\n            \"roleId\": 1,\n            \"emailAddress\": \"iain.congdon@domo.com\",\n            \"userName\": \"iain.congdon@domo.com\",\n            \"displayName\": \"Iain Congdon - Domo\",\n            \"id\": 1069862308\n        }\n    ]\n}"
+								}
+							]
+						}
+					],
+					"id": "9d632591-53a3-429d-b358-4232e3fba85e",
+					"description": "### User folder\n\n<p>Folder contains the set of documented API about users followed by the list of API:</p>"
+				},
+				{
+					"name": "Groups",
+					"item": [
+						{
+							"name": "Search Groups by Name",
+							"id": "8da7c456-f4bb-478a-b6df-46cad5e48972",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://domo-dojo.domo.com/api/content/v2/groups/grouplist?ascending=true&limit=50&offset=0&search={{search_criteria}}&sort=name",
+									"protocol": "https",
+									"host": [
+										"domo-dojo",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"content",
+										"v2",
+										"groups",
+										"grouplist"
+									],
+									"query": [
+										{
+											"key": "ascending",
+											"value": "true"
+										},
+										{
+											"key": "limit",
+											"value": "50"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "search",
+											"value": "{{search_criteria}}"
+										},
+										{
+											"key": "sort",
+											"value": "name"
+										}
+									]
+								},
+								"description": "#### Description (usage)\n\nSearch groups by name.\n\n#### **UI reference**\n\nAdmin -> Groups\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934294-Creating-and-Managing-User-Groups)\n\n#### Required parameters\n\n*   search - search criteria\n*   limit - limit number to show\n*   ascending (true/false) - sort type\n*   sort - field name to sort\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\nReturns a list of groups that meet search criteria\n\nPlease refer to the example below:"
+							},
+							"response": [
+								{
+									"id": "d625b7de-5e37-4327-8038-d7d8e20b3bbd",
+									"name": "Groups - Search Groups by Name",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-domo-authentication",
+												"value": "{{session_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://domo-dojo.domo.com/api/content/v2/groups/grouplist?ascending=true&limit=50&offset=0&search={{search_criteria}}&sort=name",
+											"protocol": "https",
+											"host": [
+												"domo-dojo",
+												"domo",
+												"com"
+											],
+											"path": [
+												"api",
+												"content",
+												"v2",
+												"groups",
+												"grouplist"
+											],
+											"query": [
+												{
+													"key": "ascending",
+													"value": "true"
+												},
+												{
+													"key": "limit",
+													"value": "50"
+												},
+												{
+													"key": "offset",
+													"value": "0"
+												},
+												{
+													"key": "search",
+													"value": "{{search_criteria}}"
+												},
+												{
+													"key": "sort",
+													"value": "name"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 04 May 2022 18:18:59 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self';"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding, User-Agent"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "[\n    {\n        \"name\": \"Power User Group\",\n        \"groupId\": 1063525969,\n        \"owners\": [],\n        \"groupType\": \"adHoc\",\n        \"groupMembers\": [\n            {\n                \"type\": \"USER\",\n                \"id\": \"269129820\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1345408759\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1095515127\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1768567034\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"587894148\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"827093373\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1144220331\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"149943626\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"55874022\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"796785200\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1079474652\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1893952720\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"2072302260\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"756306366\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1504505648\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"699075231\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1227422648\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1229264718\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1318781111\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"617808774\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"826020125\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1446165056\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"966365811\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"693722501\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1167580245\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1154339157\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1354070971\"\n            }\n        ],\n        \"memberCount\": 27,\n        \"created\": \"2020-05-15 16:58:56.0\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Get All Groups",
+							"id": "77dd774d-920d-47ad-a5e9-55a825dbaa0b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}",
+										"type": "text"
+									}
+								],
+								"url": "https://{{domo_instance}}.domo.com/api/content/v2/groups",
+								"description": "#### Description (usage)\n\nGet the list of groups\n\n#### **UI reference**\n\nAdmin section -> Groups\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934294-Creating-and-Managing-User-Groups#1.1.)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\n*   ignoreCache (true/false)\n*   includeActive (true/false)\n*   includeUsers (true/false)\n    \n\n#### **Return value**\n\n*   Array of groups with properties\n    \n\nPlease refer to the example below:"
+							},
+							"response": [
+								{
+									"id": "e08b15b9-becd-47b9-8cb3-23b0ee15589c",
+									"name": "Groups - Get All Groups",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-domo-authentication",
+												"value": "{{session_token}}",
+												"type": "text"
+											}
+										],
+										"url": "https://{{domo_instance}}.domo.com/api/content/v2/groups"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 04 May 2022 18:11:51 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self';"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding, User-Agent"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "[\n    {\n        \"id\": 180920085,\n        \"name\": \"Content\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 0,\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1063525969,\n        \"name\": \"Power User Group\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1589561936000,\n        \"memberCount\": 27,\n        \"guid\": \"14ebea60-9155-11ea-a6eb-12affd108866\",\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1324037627,\n        \"name\": \"Default\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 294,\n        \"active\": true,\n        \"default\": true\n    },\n    {\n        \"id\": 2088006361,\n        \"name\": \"_Inline_Edit_Owners\",\n        \"type\": \"closed\",\n        \"userIds\": [],\n        \"created\": 1617953643000,\n        \"memberCount\": 7,\n        \"guid\": \"f5231ce5-9905-11eb-8e8b-0a775c76e4e4\",\n        \"description\": \"Inline Editor_Owner\",\n        \"active\": true,\n        \"default\": false\n    }\n]"
+								},
+								{
+									"id": "efec1163-cf5f-4b3f-a094-191412491b94",
+									"name": "Get All Groups with optional parameters",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-domo-authentication",
+												"value": "{{session_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://{{domo_instance}}.domo.com/api/content/v2/groups?ignoreCache=false&includeActive=false&includeUsers=false",
+											"protocol": "https",
+											"host": [
+												"{{domo_instance}}",
+												"domo",
+												"com"
+											],
+											"path": [
+												"api",
+												"content",
+												"v2",
+												"groups"
+											],
+											"query": [
+												{
+													"key": "ignoreCache",
+													"value": "false"
+												},
+												{
+													"key": "includeActive",
+													"value": "false"
+												},
+												{
+													"key": "includeUsers",
+													"value": "false"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 06 May 2022 15:34:36 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self';"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding, User-Agent"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "[\n    {\n        \"id\": 180920085,\n        \"name\": \"Content\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 0,\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1063525969,\n        \"name\": \"Power User Group\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1589561936000,\n        \"memberCount\": 27,\n        \"guid\": \"14ebea60-9155-11ea-a6eb-12affd108866\",\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1324037627,\n        \"name\": \"Default\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 294,\n        \"active\": true,\n        \"default\": true\n    },\n    {\n        \"id\": 2088006361,\n        \"name\": \"_Inline_Edit_Owners\",\n        \"type\": \"closed\",\n        \"userIds\": [],\n        \"created\": 1617953643000,\n        \"memberCount\": 7,\n        \"guid\": \"f5231ce5-9905-11eb-8e8b-0a775c76e4e4\",\n        \"description\": \"Inline Editor_Owner\",\n        \"active\": true,\n        \"default\": false\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Add Group Owner",
+							"id": "9be80c90-8436-44df-a22a-aea8d48d2711",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[{\"groupId\" : 804506650,\n\"addOwners\": [{\"type\":\"GROUP\", \"id\":612085674}]}]\n",
+									"options": {
+										"raw": {
+											"language": "javascript"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/content/v2/groups/access"
+							},
+							"response": []
+						}
+					],
+					"id": "ed3d96aa-cf69-49e4-bc0e-25bb73c45f10"
+				},
+				{
 					"name": "Dataset",
 					"item": [
 						{
@@ -1953,11 +2683,115 @@
 					"id": "87e12295-1ca7-42ec-80d7-8c8943dd17e8"
 				},
 				{
-					"name": "Groups",
+					"name": "Dataflow",
 					"item": [
 						{
-							"name": "Search Groups by Name",
-							"id": "8da7c456-f4bb-478a-b6df-46cad5e48972",
+							"name": "Get All Dataflows",
+							"id": "d666f445-0dd7-40fc-bfd0-5f2c51f1c9b4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}",
+										"type": "text"
+									}
+								],
+								"url": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows",
+								"description": "#### Description (usage)\n\nGet the list of all dataflows from instance\n\n#### **UI reference**\n\nLeft bar menu -> Dataflows\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/sections/360007295494-DataFlow-Management)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of dataflows with dataset inputs and outputs with properties\n    \n\nPlease refer to the example below:"
+							},
+							"response": [
+								{
+									"id": "00b25db8-5422-4f90-af3a-b8b471c9e7c6",
+									"name": "Get All dataflows - example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-domo-authentication",
+												"value": "{{session_token}}",
+												"type": "text"
+											}
+										],
+										"url": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 09 May 2022 09:11:58 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self';"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "[\n    {\n        \"id\": 46,\n        \"name\": \"AW_delete\",\n        \"dapDataFlowId\": \"26155ae2-1994-4808-ac55-5ec56318a026\",\n        \"responsibleUserId\": 1251168784,\n        \"runState\": \"ENABLED\",\n        \"lastExecution\": {\n            \"id\": 53816,\n            \"onboardFlowId\": 46,\n            \"previewRows\": 0,\n            \"dapDataFlowExecutionId\": \"3bd2c8a2-9ee1-4f8e-9453-9f21f1186933\",\n            \"beginTime\": 1620395314000,\n            \"endTime\": 1620395329000,\n            \"lastUpdated\": 1620395329000,\n            \"failed\": false,\n            \"state\": \"SUCCESS\",\n            \"dataFlowVersion\": 0\n        },\n        \"created\": 1620395295000,\n        \"modified\": 1620395310000,\n        \"engineProperties\": {\n            \"kettle.mode\": \"STRICT\"\n        },\n        \"inputs\": [\n            {\n                \"dataSourceId\": \"c119c8e8-fc43-4b12-b45b-6dac2a704aed\",\n                \"executeFlowWhenUpdated\": false,\n                \"dataSourceName\": \"Crytpo Usecase\"\n            }\n        ],\n        \"outputs\": [\n            {\n                \"onboardFlowId\": null,\n                \"dataSourceId\": \"576efb2f-e72a-4ee9-87f8-52304061217e\",\n                \"dataSourceName\": \"AW_delete\",\n                \"versionChainType\": \"REPLACE\"\n            }\n        ],\n        \"executionCount\": 2,\n        \"executionSuccessCount\": 2,\n        \"hydrationState\": \"DEHYDRATED\",\n        \"useLegacyTriggerBehavior\": false,\n        \"passwordProtected\": false,\n        \"deleted\": false,\n        \"abandoned\": false,\n        \"neverAbandon\": false,\n        \"paused\": false,\n        \"magic\": true,\n        \"restricted\": false,\n        \"editable\": true,\n        \"enabled\": true,\n        \"container\": false,\n        \"databaseType\": \"MAGIC\",\n        \"triggeredByInput\": false,\n        \"draft\": false,\n        \"numInputs\": 1,\n        \"numOutputs\": 1\n    \n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Get Dataflow by Id",
+							"id": "e2c85c88-841c-4c3e-9619-a06bb901fb40",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1971,49 +2805,34 @@
 									}
 								],
 								"url": {
-									"raw": "https://domo-dojo.domo.com/api/content/v2/groups/grouplist?ascending=true&limit=50&offset=0&search={{search_criteria}}&sort=name",
+									"raw": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows/:id",
 									"protocol": "https",
 									"host": [
-										"domo-dojo",
+										"{{domo_instance}}",
 										"domo",
 										"com"
 									],
 									"path": [
 										"api",
-										"content",
-										"v2",
-										"groups",
-										"grouplist"
+										"dataprocessing",
+										"v1",
+										"dataflows",
+										":id"
 									],
-									"query": [
+									"variable": [
 										{
-											"key": "ascending",
-											"value": "true"
-										},
-										{
-											"key": "limit",
-											"value": "50"
-										},
-										{
-											"key": "offset",
-											"value": "0"
-										},
-										{
-											"key": "search",
-											"value": "{{search_criteria}}"
-										},
-										{
-											"key": "sort",
-											"value": "name"
+											"key": "id",
+											"value": "{{dataflow_id}}",
+											"description": "Dataflow id   "
 										}
 									]
 								},
-								"description": "#### Description (usage)\n\nSearch groups by name.\n\n#### **UI reference**\n\nAdmin -> Groups\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934294-Creating-and-Managing-User-Groups)\n\n#### Required parameters\n\n*   search - search criteria\n*   limit - limit number to show\n*   ascending (true/false) - sort type\n*   sort - field name to sort\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\nReturns a list of groups that meet search criteria\n\nPlease refer to the example below:"
+								"description": "#### Description (usage)\n\nGet the dataflow full information (inputs, outputs, queries, state) by dataflow id\n\n#### **UI reference**\n\nLeft bar menu -> Dataflows\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/sections/360007295494-DataFlow-Management)\n\n#### Required parameters\n\n*   DataFlow id\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Dataflow with dataset inputs and outputs with properties\n    \n\nPlease refer to the example below:"
 							},
 							"response": [
 								{
-									"id": "d625b7de-5e37-4327-8038-d7d8e20b3bbd",
-									"name": "Groups - Search Groups by Name",
+									"id": "36ecdeb2-8c30-4a6d-80d7-4a2b43a965cb",
+									"name": "Get Dataflow by Id - example",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
@@ -2024,231 +2843,7 @@
 											}
 										],
 										"url": {
-											"raw": "https://domo-dojo.domo.com/api/content/v2/groups/grouplist?ascending=true&limit=50&offset=0&search={{search_criteria}}&sort=name",
-											"protocol": "https",
-											"host": [
-												"domo-dojo",
-												"domo",
-												"com"
-											],
-											"path": [
-												"api",
-												"content",
-												"v2",
-												"groups",
-												"grouplist"
-											],
-											"query": [
-												{
-													"key": "ascending",
-													"value": "true"
-												},
-												{
-													"key": "limit",
-													"value": "50"
-												},
-												{
-													"key": "offset",
-													"value": "0"
-												},
-												{
-													"key": "search",
-													"value": "{{search_criteria}}"
-												},
-												{
-													"key": "sort",
-													"value": "name"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Server",
-											"value": "nginx"
-										},
-										{
-											"key": "Date",
-											"value": "Wed, 04 May 2022 18:18:59 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json;charset=utf-8"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Cache-Control",
-											"value": "no-cache, no-store, max-age=0, must-revalidate"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "Content-Security-Policy",
-											"value": "frame-ancestors 'self';"
-										},
-										{
-											"key": "Expires",
-											"value": "0"
-										},
-										{
-											"key": "Pragma",
-											"value": "no-cache"
-										},
-										{
-											"key": "Vary",
-											"value": "Accept-Encoding, User-Agent"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-Frame-Options",
-											"value": "DENY"
-										},
-										{
-											"key": "X-Xss-Protection",
-											"value": "1; mode=block"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "[\n    {\n        \"name\": \"Power User Group\",\n        \"groupId\": 1063525969,\n        \"owners\": [],\n        \"groupType\": \"adHoc\",\n        \"groupMembers\": [\n            {\n                \"type\": \"USER\",\n                \"id\": \"269129820\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1345408759\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1095515127\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1768567034\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"587894148\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"827093373\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1144220331\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"149943626\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"55874022\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"796785200\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1079474652\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1893952720\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"2072302260\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"756306366\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1504505648\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"699075231\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1227422648\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1229264718\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1318781111\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"617808774\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"826020125\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1446165056\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"966365811\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"693722501\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1167580245\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1154339157\"\n            },\n            {\n                \"type\": \"USER\",\n                \"id\": \"1354070971\"\n            }\n        ],\n        \"memberCount\": 27,\n        \"created\": \"2020-05-15 16:58:56.0\"\n    }\n]"
-								}
-							]
-						},
-						{
-							"name": "Get All Groups",
-							"id": "77dd774d-920d-47ad-a5e9-55a825dbaa0b",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "x-domo-authentication",
-										"value": "{{session_token}}",
-										"type": "text"
-									}
-								],
-								"url": "https://{{domo_instance}}.domo.com/api/content/v2/groups",
-								"description": "#### Description (usage)\n\nGet the list of groups\n\n#### **UI reference**\n\nAdmin section -> Groups\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934294-Creating-and-Managing-User-Groups#1.1.)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\n*   ignoreCache (true/false)\n*   includeActive (true/false)\n*   includeUsers (true/false)\n    \n\n#### **Return value**\n\n*   Array of groups with properties\n    \n\nPlease refer to the example below:"
-							},
-							"response": [
-								{
-									"id": "e08b15b9-becd-47b9-8cb3-23b0ee15589c",
-									"name": "Groups - Get All Groups",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "x-domo-authentication",
-												"value": "{{session_token}}",
-												"type": "text"
-											}
-										],
-										"url": "https://{{domo_instance}}.domo.com/api/content/v2/groups"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Server",
-											"value": "nginx"
-										},
-										{
-											"key": "Date",
-											"value": "Wed, 04 May 2022 18:11:51 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json;charset=utf-8"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Cache-Control",
-											"value": "no-cache, no-store, max-age=0, must-revalidate"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "Content-Security-Policy",
-											"value": "frame-ancestors 'self';"
-										},
-										{
-											"key": "Expires",
-											"value": "0"
-										},
-										{
-											"key": "Pragma",
-											"value": "no-cache"
-										},
-										{
-											"key": "Vary",
-											"value": "Accept-Encoding, User-Agent"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-Frame-Options",
-											"value": "DENY"
-										},
-										{
-											"key": "X-Xss-Protection",
-											"value": "1; mode=block"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "[\n    {\n        \"id\": 180920085,\n        \"name\": \"Content\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 0,\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1063525969,\n        \"name\": \"Power User Group\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1589561936000,\n        \"memberCount\": 27,\n        \"guid\": \"14ebea60-9155-11ea-a6eb-12affd108866\",\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1324037627,\n        \"name\": \"Default\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 294,\n        \"active\": true,\n        \"default\": true\n    },\n    {\n        \"id\": 2088006361,\n        \"name\": \"_Inline_Edit_Owners\",\n        \"type\": \"closed\",\n        \"userIds\": [],\n        \"created\": 1617953643000,\n        \"memberCount\": 7,\n        \"guid\": \"f5231ce5-9905-11eb-8e8b-0a775c76e4e4\",\n        \"description\": \"Inline Editor_Owner\",\n        \"active\": true,\n        \"default\": false\n    }\n]"
-								},
-								{
-									"id": "efec1163-cf5f-4b3f-a094-191412491b94",
-									"name": "Get All Groups with optional parameters",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "x-domo-authentication",
-												"value": "{{session_token}}",
-												"type": "text"
-											}
-										],
-										"url": {
-											"raw": "https://{{domo_instance}}.domo.com/api/content/v2/groups?ignoreCache=false&includeActive=false&includeUsers=false",
+											"raw": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows/:id",
 											"protocol": "https",
 											"host": [
 												"{{domo_instance}}",
@@ -2257,22 +2852,16 @@
 											],
 											"path": [
 												"api",
-												"content",
-												"v2",
-												"groups"
+												"dataprocessing",
+												"v1",
+												"dataflows",
+												":id"
 											],
-											"query": [
+											"variable": [
 												{
-													"key": "ignoreCache",
-													"value": "false"
-												},
-												{
-													"key": "includeActive",
-													"value": "false"
-												},
-												{
-													"key": "includeUsers",
-													"value": "false"
+													"key": "id",
+													"value": "{{dataflow_id}}",
+													"description": "Dataflow id   "
 												}
 											]
 										}
@@ -2287,7 +2876,7 @@
 										},
 										{
 											"key": "Date",
-											"value": "Fri, 06 May 2022 15:34:36 GMT"
+											"value": "Mon, 09 May 2022 09:22:19 GMT"
 										},
 										{
 											"key": "Content-Type",
@@ -2323,7 +2912,7 @@
 										},
 										{
 											"key": "Vary",
-											"value": "Accept-Encoding, User-Agent"
+											"value": "Accept-Encoding"
 										},
 										{
 											"key": "X-Content-Type-Options",
@@ -2344,34 +2933,12 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "[\n    {\n        \"id\": 180920085,\n        \"name\": \"Content\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 0,\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1063525969,\n        \"name\": \"Power User Group\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1589561936000,\n        \"memberCount\": 27,\n        \"guid\": \"14ebea60-9155-11ea-a6eb-12affd108866\",\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1324037627,\n        \"name\": \"Default\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 294,\n        \"active\": true,\n        \"default\": true\n    },\n    {\n        \"id\": 2088006361,\n        \"name\": \"_Inline_Edit_Owners\",\n        \"type\": \"closed\",\n        \"userIds\": [],\n        \"created\": 1617953643000,\n        \"memberCount\": 7,\n        \"guid\": \"f5231ce5-9905-11eb-8e8b-0a775c76e4e4\",\n        \"description\": \"Inline Editor_Owner\",\n        \"active\": true,\n        \"default\": false\n    }\n]"
+									"body": "{\n    \"id\": 60,\n    \"name\": \"DomoStats People with Activity Log\",\n    \"dapDataFlowId\": \"33c46931-4f9b-4834-91ec-82359da4e777\",\n    \"responsibleUserId\": 1893952720,\n    \"runState\": \"ENABLED\",\n    \"onboardFlowVersion\": {\n        \"id\": 242,\n        \"timeStamp\": 1624449225000,\n        \"authorId\": 1893952720,\n        \"numInputs\": 2,\n        \"numOutputs\": 1,\n        \"executionCount\": 0,\n        \"executionSuccessCount\": 0,\n        \"versionNumber\": 4\n    },\n    \"lastExecution\": {\n        \"id\": 162077,\n        \"onboardFlowId\": 60,\n        \"previewRows\": 0,\n        \"dapDataFlowExecutionId\": \"19ddcae5-4d1e-45b6-b04c-ac6fe2076006\",\n        \"beginTime\": 1652028913000,\n        \"endTime\": 1652029078000,\n        \"lastUpdated\": 1652029078000,\n        \"failed\": false,\n        \"state\": \"SUCCESS\",\n        \"dataFlowVersion\": 0\n    },\n    \"created\": 1624432428000,\n    \"modified\": 1624449224000,\n    \"actions\": [\n        {\n            \"type\": \"LoadFromVault\",\n            \"id\": \"0\",\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            },\n            \"targetTableName\": \"activity_log\",\n            \"dataSourceId\": \"61c4e63d-0627-41f7-b138-74968ebd7634\",\n            \"executeFlowWhenUpdated\": true,\n            \"pseudoDataSource\": false,\n            \"truncateTextColumns\": false,\n            \"truncateRows\": false,\n            \"onlyLoadNewVersions\": false\n        },\n        {\n            \"type\": \"LoadFromVault\",\n            \"id\": \"1\",\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            },\n            \"targetTableName\": \"people\",\n            \"dataSourceId\": \"241025d7-3cca-4369-b7c0-b3264277c0e1\",\n            \"executeFlowWhenUpdated\": true,\n            \"pseudoDataSource\": false,\n            \"truncateTextColumns\": false,\n            \"truncateRows\": false,\n            \"onlyLoadNewVersions\": false\n        },\n        {\n            \"type\": \"SqlAction\",\n            \"id\": \"2\",\n            \"dependsOn\": [\n                \"0\",\n                \"1\"\n            ],\n            \"notes\": [],\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            },\n            \"statements\": [\n                \"CREATE INDEX activity_user_id ON activity_log(`User_ID`)\"\n            ],\n            \"columnSettings\": {}\n        },\n        {\n            \"type\": \"SqlAction\",\n            \"id\": \"3\",\n            \"dependsOn\": [\n                \"2\"\n            ],\n            \"notes\": [],\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            },\n            \"statements\": [\n                \"CREATE INDEX people_user_id ON people(`User ID`)\"\n            ],\n            \"columnSettings\": {}\n        },\n        {\n            \"type\": \"GenerateTableAction\",\n            \"id\": \"4\",\n            \"dependsOn\": [\n                \"3\"\n            ],\n            \"tableName\": \"people_with_activity_log\",\n            \"selectStatement\": \"SELECT \\nb.`Display Name`\\n, b.`Role`\\n, b.`User ID`\\n, b.`Created Date`\\n, b.`Department`\\n, b.`Email`\\n, a.`Type`\\n, a.`Source_ID`\\n, a.`Action`\\n, a.`Object_Type`\\n, a.`Object_ID`\\n, a.`Object_Name`\\n, a.`IP_Address`\\n, a.`Event_Time`\\n, a.`Device`\\n, a.`Browser_Details`\\n, b.`Last Login`\\nFROM activity_log a\\nLEFT JOIN\\npeople b\\nON a.`User_ID` = b.`User ID`\\nWHERE a.`Type` = UPPER('USER')\",\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            }\n        },\n        {\n            \"type\": \"PublishToVault\",\n            \"id\": \"5\",\n            \"dependsOn\": [\n                \"4\"\n            ],\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            },\n            \"query\": \"SELECT \\n`Display Name`\\n,`Role`\\n,`User ID`\\n,`Created Date`\\n,`Department`\\n,`Email`\\n,`Type`\\n,`Source_ID`\\n,`Action`\\n,`Object_Type`\\n,`Object_ID`\\n,`Object_Name`\\n,`IP_Address`\\n,`Event_Time`\\n,`Device`\\n,`Browser_Details`\\n,`Last Login`\\n, cast(`Event_Time` as Date) `Event_Date`\\nFROM people_with_activity_log\",\n            \"dataSource\": {\n                \"guid\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n                \"type\": \"DataFlow\",\n                \"name\": \"DomoStats People with Activity Log\"\n            },\n            \"versionChainType\": \"REPLACE\",\n            \"schemaSource\": \"DATAFLOW\",\n            \"partitioned\": false\n        }\n    ],\n    \"engineProperties\": {\n        \"mysql.mode\": \"DEFAULT\"\n    },\n    \"inputs\": [\n        {\n            \"dataSourceId\": \"241025d7-3cca-4369-b7c0-b3264277c0e1\",\n            \"executeFlowWhenUpdated\": true,\n            \"dataSourceName\": \"DomoStats - People\",\n            \"onlyLoadNewVersions\": false\n        },\n        {\n            \"dataSourceId\": \"61c4e63d-0627-41f7-b138-74968ebd7634\",\n            \"executeFlowWhenUpdated\": true,\n            \"dataSourceName\": \"DomoStats - Activity Log\",\n            \"onlyLoadNewVersions\": false\n        }\n    ],\n    \"outputs\": [\n        {\n            \"onboardFlowId\": null,\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"dataSourceName\": \"DomoStats People with Activity Log\",\n            \"versionChainType\": \"REPLACE\"\n        }\n    ],\n    \"executionCount\": 184,\n    \"executionSuccessCount\": 184,\n    \"hydrationState\": \"DEHYDRATED\",\n    \"useLegacyTriggerBehavior\": false,\n    \"passwordProtected\": false,\n    \"deleted\": false,\n    \"abandoned\": false,\n    \"neverAbandon\": false,\n    \"settings\": {},\n    \"paused\": false,\n    \"magic\": false,\n    \"restricted\": false,\n    \"editable\": true,\n    \"enabled\": true,\n    \"container\": false,\n    \"databaseType\": \"MYSQL\",\n    \"triggeredByInput\": true,\n    \"draft\": false,\n    \"numInputs\": 2,\n    \"numOutputs\": 1\n}"
 								}
 							]
-						},
-						{
-							"name": "Add Group Owner",
-							"id": "9be80c90-8436-44df-a22a-aea8d48d2711",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "[{\"groupId\" : 804506650,\n\"addOwners\": [{\"type\":\"GROUP\", \"id\":612085674}]}]\n",
-									"options": {
-										"raw": {
-											"language": "javascript"
-										}
-									}
-								},
-								"url": "https://{{domo_instance}}.domo.com/api/content/v2/groups/access"
-							},
-							"response": []
 						}
 					],
-					"id": "ed3d96aa-cf69-49e4-bc0e-25bb73c45f10"
+					"id": "77a2a0ef-e029-4b17-8d03-4a5f0fbd7f21"
 				},
 				{
 					"name": "PDP",
@@ -2828,6 +3395,683 @@
 					],
 					"id": "43430adf-ea26-4091-919b-362ef72de03c",
 					"description": "PDP Policies can be set for multiple filter types (simple, calculated and trusted attributes), see the Alter Policy documentation for multiple examples\n\n[Domo KB Article](https://domohelp.domo.com/hc/en-us/sections/360007334593-Personalized-Data-Permissions-PDP-)"
+				},
+				{
+					"name": "Page",
+					"item": [
+						{
+							"name": "Get Pages",
+							"id": "8c485ef7-11c5-4843-b068-ed964b6e9c3f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}",
+										"type": "text"
+									}
+								],
+								"url": "https://{{domo_instance}}.domo.com/api/content/v1/pages",
+								"description": "#### Description (usage)\n\nGet the list of pages\n\n#### **UI reference**\n\nAdmin section -> Pages\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934234-Admin-Settings-Layout#h_01F9HKX4CSAX96A82Q4C8Z50MX)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of pages with properties\n    \n\nPlease refer to the example below:"
+							},
+							"response": [
+								{
+									"id": "8df5bc7c-1fe2-464e-869d-efd2dd3874cc",
+									"name": "Get Pages",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-domo-authentication",
+												"value": "{{session_token}}",
+												"type": "text"
+											}
+										],
+										"url": "https://{{domo_instance}}/api/content/v1/pages"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get Page by ID",
+							"id": "80d19a5f-d61e-45be-bd21-4aa308d84881",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "74817d42-2567-46fb-a6cd-dfefbfc2cd22"
+				},
+				{
+					"name": "Cards",
+					"item": [
+						{
+							"name": "Get Card List",
+							"id": "8c533210-e69b-4515-8db4-558593979165",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ascending\": true,\r\n    \"includeCardTitleClause\": false,\r\n    \"includePageTitleClause\": false,\r\n    \"notOnPage\": false,\r\n    \"orderBy\": \"cardTitle\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/content/v2/cards/adminsummary?limit={{limit}}&skip={{offset}}",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"content",
+										"v2",
+										"cards",
+										"adminsummary"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "{{limit}}"
+										},
+										{
+											"key": "skip",
+											"value": "{{offset}}"
+										}
+									]
+								},
+								"description": "#### Description (usage)\n\nGet the list of cards with their properties\n\n#### **UI reference**\n\nAdmin section -> Cards\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934234-Admin-Settings-Layout#h_01F9HKWVSKH09K35DWT3PJFVKN)\n\n#### Required parameters\n\n*   skip - query offset\n*   limit - number of cards to retrieve\n    \n\n#### Optional parameters\n\n**Body Parameters**\n\n**includeCardTitleClause** and **includePageTitleClause** require matching **includeTitleSearchText** or **includePageTitleClause**.\n\n**pageIds** can include a list of specified **page_ids**\n\n#### **Return value**\n\n*   Array of cards with properties\n    \n\nPlease refer to the example below:"
+							},
+							"response": [
+								{
+									"id": "498f4563-2633-45c8-890a-637c60f2a254",
+									"name": "Get Card List",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"includeCardCertificationClause\": true, \r\n    \"includeCardTitleClause\": true,\r\n    \"cardTitleSearchText\": \"test\",\r\n    \"notOnPage\": false,\r\n    \"pageIds\": [],\r\n    \"includePageTitleClause\": false,\r\n    \"pageTitleSearchText\": \"Test\",\r\n    \"ascending\": true,\r\n    \"orderBy\": \"cardTitle\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://{{domo_instance}}.domo.com/api/content/v2/cards/adminsummary?limit={{limit}}&skip={{offset}}",
+											"protocol": "https",
+											"host": [
+												"{{domo_instance}}",
+												"domo",
+												"com"
+											],
+											"path": [
+												"api",
+												"content",
+												"v2",
+												"cards",
+												"adminsummary"
+											],
+											"query": [
+												{
+													"key": "limit",
+													"value": "{{limit}}"
+												},
+												{
+													"key": "skip",
+													"value": "{{offset}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 12 May 2022 19:15:21 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self';"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding, User-Agent"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Ratelimit-Remaining",
+											"value": "6"
+										},
+										{
+											"key": "X-Ratelimit-Reset",
+											"value": "1652382960"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"cardAdminSummaries\": [\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1774387618\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Cadell Falconer\"\n                }\n            ],\n            \"id\": 1647061204,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1634778443000,\n            \"title\": \"Cadell 75th Percentile Test - Baseball Stats\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 384424178,\n                    \"title\": \"75th Percentile Test\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1774387618\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Cadell Falconer\"\n                }\n            ],\n            \"id\": 1027750237,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1634779630000,\n            \"title\": \"Cadell 75th Percentile Test - Chart\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 384424178,\n                    \"title\": \"75th Percentile Test\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"966365811\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Scott Thompson\"\n                }\n            ],\n            \"id\": 877027996,\n            \"type\": \"Text\",\n            \"badgeUpdated\": 1625687449000,\n            \"title\": \"Data Specialist Knowledge Test\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 443317966,\n                    \"title\": \"Course work\",\n                    \"parentPageId\": 1613954604,\n                    \"parentPageTitle\": \"_-ST Superman-_\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1345408759\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Alexis Lorenz (DataMaven)\"\n                }\n            ],\n            \"id\": 124619046,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1607465914000,\n            \"title\": \"Latest Unemployment Claims per 100 K\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 790951325,\n                    \"title\": \"Coronavirus (COVID-19) Dashboard\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"966365811\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Scott Thompson\"\n                }\n            ],\n            \"id\": 514002900,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1649363128000,\n            \"title\": \"Log to base test\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": -100000,\n                    \"title\": \"Overview\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"966365811\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Scott Thompson\"\n                }\n            ],\n            \"id\": 1762459853,\n            \"type\": \"document\",\n            \"badgeUpdated\": 1625758599000,\n            \"title\": \"practical test?\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 443317966,\n                    \"title\": \"Course work\",\n                    \"parentPageId\": 1613954604,\n                    \"parentPageTitle\": \"_-ST Superman-_\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1141078945\",\n                    \"type\": \"USER\",\n                    \"displayName\": \" Justin Pumford \"\n                }\n            ],\n            \"id\": 682075914,\n            \"type\": \"domoapp\",\n            \"badgeUpdated\": 1618976491000,\n            \"title\": \"React Test\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 1109905686,\n                    \"title\": \"Top 5\",\n                    \"parentPageId\": 127044793,\n                    \"parentPageTitle\": \"JaeW_AtOnyx\"\n                },\n                {\n                    \"pageId\": 989969396,\n                    \"title\": \"Custom Apps\",\n                    \"parentPageId\": 109096720,\n                    \"parentPageTitle\": \"Domo IDEA Exchange\"\n                },\n                {\n                    \"pageId\": -100000,\n                    \"title\": \"Overview\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1893952720\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Jae Wilson\"\n                }\n            ],\n            \"id\": 101681077,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1616777219000,\n            \"title\": \"RL test (filter out Domo Support)View of DomoStats - Activity Log\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": -100000,\n                    \"title\": \"Overview\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"612085674\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Oleksii Zakrevskyi\"\n                }\n            ],\n            \"id\": 663477078,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1652176913000,\n            \"title\": \"test\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": -100000,\n                    \"title\": \"Overview\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"827093373\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Dean.Wangerin\"\n                }\n            ],\n            \"id\": 1632703785,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1617378071000,\n            \"title\": \"test using a calc field from view\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 1109905686,\n                    \"title\": \"Top 5\",\n                    \"parentPageId\": 127044793,\n                    \"parentPageTitle\": \"JaeW_AtOnyx\"\n                },\n                {\n                    \"pageId\": -100000,\n                    \"title\": \"Overview\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1345408759\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Alexis Lorenz (DataMaven)\"\n                }\n            ],\n            \"id\": 1775967968,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1607465914000,\n            \"title\": \"Testing by state\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 790951325,\n                    \"title\": \"Coronavirus (COVID-19) Dashboard\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1898323170\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Creed Smith\"\n                }\n            ],\n            \"id\": 1548948000,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1631619767000,\n            \"title\": \"View of 75th Percentile Test - Baseball Stats\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 1761849366,\n                    \"title\": \"delete me\"\n                },\n                {\n                    \"pageId\": 384424178,\n                    \"title\": \"75th Percentile Test\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1893952720\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Jae Wilson\"\n                }\n            ],\n            \"id\": 1350520930,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1631900717000,\n            \"title\": \"View of 75th Percentile Test - Baseball Stats\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": -100002,\n                    \"title\": \"Shared\"\n                },\n                {\n                    \"pageId\": 423813863,\n                    \"title\": \"delete_prod me\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"2129297797\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"John Stevens\"\n                }\n            ],\n            \"id\": 615356809,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1618867780000,\n            \"title\": \"Women's Clothing test dataset\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 225044251,\n                    \"title\": \"Text Analytics\",\n                    \"parentPageId\": 109096720,\n                    \"parentPageTitle\": \"Domo IDEA Exchange\"\n                }\n            ]\n        }\n    ],\n    \"totalCardCount\": 14\n}"
+								}
+							]
+						},
+						{
+							"name": "Get Card KPI Definitions By Id",
+							"id": "71866554-b186-4c1e-9bd5-4f669ce986f3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"urn\": \"{{card_id}}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/content/v3/cards/kpi/definition",
+								"description": "#### Description (usage)\n\nGet the list of KPI definitions by card ID\n\n#### **UI reference**\n\nN/A\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934234-Admin-Settings-Layout#h_01F9HKWVSKH09K35DWT3PJFVKN)\n\n#### Required parameters\n\n*   Card ID in the body\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of KPI definitions for specified card\n    \n\nPlease refer to the example below:"
+							},
+							"response": [
+								{
+									"id": "dd53e32e-b5bb-4ba5-b4d3-b84c64d2e872",
+									"name": "retrieve KPI Definitions",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"urn\": \"{{card_id}}\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://{{domo_instance}}.domo.com/api/content/v3/cards/kpi/definition"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 23:21:55 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self';"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding, User-Agent"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"id\": 1581024515,\n    \"urn\": \"1581024515\",\n    \"definition\": {\n        \"subscriptions\": {\n            \"big_number\": {\n                \"name\": \"big_number\",\n                \"columns\": [\n                    {\n                        \"column\": \"Name\",\n                        \"aggregation\": \"COUNT\",\n                        \"alias\": \"Count of Name\",\n                        \"format\": {\n                            \"type\": \"abbreviated\",\n                            \"format\": \"#\"\n                        }\n                    }\n                ],\n                \"filters\": [],\n                \"orderBy\": [],\n                \"groupBy\": [],\n                \"fiscal\": false,\n                \"projection\": false,\n                \"distinct\": false,\n                \"limit\": 1\n            },\n            \"main\": {\n                \"name\": \"main\",\n                \"columns\": [\n                    {\n                        \"column\": \"Name\",\n                        \"mapping\": \"VALUE\"\n                    },\n                    {\n                        \"formulaId\": \"calculation_4a039d7e-094b-41fe-a6de-49225607683e\",\n                        \"mapping\": \"VALUE\",\n                        \"alias\": \"First Name\"\n                    },\n                    {\n                        \"formulaId\": \"calculation_58d401a0-f074-48fc-9c09-c3681aa90b7c\",\n                        \"mapping\": \"VALUE\"\n                    },\n                    {\n                        \"formulaId\": \"calculation_5b4d86a9-d185-4ca7-b677-2df17ab2221d\",\n                        \"mapping\": \"VALUE\"\n                    },\n                    {\n                        \"formulaId\": \"calculation_18207bf6-d820-43ad-b1cf-56801191faeb\",\n                        \"mapping\": \"VALUE\"\n                    }\n                ],\n                \"filters\": [],\n                \"orderBy\": [],\n                \"groupBy\": [],\n                \"fiscal\": false,\n                \"projection\": false,\n                \"distinct\": false\n            }\n        },\n        \"formulas\": [\n            {\n                \"templateId\": 524,\n                \"id\": \"calculation_18207bf6-d820-43ad-b1cf-56801191faeb\",\n                \"name\": \"URL\",\n                \"formula\": \"CONCAT('<a href=\\\"http://en.wikipedia.org/wiki\\\"','\\\"target=\\\"_blank\\\">',`id`, '</a>')\",\n                \"status\": \"VALID\",\n                \"persistedOnDataSource\": false,\n                \"columnPositions\": [\n                    {\n                        \"columnName\": \"`id`\",\n                        \"columnPosition\": 68\n                    }\n                ],\n                \"cacheWindow\": \"non_dynamic\",\n                \"locked\": false,\n                \"owner\": 55874022,\n                \"usedByOtherCards\": false,\n                \"referenceCount\": 1,\n                \"dataType\": \"STRING\",\n                \"isAggregatable\": true,\n                \"bignumber\": false\n            },\n            {\n                \"templateId\": 520,\n                \"id\": \"calculation_58d401a0-f074-48fc-9c09-c3681aa90b7c\",\n                \"name\": \"Last Name\",\n                \"formula\": \"TRIM(SUBSTRING(`Name`, 1, INSTR(`Name`, ',') - 1))  -- -1 to ignore the comma\",\n                \"status\": \"VALID\",\n                \"persistedOnDataSource\": false,\n                \"columnPositions\": [\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 15\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 32\n                    }\n                ],\n                \"cacheWindow\": \"non_dynamic\",\n                \"locked\": false,\n                \"owner\": 55874022,\n                \"usedByOtherCards\": false,\n                \"referenceCount\": 1,\n                \"dataType\": \"STRING\",\n                \"isAggregatable\": true,\n                \"bignumber\": false\n            },\n            {\n                \"templateId\": 521,\n                \"id\": \"calculation_4a039d7e-094b-41fe-a6de-49225607683e\",\n                \"name\": \"First Name 2\",\n                \"formula\": \"TRIM(SUBSTRING(`Name`, INSTR(`Name`, ',') + 1, LENGTH(`Name`) - INSTR(`Name`, ',')))  -- + 1 to ignore comma\",\n                \"status\": \"VALID\",\n                \"persistedOnDataSource\": false,\n                \"columnPositions\": [\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 15\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 29\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 54\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 70\n                    }\n                ],\n                \"cacheWindow\": \"non_dynamic\",\n                \"locked\": false,\n                \"owner\": 55874022,\n                \"usedByOtherCards\": false,\n                \"referenceCount\": 1,\n                \"dataType\": \"STRING\",\n                \"isAggregatable\": true,\n                \"bignumber\": false\n            },\n            {\n                \"templateId\": 519,\n                \"id\": \"calculation_5b4d86a9-d185-4ca7-b677-2df17ab2221d\",\n                \"name\": \"First Last\",\n                \"formula\": \"CONCAT(\\n  TRIM(SUBSTRING(`Name`, INSTR(`Name`, ',') + 1, LENGTH(`Name`) - INSTR(`Name`, ',')))  -- + 1 to ignore comma\\n  , ' '\\n  , TRIM(SUBSTRING(`Name`, 1, INSTR(`Name`, ',') - 1))  -- -1 to ignore the comma\\n)\\n  \",\n                \"status\": \"VALID\",\n                \"persistedOnDataSource\": false,\n                \"columnPositions\": [\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 25\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 39\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 64\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 80\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 146\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 163\n                    }\n                ],\n                \"cacheWindow\": \"non_dynamic\",\n                \"locked\": false,\n                \"owner\": 55874022,\n                \"usedByOtherCards\": false,\n                \"referenceCount\": 1,\n                \"dataType\": \"STRING\",\n                \"isAggregatable\": true,\n                \"bignumber\": false\n            }\n        ],\n        \"conditionalFormats\": [],\n        \"annotations\": [],\n        \"slicers\": [\n            {\n                \"type\": \"string\",\n                \"displayType\": \"match_values_text_input\",\n                \"name\": \"First Last\",\n                \"column\": \"calculation_5b4d86a9-d185-4ca7-b677-2df17ab2221d\",\n                \"columnDisplayName\": \"First Last\",\n                \"operator\": \"CONTAINS\",\n                \"values\": [],\n                \"collapsed\": false,\n                \"controlType\": \"SLICER\"\n            }\n        ],\n        \"title\": \"Names - Last, First => First Last\",\n        \"description\": \"\",\n        \"chartVersion\": \"9\",\n        \"charts\": {\n            \"main\": {\n                \"component\": \"main\",\n                \"chartType\": \"badge_basic_table\",\n                \"overrides\": {},\n                \"goal\": null\n            }\n        },\n        \"allowTableDrill\": true,\n        \"segments\": {\n            \"active\": [],\n            \"definitions\": []\n        },\n        \"modified\": 1616172957000\n    },\n    \"columns\": [\n        {\n            \"id\": \"id\",\n            \"name\": \"id\",\n            \"type\": \"numeric\",\n            \"isCalculation\": false,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"sourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\"\n        },\n        {\n            \"id\": \"Name\",\n            \"name\": \"Name\",\n            \"type\": \"string\",\n            \"isCalculation\": false,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"sourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\"\n        },\n        {\n            \"id\": \"Column\",\n            \"name\": \"Column\",\n            \"type\": \"string\",\n            \"isCalculation\": false,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"sourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\"\n        },\n        {\n            \"id\": \"calculation_5b4d86a9-d185-4ca7-b677-2df17ab2221d\",\n            \"name\": \"First Last\",\n            \"type\": \"string\",\n            \"value\": \"CONCAT(\\n  TRIM(SUBSTRING(`Name`, INSTR(`Name`, ',') + 1, LENGTH(`Name`) - INSTR(`Name`, ',')))  -- + 1 to ignore comma\\n  , ' '\\n  , TRIM(SUBSTRING(`Name`, 1, INSTR(`Name`, ',') - 1))  -- -1 to ignore the comma\\n)\\n  \",\n            \"isCalculation\": true,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"templateId\": 519\n        },\n        {\n            \"id\": \"calculation_4a039d7e-094b-41fe-a6de-49225607683e\",\n            \"name\": \"First Name 2\",\n            \"type\": \"string\",\n            \"value\": \"TRIM(SUBSTRING(`Name`, INSTR(`Name`, ',') + 1, LENGTH(`Name`) - INSTR(`Name`, ',')))  -- + 1 to ignore comma\",\n            \"isCalculation\": true,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"templateId\": 521\n        },\n        {\n            \"id\": \"calculation_58d401a0-f074-48fc-9c09-c3681aa90b7c\",\n            \"name\": \"Last Name\",\n            \"type\": \"string\",\n            \"value\": \"TRIM(SUBSTRING(`Name`, 1, INSTR(`Name`, ',') - 1))  -- -1 to ignore the comma\",\n            \"isCalculation\": true,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"templateId\": 520\n        },\n        {\n            \"id\": \"calculation_18207bf6-d820-43ad-b1cf-56801191faeb\",\n            \"name\": \"URL\",\n            \"type\": \"string\",\n            \"value\": \"CONCAT('<a href=\\\"http://en.wikipedia.org/wiki\\\"','\\\"target=\\\"_blank\\\">',`id`, '</a>')\",\n            \"isCalculation\": true,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"templateId\": 524\n        }\n    ],\n    \"drillpath\": [],\n    \"embedded\": false,\n    \"dataSourceWrite\": true\n}"
+								}
+							]
+						},
+						{
+							"name": "Get Card Metadata By Id",
+							"id": "05c137e6-3d46-4440-8931-8450b2a223c2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/content/v1/cards?urns={{card_id}}&parts=metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers&includeFiltered=true",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"content",
+										"v1",
+										"cards"
+									],
+									"query": [
+										{
+											"key": "urns",
+											"value": "{{card_id}}"
+										},
+										{
+											"key": "parts",
+											"value": "metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers"
+										},
+										{
+											"key": "includeFiltered",
+											"value": "true"
+										}
+									]
+								},
+								"description": "#### Description (usage)\n\nGet the card metadata by card ID\n\n#### **UI reference**\n\nN/A\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934234-Admin-Settings-Layout#h_01F9HKWVSKH09K35DWT3PJFVKN)\n\n#### Required parameters\n\n*   urns - card id\n*   parts - what to include (i.e. metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers)\n*   includeFiltered (true/false)\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Metadata based on the input parameters\n    \n\nPlease refer to the example below:"
+							},
+							"response": [
+								{
+									"id": "3f3822df-1d83-4ca8-b598-bbdf2a95b49d",
+									"name": "get Card metadata",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://{{domo_instance}}.domo.com/api/content/v1/cards?urns={{card_id}}&parts=metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers&includeFiltered=true",
+											"protocol": "https",
+											"host": [
+												"{{domo_instance}}",
+												"domo",
+												"com"
+											],
+											"path": [
+												"api",
+												"content",
+												"v1",
+												"cards"
+											],
+											"query": [
+												{
+													"key": "urns",
+													"value": "{{card_id}}"
+												},
+												{
+													"key": "parts",
+													"value": "metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers"
+												},
+												{
+													"key": "includeFiltered",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 11 May 2022 00:16:42 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self';"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding, User-Agent"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "[\n    {\n        \"metadata\": {\n            \"chartType\": \"badge_basic_table\",\n            \"chartVersion\": \"7\",\n            \"currentLabel\": \"Count of Name\",\n            \"historyId\": \"e0eba383-fb01-4002-9430-f19ab7cafe22\",\n            \"calendar\": \"default\",\n            \"columnAliases\": \"{}\",\n            \"columnFormats\": \"{}\",\n            \"SummaryNumberFormat\": \"{\\\"type\\\":\\\"number\\\",\\\"format\\\":\\\"#A\\\"}\"\n        },\n        \"domoapp\": {\n            \"id\": null\n        },\n        \"drillPath\": {},\n        \"drillPathURNs\": [],\n        \"owners\": [\n            {\n                \"id\": \"55874022\",\n                \"type\": \"USER\",\n                \"displayName\": \"Grant Smith\"\n            }\n        ],\n        \"slicers\": [\n            {\n                \"type\": \"string\",\n                \"displayType\": \"match_values_text_input\",\n                \"dataSourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\",\n                \"name\": \"First Last\",\n                \"column\": \"calculation_5b4d86a9-d185-4ca7-b677-2df17ab2221d\",\n                \"columnDisplayName\": \"First Last\",\n                \"operator\": \"CONTAINS\",\n                \"values\": [],\n                \"collapsed\": false,\n                \"controlType\": \"SLICER\"\n            }\n        ],\n        \"metadataOverrides\": {\n            \"components\": [\n                {\n                    \"component\": \"main\",\n                    \"chartType\": \"badge_basic_table\",\n                    \"overrides\": {},\n                    \"goal\": null\n                }\n            ]\n        },\n        \"dateInfo\": {},\n        \"datasources\": [\n            {\n                \"dataSourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\",\n                \"dataSourceName\": \"Names - Last, First\",\n                \"displayType\": \"webform\",\n                \"dataType\": \"webform\",\n                \"providerType\": \"webform\",\n                \"isSampleData\": false,\n                \"lastUpdated\": 1615572227095,\n                \"adc\": false,\n                \"phase\": null,\n                \"state\": \"SUCCESS\"\n            }\n        ],\n        \"certification\": {\n            \"state\": \"NOT_CERTIFIED\",\n            \"adminCertified\": false\n        },\n        \"urn\": \"1581024515\",\n        \"id\": 1581024515,\n        \"type\": \"kpi\",\n        \"created\": 1596739618,\n        \"badgeUpdated\": 1616172957000,\n        \"creatorId\": 55874022,\n        \"ownerId\": 55874022,\n        \"description\": \"\",\n        \"title\": \"Names - Last, First => First Last\",\n        \"active\": true,\n        \"allowTableDrill\": true,\n        \"locked\": false,\n        \"access\": true,\n        \"isCurrentUserOwner\": false\n    }\n]"
+								}
+							]
+						}
+					],
+					"id": "0a57d077-cac2-4425-8d32-20c623f7bd7f"
+				},
+				{
+					"name": "BeastModes",
+					"item": [
+						{
+							"name": "Get Statistics",
+							"id": "7deaf88f-6584-4f9a-a0bc-0fa6509b0488",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"warning": "This is a duplicate header and will be overridden by the x-domo-authentication header generated by Postman.",
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}",
+										"type": "text"
+									}
+								],
+								"url": "https://{{domo_instance}}/api/query/v1/functions/statistics"
+							},
+							"response": [
+								{
+									"id": "78006e2f-04f0-4e7b-877c-1be7ac75814c",
+									"name": "Get Statistics",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-domo-authentication",
+												"value": "{{session_token}}",
+												"type": "text"
+											}
+										],
+										"url": "https://{{domo_instance}}/api/query/v1/functions/statistics"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get Details",
+							"id": "23f42412-4aa3-42b1-a2f2-86e3ae593c4c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"warning": "This is a duplicate header and will be overridden by the x-domo-authentication header generated by Postman.",
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}",
+										"type": "text"
+									}
+								],
+								"url": "https://{{domo_instance}}/api/query/v1/functions/template/{{beast_mode_id}}"
+							},
+							"response": [
+								{
+									"id": "1e7b447b-1e5a-4488-a357-d19207db1f52",
+									"name": "Get Details",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"warning": "This is a duplicate header and will be overridden by the x-domo-authentication header generated by Postman.",
+												"key": "x-domo-authentication",
+												"value": "{{session_token}}",
+												"type": "text"
+											}
+										],
+										"url": "https://{{domo_instance}}/api/query/v1/functions/template/{{beast_mode_id}}"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								}
+							]
+						}
+					],
+					"id": "281d654e-a92c-4b64-986c-fb5154edf52d"
+				},
+				{
+					"name": "Alerts",
+					"item": [
+						{
+							"name": "List Alerts",
+							"id": "0fef4b55-8202-4ad4-8853-39f7a953484e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/social/v4/alerts?all=true&fields=all&limit={{limit}}&offset={{offset}}",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"social",
+										"v4",
+										"alerts"
+									],
+									"query": [
+										{
+											"key": "all",
+											"value": "true"
+										},
+										{
+											"key": "fields",
+											"value": "all"
+										},
+										{
+											"key": "limit",
+											"value": "{{limit}}"
+										},
+										{
+											"key": "offset",
+											"value": "{{offset}}"
+										}
+									]
+								},
+								"description": "#### Description (usage)\n\nGet the list of alerts\n\n#### **UI reference**\n\nMain menu -> Alerts\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360043430373-Alert-Center-Layout)\n\n#### Required parameters\n\n*   all (true/false)\n*   fields (all)\n*   limit - number of retrieved alerts\n*   offset - query offset number\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of alerts with properties\n    \n\nPlease refer to the example below:"
+							},
+							"response": [
+								{
+									"id": "2b946f8f-b44c-4c89-a218-2445e4716416",
+									"name": "List Alerts",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://{{domo_instance}}/api/social/v4/alerts?all=true&fields=all&limit={{limit}}&offset={{offset}}",
+											"protocol": "https",
+											"host": [
+												"{{domo_instance}}"
+											],
+											"path": [
+												"api",
+												"social",
+												"v4",
+												"alerts"
+											],
+											"query": [
+												{
+													"key": "all",
+													"value": "true"
+												},
+												{
+													"key": "fields",
+													"value": "all"
+												},
+												{
+													"key": "limit",
+													"value": "{{limit}}"
+												},
+												{
+													"key": "offset",
+													"value": "{{offset}}"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								}
+							]
+						}
+					],
+					"id": "880a1c2c-d3b2-4177-8f82-0542a3ef8f0b"
 				},
 				{
 					"name": "Publish",
@@ -3316,1250 +4560,6 @@
 						}
 					],
 					"id": "1d951c97-b085-48dc-adbe-6da8bcc0401c"
-				},
-				{
-					"name": "Dataflow",
-					"item": [
-						{
-							"name": "Get All Dataflows",
-							"id": "d666f445-0dd7-40fc-bfd0-5f2c51f1c9b4",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "x-domo-authentication",
-										"value": "{{session_token}}",
-										"type": "text"
-									}
-								],
-								"url": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows",
-								"description": "#### Description (usage)\n\nGet the list of all dataflows from instance\n\n#### **UI reference**\n\nLeft bar menu -> Dataflows\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/sections/360007295494-DataFlow-Management)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of dataflows with dataset inputs and outputs with properties\n    \n\nPlease refer to the example below:"
-							},
-							"response": [
-								{
-									"id": "00b25db8-5422-4f90-af3a-b8b471c9e7c6",
-									"name": "Get All dataflows - example",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "x-domo-authentication",
-												"value": "{{session_token}}",
-												"type": "text"
-											}
-										],
-										"url": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Server",
-											"value": "nginx"
-										},
-										{
-											"key": "Date",
-											"value": "Mon, 09 May 2022 09:11:58 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json;charset=utf-8"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Cache-Control",
-											"value": "no-cache, no-store, max-age=0, must-revalidate"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "Content-Security-Policy",
-											"value": "frame-ancestors 'self';"
-										},
-										{
-											"key": "Expires",
-											"value": "0"
-										},
-										{
-											"key": "Pragma",
-											"value": "no-cache"
-										},
-										{
-											"key": "Vary",
-											"value": "Accept-Encoding"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-Frame-Options",
-											"value": "DENY"
-										},
-										{
-											"key": "X-Xss-Protection",
-											"value": "1; mode=block"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "[\n    {\n        \"id\": 46,\n        \"name\": \"AW_delete\",\n        \"dapDataFlowId\": \"26155ae2-1994-4808-ac55-5ec56318a026\",\n        \"responsibleUserId\": 1251168784,\n        \"runState\": \"ENABLED\",\n        \"lastExecution\": {\n            \"id\": 53816,\n            \"onboardFlowId\": 46,\n            \"previewRows\": 0,\n            \"dapDataFlowExecutionId\": \"3bd2c8a2-9ee1-4f8e-9453-9f21f1186933\",\n            \"beginTime\": 1620395314000,\n            \"endTime\": 1620395329000,\n            \"lastUpdated\": 1620395329000,\n            \"failed\": false,\n            \"state\": \"SUCCESS\",\n            \"dataFlowVersion\": 0\n        },\n        \"created\": 1620395295000,\n        \"modified\": 1620395310000,\n        \"engineProperties\": {\n            \"kettle.mode\": \"STRICT\"\n        },\n        \"inputs\": [\n            {\n                \"dataSourceId\": \"c119c8e8-fc43-4b12-b45b-6dac2a704aed\",\n                \"executeFlowWhenUpdated\": false,\n                \"dataSourceName\": \"Crytpo Usecase\"\n            }\n        ],\n        \"outputs\": [\n            {\n                \"onboardFlowId\": null,\n                \"dataSourceId\": \"576efb2f-e72a-4ee9-87f8-52304061217e\",\n                \"dataSourceName\": \"AW_delete\",\n                \"versionChainType\": \"REPLACE\"\n            }\n        ],\n        \"executionCount\": 2,\n        \"executionSuccessCount\": 2,\n        \"hydrationState\": \"DEHYDRATED\",\n        \"useLegacyTriggerBehavior\": false,\n        \"passwordProtected\": false,\n        \"deleted\": false,\n        \"abandoned\": false,\n        \"neverAbandon\": false,\n        \"paused\": false,\n        \"magic\": true,\n        \"restricted\": false,\n        \"editable\": true,\n        \"enabled\": true,\n        \"container\": false,\n        \"databaseType\": \"MAGIC\",\n        \"triggeredByInput\": false,\n        \"draft\": false,\n        \"numInputs\": 1,\n        \"numOutputs\": 1\n    \n    }\n]"
-								}
-							]
-						},
-						{
-							"name": "Get Dataflow by Id",
-							"id": "e2c85c88-841c-4c3e-9619-a06bb901fb40",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "x-domo-authentication",
-										"value": "{{session_token}}",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows/:id",
-									"protocol": "https",
-									"host": [
-										"{{domo_instance}}",
-										"domo",
-										"com"
-									],
-									"path": [
-										"api",
-										"dataprocessing",
-										"v1",
-										"dataflows",
-										":id"
-									],
-									"variable": [
-										{
-											"key": "id",
-											"value": "{{dataflow_id}}",
-											"description": "Dataflow id   "
-										}
-									]
-								},
-								"description": "#### Description (usage)\n\nGet the dataflow full information (inputs, outputs, queries, state) by dataflow id\n\n#### **UI reference**\n\nLeft bar menu -> Dataflows\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/sections/360007295494-DataFlow-Management)\n\n#### Required parameters\n\n*   DataFlow id\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Dataflow with dataset inputs and outputs with properties\n    \n\nPlease refer to the example below:"
-							},
-							"response": [
-								{
-									"id": "36ecdeb2-8c30-4a6d-80d7-4a2b43a965cb",
-									"name": "Get Dataflow by Id - example",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "x-domo-authentication",
-												"value": "{{session_token}}",
-												"type": "text"
-											}
-										],
-										"url": {
-											"raw": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows/:id",
-											"protocol": "https",
-											"host": [
-												"{{domo_instance}}",
-												"domo",
-												"com"
-											],
-											"path": [
-												"api",
-												"dataprocessing",
-												"v1",
-												"dataflows",
-												":id"
-											],
-											"variable": [
-												{
-													"key": "id",
-													"value": "{{dataflow_id}}",
-													"description": "Dataflow id   "
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Server",
-											"value": "nginx"
-										},
-										{
-											"key": "Date",
-											"value": "Mon, 09 May 2022 09:22:19 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json;charset=utf-8"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Cache-Control",
-											"value": "no-cache, no-store, max-age=0, must-revalidate"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "Content-Security-Policy",
-											"value": "frame-ancestors 'self';"
-										},
-										{
-											"key": "Expires",
-											"value": "0"
-										},
-										{
-											"key": "Pragma",
-											"value": "no-cache"
-										},
-										{
-											"key": "Vary",
-											"value": "Accept-Encoding"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-Frame-Options",
-											"value": "DENY"
-										},
-										{
-											"key": "X-Xss-Protection",
-											"value": "1; mode=block"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"id\": 60,\n    \"name\": \"DomoStats People with Activity Log\",\n    \"dapDataFlowId\": \"33c46931-4f9b-4834-91ec-82359da4e777\",\n    \"responsibleUserId\": 1893952720,\n    \"runState\": \"ENABLED\",\n    \"onboardFlowVersion\": {\n        \"id\": 242,\n        \"timeStamp\": 1624449225000,\n        \"authorId\": 1893952720,\n        \"numInputs\": 2,\n        \"numOutputs\": 1,\n        \"executionCount\": 0,\n        \"executionSuccessCount\": 0,\n        \"versionNumber\": 4\n    },\n    \"lastExecution\": {\n        \"id\": 162077,\n        \"onboardFlowId\": 60,\n        \"previewRows\": 0,\n        \"dapDataFlowExecutionId\": \"19ddcae5-4d1e-45b6-b04c-ac6fe2076006\",\n        \"beginTime\": 1652028913000,\n        \"endTime\": 1652029078000,\n        \"lastUpdated\": 1652029078000,\n        \"failed\": false,\n        \"state\": \"SUCCESS\",\n        \"dataFlowVersion\": 0\n    },\n    \"created\": 1624432428000,\n    \"modified\": 1624449224000,\n    \"actions\": [\n        {\n            \"type\": \"LoadFromVault\",\n            \"id\": \"0\",\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            },\n            \"targetTableName\": \"activity_log\",\n            \"dataSourceId\": \"61c4e63d-0627-41f7-b138-74968ebd7634\",\n            \"executeFlowWhenUpdated\": true,\n            \"pseudoDataSource\": false,\n            \"truncateTextColumns\": false,\n            \"truncateRows\": false,\n            \"onlyLoadNewVersions\": false\n        },\n        {\n            \"type\": \"LoadFromVault\",\n            \"id\": \"1\",\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            },\n            \"targetTableName\": \"people\",\n            \"dataSourceId\": \"241025d7-3cca-4369-b7c0-b3264277c0e1\",\n            \"executeFlowWhenUpdated\": true,\n            \"pseudoDataSource\": false,\n            \"truncateTextColumns\": false,\n            \"truncateRows\": false,\n            \"onlyLoadNewVersions\": false\n        },\n        {\n            \"type\": \"SqlAction\",\n            \"id\": \"2\",\n            \"dependsOn\": [\n                \"0\",\n                \"1\"\n            ],\n            \"notes\": [],\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            },\n            \"statements\": [\n                \"CREATE INDEX activity_user_id ON activity_log(`User_ID`)\"\n            ],\n            \"columnSettings\": {}\n        },\n        {\n            \"type\": \"SqlAction\",\n            \"id\": \"3\",\n            \"dependsOn\": [\n                \"2\"\n            ],\n            \"notes\": [],\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            },\n            \"statements\": [\n                \"CREATE INDEX people_user_id ON people(`User ID`)\"\n            ],\n            \"columnSettings\": {}\n        },\n        {\n            \"type\": \"GenerateTableAction\",\n            \"id\": \"4\",\n            \"dependsOn\": [\n                \"3\"\n            ],\n            \"tableName\": \"people_with_activity_log\",\n            \"selectStatement\": \"SELECT \\nb.`Display Name`\\n, b.`Role`\\n, b.`User ID`\\n, b.`Created Date`\\n, b.`Department`\\n, b.`Email`\\n, a.`Type`\\n, a.`Source_ID`\\n, a.`Action`\\n, a.`Object_Type`\\n, a.`Object_ID`\\n, a.`Object_Name`\\n, a.`IP_Address`\\n, a.`Event_Time`\\n, a.`Device`\\n, a.`Browser_Details`\\n, b.`Last Login`\\nFROM activity_log a\\nLEFT JOIN\\npeople b\\nON a.`User_ID` = b.`User ID`\\nWHERE a.`Type` = UPPER('USER')\",\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            }\n        },\n        {\n            \"type\": \"PublishToVault\",\n            \"id\": \"5\",\n            \"dependsOn\": [\n                \"4\"\n            ],\n            \"gui\": {\n                \"x\": null,\n                \"y\": null,\n                \"color\": null,\n                \"colorSource\": null\n            },\n            \"query\": \"SELECT \\n`Display Name`\\n,`Role`\\n,`User ID`\\n,`Created Date`\\n,`Department`\\n,`Email`\\n,`Type`\\n,`Source_ID`\\n,`Action`\\n,`Object_Type`\\n,`Object_ID`\\n,`Object_Name`\\n,`IP_Address`\\n,`Event_Time`\\n,`Device`\\n,`Browser_Details`\\n,`Last Login`\\n, cast(`Event_Time` as Date) `Event_Date`\\nFROM people_with_activity_log\",\n            \"dataSource\": {\n                \"guid\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n                \"type\": \"DataFlow\",\n                \"name\": \"DomoStats People with Activity Log\"\n            },\n            \"versionChainType\": \"REPLACE\",\n            \"schemaSource\": \"DATAFLOW\",\n            \"partitioned\": false\n        }\n    ],\n    \"engineProperties\": {\n        \"mysql.mode\": \"DEFAULT\"\n    },\n    \"inputs\": [\n        {\n            \"dataSourceId\": \"241025d7-3cca-4369-b7c0-b3264277c0e1\",\n            \"executeFlowWhenUpdated\": true,\n            \"dataSourceName\": \"DomoStats - People\",\n            \"onlyLoadNewVersions\": false\n        },\n        {\n            \"dataSourceId\": \"61c4e63d-0627-41f7-b138-74968ebd7634\",\n            \"executeFlowWhenUpdated\": true,\n            \"dataSourceName\": \"DomoStats - Activity Log\",\n            \"onlyLoadNewVersions\": false\n        }\n    ],\n    \"outputs\": [\n        {\n            \"onboardFlowId\": null,\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"dataSourceName\": \"DomoStats People with Activity Log\",\n            \"versionChainType\": \"REPLACE\"\n        }\n    ],\n    \"executionCount\": 184,\n    \"executionSuccessCount\": 184,\n    \"hydrationState\": \"DEHYDRATED\",\n    \"useLegacyTriggerBehavior\": false,\n    \"passwordProtected\": false,\n    \"deleted\": false,\n    \"abandoned\": false,\n    \"neverAbandon\": false,\n    \"settings\": {},\n    \"paused\": false,\n    \"magic\": false,\n    \"restricted\": false,\n    \"editable\": true,\n    \"enabled\": true,\n    \"container\": false,\n    \"databaseType\": \"MYSQL\",\n    \"triggeredByInput\": true,\n    \"draft\": false,\n    \"numInputs\": 2,\n    \"numOutputs\": 1\n}"
-								}
-							]
-						}
-					],
-					"id": "77a2a0ef-e029-4b17-8d03-4a5f0fbd7f21"
-				},
-				{
-					"name": "BeastModes",
-					"item": [
-						{
-							"name": "Get Statistics",
-							"id": "7deaf88f-6584-4f9a-a0bc-0fa6509b0488",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"warning": "This is a duplicate header and will be overridden by the x-domo-authentication header generated by Postman.",
-										"key": "x-domo-authentication",
-										"value": "{{session_token}}",
-										"type": "text"
-									}
-								],
-								"url": "https://{{domo_instance}}/api/query/v1/functions/statistics"
-							},
-							"response": [
-								{
-									"id": "78006e2f-04f0-4e7b-877c-1be7ac75814c",
-									"name": "Get Statistics",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "x-domo-authentication",
-												"value": "{{session_token}}",
-												"type": "text"
-											}
-										],
-										"url": "https://{{domo_instance}}/api/query/v1/functions/statistics"
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								}
-							]
-						},
-						{
-							"name": "Get Details",
-							"id": "23f42412-4aa3-42b1-a2f2-86e3ae593c4c",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"warning": "This is a duplicate header and will be overridden by the x-domo-authentication header generated by Postman.",
-										"key": "x-domo-authentication",
-										"value": "{{session_token}}",
-										"type": "text"
-									}
-								],
-								"url": "https://{{domo_instance}}/api/query/v1/functions/template/{{beast_mode_id}}"
-							},
-							"response": [
-								{
-									"id": "1e7b447b-1e5a-4488-a357-d19207db1f52",
-									"name": "Get Details",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"warning": "This is a duplicate header and will be overridden by the x-domo-authentication header generated by Postman.",
-												"key": "x-domo-authentication",
-												"value": "{{session_token}}",
-												"type": "text"
-											}
-										],
-										"url": "https://{{domo_instance}}/api/query/v1/functions/template/{{beast_mode_id}}"
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								}
-							]
-						}
-					],
-					"id": "281d654e-a92c-4b64-986c-fb5154edf52d"
-				},
-				{
-					"name": "Cards",
-					"item": [
-						{
-							"name": "Get Card List",
-							"id": "8c533210-e69b-4515-8db4-558593979165",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"ascending\": true,\r\n    \"includeCardTitleClause\": false,\r\n    \"includePageTitleClause\": false,\r\n    \"notOnPage\": false,\r\n    \"orderBy\": \"cardTitle\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "https://{{domo_instance}}.domo.com/api/content/v2/cards/adminsummary?limit={{limit}}&skip={{offset}}",
-									"protocol": "https",
-									"host": [
-										"{{domo_instance}}",
-										"domo",
-										"com"
-									],
-									"path": [
-										"api",
-										"content",
-										"v2",
-										"cards",
-										"adminsummary"
-									],
-									"query": [
-										{
-											"key": "limit",
-											"value": "{{limit}}"
-										},
-										{
-											"key": "skip",
-											"value": "{{offset}}"
-										}
-									]
-								},
-								"description": "#### Description (usage)\n\nGet the list of cards with their properties\n\n#### **UI reference**\n\nAdmin section -> Cards\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934234-Admin-Settings-Layout#h_01F9HKWVSKH09K35DWT3PJFVKN)\n\n#### Required parameters\n\n*   skip - query offset\n*   limit - number of cards to retrieve\n    \n\n#### Optional parameters\n\n**Body Parameters**\n\n**includeCardTitleClause** and **includePageTitleClause** require matching **includeTitleSearchText** or **includePageTitleClause**.\n\n**pageIds** can include a list of specified **page_ids**\n\n#### **Return value**\n\n*   Array of cards with properties\n    \n\nPlease refer to the example below:"
-							},
-							"response": [
-								{
-									"id": "498f4563-2633-45c8-890a-637c60f2a254",
-									"name": "Get Card List",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"includeCardCertificationClause\": true, \r\n    \"includeCardTitleClause\": true,\r\n    \"cardTitleSearchText\": \"test\",\r\n    \"notOnPage\": false,\r\n    \"pageIds\": [],\r\n    \"includePageTitleClause\": false,\r\n    \"pageTitleSearchText\": \"Test\",\r\n    \"ascending\": true,\r\n    \"orderBy\": \"cardTitle\"\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "https://{{domo_instance}}.domo.com/api/content/v2/cards/adminsummary?limit={{limit}}&skip={{offset}}",
-											"protocol": "https",
-											"host": [
-												"{{domo_instance}}",
-												"domo",
-												"com"
-											],
-											"path": [
-												"api",
-												"content",
-												"v2",
-												"cards",
-												"adminsummary"
-											],
-											"query": [
-												{
-													"key": "limit",
-													"value": "{{limit}}"
-												},
-												{
-													"key": "skip",
-													"value": "{{offset}}"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Server",
-											"value": "nginx"
-										},
-										{
-											"key": "Date",
-											"value": "Thu, 12 May 2022 19:15:21 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json;charset=utf-8"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Cache-Control",
-											"value": "no-cache, no-store, max-age=0, must-revalidate"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "Content-Security-Policy",
-											"value": "frame-ancestors 'self';"
-										},
-										{
-											"key": "Expires",
-											"value": "0"
-										},
-										{
-											"key": "Pragma",
-											"value": "no-cache"
-										},
-										{
-											"key": "Vary",
-											"value": "Accept-Encoding, User-Agent"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-Frame-Options",
-											"value": "DENY"
-										},
-										{
-											"key": "X-Ratelimit-Remaining",
-											"value": "6"
-										},
-										{
-											"key": "X-Ratelimit-Reset",
-											"value": "1652382960"
-										},
-										{
-											"key": "X-Xss-Protection",
-											"value": "1; mode=block"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"cardAdminSummaries\": [\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1774387618\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Cadell Falconer\"\n                }\n            ],\n            \"id\": 1647061204,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1634778443000,\n            \"title\": \"Cadell 75th Percentile Test - Baseball Stats\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 384424178,\n                    \"title\": \"75th Percentile Test\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1774387618\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Cadell Falconer\"\n                }\n            ],\n            \"id\": 1027750237,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1634779630000,\n            \"title\": \"Cadell 75th Percentile Test - Chart\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 384424178,\n                    \"title\": \"75th Percentile Test\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"966365811\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Scott Thompson\"\n                }\n            ],\n            \"id\": 877027996,\n            \"type\": \"Text\",\n            \"badgeUpdated\": 1625687449000,\n            \"title\": \"Data Specialist Knowledge Test\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 443317966,\n                    \"title\": \"Course work\",\n                    \"parentPageId\": 1613954604,\n                    \"parentPageTitle\": \"_-ST Superman-_\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1345408759\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Alexis Lorenz (DataMaven)\"\n                }\n            ],\n            \"id\": 124619046,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1607465914000,\n            \"title\": \"Latest Unemployment Claims per 100 K\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 790951325,\n                    \"title\": \"Coronavirus (COVID-19) Dashboard\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"966365811\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Scott Thompson\"\n                }\n            ],\n            \"id\": 514002900,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1649363128000,\n            \"title\": \"Log to base test\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": -100000,\n                    \"title\": \"Overview\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"966365811\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Scott Thompson\"\n                }\n            ],\n            \"id\": 1762459853,\n            \"type\": \"document\",\n            \"badgeUpdated\": 1625758599000,\n            \"title\": \"practical test?\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 443317966,\n                    \"title\": \"Course work\",\n                    \"parentPageId\": 1613954604,\n                    \"parentPageTitle\": \"_-ST Superman-_\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1141078945\",\n                    \"type\": \"USER\",\n                    \"displayName\": \" Justin Pumford \"\n                }\n            ],\n            \"id\": 682075914,\n            \"type\": \"domoapp\",\n            \"badgeUpdated\": 1618976491000,\n            \"title\": \"React Test\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 1109905686,\n                    \"title\": \"Top 5\",\n                    \"parentPageId\": 127044793,\n                    \"parentPageTitle\": \"JaeW_AtOnyx\"\n                },\n                {\n                    \"pageId\": 989969396,\n                    \"title\": \"Custom Apps\",\n                    \"parentPageId\": 109096720,\n                    \"parentPageTitle\": \"Domo IDEA Exchange\"\n                },\n                {\n                    \"pageId\": -100000,\n                    \"title\": \"Overview\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1893952720\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Jae Wilson\"\n                }\n            ],\n            \"id\": 101681077,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1616777219000,\n            \"title\": \"RL test (filter out Domo Support)View of DomoStats - Activity Log\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": -100000,\n                    \"title\": \"Overview\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"612085674\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Oleksii Zakrevskyi\"\n                }\n            ],\n            \"id\": 663477078,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1652176913000,\n            \"title\": \"test\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": -100000,\n                    \"title\": \"Overview\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"827093373\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Dean.Wangerin\"\n                }\n            ],\n            \"id\": 1632703785,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1617378071000,\n            \"title\": \"test using a calc field from view\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 1109905686,\n                    \"title\": \"Top 5\",\n                    \"parentPageId\": 127044793,\n                    \"parentPageTitle\": \"JaeW_AtOnyx\"\n                },\n                {\n                    \"pageId\": -100000,\n                    \"title\": \"Overview\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1345408759\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Alexis Lorenz (DataMaven)\"\n                }\n            ],\n            \"id\": 1775967968,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1607465914000,\n            \"title\": \"Testing by state\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 790951325,\n                    \"title\": \"Coronavirus (COVID-19) Dashboard\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1898323170\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Creed Smith\"\n                }\n            ],\n            \"id\": 1548948000,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1631619767000,\n            \"title\": \"View of 75th Percentile Test - Baseball Stats\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 1761849366,\n                    \"title\": \"delete me\"\n                },\n                {\n                    \"pageId\": 384424178,\n                    \"title\": \"75th Percentile Test\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"1893952720\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"Jae Wilson\"\n                }\n            ],\n            \"id\": 1350520930,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1631900717000,\n            \"title\": \"View of 75th Percentile Test - Baseball Stats\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": -100002,\n                    \"title\": \"Shared\"\n                },\n                {\n                    \"pageId\": 423813863,\n                    \"title\": \"delete_prod me\"\n                }\n            ]\n        },\n        {\n            \"owners\": [\n                {\n                    \"id\": \"2129297797\",\n                    \"type\": \"USER\",\n                    \"displayName\": \"John Stevens\"\n                }\n            ],\n            \"id\": 615356809,\n            \"type\": \"kpi\",\n            \"badgeUpdated\": 1618867780000,\n            \"title\": \"Women's Clothing test dataset\",\n            \"locked\": false,\n            \"pageHierarchy\": [\n                {\n                    \"pageId\": 225044251,\n                    \"title\": \"Text Analytics\",\n                    \"parentPageId\": 109096720,\n                    \"parentPageTitle\": \"Domo IDEA Exchange\"\n                }\n            ]\n        }\n    ],\n    \"totalCardCount\": 14\n}"
-								}
-							]
-						},
-						{
-							"name": "Get Card KPI Definitions By Id",
-							"id": "71866554-b186-4c1e-9bd5-4f669ce986f3",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"urn\": \"{{card_id}}\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://{{domo_instance}}.domo.com/api/content/v3/cards/kpi/definition",
-								"description": "#### Description (usage)\n\nGet the list of KPI definitions by card ID\n\n#### **UI reference**\n\nN/A\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934234-Admin-Settings-Layout#h_01F9HKWVSKH09K35DWT3PJFVKN)\n\n#### Required parameters\n\n*   Card ID in the body\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of KPI definitions for specified card\n    \n\nPlease refer to the example below:"
-							},
-							"response": [
-								{
-									"id": "dd53e32e-b5bb-4ba5-b4d3-b84c64d2e872",
-									"name": "retrieve KPI Definitions",
-									"originalRequest": {
-										"method": "PUT",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"urn\": \"{{card_id}}\"\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "https://{{domo_instance}}.domo.com/api/content/v3/cards/kpi/definition"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Server",
-											"value": "nginx"
-										},
-										{
-											"key": "Date",
-											"value": "Tue, 10 May 2022 23:21:55 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json;charset=utf-8"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Cache-Control",
-											"value": "no-cache, no-store, max-age=0, must-revalidate"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "Content-Security-Policy",
-											"value": "frame-ancestors 'self';"
-										},
-										{
-											"key": "Expires",
-											"value": "0"
-										},
-										{
-											"key": "Pragma",
-											"value": "no-cache"
-										},
-										{
-											"key": "Vary",
-											"value": "Accept-Encoding, User-Agent"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-Frame-Options",
-											"value": "DENY"
-										},
-										{
-											"key": "X-Xss-Protection",
-											"value": "1; mode=block"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"id\": 1581024515,\n    \"urn\": \"1581024515\",\n    \"definition\": {\n        \"subscriptions\": {\n            \"big_number\": {\n                \"name\": \"big_number\",\n                \"columns\": [\n                    {\n                        \"column\": \"Name\",\n                        \"aggregation\": \"COUNT\",\n                        \"alias\": \"Count of Name\",\n                        \"format\": {\n                            \"type\": \"abbreviated\",\n                            \"format\": \"#\"\n                        }\n                    }\n                ],\n                \"filters\": [],\n                \"orderBy\": [],\n                \"groupBy\": [],\n                \"fiscal\": false,\n                \"projection\": false,\n                \"distinct\": false,\n                \"limit\": 1\n            },\n            \"main\": {\n                \"name\": \"main\",\n                \"columns\": [\n                    {\n                        \"column\": \"Name\",\n                        \"mapping\": \"VALUE\"\n                    },\n                    {\n                        \"formulaId\": \"calculation_4a039d7e-094b-41fe-a6de-49225607683e\",\n                        \"mapping\": \"VALUE\",\n                        \"alias\": \"First Name\"\n                    },\n                    {\n                        \"formulaId\": \"calculation_58d401a0-f074-48fc-9c09-c3681aa90b7c\",\n                        \"mapping\": \"VALUE\"\n                    },\n                    {\n                        \"formulaId\": \"calculation_5b4d86a9-d185-4ca7-b677-2df17ab2221d\",\n                        \"mapping\": \"VALUE\"\n                    },\n                    {\n                        \"formulaId\": \"calculation_18207bf6-d820-43ad-b1cf-56801191faeb\",\n                        \"mapping\": \"VALUE\"\n                    }\n                ],\n                \"filters\": [],\n                \"orderBy\": [],\n                \"groupBy\": [],\n                \"fiscal\": false,\n                \"projection\": false,\n                \"distinct\": false\n            }\n        },\n        \"formulas\": [\n            {\n                \"templateId\": 524,\n                \"id\": \"calculation_18207bf6-d820-43ad-b1cf-56801191faeb\",\n                \"name\": \"URL\",\n                \"formula\": \"CONCAT('<a href=\\\"http://en.wikipedia.org/wiki\\\"','\\\"target=\\\"_blank\\\">',`id`, '</a>')\",\n                \"status\": \"VALID\",\n                \"persistedOnDataSource\": false,\n                \"columnPositions\": [\n                    {\n                        \"columnName\": \"`id`\",\n                        \"columnPosition\": 68\n                    }\n                ],\n                \"cacheWindow\": \"non_dynamic\",\n                \"locked\": false,\n                \"owner\": 55874022,\n                \"usedByOtherCards\": false,\n                \"referenceCount\": 1,\n                \"dataType\": \"STRING\",\n                \"isAggregatable\": true,\n                \"bignumber\": false\n            },\n            {\n                \"templateId\": 520,\n                \"id\": \"calculation_58d401a0-f074-48fc-9c09-c3681aa90b7c\",\n                \"name\": \"Last Name\",\n                \"formula\": \"TRIM(SUBSTRING(`Name`, 1, INSTR(`Name`, ',') - 1))  -- -1 to ignore the comma\",\n                \"status\": \"VALID\",\n                \"persistedOnDataSource\": false,\n                \"columnPositions\": [\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 15\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 32\n                    }\n                ],\n                \"cacheWindow\": \"non_dynamic\",\n                \"locked\": false,\n                \"owner\": 55874022,\n                \"usedByOtherCards\": false,\n                \"referenceCount\": 1,\n                \"dataType\": \"STRING\",\n                \"isAggregatable\": true,\n                \"bignumber\": false\n            },\n            {\n                \"templateId\": 521,\n                \"id\": \"calculation_4a039d7e-094b-41fe-a6de-49225607683e\",\n                \"name\": \"First Name 2\",\n                \"formula\": \"TRIM(SUBSTRING(`Name`, INSTR(`Name`, ',') + 1, LENGTH(`Name`) - INSTR(`Name`, ',')))  -- + 1 to ignore comma\",\n                \"status\": \"VALID\",\n                \"persistedOnDataSource\": false,\n                \"columnPositions\": [\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 15\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 29\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 54\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 70\n                    }\n                ],\n                \"cacheWindow\": \"non_dynamic\",\n                \"locked\": false,\n                \"owner\": 55874022,\n                \"usedByOtherCards\": false,\n                \"referenceCount\": 1,\n                \"dataType\": \"STRING\",\n                \"isAggregatable\": true,\n                \"bignumber\": false\n            },\n            {\n                \"templateId\": 519,\n                \"id\": \"calculation_5b4d86a9-d185-4ca7-b677-2df17ab2221d\",\n                \"name\": \"First Last\",\n                \"formula\": \"CONCAT(\\n  TRIM(SUBSTRING(`Name`, INSTR(`Name`, ',') + 1, LENGTH(`Name`) - INSTR(`Name`, ',')))  -- + 1 to ignore comma\\n  , ' '\\n  , TRIM(SUBSTRING(`Name`, 1, INSTR(`Name`, ',') - 1))  -- -1 to ignore the comma\\n)\\n  \",\n                \"status\": \"VALID\",\n                \"persistedOnDataSource\": false,\n                \"columnPositions\": [\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 25\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 39\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 64\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 80\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 146\n                    },\n                    {\n                        \"columnName\": \"`Name`\",\n                        \"columnPosition\": 163\n                    }\n                ],\n                \"cacheWindow\": \"non_dynamic\",\n                \"locked\": false,\n                \"owner\": 55874022,\n                \"usedByOtherCards\": false,\n                \"referenceCount\": 1,\n                \"dataType\": \"STRING\",\n                \"isAggregatable\": true,\n                \"bignumber\": false\n            }\n        ],\n        \"conditionalFormats\": [],\n        \"annotations\": [],\n        \"slicers\": [\n            {\n                \"type\": \"string\",\n                \"displayType\": \"match_values_text_input\",\n                \"name\": \"First Last\",\n                \"column\": \"calculation_5b4d86a9-d185-4ca7-b677-2df17ab2221d\",\n                \"columnDisplayName\": \"First Last\",\n                \"operator\": \"CONTAINS\",\n                \"values\": [],\n                \"collapsed\": false,\n                \"controlType\": \"SLICER\"\n            }\n        ],\n        \"title\": \"Names - Last, First => First Last\",\n        \"description\": \"\",\n        \"chartVersion\": \"9\",\n        \"charts\": {\n            \"main\": {\n                \"component\": \"main\",\n                \"chartType\": \"badge_basic_table\",\n                \"overrides\": {},\n                \"goal\": null\n            }\n        },\n        \"allowTableDrill\": true,\n        \"segments\": {\n            \"active\": [],\n            \"definitions\": []\n        },\n        \"modified\": 1616172957000\n    },\n    \"columns\": [\n        {\n            \"id\": \"id\",\n            \"name\": \"id\",\n            \"type\": \"numeric\",\n            \"isCalculation\": false,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"sourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\"\n        },\n        {\n            \"id\": \"Name\",\n            \"name\": \"Name\",\n            \"type\": \"string\",\n            \"isCalculation\": false,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"sourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\"\n        },\n        {\n            \"id\": \"Column\",\n            \"name\": \"Column\",\n            \"type\": \"string\",\n            \"isCalculation\": false,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"sourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\"\n        },\n        {\n            \"id\": \"calculation_5b4d86a9-d185-4ca7-b677-2df17ab2221d\",\n            \"name\": \"First Last\",\n            \"type\": \"string\",\n            \"value\": \"CONCAT(\\n  TRIM(SUBSTRING(`Name`, INSTR(`Name`, ',') + 1, LENGTH(`Name`) - INSTR(`Name`, ',')))  -- + 1 to ignore comma\\n  , ' '\\n  , TRIM(SUBSTRING(`Name`, 1, INSTR(`Name`, ',') - 1))  -- -1 to ignore the comma\\n)\\n  \",\n            \"isCalculation\": true,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"templateId\": 519\n        },\n        {\n            \"id\": \"calculation_4a039d7e-094b-41fe-a6de-49225607683e\",\n            \"name\": \"First Name 2\",\n            \"type\": \"string\",\n            \"value\": \"TRIM(SUBSTRING(`Name`, INSTR(`Name`, ',') + 1, LENGTH(`Name`) - INSTR(`Name`, ',')))  -- + 1 to ignore comma\",\n            \"isCalculation\": true,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"templateId\": 521\n        },\n        {\n            \"id\": \"calculation_58d401a0-f074-48fc-9c09-c3681aa90b7c\",\n            \"name\": \"Last Name\",\n            \"type\": \"string\",\n            \"value\": \"TRIM(SUBSTRING(`Name`, 1, INSTR(`Name`, ',') - 1))  -- -1 to ignore the comma\",\n            \"isCalculation\": true,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"templateId\": 520\n        },\n        {\n            \"id\": \"calculation_18207bf6-d820-43ad-b1cf-56801191faeb\",\n            \"name\": \"URL\",\n            \"type\": \"string\",\n            \"value\": \"CONCAT('<a href=\\\"http://en.wikipedia.org/wiki\\\"','\\\"target=\\\"_blank\\\">',`id`, '</a>')\",\n            \"isCalculation\": true,\n            \"isAggregatable\": true,\n            \"isEncrypted\": false,\n            \"hidden\": false,\n            \"order\": 0,\n            \"templateId\": 524\n        }\n    ],\n    \"drillpath\": [],\n    \"embedded\": false,\n    \"dataSourceWrite\": true\n}"
-								}
-							]
-						},
-						{
-							"name": "Get Card Metadata By Id",
-							"id": "05c137e6-3d46-4440-8931-8450b2a223c2",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://{{domo_instance}}.domo.com/api/content/v1/cards?urns={{card_id}}&parts=metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers&includeFiltered=true",
-									"protocol": "https",
-									"host": [
-										"{{domo_instance}}",
-										"domo",
-										"com"
-									],
-									"path": [
-										"api",
-										"content",
-										"v1",
-										"cards"
-									],
-									"query": [
-										{
-											"key": "urns",
-											"value": "{{card_id}}"
-										},
-										{
-											"key": "parts",
-											"value": "metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers"
-										},
-										{
-											"key": "includeFiltered",
-											"value": "true"
-										}
-									]
-								},
-								"description": "#### Description (usage)\n\nGet the card metadata by card ID\n\n#### **UI reference**\n\nN/A\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934234-Admin-Settings-Layout#h_01F9HKWVSKH09K35DWT3PJFVKN)\n\n#### Required parameters\n\n*   urns - card id\n*   parts - what to include (i.e. metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers)\n*   includeFiltered (true/false)\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Metadata based on the input parameters\n    \n\nPlease refer to the example below:"
-							},
-							"response": [
-								{
-									"id": "3f3822df-1d83-4ca8-b598-bbdf2a95b49d",
-									"name": "get Card metadata",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "https://{{domo_instance}}.domo.com/api/content/v1/cards?urns={{card_id}}&parts=metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers&includeFiltered=true",
-											"protocol": "https",
-											"host": [
-												"{{domo_instance}}",
-												"domo",
-												"com"
-											],
-											"path": [
-												"api",
-												"content",
-												"v1",
-												"cards"
-											],
-											"query": [
-												{
-													"key": "urns",
-													"value": "{{card_id}}"
-												},
-												{
-													"key": "parts",
-													"value": "metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers"
-												},
-												{
-													"key": "includeFiltered",
-													"value": "true"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Server",
-											"value": "nginx"
-										},
-										{
-											"key": "Date",
-											"value": "Wed, 11 May 2022 00:16:42 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json;charset=utf-8"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Cache-Control",
-											"value": "no-cache, no-store, max-age=0, must-revalidate"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "Content-Security-Policy",
-											"value": "frame-ancestors 'self';"
-										},
-										{
-											"key": "Expires",
-											"value": "0"
-										},
-										{
-											"key": "Pragma",
-											"value": "no-cache"
-										},
-										{
-											"key": "Vary",
-											"value": "Accept-Encoding, User-Agent"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-Frame-Options",
-											"value": "DENY"
-										},
-										{
-											"key": "X-Xss-Protection",
-											"value": "1; mode=block"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "[\n    {\n        \"metadata\": {\n            \"chartType\": \"badge_basic_table\",\n            \"chartVersion\": \"7\",\n            \"currentLabel\": \"Count of Name\",\n            \"historyId\": \"e0eba383-fb01-4002-9430-f19ab7cafe22\",\n            \"calendar\": \"default\",\n            \"columnAliases\": \"{}\",\n            \"columnFormats\": \"{}\",\n            \"SummaryNumberFormat\": \"{\\\"type\\\":\\\"number\\\",\\\"format\\\":\\\"#A\\\"}\"\n        },\n        \"domoapp\": {\n            \"id\": null\n        },\n        \"drillPath\": {},\n        \"drillPathURNs\": [],\n        \"owners\": [\n            {\n                \"id\": \"55874022\",\n                \"type\": \"USER\",\n                \"displayName\": \"Grant Smith\"\n            }\n        ],\n        \"slicers\": [\n            {\n                \"type\": \"string\",\n                \"displayType\": \"match_values_text_input\",\n                \"dataSourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\",\n                \"name\": \"First Last\",\n                \"column\": \"calculation_5b4d86a9-d185-4ca7-b677-2df17ab2221d\",\n                \"columnDisplayName\": \"First Last\",\n                \"operator\": \"CONTAINS\",\n                \"values\": [],\n                \"collapsed\": false,\n                \"controlType\": \"SLICER\"\n            }\n        ],\n        \"metadataOverrides\": {\n            \"components\": [\n                {\n                    \"component\": \"main\",\n                    \"chartType\": \"badge_basic_table\",\n                    \"overrides\": {},\n                    \"goal\": null\n                }\n            ]\n        },\n        \"dateInfo\": {},\n        \"datasources\": [\n            {\n                \"dataSourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\",\n                \"dataSourceName\": \"Names - Last, First\",\n                \"displayType\": \"webform\",\n                \"dataType\": \"webform\",\n                \"providerType\": \"webform\",\n                \"isSampleData\": false,\n                \"lastUpdated\": 1615572227095,\n                \"adc\": false,\n                \"phase\": null,\n                \"state\": \"SUCCESS\"\n            }\n        ],\n        \"certification\": {\n            \"state\": \"NOT_CERTIFIED\",\n            \"adminCertified\": false\n        },\n        \"urn\": \"1581024515\",\n        \"id\": 1581024515,\n        \"type\": \"kpi\",\n        \"created\": 1596739618,\n        \"badgeUpdated\": 1616172957000,\n        \"creatorId\": 55874022,\n        \"ownerId\": 55874022,\n        \"description\": \"\",\n        \"title\": \"Names - Last, First => First Last\",\n        \"active\": true,\n        \"allowTableDrill\": true,\n        \"locked\": false,\n        \"access\": true,\n        \"isCurrentUserOwner\": false\n    }\n]"
-								}
-							]
-						}
-					],
-					"id": "0a57d077-cac2-4425-8d32-20c623f7bd7f"
-				},
-				{
-					"name": "User",
-					"item": [
-						{
-							"name": "Get All Users",
-							"id": "713bb6e1-c36f-48d7-9292-606fb6d3453c",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "x-domo-authentication",
-										"value": "{{session_token}}",
-										"type": "text"
-									}
-								],
-								"url": "https://{{domo_instance}}.domo.com/api/content/v2/users",
-								"description": "#### Description (usage)\n\nGet the list of users\n\n#### **UI reference**\n\nAdmin section -> People\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934314-Generating-a-List-of-Users)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of users with properties\n    \n\nPlease refer to the example below:"
-							},
-							"response": [
-								{
-									"id": "43fcc8b8-d153-4329-9879-1562b5eab4e6",
-									"name": "Get All Users - exampe",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "x-domo-authentication",
-												"value": "{{session_token}}",
-												"type": "text"
-											}
-										],
-										"url": "https://{{domo_instance}}.domo.com/api/content/v2/users"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Server",
-											"value": "nginx"
-										},
-										{
-											"key": "Date",
-											"value": "Fri, 06 May 2022 16:24:27 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json;charset=utf-8"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Cache-Control",
-											"value": "no-cache, no-store, max-age=0, must-revalidate"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "Content-Security-Policy",
-											"value": "frame-ancestors 'self';"
-										},
-										{
-											"key": "Expires",
-											"value": "0"
-										},
-										{
-											"key": "Pragma",
-											"value": "no-cache"
-										},
-										{
-											"key": "Vary",
-											"value": "Accept-Encoding, User-Agent"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-Frame-Options",
-											"value": "DENY"
-										},
-										{
-											"key": "X-Xss-Protection",
-											"value": "1; mode=block"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "[\n    {\n        \"id\": 0,\n        \"invitorUserId\": 2,\n        \"displayName\": \"monitor\",\n        \"userName\": \"monitor\",\n        \"emailAddress\": \"monitor@domo.com\",\n        \"accepted\": false,\n        \"userType\": \"DOMO_SUPPORT\",\n        \"timeZone\": \"Etc/GMT+7\",\n        \"modified\": 1588877394091,\n        \"created\": 1464820854,\n        \"role\": \"Privileged\",\n        \"roleId\": 1,\n        \"rights\": 31,\n        \"active\": true,\n        \"systemUser\": true,\n        \"anonymous\": true,\n        \"pending\": true\n    }\n   \n]"
-								}
-							]
-						},
-						{
-							"name": "Search Users",
-							"id": "2a9510ee-f07d-41b5-b95d-540de4a77e25",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "x-domo-authentication",
-										"value": "{{session_token}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"showCount\": true,\n    \"count\": false,\n    \"includeDeleted\": false,\n    \"includeSupport\": false,\n    \"limit\": 200,\n    \"offset\": 0,\n    \"sort\": {\n        \"field\": \"displayName\",\n        \"order\": \"ASC\"\n    },\n    \"filters\": [\n        {\n            \"filterType\": \"text\",\n            \"field\" : \"emailAddress\",\n            \"text\": \"iain.congdon@domo.com\"\n        }\n    ]\n\n}\n",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://{{domo_instance}}.domo.com/api/identity/v1/users/search",
-								"description": "#### Description (usage)\n\nGet the list of users\n\nNOTE\n\n*   the difference between POST and GET is unclear. Admin >People appears to use POST, but GET also works occassionally\n*   the search does not appear to be case sensitive (tested on emailAddress)\n    \n\n#### **UI reference**\n\nAdmin section -> People\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934314-Generating-a-List-of-Users)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of users with properties\n    \n\nPlease refer to the example below:"
-							},
-							"response": [
-								{
-									"id": "220db4d1-b3d5-4cc0-b8dd-b96f1bf7f82c",
-									"name": "search by id",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "x-domo-authentication",
-												"value": "{{session_token}}",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"showCount\": true,\n    \"count\": false,\n    \"includeDeleted\": false,\n    \"includeSupport\": false,\n    \"filters\": [\n      {\n          \"field\" : \"id\",\n          \"filterType\" : \"value\",\n          \"values\" : [\"1069862308\"],\n          \"operator\": \"EQ\"\n\n\n\n\n      }\n    ]\n  }",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "https://{{domo_instance}}.domo.com/api/identity/v1/users/search"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Server",
-											"value": "nginx"
-										},
-										{
-											"key": "Date",
-											"value": "Fri, 06 May 2022 16:55:28 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json;charset=utf-8"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Cache-Control",
-											"value": "no-cache, no-store, max-age=0, must-revalidate"
-										},
-										{
-											"key": "Content-Security-Policy",
-											"value": "frame-ancestors 'self';"
-										},
-										{
-											"key": "Expires",
-											"value": "0"
-										},
-										{
-											"key": "Pragma",
-											"value": "no-cache"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-Frame-Options",
-											"value": "DENY"
-										},
-										{
-											"key": "X-Xss-Protection",
-											"value": "1; mode=block"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"count\": 1,\n    \"users\": [\n        {\n            \"attributes\": [\n                {\n                    \"key\": \"id\",\n                    \"values\": [\n                        1069862308\n                    ]\n                },\n                {\n                    \"key\": \"displayName\",\n                    \"values\": [\n                        \"Thomas Brown\"\n                    ]\n                },\n                {\n                    \"key\": \"userName\",\n                    \"values\": [\n                        \"Thomas.Brown@everywhere.com\"\n                    ]\n                },\n                {\n                    \"key\": \"emailAddress\",\n                    \"values\": [\n                        \"Thomas.Brown@everywhere.com\"\n                    ]\n                },\n                {\n                    \"key\": \"roleId\",\n                    \"values\": [\n                        1\n                    ]\n                }\n            ],\n            \"roleId\": 1,\n            \"emailAddress\": \"Thomas.Brown@everywhere.com\",\n            \"userName\": \"Thomas.Brown@everywhere.com\",\n            \"displayName\": \"Thomas\",\n            \"id\": 1069862308\n        }\n    ]\n}"
-								},
-								{
-									"id": "d67ad100-b8d0-4e30-9069-0f7b203e9d1a",
-									"name": "search by email",
-									"originalRequest": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "x-domo-authentication",
-												"value": "{{session_token}}",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"showCount\": true,\n    \"count\": false,\n    \"includeDeleted\": false,\n    \"includeSupport\": false,\n    \"limit\": 200,\n    \"offset\": 0,\n    \"sort\": {\n        \"field\": \"displayName\",\n        \"order\": \"ASC\"\n    },\n    \"filters\": [\n        {\n            \"filterType\": \"text\",\n            \"field\" : \"emailAddress\",\n            \"text\": \"iain.congdon@domo.com\"\n        }\n    ]\n\n}\n",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "https://{{domo_instance}}.domo.com/api/identity/v1/users/search"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Server",
-											"value": "nginx"
-										},
-										{
-											"key": "Date",
-											"value": "Mon, 09 May 2022 18:58:23 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json;charset=utf-8"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Cache-Control",
-											"value": "no-cache, no-store, max-age=0, must-revalidate"
-										},
-										{
-											"key": "Content-Security-Policy",
-											"value": "frame-ancestors 'self';"
-										},
-										{
-											"key": "Expires",
-											"value": "0"
-										},
-										{
-											"key": "Pragma",
-											"value": "no-cache"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-Frame-Options",
-											"value": "DENY"
-										},
-										{
-											"key": "X-Xss-Protection",
-											"value": "1; mode=block"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"count\": 1,\n    \"users\": [\n        {\n            \"attributes\": [\n                {\n                    \"key\": \"id\",\n                    \"values\": [\n                        1069862308\n                    ]\n                },\n                {\n                    \"key\": \"displayName\",\n                    \"values\": [\n                        \"Iain Congdon - Domo\"\n                    ]\n                },\n                {\n                    \"key\": \"userName\",\n                    \"values\": [\n                        \"iain.congdon@domo.com\"\n                    ]\n                },\n                {\n                    \"key\": \"emailAddress\",\n                    \"values\": [\n                        \"iain.congdon@domo.com\"\n                    ]\n                },\n                {\n                    \"key\": \"roleId\",\n                    \"values\": [\n                        1\n                    ]\n                }\n            ],\n            \"roleId\": 1,\n            \"emailAddress\": \"iain.congdon@domo.com\",\n            \"userName\": \"iain.congdon@domo.com\",\n            \"displayName\": \"Iain Congdon - Domo\",\n            \"id\": 1069862308\n        }\n    ]\n}"
-								}
-							]
-						}
-					],
-					"id": "9d632591-53a3-429d-b358-4232e3fba85e",
-					"description": "### User folder\n\n<p>Folder contains the set of documented API about users followed by the list of API:</p>"
-				},
-				{
-					"name": "Page",
-					"item": [
-						{
-							"name": "Get Pages",
-							"id": "8c485ef7-11c5-4843-b068-ed964b6e9c3f",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "x-domo-authentication",
-										"value": "{{session_token}}",
-										"type": "text"
-									}
-								],
-								"url": "https://{{domo_instance}}.domo.com/api/content/v1/pages",
-								"description": "#### Description (usage)\n\nGet the list of pages\n\n#### **UI reference**\n\nAdmin section -> Pages\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934234-Admin-Settings-Layout#h_01F9HKX4CSAX96A82Q4C8Z50MX)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of pages with properties\n    \n\nPlease refer to the example below:"
-							},
-							"response": [
-								{
-									"id": "8df5bc7c-1fe2-464e-869d-efd2dd3874cc",
-									"name": "Get Pages",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "x-domo-authentication",
-												"value": "{{session_token}}",
-												"type": "text"
-											}
-										],
-										"url": "https://{{domo_instance}}/api/content/v1/pages"
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								}
-							]
-						},
-						{
-							"name": "Get Page by ID",
-							"id": "80d19a5f-d61e-45be-bd21-4aa308d84881",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": []
-							},
-							"response": []
-						}
-					],
-					"id": "74817d42-2567-46fb-a6cd-dfefbfc2cd22"
-				},
-				{
-					"name": "Alerts",
-					"item": [
-						{
-							"name": "List Alerts",
-							"id": "0fef4b55-8202-4ad4-8853-39f7a953484e",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://{{domo_instance}}.domo.com/api/social/v4/alerts?all=true&fields=all&limit={{limit}}&offset={{offset}}",
-									"protocol": "https",
-									"host": [
-										"{{domo_instance}}",
-										"domo",
-										"com"
-									],
-									"path": [
-										"api",
-										"social",
-										"v4",
-										"alerts"
-									],
-									"query": [
-										{
-											"key": "all",
-											"value": "true"
-										},
-										{
-											"key": "fields",
-											"value": "all"
-										},
-										{
-											"key": "limit",
-											"value": "{{limit}}"
-										},
-										{
-											"key": "offset",
-											"value": "{{offset}}"
-										}
-									]
-								},
-								"description": "#### Description (usage)\n\nGet the list of alerts\n\n#### **UI reference**\n\nMain menu -> Alerts\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360043430373-Alert-Center-Layout)\n\n#### Required parameters\n\n*   all (true/false)\n*   fields (all)\n*   limit - number of retrieved alerts\n*   offset - query offset number\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of alerts with properties\n    \n\nPlease refer to the example below:"
-							},
-							"response": [
-								{
-									"id": "2b946f8f-b44c-4c89-a218-2445e4716416",
-									"name": "List Alerts",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "https://{{domo_instance}}/api/social/v4/alerts?all=true&fields=all&limit={{limit}}&offset={{offset}}",
-											"protocol": "https",
-											"host": [
-												"{{domo_instance}}"
-											],
-											"path": [
-												"api",
-												"social",
-												"v4",
-												"alerts"
-											],
-											"query": [
-												{
-													"key": "all",
-													"value": "true"
-												},
-												{
-													"key": "fields",
-													"value": "all"
-												},
-												{
-													"key": "limit",
-													"value": "{{limit}}"
-												},
-												{
-													"key": "offset",
-													"value": "{{offset}}"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								}
-							]
-						}
-					],
-					"id": "880a1c2c-d3b2-4177-8f82-0542a3ef8f0b"
 				}
 			],
 			"id": "c33f3285-f1e6-47ff-ac91-0326da20399b"
@@ -4742,29 +4742,9 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "1,2,3\n4,5,6\n7,8,92"
+									"raw": "\"69.36.134.6/31\",\"playstation-data-ocean\",\"Wed Mar 02 2022 12:15:29 GMT-0700 (Mountain Standard Time)\""
 								},
-								"url": {
-									"raw": "https://api.domo.com/v1/datasets/b6ec1377-32e1-47a6-86de-e38ec6118461/data?updateMethod=APPEND",
-									"protocol": "https",
-									"host": [
-										"api",
-										"domo",
-										"com"
-									],
-									"path": [
-										"v1",
-										"datasets",
-										"b6ec1377-32e1-47a6-86de-e38ec6118461",
-										"data"
-									],
-									"query": [
-										{
-											"key": "updateMethod",
-											"value": "APPEND"
-										}
-									]
-								}
+								"url": "https://api.domo.com/v1/datasets/{{dataset_id}}/data"
 							},
 							"response": []
 						}
