@@ -654,81 +654,6 @@
 								"description": "#### Description (usage)\n\nGet the Company settings from Domo instance\n\n#### **UI reference**\n\nAdmin -> Company Settings\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/sections/360007296114-Specifying-Company-Settings)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of company settings\n    \n\nPlease refer to the example below:"
 							},
 							"response": []
-						}
-					],
-					"id": "6a0f34da-4182-41e5-b458-c5552f0f72ee",
-					"auth": {
-						"type": "apikey",
-						"apikey": {
-							"value": "{{session_token}}",
-							"key": "x-domo-authentication"
-						}
-					},
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "dc8ad807-a681-4d51-befb-a4632315eee8",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "d49bd4fc-49f0-4e7a-8a8d-ef80d7adbbd7",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						}
-					]
-				},
-				{
-					"name": "Governance",
-					"item": [
-						{
-							"name": "Get Company Pages",
-							"id": "9c961cf4-5aea-46c8-88b9-974c763afd40",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "x-domo-authentication",
-										"value": "{{session_token}}",
-										"type": "text"
-									}
-								],
-								"url": "https://{{domo_instance}}.domo.com/api/content/v1/pages/adminsummary",
-								"description": "#### Description (usage)\n\nGet the Company pages from Domo instance\n\n#### **UI reference**\n\nAdmin -> Company Settings -> Company pages\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934414-Adding-Company-Pages)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of company pages\n    \n\nPlease refer to the example below:"
-							},
-							"response": []
-						},
-						{
-							"name": "Get Company Cards",
-							"id": "cfd2e4f8-2e67-4a8a-a27f-48400ac1f7fd",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "x-domo-authentication",
-										"value": "{{session_token}}",
-										"type": "text"
-									}
-								],
-								"url": "https://{{domo_instance}}.domo.com/api/content/v2/cards/adminsummary",
-								"description": "#### Description (usage)\n\nGet the Company cards from Domo instance\n\n#### **UI reference**\n\nTBC\n\n#### **Resources**\n\nTBC\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934414-Adding-Company-Pages)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of company cards\n    \n\nPlease refer to the example below:"
-							},
-							"response": []
 						},
 						{
 							"name": "Put Sub pages and main page",
@@ -788,9 +713,78 @@
 								"description": "#### Description (usage)\n\nApply the Landing page in the Company settings from Domo instance\n\n#### **UI reference**\n\nAdmin -> Company Settings\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/sections/360007296114-Specifying-Company-Settings)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\nPlease refer to the example below:"
 							},
 							"response": []
+						},
+						{
+							"name": "Get Company Cards",
+							"id": "cfd2e4f8-2e67-4a8a-a27f-48400ac1f7fd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}",
+										"type": "text"
+									}
+								],
+								"url": "https://{{domo_instance}}.domo.com/api/content/v2/cards/adminsummary",
+								"description": "#### Description (usage)\n\nGet the Company cards from Domo instance\n\n#### **UI reference**\n\nTBC\n\n#### **Resources**\n\nTBC\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934414-Adding-Company-Pages)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of company cards\n    \n\nPlease refer to the example below:"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Company Pages",
+							"id": "9c961cf4-5aea-46c8-88b9-974c763afd40",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}",
+										"type": "text"
+									}
+								],
+								"url": "https://{{domo_instance}}.domo.com/api/content/v1/pages/adminsummary",
+								"description": "#### Description (usage)\n\nGet the Company pages from Domo instance\n\n#### **UI reference**\n\nAdmin -> Company Settings -> Company pages\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934414-Adding-Company-Pages)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of company pages\n    \n\nPlease refer to the example below:"
+							},
+							"response": []
 						}
 					],
-					"id": "8ff6ea67-c24c-48a0-b7a1-810b493c6a30"
+					"id": "6a0f34da-4182-41e5-b458-c5552f0f72ee",
+					"auth": {
+						"type": "apikey",
+						"apikey": {
+							"value": "{{session_token}}",
+							"key": "x-domo-authentication"
+						}
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "dc8ad807-a681-4d51-befb-a4632315eee8",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "d49bd4fc-49f0-4e7a-8a8d-ef80d7adbbd7",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
 				},
 				{
 					"name": "Dataset",
