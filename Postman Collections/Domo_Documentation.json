@@ -1746,58 +1746,6 @@
 							"body": null
 						}
 					]
-				},
-				{
-					"name": "test public",
-					"id": "82182dcc-f1e8-42de-8f98-fda7256520ac",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true,
-						"disabledSystemHeaders": {
-							"connection": true,
-							"accept-encoding": true,
-							"accept": true,
-							"user-agent": true,
-							"host": true
-						}
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "3792015b43346b0f884c98aa87b52152412fe4702e573095"
-							}
-						},
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "text/csv",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "https://api.domo.com/v1/datasets/b6ec1377-32e1-47a6-86de-e38ec6118461/data?updateMethod=APPEND",
-							"protocol": "https",
-							"host": [
-								"api",
-								"domo",
-								"com"
-							],
-							"path": [
-								"v1",
-								"datasets",
-								"b6ec1377-32e1-47a6-86de-e38ec6118461",
-								"data"
-							],
-							"query": [
-								{
-									"key": "updateMethod",
-									"value": "APPEND"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			],
 			"id": "87e12295-1ca7-42ec-80d7-8c8943dd17e8"
@@ -4782,6 +4730,62 @@
 									"body": "{\n    \"datasource\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n    \"device\": \"ad3-prod1-40\",\n    \"queryUrl\": \"/query/mmmm-0012-0200/94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n    \"columns\": [\n        \"Display Name\",\n        \"Role\",\n        \"User ID\",\n        \"Created Date\",\n        \"Department\",\n        \"Email\",\n        \"Type\",\n        \"Source_ID\",\n        \"Action\",\n        \"Object_Type\",\n        \"Object_ID\",\n        \"Object_Name\",\n        \"IP_Address\",\n        \"Event_Time\",\n        \"Device\",\n        \"Browser_Details\",\n        \"Last Login\",\n        \"Event_Date\"\n    ],\n    \"metadata\": [\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"DATETIME\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"DATETIME\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"STRING\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"DATETIME\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        },\n        {\n            \"type\": \"DATE\",\n            \"dataSourceId\": \"94a4edfa-5926-4f0c-ad1e-a341f53f6113\",\n            \"maxLength\": -1,\n            \"minLength\": -1,\n            \"aggregated\": false\n        }\n    ],\n    \"fromcache\": \"false\",\n    \"numColumns\": 18,\n    \"rows\": [\n        [\n            \"Kevin Brown\",\n            \"Admin\",\n            \"0000\",\n            \"2009-12-07T17:57:47\",\n            \"Welcome\",\n            \"email.com\",\n            \"USER\",\n            \"94148\",\n            \"VIEWED\",\n            \"PAGE\",\n            \"900\",\n            \"Learn Domo\",\n            \"\",\n            \"2008-05-15T16:59:36\",\n            \"desktop\",\n            \"\",\n            \"2012-04-29T16:15:24\",\n            \"2008-05-15\"\n        ]\n    ],\n    \"numRows\": 1,\n    \"duration\": \"133\"\n}"
 								}
 							]
+						},
+						{
+							"name": "test public",
+							"id": "82182dcc-f1e8-42de-8f98-fda7256520ac",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {
+									"connection": true,
+									"accept-encoding": true,
+									"accept": true,
+									"user-agent": true,
+									"host": true
+								}
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "3792015b43346b0f884c98aa87b52152412fe4702e573095"
+									}
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/csv",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "1,2,3\n4,5,6\n7,8,92"
+								},
+								"url": {
+									"raw": "https://api.domo.com/v1/datasets/b6ec1377-32e1-47a6-86de-e38ec6118461/data?updateMethod=APPEND",
+									"protocol": "https",
+									"host": [
+										"api",
+										"domo",
+										"com"
+									],
+									"path": [
+										"v1",
+										"datasets",
+										"b6ec1377-32e1-47a6-86de-e38ec6118461",
+										"data"
+									],
+									"query": [
+										{
+											"key": "updateMethod",
+											"value": "APPEND"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "519c660d-b9c9-4732-97e4-450511008807"
