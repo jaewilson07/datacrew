@@ -1751,11 +1751,51 @@
 					"name": "test public",
 					"id": "82182dcc-f1e8-42de-8f98-fda7256520ac",
 					"protocolProfileBehavior": {
-						"disableBodyPruning": true
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"connection": true,
+							"accept-encoding": true,
+							"accept": true,
+							"user-agent": true,
+							"host": true
+						}
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "3792015b43346b0f884c98aa87b52152412fe4702e573095"
+							}
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/csv",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.domo.com/v1/datasets/b6ec1377-32e1-47a6-86de-e38ec6118461/data?updateMethod=APPEND",
+							"protocol": "https",
+							"host": [
+								"api",
+								"domo",
+								"com"
+							],
+							"path": [
+								"v1",
+								"datasets",
+								"b6ec1377-32e1-47a6-86de-e38ec6118461",
+								"data"
+							],
+							"query": [
+								{
+									"key": "updateMethod",
+									"value": "APPEND"
+								}
+							]
+						}
 					},
 					"response": []
 				}
