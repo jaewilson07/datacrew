@@ -4745,12 +4745,6 @@
 								}
 							},
 							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": {
-										"token": "3792015b43346b0f884c98aa87b52152412fe4702e573095"
-									}
-								},
 								"method": "PUT",
 								"header": [
 									{
