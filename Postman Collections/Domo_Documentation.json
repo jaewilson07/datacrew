@@ -2930,7 +2930,7 @@
 							]
 						},
 						{
-							"name": "get partition list",
+							"name": "Get Partition List",
 							"id": "fa4672d6-19ee-4212-8c20-8272a0f2f154",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
