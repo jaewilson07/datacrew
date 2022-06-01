@@ -134,6 +134,20 @@
 				},
 				{
 					"name": "Developer Authentication",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9f367e2f-cede-4ad9-ad07-3a6e920fa672",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"postman.setEnvironmentVariable(\"developer_token\", jsonData.access_token);\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "99efac4a-a2ca-43de-8e34-f425136e366b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
