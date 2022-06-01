@@ -4761,7 +4761,8 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": "https://api.domo.com/v1/datasets/{{dataset_id}}"
 							},
 							"response": []
 						}
