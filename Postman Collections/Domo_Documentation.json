@@ -1812,7 +1812,7 @@
 												}
 											}
 										},
-										"url": "https://{{domo_instance}}.domo.com/api/query/v1/datasources/{{dataset_id}}/partition/{{dataset_partition_tag}}"
+										"url": "https://{{domo_instance}}.domo.com/api/query/v1/datasources/{{dataset_id}}/partition/{{dataset_partition_id}}"
 									},
 									"response": []
 								},
