@@ -4752,6 +4752,18 @@
 								"url": "https://api.domo.com/v1/datasets/{{dataset_id}}/data"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "3fd18221-883d-46e0-9b8e-1e6691d9d3ba",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "519c660d-b9c9-4732-97e4-450511008807"
