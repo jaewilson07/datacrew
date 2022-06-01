@@ -4624,15 +4624,15 @@
 			"auth": {
 				"type": "apikey",
 				"apikey": {
-					"value": "{{session_token}}",
-					"key": "X-Domo_Authentication"
+					"key": "X-Domo-Authentication",
+					"value": "{{session_token}}"
 				}
 			},
 			"event": [
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "64d8d327-b249-4f8b-89f6-90f70c88fe02",
+						"id": "f1aa8e63-9de2-4693-b340-6c9ec2a68868",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -4642,7 +4642,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "d6e9b7fd-dd09-464a-810a-d632212e7be2",
+						"id": "06fd19ff-6da5-48ca-a397-3af030955610",
 						"type": "text/javascript",
 						"exec": [
 							""
