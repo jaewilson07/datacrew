@@ -1531,7 +1531,8 @@
 												"id": "bd385391-56b1-4d8e-8b02-26df87313318",
 												"exec": [
 													"var jsonData = JSON.parse(responseBody);\r",
-													"postman.setEnvironmentVariable(\"dataset_upload_id\", jsonData.uploadId);"
+													"postman.setEnvironmentVariable(\"dataset_upload_id\", jsonData.uploadId);\r",
+													""
 												],
 												"type": "text/javascript"
 											}
