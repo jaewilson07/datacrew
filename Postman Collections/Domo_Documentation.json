@@ -2919,7 +2919,7 @@
 							]
 						},
 						{
-							"name": "New Request",
+							"name": "get partition list",
 							"id": "fa4672d6-19ee-4212-8c20-8272a0f2f154",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
