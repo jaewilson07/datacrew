@@ -2950,6 +2950,28 @@
 								"url": "https://{{domo_instance}}.domo.com/api/query/v1/datasources/{{dataset_id}}/partition/list"
 							},
 							"response": []
+						},
+						{
+							"name": "Delete a Partition",
+							"id": "ae3b686a-3363-4204-b7b1-c89ba26376ec",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"paginationFields\": [\r\n        {\r\n            \"fieldName\": \"datecompleted\",\r\n            \"sortOrder\": \"DESC\",\r\n            \"filterValues\": {\r\n                \"MIN\": null,\r\n                \"MAX\": null\r\n            }\r\n        }\r\n    ],\r\n    \"limit\": 1,\r\n    \"offset\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/query/v1/datasources/{{dataset_id}}/partition/list"
+							},
+							"response": []
 						}
 					],
 					"id": "87e12295-1ca7-42ec-80d7-8c8943dd17e8"
