@@ -2925,9 +2925,18 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
-								"url": "https:/{{domo_instance}}/api/query/v1/datasources/{{dataset_id}}/partition/list"
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"paginationFields\": [\r\n        {\r\n            \"fieldName\": \"datecompleted\",\r\n            \"sortOrder\": \"DESC\",\r\n            \"filterValues\": {\r\n                \"MIN\": null,\r\n                \"MAX\": null\r\n            }\r\n        }\r\n    ],\r\n    \"limit\": 1,\r\n    \"offset\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/query/v1/datasources/{{dataset_id}}/partition/list"
 							},
 							"response": []
 						}
