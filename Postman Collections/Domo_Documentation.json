@@ -4770,16 +4770,13 @@
 									}
 								],
 								"body": {
-									"mode": "raw",
-									"raw": "Steph Hawking, does it better",
-									"options": {
-										"raw": {
-											"language": "text"
-										}
+									"mode": "file",
+									"file": {
+										"src": "/C:/Users/jwilson1/OneDrive - Sony/Desktop/test.csv"
 									}
 								},
 								"url": {
-									"raw": "https://api.domo.com/v1/datasets/b6ec1377-32e1-47a6-86de-e38ec6118461/data?updateMethod=REPLACE",
+									"raw": "https://api.domo.com/v1/datasets/{{dataset_id}}/data?updateMethod=REPLACE",
 									"protocol": "https",
 									"host": [
 										"api",
@@ -4789,7 +4786,7 @@
 									"path": [
 										"v1",
 										"datasets",
-										"b6ec1377-32e1-47a6-86de-e38ec6118461",
+										"{{dataset_id}}",
 										"data"
 									],
 									"query": [
