@@ -1570,8 +1570,18 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
-										"header": []
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"action\": \"APPEND\",\r\n    \"index\": \"true\",\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads/{{dataset_upload_id}}/commit"
 									},
 									"response": []
 								}
