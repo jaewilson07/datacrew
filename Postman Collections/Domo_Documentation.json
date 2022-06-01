@@ -1626,7 +1626,8 @@
 												}
 											}
 										},
-										"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads/{{dataset_upload_id}}/commit"
+										"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads/{{dataset_upload_id}}/commit",
+										"description": "Acceptable actions in the body can be REPLACE or APPEND.\n\nIndex can be True or False. Indexing will load the data into adrenaline and should only be executed if all the data has been loaded into Domo. (consider examples if you were uploading multiple files into one dataset in Domo)."
 									},
 									"response": []
 								}
