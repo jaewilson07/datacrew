@@ -1523,7 +1523,7 @@
 							"name": "upload data - 3 requests",
 							"item": [
 								{
-									"name": "New Request",
+									"name": "stage 1 - get uploadId",
 									"id": "8ffcea4e-307e-4842-a30b-0633c88e4d42",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
