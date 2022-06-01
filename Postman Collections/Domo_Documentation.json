@@ -1564,7 +1564,7 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "stge 3 - commit and index",
 									"id": "47a941eb-12fa-4801-be61-1b89d7dbf87a",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
