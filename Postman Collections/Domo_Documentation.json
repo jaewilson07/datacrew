@@ -4620,7 +4620,36 @@
 					"id": "1d951c97-b085-48dc-adbe-6da8bcc0401c"
 				}
 			],
-			"id": "c33f3285-f1e6-47ff-ac91-0326da20399b"
+			"id": "c33f3285-f1e6-47ff-ac91-0326da20399b",
+			"auth": {
+				"type": "apikey",
+				"apikey": {
+					"value": "{{session_token}}",
+					"key": "X-Domo_Authentication"
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "64d8d327-b249-4f8b-89f6-90f70c88fe02",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "d6e9b7fd-dd09-464a-810a-d632212e7be2",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Developer_Auth",
