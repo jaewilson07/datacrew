@@ -10,6 +10,20 @@
 			"item": [
 				{
 					"name": "Full Authentication",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "49cff43c-89b7-4469-8afb-40cd86539f37",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"postman.setEnvironmentVariable(\"session_token\", jsonData.sessionToken);\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "a1f7d902-e66d-4d1d-8b6a-89b36fd31bdc",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
