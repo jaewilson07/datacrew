@@ -1675,7 +1675,30 @@
 											"mode": "raw",
 											"raw": "{\r\n    \"action\": null,\r\n    \"appendId\": null\r\n}"
 										},
-										"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads",
+										"url": {
+											"raw": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads/?restateDataTag={restate_data_tag}",
+											"protocol": "https",
+											"host": [
+												"{{domo_instance}}",
+												"domo",
+												"com"
+											],
+											"path": [
+												"api",
+												"data",
+												"v3",
+												"datasources",
+												"{{dataset_id}}",
+												"uploads",
+												""
+											],
+											"query": [
+												{
+													"key": "restateDataTag",
+													"value": "{restate_data_tag}"
+												}
+											]
+										},
 										"description": "the response includes an uploadId, {{dataset_upload_id}} which must be stored and passed to the URL of the subsequent function.\n\nthe body appears to be superfluous"
 									},
 									"response": []
