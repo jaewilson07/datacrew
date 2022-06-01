@@ -1646,7 +1646,7 @@
 							"id": "278cfd54-2a58-4406-90f6-6cc04d9e1fe7"
 						},
 						{
-							"name": "upload data CSV - basic APPEND with partitioning - 3 requests",
+							"name": "upload CSV - APPEND with partitioning - 3 requests",
 							"item": [
 								{
 									"name": "stage 1 - get partition_tag",
