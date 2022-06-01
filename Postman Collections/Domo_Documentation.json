@@ -1534,7 +1534,7 @@
 					"name": "Dataset",
 					"item": [
 						{
-							"name": "upload data CSV - basic APPEND or REPLACE - 3 requests",
+							"name": "upload CSV - APPEND or REPLACE - 3 requests",
 							"item": [
 								{
 									"name": "stage 1 - get uploadId",
