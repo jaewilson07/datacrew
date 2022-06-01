@@ -4738,6 +4738,11 @@
 										"key": "Content-Type",
 										"value": "text/csv",
 										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
 									}
 								],
 								"body": {
