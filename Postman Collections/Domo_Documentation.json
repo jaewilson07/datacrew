@@ -1544,7 +1544,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "response = requests.request(\"POST\",\r\n                            url=f'{url}/uploads',\r\n                            headers={\r\n                                'Content-Type': 'application/json',\r\n                                'Accept': 'application/json',\r\n                                'X-Domo-Authentication': access_token\r\n                            },\r\n                            json={\r\n                                \"action\": None,\r\n                                \"appendId\": None\r\n                            }\r\n                            )"
+											"raw": "{\r\n                                \"action\": None,\r\n                                \"appendId\": None\r\n                            }\r\n"
 										},
 										"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads"
 									},
