@@ -1687,7 +1687,7 @@
 											"raw": "{\r\n    \"action\": null,\r\n    \"appendId\": null\r\n}"
 										},
 										"url": {
-											"raw": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads/?restateDataTag={{dataset_restate_partition_tag}}",
+											"raw": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads/?restateDataTag={{dataset_partition_id}}",
 											"protocol": "https",
 											"host": [
 												"{{domo_instance}}",
@@ -1706,7 +1706,7 @@
 											"query": [
 												{
 													"key": "restateDataTag",
-													"value": "{{dataset_restate_partition_tag}}"
+													"value": "{{dataset_partition_id}}"
 												}
 											]
 										},
