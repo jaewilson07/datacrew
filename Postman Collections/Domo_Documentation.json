@@ -1521,7 +1521,20 @@
 					"item": [
 						{
 							"name": "upload data - 3 requests",
-							"item": [],
+							"item": [
+								{
+									"name": "New Request",
+									"id": "8ffcea4e-307e-4842-a30b-0633c88e4d42",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							],
 							"id": "278cfd54-2a58-4406-90f6-6cc04d9e1fe7"
 						},
 						{
