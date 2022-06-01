@@ -1558,7 +1558,8 @@
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads/{{dataset_upload_id}}/parts/2"
 									},
 									"response": []
 								}
