@@ -2926,7 +2926,8 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": "https:/{{domo_instance}}/api/query/v1/datasources/{{dataset_id}}/partition/list"
 							},
 							"response": []
 						}
