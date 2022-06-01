@@ -1635,6 +1635,107 @@
 							"id": "278cfd54-2a58-4406-90f6-6cc04d9e1fe7"
 						},
 						{
+							"name": "upload data CSV - basic APPEND with partitioning - 3 requests",
+							"item": [
+								{
+									"name": "stage 1 - get uploadId",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "bd385391-56b1-4d8e-8b02-26df87313318",
+												"exec": [
+													"var jsonData = JSON.parse(responseBody);\r",
+													"postman.setEnvironmentVariable(\"dataset_upload_id\", jsonData.uploadId);\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"id": "202e1665-2628-44ff-be14-df3032a20e6e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"action\": null,\r\n    \"appendId\": null\r\n}"
+										},
+										"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads",
+										"description": "the response includes an uploadId, {{dataset_upload_id}} which must be stored and passed to the URL of the subsequent function.\n\nthe body appears to be superfluous"
+									},
+									"response": []
+								},
+								{
+									"name": "stage 2 - upload csv",
+									"id": "c166caf5-15fd-4693-8520-64040edee8af",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "text/csv",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "Jae and Oleksii, why\r\nhello, it is the way"
+										},
+										"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads/{{dataset_upload_id}}/parts/2",
+										"description": "pass the dataset_upload_id from the previous execution into the URL. the parts could be used to upload multiple streams simultaneously (I believe but haven't tested)\n\nafter all the data arrives execute a commit request.\n\nNOTE data can be pased in the body or as a stream (upload a csv file)."
+									},
+									"response": []
+								},
+								{
+									"name": "stge 3 - commit and index",
+									"id": "774b2ad9-5fe1-4dc2-ac90-0a2b80fb7c01",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"action\": \"APPEND\",\r\n    \"index\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads/{{dataset_upload_id}}/commit",
+										"description": "Acceptable actions in the body can be REPLACE or APPEND.\n\nIndex can be True or False. Indexing will load the data into adrenaline and should only be executed if all the data has been loaded into Domo. (consider examples if you were uploading multiple files into one dataset in Domo)."
+									},
+									"response": []
+								}
+							],
+							"id": "2d203dda-c0a2-47d5-89d8-0821d1a012cf"
+						},
+						{
 							"name": "Get Dataset by ID",
 							"id": "30097141-b2ad-48e3-b195-5700f0441989",
 							"protocolProfileBehavior": {
