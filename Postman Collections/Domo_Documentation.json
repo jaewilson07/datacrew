@@ -1770,6 +1770,11 @@
 							"id": "2d203dda-c0a2-47d5-89d8-0821d1a012cf"
 						},
 						{
+							"name": "New Folder",
+							"item": [],
+							"id": "78b21968-de07-4d61-a0a3-f08cb5a9f265"
+						},
+						{
 							"name": "Get Dataset by ID",
 							"id": "30097141-b2ad-48e3-b195-5700f0441989",
 							"protocolProfileBehavior": {
@@ -2954,6 +2959,28 @@
 						{
 							"name": "Delete a Partition",
 							"id": "ae3b686a-3363-4204-b7b1-c89ba26376ec",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"paginationFields\": [\r\n        {\r\n            \"fieldName\": \"datecompleted\",\r\n            \"sortOrder\": \"DESC\",\r\n            \"filterValues\": {\r\n                \"MIN\": null,\r\n                \"MAX\": null\r\n            }\r\n        }\r\n    ],\r\n    \"limit\": 1,\r\n    \"offset\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/query/v1/datasources/{{dataset_id}}/partition/list"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete a Partition Copy",
+							"id": "3e28ea33-1ca1-4969-baa4-de7985485a3b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
