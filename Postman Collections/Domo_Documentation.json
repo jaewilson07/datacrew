@@ -1771,7 +1771,74 @@
 						},
 						{
 							"name": "Partition Tagged Datasets",
-							"item": [],
+							"item": [
+								{
+									"name": "Get Partition List",
+									"id": "fa4672d6-19ee-4212-8c20-8272a0f2f154",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"paginationFields\": [\r\n        {\r\n            \"fieldName\": \"datecompleted\",\r\n            \"sortOrder\": \"DESC\",\r\n            \"filterValues\": {\r\n                \"MIN\": null,\r\n                \"MAX\": null\r\n            }\r\n        }\r\n    ],\r\n    \"limit\": 1,\r\n    \"offset\": 0\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://{{domo_instance}}.domo.com/api/query/v1/datasources/{{dataset_id}}/partition/list"
+									},
+									"response": []
+								},
+								{
+									"name": "Delete a Partition",
+									"id": "ae3b686a-3363-4204-b7b1-c89ba26376ec",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://{{domo_instance}}.domo.com/api/query/v1/datasources/{{dataset_id}}/partition/{{dataset_partition_tag}}"
+									},
+									"response": []
+								},
+								{
+									"name": "Delete a Partition Copy",
+									"id": "3e28ea33-1ca1-4969-baa4-de7985485a3b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"paginationFields\": [\r\n        {\r\n            \"fieldName\": \"datecompleted\",\r\n            \"sortOrder\": \"DESC\",\r\n            \"filterValues\": {\r\n                \"MIN\": null,\r\n                \"MAX\": null\r\n            }\r\n        }\r\n    ],\r\n    \"limit\": 1,\r\n    \"offset\": 0\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://{{domo_instance}}.domo.com/api/query/v1/datasources/{{dataset_id}}/partition/list"
+									},
+									"response": []
+								}
+							],
 							"id": "78b21968-de07-4d61-a0a3-f08cb5a9f265"
 						},
 						{
@@ -2933,72 +3000,6 @@
 									"body": null
 								}
 							]
-						},
-						{
-							"name": "Get Partition List",
-							"id": "fa4672d6-19ee-4212-8c20-8272a0f2f154",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"paginationFields\": [\r\n        {\r\n            \"fieldName\": \"datecompleted\",\r\n            \"sortOrder\": \"DESC\",\r\n            \"filterValues\": {\r\n                \"MIN\": null,\r\n                \"MAX\": null\r\n            }\r\n        }\r\n    ],\r\n    \"limit\": 1,\r\n    \"offset\": 0\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://{{domo_instance}}.domo.com/api/query/v1/datasources/{{dataset_id}}/partition/list"
-							},
-							"response": []
-						},
-						{
-							"name": "Delete a Partition",
-							"id": "ae3b686a-3363-4204-b7b1-c89ba26376ec",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"paginationFields\": [\r\n        {\r\n            \"fieldName\": \"datecompleted\",\r\n            \"sortOrder\": \"DESC\",\r\n            \"filterValues\": {\r\n                \"MIN\": null,\r\n                \"MAX\": null\r\n            }\r\n        }\r\n    ],\r\n    \"limit\": 1,\r\n    \"offset\": 0\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://{{domo_instance}}.domo.com/api/query/v1/datasources/{{dataset_id}}/partition/list"
-							},
-							"response": []
-						},
-						{
-							"name": "Delete a Partition Copy",
-							"id": "3e28ea33-1ca1-4969-baa4-de7985485a3b",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"paginationFields\": [\r\n        {\r\n            \"fieldName\": \"datecompleted\",\r\n            \"sortOrder\": \"DESC\",\r\n            \"filterValues\": {\r\n                \"MIN\": null,\r\n                \"MAX\": null\r\n            }\r\n        }\r\n    ],\r\n    \"limit\": 1,\r\n    \"offset\": 0\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://{{domo_instance}}.domo.com/api/query/v1/datasources/{{dataset_id}}/partition/list"
-							},
-							"response": []
 						}
 					],
 					"id": "87e12295-1ca7-42ec-80d7-8c8943dd17e8"
