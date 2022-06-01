@@ -1751,10 +1751,21 @@
 									},
 									"request": {
 										"method": "PUT",
-										"header": [],
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"action\": \"REPLACE\",\r\n    \"restateDataTag\": {{dataset_restate_partition_tag}},\r\n    \"index\": \"true\"\r\n}",
+											"raw": "{\r\n    \"action\": \"APPEND\",\r\n    \"restateDataTag\": \"{{dataset_restate_partition_tag}}\",\r\n    \"index\": \"true\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
