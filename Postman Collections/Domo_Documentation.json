@@ -1638,7 +1638,7 @@
 							"name": "upload data CSV - basic APPEND with partitioning - 3 requests",
 							"item": [
 								{
-									"name": "stage 1 - get uploadId",
+									"name": "stage 1 - get partition_tag",
 									"event": [
 										{
 											"listen": "test",
@@ -1676,7 +1676,7 @@
 											"raw": "{\r\n    \"action\": null,\r\n    \"appendId\": null\r\n}"
 										},
 										"url": {
-											"raw": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads/?restateDataTag={{restate_data_tag}}",
+											"raw": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads/?restateDataTag={{dataset_partition_tag}}",
 											"protocol": "https",
 											"host": [
 												"{{domo_instance}}",
@@ -1695,7 +1695,7 @@
 											"query": [
 												{
 													"key": "restateDataTag",
-													"value": "{{restate_data_tag}}"
+													"value": "{{dataset_partition_tag}}"
 												}
 											]
 										},
