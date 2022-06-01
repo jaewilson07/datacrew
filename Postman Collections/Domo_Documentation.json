@@ -5124,9 +5124,12 @@
 									}
 								],
 								"body": {
-									"mode": "file",
-									"file": {
-										"src": "/C:/Users/jwilson1/OneDrive - Sony/Desktop/test.csv"
+									"mode": "raw",
+									"raw": "Jae and Oleksii, why not?\r\nhello, we are one",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
 									}
 								},
 								"url": {
