@@ -4743,7 +4743,7 @@
 							]
 						},
 						{
-							"name": "NOT FUNCTIONAL - Upload data via CSV",
+							"name": "Upload data via CSV (doesn't run in Postman)",
 							"id": "82182dcc-f1e8-42de-8f98-fda7256520ac",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true,
