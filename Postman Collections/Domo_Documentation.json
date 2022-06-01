@@ -1524,6 +1524,19 @@
 							"item": [
 								{
 									"name": "stage 1 - get uploadId",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "bd385391-56b1-4d8e-8b02-26df87313318",
+												"exec": [
+													"var jsonData = JSON.parse(responseBody);\r",
+													"postman.setEnvironmentVariable(\"dataset_upload_id\", jsonData.uploadId);"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
 									"id": "8ffcea4e-307e-4842-a30b-0633c88e4d42",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
