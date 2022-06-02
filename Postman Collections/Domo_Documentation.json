@@ -1629,7 +1629,40 @@
 											"mode": "raw",
 											"raw": "Jae and Oleksii, why\r\nhello, it is the way"
 										},
-										"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads/{{dataset_upload_id}}/parts/2",
+										"url": {
+											"raw": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/:dataset_id/uploads/:upload_id/parts/:part",
+											"protocol": "https",
+											"host": [
+												"{{domo_instance}}",
+												"domo",
+												"com"
+											],
+											"path": [
+												"api",
+												"data",
+												"v3",
+												"datasources",
+												":dataset_id",
+												"uploads",
+												":upload_id",
+												"parts",
+												":part"
+											],
+											"variable": [
+												{
+													"key": "dataset_id",
+													"value": "{{dataset_id}}"
+												},
+												{
+													"key": "upload_id",
+													"value": "{{dataset_upload_id}}"
+												},
+												{
+													"key": "part",
+													"value": "1"
+												}
+											]
+										},
 										"description": "pass the dataset_upload_id from the previous execution into the URL. the parts could be used to upload multiple streams simultaneously (I believe but haven't tested)\n\nafter all the data arrives execute a commit request.\n\nNOTE data can be pased in the body or as a stream (upload a csv file)."
 									},
 									"response": []
