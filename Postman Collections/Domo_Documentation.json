@@ -1762,9 +1762,9 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "new stuff goes here, it's the next day"
+											"raw": "my mistake, reupload today"
 										},
-										"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads/{{dataset_upload_id}}/parts/2",
+										"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads/{{dataset_upload_id}}/parts/6",
 										"description": "pass the dataset_upload_id from the previous execution into the URL. the parts could be used to upload multiple streams simultaneously (I believe but haven't tested)\n\nafter all the data arrives execute a commit request.\n\nNOTE data can be pased in the body or as a stream (upload a csv file)."
 									},
 									"response": []
