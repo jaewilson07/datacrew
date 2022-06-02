@@ -5039,7 +5039,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://{{domo_instance}}.domo.com/api/audit/v1/user-audits?start=1653601110123&end=1654205910123&offset=0&limit=300&objectType=DATA_SOURCE",
+									"raw": "https://{{domo_instance}}.domo.com/api/audit/v1/user-audits?start=1646434158639&end=1654206558639&offset=0&limit=300&objectType=DATAFLOW_TYPE,ACCOUNT",
 									"protocol": "https",
 									"host": [
 										"{{domo_instance}}",
@@ -5055,11 +5055,11 @@
 									"query": [
 										{
 											"key": "start",
-											"value": "1653601110123"
+											"value": "1646434158639"
 										},
 										{
 											"key": "end",
-											"value": "1654205910123"
+											"value": "1654206558639"
 										},
 										{
 											"key": "offset",
@@ -5071,7 +5071,7 @@
 										},
 										{
 											"key": "objectType",
-											"value": "DATA_SOURCE",
+											"value": "DATAFLOW_TYPE,ACCOUNT",
 											"type": "text"
 										}
 									]
