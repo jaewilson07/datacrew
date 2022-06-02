@@ -5026,7 +5026,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Get (enumerate) Activity Log Object Types",
 							"id": "3db120eb-75a9-47f6-b30b-1096971dbc9c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
