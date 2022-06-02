@@ -5037,18 +5037,6 @@
 								"url": "https://{{domo_instance}}.domo.com/api/audit/v1/user-audits/objectTypes"
 							},
 							"response": []
-						},
-						{
-							"name": "https://domo-dojo.domo.com/api/audit/v1/user-audits/objectTypes/ACCESS_TOKEN/eventTypes",
-							"id": "f7a4e80f-de89-4254-8575-d37b3ae3fc88",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": []
-							},
-							"response": []
 						}
 					],
 					"id": "749ebbb5-c330-4188-a424-adc20e6c3cb2"
