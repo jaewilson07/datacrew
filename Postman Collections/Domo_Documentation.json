@@ -1791,7 +1791,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"action\": \"APPEND\",\r\n    \"restateDataTag\": \"{{dataset_restate_partition_tag}}\",\r\n    \"index\": \"true\"\r\n}",
+											"raw": "{\r\n    \"action\": \"APPEND\",\r\n    \"restateDataTag\": \"{{dataset_partition_id}}\",\r\n    \"index\": \"true\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
