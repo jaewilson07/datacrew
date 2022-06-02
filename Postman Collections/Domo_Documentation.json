@@ -5024,6 +5024,18 @@
 								"description": "objectTypes can be:\n\n*   ACCOUNT\n*   DATAFLOW_TYPE\n*   DATA_SOURCE"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "3db120eb-75a9-47f6-b30b-1096971dbc9c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "749ebbb5-c330-4188-a424-adc20e6c3cb2"
