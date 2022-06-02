@@ -5189,8 +5189,18 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Leonhard Euler Party\",\r\n        \"description\": \"Mathematician Guest List\",\r\n            \"rows\": 0,\r\n                \"schema\": {\r\n        \"columns\": [{\r\n            \"type\": \"STRING\",\r\n            \"name\": \"Friend\"\r\n        }, {\r\n            \"type\": \"STRING\",\r\n            \"name\": \"Attending\"\r\n        }]\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.domo.com/v1/datasets"
 							},
 							"response": []
 						}
