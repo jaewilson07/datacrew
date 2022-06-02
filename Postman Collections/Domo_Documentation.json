@@ -1540,6 +1540,18 @@
 								"url": "https://{{domo_instance}}.domo.com/api/content/v2/groups/access"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "08a545c7-7148-4995-b4b2-cc33414eb4cb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "ed3d96aa-cf69-49e4-bc0e-25bb73c45f10"
