@@ -1600,7 +1600,29 @@
 											"mode": "raw",
 											"raw": "{\r\n    \"action\": null,\r\n    \"appendId\": null\r\n}"
 										},
-										"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/uploads",
+										"url": {
+											"raw": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/:dataset_id/uploads",
+											"protocol": "https",
+											"host": [
+												"{{domo_instance}}",
+												"domo",
+												"com"
+											],
+											"path": [
+												"api",
+												"data",
+												"v3",
+												"datasources",
+												":dataset_id",
+												"uploads"
+											],
+											"variable": [
+												{
+													"key": "dataset_id",
+													"value": "{{dataset_id}}"
+												}
+											]
+										},
 										"description": "the response includes an uploadId, {{dataset_upload_id}} which must be stored and passed to the URL of the subsequent function.\n\nthe body appears to be superfluous"
 									},
 									"response": []
