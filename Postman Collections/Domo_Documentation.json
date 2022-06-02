@@ -4973,7 +4973,49 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/audit/v1/user-audits?start=1653601110123&end=1654205910123&offset=0&limit=300",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"audit",
+										"v1",
+										"user-audits"
+									],
+									"query": [
+										{
+											"key": "start",
+											"value": "1653601110123"
+										},
+										{
+											"key": "end",
+											"value": "1654205910123"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "limit",
+											"value": "300"
+										}
+									]
+								}
 							},
 							"response": []
 						}
