@@ -3017,7 +3017,7 @@
 							]
 						},
 						{
-							"name": "New Request",
+							"name": "Index Dataset",
 							"id": "7ac7caba-b47e-4324-96ed-e6456c58a04b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
