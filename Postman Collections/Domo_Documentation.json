@@ -4984,7 +4984,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://{{domo_instance}}.domo.com/api/audit/v1/user-audits?start=1653601110123&end=1654205910123&offset=0&limit=300",
+									"raw": "https://{{domo_instance}}.domo.com/api/audit/v1/user-audits?start=1653601110123&end=1654205910123&offset=0&limit=300&objectType=DATA_SOURCE",
 									"protocol": "https",
 									"host": [
 										"{{domo_instance}}",
@@ -5013,6 +5013,11 @@
 										{
 											"key": "limit",
 											"value": "300"
+										},
+										{
+											"key": "objectType",
+											"value": "DATA_SOURCE",
+											"type": "text"
 										}
 									]
 								}
