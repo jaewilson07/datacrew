@@ -5020,7 +5020,8 @@
 											"type": "text"
 										}
 									]
-								}
+								},
+								"description": "objectTypes include\n\n*   ACCOUNT\n*   DATAFLOW_TYPE\n*   DATA_SOURCE"
 							},
 							"response": []
 						}
