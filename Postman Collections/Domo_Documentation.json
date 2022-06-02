@@ -4964,7 +4964,20 @@
 				},
 				{
 					"name": "Activity Log",
-					"item": [],
+					"item": [
+						{
+							"name": "New Request",
+							"id": "4da6d59d-82f1-456e-8184-20ab03a8d00a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "749ebbb5-c330-4188-a424-adc20e6c3cb2"
 				}
 			],
