@@ -5039,7 +5039,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "https://domo-dojo.domo.com/api/audit/v1/user-audits/objectTypes/ACCESS_TOKEN/eventTypes",
 							"id": "f7a4e80f-de89-4254-8575-d37b3ae3fc88",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
