@@ -4966,7 +4966,7 @@
 					"name": "Activity Log",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "Get Activity Log",
 							"id": "4da6d59d-82f1-456e-8184-20ab03a8d00a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
