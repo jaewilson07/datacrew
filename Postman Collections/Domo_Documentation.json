@@ -1542,7 +1542,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Create a Group",
 							"id": "08a545c7-7148-4995-b4b2-cc33414eb4cb",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
