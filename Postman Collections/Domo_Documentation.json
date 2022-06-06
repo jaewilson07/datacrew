@@ -1976,7 +1976,7 @@
 										}
 									]
 								},
-								"description": "#### Description (usage)\n\nGet the dataset full information by dataset id\n\n#### **UI reference**\n\nLeft bar menu -> Datasets\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/categories/4418219258647-Working-with-DataSets-in-Domo)\n\n#### Required parameters\n\n*   Dataset id\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Dataset with all properties\n    \n\nPlease refer to the example below:"
+								"description": "#### Description (usage)\n\nGet the dataset full information by dataset id\n\n#### **UI reference**\n\nLeft bar menu -> Datasets\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/categories/4418219258647-Working-with-DataSets-in-Domo)\n\n#### Required parameters\n\n*   Dataset id\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Dataset with all properties\n    \n\n### Use Cases\n\n*   To tell if a dataset is running check the 'state' and 'pair\\` values. State = Active indicates the dataset is running."
 							},
 							"response": [
 								{
