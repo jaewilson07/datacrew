@@ -1625,7 +1625,118 @@
 										},
 										"description": "the response includes an uploadId, {{dataset_upload_id}} which must be stored and passed to the URL of the subsequent function.\n\nthe body appears to be superfluous"
 									},
-									"response": []
+									"response": [
+										{
+											"id": "42e80d9d-b4f5-47d4-bb22-bea0f6a914a5",
+											"name": "stage 1 - get uploadId",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"action\": null,\r\n    \"appendId\": null\r\n}"
+												},
+												"url": {
+													"raw": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/:dataset_id/uploads",
+													"protocol": "https",
+													"host": [
+														"{{domo_instance}}",
+														"domo",
+														"com"
+													],
+													"path": [
+														"api",
+														"data",
+														"v3",
+														"datasources",
+														":dataset_id",
+														"uploads"
+													],
+													"variable": [
+														{
+															"key": "dataset_id",
+															"value": "{{dataset_id}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Server",
+													"value": "nginx"
+												},
+												{
+													"key": "Date",
+													"value": "Mon, 06 Jun 2022 23:23:58 GMT"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json;charset=utf-8"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Cache-Control",
+													"value": "no-cache, no-store, max-age=0, must-revalidate"
+												},
+												{
+													"key": "Content-Security-Policy",
+													"value": "frame-ancestors 'self';"
+												},
+												{
+													"key": "Expires",
+													"value": "0"
+												},
+												{
+													"key": "Pragma",
+													"value": "no-cache"
+												},
+												{
+													"key": "Vary",
+													"value": "Accept-Encoding"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "DENY"
+												},
+												{
+													"key": "X-Xss-Protection",
+													"value": "1; mode=block"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"dataSourceId\": \"0dbe6a6a-5588-4a1e-9db4-989ca98762a5\",\n    \"uploadId\": 10,\n    \"requestedAsOf\": 1654557838137\n}"
+										}
+									]
 								},
 								{
 									"name": "stage 2 - upload csv",
