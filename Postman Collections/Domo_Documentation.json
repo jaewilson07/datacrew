@@ -5346,7 +5346,25 @@
 				},
 				{
 					"name": "AppDb",
-					"item": [],
+					"item": [
+						{
+							"name": "https://{{app_id}}.domoapps.{{domo_environment}}.domo.com/domo/datastores/v1/collections/{{collection_name}}/documents/query",
+							"id": "ccf7dac8-ff2c-48da-b108-253f2616e7fa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": "https://{{app_id}}.domoapps.{{domo_environment}}.domo.com/domo/datastores/v1/collections/{{collection_name}}/documents/query"
+							},
+							"response": []
+						}
+					],
 					"id": "14b468d5-58fb-47fd-b5e5-402a8c24d897"
 				}
 			],
