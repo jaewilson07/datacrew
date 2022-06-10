@@ -1118,6 +1118,18 @@
 									"body": "{\n    \"count\": 1,\n    \"users\": [\n        {\n            \"attributes\": [\n                {\n                    \"key\": \"id\",\n                    \"values\": [\n                        1069862308\n                    ]\n                },\n                {\n                    \"key\": \"displayName\",\n                    \"values\": [\n                        \"Iain Congdon - Domo\"\n                    ]\n                },\n                {\n                    \"key\": \"userName\",\n                    \"values\": [\n                        \"iain.congdon@domo.com\"\n                    ]\n                },\n                {\n                    \"key\": \"emailAddress\",\n                    \"values\": [\n                        \"iain.congdon@domo.com\"\n                    ]\n                },\n                {\n                    \"key\": \"roleId\",\n                    \"values\": [\n                        1\n                    ]\n                }\n            ],\n            \"roleId\": 1,\n            \"emailAddress\": \"iain.congdon@domo.com\",\n            \"userName\": \"iain.congdon@domo.com\",\n            \"displayName\": \"Iain Congdon - Domo\",\n            \"id\": 1069862308\n        }\n    ]\n}"
 								}
 							]
+						},
+						{
+							"name": "Reset User Password",
+							"id": "4db92493-a55b-459c-becc-fd8c5c3d1f56",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "9d632591-53a3-429d-b358-4232e3fba85e",
