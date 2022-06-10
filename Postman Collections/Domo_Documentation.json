@@ -3221,6 +3221,18 @@
 								"header": []
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "12d22679-f760-43b9-935d-46be2ee4fab6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "87e12295-1ca7-42ec-80d7-8c8943dd17e8"
@@ -5348,7 +5360,7 @@
 					"name": "AppDb",
 					"item": [
 						{
-							"name": "https://{{app_id}}.domoapps.{{domo_environment}}.domo.com/domo/datastores/v1/collections/{{collection_name}}/documents/query",
+							"name": "Get Documents from Collection",
 							"id": "ccf7dac8-ff2c-48da-b108-253f2616e7fa",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
