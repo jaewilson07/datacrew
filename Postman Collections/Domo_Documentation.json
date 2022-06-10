@@ -3236,7 +3236,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Stream Execution History 2",
 							"id": "5d8d24ba-003e-44fc-aaac-6db5a338ab11",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
