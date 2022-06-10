@@ -3230,7 +3230,8 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": "https://{{domo_instance}}.domo.com/datasources/{{dataset_id}}/details/history"
 							},
 							"response": []
 						}
