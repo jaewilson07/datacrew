@@ -3231,7 +3231,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "https://{{domo_instance}}.domo.com/datasources/{{dataset_id}}/details/history"
+								"url": "https://{{domo_instance}}.domo.com/api/data/v1/streams/{{stream_id}}/history/aggregate"
 							},
 							"response": []
 						}
