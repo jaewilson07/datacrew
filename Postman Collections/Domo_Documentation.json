@@ -1130,7 +1130,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"domoUserId\": {{domo_user_id}},\r\n    \"password\": {{domo_password}}\"\r\n}",
+									"raw": "{\r\n    \"domoUserId\": {{user_id}},\r\n    \"password\": {{domo_password}}\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
