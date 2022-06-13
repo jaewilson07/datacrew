@@ -1140,6 +1140,18 @@
 								"url": "https://{{domo_instance}}.domo.com/api/identity/v1/password"
 							},
 							"response": []
+						},
+						{
+							"name": "https://playstationpartners-15058.domo.com/api/identity/v1/users/search'",
+							"id": "25c71532-0708-4889-b65e-9695ee8e1897",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "9d632591-53a3-429d-b358-4232e3fba85e",
