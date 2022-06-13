@@ -4857,7 +4857,7 @@
 										}
 									}
 								},
-								"url": "https://{{domo_instance}}.domo.com/api/publish/v2/proxy_user/domain"
+								"url": "https://{{domo_instance}}.domo.com/api/publish/v2/proxy_user/domain/"
 							},
 							"response": [
 								{
