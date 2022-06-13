@@ -1140,6 +1140,18 @@
 								"url": "https://{{domo_instance}}.domo.com/api/identity/v1/password"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "73c965fb-eefd-496d-9279-361bff837f95",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "9d632591-53a3-429d-b358-4232e3fba85e",
