@@ -3258,18 +3258,6 @@
 							"response": []
 						},
 						{
-							"name": "Stream Execution History 2",
-							"id": "5d8d24ba-003e-44fc-aaac-6db5a338ab11",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": []
-							},
-							"response": []
-						},
-						{
 							"name": "Query Data",
 							"id": "9757a7bb-371a-4d27-98cc-4f02ee608a59",
 							"protocolProfileBehavior": {
