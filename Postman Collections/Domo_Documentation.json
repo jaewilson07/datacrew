@@ -3270,7 +3270,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Query Data",
 							"id": "9757a7bb-371a-4d27-98cc-4f02ee608a59",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
