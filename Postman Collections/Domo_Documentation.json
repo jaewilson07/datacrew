@@ -4138,7 +4138,113 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "d2ff435c-c171-4045-adcd-e36f00d11521",
+									"name": "Get Page by ID",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://domo-dojo.domo.com/api/content/v1/cards?parts=certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,metadata,metadataOverrides,owners,problems,properties,slicers,subscriptions&includeFiltered=true&urns={{card_id}}",
+											"protocol": "https",
+											"host": [
+												"domo-dojo",
+												"domo",
+												"com"
+											],
+											"path": [
+												"api",
+												"content",
+												"v1",
+												"cards"
+											],
+											"query": [
+												{
+													"key": "parts",
+													"value": "certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,metadata,metadataOverrides,owners,problems,properties,slicers,subscriptions"
+												},
+												{
+													"key": "includeFiltered",
+													"value": "true"
+												},
+												{
+													"key": "urns",
+													"value": "{{card_id}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Jun 2022 13:47:47 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self';"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding, User-Agent"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "[\n    {\n        \"metadata\": {\n            \"chartType\": \"badge_basic_table\",\n            \"chartVersion\": \"8\",\n            \"currentLabel\": \"Count of Dataset Name\",\n            \"historyId\": \"d450eec4-0a2f-4c69-94df-828d7ce77e97\",\n            \"allTime\": \"{\\\"groupName\\\":\\\"Other\\\",\\\"name\\\":\\\"DEFAULT\\\",\\\"type\\\":\\\"Other\\\",\\\"selected\\\":true,\\\"estimatedSeconds\\\":-1,\\\"dateLabel\\\":\\\"\\\",\\\"column\\\":\\\"Action_Time\\\"}\",\n            \"calendar\": \"default\",\n            \"columnAliases\": \"{\\\"IsNamingConvention_Prefix\\\":\\\"isPostfix\\\",\\\"isNamingConvention_Postfix\\\":\\\"isPrefix\\\"}\",\n            \"columnFormats\": \"{}\",\n            \"SummaryNumberFormat\": \"{\\\"type\\\":\\\"number\\\",\\\"format\\\":\\\"#A\\\"}\"\n        },\n        \"domoapp\": {\n            \"id\": null\n        },\n        \"drillPath\": {},\n        \"drillPathURNs\": [],\n        \"subscriptions\": [\n            {\n                \"cardId\": 1693394557,\n                \"dataSourceId\": \"4fc29727-43a4-47ad-94a0-d0021dad8f40\",\n                \"dataSourceName\": \"gov_datasetEfficiency\",\n                \"componentName\": \"big_number\",\n                \"subscription\": {\n                    \"name\": \"big_number\",\n                    \"dataSourceId\": \"4fc29727-43a4-47ad-94a0-d0021dad8f40\",\n                    \"columns\": [\n                        {\n                            \"column\": \"Dataset Name\",\n                            \"aggregation\": \"COUNT\",\n                            \"alias\": \"Count of Dataset Name\",\n                            \"format\": {\n                                \"type\": \"abbreviated\",\n                                \"format\": \"#\"\n                            }\n                        }\n                    ],\n                    \"filters\": [],\n                    \"orderBy\": [],\n                    \"groupBy\": [],\n                    \"fiscal\": false,\n                    \"projection\": false,\n                    \"distinct\": false,\n                    \"limit\": 1\n                },\n                \"displayType\": \"DataFlow\",\n                \"dataType\": \"DataFlow\"\n            },\n            {\n                \"cardId\": 1693394557,\n                \"dataSourceId\": \"4fc29727-43a4-47ad-94a0-d0021dad8f40\",\n                \"dataSourceName\": \"gov_datasetEfficiency\",\n                \"componentName\": \"main\",\n                \"subscription\": {\n                    \"name\": \"main\",\n                    \"dataSourceId\": \"4fc29727-43a4-47ad-94a0-d0021dad8f40\",\n                    \"columns\": [\n                        {\n                            \"formulaId\": \"calculation_744fb7e7-e9e1-4dc2-9146-6e99f0f5f390\",\n                            \"mapping\": \"VALUE\"\n                        },\n                        {\n                            \"column\": \"IsNamingConvention_Prefix\",\n                            \"aggregation\": \"SUM\",\n                            \"mapping\": \"VALUE\",\n                            \"alias\": \"isPostfix\"\n                        },\n                        {\n                            \"column\": \"isNamingConvention_Postfix\",\n                            \"aggregation\": \"SUM\",\n                            \"mapping\": \"VALUE\",\n                            \"alias\": \"isPrefix\"\n                        },\n                        {\n                            \"formulaId\": \"calculation_081af393-2b66-4683-86a2-494b285b4b0b\",\n                            \"mapping\": \"VALUE\",\n                            \"alias\": \"ETLs\"\n                        },\n                        {\n                            \"formulaId\": \"calculation_c3658704-1247-4ef2-b9de-6cd1190c8f65\",\n                            \"mapping\": \"VALUE\",\n                            \"alias\": \"Cards\"\n                        },\n                        {\n                            \"formulaId\": \"calculation_0cc87902-59c1-417d-b356-dacc053386df\",\n                            \"mapping\": \"VALUE\",\n                            \"alias\": \"DatasetView\"\n                        },\n                        {\n                            \"formulaId\": \"calculation_18397fb9-7d41-45d8-b46c-5322a93c0840\",\n                            \"mapping\": \"VALUE\",\n                            \"alias\": \"CardView\"\n                        }\n                    ],\n                    \"filters\": [],\n                    \"dateGrain\": {\n                        \"column\": \"Action_Time\"\n                    },\n                    \"orderBy\": [],\n                    \"groupBy\": [\n                        {\n                            \"formulaId\": \"calculation_744fb7e7-e9e1-4dc2-9146-6e99f0f5f390\"\n                        }\n                    ],\n                    \"fiscal\": false,\n                    \"projection\": false,\n                    \"distinct\": false\n                },\n                \"displayType\": \"DataFlow\",\n                \"dataType\": \"DataFlow\"\n            }\n        ],\n        \"owners\": [\n            {\n                \"id\": \"1893952720\",\n                \"type\": \"USER\",\n                \"displayName\": \"Jae Wilson\"\n            }\n        ],\n        \"slicers\": [],\n        \"metadataOverrides\": {\n            \"components\": [\n                {\n                    \"component\": \"main\",\n                    \"chartType\": \"badge_basic_table\",\n                    \"overrides\": {\n                        \"range_filter_y\": \"none\",\n                        \"collapsed_filters\": \"none\",\n                        \"range_filter_time\": \"none\",\n                        \"range_filter_x\": \"none\",\n                        \"row_filter\": \"none\",\n                        \"series_filter\": \"none\",\n                        \"hide_series\": \"none\",\n                        \"column_sort\": \"[{\\\"column\\\":\\\"isNamingConvention_Postfix\\\",\\\"sort\\\":\\\"desc\\\"}]\",\n                        \"column_widths\": \"20\"\n                    },\n                    \"goal\": null\n                }\n            ]\n        },\n        \"dateInfo\": {\n            \"dateRange\": {\n                \"columnName\": \"Action_Time\",\n                \"columnDataType\": \"DATETIME\"\n            },\n            \"dateGrain\": {\n                \"columnName\": \"Action_Time\",\n                \"columnDataType\": \"DATETIME\"\n            }\n        },\n        \"datasources\": [\n            {\n                \"dataSourceId\": \"4fc29727-43a4-47ad-94a0-d0021dad8f40\",\n                \"dataSourceName\": \"gov_datasetEfficiency\",\n                \"displayType\": \"DataFlow\",\n                \"dataType\": \"DataFlow\",\n                \"providerType\": null,\n                \"isSampleData\": false,\n                \"lastUpdated\": 1624547621993,\n                \"adc\": false,\n                \"phase\": null,\n                \"state\": null\n            }\n        ],\n        \"certification\": {\n            \"state\": \"NOT_CERTIFIED\",\n            \"adminCertified\": false\n        },\n        \"urn\": \"1693394557\",\n        \"id\": 1693394557,\n        \"type\": \"kpi\",\n        \"created\": 1624546022,\n        \"badgeUpdated\": 1624548286000,\n        \"creatorId\": 1893952720,\n        \"ownerId\": 1893952720,\n        \"description\": \"\",\n        \"title\": \"gov_datasetEfficiency\",\n        \"active\": true,\n        \"allowTableDrill\": true,\n        \"locked\": false,\n        \"access\": true,\n        \"isCurrentUserOwner\": true\n    }\n]"
+								}
+							]
 						},
 						{
 							"name": "Get Pages - Admin Summary",
