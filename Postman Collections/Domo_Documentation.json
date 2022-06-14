@@ -4832,7 +4832,7 @@
 							"response": [
 								{
 									"id": "f4838954-d88a-4a5b-bb91-bede7f93dad3",
-									"name": "New Request",
+									"name": "Share Card Response",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
