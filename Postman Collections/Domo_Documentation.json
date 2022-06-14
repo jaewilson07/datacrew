@@ -3324,7 +3324,7 @@
 							"response": []
 						},
 						{
-							"name": "Dataset Permissions",
+							"name": "Dataset Access List",
 							"id": "1c61df4b-5f42-44d0-b7ac-93c07fb690fc",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
