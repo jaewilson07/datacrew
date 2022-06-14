@@ -4383,7 +4383,17 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"resources\": [\r\n        {\r\n            \"type\": \"page\",\r\n            \"id\": 127044793\r\n        }\r\n    ],\r\n    \"recipients\": [\r\n        {\r\n            \"type\": \"user\",\r\n            \"id\": 1893952720\r\n        }\r\n    ],\r\n    \"message\": \"I thought you might find this page interesting.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/content/v1/share"
 							},
 							"response": []
 						},
