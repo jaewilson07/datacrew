@@ -3300,6 +3300,18 @@
 								"url": "https://{{domo_instance}}.domo.com/api/query/v1/execute/{{dataset_id}}"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "76528627-e3e2-4113-be27-81e679989439",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "87e12295-1ca7-42ec-80d7-8c8943dd17e8"
