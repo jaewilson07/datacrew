@@ -3312,7 +3312,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"permissions\":[{\"type\":\"USER\",\"id\":{{user_id}}}},\"accessLevel\":\"CAN_EDIT\"}],\"sendEmail\":true}",
+									"raw": "{\r\n    \"permissions\": [\r\n        {\r\n            \"type\": \"USER\",\r\n            \"id\": 1893952720,\r\n            \"accessLevel\": \"CAN_EDIT\"\r\n        }\r\n    ],\r\n    \"sendEmail\": true\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
