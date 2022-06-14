@@ -3309,7 +3309,17 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"permissions\":[{\"type\":\"USER\",\"id\":{{user_id}}}},\"accessLevel\":\"CAN_EDIT\"}],\"sendEmail\":true}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/share"
 							},
 							"response": []
 						}
