@@ -4112,7 +4112,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Get Pages - Admin Summary",
 							"id": "aef2961a-3c54-490a-9850-fab671994ee3",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
