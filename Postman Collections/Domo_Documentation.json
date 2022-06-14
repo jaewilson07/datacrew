@@ -6178,6 +6178,18 @@
 								"url": "https://{{domo_instance}}.domo.com/api/datastores/v1/collections/{{collection_id}}"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "b336a13a-0ffe-4dde-aa93-0ba7727667ca",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "14b468d5-58fb-47fd-b5e5-402a8c24d897"
