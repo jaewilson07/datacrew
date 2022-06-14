@@ -1152,7 +1152,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"displayName\":\"user_name\",\"detail\":{\"email\":\"user_email\"},\"roleId\":1}",
+									"raw": "{\"displayName\":\"user_name\",\"detail\":{\"email\":\"user_email@fake.com\"},\"roleId\":1}",
 									"options": {
 										"raw": {
 											"language": "json"
