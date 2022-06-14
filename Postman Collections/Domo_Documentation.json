@@ -4826,8 +4826,38 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"resources\": [\r\n        {\r\n            \"type\": \"badge\",\r\n            \"id\": 949737692\r\n        }\r\n    ],\r\n    \"recipients\": [\r\n        {\r\n            \"type\": \"user\",\r\n            \"id\": 1893952720\r\n        }\r\n    ],\r\n    \"message\": \"I thought you might find this card interesting.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/content/v1/share?sendEmail=false",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"content",
+										"v1",
+										"share"
+									],
+									"query": [
+										{
+											"key": "sendEmail",
+											"value": "false"
+										}
+									]
+								}
 							},
 							"response": [
 								{
