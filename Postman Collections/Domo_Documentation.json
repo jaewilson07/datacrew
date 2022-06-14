@@ -3341,7 +3341,7 @@
 										}
 									}
 								},
-								"url": "https://{{domo_instance}}.com/api/data/v3/datasources/{{dataset_id}}/permissions"
+								"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/permissions"
 							},
 							"response": []
 						}
