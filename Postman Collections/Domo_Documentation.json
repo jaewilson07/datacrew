@@ -4107,7 +4107,36 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "https://domo-dojo.domo.com/api/content/v1/cards?parts=certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,metadata,metadataOverrides,owners,problems,properties,slicers,subscriptions&includeFiltered=true&urns={{card_id}}",
+									"protocol": "https",
+									"host": [
+										"domo-dojo",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"content",
+										"v1",
+										"cards"
+									],
+									"query": [
+										{
+											"key": "parts",
+											"value": "certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,metadata,metadataOverrides,owners,problems,properties,slicers,subscriptions"
+										},
+										{
+											"key": "includeFiltered",
+											"value": "true"
+										},
+										{
+											"key": "urns",
+											"value": "{{card_id}}"
+										}
+									]
+								}
 							},
 							"response": []
 						},
