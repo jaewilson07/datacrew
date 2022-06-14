@@ -6167,7 +6167,7 @@
 							"response": []
 						},
 						{
-							"name": "Get Documents from Collection",
+							"name": "Get Collection Information",
 							"id": "1c54fe59-8c5e-4f22-aa38-1110dd410ad9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
