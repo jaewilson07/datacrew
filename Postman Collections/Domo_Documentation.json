@@ -4808,7 +4808,7 @@
 							]
 						},
 						{
-							"name": "New Request",
+							"name": "Share Card",
 							"id": "bd332261-fbdb-4084-9fed-581f71e80dc5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
