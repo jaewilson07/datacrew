@@ -4829,7 +4829,102 @@
 								"method": "GET",
 								"header": []
 							},
-							"response": []
+							"response": [
+								{
+									"id": "f4838954-d88a-4a5b-bb91-bede7f93dad3",
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"resources\": [\r\n        {\r\n            \"type\": \"badge\",\r\n            \"id\": 949737692\r\n        }\r\n    ],\r\n    \"recipients\": [\r\n        {\r\n            \"type\": \"user\",\r\n            \"id\": 1893952720\r\n        }\r\n    ],\r\n    \"message\": \"I thought you might find this card interesting.\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://{{domo_instance}}.domo.com/api/content/v1/share?sendEmail=false",
+											"protocol": "https",
+											"host": [
+												"{{domo_instance}}",
+												"domo",
+												"com"
+											],
+											"path": [
+												"api",
+												"content",
+												"v1",
+												"share"
+											],
+											"query": [
+												{
+													"key": "sendEmail",
+													"value": "false"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Jun 2022 13:57:08 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "0"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding, User-Agent"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								}
+							]
 						},
 						{
 							"name": "Card Access list",
