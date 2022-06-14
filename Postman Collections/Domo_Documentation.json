@@ -4820,7 +4820,7 @@
 							"response": []
 						},
 						{
-							"name": "https://domo-dojo.domo.com/api/content/v1/share/accesslist/badge/949737692?expandUsers=false",
+							"name": "Card Access list",
 							"id": "bac7fa4d-7096-4dab-aba1-cdd629c4ec6d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
