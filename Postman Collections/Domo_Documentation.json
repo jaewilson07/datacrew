@@ -4818,6 +4818,18 @@
 								"header": []
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "bac7fa4d-7096-4dab-aba1-cdd629c4ec6d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "0a57d077-cac2-4425-8d32-20c623f7bd7f"
