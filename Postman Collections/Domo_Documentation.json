@@ -3343,7 +3343,90 @@
 								},
 								"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/permissions"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "6d90971c-bcc5-44bb-a127-fef5b612000b",
+									"name": "Dataset Access List",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"list\": [\r\n        {\r\n            \"type\": \"USER\",\r\n            \"id\": \"1893952720\",\r\n            \"accessLevel\": \"OWNER\",\r\n            \"name\": \"Jae Wilson\"\r\n        }\r\n    ],\r\n    \"totalUserCount\": 1,\r\n    \"totalGroupCount\": 0\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/permissions"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 14 Jun 2022 14:18:28 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self';"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"list\": [\n        {\n            \"type\": \"USER\",\n            \"id\": \"966365811\",\n            \"accessLevel\": \"OWNER\",\n            \"name\": \"Scott Thompson\"\n        }\n    ],\n    \"totalUserCount\": 1,\n    \"totalGroupCount\": 0\n}"
+								}
+							]
 						}
 					],
 					"id": "87e12295-1ca7-42ec-80d7-8c8943dd17e8"
