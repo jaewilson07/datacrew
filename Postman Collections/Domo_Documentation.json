@@ -6165,6 +6165,19 @@
 								"url": "https://{{app_id}}.domoapps.{{domo_environment}}.domo.com/domo/datastores/v1/collections/{{collection_name}}/documents/query"
 							},
 							"response": []
+						},
+						{
+							"name": "Get Documents from Collection",
+							"id": "1c54fe59-8c5e-4f22-aa38-1110dd410ad9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://{{domo_instance}}.domo.com/api/datastores/v1/collections/{{collection_id}}"
+							},
+							"response": []
 						}
 					],
 					"id": "14b468d5-58fb-47fd-b5e5-402a8c24d897"
