@@ -6180,7 +6180,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "https://playstationpartners-test-15143.domo.com/appDb/027a1627-6f65-44d9-8c1e-28a80ea85b22/dataexplorer",
 							"id": "b336a13a-0ffe-4dde-aa93-0ba7727667ca",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
