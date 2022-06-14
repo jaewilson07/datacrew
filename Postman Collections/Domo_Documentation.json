@@ -4388,7 +4388,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Page Access List",
 							"id": "968293ba-75ee-4497-b300-4e03f2ed810d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
