@@ -3322,6 +3322,28 @@
 								"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/share"
 							},
 							"response": []
+						},
+						{
+							"name": "Dataset Permissions",
+							"id": "1c61df4b-5f42-44d0-b7ac-93c07fb690fc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"list\": [\r\n        {\r\n            \"type\": \"USER\",\r\n            \"id\": \"1893952720\",\r\n            \"accessLevel\": \"OWNER\",\r\n            \"name\": \"Jae Wilson\"\r\n        }\r\n    ],\r\n    \"totalUserCount\": 1,\r\n    \"totalGroupCount\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.com/api/data/v3/datasources/{{dataset_id}}/permissions"
+							},
+							"response": []
 						}
 					],
 					"id": "87e12295-1ca7-42ec-80d7-8c8943dd17e8"
