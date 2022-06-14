@@ -4806,6 +4806,18 @@
 									"body": "[\n    {\n        \"metadata\": {\n            \"chartType\": \"badge_basic_table\",\n            \"chartVersion\": \"7\",\n            \"currentLabel\": \"Count of Name\",\n            \"historyId\": \"e0eba383-fb01-4002-9430-f19ab7cafe22\",\n            \"calendar\": \"default\",\n            \"columnAliases\": \"{}\",\n            \"columnFormats\": \"{}\",\n            \"SummaryNumberFormat\": \"{\\\"type\\\":\\\"number\\\",\\\"format\\\":\\\"#A\\\"}\"\n        },\n        \"domoapp\": {\n            \"id\": null\n        },\n        \"drillPath\": {},\n        \"drillPathURNs\": [],\n        \"owners\": [\n            {\n                \"id\": \"55874022\",\n                \"type\": \"USER\",\n                \"displayName\": \"Grant Smith\"\n            }\n        ],\n        \"slicers\": [\n            {\n                \"type\": \"string\",\n                \"displayType\": \"match_values_text_input\",\n                \"dataSourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\",\n                \"name\": \"First Last\",\n                \"column\": \"calculation_5b4d86a9-d185-4ca7-b677-2df17ab2221d\",\n                \"columnDisplayName\": \"First Last\",\n                \"operator\": \"CONTAINS\",\n                \"values\": [],\n                \"collapsed\": false,\n                \"controlType\": \"SLICER\"\n            }\n        ],\n        \"metadataOverrides\": {\n            \"components\": [\n                {\n                    \"component\": \"main\",\n                    \"chartType\": \"badge_basic_table\",\n                    \"overrides\": {},\n                    \"goal\": null\n                }\n            ]\n        },\n        \"dateInfo\": {},\n        \"datasources\": [\n            {\n                \"dataSourceId\": \"ff82b710-e335-4bab-b3b5-1c28e8b572a7\",\n                \"dataSourceName\": \"Names - Last, First\",\n                \"displayType\": \"webform\",\n                \"dataType\": \"webform\",\n                \"providerType\": \"webform\",\n                \"isSampleData\": false,\n                \"lastUpdated\": 1615572227095,\n                \"adc\": false,\n                \"phase\": null,\n                \"state\": \"SUCCESS\"\n            }\n        ],\n        \"certification\": {\n            \"state\": \"NOT_CERTIFIED\",\n            \"adminCertified\": false\n        },\n        \"urn\": \"1581024515\",\n        \"id\": 1581024515,\n        \"type\": \"kpi\",\n        \"created\": 1596739618,\n        \"badgeUpdated\": 1616172957000,\n        \"creatorId\": 55874022,\n        \"ownerId\": 55874022,\n        \"description\": \"\",\n        \"title\": \"Names - Last, First => First Last\",\n        \"active\": true,\n        \"allowTableDrill\": true,\n        \"locked\": false,\n        \"access\": true,\n        \"isCurrentUserOwner\": false\n    }\n]"
 								}
 							]
+						},
+						{
+							"name": "New Request",
+							"id": "bd332261-fbdb-4084-9fed-581f71e80dc5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "0a57d077-cac2-4425-8d32-20c623f7bd7f"
