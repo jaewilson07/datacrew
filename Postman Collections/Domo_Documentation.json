@@ -6175,7 +6175,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "https://{{domo_instance}}.domo.com/api/datastores/v1/collections/{{collection_id}}"
+								"url": "https://{{domo_instance}}.domo.com/api/datastores/v1/collections/{{collection_id}}/"
 							},
 							"response": []
 						},
