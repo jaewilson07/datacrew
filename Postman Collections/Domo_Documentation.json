@@ -4124,7 +4124,7 @@
 							"response": [
 								{
 									"id": "ac31f5c0-4a18-4806-a452-3b937c6f05e9",
-									"name": "New Request",
+									"name": "Get Pages - Admin Summary",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
