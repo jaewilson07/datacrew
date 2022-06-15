@@ -2281,14 +2281,11 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"auth": {
-									"type": "noauth"
-								},
 								"method": "GET",
 								"header": [
 									{
-										"key": "x-domo-developer-token",
-										"value": "{{developer_token}}",
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}",
 										"type": "text"
 									}
 								],
