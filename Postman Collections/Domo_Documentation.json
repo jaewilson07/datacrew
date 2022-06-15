@@ -189,7 +189,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Developer Token",
 					"id": "9bcb4e1a-329e-4b2e-bbde-97ceb36bac04",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
