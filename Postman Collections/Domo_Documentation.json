@@ -187,18 +187,6 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "Developer Token",
-					"id": "9bcb4e1a-329e-4b2e-bbde-97ceb36bac04",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
 				}
 			],
 			"id": "9029bb43-dcaf-4558-ac58-41debd4624f2"
@@ -6399,6 +6387,18 @@
 						}
 					],
 					"id": "14b468d5-58fb-47fd-b5e5-402a8c24d897"
+				},
+				{
+					"name": "Generate Developer Token",
+					"id": "9bcb4e1a-329e-4b2e-bbde-97ceb36bac04",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "c33f3285-f1e6-47ff-ac91-0326da20399b",
