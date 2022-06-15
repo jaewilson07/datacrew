@@ -2281,11 +2281,14 @@
 								"disableBodyPruning": true
 							},
 							"request": {
+								"auth": {
+									"type": "noauth"
+								},
 								"method": "GET",
 								"header": [
 									{
-										"key": "x-domo-authentication",
-										"value": "{{session_token}}",
+										"key": "x-domo-developer-token",
+										"value": "{{developer_token}}",
 										"type": "text"
 									}
 								],
@@ -6391,8 +6394,18 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": <token_name>,\r\n    \"ownerId\": {{user_id}},\r\n    \"expires\": 1655401551493\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://{{domo_instance}}.domo.com/api/data/v1/accesstokens"
 					},
 					"response": []
 				}
