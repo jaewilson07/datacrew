@@ -163,7 +163,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.domo.com/oauth/token?grant_type=client_credentials&scope=data",
+							"raw": "https://api.domo.com/oauth/token?grant_type=client_credentials",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -178,10 +178,6 @@
 								{
 									"key": "grant_type",
 									"value": "client_credentials"
-								},
-								{
-									"key": "scope",
-									"value": "data"
 								}
 							]
 						}
