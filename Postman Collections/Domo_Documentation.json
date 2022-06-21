@@ -1344,7 +1344,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Set Authorized Domains",
 							"id": "1474e31e-efc3-4ea4-b2dd-5273316166b5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
