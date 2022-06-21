@@ -6447,6 +6447,28 @@
 								"url": "https://{{domo_instance}}.domo.com/api/authorization/v1/roles/{{role_id}}/authorities"
 							},
 							"response": []
+						},
+						{
+							"name": "update Role metadata",
+							"id": "495219e6-6fb6-4dbb-aa6e-6cfba52c3fba",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\":\"admin_reset_account\",\"description\":\"administer accounts and group\",\"id\":1154361272}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/authorization/v1/roles/{{role_id}}"
+							},
+							"response": []
 						}
 					],
 					"id": "f7f27f9e-68fb-4c06-bf19-b777a7ecee28"
