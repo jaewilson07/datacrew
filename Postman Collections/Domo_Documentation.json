@@ -963,7 +963,7 @@
 							"response": []
 						},
 						{
-							"name": "Set Authorized Domains",
+							"name": "Authorized Domains - PUT",
 							"id": "1474e31e-efc3-4ea4-b2dd-5273316166b5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
