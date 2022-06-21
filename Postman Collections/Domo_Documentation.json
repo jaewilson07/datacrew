@@ -3444,8 +3444,9 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"url": "https://{{domo_instance}}.domo.com/api/query/v1/datasources/{{dataset_id}}"
 							},
 							"response": []
 						},
