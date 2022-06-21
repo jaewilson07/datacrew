@@ -844,6 +844,28 @@
 							"response": []
 						},
 						{
+							"name": "Authorized Domains - PUT",
+							"id": "1474e31e-efc3-4ea4-b2dd-5273316166b5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"authorized-domains\",\r\n    \"value\": \"sony.com, domo.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/content/v1/customer-states/authorized-domains"
+							},
+							"response": []
+						},
+						{
 							"name": "Get Company Settings",
 							"id": "1d0ba38a-df98-4cf3-a516-7cc4488e5268",
 							"protocolProfileBehavior": {
@@ -959,28 +981,6 @@
 								],
 								"url": "https://{{domo_instance}}.domo.com/api/content/v1/pages/adminsummary",
 								"description": "#### Description (usage)\n\nGet the Company pages from Domo instance\n\n#### **UI reference**\n\nAdmin -> Company Settings -> Company pages\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934414-Adding-Company-Pages)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of company pages\n    \n\nPlease refer to the example below:"
-							},
-							"response": []
-						},
-						{
-							"name": "Authorized Domains - PUT",
-							"id": "1474e31e-efc3-4ea4-b2dd-5273316166b5",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"authorized-domains\",\r\n    \"value\": \"<<list>>\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://{{domo_instance}}.domo.com/api/content/v1/customer-states/authorized-domains"
 							},
 							"response": []
 						}
