@@ -6513,6 +6513,28 @@
 								"url": "https://{{domo_instance}}.domo.com/api/authorization/v1/roles/{{role_id}}/users"
 							},
 							"response": []
+						},
+						{
+							"name": "Get members of Role",
+							"id": "20136319-8696-4eb4-a110-15f6081b9a00",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[{{user_id}}]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/authorization/v1/roles/{{role_id}}/users"
+							},
+							"response": []
 						}
 					],
 					"id": "f7f27f9e-68fb-4c06-bf19-b777a7ecee28"
