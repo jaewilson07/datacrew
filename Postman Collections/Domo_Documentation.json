@@ -6449,6 +6449,28 @@
 							"response": []
 						},
 						{
+							"name": "Get Role Grants",
+							"id": "ceecbad7-5608-49c5-ad38-aeddf74a1f7d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\"user.edit\",\"user.invite\",\"group.edit\",\"group.admin\"]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/authorization/v1/roles/{{role_id}}/authorities"
+							},
+							"response": []
+						},
+						{
 							"name": "Update Role metadata",
 							"id": "495219e6-6fb6-4dbb-aa6e-6cfba52c3fba",
 							"protocolProfileBehavior": {
