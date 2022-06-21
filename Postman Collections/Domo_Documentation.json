@@ -824,7 +824,7 @@
 							"response": []
 						},
 						{
-							"name": "Get Authorized Domains",
+							"name": "Authorized Domains - GET",
 							"id": "8167a008-3b39-43e7-8eb4-a042cef8d177",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -959,6 +959,28 @@
 								],
 								"url": "https://{{domo_instance}}.domo.com/api/content/v1/pages/adminsummary",
 								"description": "#### Description (usage)\n\nGet the Company pages from Domo instance\n\n#### **UI reference**\n\nAdmin -> Company Settings -> Company pages\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934414-Adding-Company-Pages)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of company pages\n    \n\nPlease refer to the example below:"
+							},
+							"response": []
+						},
+						{
+							"name": "Set Authorized Domains",
+							"id": "1474e31e-efc3-4ea4-b2dd-5273316166b5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"authorized-domains\",\r\n    \"value\": \"<<list>>\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/content/v1/customer-states/authorized-domains"
 							},
 							"response": []
 						}
@@ -1340,28 +1362,6 @@
 									}
 								},
 								"url": "https://{{domo_instance}}.domo.com/api/content/v3/users"
-							},
-							"response": []
-						},
-						{
-							"name": "Set Authorized Domains",
-							"id": "1474e31e-efc3-4ea4-b2dd-5273316166b5",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"authorized-domains\",\r\n    \"value\": \"<<list>>\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://{{domo_instance}}.domo.com/api/content/v1/customer-states/authorized-domains"
 							},
 							"response": []
 						}
