@@ -6414,7 +6414,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": <role_name>,\r\n    \"description\": <role_description>\r\n}",
+									"raw": "{\r\n    \"name\": \"test\",\r\n    \"description\": \"deleteme\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
