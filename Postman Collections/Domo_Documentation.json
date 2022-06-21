@@ -6493,7 +6493,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Add user to Role",
 							"id": "bd358cf2-cd12-4183-8ec5-ba4916355273",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
