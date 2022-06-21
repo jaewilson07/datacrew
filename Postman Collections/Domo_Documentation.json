@@ -2281,11 +2281,14 @@
 								"disableBodyPruning": true
 							},
 							"request": {
+								"auth": {
+									"type": "noauth"
+								},
 								"method": "GET",
 								"header": [
 									{
-										"key": "x-domo-authentication",
-										"value": "{{session_token}}",
+										"key": "x-domo-developer-token",
+										"value": "{{developer_token}}",
 										"type": "text"
 									}
 								],
@@ -6383,6 +6386,11 @@
 						}
 					],
 					"id": "14b468d5-58fb-47fd-b5e5-402a8c24d897"
+				},
+				{
+					"name": "New Folder",
+					"item": [],
+					"id": "f7f27f9e-68fb-4c06-bf19-b777a7ecee28"
 				},
 				{
 					"name": "Generate Developer Token",
