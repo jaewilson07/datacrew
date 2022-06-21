@@ -6471,7 +6471,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\"user.edit\",\"user.invite\",\"group.edit\",\"group.admin\"]",
+									"raw": "",
 									"options": {
 										"raw": {
 											"language": "json"
