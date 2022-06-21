@@ -1354,7 +1354,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"authorized-domains\",\r\n    \"value\": \"sony.com,domo.com\"\r\n}",
+									"raw": "{\r\n    \"name\": \"authorized-domains\",\r\n    \"value\": \"<<list>>\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
