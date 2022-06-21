@@ -6533,11 +6533,11 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "PUT",
+								"method": "GET",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[{{user_id}}]",
+									"raw": "",
 									"options": {
 										"raw": {
 											"language": "json"
