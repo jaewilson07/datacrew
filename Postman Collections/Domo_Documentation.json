@@ -6413,7 +6413,7 @@
 							"response": []
 						},
 						{
-							"name": "List Roles",
+							"name": "List All Roles",
 							"id": "286a9b24-5981-4b1a-bd6f-58f23353d00c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
