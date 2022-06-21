@@ -1342,6 +1342,18 @@
 								"url": "https://{{domo_instance}}.domo.com/api/content/v3/users"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "1474e31e-efc3-4ea4-b2dd-5273316166b5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "9d632591-53a3-429d-b358-4232e3fba85e",
