@@ -6449,7 +6449,7 @@
 							"response": []
 						},
 						{
-							"name": "update Role metadata",
+							"name": "Update Role metadata",
 							"id": "495219e6-6fb6-4dbb-aa6e-6cfba52c3fba",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
