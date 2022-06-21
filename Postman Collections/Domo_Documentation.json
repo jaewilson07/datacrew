@@ -6459,7 +6459,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"name\":\"admin_reset_account\",\"description\":\"administer accounts and group\",\"id\":1154361272}",
+									"raw": "{\r\n    \"name\": \"admin_reset_account\",\r\n    \"description\": \"administer accounts and group\",\r\n    \"id\": {{role_id}}\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
