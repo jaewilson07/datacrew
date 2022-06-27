@@ -6486,7 +6486,8 @@
 							"response": []
 						}
 					],
-					"id": "14b468d5-58fb-47fd-b5e5-402a8c24d897"
+					"id": "14b468d5-58fb-47fd-b5e5-402a8c24d897",
+					"description": "The `app_id` is unique to the implementation of an app (if an app is used multiplie times in an instance, each implementation gets it's own id. You can determine the app_id by inspecting the HTML of the loaded app."
 				},
 				{
 					"name": "Roles",
