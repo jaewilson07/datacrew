@@ -3574,7 +3574,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"sql\" : \"select * from table\"}",
+									"raw": "{\"sql\" : \"select * from table limit 100 offset 10\"}",
 									"options": {
 										"raw": {
 											"language": "json"
