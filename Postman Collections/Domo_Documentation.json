@@ -327,7 +327,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\"count\":75,\"offset\":0,\"hideSearchObjects\":true,\"combineResults\":false,\"entities\":[\"CONNECTOR\"],\"query\":\"*\",\"filters\":[{\"filterType\":\"queryString\",\"field\":\"title\",\"queryString\":\"**\",\"not\":false}],\"boosts\":{\"filters\":[{\"queryFilter\":{\"filterType\":\"numeric\",\"field\":\"popularity\",\"longNumber\":100,\"operator\":\"EQ\"},\"boost\":100,\"scoreMode\":\"MULTIPLY\",\"combineFunction\":\"MULTIPLY\"}]},\"queryProfile\":\"APP_STORE\"}",
+											"raw": "{\r\n    \"count\": 75,\r\n    \"offset\": 0,\r\n    \"hideSearchObjects\": true,\r\n    \"combineResults\": false,\r\n    \"entities\": [\r\n        \"CONNECTOR\"\r\n    ],\r\n    \"query\": \"*\"\r\n    \r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
