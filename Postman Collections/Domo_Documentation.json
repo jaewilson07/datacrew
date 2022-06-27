@@ -6487,7 +6487,7 @@
 						}
 					],
 					"id": "14b468d5-58fb-47fd-b5e5-402a8c24d897",
-					"description": "The `app_id` is unique to the implementation of an app (if an app is used multiplie times in an instance, each implementation gets it's own id. You can determine the app_id by inspecting the HTML of the loaded app."
+					"description": "The `app_id` is unique to the implementation of an app (if an app is used multiplie times in an instance, each implementation gets it's own id. You can determine the app_id by inspecting the HTML of the loaded app.\n\nThe \\`domo_environment' is the AWS instance where your domo instance resides. This can be extracted from the bootstrap_API or by inspecting the HTML of the loaded app. This value will be the same for each app on your instance.\n\nAppDB is just an implementation of MongDB. The `collection_name` is conceptually similar to a table in standard SQL and a document is conceptually similar to a record in the table."
 				},
 				{
 					"name": "Roles",
