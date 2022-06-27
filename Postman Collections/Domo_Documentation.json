@@ -315,7 +315,7 @@
 								},
 								{
 									"id": "feeb6f55-92b4-41dd-a5bd-59d1776aeb4e",
-									"name": "Query Datacenter",
+									"name": "Query Datacenter for Connectors",
 									"originalRequest": {
 										"method": "POST",
 										"header": [
