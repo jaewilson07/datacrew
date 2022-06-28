@@ -7071,7 +7071,7 @@
 			]
 		},
 		{
-			"name": "Reset User Account - No Auth",
+			"name": "Request User Email - Reset - No Auth",
 			"id": "e8f50aba-7803-4e82-859f-2c2a4dfeaabf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
