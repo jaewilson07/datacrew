@@ -6526,7 +6526,7 @@
 					"name": "AppDb",
 					"item": [
 						{
-							"name": "Get Documents from Collection",
+							"name": "DO NOT USE  - Get Documents from Collection",
 							"id": "ccf7dac8-ff2c-48da-b108-253f2616e7fa",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
