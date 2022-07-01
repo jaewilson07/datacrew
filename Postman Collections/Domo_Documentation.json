@@ -6613,7 +6613,7 @@
 							"response": []
 						},
 						{
-							"name": "Get Documents Copy",
+							"name": "Get Collections",
 							"id": "8f91186f-aa43-4823-bf8f-ebb70f971f3c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
