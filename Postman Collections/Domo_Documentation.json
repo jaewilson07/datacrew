@@ -4074,6 +4074,28 @@
 								"url": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows/{{dataflow_id}}/executions"
 							},
 							"response": []
+						},
+						{
+							"name": "JupyterNotebook - config",
+							"id": "5e7c3255-71f1-4c73-a53d-d2da452a588a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Domo Support\",\r\n  \"description\": \"\",\r\n  \"config\": \"{\\\"cpu\\\":1,\\\"memory\\\":8}\",\r\n  \"timeoutHours\": 16,\r\n  \"jupyterKernel\": \"PYTHON_3_9\",\r\n  \"id\": \"74bc048b-9814-44af-a988-08fe824cdeee\",\r\n  \"outputConfiguration\": [\r\n    {\r\n      \"dataSourceId\": \"7db1068b-8ee3-478c-93a6-377f4fbba3d0\",\r\n      \"alias\": \"dsoae4407_config_instances\"\r\n    },\r\n    {\r\n      \"dataSourceId\": \"1293fa03-4390-4559-853c-2f699a22db44\",\r\n      \"alias\": \"Output 2\"\r\n    },\r\n    {\r\n      \"dataSourceId\": \"f9488c4a-964a-4fd3-b402-a0313b61e0d3\",\r\n      \"alias\": \"MONIT_all_instances_valid\"\r\n    },\r\n    {\r\n      \"dataSourceId\": \"b2a46e92-f839-4920-a683-ed9f28fe3275\",\r\n      \"alias\": \"MONIT_all_instances_invalid\"\r\n    }\r\n  ],\r\n  \"inputConfiguration\": [\r\n    {\r\n      \"dataSourceId\": \"2518a3ef-94b9-4ae0-aa42-d17ed22d7661\",\r\n      \"alias\": \"CONFIG_ip_whitelist\"\r\n    },\r\n    {\r\n      \"dataSourceId\": \"749d9f21-b768-418c-a22f-a6348f2b55bc\",\r\n      \"alias\": \"CON_List_Domo_instances\"\r\n    }\r\n  ],\r\n  \"bootstrapKernel\": false,\r\n  \"cpu\": 1,\r\n  \"memory\": 8\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://playstation-beta.domo.com/api/datascience/v1/workspaces/74bc048b-9814-44af-a988-08fe824cdeee"
+							},
+							"response": []
 						}
 					],
 					"id": "77a2a0ef-e029-4b17-8d03-4a5f0fbd7f21"
