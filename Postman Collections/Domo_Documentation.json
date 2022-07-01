@@ -6573,7 +6573,7 @@
 										}
 									]
 								},
-								"description": "Must use Full_Auth pipeline\n\nFor public use:\n\n[https://documenter.getpostman.com/view/5049119/UyxbppB2#b336a13a-0ffe-4dde-aa93-0ba7727667ca](https://documenter.getpostman.com/view/5049119/UyxbppB2#b336a13a-0ffe-4dde-aa93-0ba7727667ca)\n\nFor internal use: [https://domodatacrew.postman.co/workspace/Domo-Documentation\\~d46be0df-b02c-4c0b-b161-a1b653762a80/request/5049119-b336a13a-0ffe-4dde-aa93-0ba7727667ca](https://domodatacrew.postman.co/workspace/Domo-Documentation~d46be0df-b02c-4c0b-b161-a1b653762a80/request/5049119-b336a13a-0ffe-4dde-aa93-0ba7727667ca)"
+								"description": "Can use \\`X-Domo-Authentication\\` or `Domo-Developer-Token`\n\nFor public use:\n\n[https://documenter.getpostman.com/view/5049119/UyxbppB2#b336a13a-0ffe-4dde-aa93-0ba7727667ca](https://documenter.getpostman.com/view/5049119/UyxbppB2#b336a13a-0ffe-4dde-aa93-0ba7727667ca)\n\nFor internal use: [https://domodatacrew.postman.co/workspace/Domo-Documentation\\~d46be0df-b02c-4c0b-b161-a1b653762a80/request/5049119-b336a13a-0ffe-4dde-aa93-0ba7727667ca](https://domodatacrew.postman.co/workspace/Domo-Documentation~d46be0df-b02c-4c0b-b161-a1b653762a80/request/5049119-b336a13a-0ffe-4dde-aa93-0ba7727667ca)"
 							},
 							"response": []
 						},
