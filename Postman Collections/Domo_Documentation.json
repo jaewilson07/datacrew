@@ -3565,6 +3565,19 @@
 							"response": []
 						},
 						{
+							"name": "Index Dataset Progress",
+							"id": "b6a31298-5fa2-42a3-b620-a19072b8d7fa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://{{domo_instance}}.domo.com/api/data/v3/datasources/{{dataset_id}}/indexes/{{index_id}}/statuses"
+							},
+							"response": []
+						},
+						{
 							"name": "Stream Execution History",
 							"id": "12d22679-f760-43b9-935d-46be2ee4fab6",
 							"protocolProfileBehavior": {
