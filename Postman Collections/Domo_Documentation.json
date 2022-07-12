@@ -441,7 +441,7 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "GET Color Palette by ID",
 									"id": "f6146d1e-e58d-4923-9585-3957c1b01446",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
