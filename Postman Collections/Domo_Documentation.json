@@ -414,6 +414,11 @@
 					"name": "Domo Instance Configuration",
 					"item": [
 						{
+							"name": "New Folder",
+							"item": [],
+							"id": "04c42e79-9d49-45ac-bdf2-c579f74e726f"
+						},
+						{
 							"name": "Bootstrap API - Domo Instance Configuration",
 							"id": "d6ee0920-d02b-4468-8a9f-813822e04a4b",
 							"protocolProfileBehavior": {
