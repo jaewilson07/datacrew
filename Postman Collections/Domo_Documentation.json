@@ -1077,7 +1077,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Color Palett",
 							"id": "47eb0518-8a43-44ad-a9fa-76ab588a37ab",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
