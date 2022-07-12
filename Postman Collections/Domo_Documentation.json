@@ -436,7 +436,28 @@
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"url": {
+											"raw": "https://{{domo_instance}}.domo.com/api/brandkit/v1/activeChartPalette?usePaletteId=true",
+											"protocol": "https",
+											"host": [
+												"{{domo_instance}}",
+												"domo",
+												"com"
+											],
+											"path": [
+												"api",
+												"brandkit",
+												"v1",
+												"activeChartPalette"
+											],
+											"query": [
+												{
+													"key": "usePaletteId",
+													"value": "true"
+												}
+											]
+										}
 									},
 									"response": []
 								},
