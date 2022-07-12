@@ -1075,6 +1075,18 @@
 								"description": "#### Description (usage)\n\nGet the Company pages from Domo instance\n\n#### **UI reference**\n\nAdmin -> Company Settings -> Company pages\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934414-Adding-Company-Pages)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array of company pages\n    \n\nPlease refer to the example below:"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "47eb0518-8a43-44ad-a9fa-76ab588a37ab",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "6a0f34da-4182-41e5-b458-c5552f0f72ee",
