@@ -6904,14 +6904,24 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Get Task Details",
 							"id": "7dbe6c01-a710-4828-8250-764f53727d64",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"owners\": [\r\n        {\r\n            \"id\": 49,\r\n            \"assignedTo\": 964828209,\r\n            \"assignedBy\": 964828209,\r\n            \"created\": 1651761959000\r\n        }\r\n    ],\r\n    \"attachments\": [],\r\n    \"realProjectListId\": null,\r\n    \"id\": 49,\r\n    \"projectId\": 10,\r\n    \"projectListId\": 34,\r\n    \"taskName\": \"README\",\r\n    \"description\": \"\",\r\n    \"created\": 1651761959000,\r\n    \"priority\": 1,\r\n    \"creator\": 964828209,\r\n    \"primaryTaskOwner\": 964828209,\r\n    \"status\": \"workingOn\",\r\n    \"contributors\": [\r\n        {\r\n            \"id\": 49,\r\n            \"assignedTo\": 964828209,\r\n            \"assignedBy\": 964828209,\r\n            \"created\": 1651761959000\r\n        }\r\n    ],\r\n    \"tags\": [],\r\n    \"archived\": false,\r\n    \"relative\": \"\",\r\n    \"disabled\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/content/v1/tasks/{{task_id}}"
 							},
 							"response": []
 						},
