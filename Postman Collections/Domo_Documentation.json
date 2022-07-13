@@ -6890,20 +6890,7 @@
 				},
 				{
 					"name": "Projects And Tasks",
-					"item": [
-						{
-							"name": "New Request",
-							"id": "8aa3779f-822f-4f15-8f66-fa0da3365ec7",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": []
-							},
-							"response": []
-						}
-					],
+					"item": [],
 					"id": "5632dbb6-35fe-4b6c-9348-0b2c359dc33b"
 				},
 				{
