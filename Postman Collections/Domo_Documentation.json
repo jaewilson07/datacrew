@@ -6925,7 +6925,8 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": "https://{{domo_instance}}.domo.com/api/content/v1/projects/{{project_id}}/tasks"
 							},
 							"response": []
 						},
