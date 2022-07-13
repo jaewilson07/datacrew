@@ -6939,7 +6939,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Post a Comment",
 							"id": "d0718e85-8477-4dec-b3a2-4762b13feca6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
