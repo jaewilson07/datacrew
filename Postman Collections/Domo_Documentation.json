@@ -7024,6 +7024,41 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Post a message",
+							"id": "a66dddd9-8c56-4717-9509-4b53a7e15e66",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/buzz/v1/channels/{{channel_id}}/messages?mentionsGrantPermission=true",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"buzz",
+										"v1",
+										"channels",
+										"{{channel_id}}",
+										"messages"
+									],
+									"query": [
+										{
+											"key": "mentionsGrantPermission",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "5632dbb6-35fe-4b6c-9348-0b2c359dc33b"
