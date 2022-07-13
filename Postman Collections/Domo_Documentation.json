@@ -7021,7 +7021,8 @@
 											"value": "true"
 										}
 									]
-								}
+								},
+								"description": "Use this API to map the List or Project to a Buzz Channel.\n\nThe id will be the id of the object you're searching. The channelId will refer to the parent."
 							},
 							"response": []
 						},
