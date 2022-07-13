@@ -469,7 +469,33 @@
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"url": {
+											"raw": "https://{{domo_instance}}.domo.com/api/brandkit/v1/chartColorPalettes?id=1&type=CUSTOMER",
+											"protocol": "https",
+											"host": [
+												"{{domo_instance}}",
+												"domo",
+												"com"
+											],
+											"path": [
+												"api",
+												"brandkit",
+												"v1",
+												"chartColorPalettes"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "1"
+												},
+												{
+													"key": "type",
+													"value": "CUSTOMER",
+													"description": "CUSTOMER or DOMO"
+												}
+											]
+										}
 									},
 									"response": []
 								}
