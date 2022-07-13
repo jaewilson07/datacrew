@@ -6991,7 +6991,7 @@
 							"response": []
 						},
 						{
-							"name": "https://{{domo_instance}}.domo.com/api/buzz/v1/object-chats/PROJECT_TASK/{{project_id}}?includeHuddles=true",
+							"name": "Get Project Details",
 							"id": "dc031517-40f8-4020-b869-14cf0fe41e1e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
