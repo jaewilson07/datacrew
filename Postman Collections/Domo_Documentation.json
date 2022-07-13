@@ -6916,14 +6916,15 @@
 							"response": []
 						},
 						{
-							"name": "https://playstation-beta.domo.com/api/content/v1/projects/10/lists",
+							"name": "Get all Lists",
 							"id": "efdda07f-056a-4084-a14f-aa2baa082248",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": "https://playstation-beta.domo.com/api/content/v1/projects/{{project_id}}/lists"
 							},
 							"response": []
 						}
