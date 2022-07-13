@@ -6985,7 +6985,8 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": "https://playstation-beta.domo.com/api/content/v1/projects/{{project_id}}/lists/{{list_id}}"
 							},
 							"response": []
 						}
