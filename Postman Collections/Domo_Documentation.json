@@ -6972,8 +6972,40 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"content\": {\r\n        \"text\": \"hello world did we do it again?\",\r\n        \"tags\": []\r\n    },\r\n    \"attachments\": [],\r\n    \"userContext\": {}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/buzz/v1/channels/{{channel_id}}/messages?mentionsGrantPermission=true",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"buzz",
+										"v1",
+										"channels",
+										"{{channel_id}}",
+										"messages"
+									],
+									"query": [
+										{
+											"key": "mentionsGrantPermission",
+											"value": "true"
+										}
+									]
+								}
 							},
 							"response": []
 						},
