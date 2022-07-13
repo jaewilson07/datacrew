@@ -7032,8 +7032,17 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"content\":{\"text\":\"trippingly we walk\",\"tags\":[]},\"attachments\":[],\"clientUID\":\"1657718403536_964828209_69\",\"userContext\":{}}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
 									"raw": "https://{{domo_instance}}.domo.com/api/buzz/v1/channels/{{channel_id}}/messages?mentionsGrantPermission=true",
 									"protocol": "https",
