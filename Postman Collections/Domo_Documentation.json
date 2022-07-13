@@ -7000,7 +7000,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://{{domo_instance}}.domo.com/api/buzz/v1/object-chats/PROJECT_TASK/{{project_id}}?includeHuddles=true",
+									"raw": "https://{{domo_instance}}.domo.com/api/buzz/v1/object-chats/PROJECT_TASK/{{task_id}}?includeHuddles=true",
 									"protocol": "https",
 									"host": [
 										"{{domo_instance}}",
@@ -7013,7 +7013,7 @@
 										"v1",
 										"object-chats",
 										"PROJECT_TASK",
-										"{{project_id}}"
+										"{{task_id}}"
 									],
 									"query": [
 										{
