@@ -6889,6 +6889,11 @@
 					"id": "f7f27f9e-68fb-4c06-bf19-b777a7ecee28"
 				},
 				{
+					"name": "New Folder",
+					"item": [],
+					"id": "5632dbb6-35fe-4b6c-9348-0b2c359dc33b"
+				},
+				{
 					"name": "Generate Developer Token",
 					"id": "9bcb4e1a-329e-4b2e-bbde-97ceb36bac04",
 					"protocolProfileBehavior": {
