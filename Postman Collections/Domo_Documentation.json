@@ -3905,6 +3905,43 @@
 									"body": "{\n    \"list\": [\n        {\n            \"type\": \"USER\",\n            \"id\": \"966365811\",\n            \"accessLevel\": \"OWNER\",\n            \"name\": \"Scott Thompson\"\n        }\n    ],\n    \"totalUserCount\": 1,\n    \"totalGroupCount\": 0\n}"
 								}
 							]
+						},
+						{
+							"name": "https://{{domo_instance}}.domo.com/api/data/v3/datasources?offset=0&limit=50",
+							"id": "84071377-ef1e-4313-9d61-1d22137cf001",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/data/v3/datasources?offset=0&limit=50",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"data",
+										"v3",
+										"datasources"
+									],
+									"query": [
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "limit",
+											"value": "50"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "87e12295-1ca7-42ec-80d7-8c8943dd17e8"
