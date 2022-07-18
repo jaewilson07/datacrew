@@ -6947,6 +6947,18 @@
 								"url": "https://{{domo_instance}}.domo.com/api/authorization/v1/roles/{{role_id}}/users"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "4570bbfb-7f1d-4c34-9945-c4cd28ebdb00",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "f7f27f9e-68fb-4c06-bf19-b777a7ecee28"
