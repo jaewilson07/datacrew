@@ -1,0 +1,58 @@
+#myDiv{
+  padding:3% 2%;
+  font-family: 'Open Sans';
+}
+
+
+/* Table Styles */
+#tableList{
+  margin-top: 30px;
+}
+#tableList tbody {
+  font-family: 'Roboto Mono', monospace;
+}
+#tableList.loading{
+  opacity: 0.5;
+}
+#tableList .actions button{
+  margin-right: 8px;
+}
+#tableList tr.editing{
+  background-color: rgb(0, 191, 255, 0.2);
+}
+
+
+/* Button styles */
+#myDiv .btn-primary,
+.modal .btn-primary{
+  background-color: #FC9927;
+  border: none;
+}
+#myDiv .btn-primary:hover, #myDiv .btn-primary:focus,
+.modal .btn-primary:hover, .modal .btn-primary:focus{
+  background-color: #fc8f13;
+}
+#myDiv .btn-primary:active,
+.modal .btn-primary:active{
+  background-color: #ed8003;
+  transform: translateY(1px);
+}
+
+
+/* Text Styles */
+form .field-type, 
+thead .data-type{
+  color: #aaa;
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-left: 2px;
+}
+
+#exportButton, #syncButton,
+th.actions, td.actions{
+  display: none; /* displayed only to the owner */
+}
+table.isOwner td.actions,
+table.isOwner th.actions{
+  display: table-cell;
+}
