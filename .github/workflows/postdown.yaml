@@ -1,15 +1,19 @@
 name: postdown_github
+
 on: 
   workflow_dispatch:
 
 
 jobs:
-  install_postdown:
-    name: Install Postdown    
+  build:
     runs-on: ubuntu-latest
+    
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
+    - name: Set Up Python
+      uses: actions/setup-python@v4
       with:
         python-version: '3.10' 
-    - run: pip install postdown
+    - name: Install Dependencies
+      run: |
+        pip install postdown
