@@ -4585,18 +4585,6 @@
 							"name": "Color Palette",
 							"item": [
 								{
-									"name": "Color Palette",
-									"id": "47eb0518-8a43-44ad-a9fa-76ab588a37ab",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": []
-									},
-									"response": []
-								},
-								{
 									"name": "Active Color Pallet",
 									"id": "1fed22b8-6389-4809-b3ed-e2bde1e3462b",
 									"protocolProfileBehavior": {
