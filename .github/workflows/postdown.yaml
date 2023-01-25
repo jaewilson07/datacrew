@@ -2,7 +2,7 @@ name: postdown_github
 
 on: 
   workflow_dispatch:
-
+     
 
 jobs:
   build:
@@ -17,3 +17,8 @@ jobs:
     - name: Install Dependencies
       run: |
         pip install postdown
+        postdown ${{ inputs.PM_COLLECTION}} ${{inputs.PM_MD}}
+      env:
+        PM_COLLECTION: ${{ github.workspace }}/Postman Collections/Domo_Documentation.json
+        PM_MD: ${{ github.workspace }}/Postman Collections/Domo_Documentation.md
+        
