@@ -5,6 +5,7 @@ on:
 jobs:
   install_postdown:
     name: Install Postdown
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
