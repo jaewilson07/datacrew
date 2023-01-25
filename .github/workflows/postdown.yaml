@@ -18,9 +18,6 @@ jobs:
       run: |
         pip install postdown
     - name: Print Results
-      run: postdown Postman%20Collections/Domo_Documentation.json Postman%20Collections/Domo_Documentation.md
+      run: postdown postman/Domo_Documentation.json postman/Domo_Documentation.md
         
-      env:
-        PM_COLLECTION: ${{ github.workspace }}/Postman Collections/Domo_Documentation.json
-        PM_MD: ${{ github.workspace }}/Postman Collections/Domo_Documentation.md
         
