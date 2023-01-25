@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "d4b2f432-ee61-488e-92eb-63944bad9690",
 		"name": "Domo Documentation",
+		"description": "DataCrew documentation for hitting documented and undocumented APIs",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
