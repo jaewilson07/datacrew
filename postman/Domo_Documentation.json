@@ -8745,45 +8745,6 @@
 						"url": "https://{{domo_instance}}.domo.com/api/data/v1/accesstokens"
 					},
 					"response": []
-				},
-				{
-					"name": "https://playstation-beta.domo.com/api/data/v1/lineage/PAGE/5789621c-6864-4ee4-a487-6b747b8fe06e?traverseUp=false&maxDepth=3",
-					"id": "eca806b2-95de-4167-a9b7-b427b5a5c118",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://playstation-beta.domo.com/api/data/v1/lineage/PAGE/5789621c-6864-4ee4-a487-6b747b8fe06e?traverseUp=false&maxDepth=3",
-							"protocol": "https",
-							"host": [
-								"playstation-beta",
-								"domo",
-								"com"
-							],
-							"path": [
-								"api",
-								"data",
-								"v1",
-								"lineage",
-								"PAGE",
-								"5789621c-6864-4ee4-a487-6b747b8fe06e"
-							],
-							"query": [
-								{
-									"key": "traverseUp",
-									"value": "false"
-								},
-								{
-									"key": "maxDepth",
-									"value": "3"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			],
 			"id": "c33f3285-f1e6-47ff-ac91-0326da20399b",
