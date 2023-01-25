@@ -3293,6 +3293,28 @@
 							"response": []
 						},
 						{
+							"name": "Create Dataset Copy",
+							"id": "5cf10997-d4c4-45af-8c2e-905e521346ae",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Leonhard Euler Party\",\r\n        \"description\": \"Mathematician Guest List\",\r\n            \"rows\": 0,\r\n                \"schema\": {\r\n        \"columns\": [{\r\n            \"type\": \"STRING\",\r\n            \"name\": \"Friend\"\r\n        }, {\r\n            \"type\": \"STRING\",\r\n            \"name\": \"Attending\"\r\n        }]\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/data/v2/datasources"
+							},
+							"response": []
+						},
+						{
 							"name": "Get Dataset by ID",
 							"id": "30097141-b2ad-48e3-b195-5700f0441989",
 							"protocolProfileBehavior": {
