@@ -2399,7 +2399,7 @@
 										}
 									}
 								},
-								"url": "https://{{domo_instance}}.domo.com/api/datascience/v1/workspaces/74bc048b-9814-44af-a988-08fe824cdeee"
+								"url": "https://{{domo_instance}}.domo.com/api/datascience/v1/workspaces/{{jupyter_workspace_id}}"
 							},
 							"response": []
 						},
