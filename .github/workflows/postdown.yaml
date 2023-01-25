@@ -17,6 +17,7 @@ jobs:
     - name: Install Dependencies
       run: |
         pip install postdown
+        echo "${{inputs.PM_COLLECTION}}"
         postdown ${{ inputs.PM_COLLECTION}} ${{inputs.PM_MD}}
       env:
         PM_COLLECTION: ${{ github.workspace }}/Postman Collections/Domo_Documentation.json
