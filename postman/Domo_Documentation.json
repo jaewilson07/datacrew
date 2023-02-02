@@ -1891,7 +1891,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Card Render API",
 							"id": "ae15ab37-04f1-4612-a267-1f8462152d1b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
