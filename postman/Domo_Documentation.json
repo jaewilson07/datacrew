@@ -6964,7 +6964,7 @@
 							]
 						},
 						{
-							"name": "Get Subscription list",
+							"name": "Get Subscription Invitation",
 							"id": "315abe5b-6761-4de2-9888-5ba976af15e9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
