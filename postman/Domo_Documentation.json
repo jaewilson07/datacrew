@@ -7097,7 +7097,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "GET Subscriptions",
 							"id": "e0b3e3cd-25a4-404d-a308-5e7ffc927156",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
