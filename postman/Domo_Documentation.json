@@ -1898,7 +1898,31 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/content/v1/cards/kpi/{{card_id}}/render?parts=image,summary",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"content",
+										"v1",
+										"cards",
+										"kpi",
+										"{{card_id}}",
+										"render"
+									],
+									"query": [
+										{
+											"key": "parts",
+											"value": "image,summary"
+										}
+									]
+								}
 							},
 							"response": []
 						}
