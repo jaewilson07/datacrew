@@ -6971,7 +6971,8 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"description": "Retrieve a list of instances you are subscribed to.\n\nCan be Seen in:\n\nhttps://{{domo_instance}}.domo.com/admin/domo-everywhere/subscriptions"
 							},
 							"response": []
 						},
