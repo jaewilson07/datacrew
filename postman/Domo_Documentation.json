@@ -6978,20 +6978,6 @@
 							"response": []
 						},
 						{
-							"name": "GET Subscriptions Copy",
-							"id": "4ca153ce-a89b-4219-898c-5ce1f17c2e54",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "https://{{domo_instance}}.domo.com/api/publish/v2/subscription/summaries",
-								"description": "Retrieve a list of instances you are subscribed to.\n\nCan be Seen in:\n\nhttps://{{domo_instance}}.domo.com/admin/domo-everywhere/subscriptions"
-							},
-							"response": []
-						},
-						{
 							"name": "Get Subscription Invitations",
 							"id": "315abe5b-6761-4de2-9888-5ba976af15e9",
 							"protocolProfileBehavior": {
