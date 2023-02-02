@@ -1932,7 +1932,7 @@
 										}
 									]
 								},
-								"description": "use to retrieve a base64 encoded image of the card."
+								"description": "use to retrieve a base64 encoded image of the card.\n\nIf the card is unable to render (because of a broken beast mode) this request will error.\n\nIf not all data can be shown, there are keys, notAllDataShown, that will return True."
 							},
 							"response": []
 						}
