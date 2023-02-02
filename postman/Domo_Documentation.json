@@ -1932,7 +1932,7 @@
 										}
 									]
 								},
-								"description": "use to retrieve a base64 encoded image of the card.\n\nEndFragmenrendered image of the card."
+								"description": "use to retrieve a base64 encoded image of the card."
 							},
 							"response": []
 						}
