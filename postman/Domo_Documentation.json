@@ -6964,7 +6964,19 @@
 							]
 						},
 						{
-							"name": "Get Subscription Invitation",
+							"name": "GET Subscriptions",
+							"id": "e0b3e3cd-25a4-404d-a308-5e7ffc927156",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Subscription Invitations",
 							"id": "315abe5b-6761-4de2-9888-5ba976af15e9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -7093,18 +7105,6 @@
 								"header": [],
 								"url": "https://{{domo_instance}}.domo.com/api/publish/v2/subscription/{{subscription_id}}",
 								"description": "#### Description (usage)\n\nAccepts all jobs waiting to be accepted from Domo instance\n\n#### **UI reference**\n\nAdmin -> Domo everywhere -> Publish\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/4403486465687-Domo-Everywhere-Launch-Page#4.)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array wth subsctiptions jobs\n    \n\nPlease refer to the example below:"
-							},
-							"response": []
-						},
-						{
-							"name": "GET Subscriptions",
-							"id": "e0b3e3cd-25a4-404d-a308-5e7ffc927156",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": []
 							},
 							"response": []
 						}
