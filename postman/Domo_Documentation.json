@@ -1897,8 +1897,17 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "PUT",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"queryOverrides\": {\r\n        \"filters\": []\r\n    },\r\n    \"width\": 99,\r\n    \"height\": 46,\r\n    \"scale\": 1.100000023841858\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
 									"raw": "https://{{domo_instance}}.domo.com/api/content/v1/cards/kpi/{{card_id}}/render?parts=image,summary",
 									"protocol": "https",
