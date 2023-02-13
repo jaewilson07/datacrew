@@ -840,7 +840,16 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"url": "/https://{{domo_instance}}.domo.com/api/datastores/v1/collections/"
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Users\",\r\n    \"datastoreId\": \"de230a76-bc70-404e-b3f4-a6f7dea45723\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/datastores/v1/{{datastore_id}}/collections/"
 							},
 							"response": []
 						}
