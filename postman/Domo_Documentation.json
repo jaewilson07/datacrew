@@ -838,8 +838,9 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"url": "/https://{{domo_instance}}.domo.com/api/datastores/v1/collections/"
 							},
 							"response": []
 						}
