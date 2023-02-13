@@ -872,7 +872,7 @@
 										}
 									}
 								},
-								"url": "https://{{domo_instance}}.domo.com/api/datastores/v1/{{datastore_id}}/collections/",
+								"url": "https://{{domo_instance}}.domo.com/api/datastores/v1/",
 								"description": "This API will list out collections from multiple instances of one app (i.e. if you have an app that requires a collection, `opportunities` your appDb will have multiple collections with distinct `id` with `name` \"opportunities\", but each opportunity_collection will have a distinct `datastoreId` (app_id)."
 							},
 							"response": []
