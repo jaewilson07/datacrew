@@ -832,6 +832,29 @@
 							"response": []
 						},
 						{
+							"name": "Get DataStores",
+							"id": "eb66e2f5-db81-488b-91c3-5fc646a4d85e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/datastores/v1/{{datastore_id}}/collections/",
+								"description": "This API will list out collections from multiple instances of one app (i.e. if you have an app that requires a collection, `opportunities` your appDb will have multiple collections with distinct `id` with `name` \"opportunities\", but each opportunity_collection will have a distinct `datastoreId` (app_id)."
+							},
+							"response": []
+						},
+						{
 							"name": "Create collection",
 							"id": "1084faa8-361a-467e-8bbb-28159315d54d",
 							"protocolProfileBehavior": {
