@@ -832,7 +832,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Create collection",
 							"id": "1084faa8-361a-467e-8bbb-28159315d54d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
