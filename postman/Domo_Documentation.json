@@ -830,6 +830,18 @@
 								"description": "This API will list out collections from multiple instances of one app (i.e. if you have an app that requires a collection, `opportunities` your appDb will have multiple collections with distinct `id` with `name` \"opportunities\", but each opportunity_collection will have a distinct `datastoreId` (app_id)."
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "1084faa8-361a-467e-8bbb-28159315d54d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "14b468d5-58fb-47fd-b5e5-402a8c24d897",
