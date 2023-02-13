@@ -832,7 +832,7 @@
 							"response": []
 						},
 						{
-							"name": "Get Collections Copy",
+							"name": "Get Datastore Collections",
 							"id": "54f62349-a32b-4322-b1cd-bc0b99eda0ee",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
