@@ -826,8 +826,76 @@
 										}
 									}
 								},
-								"url": "https://{{domo_instance}}.domo.com/api/datastores/v1/collections/{{collection_id}}/documents",
+								"url": "https://{{domo_instance}}.domo.com/api/datastores/v1/{{datastore_id}}/collections/",
 								"description": "This API will list out collections from multiple instances of one app (i.e. if you have an app that requires a collection, `opportunities` your appDb will have multiple collections with distinct `id` with `name` \"opportunities\", but each opportunity_collection will have a distinct `datastoreId` (app_id)."
+							},
+							"response": []
+						},
+						{
+							"name": "Get Datastore Collections",
+							"id": "54f62349-a32b-4322-b1cd-bc0b99eda0ee",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/datastores/v1/{{datastore_id}}/collections/",
+								"description": "This API will list out collections from multiple instances of one app (i.e. if you have an app that requires a collection, `opportunities` your appDb will have multiple collections with distinct `id` with `name` \"opportunities\", but each opportunity_collection will have a distinct `datastoreId` (app_id)."
+							},
+							"response": []
+						},
+						{
+							"name": "Get DataStores",
+							"id": "eb66e2f5-db81-488b-91c3-5fc646a4d85e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/datastores/v1/",
+								"description": "This API will list out collections from multiple instances of one app (i.e. if you have an app that requires a collection, `opportunities` your appDb will have multiple collections with distinct `id` with `name` \"opportunities\", but each opportunity_collection will have a distinct `datastoreId` (app_id)."
+							},
+							"response": []
+						},
+						{
+							"name": "Create collection",
+							"id": "1084faa8-361a-467e-8bbb-28159315d54d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Users\",\r\n    \"datastoreId\": \"de230a76-bc70-404e-b3f4-a6f7dea45723\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/datastores/v1/{{datastore_id}}/collections/"
 							},
 							"response": []
 						}
@@ -5033,7 +5101,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"addresses\": [\r\n        \r\n    ]\r\n}\r\n",
+									"raw": "{\r\n    \"addresses\": [\r\n    \"0.0.0.0/0\"\r\n    ]\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6966,6 +7034,20 @@
 						{
 							"name": "GET Subscriptions",
 							"id": "e0b3e3cd-25a4-404d-a308-5e7ffc927156",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://{{domo_instance}}.domo.com/api/publish/v2/subscription/summaries",
+								"description": "Retrieve a list of instances you are subscribed to.\n\nCan be Seen in:\n\nhttps://{{domo_instance}}.domo.com/admin/domo-everywhere/subscriptions"
+							},
+							"response": []
+						},
+						{
+							"name": "GET Subscriptions Copy",
+							"id": "4ca153ce-a89b-4219-898c-5ce1f17c2e54",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
