@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+datacrew/__init__.py
+datacrew/_modidx.py
+datacrew.egg-info/PKG-INFO
+datacrew.egg-info/SOURCES.txt
+datacrew.egg-info/dependency_links.txt
+datacrew.egg-info/entry_points.txt
+datacrew.egg-info/not-zip-safe
+datacrew.egg-info/requires.txt
+datacrew.egg-info/top_level.txt
+datacrew/postdown/MDDoc.py
+datacrew/postdown/__init__.py
+datacrew/postdown/parser.py

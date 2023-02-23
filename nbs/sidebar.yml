@@ -1,0 +1,12 @@
+website:
+  sidebar:
+    contents:
+      - index.ipynb
+      - 00_core.ipynb
+      - section: postdown
+        contents:
+          - postdown/MDDoc.ipynb
+      - section: projects
+        contents:
+          - projects/crawler_sfdc_kb.ipynb
+          - projects/crawler_sfdc_support.ipynb
