@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "datacrew"
+  site-url: "https://jaewilson07.github.io/datacrew"
+  description: "https://documenter.getpostman.com/view/5049119/UyxbppB2"
+  repo-branch: main
+  repo-url: "https://github.com/jaewilson07/datacrew"
