@@ -1,5 +1,6 @@
 fastcore
 python-dotenv
 selenium
+bs4
 
 [dev]
