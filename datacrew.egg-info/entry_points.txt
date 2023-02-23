@@ -1,6 +1,2 @@
-[console_scripts]
-
-
 [nbdev]
 datacrew = datacrew._modidx:d
-
