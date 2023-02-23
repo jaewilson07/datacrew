@@ -1,4 +1,5 @@
 fastcore
 python-dotenv
+selenium
 
 [dev]
