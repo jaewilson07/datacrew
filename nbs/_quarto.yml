@@ -26,7 +26,7 @@ website:
 
     left:
       - text: "Knowledge Base"
-        href: blog/index.qmd
+        href: projects/kb_md/index.qmd
     right:
       - icon: github
         href: "https://github.com/jaewilson07/datacrew"
