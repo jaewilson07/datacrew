@@ -1,12 +1,12 @@
 ---
-    title: Configuring Languages in Domo
-    url: https://domo-support.domo.com/s/article/360043439133
-    linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamlGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamlGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoGGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoGGAS)', '[https://domo-support.domo.com/s/article/360042922874](https://domo-support.domo.com/s/article/360042922874)', '[https://domo-support.domo.com/s/article/360043439133](https://domo-support.domo.com/s/article/360043439133)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoGGAS/specifying-company-settings](https://domo-support.domo.com/s/topic/0TO5w000000ZaoGGAS/specifying-company-settings)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
-    article_id: 000003055
-    views: 2.336
-    created_date: 2022-10-24 21:09:00
-    last updated: 2022-10-24 22:40:00
-    ---
+title: Configuring Languages in Domo
+url: https://domo-support.domo.com/s/article/360043439133
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamlGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamlGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoGGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoGGAS)', '[https://domo-support.domo.com/s/article/360042922874](https://domo-support.domo.com/s/article/360042922874)', '[https://domo-support.domo.com/s/article/360043439133](https://domo-support.domo.com/s/article/360043439133)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoGGAS/specifying-company-settings](https://domo-support.domo.com/s/topic/0TO5w000000ZaoGGAS/specifying-company-settings)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000003055
+views: 2.336
+created_date: 2022-10-24 21:09:00
+last updated: 2022-10-24 22:40:00
+---
 
 
 

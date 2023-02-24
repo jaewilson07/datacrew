@@ -1,12 +1,12 @@
 ---
-    title: Aggregated Filters
-    url: https://domo-support.domo.com/s/article/4403489663127
-    linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanDGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZanDGAS)', '[https://domo-support.domo.com/s/article/360042934614](https://domo-support.domo.com/s/article/360042934614)', '[https://domo-support.domo.com/s/article/4403489663127](https://domo-support.domo.com/s/article/4403489663127)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanDGAS/card-and-dashboard-management](https://domo-support.domo.com/s/topic/0TO5w000000ZanDGAS/card-and-dashboard-management)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
-    article_id: 000004091
-    views: 2,702
-    created_date: 2022-10-24 21:20:00
-    last updated: 2022-10-24 22:40:00
-    ---
+title: Aggregated Filters
+url: https://domo-support.domo.com/s/article/4403489663127
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanDGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZanDGAS)', '[https://domo-support.domo.com/s/article/360042934614](https://domo-support.domo.com/s/article/360042934614)', '[https://domo-support.domo.com/s/article/4403489663127](https://domo-support.domo.com/s/article/4403489663127)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanDGAS/card-and-dashboard-management](https://domo-support.domo.com/s/topic/0TO5w000000ZanDGAS/card-and-dashboard-management)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004091
+views: 2,702
+created_date: 2022-10-24 21:20:00
+last updated: 2022-10-24 22:40:00
+---
 
 
 

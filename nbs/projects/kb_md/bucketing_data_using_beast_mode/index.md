@@ -2,20 +2,20 @@
 title: Bucketing Data Using Beast Mode
 url: https://domo-support.domo.com/s/article/360042925434
 linked_kbs:
-  [
-    '[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)',
-    '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)',
-    '[https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC)',
-    '[https://domo-support.domo.com/s/topic/0TO5w000000ZanAGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZanAGAS)',
-    '[https://domo-support.domo.com/s/article/360042925434](https://domo-support.domo.com/s/article/360042925434)',
-    '[https://domo-support.domo.com/s/topic/0TO5w000000ZanAGAS/beast-mode](https://domo-support.domo.com/s/topic/0TO5w000000ZanAGAS/beast-mode)',
-    '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)',
-    '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)',
-    '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)',
-    '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)',
-    '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)',
-    '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)',
-  ]
+[
+'[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)',
+'[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)',
+'[https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC)',
+'[https://domo-support.domo.com/s/topic/0TO5w000000ZanAGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZanAGAS)',
+'[https://domo-support.domo.com/s/article/360042925434](https://domo-support.domo.com/s/article/360042925434)',
+'[https://domo-support.domo.com/s/topic/0TO5w000000ZanAGAS/beast-mode](https://domo-support.domo.com/s/topic/0TO5w000000ZanAGAS/beast-mode)',
+'[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)',
+'[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)',
+'[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)',
+'[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)',
+'[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)',
+'[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)',
+]
 article_id: 000004083
 views: 2,827
 created_date: 2022-10-24 21:20:00

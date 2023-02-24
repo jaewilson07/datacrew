@@ -1,12 +1,12 @@
 ---
-    title: Filtering Project Tasks
-    url: https://domo-support.domo.com/s/article/360043430473
-    linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamsGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamsGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zao5GAC](https://domo-support.domo.com/s/topic/0TO5w000000Zao5GAC)', '[https://domo-support.domo.com/s/article/360042925874](https://domo-support.domo.com/s/article/360042925874)', '[https://domo-support.domo.com/s/article/360043430473](https://domo-support.domo.com/s/article/360043430473)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zao5GAC/projects-and-tasks](https://domo-support.domo.com/s/topic/0TO5w000000Zao5GAC/projects-and-tasks)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
-    article_id: 000004362
-    views: 2,155
-    created_date: 2022-10-24 21:45:00
-    last updated: 2022-10-24 22:40:00
-    ---
+title: Filtering Project Tasks
+url: https://domo-support.domo.com/s/article/360043430473
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamsGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamsGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zao5GAC](https://domo-support.domo.com/s/topic/0TO5w000000Zao5GAC)', '[https://domo-support.domo.com/s/article/360042925874](https://domo-support.domo.com/s/article/360042925874)', '[https://domo-support.domo.com/s/article/360043430473](https://domo-support.domo.com/s/article/360043430473)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zao5GAC/projects-and-tasks](https://domo-support.domo.com/s/topic/0TO5w000000Zao5GAC/projects-and-tasks)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004362
+views: 2,155
+created_date: 2022-10-24 21:45:00
+last updated: 2022-10-24 22:40:00
+---
 
 
 

@@ -1,12 +1,12 @@
 ---
-    title: October 2015 Release 1
-    url: https://domo-support.domo.com/s/article/360048116854
-    linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zan7GAC](https://domo-support.domo.com/s/topic/0TO5w000000Zan7GAC)', '[https://domo-support.domo.com/s/article/360043438993](https://domo-support.domo.com/s/article/360043438993)', '[https://domo-support.domo.com/s/article/360042926134](https://domo-support.domo.com/s/article/360042926134)', '[https://domo-support.domo.com/s/article/360042934454](https://domo-support.domo.com/s/article/360042934454)', '[https://domo-support.domo.com/s/article/360042922874](https://domo-support.domo.com/s/article/360042922874)', '[https://domo-support.domo.com/s/article/360048116854](https://domo-support.domo.com/s/article/360048116854)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zan7GAC/archived-feature-release-notes](https://domo-support.domo.com/s/topic/0TO5w000000Zan7GAC/archived-feature-release-notes)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
-    article_id: 000004460
-    views: 1,088
-    created_date: 2022-10-24 22:11:00
-    last updated: 2022-10-24 22:41:00
-    ---
+title: October 2015 Release 1
+url: https://domo-support.domo.com/s/article/360048116854
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zan7GAC](https://domo-support.domo.com/s/topic/0TO5w000000Zan7GAC)', '[https://domo-support.domo.com/s/article/360043438993](https://domo-support.domo.com/s/article/360043438993)', '[https://domo-support.domo.com/s/article/360042926134](https://domo-support.domo.com/s/article/360042926134)', '[https://domo-support.domo.com/s/article/360042934454](https://domo-support.domo.com/s/article/360042934454)', '[https://domo-support.domo.com/s/article/360042922874](https://domo-support.domo.com/s/article/360042922874)', '[https://domo-support.domo.com/s/article/360048116854](https://domo-support.domo.com/s/article/360048116854)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zan7GAC/archived-feature-release-notes](https://domo-support.domo.com/s/topic/0TO5w000000Zan7GAC/archived-feature-release-notes)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004460
+views: 1,088
+created_date: 2022-10-24 22:11:00
+last updated: 2022-10-24 22:41:00
+---
 
 
 

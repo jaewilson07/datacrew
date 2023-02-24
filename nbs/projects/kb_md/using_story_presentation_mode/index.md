@@ -1,12 +1,12 @@
 ---
-    title: Using Story Presentation Mode
-    url: https://domo-support.domo.com/s/article/9355841270167
-    linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamnGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamnGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZansGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZansGAC)', '[https://domo-support.domo.com/s/article/360042924074](https://domo-support.domo.com/s/article/360042924074)', '[https://domo-support.domo.com/s/article/7903767835031](https://domo-support.domo.com/s/article/7903767835031)', '[https://domo-support.domo.com/s/article/9355841270167](https://domo-support.domo.com/s/article/9355841270167)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZansGAC/interacting-with-cards-and-dashboards](https://domo-support.domo.com/s/topic/0TO5w000000ZansGAC/interacting-with-cards-and-dashboards)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
-    article_id: 000004976
-    views: 1,351
-    created_date: 2022-11-01 23:15:00
-    last updated: 2022-11-01 23:23:00
-    ---
+title: Using Story Presentation Mode
+url: https://domo-support.domo.com/s/article/9355841270167
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamnGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamnGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZansGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZansGAC)', '[https://domo-support.domo.com/s/article/360042924074](https://domo-support.domo.com/s/article/360042924074)', '[https://domo-support.domo.com/s/article/7903767835031](https://domo-support.domo.com/s/article/7903767835031)', '[https://domo-support.domo.com/s/article/9355841270167](https://domo-support.domo.com/s/article/9355841270167)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZansGAC/interacting-with-cards-and-dashboards](https://domo-support.domo.com/s/topic/0TO5w000000ZansGAC/interacting-with-cards-and-dashboards)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004976
+views: 1,351
+created_date: 2022-11-01 23:15:00
+last updated: 2022-11-01 23:23:00
+---
 
 
 

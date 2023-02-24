@@ -1,12 +1,12 @@
 ---
-    title: Requesting Access to an App
-    url: https://domo-support.domo.com/s/article/360042933274
-    linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZampGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZampGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoMGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoMGAS)', '[https://domo-support.domo.com/s/article/360042933274](https://domo-support.domo.com/s/article/360042933274)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoMGAS/using-the-appstore](https://domo-support.domo.com/s/topic/0TO5w000000ZaoMGAS/using-the-appstore)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
-    article_id: 000005019
-    views: 1.138
-    created_date: 2022-11-02 20:16:00
-    last updated: 2022-11-02 20:37:00
-    ---
+title: Requesting Access to an App
+url: https://domo-support.domo.com/s/article/360042933274
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZampGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZampGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoMGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoMGAS)', '[https://domo-support.domo.com/s/article/360042933274](https://domo-support.domo.com/s/article/360042933274)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoMGAS/using-the-appstore](https://domo-support.domo.com/s/topic/0TO5w000000ZaoMGAS/using-the-appstore)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000005019
+views: 1.138
+created_date: 2022-11-02 20:16:00
+last updated: 2022-11-02 20:37:00
+---
 
 
 

@@ -1,12 +1,12 @@
 ---
-    title: PDP and DataFlows/DataFusions
-    url: https://domo-support.domo.com/s/article/360043439333
-    linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zan2GAC](https://domo-support.domo.com/s/topic/0TO5w000000Zan2GAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zao2GAC](https://domo-support.domo.com/s/topic/0TO5w000000Zao2GAC)', '[https://domo-support.domo.com/s/article/360042934614](https://domo-support.domo.com/s/article/360042934614)', '[https://domo-support.domo.com/s/article/360043439333](https://domo-support.domo.com/s/article/360043439333)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zao2GAC/personalized-data-permissions-pdp](https://domo-support.domo.com/s/topic/0TO5w000000Zao2GAC/personalized-data-permissions-pdp)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
-    article_id: 000004909
-    views: 2.607
-    created_date: 2022-10-24 22:35:00
-    last updated: 2022-10-24 22:41:00
-    ---
+title: PDP and DataFlows/DataFusions
+url: https://domo-support.domo.com/s/article/360043439333
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zan2GAC](https://domo-support.domo.com/s/topic/0TO5w000000Zan2GAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zao2GAC](https://domo-support.domo.com/s/topic/0TO5w000000Zao2GAC)', '[https://domo-support.domo.com/s/article/360042934614](https://domo-support.domo.com/s/article/360042934614)', '[https://domo-support.domo.com/s/article/360043439333](https://domo-support.domo.com/s/article/360043439333)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zao2GAC/personalized-data-permissions-pdp](https://domo-support.domo.com/s/topic/0TO5w000000Zao2GAC/personalized-data-permissions-pdp)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004909
+views: 2.607
+created_date: 2022-10-24 22:35:00
+last updated: 2022-10-24 22:41:00
+---
 
 
 

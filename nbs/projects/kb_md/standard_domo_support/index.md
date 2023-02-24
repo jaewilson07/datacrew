@@ -1,12 +1,12 @@
 ---
-    title: Standard Domo Support
-    url: https://domo-support.domo.com/s/article/360042922914
-    linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamsGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamsGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoIGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoIGAS)', '[https://domo-support.domo.com/s/article/360042922914](https://domo-support.domo.com/s/article/360042922914)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoIGAS/support-resources](https://domo-support.domo.com/s/topic/0TO5w000000ZaoIGAS/support-resources)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
-    article_id: 000004369
-    views: 1,163
-    created_date: 2022-10-24 21:45:00
-    last updated: 2022-10-24 22:42:00
-    ---
+title: Standard Domo Support
+url: https://domo-support.domo.com/s/article/360042922914
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamsGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamsGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoIGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoIGAS)', '[https://domo-support.domo.com/s/article/360042922914](https://domo-support.domo.com/s/article/360042922914)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoIGAS/support-resources](https://domo-support.domo.com/s/topic/0TO5w000000ZaoIGAS/support-resources)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004369
+views: 1,163
+created_date: 2022-10-24 21:45:00
+last updated: 2022-10-24 22:42:00
+---
 
 
 

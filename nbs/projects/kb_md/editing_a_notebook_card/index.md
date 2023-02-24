@@ -1,12 +1,12 @@
 ---
-    title: Editing a Notebook Card
-    url: https://domo-support.domo.com/s/article/360042925654
-    linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanwGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZanwGAC)', '[https://domo-support.domo.com/s/article/360043428433](https://domo-support.domo.com/s/article/360043428433)', '[https://domo-support.domo.com/s/article/360043430233](https://domo-support.domo.com/s/article/360043430233)', '[https://domo-support.domo.com/s/article/360042923934](https://domo-support.domo.com/s/article/360042923934)', '[https://domo-support.domo.com/s/article/360042925654](https://domo-support.domo.com/s/article/360042925654)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanwGAC/notebook-cards](https://domo-support.domo.com/s/topic/0TO5w000000ZanwGAC/notebook-cards)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
-    article_id: 000004112
-    views: 2,203
-    created_date: 2022-10-24 21:22:00
-    last updated: 2022-10-24 22:41:00
-    ---
+title: Editing a Notebook Card
+url: https://domo-support.domo.com/s/article/360042925654
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanwGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZanwGAC)', '[https://domo-support.domo.com/s/article/360043428433](https://domo-support.domo.com/s/article/360043428433)', '[https://domo-support.domo.com/s/article/360043430233](https://domo-support.domo.com/s/article/360043430233)', '[https://domo-support.domo.com/s/article/360042923934](https://domo-support.domo.com/s/article/360042923934)', '[https://domo-support.domo.com/s/article/360042925654](https://domo-support.domo.com/s/article/360042925654)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanwGAC/notebook-cards](https://domo-support.domo.com/s/topic/0TO5w000000ZanwGAC/notebook-cards)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004112
+views: 2,203
+created_date: 2022-10-24 21:22:00
+last updated: 2022-10-24 22:41:00
+---
 
 
 

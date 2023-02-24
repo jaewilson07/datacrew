@@ -1,12 +1,12 @@
 ---
-    title: Powering Up Business-in-a-Box Dashboards
-    url: https://domo-support.domo.com/s/article/360042935114
-    linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamsGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamsGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanBGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZanBGAS)', '[https://domo-support.domo.com/s/article/360042933194](https://domo-support.domo.com/s/article/360042933194)', '[https://domo-support.domo.com/s/article/360043438973](https://domo-support.domo.com/s/article/360043438973)', '[https://domo-support.domo.com/s/article/360042935094](https://domo-support.domo.com/s/article/360042935094)', '[https://domo-support.domo.com/s/article/360043436573](https://domo-support.domo.com/s/article/360043436573)', '[https://domo-support.domo.com/s/article/360042935114](https://domo-support.domo.com/s/article/360042935114)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanBGAS/business-in-a-box](https://domo-support.domo.com/s/topic/0TO5w000000ZanBGAS/business-in-a-box)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
-    article_id: 000004308
-    views: 2,174
-    created_date: 2022-10-24 21:36:00
-    last updated: 2022-10-24 22:40:00
-    ---
+title: Powering Up Business-in-a-Box Dashboards
+url: https://domo-support.domo.com/s/article/360042935114
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamsGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamsGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanBGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZanBGAS)', '[https://domo-support.domo.com/s/article/360042933194](https://domo-support.domo.com/s/article/360042933194)', '[https://domo-support.domo.com/s/article/360043438973](https://domo-support.domo.com/s/article/360043438973)', '[https://domo-support.domo.com/s/article/360042935094](https://domo-support.domo.com/s/article/360042935094)', '[https://domo-support.domo.com/s/article/360043436573](https://domo-support.domo.com/s/article/360043436573)', '[https://domo-support.domo.com/s/article/360042935114](https://domo-support.domo.com/s/article/360042935114)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanBGAS/business-in-a-box](https://domo-support.domo.com/s/topic/0TO5w000000ZanBGAS/business-in-a-box)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004308
+views: 2,174
+created_date: 2022-10-24 21:36:00
+last updated: 2022-10-24 22:40:00
+---
 
 
 

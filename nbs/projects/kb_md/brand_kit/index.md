@@ -1,12 +1,12 @@
 ---
-    title: Brand Kit
-    url: https://domo-support.domo.com/s/article/5428851518999
-    linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamlGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamlGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zan4GAC](https://domo-support.domo.com/s/topic/0TO5w000000Zan4GAC)', '[https://domo-support.domo.com/s/article/5428851518999](https://domo-support.domo.com/s/article/5428851518999)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zan4GAC/admin-settings-overview](https://domo-support.domo.com/s/topic/0TO5w000000Zan4GAC/admin-settings-overview)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
-    article_id: 000003007
-    views: 2.863
-    created_date: 2022-10-24 20:59:00
-    last updated: 2022-10-24 22:42:00
-    ---
+title: Brand Kit
+url: https://domo-support.domo.com/s/article/5428851518999
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamlGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamlGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zan4GAC](https://domo-support.domo.com/s/topic/0TO5w000000Zan4GAC)', '[https://domo-support.domo.com/s/article/5428851518999](https://domo-support.domo.com/s/article/5428851518999)', '[https://domo-support.domo.com/s/topic/0TO5w000000Zan4GAC/admin-settings-overview](https://domo-support.domo.com/s/topic/0TO5w000000Zan4GAC/admin-settings-overview)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000003007
+views: 2.863
+created_date: 2022-10-24 20:59:00
+last updated: 2022-10-24 22:42:00
+---
 
 
 

@@ -1,12 +1,12 @@
 ---
-    title: Variables Overview
-    url: https://domo-support.domo.com/s/article/7903767835031
-    linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZdTCGA0](https://domo-support.domo.com/s/topic/0TO5w000000ZdTCGA0)', '[https://domo-support.domo.com/s/article/9355841270167](https://domo-support.domo.com/s/article/9355841270167)', '[https://domo-support.domo.com/s/article/360043439293](https://domo-support.domo.com/s/article/360043439293)', '[https://domo-support.domo.com/s/article/7903767835031](https://domo-support.domo.com/s/article/7903767835031)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZdTCGA0/variables](https://domo-support.domo.com/s/topic/0TO5w000000ZdTCGA0/variables)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
-    article_id: 000004978
-    views: 5,394
-    created_date: 2022-11-01 23:15:00
-    last updated: 2022-11-01 23:23:00
-    ---
+title: Variables Overview
+url: https://domo-support.domo.com/s/article/7903767835031
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZdTCGA0](https://domo-support.domo.com/s/topic/0TO5w000000ZdTCGA0)', '[https://domo-support.domo.com/s/article/9355841270167](https://domo-support.domo.com/s/article/9355841270167)', '[https://domo-support.domo.com/s/article/360043439293](https://domo-support.domo.com/s/article/360043439293)', '[https://domo-support.domo.com/s/article/7903767835031](https://domo-support.domo.com/s/article/7903767835031)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZdTCGA0/variables](https://domo-support.domo.com/s/topic/0TO5w000000ZdTCGA0/variables)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004978
+views: 5,394
+created_date: 2022-11-01 23:15:00
+last updated: 2022-11-01 23:23:00
+---
 
 
 
