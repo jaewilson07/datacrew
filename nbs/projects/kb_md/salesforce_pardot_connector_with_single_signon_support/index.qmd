@@ -1,0 +1,193 @@
+---
+title: Salesforce Pardot Connector with Single Sign-On support
+url: https://domo-support.domo.com/s/article/1500002456742
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanLGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZanLGAS)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoQGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoQGAS)', '[https://domo-support.domo.com/s/article/360042926274](https://domo-support.domo.com/s/article/360042926274)', '[https://domo-support.domo.com/s/article/360042926054](https://domo-support.domo.com/s/article/360042926054)', '[https://domo-support.domo.com/s/article/2128460](https://domo-support.domo.com/s/article/2128460)', '[https://domo-support.domo.com/s/article/1500002456742](https://domo-support.domo.com/s/article/1500002456742)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoQGAS/api-connectors](https://domo-support.domo.com/s/topic/0TO5w000000ZaoQGAS/api-connectors)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000003246
+views: 1,142
+created_date: 2022-10-24 21:11:00
+last updated: 2022-10-24 22:41:00
+---
+
+
+
+Intro
+-----
+
+
+Salesforce Pardot is a marketing automation SaaS company that develops automated marketing and demand generation software and services for business-to-business marketers. Once your data is in Domo, you can combine it with views of other data sources for a deeper understanding of your buyers. See your latest stats in real-time, interactive dashboards that you can access from your computer, tablet, or phone. You can even get alerts when your key metrics change. To learn more about the Salesforce Pardot API, visit their page (<http://developer.pardot.com/>). 
+
+
+The Salesforce Pardot with Single Sign-On connector is a "Cloud App" connector, meaning it retrieves data stored in the cloud. In the Data Center, you can access the connector page for this and other Cloud App connectors by clicking **Cloud App** in the toolbar at the top of the window.
+
+
+You connect to your Salesforce Pardot account in the Data Center. This topic discusses the fields and menus that are specific to the Salesforce Pardot with Single Sign-On connector user interface. General information for adding DataSets, setting update schedules, and editing DataSet information is discussed in [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+
+
+
+
+|  |  |
+| --- | --- |
+| **Primary Use Cases** | * Results of email marketing activities
+* Lead generation success
+* Response to specific campaigns
+ |
+| **Primary Metrics** | * Response rate to email marketing
+* Number of leads generated
+* Response rate
+* Conversion rate
+* Open rate
+* Click rate
+ |
+| **Primary Company Roles** | * Email marketing analyst
+* CMO
+* Creative director
+ |
+| **Average Implementation Time** | Less than 1 hour |
+| **Ease of Use (on a 1-to-10 scale with 1 being easiest)** | 3 |
+
+
+Best Practices
+--------------
+
+
+* Use Append to pull only the data modified or created since the last run to limit the number of calls.
+* When pulling deleted prospects, use the **Updated date** filter since this is the date that is modified when a prospect is deleted in Pardot.
+
+
+Prerequisites
+-------------
+
+
+To connect to your Salesforce Pardot account and create a DataSet, you must have the following:
+
+
+* Your Pardot business unit ID
+* Your concurrency limit
+* Your Salesforce username and password
+
+
+
+#### To find the Pardot Business Unit ID:
+
+
+1. Visit **Setup**in Salesforce.
+2. Enter "Pardot Account Setup" in the **Quick Find box**.
+3. Your Pardot Business Unit ID will appear. It begins with "0Uv" and is 18 characters long.
+
+
+
+
+
+#### To find the Pardot environment:
+
+
+1. In Salesforce, click the gear icon to access Setup.
+2. From Setup, enter "Installed Packages" in the **Quick Find box**, and then select **Installed Packages**.
+3. Find the package **b2bmaIntegration**.
+4. If the prefix is "b2bma", select Production otherwise select Sandbox.
+
+
+
+Connecting to Your Salesforce Pardot Account
+--------------------------------------------
+
+
+This section enumerates the options in the **Credentials** and **Details** panes in the Salesforce Pardot with Single Sign-On support Connector page. The components of the other panes in this page, **Scheduling** and **Name & Describe Your DataSet**, are universal across most connector types and are discussed in greater length in [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+
+
+### Credentials Pane
+
+
+This pane contains fields for entering credentials to connect to your Salesforce Pardot account. The following table describes what is needed for each field: 
+
+
+
+
+| Field | Description |
+| --- | --- |
+| Pardot Business Unit | Enter your Pardot business unit ID. Visit Prerequisites for more details. |
+| Salesforce Environment | Select the Salesforce environment you want to authenticate against (i.e. [login.salesforce.com](http://login.salesforce.com) or [test.salesforce.com](http://test.salesforce.com)). |
+| Pardot Environment | Select the Pardot environment. Visit Prerequisites for more details. |
+| Concurrency Limit | Enter the maximum amount of concurrent connections to Salesforce Pardot. If you are unsure how many concurrent connections to Pardot you are allowed, please contact your Salesforce administrator. |
+
+
+Once you have entered valid Salesforce Pardot credentials, you can use the same account any time you go to create a new Salesforce Pardot with Single Sign-On support DataSet. You can manage connector accounts in the Accounts tab in the Data Center. For more information about this tab, see [Managing User Accounts for Connectors](/s/article/360042926054 "Managing User Accounts for Connectors").
+
+
+### Details Pane
+
+
+This pane contains a primary **Report**menu, along with two fields that allow you to set a date range for your data.
+
+
+
+
+| Menu | Description |
+| --- | --- |
+| Report | Select the Salesforce Pardot report you want to run. The following reports are available:
+
+|  |  |
+| --- | --- |
+| Campaign | Returns information about campaigns, including id, list id, name and cost etc. |
+| Custom Fields | Returns information about custom fields defined in Salesforce Pardot. |
+| Custom Redirect | Returns information about custom redirects defined in Salesforce Pardot. |
+| Email Clicks | Returns information about email clicks including prospect id and URL clicked. |
+| Email Statistics | Returns information about all email lists sent during the selected time period. This report returns information such as total clicks, bounces, opens, click through rate, etc. |
+| Forms | Returns information about Forms. |
+| Lifecycle History | Returns information about lifecycle history, including Pardot id, prospect id, previous stage id etc. |
+| Lifecycle Stage | Returns information about lifecycle stage, including lifecycle stage id, name, position etc. |
+| List | Returns all lists matching the specified criteria, including list name, title, description, etc. |
+| Membership List | Returns information about membership, including id, list id, prospect id, opted out etc. |
+| Opportunity | Returns all opportunities matching the specified criteria, including name, opportunity stage and status, campaign name, etc. |
+| Prospect | Returns information about prospects matching the specified criteria. |
+| Prospect Bulk | Returns information about prospects matching the specified criteria. Returns data more efficiently than regular prospect report, without custom fields. |
+| Prospect Accounts | Returns information about prospect accounts, including id, name, created\_at etc. |
+| Prospect Email Activities | Returns information about email activities by prospects. |
+| Prospect Email Activities (Historical data) | Returns information about email activities by prospects (use this report to retrieve large amount of historical data. Will only run in Append mode. |
+| Prospect Email Activities via bulk export | Returns information about email activities by prospects. |
+| Tag | Returns information about Tag, including id, name, created\_at etc. |
+| Tag Object | Returns information about tag object, including id, tag id, type, object id, created\_at. |
+| User | Returns information about the authenticated user, including first and last name, email, role, account number, etc. |
+| Visit | Returns information about all page visits matching the specified criteria. |
+| Visitor | Returns information about page visitors, including page view count, IP address, host name, etc. |
+| Visitor With Details | Returns information about page visitors, including referrer, identified company and activities. This report uses 1 API call per visitor. |
+| Visitor Activity | Returns information about visitor activity, including number of page views, campaign name, visit type, etc. |
+| Visitor Page Views | Returns information about visitor page views, including page title, URL, and time the page view occurred. |
+
+ |
+| Date Filter | Select whether to filter by created date, updated date, or date of last activity. |
+| Include Custom Fields | Select whether to include custom fields in this dataset |
+| Skip Data for Failed Prospects | Select this checkbox to skip the failed prospects calls. Email activities will be returned without prospect details in case of failure of the prospect call. |
+| Prospects Fields | Select the prospect fields to include in the data. |
+| Activity Fields | Select the activity fields to include in the data. |
+| Custom Fields | Select the custom fields to include in the data. |
+| Identified Visitors | Select whether to include all visitors or only visitors flagged as 'identified'. |
+| Deleted Prospects | Select whether to include deleted prospects or only retrieve current prospects. |
+| Standard Fields to Exclude From Prospects Report | Select the standard fields you want to exclude from the report. |
+| Custom Fields to Exclude From Prospects Report | Enter a comma separated list of the custom fields you want to exclude from the Prospect report. |
+| Duration | Select the duration for the report (a Single Date, or a Date Range). |
+| Single Date | Select whether the report data is for a specific date or for a relative number of days back from today. |
+| Specific Date | Select the specific date using the date selector. |
+| Relative Date | Enter the number of days back that you would like to get data for in the ****Days Back**** field. Specify either today or 0, yesterday or 1, or today-7 or 7 to get data for 7 days into the past. |
+| Date Range | Select the specific or relative date range. |
+| Start Date - Specific | Select the first date in your date range using the date selector. |
+| End Date - Specific | Select the last date in your date range using the date selector. |
+| Start Date - Relative | Enter the number of days back that you would like to get data from (start day). Combine with ****************End Date**************** to create a range of represented days.
+For example, if you entered 10 for ****************Start Date**************** and 5 for ****************End Date****************, the report would contain data for 10 days ago up until 5 days ago. |
+| End Date - Relative | Enter the number of days back that you would like to get data to (end day). Combine with ****************Start Date****************to create a range of represented days.
+For example, if you entered 10 for ****************Start Date**************** and 5 for ****************End Date****************, the report would contain data for 10 days ago up until 5 days ago. |
+| Append Data Type | Select how to retrieve data when using Append method. |
+
+
+### Other Panes
+
+
+For information about the remaining sections of the connector interface, including how to configure scheduling, retry, and update options, see [a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+
+
+Troubleshooting
+---------------
+
+
+* Some Pardot accounts may have IP security enabled. In that case, Pardot returns "Client IP address/location must be activated before accessing API." If that happens, Domo IP addresses must be whitelisted. For more information, see [http://help.pardot.com/customer/port...ion-activation](/s/article/2128460 "Whitelisting IP Addresses for Connectors").
+* Pardot requires a very specific "dictionary" to decipher its results. The connector returns codes specific to every implementation. The mapping of codes to definitions requires significant maintenance.

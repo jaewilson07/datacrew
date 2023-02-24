@@ -1,0 +1,141 @@
+---
+title: Google BigQuery Enterprise OAuth Writeback Connector
+url: https://domo-support.domo.com/s/article/4403099754903
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanLGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZanLGAS)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS)', '[https://domo-support.domo.com/s/article/360042926274](https://domo-support.domo.com/s/article/360042926274)', '[https://domo-support.domo.com/s/article/360042926054](https://domo-support.domo.com/s/article/360042926054)', '[https://domo-support.domo.com/s/article/4403099754903](https://domo-support.domo.com/s/article/4403099754903)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS/writeback-connectors](https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS/writeback-connectors)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000003997
+views: 2,125
+created_date: 2022-10-24 21:17:00
+last updated: 2022-10-24 22:41:00
+---
+
+
+
+Intro
+-----
+
+
+Google BigQuery is a serverless, highly scalable, and cost-effective cloud data warehouse designed to help you make informed decisions quickly, so you can transform your business with ease. It's a cloud-based big data analytics web service for processing very large read-only data sets. Use Domo'sGoogle BigQuery Enterprise OAuth Writeback connector to securely export your data from a Domo DataSet into a BigQuery table. To learn more about the BigQuery API, go to <https://cloud.google.com/bigquery/docs/reference/v2/>.
+
+
+You export data to BigQuery in the Data Center. This topic discusses the fields and menus that are specific to the Google BigQuery Enterprise OAuth Writeback connector user interface. General information for adding DataSets, setting update schedules, and editing DataSet information is discussed in [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+
+
+
+
+
+
+
+**Note:** The owner of a writeback dataset must also be an owner or co-owner of the input dataset.
+
+
+
+
+Prerequisites
+-------------
+
+
+To configure this connector, you will need the client ID and client secret associated with your Google BigQuery account.
+
+
+Configuring the Connection
+--------------------------
+
+
+This section enumerates the options in the **Credentials** and **Details** panes in the Domo's Google BigQuery Enterprise OAuth Writeback Connector page. The components of the other panes in this page, **Scheduling**and **Name & Describe Your DataSet,** are universal across most connector types and are discussed in greater length in [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+
+
+### Credentials Pane
+
+
+This pane contains fields for entering credentials to connect to your Google BigQuery account. The following table describes what is needed for each field:  
+
+
+
+
+| Field | Description |
+| --- | --- |
+| Client ID | Enter the client ID associated with your Google BigQuery account. |
+| Client Secret | Enter the client secret associated with your Google BigQuery account. |
+
+
+The Domo Google BigQuery Enterprise OAuth Writeback connector uses OAuth to connect, so there is no need to enter your Google credentials within Domo. After entering your client ID and client secret, click **Connect** to open the Google OAuth screen where you can enter your Google credentials. Once you have entered valid credentials, you can use the same account any time you go to set up a new Domo-Google BigQuery connection. You can manage connector accounts in the **Accounts** tab in the Data Center. For more information about this tab, see [Managing User Accounts for Connectors](/s/article/360042926054 "Managing User Accounts for Connectors").
+
+
+
+
+ 
+
+
+**Note:** If you are already logged into Google when you connect in Domo, you are authenticated automatically when you click **Connect**. If you want to connect to an account that is different from the one you are logged into, you must first log out of the logged in Google account.
+
+
+
+### Details Pane
+
+
+This pane contains a number of fields for specifying your data and indicating where it's going.
+
+
+
+
+| Menu | Description |
+| --- | --- |
+| BigQuery Project | Select a project from the available list of projects. |
+| BigQuery DataSet | Select the BigQuery DataSet Name. Datasets are top-level containers that are used to organize and control access to your tables and views. A table or view must belong to a dataset, so you need to create at least one dataset before loading data into BigQuery. |
+| BigQuery Table Name | Enter the BigQuery table name you want to send Domo data to. The table you indicate will be deleted and recreated with each run with the name entered here. |
+| Input Domo DataSet ID | Enter your Domo dataset ID (GUID) located in the dataset URL. 
+Example: <https://customer.domo.com/datasources/>**aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee**/details/settings |
+
+
+### Other Panes
+
+
+For information about the remaining sections of the connector interface, including how to configure scheduling, retry, and update options, see [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+
+
+FAQs
+----
+
+
+#### When should I use this connector?
+
+
+This connector will allow you to write data from Domo to BigQuery. It connects via a customer defined Google app to support OAuth connections, so you'll need a valid client id , client secret, username and password that has access to BigQuery. Once connected, you'll specify the location of the BigQuery Project and Table to write to.
+
+
+#### What kind of credentials do I need to power up this connector?
+
+
+You need the client ID and client secret associated with your Google BigQuery account. Your Google account must have permissions to access the tables and data needed for the query.
+
+
+#### How do I know that my login credentials are secure?
+
+
+The login process uses the OAuth process, so your Google credentials are never seen or stored by Domo. This keeps your login secure. You can revoke Domo's access to your account at any time.
+
+
+#### How often can the data be updated?
+
+
+As often as needed.
+
+
+#### Are there any API limits that I need to be aware of?
+
+
+None
+
+
+#### How do I find the Input Dataset ID?
+
+
+Your Domo input dataset id is in the URL of the dataset you are exporting data from.  
+Example: <https://customer.domo.com/datasources/>**aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee**/details/settings
+
+
+#### What else do I need to know before loading data into BigQuery?
+
+
+Datasets are the top-level containers that are used to organize and control access to your tables and views. A table or view must belong to a dataset, so you need to create at least one dataset before loading data into BigQuery.
+

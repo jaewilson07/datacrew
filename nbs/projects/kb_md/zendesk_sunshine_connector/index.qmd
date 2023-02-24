@@ -1,0 +1,93 @@
+---
+title: Zendesk Sunshine Connector
+url: https://domo-support.domo.com/s/article/360043434393
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanLGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZanLGAS)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoQGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoQGAS)', '[https://domo-support.domo.com/s/article/360042926274](https://domo-support.domo.com/s/article/360042926274)', '[https://domo-support.domo.com/s/article/360042926054](https://domo-support.domo.com/s/article/360042926054)', '[https://domo-support.domo.com/s/article/360043434393](https://domo-support.domo.com/s/article/360043434393)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoQGAS/api-connectors](https://domo-support.domo.com/s/topic/0TO5w000000ZaoQGAS/api-connectors)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000003484
+views: 1,073
+created_date: 2022-10-24 21:13:00
+last updated: 2022-10-24 22:40:00
+---
+
+
+
+Intro
+-----
+
+
+Zendesk Sunshine is an open, flexible CRM platform. Sunshine lets you seamlessly connect and understand all of your customer data wherever it lives. Use Domo's Zendesk Sunshine connector to receive details about profiles, events and custom objects. To learn more about the Zendesk Sunshine API, visit <https://developer.zendesk.com/rest_api/docs/sunshine/introduction>.
+
+
+You connect to your Zendesk account in the Data Center. This topic discusses the fields and menus that are specific to the Zendesk Sunshine connector user interface. General information for adding DataSets, setting update schedules, and editing DataSet information is discussed in [Adding a DataSet Using a Data Connector](/s/article/360042926274).
+
+
+Prerequisites
+-------------
+
+
+To connect to your Zendesk account and create a DataSet, you must have the following:
+
+
+* Your Zendesk username
+* Your Zendesk API token or password
+* The Zendesk URL for your company
+
+
+The user must be a Zendesk admin in order to connect to the Zendesk account.
+
+
+Connecting to Your Zendesk Account
+----------------------------------
+
+
+This section enumerates the options in the **Credentials** and **Details** panes in the Zendesk Sunshine Connector page. The components of the other panes in this page, **Scheduling** and **Name & Describe Your DataSet**, are universal across most connector types and are discussed in greater length in [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+
+
+### Credentials Pane
+
+
+This pane contains fields for entering credentials to connect to your Zendesk account. The following table describes what is needed for each field:  
+
+
+
+
+| Field | Description |
+| --- | --- |
+| Username | Enter the username for your Zendesk account. The user must be a Zendesk admin. |
+| Authenticated By | Specify whether you want to use your Zendesk API token or password to authenticate. |
+| API Token or Password | Enter your Zendesk API token or password. This must match what you have selected in the ****Authenticate By**** menu. |
+| Zendesk URL | Enter the Zendesk URL for your company. |
+
+
+Once you have entered valid Zendesk credentials, you can use the same account any time you go to create a new Zendesk Sunshine DataSet. You can manage connector accounts in the **Accounts** tab in the Data Center. For more information about this tab, see [Managing User Accounts for Connectors](/s/article/360042926054 "Managing User Accounts for Connectors").
+
+
+### Details Pane
+
+
+This pane contains a primary **Reports** menu, along with various other menus which may or may not appear depending on the report type you select.
+
+
+
+
+| Menu | Description |
+| --- | --- |
+| Report | Select the Zendesk Sunshine report you want to run. The following reports are available:
+
+|  |  |
+| --- | --- |
+| List Custom Object Types | This report returns the account's custom object types. |
+| List Objects Records By Type | This report returns object records by object type key. |
+| List Persons | This report returns a list of people. |
+| List Relationship Records By Type | This report returns all relationship records of the specified relationship type. |
+| List Relationship Types | This report returns the account's relationship types. |
+
+ |
+| Custom Object Type | Select the custom object type. |
+| Relationship Type |  Select the relationship type. |
+
+
+### Other Panes
+
+
+For information about the remaining sections of the connector interface, including how to configure scheduling, retry, and update options, see [Adding a DataSet Using a Data Connector](/s/article/360042926274).
+

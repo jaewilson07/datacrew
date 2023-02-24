@@ -1,0 +1,100 @@
+---
+title: Label Traxx Writeback Connector
+url: https://domo-support.domo.com/s/article/360058891393
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanLGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZanLGAS)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS)', '[https://domo-support.domo.com/s/article/360042926274](https://domo-support.domo.com/s/article/360042926274)', '[https://domo-support.domo.com/s/article/360042926054](https://domo-support.domo.com/s/article/360042926054)', '[https://domo-support.domo.com/s/article/360058891393](https://domo-support.domo.com/s/article/360058891393)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS/writeback-connectors](https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS/writeback-connectors)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004010
+views: 2,136
+created_date: 2022-10-24 21:17:00
+last updated: 2022-10-24 22:39:00
+---
+
+
+
+Intro
+-----
+
+
+Label Traxx is a software company that services the narrow web flexo and digital label print industry with an end-to-end print ERP/MIS solution. Label Traxx is cross-platform, running on both Macintosh and Windows operating systems. It is one of several successful, growing businesses. The client/server database features a graphical user interface design that makes the system easy to install and operate. Use Domo’s Label Traxx Writeback connector to export your data from a Domo dataset to your Label Traxx account. To learn more about the Label Traxx API, visit <https://labeltraxx.com/software/integration/api/>.
+
+
+You export Domo data to Label Traxx in the Data Center. This topic discusses the fields and menus that are specific to the Label Traxx Writeback connector user interface. General information for adding DataSets, setting update schedules, and editing DataSet information is discussed in [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+
+
+
+
+
+
+
+**Note:** The owner of a writeback dataset must also be an owner or co-owner of the input dataset.
+
+
+
+
+Prerequisites
+-------------
+
+
+To configure this connector you must have the following:
+
+
+* The Domain URL
+* Your Label Traxx username and password
+
+
+Configuring the connection
+--------------------------
+
+
+This section enumerates the options in the **Credentials** and **Details** panes in the Label Traxx Writeback Connector page. The components of the other panes in this page, **Scheduling** and **Name & Describe Your DataSet**, are universal across most connector types and are discussed in greater length in [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+
+
+### Credentials Pane
+
+
+This pane contains fields for entering credentials to configure the connection. The following table describes what is needed for each field:  
+
+
+
+
+| Field | Description |
+| --- | --- |
+| Domain URL | Enter you Domain URL. |
+| Username | Enter your Label Traxx username. |
+| Password | Enter your Label Traxx password. |
+
+
+Once you have entered valid Label Traxx credentials, you can use the same account any time you go to create a new Domo-Label Traxx connection. You can manage connector accounts in the **Accounts** tab in the Data Center. For more information about this tab, see [Managing User Accounts for Connectors](/s/article/360042926054 "Managing User Accounts for Connectors").
+
+
+### Details Pane
+
+
+This pane contains a primary **Reports** menu, along with various other menus which may or may not appear depending on the report type you select.
+
+
+
+
+| Menu | Description |
+| --- | --- |
+| Eloqua Fields | Select an Eloqua Object. |
+| LabelTraxx Fields | 
+
+|  |  |
+| --- | --- |
+| Required Fields | Select the required LabelTraxx and dataset fields. |
+| Optional Fields | Select the optional LabelTraxx and dataset fields. |
+
+ |
+| Enter the DataSet ID | Enter the id of your Domo dataset containing data to write to LabelTraxx. The ID is located in the dataset URL.
+Example: <https://customer.domo.com/datasources>**aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee**/details/settings |
+| Identifier FieldName | Setup the LabelTraxx object and dataset to map the fields here. |
+| Map dataset fields and LabelTraxx fields | - Select the required Field Name. It should match one of the field names as defined in the below fields Mapping. Choose a field that is likely to be unique to avoid updating the wrong record.
+- Select the dataset column for each required LabelTraxx field.
+- Match the desired LabelTraxx fields and dataset columns for optional fields. |
+
+
+### Other Panes
+
+
+For information about the remaining sections of the connector interface, including how to configure scheduling, retry, and update options, see [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+

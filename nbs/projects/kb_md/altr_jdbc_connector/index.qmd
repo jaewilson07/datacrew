@@ -1,0 +1,72 @@
+---
+title: ALTR JDBC Connector
+url: https://domo-support.domo.com/s/article/360058904893
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanLGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZanLGAS)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaojGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZaojGAC)', '[https://domo-support.domo.com/s/article/360042926274](https://domo-support.domo.com/s/article/360042926274)', '[https://domo-support.domo.com/s/article/360042926054](https://domo-support.domo.com/s/article/360042926054)', '[https://domo-support.domo.com/s/article/360058904893](https://domo-support.domo.com/s/article/360058904893)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaojGAC/database-connectors](https://domo-support.domo.com/s/topic/0TO5w000000ZaojGAC/database-connectors)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000003865
+views: 1,118
+created_date: 2022-10-24 21:16:00
+last updated: 2022-10-24 22:41:00
+---
+
+
+
+Intro
+-----
+
+
+ALTR integrates directly into the application layer to put data security services in the path between the data and the users who access data. ALTR uses a smart database driver for integration while embedding high performance services in the critical path of data and, enabling better security, business intelligence (BI), analytics, and reporting on your data. To learn more about the ALTR, visit their page <https://www.altr.com/how-altr-works>.
+
+
+You connect to your data in the Data Center. This topic discusses the fields and menus that are specific to the ALTR JDBC connector user interface. General information for adding DataSets, setting update schedules, and editing DataSet information is discussed in [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+
+
+Prerequisites
+-------------
+
+
+To connect to your ALTR database and create a DataSet, you must have your ALTR JDBC URL.
+
+
+Connecting to Your ALTR JDBC database
+-------------------------------------
+
+
+This section enumerates the options in the **Credentials** and **Details** panes in the ALTR JDBC Connector page. The components of the other panes in this page, **Scheduling** and **Name & Describe Your DataSet**, are universal across most connector types and are discussed in greater length in [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+
+
+### Credentials Pane
+
+
+This pane contains fields for entering credentials to connect to your ALTR JDBC database. The following table describes what is needed for each field:  
+
+
+
+
+| Field | Description |
+| --- | --- |
+| JDBC URL | Enter your ALTR JDBC URL. |
+
+
+Once you have entered valid ALTR JDBC credentials, you can use the same account any time you go to create a new ALTR JDBC DataSet. You can manage connector accounts in the **Accounts** tab in the Data Center. For more information about this tab, see [Managing User Accounts for Connectors](/s/article/360042926054 "Managing User Accounts for Connectors").
+
+
+### Details Pane
+
+
+In this pane you create an SQL query to pull data from your database.
+
+
+
+
+| Menu | Description |
+| --- | --- |
+| Query | Enter your database query to execute. |
+| Database Tables | Select the table containing the data you want to pull into Domo. |
+| Table Columns | Select the table columns with data you want to pull into Domo.  |
+
+
+### Other Panes
+
+
+For information about the remaining sections of the connector interface, including how to configure scheduling, retry, and update options, see [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+

@@ -1,0 +1,130 @@
+---
+title: Microsoft Azure Data Lake Writeback Connector
+url: https://domo-support.domo.com/s/article/360042932374
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanLGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZanLGAS)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS)', '[https://domo-support.domo.com/s/article/360042926274](https://domo-support.domo.com/s/article/360042926274)', '[https://domo-support.domo.com/s/article/360042926054](https://domo-support.domo.com/s/article/360042926054)', '[https://domo-support.domo.com/s/article/360042932374](https://domo-support.domo.com/s/article/360042932374)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS/writeback-connectors](https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS/writeback-connectors)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004034
+views: 2,167
+created_date: 2022-10-24 21:18:00
+last updated: 2022-10-24 22:40:00
+---
+
+
+
+Intro
+-----
+
+
+Microsoft Azure Data Lake Store is an enterprise-wide hyper-scale repository for big data analytic workloads. Use this connector to export your data from a Domo DataSet into an Azure Data Lake Store. For more information about Azure's API, see [https://docs.microsoft.com/en-us/azu...ta-lake-store/](https://docs.microsoft.com/en-us/azure/data-lake-store/ "https://docs.microsoft.com/en-us/azure/data-lake-store/"). 
+
+
+You export data to a Azure Data Lake Store in the Data Center. This topic discusses the fields and menus that are specific to the Azure Data Lake Writeback connector user interface. General information for adding DataSets, setting update schedules, and editing DataSet information is discussed in [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+
+
+
+
+
+
+
+**Note:** The owner of a writeback dataset must also be an owner or co-owner of the input dataset.
+
+
+
+
+Prerequisites
+-------------
+
+
+To configure this connector, you will need the following:
+
+
+* A Domo Client ID and Client Secret.
+* Your Microsoft Azure Data Lake Store tenant ID.
+* Your Microsoft Azure Data Lake Store client ID.
+* Your Microsoft Azure Data Lake Store client secret.
+
+
+To obtain Azure credentials, please reach out to your Microsoft account representative. 
+
+
+To create a **Client ID** and **Client secret**, do the following:
+
+
+1. Generate and add a new client secret in Partner Center to associate with that particular add-in client ID. For specific steps, see **To generate additional client secrets** in [Update the client secret associated with your client ID](https://docs.microsoft.com/en-us/azure/marketplace/create-or-update-client-ids-and-secrets#update-the-client-secret-associated-with-your-client-id) later in this article.
+2. Update your remote web application to use the new client secret. For information about how to do this using Microsoft Office Developer Tools for Visual Studio, see **Update the remote web application in Visual Studio to use the new secret** in [Replace an expiring client secret in a SharePoint Add-in](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/replace-an-expiring-client-secret-in-a-sharepoint-add-in).
+
+
+To create a new **Tenant ID** please do the following: 
+
+
+1. Sign in to your organization's [Azure portal](https://portal.azure.com/).
+2. From the Azure portal menu, select **Azure Active Directory**.
+3. On the overview page, select **Manage tenants**
+4. Select **Create**.
+
+
+![Azure Active Directory - Overview page - Create a tenant](Azure Active Directory - Overview page - Create a tenant)
+5. On the Basics tab, select the type of tenant you want to create, either **Azure Active Directory** or **Azure Active Directory (B2C)**.
+6. Select **Next: Configuration** to move on to the Configuration tab.
+7. On the Configuration tab, enter the following information:
+
+
+![Azure Active Directory - Create a tenant page - configuration tab](Azure Active Directory - Create a tenant page - configuration tab)
+
+
+	* Type *Contoso Organization* into the **Organization name** box.
+	* Type *Contosoorg* into the **Initial domain name** box.
+	* Leave the *United States* option in the **Country or region** box.
+8. Select **Next: Review + Create**. Review the information you entered and if the information is correct, select **create**.
+
+
+Your new tenant is created with the domain contoso.onmicrosoft.com.
+
+
+Configuring the Connection
+--------------------------
+
+
+This section enumerates the options in the **Credentials** and **Details** panes in the Azure Data Lake Writeback Connector page. The components of the other panes in this page, **Scheduling** and **Name & Describe Your DataSet**, are universal across most connector types and are discussed in greater length in [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+
+
+### Credentials Pane
+
+
+This pane contains fields for entering credentials to connect to your Domo developer account as well as your Azure Data Lake Store. The following table describes what is needed for each field:  
+
+
+
+
+| Field | Description |
+| --- | --- |
+| Domo Client ID | Paste your Domo client ID. For more information, see "Prerequisites," above. |
+| Domo Client Secret | Paste your Domo client secret. For more information, see "Prerequisites," above. |
+| Tenant ID | Enter your Microsoft Azure Data Lake Store tenant ID. |
+| Client ID | Enter your Microsoft Azure Data Lake Store client ID. |
+| Client Secret | Enter your Microsoft Azure Data Lake Store client secret. |
+| Account FQDN | Enter the fully-qualified domain name of your Azure Data Lake Store account. For example: [mycompany.azuredatalakestore.net](http://mycompany.azuredatalakestore.net) |
+
+
+Once you have entered valid credentials, you can use the same account any time you go to set up a new Domo-Azure Data Lake connection. You can manage connector accounts in the **Accounts** tab in the Data Center. For more information about this tab, see [Managing User Accounts for Connectors](/s/article/360042926054 "Managing User Accounts for Connectors").
+
+
+### Details Pane
+
+
+This pane contains a number of fields for specifying your data and indicating where it's going.
+
+
+
+
+| Menu | Description |
+| --- | --- |
+| Input DataSet ID | Enter the DataSet ID (GUID) for the DataSet you want to copy to your Azure Data Lake Store. You can find the ID by opening the details view for the DataSet in the Data Center and looking at the portion of the URL following datasources/. For example, in the URL <https://mycompany.domo.com/datasources/845305d8-da3d-4107-a9d6-13ef3f86d4a4/details/overview>, the DataSet ID is 845305d8-da3d-4107-a9d6-13ef3f86d4a4.  |
+| Select Filename | Select whether you want to reference your DataSet using the ****Input DataSet ID**** or an output file name.  |
+| Filename | Enter the output file name for your data.  |
+
+
+### Other Panes
+
+
+For information about the remaining sections of the connector interface, including how to configure scheduling, retry, and update options, see [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+

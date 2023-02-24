@@ -1,0 +1,78 @@
+---
+title: JSON Post Writeback Connector
+url: https://domo-support.domo.com/s/article/360042932354
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanLGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZanLGAS)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS)', '[https://domo-support.domo.com/s/article/360042926274](https://domo-support.domo.com/s/article/360042926274)', '[https://domo-support.domo.com/s/article/360042926054](https://domo-support.domo.com/s/article/360042926054)', '[https://domo-support.domo.com/s/article/360042932354](https://domo-support.domo.com/s/article/360042932354)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS/writeback-connectors](https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS/writeback-connectors)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004032
+views: 2,186
+created_date: 2022-10-24 21:18:00
+last updated: 2022-10-24 22:40:00
+---
+
+
+
+Intro
+-----
+
+
+Use this connector to export your data from a Domo DataSet to a URL that accepts HTTP posts. The post body will be a JSON array of JSON row objects. The connector will send 100 rows of data at a time.
+
+
+You export DataSet data to JSON in the Data Center. This topic discusses the fields and menus that are specific to the JSON Post Writeback connector user interface. General information for adding DataSets, setting update schedules, and editing DataSet information is discussed in [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+
+
+Prerequisites
+-------------
+
+
+To configure this connector, you will need a Domo Client ID and Client Secret. To obtain these credentials, do the following:
+
+
+1. Log into your Domo developer account at [https://developer.domo.com/login](https://developer.domo.com/login "https://developer.domo.com/login").
+2. [Create a new client](https://developer.domo.com/new-client "Domo to S3 Writeback Connector").
+3. Select the desired data and user application scope.
+4. Click **Create**.
+
+
+Configuring the Connection
+--------------------------
+
+
+This section enumerates the options in the **Credentials** and **Details** panes in the JSON Post Writeback Connector page. The components of the other panes in this page, **Scheduling** and **Name & Describe Your DataSet**, are universal across most connector types and are discussed in greater length in [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+
+
+### Credentials Pane
+
+
+This pane contains fields for entering credentials to connect to your Domo developer account. The following table describes what is needed for each field:  
+
+
+
+
+| Field | Description |
+| --- | --- |
+| Domo Client ID | Enter your Domo client ID. |
+| Domo Client Secret | Enter your Domo client secret. |
+
+
+For information about obtaining these credentials, see "Prerequisites," above. Once you have entered valid credentials, you can use the same account any time you go to set up a new Domo-JSON connection. You can manage connector accounts in the **Accounts** tab in the Data Center. For more information about this tab, see [Managing User Accounts for Connectors](/s/article/360042926054 "Managing User Accounts for Connectors").
+
+
+### Details Pane
+
+
+This pane contains a number of fields for specifying your data and indicating where it's going.
+
+
+
+
+| Menu | Description |
+| --- | --- |
+| Domo DataSet ID | Enter the DataSet ID (GUID) for the DataSet you want to copy to S3. You can find the ID by opening the details view for the DataSet in the Data Center and looking at the portion of the URL following datasources/. For example, in the URL <https://mycompany.domo.com/datasources/845305d8-da3d-4107-a9d6-13ef3f86d4a4/details/overview>, the DataSet ID is 845305d8-da3d-4107-a9d6-13ef3f86d4a4.  |
+| Post URL | Enter the URL you want to post the data from your DataSet to. |
+
+
+### Other Panes
+
+
+For information about the remaining sections of the connector interface, including how to configure scheduling, retry, and update options, see [Adding a DataSet Using a Data Connector](/s/article/360042926274 "Adding a DataSet Using a Data Connector").
+
