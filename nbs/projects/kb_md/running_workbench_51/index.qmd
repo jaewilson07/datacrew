@@ -1,0 +1,99 @@
+---
+title: Running Workbench 5.1
+url: https://domo-support.domo.com/s/article/4407022160791
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapUGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZapUGAS)', '[https://domo-support.domo.com/s/article/4407023720343](https://domo-support.domo.com/s/article/4407023720343)', '[https://domo-support.domo.com/s/article/4407032210199](https://domo-support.domo.com/s/article/4407032210199)', '[https://domo-support.domo.com/s/article/4407022160791](https://domo-support.domo.com/s/article/4407022160791)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapUGAS/workbench-51](https://domo-support.domo.com/s/topic/0TO5w000000ZapUGAS/workbench-51)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004853
+views: 2,426
+created_date: 2022-10-24 22:32:00
+last updated: 2022-10-24 22:40:00
+---
+
+
+
+Intro
+-----
+
+
+Workbench consists of a service and an application.
+
+
+The Workbench service runs as a Windows service, starting up automatically after the machine starts Windows. You can start, stop, or restart the service manually.   
+For information about running the Workbench service, see [Starting, Stopping, and Restarting the Workbench 5.1 Service](/s/article/4407023720343 "Starting, Stopping, and Restarting the Workbench 4 Service").
+
+
+The Workbench application runs as a Windows program. You can run the application from the Windows Start menu.
+
+
+Running Workbench from the Start menu
+-------------------------------------
+
+
+Follow the steps in this section to run Workbench from the Windows Start menu.
+
+
+**To run the Workbench application,**
+
+
+* Click **Start > Domo > Domo Workbench**.
+
+
+
+You can also start the Workbench application by running the executable, which is typically installed to C:\Program Files\Domo\Workbench.
+
+
+
+
+
+
+
+**Note:** Workbench must be run as an Administrator in order to work.
+
+
+
+For information about the controls and field settings in Workbench, see [Understanding the Workbench 5.1 User Interface](/s/article/4407032210199 "Understanding the Workbench 4 User Interface").
+
+
+Running Workbench from the command line
+---------------------------------------
+
+
+
+You can queue Workbench jobs from the command line using
+
+
+`wb queue-job --server <url> --jobid <id>`
+
+
+where url is the server of your Domo instance (*[mycompany.domo.com](http://mycompany.domo.com)*) and jobid is the ID of the job.
+
+
+For example:
+
+
+`"C:\Program Files\Domo\Workbench\wb.exe" queue-job --server [acme.domo.com](http://acme.domo.com) --jobid 505`
+
+
+
+
+ 
+
+
+**Notes:**
+
+
+* Workbench must be run as an Administrator in order to work.
+* You can determine the ID of a job by selecting **File > Open Job**.
+* In the server parameter, specify only the server not the http or https protocol.
+* Workbench jobs run from the command line use the job and notification settings as specified per job in **Jobs > Job Settings** and **Job > Notifications**.
+* Log entries for jobs processed at the command line are logged to a Workbench.DataCollector\_\_yyyy-mm-dd file in the job log folder.  
+Typically, log files are located in C:\ProgramData\Domo\Workbench\logs.
+* You cannot create a DataSet from the command line.  
+Use Workbench to initially upload data when creating a DataSet.
+* To successfully run a Workbench job from the command line, ensure the upload DataSet is set to replace or append to an existing DataSet.
+* In **File > Settings > Logging**, you can specify logging settings.  
+For example, you can specify using local time in logs and cleaning up log files.
+
+
+
+
+

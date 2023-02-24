@@ -8,8 +8,6 @@ created_date: 2022-10-24 21:13:00
 last updated: 2022-10-24 22:41:00
 ---
 
-
-
 Intro
 -----
 

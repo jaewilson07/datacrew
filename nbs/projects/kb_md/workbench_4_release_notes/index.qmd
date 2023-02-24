@@ -1,0 +1,59 @@
+---
+title: Workbench 4 Release Notes
+url: https://domo-support.domo.com/s/article/360047406653
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapSGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZapSGAS)', '[https://domo-support.domo.com/s/article/360047403773](https://domo-support.domo.com/s/article/360047403773)', '[https://domo-support.domo.com/s/article/360047406653](https://domo-support.domo.com/s/article/360047406653)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapSGAS/workbench-4](https://domo-support.domo.com/s/topic/0TO5w000000ZapSGAS/workbench-4)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004795
+views: 2,120
+created_date: 2022-10-24 22:30:00
+last updated: 2022-10-24 22:40:00
+---
+
+
+
+
+
+
+
+
+**Important:** Support for Workbench 4 ended on **April 15, 2021**. Workbench may continue to run on installed machines, but it will no longer receive feature enhancements and security updates. When issues are encountered in Workbench 4, the recommended course of action from the Domo Support team will be to upgrade to the latest version of Workbench 5.
+
+
+
+Workbench 4.6 (August 2017 Release)
+-----------------------------------
+
+
+### List View
+
+
+Workbench now includes a list view that allows you to search and sort DataSet jobs, see upcoming schedules, and organize jobs by status, giving better visibility into jobs to facilitate job management in an instance.
+
+
+![wb4_list_view_rn.png](wb4_list_view_rn.png)
+
+
+### Status Panel
+
+
+The new Status Panel in Workbench provides you with better insights around when jobs are being run and allows you to make changes, pause, cancel and run jobs. The Status Panel will be visible from every job details page to give real-time information about job status.
+
+
+![wb4_status_panel_rn.png](wb4_status_panel_rn.png)
+
+
+For more information about the Workbench user interface, see [Understanding the Workbench 4 User Interface](/s/article/360047403773 "Understanding the Workbench 4 User Interface").
+
+
+**Training Video - Workbench 4.6**
+
+
+Watch the following video to learn more about the updates in the Workbench 4.6 release.
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+---
+title: Encrypting, Decrypting, and Hashing Workbench 5.1 Data
+url: https://domo-support.domo.com/s/article/4407021587735
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapUGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZapUGAS)', '[https://domo-support.domo.com/s/article/360043428573](https://domo-support.domo.com/s/article/360043428573)', '[https://domo-support.domo.com/s/article/4407021587735](https://domo-support.domo.com/s/article/4407021587735)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapUGAS/workbench-51](https://domo-support.domo.com/s/topic/0TO5w000000ZapUGAS/workbench-51)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004856
+views: 2,189
+created_date: 2022-10-24 22:32:00
+last updated: 2022-10-24 22:42:00
+---
+
+
+
+Intro
+-----
+
+
+You can encrypt columns of data in your DataSet in Workbench 5.1. After the DataSet has been pulled into Domo, it can only be decrypted in a Sumo table, by users who have been given special access in the **Data Access Management** settings for the DataSet. For more information about Sumo, see Understanding Sumo cards. 
+
+
+For a white paper discussing Workbench's encryption capability, click here: [Whitepaper\_Domo+Data+Security+and+Encryption+Draft.pdf](https://domosoftware.sharepoint.com/:b:/s/CS-Edu-PublicFiles/Ec5lAMNCHyxIrujDa7ZAXFIBo5jv7_53HWgO7lQJdSsbbA?e=5SIxyA "Whitepaper_Domo+Data+Security+and+Encryption+Draft.pdf") 
+
+
+Workbench also provides a hashing transform, which condenses information into fixed-length combinations of letters, numbers, and special characters. Unlike encryption, which allows specific users to decrypt encrypted values, hashing is irreversible. Use this transform when your data source contains columns with information you do not intend users to see. 
+
+
+This article discusses encryption and hashing in turn.
+
+
+Using the Encryption Transform
+------------------------------
+
+
+**To encrypt a column of data for a DataSet in Workbench 5.1,**
+
+
+1. In Workbench, click ![wb5_jobs_icon.png](wb5_jobs_icon.png) in the left-hand icon bar.
+2. In the Jobs listing, double-click the job with columns you want to encrypt.
+3. Click **Transforms** to expand that section of the pane.
+4. In the **Add a transform** menu, select **Encrypt Data Transform**.
+5. Click the ![wb5_add_transform_icon.png](wb5_add_transform_icon.png) button.  
+The **Encrypt Data Transform Editor** appears.
+6. In the **Encrypted Columns** menu, check the boxes for all columns you want to encrypt.
+7. (Optional) Turn on **Obfuscate Values**if you want the data in the selected columns to be obfuscated.  
+Data that is obfuscated cannot be reconstituted into a readable state.
+8. For each user who should have decryption capabilities, do the following:
+
+
+	1. Locate the user in the **User Access** list.
+	2. Click the ellipsis (...) in the **Disabled** field.  
+	A **Data Password** dialog opens.
+	3. Set **Access Enabled** to "On."
+	4. Enter a password in the **Password** field and reenter it in the **Confirm** field.
+	5. Click **Save**.
+9. Click **Apply** when you are finished managing users.
+10. Click ![wb5_save_icon.png](wb5_save_icon.png) at the top of the pane to save your transform.
+
+
+The next time you run the job, the data columns you selected will be encrypted in the DataSet in Domo.
+
+
+ 
+
+
+**To decrypt a data column you encrypted in Workbench 5.1,**
+
+
+1. Open the DataSet with the encrypted information in the Sumo card editor.   
+For more information, see [Understanding Sumo cards](/s/article/360043428573 "Understanding Cards").
+2. Click the ![sumo_decrypt_icon.png](sumo_decrypt_icon.png) icon on the left side of the screen.  
+![sumo_decrypt_icon_location.png](sumo_decrypt_icon_location.png)  
+  
+This icon *only* appears if you have enabled decryption for this DataSet for your user following the instructions in the previous section.  
+A dialog appears requesting your password.
+3. Enter the password you entered in step 5-e in the previous section.
+4. Click **Unlock**.
+
+
+You must go through this decryption process every time you access the card, even if you save the decrypted card while in the **Edit** view. 
+
+
+Using the Hash Transform
+------------------------
+
+
+**To hash a column of data for a DataSet in Workbench 5.1,**
+
+
+1. In Workbench, click ![wb5_jobs_icon.png](wb5_jobs_icon.png) in the left-hand icon bar.
+2. In the Jobs listing, double-click the job with columns you want to hash.
+3. Click **Transforms** to expand that section of the pane.
+4. In the **Add a transform** menu, select **Hash Value Transform**.
+5. Click the ![wb5_add_transform_icon.png](wb5_add_transform_icon.png) button.  
+The **Hash Value Transform Editor** appears.
+6. In the **Hashed Columns** menu, check the boxes for all columns you want to hash.
+7. Choose the desired hash algorithm.
+8. Click **Apply** when you are finished here.
+9. Click ![wb5_save_icon.png](wb5_save_icon.png) at the top of the pane to save your transform.
+
+
+The next time you run the job, the data columns you selected will be converted to hash values in the DataSet in Domo.
+

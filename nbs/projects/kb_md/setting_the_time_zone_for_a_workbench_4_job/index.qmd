@@ -1,0 +1,46 @@
+---
+title: Setting the Time Zone for a Workbench 4 Job
+url: https://domo-support.domo.com/s/article/360047504673
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapSGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZapSGAS)', '[https://domo-support.domo.com/s/article/360042932854](https://domo-support.domo.com/s/article/360042932854)', '[https://domo-support.domo.com/s/article/360047504673](https://domo-support.domo.com/s/article/360047504673)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapSGAS/workbench-4](https://domo-support.domo.com/s/topic/0TO5w000000ZapSGAS/workbench-4)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004763
+views: 2,140
+created_date: 2022-10-24 22:30:00
+last updated: 2022-10-24 22:41:00
+---
+
+
+
+
+
+
+
+
+**Important:** Support for Workbench 4 ended on **April 15, 2021**. Workbench may continue to run on installed machines, but it will no longer receive feature enhancements and security updates. When issues are encountered in Workbench 4, the recommended course of action from the Domo Support team will be to upgrade to the latest version of Workbench 5. To see this article for Workbench 5, click [**here**](/s/article/360042932854).
+
+
+
+You can set the time zone for a DataSet Job in Workbench. When the job is sent to Domo, all of the date-time data is based on the time zone you selected.
+
+
+American Daylight Savings is taken into account for time zones in Workbench.
+
+
+You apply a time zone to a DataSet using the **Shift Date Timezone** Transform.
+
+
+![wb4_transform_timezone.png](wb4_transform_timezone.png)
+
+
+**To set the time zone for a DataSet job,**
+
+
+1. In the **Accounts** pane, select the DataSet job in which you want to set the time zone.
+2. In the **Transforms** grouping in the Buttons toolbar at the top of the Workbench window, click **Add New**.
+3. In the **Transform Type** menu, select **Shift Date Timezone** then click **Next**.
+4. Click **Finish**.
+
+
+A **Shift Date Timezone** item is added under **Transforms** for this DataSet job.
+5. Click on the new **Shift Date Timezone** item under **Transforms**.
+6. In the **Data Timezone** menu, select the desired time zone.
+7. Click **Save** in the**DataSet Jobs** grouping in the Buttons toolbar at the top of the Workbench window.

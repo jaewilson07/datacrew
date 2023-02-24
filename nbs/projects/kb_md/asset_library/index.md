@@ -1,0 +1,94 @@
+---
+title: Asset Library
+url: https://domo-support.domo.com/s/article/4403442101143
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZampGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZampGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoMGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoMGAS)', '[https://domo-support.domo.com/s/article/4403442101143](https://domo-support.domo.com/s/article/4403442101143)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoMGAS/using-the-appstore](https://domo-support.domo.com/s/topic/0TO5w000000ZaoMGAS/using-the-appstore)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000005016
+views: 1,187
+created_date: 2022-11-02 20:16:00
+last updated: 2022-11-02 20:37:00
+---
+
+
+
+Intro
+-----
+
+
+The Asset Library contains all of the Apps that have been created in your instance. You can manage apps that you created, apps that have been shared with you, or (if you are an Admin) all of the apps that exist in the instance.
+
+
+ 
+
+
+![Asset_Library.png](Asset_Library.png)
+
+
+Filters
+-------
+
+
+Quick Filters provide users the ability to display apps by a selected filter.  
+  
+![Asset_Library_Tabs.png](Asset_Library_Tabs.png)
+
+
+* The **My Apps** filter shows all the apps you have created.
+* The **Shared With Me** filter shows all the apps that have been shared with you
+* The **All Apps** filter shows all the apps created in that environment.   
+
+
+
+
+
+**Note:** you must have administrative access to have this filter option.
+
+
+Search
+------
+
+
+* A Search field lets users perform a search by entering characters to find specific apps.
+
+
+Sorting
+-------
+
+
+Sorting options enable users to sort apps in various sequences.  
+  
+![Asset_Library_Sort.png](Asset_Library_Sort.png)
+
+
+* **Name** sorts apps alphabetically by A to Z or Z to A.
+* **Created Date** sorts by the date the app is created either by Newest to Oldest or Oldest to Newest.
+* **Updated Date** sorts by the last date the app has been updated by Newest to Oldest or Oldest to Newest.
+
+
+View Options
+------------
+
+
+The **Select View** provides three different options to view apps in the asset library.  
+  
+![Select_View.png](Select_View.png)
+
+
+* The **List View** displays apps vertically in rows (similar to DataSets.)
+* The **Tile View** displays apps in smaller tiles, so more apps are visible on the page.
+* The **Original View** displays apps in larger tiles.
+
+
+App Details
+-----------
+
+
+* Apps displayed in the Asset Library show additional app details in the tile or row, including the version, people with access, and the number of Cards powered by the app.
+* Users can click on an app to view additional information or make administrative updates with different tabs.  
+  
+![Overview.png](Overview.png)  
+  
+
+	+ The **Overview** tab shows the Design Id along with the same information that is displayed on the app tile. However, users have options to create a new Card, share the app, or review information for each version of the app from this tab.
+	+ The **Cards** tab shows the Cards that have been created with the app and allows users to create a new Card.
+	+ The **Data** tab shows the Cards that have been created with the app and the DataSets or collections that are used for each Card.
+	+ The **Versions** tab allows you to see all of the versions of the app and allow them to be released.

@@ -1,0 +1,46 @@
+---
+title: Adding an Account in Workbench 5
+url: https://domo-support.domo.com/s/article/360042932634
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS)', '[https://domo-support.domo.com/s/article/360042932634](https://domo-support.domo.com/s/article/360042932634)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS/workbench-5](https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS/workbench-5)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004816
+views: 2,407
+created_date: 2022-10-24 22:31:00
+last updated: 2022-10-24 22:41:00
+---
+
+
+
+When you first install Workbench 5 on your machine, you connect to a Domo server as part of the installation process. This server account becomes your primary account in Workbench 5, and any DataSet jobs you create are included in this account. However, you can add accounts for other Domo servers to your Workbench if you want.
+
+
+If you have not yet added any accounts in Workbench, the following dialog appears when you open the application:
+
+
+![wb5_zero_state.png](wb5_zero_state.png) 
+
+
+As soon as you add your first account, this dialog no longer appears when you open Workbench.
+
+
+**Video - Creating a Job in Workbench 5**
+
+
+
+ 
+
+
+**To add an account in Workbench 5,**
+
+
+1. Click the ![wb5_accounts_icon.png](wb5_accounts_icon.png) icon in the left-hand icon bar.
+2. Click the "+" icon that appears above the list of accounts on the left. (If you do not see this icon, click ![wb5_hide_subtab_icon.png](wb5_hide_subtab_icon.png) to expand the account listing pane.)
+3. In the **Domo Domain** field, enter the domain for the Domo server you want to connect to.  
+If your Domo instance is *company*.[domo.com](http://domo.com), you would enter *company* in the field. Do NOT enter *https://* into the field or you will receive an error.
+4. Click **Authorize**.
+5. Enter your username and password for connecting to the Domo server, then click **Sign In**.
+6. Close the browser window when prompted.
+7. Click the ![wb5_save_icon.png](wb5_save_icon.png)icon to save your new account.
+
+
+Your new account is now active and ready for DataSet Jobs to be added. 
+

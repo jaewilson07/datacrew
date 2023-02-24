@@ -1,0 +1,63 @@
+---
+title: Multi-Cloud Support in Workbench 5.2
+url: https://domo-support.domo.com/s/article/9337403057943
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZdT7GAK](https://domo-support.domo.com/s/topic/0TO5w000000ZdT7GAK)', '[https://domo-support.domo.com/](https://domo-support.domo.com/)', '[https://domo-support.domo.com/s/article/9337403057943](https://domo-support.domo.com/s/article/9337403057943)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZdT7GAK/workbench-52](https://domo-support.domo.com/s/topic/0TO5w000000ZdT7GAK/workbench-52)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004972
+views: 2,201
+created_date: 2022-11-01 23:15:00
+last updated: 2022-11-01 23:23:00
+---
+
+
+
+Intro
+-----
+
+
+Workbench 5.2 includes a premium option for Multi-Cloud support. If you have Multi-Cloud enabled and more than one data warehouse available, a cloud warehouse selector is part of the job configuration.  
+
+
+
+Selecting a Cloud Warehouse
+---------------------------
+
+
+1. In Workbench 5.2, go to ![dataset_jobs.png](dataset_jobs.png) **DataSet Jobs**.
+
+
+2. Select ![add_job.png](add_job.png) **Add Job**. 
+
+
+3. Fill out the **Job Details** section of the **Overview**tab.
+
+
+4. Fill out the **Domo Details** section of the Overview tab. If your Multi-Cloud connection is configured properly, you should see a field titled **DataSet Cloud**.
+
+
+5. Select the **DataSet Cloud**field to view the list of possible cloud warehouses.
+
+
+![dataset_cloud.png](dataset_cloud.png)
+
+
+6. Select the cloud warehouse you want to write your Workbench job data to.
+
+
+7. Select **Create**.
+
+
+7. Finish the job configuration and select ![Screen_Shot_2022-10-12_at_6.16.01_PM.png](Screen_Shot_2022-10-12_at_6.16.01_PM.png) **Save**.
+
+
+Troubleshooting
+---------------
+
+
+If you cannot see the field for **DataSet Cloud** during job configuration, make sure you have downloaded Workbench 5.2 from the Appstore. 
+
+
+Confirm that you are connected to an instance of Domo that has Multi-Cloud enabled and that the authenticated Workbench user has the Override Default Cloud grant in the same instance.
+
+
+If you still cannot see the field, contact [Domo Support](https://domo-support.domo.com/).
+

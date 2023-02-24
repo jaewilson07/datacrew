@@ -1,0 +1,49 @@
+---
+title: Creating a Job for Uploading Data Using Workbench 5
+url: https://domo-support.domo.com/s/article/360042932674
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS)', '[https://domo-support.domo.com/s/article/360042932654](https://domo-support.domo.com/s/article/360042932654)', '[https://domo-support.domo.com/s/article/360043437253](https://domo-support.domo.com/s/article/360043437253)', '[https://domo-support.domo.com/s/article/360043437233](https://domo-support.domo.com/s/article/360043437233)', '[https://domo-support.domo.com/s/article/360043437273](https://domo-support.domo.com/s/article/360043437273)', '[https://domo-support.domo.com/s/article/360042932734](https://domo-support.domo.com/s/article/360042932734)', '[https://domo-support.domo.com/s/article/360043437213](https://domo-support.domo.com/s/article/360043437213)', '[https://domo-support.domo.com/s/article/360042932774](https://domo-support.domo.com/s/article/360042932774)', '[https://domo-support.domo.com/s/article/360042932754](https://domo-support.domo.com/s/article/360042932754)', '[https://domo-support.domo.com/s/article/360042932714](https://domo-support.domo.com/s/article/360042932714)', '[https://domo-support.domo.com/s/article/360042932674](https://domo-support.domo.com/s/article/360042932674)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS/workbench-5](https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS/workbench-5)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004827
+views: 2,265
+created_date: 2022-10-24 22:31:00
+last updated: 2022-10-24 22:41:00
+---
+
+
+
+You can upload data from external data sources to Domo after specifying connection and data information as a job, which you can save and use again.
+
+
+The process for creating a DataSet job in Workbench 5 goes as follows:
+
+
+1. In the **Jobs** pane, you add a new job by clicking the "+" icon. Here you specify basic settings for the job, including the Domo domain (server), the DataSet job name, the method of data transport (such as Local File Provider, ODBC Connection Provider, etc.), the data reader (data source) type (such as JIRA, Excel, etc.), the DataSet name and type, and an optional DataSet description. (The DataSet name is the *only* setting you can change after creating the job. If you want to change any other settings, you will need to create a new job.) This adds an entry for the DataSet Job to yourjobs listing. However, at this stage the DataSet Job is still not ready for execution.
+2. In the **Configure** subtab for the job...
+
+
+	1. You indicate the source of the data in the **Source** menu. For example, if the data source was a local file, you would select the file path here.
+	2. You specify additional settings for the data source in the **Processing** menu. These settings differ between data source types. Some, such as replacement variables for queries, are optional, while others are required.
+	3. You choose whether you want newly uploaded data to REPLACE the existing data in the DataSet or be APPENDED (added) to the existing data. You do this in the **Update method** menu.
+	4. If desired, you can configure miscellaneous options for the job, such as transforms, notifications, excluded columns, etc.
+
+
+For information about the controls and field settings in Workbench, see [Understanding the Workbench 5 User Interface.](/s/article/360042932654)
+
+
+**Video - Creating a Job in Workbench 5**
+
+
+
+ 
+
+
+For specific information about all of the connector types available in Workbench 5, visit the following links:
+
+
+* [Connecting to Excel Data in Workbench 5](/s/article/360043437253 "Connecting to Excel Data in Workbench 4")
+* [Connecting to CSV Data in Workbench 5](/s/article/360043437233 "Connecting to CSV Data in Workbench 4")
+* [Connecting to JIRA Data in Workbench 5](/s/article/360043437273 "Connecting to JIRA Data in Workbench 4")
+* [Connecting to ODBC Data in Workbench 5](/s/article/360042932734 "Connecting to ODBC Data in Workbench 4")
+* [Connecting to an OLAP Cube in Workbench 5](/s/article/360043437213 "Connecting to an OLAP Cube in Workbench 4")
+* [Connecting to XML Data in Workbench 5](/s/article/360042932774 "Connecting to XML Data in Workbench 4")
+* [Connecting to QuickBooks Data in Workbench 5](/s/article/360042932754 "Connecting to QuickBooks Data in Workbench 4")
+* [Connecting to JSON Data in Workbench 5](/s/article/360042932714 "Connecting to JSON Data in Workbench 4")

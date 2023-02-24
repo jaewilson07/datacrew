@@ -1,0 +1,28 @@
+---
+title: Configuring the CData Driver for SAP in Workbench 5
+url: https://domo-support.domo.com/s/article/360045186294
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS)', '[https://domo-support.domo.com/s/article/360045186294](https://domo-support.domo.com/s/article/360045186294)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS/workbench-5](https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS/workbench-5)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004803
+views: 2,152
+created_date: 2022-10-24 22:31:00
+last updated: 2022-10-24 22:41:00
+---
+
+
+
+Intro
+-----
+
+
+The CData driver does not include all the required files to connect to SAP. In order to get these files, you will need to download and install the SAPGUI Frontend for Windows application from SAP. This can be downloaded from: [https://support.sap.com/en/my-support/software-downloads.html](https://support.sap.com/en/my-support/software-downloads.html "https://support.sap.com/en/my-support/software-downloads.html") and follow these steps:  
+ 
+
+
+**Types of Software > Installation and Upgrades > Access downloads > By Category > SAP Frontend Components > SAP GUI FOR WINDOWS > Select the latest version**
+
+
+You can test if this worked by opening **Start > Run** **> Type odbcad32 > Press Enter > Find (or create) the DSN, Click Configure > Click the Test Connection button**.
+
+
+![CData.png](CData.png)
+

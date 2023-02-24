@@ -1,0 +1,96 @@
+---
+title: Connecting to JIRA Data in Workbench 5
+url: https://domo-support.domo.com/s/article/360043437273
+linked_kbs:  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS)', '[https://domo-support.domo.com/s/article/360043212294](https://domo-support.domo.com/s/article/360043212294)', '[https://domo-support.domo.com/s/article/360043437333](https://domo-support.domo.com/s/article/360043437333)', '[https://domo-support.domo.com/s/article/360043437413](https://domo-support.domo.com/s/article/360043437413)', '[https://domo-support.domo.com/s/article/360042932794](https://domo-support.domo.com/s/article/360042932794)', '[https://domo-support.domo.com/s/article/360043437473](https://domo-support.domo.com/s/article/360043437473)', '[https://domo-support.domo.com/s/article/360043437433](https://domo-support.domo.com/s/article/360043437433)', '[https://domo-support.domo.com/s/article/360043437193](https://domo-support.domo.com/s/article/360043437193)', '[https://domo-support.domo.com/s/article/360042932814](https://domo-support.domo.com/s/article/360042932814)', '[https://domo-support.domo.com/s/article/360043437173](https://domo-support.domo.com/s/article/360043437173)', '[https://domo-support.domo.com/s/article/360043437273](https://domo-support.domo.com/s/article/360043437273)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS/workbench-5](https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS/workbench-5)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id: 000004824
+views: 2,158
+created_date: 2022-10-24 22:31:00
+last updated: 2022-10-24 22:41:00
+---
+
+
+
+You can create a JIRA DataSet Job in Workbench 5. When you select JIRA as your DataSet type, you can enter your JIRA credentials and a JQL query to pull JIRA data into Workbench.
+
+
+**To create a JIRA DataSet Job in Workbench 5,**
+
+
+1. Click the ![wb5_jobs_icon.png](wb5_jobs_icon.png) icon in the left-hand icon bar.
+2. Click the "+" button in the top right corner of the jobs listing pane.
+3. Select the desired account (Domo instance) in the **Domo Domain** dropdown menu.  
+ If you have only one account set up, that account is already chosen for you and the menu is unavailable.
+4. In the **Name** field, enter a name for the DataSet Job.  
+ This is the name of the job as it appears in Workbench, *not* the name of the uploaded DataSet in Domo.
+5. In the **Transport Type** menu, select **JIRA Connection Provider**.
+6. In the **Reader Type**menu, select **JIRA**.
+7. In the **DataSet Name** field, enter the name of the DataSet. This is the name of the uploaded DataSet in Domo.  
+ This is the *only* setting you can change after saving the new job.
+8. In the **DataSet Type** field, select the type of DataSet in the dropdown.  
+ The DataSet type you select or enter here is reflected as the connector type in Domo after you execute the job.
+9. Enter a description for the DataSet if desired.  
+ This is the description of the DataSet as it appears in Domo.
+10. Click **Create**.  
+   
+ A new JIRA DataSet Job is added to the list of jobs for the currently authenticated account. Note that after creating the job, you cannot edit any of the settings you just configured except for the DataSet name. If you want to change any of the other settings, you must create a new job.
+11. Click the **Configure** subtab.
+12. Click the **Edit** button under "Source."  
+   
+ A panel opens with fields for connecting to JIRA.
+13. In the appropriate fields, enter the username and password you use to connect to your company JIRA instance.
+
+
+
+
+ 
+
+
+**Note:**If you try to execute a JIRA job with incorrect credentials, the JIRA account locks. You cannot fix this just by entering correct credentials—you must manually log into JIRA and pass a CAPTCHA validation.
+14. In the **Server URL** field, enter the URL where your company JIRA server is located.
+15. In the **JIRA Query** field, enter the query for the JIRA data you want to pull into your DataSet.
+
+
+
+
+ 
+
+
+**Tip:**You can create a JQL query in Jira, then copy and paste it in Workbench.
+
+
+
+**Example JQL query**  
+   
+ `project not in (ARCHIVE, CPD, DC, DCV, DP, QA, ODD) AND issuetype in (Epic) AND fixVersion in (2015-02-17) ORDER BY status DESC, resolved DESC, issuetype DESC, key ASC`
+
+
+
+
+ 
+
+
+**Important:**If your JIRA query is set up without specific ordering, an error may be caused during the upload to Domo. In most cases you can get around this problem by ordering your results by created ASC in your query.
+
+
+For example:  
+   
+ `Reporter is not null order by created ASC`
+16. Click **Apply**.
+17. Click the **Edit** button under "Processing."
+18. (Optional) Add additional attributes to the list by entering them in the **Add included attribute** field.
+19. (Optional) Remove attributes from the list by clearing their checkboxes then clicking **Yes** to confirm.
+20. Click **Apply**.
+
+
+You are now ready to execute the DataSet Job, thereby creating a JIRA DataSet in Domo. However, there are many other actions you can take on the DataSet Job before you send it to Domo. These include the following:
+
+
+* [Scheduling a Job in Workbench 5](/s/article/360043212294 "Scheduling a Job in Workbench 4")
+* [Configuring notifications to be sent when the job update succeeds or fails](/s/article/360043437333 "Setting Notifications in Workbench 4")
+* [Encrypting and decrypting Workbench data](/s/article/360043437413 "Encrypting and Decrypting Workbench 4 Data")
+* [Creating new columns using calculations](/s/article/360042932794 "Creating Columns in Workbench 4 Using Calculations")
+* [Setting a custom date format on a column](/s/article/360043437473 "Setting a Custom Date Format on a Column in Workbench 4")
+* [Replacing a value in a column](/s/article/360043437433 "Replacing a Column Value in Workbench 4")
+* [Combining DataSets](/s/article/360043437193 "Combining DataSets in Workbench 4")
+* [Applying filters to columns](/s/article/360042932814 "Filtering Columns in Workbench 4")
+* [Setting impersonation](/s/article/360043437173) (which causes Workbench to run the job as an Active Directory user).
