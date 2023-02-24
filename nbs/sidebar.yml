@@ -2,6 +2,7 @@ website:
   sidebar:
     contents:
       - index.ipynb
+      - dedent.ipynb
       - section: crawler
         contents:
           - crawler/crawler.ipynb
