@@ -1,0 +1,9 @@
+project:
+  type: website
+  output-dir: _docs
+
+website:
+  title: "datacrew"
+  site-url: "https://datacrew.circle.so"
+  description: "Create delightful software with Jupyter Notebooks"
+  repo-url: "https://github.com/jaewilson07/datacrew"

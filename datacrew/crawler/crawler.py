@@ -44,7 +44,7 @@ def wait_and_return(
             EC.presence_of_element_located((el_type, element_id)))
 
         if return_soup:
-            return BeautifulSoup(res.get_attribute("innerHTML"))
+            return BeautifulSoup(res.get_attribute("innerHTML"), "lxml")
         return res
 
     except Exception as e:
@@ -99,11 +99,12 @@ def pagesource(url,
                 (element_type, element_id))
         )
         print(f"Page {url} is loaded within 10 seconds.")
+    
     except Exception as e:
         print(e)
         print(f"Timeout Exception: Page {url} did not load within 10 seconds.")
 
-    soup = BeautifulSoup(driver.page_source)
+    soup = BeautifulSoup(driver.page_source, "lxml")
 
     if is_driver_close:
         driver.close()
