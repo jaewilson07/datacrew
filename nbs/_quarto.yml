@@ -14,6 +14,17 @@ website:
   navbar:
     background: primary
     search: true
+
+    left:
+      - text: "Knowledge Base"
+        href: kb_md/index.qmd
+    right:
+      - icon: github
+        href: "https://github.com/jaewilson07/domo_library"
+      - icon: twitter
+        href: https://twitter.com/onyxreporting
+        aria-label: OnyxReporting Twitter
+
   sidebar:
     style: floating
 
