@@ -5,10 +5,12 @@ website:
       - section: crawler
         contents:
           - crawler/crawler.ipynb
-      - section: kb_md
-        contents:
-          - kb_md/index.qmd
       - section: postdown
         contents:
           - postdown/MDDoc.ipynb
           - postdown/parser.ipynb
+      - section: projects
+        contents:
+          - section: kb_md
+            contents:
+              - projects/kb_md/index.qmd

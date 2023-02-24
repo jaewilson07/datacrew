@@ -17,7 +17,7 @@ website:
 
     left:
       - text: "Knowledge Base"
-        href: kb_md/index.qmd
+        href: projects/kb_md/index.qmd
     right:
       - icon: github
         href: "https://github.com/jaewilson07/domo_library"
