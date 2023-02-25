@@ -2,5 +2,6 @@ fastcore
 python-dotenv
 selenium
 bs4
+markdownify
 
 [dev]

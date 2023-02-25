@@ -13,6 +13,7 @@ datacrew.egg-info/not-zip-safe
 datacrew.egg-info/requires.txt
 datacrew.egg-info/top_level.txt
 datacrew/crawler/__init__.py
+datacrew/crawler/article.py
 datacrew/crawler/crawler.py
 datacrew/postdown/MDDoc.py
 datacrew/postdown/__init__.py
