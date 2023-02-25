@@ -2,6 +2,7 @@ fastcore
 python-dotenv
 selenium
 bs4
-markdownify
+python-frontmatter
+lxml
 
 [dev]
