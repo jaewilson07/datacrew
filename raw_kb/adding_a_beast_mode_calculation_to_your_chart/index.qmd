@@ -1,0 +1,271 @@
+---
+title : Adding a Beast Mode Calculation to Your Chart
+url : https://domo-support.domo.com/s/article/360043429913
+linked_kbs :  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanAGAS](https://domo-support.domo.com/s/topic/0TO5w000000ZanAGAS)', '[https://domo-support.domo.com/s/article/360042924034](https://domo-support.domo.com/s/article/360042924034)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360042924094](https://domo-support.domo.com/s/article/360042924094)', '[https://domo-support.domo.com/s/article/360043429993](https://domo-support.domo.com/s/article/360043429993)', '[https://domo-support.domo.com/s/article/360043428753](https://domo-support.domo.com/s/article/360043428753)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanAGAS/beast-mode](https://domo-support.domo.com/s/topic/0TO5w000000ZanAGAS/beast-mode)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id : 000004076
+html : {'Title': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="16:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="17:337;a"><span class="uiOutputText" data-aura-class="uiOutputText" data-aura-rendered-by="9:337;a">Adding a Beast Mode Calculation to Your Chart</span></span><!--render facet: 19:337;a--><!--render facet: 20:337;a--></div>, 'Article Body': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="40:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="41:337;a"><div class="slds-rich-text-editor__output uiOutputRichText forceOutputRichText" data-aura-class="uiOutputRichText forceOutputRichText" data-aura-rendered-by="32:337;a" dir="ltr"><h2 data-aura-rendered-by="33:337;a">Intro<span class="rangySelectionBoundary" id="selectionBoundary_1463205775353_5184752617496997" style="display: none;"></span>
+</h2>
+<p data-aura-rendered-by="33:337;a">You can use Beast Mode to add a calculation for use in transforming columns in your chart. </p>
+<p data-aura-rendered-by="33:337;a"><span class="mt-font-size-22"><strong>Video - Intro to Beast Mode</strong></span></p>
+<div class="mt-video-widget" data-aura-rendered-by="33:337;a"><iframe allowfullscreen="" frameborder="0" height="315" scrolling="auto" src="//www.youtube-nocookie.com/embed/SpVbmZPMAsM" width="560"></iframe></div>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><span class="mt-font-size-22"><strong>Video - Creating a Calculated Field</strong></span></p>
+<div class="mt-video-widget" data-aura-rendered-by="33:337;a"><iframe allowfullscreen="" frameborder="0" height="315" scrolling="auto" src="//www.youtube-nocookie.com/embed/h6SQR_H9OsY" width="560"></iframe></div>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><span class="mt-font-size-22"><strong>Video - Case Statement Overview</strong></span></p>
+<div class="mt-video-widget" data-aura-rendered-by="33:337;a"><iframe allowfullscreen="" frameborder="0" height="315" scrolling="auto" src="//www.youtube-nocookie.com/embed/xFofhklohSc" width="560"></iframe></div>
+<p data-aura-rendered-by="33:337;a"> </p>
+<h2 data-aura-rendered-by="33:337;a">Parts of the Beast Mode dialog</h2>
+<p data-aura-rendered-by="33:337;a">The following screenshot shows how the Beast Mode dialog looks:</p>
+<p data-aura-rendered-by="33:337;a"><img alt="Beast_Mode_Dialog.jpg" src="/servlet/rtaImage?eid=ka05w000001248e&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vOEH"/></p>
+<p data-aura-rendered-by="33:337;a">You can learn about the user interface components of the Beast Mode dialog in the following table:</p>
+<table border="1" cellpadding="2" cellspacing="2" data-aura-rendered-by="33:337;a" style="width: 100%;"><thead><tr><th colspan="1" rowspan="1"><p>Name</p></th><th colspan="1" rowspan="1"><p>Description</p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1"><p>Calculated Field Name</p></td><td colspan="1" rowspan="1"><p>Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid."</p></td></tr><tr><td colspan="1" rowspan="1"><p>Formula</p></td><td colspan="1" rowspan="1"><p>Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the <strong>DataSet Fields</strong> and <strong>Functions</strong> lists. You can validate your calculation by clicking <strong>Validate Formula</strong> (which appears after you edit the calculation in the <strong>Formula</strong> field) or by clicking <strong>Save &amp; Close</strong>. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears.</p></td></tr><tr><td colspan="1" rowspan="1"><p>DataSet Fields</p></td><td colspan="1" rowspan="1"><p>Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter <code>=</code> (equal sign) as the first character, only Beast Mode calculations display.</p></td></tr><tr><td colspan="1" rowspan="1"><p>Functions</p></td><td colspan="1" rowspan="1"><p>Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type.</p></td></tr><tr><td colspan="1" rowspan="1"><p>Function Description</p></td><td colspan="1" rowspan="1"><p>Displays the description of the selected function.</p></td></tr><tr><td colspan="1" rowspan="1"><p>Share Calculation on DataSet</p></td><td colspan="1" rowspan="1"><p>Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet.</p></td></tr><tr><td colspan="1" rowspan="1"><p>Save &amp; Close</p></td><td colspan="1" rowspan="1"><p>Lets you validate and save the selected calculation, and close the dialog.The calculation <em>must</em> be valid before you can use it to power up charts.</p></td></tr></tbody></table>
+<h2 data-aura-rendered-by="33:337;a">Adding a Beast Mode calculation</h2>
+<p data-aura-rendered-by="33:337;a">Use the information in this section to add calculations for transforming data using Beast Mode. </p>
+<p data-aura-rendered-by="33:337;a"><strong>To add a Beast Mode calculation,</strong></p>
+<ol data-aura-rendered-by="33:337;a"><li><p>On the KPI card where you want to add a calculation, click <img alt="" class="internal default" height="24px" src="/servlet/rtaImage?eid=ka05w000001248e&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vOEE" style="width: 26px;height: 24px;" width="26px"/>, then select <strong>Edit Card</strong>.</p></li><li><p>In Analyzer, click <strong>Add Calculated Field</strong>.<br/>For more information about Analyzer, see <a href="/s/article/360042924034" target="_self" title="Card Builder Layout">Analyzer Layout</a>.</p>
+<p>The Beast Mode dialog appears.</p></li><li><p>In <strong>Calculated Field Name</strong>, enter the title of the calculation.</p>
+<div class="info-box note">
+<div class="info-box-wrapper">
+<div class="info-box-icon-container"><span class="info-box-icon"> </span></div>
+<div class="info-box-content-container">
+<div class="info-box-content">
+<strong>Note: </strong>The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)<br/><img alt="Beast_Mode_Modal.png" src="/servlet/rtaImage?eid=ka05w000001248e&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vOED"/>
+</div>
+</div>
+</div>
+</div>
+<div class="info-box important">
+<div class="info-box-wrapper">
+<div class="info-box-icon-container"><span class="info-box-icon"></span></div>
+<div class="info-box-content-container">
+<div class="info-box-content">
+<strong>Important:</strong> It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.</div>
+</div>
+</div>
+</div></li><li><p>In <strong>Formula</strong>, enter the calculation you want.<br/>You can add column names and functions to your calculation by double-clicking items in the <strong>DataSet Fields</strong> and <strong>Functions</strong> lists.<br/>For more information about functions, see <a href="/s/article/360043429933" target="_self">Beast Mode Functions Reference Guide</a>.</p></li><li><p>(Optional) Mark the option to share the calculation with any cards using the DataSet.</p></li><li><p>Click <strong>Save &amp; Close</strong> to validate the syntax of the calculation and save your changes.<br/>If there are errors, revise your calculation. <br/>After saving, the calculation column appears in the Categories list for the card in Analyzer.</p></li></ol>
+<p data-aura-rendered-by="33:337;a"><strong>To edit a Beast Mode calculation,</strong></p>
+<ol data-aura-rendered-by="33:337;a"><li><p>On the KPI card where you want to edit a calculation, click <img alt="" class="internal default" height="24px" src="/servlet/rtaImage?eid=ka05w000001248e&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vOEE" style="width: 26px;height: 24px;" width="26px"/>, then select <strong>Edit Card</strong>.<br/>For more information about Analyzer, see <a href="/s/article/360042924034" target="_self" title="Card Builder Layout">Analyzer Layout</a>.</p></li><li><p>In Analyzer, in the <strong>Categories</strong> list, click the calculation column you want to edit.</p></li><li><p>Make any changes you want, then click <strong>Save &amp; Close</strong>.</p></li></ol>
+<p data-aura-rendered-by="33:337;a"><strong>To delete a Beast Mode calculation,</strong></p>
+<ol data-aura-rendered-by="33:337;a"><li><p>On the KPI card where you want to edit a calculation, click <img alt="" class="internal default" height="24px" src="/servlet/rtaImage?eid=ka05w000001248e&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vOEE" style="width: 26px;height: 24px;" width="26px"/>, then select <strong>Edit Card</strong>.<br/>For more information about Analyzer, see <a href="/s/article/360042924034" target="_self" title="Card Builder Layout">Analyzer Layout</a>.</p></li><li><p>In Analyzer, in the <strong>Categories</strong> list, mouse over the calculation column you want to remove, then click <strong>X</strong>.</p></li><li><p>Click <strong>Remove</strong> to confirm deleting the calculation.</p></li></ol>
+<h2 data-aura-rendered-by="33:337;a">Calculation usage notes</h2>
+<ul data-aura-rendered-by="33:337;a"><li><p>Most calculations use one of the following general formats: </p><table border="1" cellpadding="1" cellspacing="1" style="width: 100%;"><thead><tr><th colspan="1" rowspan="1"><p>Format</p></th><th colspan="1" rowspan="1"><p>Description</p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1"><p><code>FUNCTIONNAME(`Column Name`)</code></p></td><td colspan="1" rowspan="1"><p>Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include <code>AVG</code>, <code>MONTHNAME</code>, and <code>CEILING</code>.</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>FUNCTIONNAME(`Column Name1`,`Column Name2`,...)</code></p></td><td colspan="1" rowspan="1"><p>Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is <code>CONCAT</code>, which combines strings from different columns.</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>FUNCTIONNAME(`Column Name`,<em>somevalue</em>)</code></p></td><td colspan="1" rowspan="1"><p>Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is <code>POWER</code>. When using this calculation, you specify the power you want all the cells in a column to be raised to.</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>FUNCTIONNAME(`Column Name`, '<em>string</em>')</code></p></td><td colspan="1" rowspan="1"><p>Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is <code>DATE_FORMAT</code>. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see <a href="/s/article/360043429953" target="_self" title="Date Format Specifier Characters in Beast Mode">Date Format Specifier Characters in Beast Mode</a>.</p></td></tr></tbody></table></li></ul>
+<ul data-aura-rendered-by="33:337;a"><li><p>In calculations, Beast Mode function names are <em>not</em> case sensitive.</p></li><li><p>In calculations, column names are case sensitive and are separated by commas. Do <em>not</em> use Beast Mode function names as column names; Beast Mode function names are reserved.</p></li><li><p>Use backticks (aka <em>backquotes</em>) (`) or double quotes (") for column names: <span class="mt-font-courier-new">`Customers`</span> or <span class="mt-font-courier-new">"Customers"</span><br/>Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as <span class="mt-font-courier-new">DATE</span>), then use backticks or double quotes (") to wrap the column name.</p></li><li><p>Use single quotes (') for strings: <span class="mt-font-courier-new">'mystring'</span></p></li><li><p>You can escape a quote using two single quotes: <span class="mt-font-courier-new">'O''Neal'</span></p></li><li><p>You can insert a space in a calculation using single quotes: <code>' '</code><br/>This is useful with functions like <span class="mt-font-courier-new">CONCAT </span>when you need to combine strings.</p></li><li><p>You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), * (multiplication), / (division), and so on.</p></li><li><p>You cannot refer to a specific calculation by name in another calculation.<br/>For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.</p></li><li><p>Calculations can be completed automatically as you enter them.</p><ul><li><p>As you enter functions, a list of functions appears, which you can select from.</p></li><li><p>If you enter a backtick ('), a list of column names appears, which you can select from.</p></li></ul></li><li><p>When you check the box for <strong>Share Calculation on DataSet</strong> for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.</p></li><li><p>If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the <a href="#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc" target="_self" title="Adding a Beast Mode Calculation to Your Chart">next</a> section.</p></li><li><p>While you can combine some functions in a calculation, you <em>cannot</em> stack numerical functions. For example, <span class="mt-font-courier-new">SUM(MIN())</span> is invalid.</p></li><li><p>Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see <a href="/s/article/360042924094" target="_blank" title="Adding Drill Path to Your Chart">Adding Drill Path to Your Chart</a>.</p></li><li><p>You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.</p></li><li><p>Do <em>not</em> mix data types of values you put in a transformed column.<br/>For example, in a <span class="mt-font-courier-new">CASE</span> function, do not store "Yes" (string) and "0" (number) in the same column.</p></li><li><p>You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.</p></li><li><p>As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.</p></li><li><p>You can drag and drop a column name from the DataSet Fields list to your calculation.</p></li><li><p>Any Beast Mode calculations that use processing intensive functions such as <span class="mt-font-courier-new">COUNT (DISTINCT)</span> or <span class="mt-font-courier-new">SUM (DISTINCT)</span> will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.</p></li></ul>
+<p data-aura-rendered-by="33:337;a">For Beast Mode syntax examples, see <a href="/s/article/360043429993" target="_self">Sample Beast Mode Calculations</a>.</p>
+<h2 data-aura-rendered-by="33:337;a" id="h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc">Applying a calculation to a summary number</h2>
+<p data-aura-rendered-by="33:337;a">If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:</p>
+<ul data-aura-rendered-by="33:337;a"><li><p><span class="mt-font-courier-new">AVG</span></p></li><li><p><span class="mt-font-courier-new">COUNT</span></p></li><li><p><span class="mt-font-courier-new">COUNT (DISTINCT)</span></p></li><li><p><span class="mt-font-courier-new">MAX</span></p></li><li><p><span class="mt-font-courier-new">MIN</span></p></li><li><p><span class="mt-font-courier-new">SUM</span></p></li><li><p><span class="mt-font-courier-new">SUM (DISTINCT)</span></p></li><li><p><span class="mt-font-courier-new">STDDEV_POP, VAR_POP</span></p></li></ul>
+<p data-aura-rendered-by="33:337;a">When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.</p>
+<div class="info-box note" data-aura-rendered-by="33:337;a">
+<div class="info-box-wrapper">
+<div class="info-box-icon-container"><span class="info-box-icon"> </span></div>
+<div class="info-box-content-container">
+<div class="info-box-content">
+<strong>Note: </strong>For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the <span class="mt-font-courier-new">SUM()</span> function) or be the result of an operation on values within functions (for example, <span class="mt-font-courier-new">SUM()</span> functions). For instance,  <span class="mt-font-courier-new">'Customers'</span> does <em>not</em> work for a Summary Number, but <span class="mt-font-courier-new">SUM('Customers')</span> may be used as a Summary Number. </div>
+</div>
+</div>
+</div>
+<p data-aura-rendered-by="33:337;a">For more information about summary numbers, see <a href="/s/article/360043428753" target="_blank" title="Configuring Your Chart Summary Number">Configuring Your Chart Summary Number</a>. </p></div></span><!--render facet: 43:337;a--><!--render facet: 44:337;a--></div>, 'Preview Article': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="74:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="75:337;a"><span class="lvm-grid-no-fade-out undefined forceOutputFormulaHtml" data-aura-class="forceOutputFormulaHtml" data-aura-rendered-by="66:337;a"><a data-aura-rendered-by="67:337;a" href="https://domo-support.domo.com/s/article/360043429913" target="_blank">Click here to preview</a></span></span><!--render facet: 77:337;a--><!--render facet: 78:337;a--></div>, 'URL Name': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="95:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="96:337;a"><span class="uiOutputText" data-aura-class="uiOutputText" data-aura-rendered-by="88:337;a">360043429913</span></span><!--render facet: 98:337;a--><!--render facet: 99:337;a--></div>, 'Summary': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="118:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="119:337;a"><span class="uiOutputTextArea" data-aura-class="uiOutputTextArea" data-aura-rendered-by="109:337;a"><!--render facet: 111:337;a--></span></span><!--render facet: 121:337;a--><!--render facet: 122:337;a--></div>, 'Article Number': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="150:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="151:337;a"><span class="uiOutputText" data-aura-class="uiOutputText" data-aura-rendered-by="143:337;a">000004076</span></span><!--render facet: 153:337;a--><!--render facet: 154:337;a--></div>, 'Archived Date': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="167:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="168:337;a"><span class="uiOutputDateTime" data-aura-class="uiOutputDateTime" data-aura-rendered-by="160:337;a"></span></span><!--render facet: 170:337;a--><!--render facet: 171:337;a--></div>, 'Language': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="189:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="190:337;a"><span data-aura-rendered-by="181:337;a">English</span></span><!--render facet: 192:337;a--><!--render facet: 193:337;a--></div>, 'Primary Version': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="222:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="223:337;a"><!--render facet: 199:337;a--><!--render facet: 201:337;a--><!--render facet: 203:337;a--><a class="outputLookupLink slds-truncate outputLookupLink-ka05w000001248eAAA-197:337;a forceOutputLookup" data-aura-class="forceOutputLookup" data-aura-rendered-by="208:337;a" data-navigable="true" data-ownerid="197:337;a" data-recordid="ka05w000001248eAAA" data-refid="recordId" data-special-link="true" href="/s/article/360043429913" rel="noreferrer" target="_blank" title="Adding a Beast Mode Calculation to Your Chart">Adding a Beast Mode Calculation to Your Chart<!--render facet: 211:337;a--></a></span><!--render facet: 225:337;a--><!--render facet: 226:337;a--></div>, 'Article Total View Count': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="243:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="244:337;a"><span class="uiOutputNumber" data-aura-class="uiOutputNumber" data-aura-rendered-by="236:337;a" dir="auto">6,850</span></span><!--render facet: 246:337;a--><!--render facet: 247:337;a--></div>, 'Article Created Date': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="278:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="279:337;a"><span class="uiOutputDateTime" data-aura-class="uiOutputDateTime" data-aura-rendered-by="271:337;a">10/24/2022, 9:20 PM</span></span><!--render facet: 281:337;a--><!--render facet: 282:337;a--></div>, 'First Published Date': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="313:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="314:337;a"><span class="uiOutputDateTime" data-aura-class="uiOutputDateTime" data-aura-rendered-by="306:337;a">10/24/2022, 10:40 PM</span></span><!--render facet: 316:337;a--><!--render facet: 317:337;a--></div>}
+views : 6,850
+created_date : 2022-10-24 21:20:00
+last updated : 2022-10-24 22:40:00
+---
+
+
+
+Intro
+-----
+
+
+You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
+
+
+**Video - Intro to Beast Mode**
+
+
+
+ 
+
+
+**Video - Creating a Calculated Field**
+
+
+
+ 
+
+
+**Video - Case Statement Overview**
+
+
+
+ 
+
+
+Parts of the Beast Mode dialog
+------------------------------
+
+
+The following screenshot shows how the Beast Mode dialog looks:
+
+
+![Beast_Mode_Dialog.jpg](/servlet/rtaImage?eid=ka05w000001248e&feoid=00N5w00000Ri7BU&refid=0EM5w000005vOEH)
+
+
+You can learn about the user interface components of the Beast Mode dialog in the following table:
+
+
+
+
+| Name | Description |
+| --- | --- |
+| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
+| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
+| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
+| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
+| Function Description | Displays the description of the selected function. |
+| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
+| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
+
+
+Adding a Beast Mode calculation
+-------------------------------
+
+
+Use the information in this section to add calculations for transforming data using Beast Mode. 
+
+
+**To add a Beast Mode calculation,**
+
+
+1. On the KPI card where you want to add a calculation, click ![](/servlet/rtaImage?eid=ka05w000001248e&feoid=00N5w00000Ri7BU&refid=0EM5w000005vOEE), then select **Edit Card**.
+2. In Analyzer, click **Add Calculated Field**.  
+For more information about Analyzer, see [Analyzer Layout](/s/article/360042924034 "Card Builder Layout").
+
+
+The Beast Mode dialog appears.
+3. In **Calculated Field Name**, enter the title of the calculation.
+
+
+
+
+ 
+
+
+**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
+![Beast_Mode_Modal.png](/servlet/rtaImage?eid=ka05w000001248e&feoid=00N5w00000Ri7BU&refid=0EM5w000005vOED)
+
+
+
+
+
+
+
+
+
+**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
+4. In **Formula**, enter the calculation you want.  
+You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
+For more information about functions, see [Beast Mode Functions Reference Guide](/s/article/360043429933).
+5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
+6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
+If there are errors, revise your calculation.   
+After saving, the calculation column appears in the Categories list for the card in Analyzer.
+
+
+**To edit a Beast Mode calculation,**
+
+
+1. On the KPI card where you want to edit a calculation, click ![](/servlet/rtaImage?eid=ka05w000001248e&feoid=00N5w00000Ri7BU&refid=0EM5w000005vOEE), then select **Edit Card**.  
+For more information about Analyzer, see [Analyzer Layout](/s/article/360042924034 "Card Builder Layout").
+2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
+3. Make any changes you want, then click **Save & Close**.
+
+
+**To delete a Beast Mode calculation,**
+
+
+1. On the KPI card where you want to edit a calculation, click ![](/servlet/rtaImage?eid=ka05w000001248e&feoid=00N5w00000Ri7BU&refid=0EM5w000005vOEE), then select **Edit Card**.  
+For more information about Analyzer, see [Analyzer Layout](/s/article/360042924034 "Card Builder Layout").
+2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
+3. Click **Remove** to confirm deleting the calculation.
+
+
+Calculation usage notes
+-----------------------
+
+
+* Most calculations use one of the following general formats: 
+
+
+
+| Format | Description |
+| --- | --- |
+| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
+| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
+| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
+| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](/s/article/360043429953 "Date Format Specifier Characters in Beast Mode"). |
+
+
+* In calculations, Beast Mode function names are *not* case sensitive.
+* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
+* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
+Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
+* Use single quotes (') for strings: 'mystring'
+* You can escape a quote using two single quotes: 'O''Neal'
+* You can insert a space in a calculation using single quotes: `' '`  
+This is useful with functions like CONCAT when you need to combine strings.
+* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
+* You cannot refer to a specific calculation by name in another calculation.  
+For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
+* Calculations can be completed automatically as you enter them.
+
+
+	+ As you enter functions, a list of functions appears, which you can select from.
+	+ If you enter a backtick ('), a list of column names appears, which you can select from.
+* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
+* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
+* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
+* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](/s/article/360042924094 "Adding Drill Path to Your Chart").
+* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
+* Do *not* mix data types of values you put in a transformed column.  
+For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
+* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
+* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
+* You can drag and drop a column name from the DataSet Fields list to your calculation.
+* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
+
+
+For Beast Mode syntax examples, see [Sample Beast Mode Calculations](/s/article/360043429993).
+
+
+Applying a calculation to a summary number
+------------------------------------------
+
+
+If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
+
+
+* AVG
+* COUNT
+* COUNT (DISTINCT)
+* MAX
+* MIN
+* SUM
+* SUM (DISTINCT)
+* STDDEV\_POP, VAR\_POP
+
+
+When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
+
+
+
+
+ 
+
+
+**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number. 
+
+
+
+For more information about summary numbers, see [Configuring Your Chart Summary Number](/s/article/360043428753 "Configuring Your Chart Summary Number"). 
+
