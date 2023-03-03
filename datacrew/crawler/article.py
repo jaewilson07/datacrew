@@ -28,12 +28,12 @@ class Article:
     base_url: str
 
     url_entity_prefix: str = None
+    url_id: str = None
 
     driver: selenium.webdriver = field(repr=False, default=None)
     soup: BeautifulSoup = field(repr=False, default=None)
 
     is_success: bool = False
-    id: str = None
 
     url_ls: list[str] = field(default_factory=list)
     image_ls: list[str] = field(default_factory=list)
@@ -137,13 +137,12 @@ class Article_KB(Article):
         if not soup:
             raise ArticleKB_GetSoupError(url=self.url)
         
-
-
         super().__init__(url = url, base_url=base_url, soup=soup, url_entity_prefix=url_entity_prefix)
 
+        url_path = url_parse.urlparse(url)
 
-        # self.article = Article(soup=soup, base_url=self.base_url)
-        # self.kb_url_ls = self.article.linked_url_ls
+        self.url_id = os.path.split(url_path)[1]
+
 
         try:
             self.process_soup(soup, debug_prn = debug_prn)
@@ -172,25 +171,7 @@ class Article_KB(Article):
                 tarticle.append((list(cells.strings)[0], content))
 
         kb_soup = dict(tarticle)
-        self.kb_soup = kb_soup
-
-        if debug_prn:
-            print(self.kb_soup)
-
         
-
-        # self.title = self.article.md_soup(kb_soup.get("Title"))
-        # self.md_str = self.article.md_soup(kb_soup.get("Article Body"))
-        # self.article_id = self.article.md_soup(kb_soup.get("Article Number"))
-        # self.views = self.article.md_soup(
-        #     kb_soup.get("Article Total View Count"))
-        # self.created = parser.parse(
-        #     self.article.md_soup(kb_soup.get("Article Created Date"))
-        # )
-        # self.last_updated = parser.parse(
-        #     self.article.md_soup(kb_soup.get("First Published Date"))
-        # )
-
         self.title = self.md_soup(kb_soup.get("Title"))
         self.md_str = self.md_soup(kb_soup.get("Article Body"))
         self.article_id = self.md_soup(kb_soup.get("Article Number"))
@@ -202,11 +183,10 @@ class Article_KB(Article):
             self.md_soup(kb_soup.get("First Published Date"))
         )
 
-
         # self.get_images(
         #     test_base_url='https://domo-support.domo.com/servlet/rtaImage', debug_prn = debug_prn)
 
-        return self.kb_soup
+        return kb_soup
 
 # %% ../../nbs/crawler/article.ipynb 5
 @dataclass(init=False)
