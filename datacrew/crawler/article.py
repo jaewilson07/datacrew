@@ -77,7 +77,7 @@ class Article:
             if is_remove_query_string_parameters:
                 url = url_parse.urljoin(url, url_parse.urlparse(url).path)
 
-            if url.startswith(self.base_url) and url not in self.linked_url_ls:
+            if url.startswith(self.base_url) and url not in self.url_ls:
                 self.url_ls.append(url)
 
         return self.url_ls
@@ -242,8 +242,6 @@ class Article_Category(Article):
 
         self.set_category_id()
 
-        # self.kb_url_ls = self.article.linked_url_ls
-        self.linked_url_ls
 
         try:
             self.process_kb_soup(soup)
