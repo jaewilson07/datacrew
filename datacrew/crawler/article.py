@@ -33,6 +33,7 @@ class Article:
 
     driver: selenium.webdriver = field(repr=False, default=None)
     soup: BeautifulSoup = field(repr=False, default=None)
+    article_soup : BeautifulSoup = field(repr = False, default = None)
 
     is_success: bool = False
 
@@ -143,7 +144,7 @@ class Article_KB(Article):
 
 
         try:
-            self.process_soup(soup, debug_prn = debug_prn)
+            self.article_soup = self.process_soup(soup, debug_prn = debug_prn)
             self.is_success = True
 
         except ArticleKB_ProcessSoupError as e:
