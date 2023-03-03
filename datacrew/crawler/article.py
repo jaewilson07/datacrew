@@ -64,7 +64,7 @@ class Article:
         return md.MarkdownConverter(**options).convert_soup(soup)
 
     def get_linked_urls(self, is_remove_query_string_parameters: bool = True):
-        self.linked_url_ls = []
+        self.url_ls = []
         for soup_link in self.soup.find_all("a"):
             url = soup_link.get("href")
 
@@ -78,9 +78,9 @@ class Article:
                 url = url_parse.urljoin(url, url_parse.urlparse(url).path)
 
             if url.startswith(self.base_url) and url not in self.linked_url_ls:
-                self.linked_url_ls.append(url)
+                self.url_ls.append(url)
 
-        return self.linked_url_ls
+        return self.url_ls
 
     def get_images(self,
                    soup=None, # pass a soup to just exctract images from the selected content.  Default will exctract all images on the page
@@ -144,7 +144,6 @@ class Article_KB(Article):
 
         # self.article = Article(soup=soup, base_url=self.base_url)
         # self.kb_url_ls = self.article.linked_url_ls
-        self.linked_url_ls
 
         try:
             self.process_soup(soup, debug_prn = debug_prn)
