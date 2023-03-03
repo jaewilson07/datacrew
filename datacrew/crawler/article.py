@@ -95,6 +95,8 @@ class Article:
             "url": f"{self.base_url if item.get('src').startswith('/') else ''}{item.get('src')}",
             "relative_url": item.get('src'),
             "name": item.get('alt')} for item in soup.find_all('img')]))
+        
+        print(self.image_ls)
 
         if test_base_url:
             self.image_ls = [img for img in self.image_ls if img.get(
@@ -142,13 +144,13 @@ class Article_KB(Article):
         self.linked_url_ls
 
         try:
-            self.process_kb_soup(soup)
+            self.process_soup(soup)
             self.is_success = True
 
         except ArticleKB_ProcessSoupError as e:
             print(e)
 
-    def process_kb_soup(self, soup: BeautifulSoup):
+    def process_soup(self, soup: BeautifulSoup):
         search_term = "slds-form-element"
 
         table = soup.find_all(class_=[search_term])
@@ -195,7 +197,7 @@ class Article_KB(Article):
 
 
         self.get_images(
-            test_base_url='https://domo-support.domo.com//servlet/rtaImage')
+            test_base_url='https://domo-support.domo.com/servlet/rtaImage')
 
         return self.kb_soup
 
