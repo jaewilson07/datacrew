@@ -4,8 +4,9 @@
 __all__ = ['Article', 'ArticleKB_GetSoupError', 'ArticleKB_ProcessSoupError', 'Article_KB', 'Article_Category']
 
 # %% ../../nbs/crawler/article.ipynb 2
-import datetime as dt
+import os
 
+import datetime as dt
 from dataclasses import dataclass, field
 import urllib.parse as url_parse
 
