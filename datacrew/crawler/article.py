@@ -86,7 +86,7 @@ class Article:
         return self.url_ls
 
     def set_id(self):
-        o = url_parse.urlparse(url)
+        o = url_parse.urlparse(self.url)
         self.url_id = o.path.replace(self.url_entity_prefix, '').split('/')[0]
         return self.url_id
 
