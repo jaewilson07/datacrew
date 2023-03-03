@@ -9,6 +9,7 @@ import os
 import datetime as dt
 from dataclasses import dataclass, field
 import urllib.parse as url_parse
+import urlparse
 
 from bs4 import BeautifulSoup
 import selenium.webdriver
@@ -140,7 +141,7 @@ class Article_KB(Article):
         
         super().__init__(url = url, base_url=base_url, soup=soup, url_entity_prefix=url_entity_prefix)
 
-        url_path = url_parse.urlparse(url)
+        url_path = urlparse.urlparse(url)
 
         self.url_id = os.path.split(url_path)[1]
 
