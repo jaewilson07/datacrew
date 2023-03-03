@@ -25,9 +25,15 @@ import datacrew.crawler.crawler as dcc
 @dataclass
 class Article:
     base_url: str
+    url: str
+    
+    entity_prefix: str
+    
+    driver : selenium.webdriver = field (repr = False, default = None)
     soup: BeautifulSoup = field(repr=False, default=None)
     linked_url_ls: list[str] = field(default_factory=list)
     image_ls: list[str] = field(default_factory=list)
+
 
     def __post_init__(self):
         self.get_linked_urls()
@@ -186,9 +192,10 @@ class Article_Category(Article):
 
     child_category_ls: list[dict] = None
 
-    def __init__(self, url, base_url, driver):
+    def __init__(self, url, base_url, driver, entity_prefix):
         self.url = url
         self.base_url = base_url
+
         self.driver = driver
 
         soup = dcc.pagesource(driver=self.driver, url=self.url,
