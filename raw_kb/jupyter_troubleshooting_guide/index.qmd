@@ -1,0 +1,530 @@
+---
+title : Jupyter Troubleshooting Guide
+url : https://domo-support.domo.com/s/article/7440921035671
+linked_kbs :  ['[https://domo-support.domo.com/s/knowledge-base/](https://domo-support.domo.com/s/knowledge-base/)', '[https://domo-support.domo.com/s/](https://domo-support.domo.com/s/)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanzGAC](https://domo-support.domo.com/s/topic/0TO5w000000ZanzGAC)', '[https://domo-support.domo.com/s/article/360047400753](https://domo-support.domo.com/s/article/360047400753)', '[https://domo-support.domo.com/s/article/7440921035671](https://domo-support.domo.com/s/article/7440921035671)', '[https://domo-support.domo.com/s/topic/0TO5w000000ZanzGAC/other-connection-methods](https://domo-support.domo.com/s/topic/0TO5w000000ZanzGAC/other-connection-methods)', '[https://domo-support.domo.com/s/article/360043429933](https://domo-support.domo.com/s/article/360043429933)', '[https://domo-support.domo.com/s/article/360042925494](https://domo-support.domo.com/s/article/360042925494)', '[https://domo-support.domo.com/s/article/360043429953](https://domo-support.domo.com/s/article/360043429953)', '[https://domo-support.domo.com/s/article/360043429913](https://domo-support.domo.com/s/article/360043429913)', '[https://domo-support.domo.com/s/article/4408174643607](https://domo-support.domo.com/s/article/4408174643607)', '[https://domo-support.domo.com/s/login/](https://domo-support.domo.com/s/login/)']
+article_id : 000003146
+html : {'Title': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="16:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="17:337;a"><span class="uiOutputText" data-aura-class="uiOutputText" data-aura-rendered-by="9:337;a">Jupyter Troubleshooting Guide</span></span><!--render facet: 19:337;a--><!--render facet: 20:337;a--></div>, 'Article Body': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="40:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="41:337;a"><div class="slds-rich-text-editor__output uiOutputRichText forceOutputRichText" data-aura-class="uiOutputRichText forceOutputRichText" data-aura-rendered-by="32:337;a" dir="ltr"><h2 data-aura-rendered-by="33:337;a">Intro</h2>
+<p data-aura-rendered-by="33:337;a">The following troubleshooting steps may help solve common issues in Jupyter Workspaces. If your issue is not listed here, or the steps do not resolve your issue, contact your Account Executive (AE) or Customer Success Manager (CSM).</p>
+<p data-aura-rendered-by="33:337;a">For general information about Jupyter, see <a href="/s/article/360047400753" target="_blank">Jupyter Workspaces</a>.</p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<h2 data-aura-rendered-by="33:337;a">Jupyter Workspaces Will Not Start</h2>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Description</strong></p>
+<p data-aura-rendered-by="33:337;a">Domo reports an error after attempting to start, or the status returns to "Stopped" instead of "Started". </p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><img alt="mceclip0.png" height="94" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNu5" width="463"/></p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Common Cause</strong></p>
+<p data-aura-rendered-by="33:337;a">The user does not have a usage policy configured by an Admin.</p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Troubleshooting Steps </strong></p>
+<p data-aura-rendered-by="33:337;a">1. In the navigation header, select <strong>Admin</strong> &gt; <strong>Feature Settings </strong>&gt;<strong> Jupyter. </strong>Make sure that:</p>
+<p data-aura-rendered-by="33:337;a">a. The <strong>Jupyter Account Activated</strong> toggle is enabled</p>
+<p data-aura-rendered-by="33:337;a">b. The user has a usage policy with an appropriate instance size limit if <strong>Active Account Plan</strong> is set to <strong>Manual</strong>. </p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<h2 data-aura-rendered-by="33:337;a">Kernel Restarting </h2>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Description</strong></p>
+<p data-aura-rendered-by="33:337;a">An error message displays within a Jupyter Workspace with the heading <strong>Kernel Restarting</strong>.</p>
+<p data-aura-rendered-by="33:337;a"><span class="wysiwyg-color-green110"></span><img alt="mceclip1.png" height="156" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNts" width="483"/></p>
+<p data-aura-rendered-by="33:337;a"><strong>Common Cause</strong></p>
+<p data-aura-rendered-by="33:337;a">The Jupyter kernel has run out of memory.</p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Troubleshooting Steps</strong></p>
+<p data-aura-rendered-by="33:337;a">You may need to increase the size of the workspace. </p>
+<p data-aura-rendered-by="33:337;a">1. From the <strong>Jupyter Workspaces</strong> list, select <img alt="Screen_Shot_2022-07-18_at_12.28.23_PM.png" height="38" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNtu" width="45"/><strong>Menu </strong>next to the workspace. Choose <strong>Edit.</strong></p>
+<p data-aura-rendered-by="33:337;a"><img alt="2022-07-13_14-27-14.png" height="361" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNtq" width="279"/></p>
+<p data-aura-rendered-by="33:337;a">2. Choose an option with a higher <strong>Compute Tier Limit</strong>. </p>
+<p data-aura-rendered-by="33:337;a">3. Select <strong>Save</strong>. </p>
+<p data-aura-rendered-by="33:337;a"><img alt="biggerworkspace.png" height="457" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNu1" width="345"/></p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<h2 data-aura-rendered-by="33:337;a">Slow Execution</h2>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Description</strong></p>
+<p data-aura-rendered-by="33:337;a">A notebook cell execution takes longer than expected or seems to hang for a long time. </p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Common Cause</strong></p>
+<p data-aura-rendered-by="33:337;a">While working with large amounts of data can take time, a slowed execution may occur if your workspace does not have enough resources for the job.</p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Troubleshooting Steps</strong></p>
+<p data-aura-rendered-by="33:337;a">If a notebook cell execution is slow, you may need to increase the size of the workspace. </p>
+<p data-aura-rendered-by="33:337;a">1. From the <strong>Jupyter Workspaces</strong> list, select <img alt="Screen_Shot_2022-07-18_at_12.28.23_PM.png" height="38" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNtu" width="45"/> <strong>Menu</strong> next to the workspace. Choose <strong>Edit. </strong></p>
+<p data-aura-rendered-by="33:337;a"><img alt="2022-07-13_14-27-14.png" height="361" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNtq" width="279"/></p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a">2. Choose an option with a higher <strong>Compute Tier Limit</strong>. </p>
+<p data-aura-rendered-by="33:337;a">3. Select <strong>Save</strong>. </p>
+<p data-aura-rendered-by="33:337;a"><img alt="biggerworkspace.png" height="457" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNu1" width="345"/></p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<h2 data-aura-rendered-by="33:337;a">Error Installing Third Party Libraries </h2>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Description</strong></p>
+<p data-aura-rendered-by="33:337;a">Installing a third-party library for Python or R fails.</p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Common Cause</strong></p>
+<p data-aura-rendered-by="33:337;a">The library or its dependencies is<span class="wysiwyg-color-green110"> </span>not compatible with the current conda environment.</p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Troubleshooting Steps </strong></p>
+<p data-aura-rendered-by="33:337;a">1. Install using the appropriate conda pip command from a workspace terminal. Include the conda channel if necessary. </p>
+<p data-aura-rendered-by="33:337;a"><img alt="mceclip2.png" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNtp"/></p>
+<p data-aura-rendered-by="33:337;a">2. If conda install fails, try pip/cran.</p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a">pip command:</p>
+<pre data-aura-rendered-by="33:337;a"><span>pip install -U scikit-learn</span> </pre>
+<p data-aura-rendered-by="33:337;a">R/cran command: </p>
+<pre data-aura-rendered-by="33:337;a">install.packages("cluster")</pre>
+<p data-aura-rendered-by="33:337;a">3. Select <img alt="Screen_Shot_2022-07-18_at_12.28.23_PM.png" height="38" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNtu" width="45"/>and choose <strong>Restore Kernel Defaults</strong>.</p>
+<p data-aura-rendered-by="33:337;a"><img alt="2022-07-13_14-27-14.png" height="361" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNtq" width="279"/></p>
+<p data-aura-rendered-by="33:337;a">4. Uninstall/remove any libraries installed locally using pip or cran. </p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<h2 data-aura-rendered-by="33:337;a">Cannot Update domojupyter Python or R sdk </h2>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Description</strong></p>
+<p data-aura-rendered-by="33:337;a">Updating domojupyter to the latest version fails, or the notebook continues to display a message that a new version of domojupyter is available.</p>
+<p data-aura-rendered-by="33:337;a"><img alt="mceclip3.png" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNto"/></p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Common Cause</strong></p>
+<p data-aura-rendered-by="33:337;a">The new version of domojupyter or its dependencies is not compatible with the current conda environment.</p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Troubleshooting Steps </strong></p>
+<p data-aura-rendered-by="33:337;a">1. Execute the suggested conda command from a Jupyter Workspace terminal. </p>
+<p data-aura-rendered-by="33:337;a">2. Select <img alt="Screen_Shot_2022-07-18_at_12.28.23_PM.png" height="38" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNtu" width="45"/> and choose <strong>Restore Kernel Defaults</strong>.</p>
+<p data-aura-rendered-by="33:337;a"><img alt="2022-07-13_14-27-14.png" height="361" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNtq" width="279"/></p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<h2 data-aura-rendered-by="33:337;a">Error Starting Kernel</h2>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Description</strong></p>
+<p data-aura-rendered-by="33:337;a">An error message displays within a Jupyter Workspace with the heading “Error Starting Kernel".</p>
+<p data-aura-rendered-by="33:337;a"><img alt="mceclip4.png" height="189" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNu3" width="627"/></p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Common Cause</strong></p>
+<p data-aura-rendered-by="33:337;a">An error occurred while bootstrapping the conda environment.</p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Troubleshooting Steps</strong></p>
+<p data-aura-rendered-by="33:337;a">1. Select <img alt="Screen_Shot_2022-07-18_at_12.28.23_PM.png" height="38" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNtu" width="45"/>and choose <strong>Restore Kernel Defaults</strong>.</p>
+<p data-aura-rendered-by="33:337;a"><img alt="2022-07-13_14-27-14.png" height="361" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNtq" width="279"/></p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<h2 data-aura-rendered-by="33:337;a">Scheduled Execution Failures</h2>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Description</strong></p>
+<p data-aura-rendered-by="33:337;a">A Jupyter DataFlow<span class="wysiwyg-color-green120"> </span>created from a Jupyter Workspace notebook fails to execute successfully.</p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Common Cause(s)</strong></p>
+<ul data-aura-rendered-by="33:337;a"><li>Python/R language syntax or logic errors</li><li>Notebook cells executed in order result in an error</li><li>The notebook file has been deleted</li><li>Error accessing third-party system</li></ul>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"><strong>Troubleshooting Steps</strong></p>
+<p data-aura-rendered-by="33:337;a">1. Attempt to execute the notebook's cells in order from within the Jupyter Workspace environment. </p>
+<p data-aura-rendered-by="33:337;a">2. Review execution details in the recent_executions directory in your workspace. </p>
+<p data-aura-rendered-by="33:337;a">The following files are available: </p>
+<ul data-aura-rendered-by="33:337;a"><li>output.jpynb</li><li>output.html</li><li>output.pdf</li><li>stdout</li><li>stderr</li></ul>
+<p data-aura-rendered-by="33:337;a"><img alt="mceclip5.png" height="300" src="/servlet/rtaImage?eid=ka05w000001233G&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vNtw" width="508"/></p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"> </p>
+<p data-aura-rendered-by="33:337;a"> </p></div></span><!--render facet: 43:337;a--><!--render facet: 44:337;a--></div>, 'Preview Article': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="74:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="75:337;a"><span class="lvm-grid-no-fade-out undefined forceOutputFormulaHtml" data-aura-class="forceOutputFormulaHtml" data-aura-rendered-by="66:337;a"><a data-aura-rendered-by="67:337;a" href="https://domo-support.domo.com/s/article/7440921035671" target="_blank">Click here to preview</a></span></span><!--render facet: 77:337;a--><!--render facet: 78:337;a--></div>, 'URL Name': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="95:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="96:337;a"><span class="uiOutputText" data-aura-class="uiOutputText" data-aura-rendered-by="88:337;a">7440921035671</span></span><!--render facet: 98:337;a--><!--render facet: 99:337;a--></div>, 'Summary': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="118:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="119:337;a"><span class="uiOutputTextArea" data-aura-class="uiOutputTextArea" data-aura-rendered-by="109:337;a"><!--render facet: 111:337;a--></span></span><!--render facet: 121:337;a--><!--render facet: 122:337;a--></div>, 'Article Number': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="150:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="151:337;a"><span class="uiOutputText" data-aura-class="uiOutputText" data-aura-rendered-by="143:337;a">000003146</span></span><!--render facet: 153:337;a--><!--render facet: 154:337;a--></div>, 'Archived Date': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="167:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="168:337;a"><span class="uiOutputDateTime" data-aura-class="uiOutputDateTime" data-aura-rendered-by="160:337;a"></span></span><!--render facet: 170:337;a--><!--render facet: 171:337;a--></div>, 'Language': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="189:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="190:337;a"><span data-aura-rendered-by="181:337;a">English</span></span><!--render facet: 192:337;a--><!--render facet: 193:337;a--></div>, 'Primary Version': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="222:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="223:337;a"><!--render facet: 199:337;a--><!--render facet: 201:337;a--><!--render facet: 203:337;a--><a class="outputLookupLink slds-truncate outputLookupLink-ka05w000001233GAAQ-197:337;a forceOutputLookup" data-aura-class="forceOutputLookup" data-aura-rendered-by="208:337;a" data-navigable="true" data-ownerid="197:337;a" data-recordid="ka05w000001233GAAQ" data-refid="recordId" data-special-link="true" href="/s/article/7440921035671" rel="noreferrer" target="_blank" title="Jupyter Troubleshooting Guide">Jupyter Troubleshooting Guide<!--render facet: 211:337;a--></a></span><!--render facet: 225:337;a--><!--render facet: 226:337;a--></div>, 'Article Total View Count': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="243:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="244:337;a"><span class="uiOutputNumber" data-aura-class="uiOutputNumber" data-aura-rendered-by="236:337;a" dir="auto">1,299</span></span><!--render facet: 246:337;a--><!--render facet: 247:337;a--></div>, 'Article Created Date': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="278:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="279:337;a"><span class="uiOutputDateTime" data-aura-class="uiOutputDateTime" data-aura-rendered-by="271:337;a">10/24/2022, 9:09 PM</span></span><!--render facet: 281:337;a--><!--render facet: 282:337;a--></div>, 'First Published Date': <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="313:337;a"><span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="314:337;a"><span class="uiOutputDateTime" data-aura-class="uiOutputDateTime" data-aura-rendered-by="306:337;a">10/24/2022, 10:42 PM</span></span><!--render facet: 316:337;a--><!--render facet: 317:337;a--></div>}
+views : 1,299
+created_date : 2022-10-24 21:09:00
+last updated : 2022-10-24 22:42:00
+---
+
+
+
+Intro
+-----
+
+
+The following troubleshooting steps may help solve common issues in Jupyter Workspaces. If your issue is not listed here, or the steps do not resolve your issue, contact your Account Executive (AE) or Customer Success Manager (CSM).
+
+
+For general information about Jupyter, see [Jupyter Workspaces](/s/article/360047400753).
+
+
+ 
+
+
+Jupyter Workspaces Will Not Start
+---------------------------------
+
+
+ 
+
+
+**Description**
+
+
+Domo reports an error after attempting to start, or the status returns to "Stopped" instead of "Started". 
+
+
+ 
+
+
+![mceclip0.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNu5)
+
+
+ 
+
+
+**Common Cause**
+
+
+The user does not have a usage policy configured by an Admin.
+
+
+ 
+
+
+**Troubleshooting Steps**
+
+
+1. In the navigation header, select **Admin** > **Feature Settings** > **Jupyter.** Make sure that:
+
+
+a. The **Jupyter Account Activated** toggle is enabled
+
+
+b. The user has a usage policy with an appropriate instance size limit if **Active Account Plan** is set to **Manual**. 
+
+
+ 
+
+
+ 
+
+
+Kernel Restarting
+-----------------
+
+
+ 
+
+
+**Description**
+
+
+An error message displays within a Jupyter Workspace with the heading **Kernel Restarting**.
+
+
+![mceclip1.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNts)
+
+
+**Common Cause**
+
+
+The Jupyter kernel has run out of memory.
+
+
+ 
+
+
+**Troubleshooting Steps**
+
+
+You may need to increase the size of the workspace. 
+
+
+1. From the **Jupyter Workspaces** list, select ![Screen_Shot_2022-07-18_at_12.28.23_PM.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNtu)**Menu** next to the workspace. Choose **Edit.**
+
+
+![2022-07-13_14-27-14.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNtq)
+
+
+2. Choose an option with a higher **Compute Tier Limit**. 
+
+
+3. Select **Save**. 
+
+
+![biggerworkspace.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNu1)
+
+
+ 
+
+
+ 
+
+
+Slow Execution
+--------------
+
+
+ 
+
+
+**Description**
+
+
+A notebook cell execution takes longer than expected or seems to hang for a long time. 
+
+
+ 
+
+
+**Common Cause**
+
+
+While working with large amounts of data can take time, a slowed execution may occur if your workspace does not have enough resources for the job.
+
+
+ 
+
+
+**Troubleshooting Steps**
+
+
+If a notebook cell execution is slow, you may need to increase the size of the workspace. 
+
+
+1. From the **Jupyter Workspaces** list, select ![Screen_Shot_2022-07-18_at_12.28.23_PM.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNtu) **Menu** next to the workspace. Choose **Edit.**
+
+
+![2022-07-13_14-27-14.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNtq)
+
+
+ 
+
+
+2. Choose an option with a higher **Compute Tier Limit**. 
+
+
+3. Select **Save**. 
+
+
+![biggerworkspace.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNu1)
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+Error Installing Third Party Libraries
+--------------------------------------
+
+
+ 
+
+
+**Description**
+
+
+Installing a third-party library for Python or R fails.
+
+
+ 
+
+
+**Common Cause**
+
+
+The library or its dependencies is not compatible with the current conda environment.
+
+
+ 
+
+
+**Troubleshooting Steps**
+
+
+1. Install using the appropriate conda pip command from a workspace terminal. Include the conda channel if necessary. 
+
+
+![mceclip2.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNtp)
+
+
+2. If conda install fails, try pip/cran.
+
+
+ 
+
+
+pip command:
+
+
+
+```
+pip install -U scikit-learn 
+```
+
+R/cran command: 
+
+
+
+```
+install.packages("cluster")
+```
+
+3. Select ![Screen_Shot_2022-07-18_at_12.28.23_PM.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNtu)and choose **Restore Kernel Defaults**.
+
+
+![2022-07-13_14-27-14.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNtq)
+
+
+4. Uninstall/remove any libraries installed locally using pip or cran. 
+
+
+ 
+
+
+ 
+
+
+Cannot Update domojupyter Python or R sdk
+-----------------------------------------
+
+
+ 
+
+
+**Description**
+
+
+Updating domojupyter to the latest version fails, or the notebook continues to display a message that a new version of domojupyter is available.
+
+
+![mceclip3.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNto)
+
+
+ 
+
+
+**Common Cause**
+
+
+The new version of domojupyter or its dependencies is not compatible with the current conda environment.
+
+
+ 
+
+
+**Troubleshooting Steps**
+
+
+1. Execute the suggested conda command from a Jupyter Workspace terminal. 
+
+
+2. Select ![Screen_Shot_2022-07-18_at_12.28.23_PM.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNtu) and choose **Restore Kernel Defaults**.
+
+
+![2022-07-13_14-27-14.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNtq)
+
+
+ 
+
+
+ 
+
+
+Error Starting Kernel
+---------------------
+
+
+ 
+
+
+**Description**
+
+
+An error message displays within a Jupyter Workspace with the heading “Error Starting Kernel".
+
+
+![mceclip4.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNu3)
+
+
+ 
+
+
+**Common Cause**
+
+
+An error occurred while bootstrapping the conda environment.
+
+
+ 
+
+
+**Troubleshooting Steps**
+
+
+1. Select ![Screen_Shot_2022-07-18_at_12.28.23_PM.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNtu)and choose **Restore Kernel Defaults**.
+
+
+![2022-07-13_14-27-14.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNtq)
+
+
+ 
+
+
+ 
+
+
+Scheduled Execution Failures
+----------------------------
+
+
+ 
+
+
+**Description**
+
+
+A Jupyter DataFlow created from a Jupyter Workspace notebook fails to execute successfully.
+
+
+ 
+
+
+**Common Cause(s)**
+
+
+* Python/R language syntax or logic errors
+* Notebook cells executed in order result in an error
+* The notebook file has been deleted
+* Error accessing third-party system
+
+
+ 
+
+
+**Troubleshooting Steps**
+
+
+1. Attempt to execute the notebook's cells in order from within the Jupyter Workspace environment. 
+
+
+2. Review execution details in the recent\_executions directory in your workspace. 
+
+
+The following files are available: 
+
+
+* output.jpynb
+* output.html
+* output.pdf
+* stdout
+* stderr
+
+
+![mceclip5.png](/servlet/rtaImage?eid=ka05w000001233G&feoid=00N5w00000Ri7BU&refid=0EM5w000005vNtw)
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
