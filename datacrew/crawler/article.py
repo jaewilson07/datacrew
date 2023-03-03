@@ -126,7 +126,7 @@ class Article_KB(Article):
     created: dt.date = None
     last_updated: dt.date = None
 
-    def __init__(self, url, base_url, driver, url_entity_prefix='/s/article/'):
+    def __init__(self, url, base_url, driver, url_entity_prefix='/s/article/', debug_prn:bool = False):
         self.url = url
         self.base_url = base_url
         self.driver = driver
@@ -136,21 +136,24 @@ class Article_KB(Article):
 
         if not soup:
             raise ArticleKB_GetSoupError(url=self.url)
+        
+
 
         super().__init__(url = url, base_url=base_url, soup=soup, url_entity_prefix=url_entity_prefix)
+
 
         # self.article = Article(soup=soup, base_url=self.base_url)
         # self.kb_url_ls = self.article.linked_url_ls
         self.linked_url_ls
 
         try:
-            self.process_soup(soup)
+            self.process_soup(soup, debug_prn = debug_prn)
             self.is_success = True
 
         except ArticleKB_ProcessSoupError as e:
             print(e)
 
-    def process_soup(self, soup: BeautifulSoup):
+    def process_soup(self, soup: BeautifulSoup, debug_prn :bool = False):
         search_term = "slds-form-element"
 
         table = soup.find_all(class_=[search_term])
@@ -171,6 +174,11 @@ class Article_KB(Article):
 
         kb_soup = dict(tarticle)
         self.kb_soup = kb_soup
+
+        if debug_prn:
+            print(self.kb_soup)
+
+        
 
         # self.title = self.article.md_soup(kb_soup.get("Title"))
         # self.md_str = self.article.md_soup(kb_soup.get("Article Body"))
@@ -196,8 +204,8 @@ class Article_KB(Article):
         )
 
 
-        self.get_images(
-            test_base_url='https://domo-support.domo.com/servlet/rtaImage')
+        # self.get_images(
+        #     test_base_url='https://domo-support.domo.com/servlet/rtaImage', debug_prn = debug_prn)
 
         return self.kb_soup
 
