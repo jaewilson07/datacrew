@@ -33,7 +33,7 @@ class Article:
 
     driver: selenium.webdriver = field(repr=False, default=None)
     soup: BeautifulSoup = field(repr=False, default=None)
-    article_soup : BeautifulSoup = field(repr = False, default = None)
+    article_soup: BeautifulSoup = field(repr=False, default=None)
 
     is_success: bool = False
 
@@ -42,6 +42,7 @@ class Article:
 
     def __post_init__(self):
         self.get_urls()
+        self.set_id()
 
     @classmethod
     def get_from_url(cls, url: str,
@@ -84,12 +85,18 @@ class Article:
 
         return self.url_ls
 
+    def set_id(self):
+        o = url_parse.urlparse(url)
+        self.url_id = o.path.replace(self.url_entity_prefix, '').split('/')[0]
+        return self.url_id
+
+
     def get_images(self,
-                   soup=None, # pass a soup to just exctract images from the selected content.  Default will exctract all images on the page
-                   test_base_url: str = None, # pass to limit URLs to a specific base
-                   debug_prn: bool = False):
-        
+                soup=None,  # pass a soup to just exctract images from the selected content.  Default will exctract all images on the page
+                test_base_url: str = None,  # pass to limit URLs to a specific base
+                debug_prn: bool = False):
         "extract image urls from soup"
+
 
         soup = soup or self.soup
 
@@ -97,7 +104,6 @@ class Article:
             "url": f"{self.base_url if item.get('src').startswith('/') else ''}{item.get('src')}",
             "relative_url": item.get('src'),
             "name": item.get('alt')} for item in soup.find_all('img')]
-        
 
         if test_base_url:
             self.image_ls = [img for img in self.image_ls if img.get(
@@ -126,6 +132,7 @@ class Article_KB(Article):
     views: int = None
     created: dt.date = None
     last_updated: dt.date = None
+    article_id: str = None
 
     def __init__(self, url, base_url, driver, url_entity_prefix='/s/article/', debug_prn:bool = False):
         self.url = url
@@ -139,8 +146,6 @@ class Article_KB(Article):
             raise ArticleKB_GetSoupError(url=self.url)
         
         super().__init__(url = url, base_url=base_url, soup=soup, url_entity_prefix=url_entity_prefix)
-
-        self.url_id = self.url.split('/')[-1]
 
 
         try:
@@ -190,52 +195,30 @@ class Article_KB(Article):
 # %% ../../nbs/crawler/article.ipynb 5
 @dataclass(init=False)
 class Article_Category(Article):
-    url: str
-    base_url: str
-    driver: selenium.webdriver = field(repr=False)
-
-    is_success: bool = False
-    article: Article = field(default=None, repr=False)
 
     category: str = None
-    category_id: str = None
     category_description: str = None
-
     child_category_ls: list[dict] = None
 
-    def __init__(self, url, base_url, driver, url_entity_prefix = 's/topic/'):
-        self.url = url
-        self.base_url = base_url
+    def __init__(self, url, base_url, driver, url_entity_prefix='s/topic/'):
 
-        self.driver = driver
-
-        soup = dcc.pagesource(driver=self.driver, url=self.url,
+        soup = dcc.pagesource(driver=driver, url=url,
                               element_type=By.CLASS_NAME, element_id="section-list-item")
 
         if not soup:
-            raise dcc.ArticleKB_GetSoupError(url=self.url)
+            raise dcc.ArticleKB_GetSoupError(url= url)
 
-        super().__init__(base_url=base_url, soup=soup, url_entity_prefix=url_entity_prefix)
+        super().__init__(url = url, base_url=base_url, soup=soup, url_entity_prefix=url_entity_prefix)
 
-        # self.article = Article(soup=soup, base_url=self.base_url)
-
-        self.set_category_id()
-
-
+        
         try:
-            self.process_kb_soup(soup)
+            self.process_soup(soup)
             self.is_success = True
 
         except ArticleKB_ProcessSoupError as e:
             print(e)
 
-    def set_category_id(self):
-        url_str = self.url.replace(self.base_url, '')
-        url_str = url_str.split('/')[-2]
-        self.category_id = url_str
-        return url_str
-
-    def process_kb_soup(self, soup: BeautifulSoup):
+    def process_soup(self, soup: BeautifulSoup):
 
         # process parent attributes
         parent_term = "page-header"
