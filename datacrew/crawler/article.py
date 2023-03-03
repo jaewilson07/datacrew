@@ -182,8 +182,8 @@ class Article_KB(Article):
             self.md_soup(kb_soup.get("First Published Date"))
         )
 
-        # self.get_images(
-        #     test_base_url='https://domo-support.domo.com/servlet/rtaImage', debug_prn = debug_prn)
+        self.get_images(
+            test_base_url='https://domo-support.domo.com/servlet/rtaImage', debug_prn = debug_prn)
 
         return kb_soup
 
