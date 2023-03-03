@@ -24,26 +24,40 @@ import datacrew.crawler.crawler as dcc
 # %% ../../nbs/crawler/article.ipynb 3
 @dataclass
 class Article:
-    base_url: str
     url: str
-    
-    entity_prefix: str
-    
-    driver : selenium.webdriver = field (repr = False, default = None)
-    soup: BeautifulSoup = field(repr=False, default=None)
-    linked_url_ls: list[str] = field(default_factory=list)
-    image_ls: list[str] = field(default_factory=list)
+    base_url: str
 
+    url_entity_prefix: str = None
+
+    driver: selenium.webdriver = field(repr=False, default=None)
+    soup: BeautifulSoup = field(repr=False, default=None)
+
+    is_success: bool = False
+    id: str = None
+
+    url_ls: list[str] = field(default_factory=list)
+    image_ls: list[str] = field(default_factory=list)
 
     def __post_init__(self):
         self.get_linked_urls()
 
     @classmethod
-    def get_from_url(cls, url: str, driver, base_url: str):
-        soup = dcc.pagesource(
-            driver=driver, url=url, element_type=By.CLASS_NAME, element_id="slds-form-element")
+    def get_from_url(cls, url: str,
+                     driver: selenium.webdriver,
+                     base_url: str,
+                     url_entity_prefix: str = None,
+                     element_type=By.CLASS_NAME,
+                     element_id="slds-form-element"):
 
-        return cls(soup=soup, base_url=base_url)
+        soup = dcc.pagesource(
+            driver=driver, url=url, element_type=element_type, element_id=element_id, )
+
+        return cls(
+            url=url,
+            url_entity_prefix=url_entity_prefix,
+            base_url=base_url,
+            soup=soup,
+        )
 
     @staticmethod
     def md_soup(soup, **options):
@@ -68,15 +82,23 @@ class Article:
 
         return self.linked_url_ls
 
-    def get_images(self, test_base_url: str = None, debug_prn: bool = False):
-        self.image_ls = [{
-            "url": f"{self.base_url}{item.get('src')}",
+    def get_images(self,
+                   soup=None, # pass a soup to just exctract images from the selected content.  Default will exctract all images on the page
+                   test_base_url: str = None, # pass to limit URLs to a specific base
+                   debug_prn: bool = False):
+        
+        "extract image urls from soup"
+
+        soup = soup or self.soup
+
+        self.image_ls = list(set([{
+            "url": f"{self.base_url if item.get('src').startswith('/') else ''}{item.get('src')}",
             "relative_url": item.get('src'),
-            "name": item.get('alt')} for item in self.soup.find_all('img')]
+            "name": item.get('alt')} for item in soup.find_all('img')]))
 
         if test_base_url:
             self.image_ls = [img for img in self.image_ls if img.get(
-               'url').startswith(test_base_url)]
+                'url').startswith(test_base_url)]
 
         if debug_prn:
             print(self.image_ls)
@@ -96,23 +118,13 @@ class ArticleKB_ProcessSoupError(Exception):
 
 @dataclass(init=False)
 class Article_KB(Article):
-    url: str
-    base_url: str
-    driver: selenium.webdriver
-
-    is_success: bool = False
-    article: Article = field(default=None, repr=False)
-    kb_soup: BeautifulSoup = field(default=None, repr=False)
-    kb_url_ls: list[str] = field(default=None)
-
     title: str = None
     md_str: str = field(default=None, repr=False)
-    article_id: str = None
     views: int = None
     created: dt.date = None
     last_updated: dt.date = None
 
-    def __init__(self, url, base_url, driver):
+    def __init__(self, url, base_url, driver, url_entity_prefix='/s/article/'):
         self.url = url
         self.base_url = base_url
         self.driver = driver
@@ -123,7 +135,7 @@ class Article_KB(Article):
         if not soup:
             raise ArticleKB_GetSoupError(url=self.url)
 
-        super().__init__(base_url=base_url, soup=soup)
+        super().__init__(base_url=base_url, soup=soup, url_entity_prefix=url_entity_prefix)
 
         self.article = Article(soup=soup, base_url=self.base_url)
         self.kb_url_ls = self.article.linked_url_ls
@@ -192,7 +204,7 @@ class Article_Category(Article):
 
     child_category_ls: list[dict] = None
 
-    def __init__(self, url, base_url, driver, entity_prefix):
+    def __init__(self, url, base_url, driver, url_entity_prefix = 's/topic/'):
         self.url = url
         self.base_url = base_url
 
@@ -204,7 +216,7 @@ class Article_Category(Article):
         if not soup:
             raise dcc.ArticleKB_GetSoupError(url=self.url)
 
-        super().__init__(base_url=base_url, soup=soup)
+        super().__init__(base_url=base_url, soup=soup, url_entity_prefix=url_entity_prefix)
 
         self.article = Article(soup=soup, base_url=self.base_url)
 
