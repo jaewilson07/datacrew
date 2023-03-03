@@ -135,10 +135,11 @@ class Article_KB(Article):
         if not soup:
             raise ArticleKB_GetSoupError(url=self.url)
 
-        super().__init__(base_url=base_url, soup=soup, url_entity_prefix=url_entity_prefix)
+        super().__init__(url = url, base_url=base_url, soup=soup, url_entity_prefix=url_entity_prefix)
 
-        self.article = Article(soup=soup, base_url=self.base_url)
-        self.kb_url_ls = self.article.linked_url_ls
+        # self.article = Article(soup=soup, base_url=self.base_url)
+        # self.kb_url_ls = self.article.linked_url_ls
+        self.linked_url_ls
 
         try:
             self.process_kb_soup(soup)
@@ -169,19 +170,29 @@ class Article_KB(Article):
         kb_soup = dict(tarticle)
         self.kb_soup = kb_soup
 
-        self.title = self.article.md_soup(kb_soup.get("Title"))
+        # self.title = self.article.md_soup(kb_soup.get("Title"))
+        # self.md_str = self.article.md_soup(kb_soup.get("Article Body"))
+        # self.article_id = self.article.md_soup(kb_soup.get("Article Number"))
+        # self.views = self.article.md_soup(
+        #     kb_soup.get("Article Total View Count"))
+        # self.created = parser.parse(
+        #     self.article.md_soup(kb_soup.get("Article Created Date"))
+        # )
+        # self.last_updated = parser.parse(
+        #     self.article.md_soup(kb_soup.get("First Published Date"))
+        # )
 
-        self.md_str = self.article.md_soup(kb_soup.get("Article Body"))
-        self.article_id = self.article.md_soup(kb_soup.get("Article Number"))
-        self.views = self.article.md_soup(
-            kb_soup.get("Article Total View Count"))
-        self.created = parser.parse(
-            self.article.md_soup(kb_soup.get("Article Created Date"))
+        self.title = self.md_soup(kb_soup.get("Title"))
+        self.md_str = self.md_soup(kb_soup.get("Article Body"))
+        self.article_id = self.md_soup(kb_soup.get("Article Number"))
+        self.views = self.md_soup( kb_soup.get("Article Total View Count"))
+        self.created = parser.parse( self.md_soup(kb_soup.get("Article Created Date"))
         )
 
         self.last_updated = parser.parse(
-            self.article.md_soup(kb_soup.get("First Published Date"))
+            self.md_soup(kb_soup.get("First Published Date"))
         )
+
 
         self.get_images(
             test_base_url='https://domo-support.domo.com//servlet/rtaImage')
@@ -218,11 +229,12 @@ class Article_Category(Article):
 
         super().__init__(base_url=base_url, soup=soup, url_entity_prefix=url_entity_prefix)
 
-        self.article = Article(soup=soup, base_url=self.base_url)
+        # self.article = Article(soup=soup, base_url=self.base_url)
 
         self.set_category_id()
 
-        self.kb_url_ls = self.article.linked_url_ls
+        # self.kb_url_ls = self.article.linked_url_ls
+        self.linked_url_ls
 
         try:
             self.process_kb_soup(soup)
