@@ -40,7 +40,7 @@ class Article:
     image_ls: list[str] = field(default_factory=list)
 
     def __post_init__(self):
-        self.get_linked_urls()
+        self.get_urls()
 
     @classmethod
     def get_from_url(cls, url: str,
@@ -64,7 +64,7 @@ class Article:
     def md_soup(soup, **options):
         return md.MarkdownConverter(**options).convert_soup(soup)
 
-    def get_linked_urls(self, is_remove_query_string_parameters: bool = True):
+    def get_urls(self, is_remove_query_string_parameters: bool = True):
         self.url_ls = []
         for soup_link in self.soup.find_all("a"):
             url = soup_link.get("href")
@@ -92,10 +92,10 @@ class Article:
 
         soup = soup or self.soup
 
-        self.image_ls = list(set([{
+        self.image_ls = [{
             "url": f"{self.base_url if item.get('src').startswith('/') else ''}{item.get('src')}",
             "relative_url": item.get('src'),
-            "name": item.get('alt')} for item in soup.find_all('img')]))
+            "name": item.get('alt')} for item in soup.find_all('img')]
         
         print(self.image_ls)
 
