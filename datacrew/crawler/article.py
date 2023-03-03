@@ -97,7 +97,6 @@ class Article:
             "relative_url": item.get('src'),
             "name": item.get('alt')} for item in soup.find_all('img')]
         
-        self.image_ls = list(set(self.image_ls))
 
         if test_base_url:
             self.image_ls = [img for img in self.image_ls if img.get(
