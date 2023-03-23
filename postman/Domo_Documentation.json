@@ -8083,7 +8083,7 @@
 										}
 									}
 								},
-								"url": "https://{{domo_instance}}.domo.com/api/authorization/v1/roles/{{role_id}}/authorities"
+								"url": "https://{{domo_instance}}.domo.com/api/authorization/v1/roles/{{role_id}}"
 							},
 							"response": []
 						},
