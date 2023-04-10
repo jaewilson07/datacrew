@@ -252,7 +252,7 @@ def process_soup(self: Article_Category, soup: BeautifulSoup):
                          'url': child_url,
                          'child_article': Article_Category(url=child_url,
                                                            base_url=self.base_url,
-                                                           driver=self.driver,
+                                                           driver=dcc.driversetup(is_headless=False),
                                                            url_entity_prefix=self.url_entity_prefix)
                          })
 
