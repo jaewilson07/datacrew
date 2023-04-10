@@ -5,6 +5,7 @@ bs4
 python-frontmatter
 lxml
 nbdev
+datacrew
 markdownify
 
 [dev]
