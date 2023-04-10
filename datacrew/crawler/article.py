@@ -218,3 +218,43 @@ class Article_Category(Article):
 
         except ArticleKB_ProcessSoupError as e:
             print(e)
+
+# %% ../../nbs/crawler/article.ipynb 6
+@patch_to(Article_Category)
+def process_soup(self: Article_Category, soup: BeautifulSoup):
+    # process parent attributes
+    parent_term = "page-header"
+    parent = soup.find(class_=[parent_term])
+    self.category = parent.find("h1").get_text()
+
+    self.category_description = parent.find(
+        "p") and parent.find("p").get_text()
+
+    table_item_term = "section-list-item"
+
+    table = soup.find_all(class_=[table_item_term])
+
+    if not table or table == []:
+        raise ArticleKB_ProcessSoupError(
+            url=self.url, search_term=table_item_term)
+
+    tarticle = []
+    for row in table:
+        url = row.find("a").get("href")
+        if not url.startswith('/s/topic/'):
+            continue
+
+        child_id = url.split('/')[-1]
+        child_url = f"{self.base_url}{child_id}"
+
+        tarticle.append({'category': row.get_text(),
+                         'id':  child_id,
+                         'url': child_url,
+                         'child_article': Article_Category(url=child_url,
+                                                           base_url=self.base_url,
+                                                           driver=self.driver,
+                                                           url_entity_prefix=self.url_entity_prefix)
+                         })
+
+    self.child_category_ls = tarticle
+
