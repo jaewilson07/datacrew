@@ -15,7 +15,7 @@ import selenium.webdriver
 from selenium.webdriver.common.by import By
 
 
-# import markdownify as md
+import markdownify as md
 from dateutil import parser
 
 
