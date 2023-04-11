@@ -5,20 +5,21 @@ __all__ = ['Article', 'ArticleKB_GetSoupError', 'ArticleKB_ProcessSoupError', 'A
 
 # %% ../../nbs/crawler/article.ipynb 3
 import datetime as dt
-from dataclasses import dataclass, field
 import urllib.parse as url_parse
+from dataclasses import dataclass, field
 
-from bs4 import BeautifulSoup
+import markdownify as md
 import selenium.webdriver
+from bs4 import BeautifulSoup
+from dateutil import parser
 from selenium.webdriver.common.by import By
+
+import datacrew.crawler.crawler as dcc
 
 # from fastcore.basics import patch_to
 
-import markdownify as md
-from dateutil import parser
 
 
-import datacrew.crawler.crawler as dcc
 
 # %% ../../nbs/crawler/article.ipynb 4
 @dataclass
@@ -201,13 +202,9 @@ class Article_KB(Article):
         if not soup:
             raise ArticleKB_GetSoupError(url=self.url)
 
-        try:
-            self.article_soup = self.process_soup(soup, debug_prn=debug_prn)
+        self.article_soup = self.process_soup(soup, debug_prn=debug_prn)
+        self.is_success = True
 
-            self.is_success = True
-
-        except ArticleKB_ProcessSoupError as e:
-            print(e)
 
     def process_soup(self, soup: BeautifulSoup, debug_prn: bool = False):
         search_term = "slds-form-element"
@@ -297,13 +294,9 @@ class Article_Category(Article):
             driver=driver,
         )
 
-        try:
-            self.article_soup = self.process_soup(soup, debug_prn=debug_prn)
-            self.is_success = True
+        self.article_soup = self.process_soup(soup, debug_prn=debug_prn)
+        self.is_success = True
 
-        except ArticleKB_ProcessSoupError as e:
-            print(f"error initializing {self.url}")
-            print(e)
 
     def process_soup(self, soup: BeautifulSoup, debug_prn: bool = False):
         # process parent attributes
