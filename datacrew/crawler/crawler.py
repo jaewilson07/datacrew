@@ -3,13 +3,13 @@
 # %% auto 0
 __all__ = ['driversetup', 'wait_and_return', 'authenticate_driver', 'pagesource']
 
-from bs4 import BeautifulSoup
 # %% ../../nbs/crawler/crawler.ipynb 2
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
+from bs4 import BeautifulSoup
 # import time
 
 
@@ -77,7 +77,6 @@ def authenticate_driver(driver, domo_instance, domo_username, domo_password):
     return driver
 
 # %% ../../nbs/crawler/crawler.ipynb 6
-#|export
 def pagesource(url,
                element_type=By.ID,
                element_id: str = None,
@@ -96,15 +95,14 @@ def pagesource(url,
     driver.get(url)
 
     try:
-        join_ele = f".{element_ls.join(', .')}"
+        join_ele = f".{', .'.join(element_ls)}"
         print(join_ele)
 
         ele = None
 
         if element_ls:
-            ele = WebDriverWait(driver, timeout=15).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, join_ele)))
-
+            ele = WebDriverWait(driver, timeout =15).until(EC.presence_of_element_located((By.CSS_SELECTOR, join_ele)))
+        
         else:
             ele = WebDriverWait(driver, timeout=15, poll_frequency=1).until(
                 EC.presence_of_element_located(
@@ -112,7 +110,7 @@ def pagesource(url,
             )
 
         print(f"Page {url} is loaded within 10 seconds.")
-
+    
     except Exception as e:
         print(e)
         print(f"Timeout Exception: Page {url} did not load within 10 seconds.")
@@ -122,3 +120,4 @@ def pagesource(url,
     if is_driver_close:
         driver.close()
     return soup
+
