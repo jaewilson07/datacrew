@@ -4,9 +4,6 @@
 __all__ = ['Article', 'ArticleKB_GetSoupError', 'ArticleKB_ProcessSoupError', 'Article_KB', 'Article_Category']
 
 # %% ../../nbs/crawler/article.ipynb 3
-import os
-from fastcore.basics import patch_to
-
 import datetime as dt
 from dataclasses import dataclass, field
 import urllib.parse as url_parse
@@ -15,6 +12,7 @@ from bs4 import BeautifulSoup
 import selenium.webdriver
 from selenium.webdriver.common.by import By
 
+# from fastcore.basics import patch_to
 
 import markdownify as md
 from dateutil import parser
@@ -47,7 +45,7 @@ class Article:
             self.url_entity_prefix = f"/{self.url_entity_prefix}"
             
         if self.url_entity_prefix and self.url_entity_prefix in self.base_url:
-            self.base_url = base_url.replace(self.url_entity_prefix, '')
+            self.base_url = self.base_url.replace(self.url_entity_prefix, '')
         
         self.entity_base_url = url_parse.urljoin( self.base_url, self.url_entity_prefix)
 
@@ -83,13 +81,13 @@ class Article:
             self.url_ls = []
 
         if url.startswith("/"):
-                url = url_parse.urljoin(self.base_url, url)
+            url = url_parse.urljoin(self.base_url, url)
 
         if  is_remove_query_string_parameters:
             url = url_parse.urljoin(url, url_parse.urlparse(url).path)
         
         if url.startswith(self.base_url) and url not in self.url_ls:
-                self.url_ls.append(url)
+            self.url_ls.append(url)
 
         
     def get_urls(self):
@@ -217,26 +215,30 @@ class Article_Category(Article):
     category: str = None
     category_description: str = None
 
-    child_recursive: bool = True
+    is_child_recursive: bool = True
     crawl_category_id_ls: [str] = field(default=None)
 
-    child_category_ls: list[dict] = None
-    child_article_ls: list[dict] = None
+    child_category_ls: list[dict] = field(default_factory=[])
+    child_article_ls: list[dict] = field(default_factory=[])
 
-    def __init__(self, url, base_url, url_entity_prefix='s/topic/', crawl_category_id_ls=None, debug_prn: bool = False, driver = None):
+    def __init__(self, url, base_url, url_entity_prefix='s/topic/', crawl_category_id_ls=None, debug_prn: bool = False, driver=None, is_child_recursive: bool = False):
+
+        self.child_article_ls = []
+        self.child_category_ls = []
+        self.crawl_category_id_ls = crawl_category_id_ls or []
+        self.is_child_recursive = is_child_recursive
 
         if not driver:
             driver = dcc.driversetup(is_headless=False)
 
-        self.crawl_category_id_ls = crawl_category_id_ls or []
-
         soup = dcc.pagesource(driver=driver, url=url,
-                              element_type=By.CLASS_NAME, element_ls=["section-list-item", 'article-list-item'], is_return_soup = True)
+                              element_type=By.CLASS_NAME, element_ls=["section-list-item", 'article-list-item'], is_return_soup=True)
 
         if not soup:
-            raise dcc.ArticleKB_GetSoupError(url=url)
+            raise ArticleKB_GetSoupError(url=url)
 
-        super().__init__(url = url, base_url=base_url, soup=soup, url_entity_prefix=url_entity_prefix, driver = driver)
+        super().__init__(url=url, base_url=base_url, soup=soup,
+                         url_entity_prefix=url_entity_prefix, driver=driver)
 
         try:
             self.article_soup = self.process_soup(soup, debug_prn=debug_prn)
@@ -246,80 +248,63 @@ class Article_Category(Article):
             print(f"error initializing {self.url}")
             print(e)
 
+    def process_soup(self, soup: BeautifulSoup, debug_prn: bool = False):
+        # process parent attributes
 
-# %% ../../nbs/crawler/article.ipynb 10
-@patch_to(Article_Category)
-def process_soup(self: Article_Category, soup: BeautifulSoup, debug_prn: bool = False):
-    # process parent attributes
+        article_soup = soup.find(class_=['cDomoKBCategoryNav'])
 
-    article_soup = soup.find(class_=['cDomoKBCategoryNav'])
+        category_soup = article_soup.find("h1")
+        self.category = category_soup.get_text()
 
-    category = article_soup.find("h1")
-    self.category = category.get_text()
+        category_description_soup = article_soup.find("p")
+        self.category_description = category_description_soup and category_description_soup.get_text()
 
-    category_description = article_soup.find("p")
-    self.category_description = category_description and category_description.get_text()
+        table_item_term = ["section-list-item", "article-list-item"]
+        table_soup = article_soup.find_all(class_=[table_item_term])
 
-    # | exporti
+        if not table_soup or table_soup == []:
+            raise ArticleKB_ProcessSoupError(
+                url=self.url, search_term=table_item_term)
 
-@patch_to(Article_Category)
-def process_soup(self: Article_Category, soup: BeautifulSoup, debug_prn: bool = False):
-    # process parent attributes
+        # process children
+        for row in table_soup:
+            url = row.find("a").get("href")
+            if url[0] == '/':
+                url = url_parse.urljoin(self.base_url, url)
 
-    article_soup = soup.find(class_=['cDomoKBCategoryNav'])
+            child_id = url.split('/')[-1]
 
-    category = article_soup.find("h1")
-    self.category = category.get_text()
+            print(f"❤️ child url - {url}, {child_id}")
 
-    category_description = article_soup.find("p")
-    self.category_description = category_description and category_description.get_text()
+            self.add_url_to_ls(url)
 
-    table_item_term =["section-list-item", "article-list-item"]
-    table = article_soup.find_all(class_=[table_item_term])
+            # if article
+            if '/s/article/' in url:
+                self.child_article_ls.append(url)
+                continue
 
-    if not table or table == []:
-        raise ArticleKB_ProcessSoupError(
-            url=self.url, search_term=table_item_term)
+            # if anything else
+            if self.url_entity_prefix not in url:
+                continue
 
-    # process children
-    children = []
-    for row in table:
-        url = row.find("a").get("href")
-        if url[0] == '/':
-            url = url_parse.urljoin(self.base_url, url)
+            # if category
+            if self.url_entity_prefix in url and child_id not in self.crawl_category_id_ls:
+                self.crawl_category_id_ls.append(child_id)
 
-        child_id = url.split('/')[-1]
+                child_obj = {'category': row.get_text(),
+                             'id':  child_id,
+                             'url': url}
 
-        print(f"❤️ child url - {url}, {child_id}")
+                if self.is_child_recursive and self.url_entity_prefix in url:
 
-        self.add_url_to_ls(url)
+                    child_obj.update({'child_article': Article_Category(url=url,
+                                                                        base_url=self.base_url,
+                                                                        crawl_category_id_ls=self.crawl_category_id_ls,
+                                                                        url_entity_prefix=self.url_entity_prefix,
+                                                                        driver=self.driver
+                                                                        )})
 
-        if '/s/article/' in url:
-            self.child_article_ls.append(url)
+                self.child_category_ls.append(child_obj)
 
-        if self.url_entity_prefix not in url:
-            continue
-
-        if child_id not in self.crawl_category_id_ls:
-            "print navigating"
-            self.crawl_category_id_ls.append(child_id)
-
-            child_obj = {'category': row.get_text(),
-                         'id':  child_id,
-                         'url': url}
-
-            if self.child_recursive and self.url_entity_prefix in url:
-                
-                child_obj.update({'child_article': Article_Category(url=url,
-                                                                    base_url=self.base_url,
-                                                                    crawl_category_id_ls=self.crawl_category_id_ls,
-                                                                    url_entity_prefix=self.url_entity_prefix,
-                                                                    driver = self.driver
-                                                                    )})
-
-            children.append(child_obj)
-
-    self.child_category_ls = children
-
-    return{'category': category,  'description': category_description, 'children': table}
+        return {'category': category_soup,  'description': category_description_soup, 'children': table_soup}
 
