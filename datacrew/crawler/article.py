@@ -120,7 +120,7 @@ class Article:
         self.image_ls = [{
             "url": f"{self.base_url if item.get('src').startswith('/') else ''}{item.get('src')}",
             "relative_url": item.get('src'),
-            "name": item.get('alt')} for item in soup.find_all('img')]
+            "name": item.get('alt')} for item in soup.find_all('img') if item.get('src', False)]
 
         if test_base_url:
             self.image_ls = [img for img in self.image_ls if img.get(
