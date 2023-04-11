@@ -158,7 +158,7 @@ class Article_KB(Article):
         self.base_url = base_url
          
         soup = dcc.pagesource(driver=self.driver, url=self.url,
-                              element_type=By.CLASS_NAME, element_id="slds-form-element")
+                              element_type=By.CLASS_NAME, element_id="slds-form-element", is_return_soup = True)
 
         super().__init__(url = url, base_url=base_url, soup=soup, url_entity_prefix=url_entity_prefix, driver = driver)
         
@@ -231,7 +231,7 @@ class Article_Category(Article):
         self.crawl_category_id_ls = crawl_category_id_ls or []
 
         soup = dcc.pagesource(driver=driver, url=url,
-                              element_type=By.CLASS_NAME, element_id="section-list-item")
+                              element_type=By.CLASS_NAME, element_ls=["section-list-item", 'article-list-item'], is_return_soup = True)
 
         if not soup:
             raise dcc.ArticleKB_GetSoupError(url=url)
@@ -243,6 +243,7 @@ class Article_Category(Article):
             self.is_success = True
 
         except ArticleKB_ProcessSoupError as e:
+            print(f"error initializing {self.url}")
             print(e)
 
 
@@ -259,7 +260,22 @@ def process_soup(self: Article_Category, soup: BeautifulSoup, debug_prn: bool = 
     category_description = article_soup.find("p")
     self.category_description = category_description and category_description.get_text()
 
-    table = article_soup.find_all(class_=["section-list-item"])
+    # | exporti
+
+@patch_to(Article_Category)
+def process_soup(self: Article_Category, soup: BeautifulSoup, debug_prn: bool = False):
+    # process parent attributes
+
+    article_soup = soup.find(class_=['cDomoKBCategoryNav'])
+
+    category = article_soup.find("h1")
+    self.category = category.get_text()
+
+    category_description = article_soup.find("p")
+    self.category_description = category_description and category_description.get_text()
+
+    table_item_term =["section-list-item", "article-list-item"]
+    table = article_soup.find_all(class_=[table_item_term])
 
     if not table or table == []:
         raise ArticleKB_ProcessSoupError(
@@ -269,6 +285,8 @@ def process_soup(self: Article_Category, soup: BeautifulSoup, debug_prn: bool = 
     children = []
     for row in table:
         url = row.find("a").get("href")
+        if url[0] == '/':
+            url = url_parse.urljoin(self.base_url, url)
 
         child_id = url.split('/')[-1]
 
@@ -290,17 +308,14 @@ def process_soup(self: Article_Category, soup: BeautifulSoup, debug_prn: bool = 
                          'id':  child_id,
                          'url': url}
 
-            if self.child_recursive:
-                print(url,
-                      self.base_url,
-                      self.crawl_category_id_ls,
-                      self.url_entity_prefix)
-                # url, base_url, url_entity_prefix='s/topic/', crawl_category_id_ls=None, debug_prn: bool = False, driver = None
+            if self.child_recursive and self.url_entity_prefix in url:
                 
                 child_obj.update({'child_article': Article_Category(url=url,
                                                                     base_url=self.base_url,
                                                                     crawl_category_id_ls=self.crawl_category_id_ls,
-                                                                    url_entity_prefix=self.url_entity_prefix)})
+                                                                    url_entity_prefix=self.url_entity_prefix,
+                                                                    driver = self.driver
+                                                                    )})
 
             children.append(child_obj)
 
