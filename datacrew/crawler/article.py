@@ -52,6 +52,9 @@ class Article:
         self.set_id()
 
         self.get_urls()
+        
+    def __eq__(self, other):
+        return  (self.url_id == other.url_id) or (self.url ==other.url)
 
     @classmethod
     def get_from_url(
@@ -205,7 +208,6 @@ class Article_KB(Article):
         self.article_soup = self.process_soup(soup, debug_prn=debug_prn)
         self.is_success = True
 
-
     def process_soup(self, soup: BeautifulSoup, debug_prn: bool = False):
         search_term = "slds-form-element"
 
@@ -297,7 +299,7 @@ class Article_Category(Article):
         self.article_soup = self.process_soup(soup, debug_prn=debug_prn)
         self.is_success = True
 
-
+        
     def process_soup(self, soup: BeautifulSoup, debug_prn: bool = False):
         # process parent attributes
 
