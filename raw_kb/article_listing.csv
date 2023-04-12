@@ -621,3 +621,257 @@ id,name,url,updated
 4407012418583,Connecting to JIRA Data in Workbench 5.1,https://domo-support.domo.com/s/article/4407012418583,2023-04-12 07:21:31.836777
 4407012982295,Creating Columns in Workbench 5.1 Using Calculations,https://domo-support.domo.com/s/article/4407012982295,2023-04-12 07:21:42.783404
 360043436513,CSV Advanced Connector,https://domo-support.domo.com/s/article/360043436513,2023-04-12 07:23:12.505267
+360043429913,Adding a Beast Mode Calculation to Your Chart,https://domo-support.domo.com/s/article/360043429913,2023-04-12 07:24:43.922009
+360043429913,Adding a Beast Mode Calculation to Your Chart,https://domo-support.domo.com/s/article/360043429913,2023-04-12 07:29:54.569931
+360043428953,Available Miscellaneous Charts,https://domo-support.domo.com/s/article/360043428953,2023-04-12 07:35:00.566656
+360042923014,Optimizing a SQL DataFlow,https://domo-support.domo.com/s/article/360042923014,2023-04-12 07:35:17.889601
+360044289573,Supported Functions in Magic ETL,https://domo-support.domo.com/s/article/360044289573,2023-04-12 07:35:28.115807
+4408794063639,Upgrading Magic ETL,https://domo-support.domo.com/s/article/4408794063639,2023-04-12 07:35:37.828583
+360042934454,Adding User Licenses in Domo,https://domo-support.domo.com/s/article/360042934454,2023-04-12 07:36:09.665771
+360043439113,Specifying Worklog Settings,https://domo-support.domo.com/s/article/360043439113,2023-04-12 07:36:20.146733
+4407021955991,Managing Plugins in Workbench 5.1,https://domo-support.domo.com/s/article/4407021955991,2023-04-12 07:36:54.234730
+4407026671767,Workbench 5.1 FAQs,https://domo-support.domo.com/s/article/4407026671767,2023-04-12 07:37:08.246255
+4407013897367,Setting the Time Zone for a Workbench 5.1 Job,https://domo-support.domo.com/s/article/4407013897367,2023-04-12 07:37:26.604925
+4407021587735,"Encrypting, Decrypting, and Hashing Workbench 5.1 Data",https://domo-support.domo.com/s/article/4407021587735,2023-04-12 07:37:39.232817
+4407013674519,Setting a Custom Date Format on a Column in Workbench 5.1,https://domo-support.domo.com/s/article/4407013674519,2023-04-12 07:37:55.721717
+4407013084439,Filtering Columns in Workbench 5.1,https://domo-support.domo.com/s/article/4407013084439,2023-04-12 07:38:09.016306
+4407022083351,Replacing a Column Value in Workbench 5.1,https://domo-support.domo.com/s/article/4407022083351,2023-04-12 07:38:21.644481
+4407019431831,Combining DataSets in Workbench 5.1,https://domo-support.domo.com/s/article/4407019431831,2023-04-12 07:38:37.017753
+360043427913,Top 5 Issues Users Experience with DataFlows in Domo,https://domo-support.domo.com/s/article/360043427913,2023-04-12 07:38:48.999919
+360042924934,Radial Gauge,https://domo-support.domo.com/s/article/360042924934,2023-04-12 07:38:58.364253
+360042924434,Comparative Gauge,https://domo-support.domo.com/s/article/360042924434,2023-04-12 07:39:09.022804
+4546361976087,Radial Progress Gauge,https://domo-support.domo.com/s/article/4546361976087,2023-04-12 07:39:21.518602
+4546378883863,Multi Radial Progress Gauge,https://domo-support.domo.com/s/article/4546378883863,2023-04-12 07:39:31.958978
+4546335931031,Waffle Gauge,https://domo-support.domo.com/s/article/4546335931031,2023-04-12 07:39:42.009505
+1500003419382,Dependency Gantt Chart,https://domo-support.domo.com/s/article/1500003419382,2023-04-12 07:39:52.143691
+360042924614,Grouped Bar Chart,https://domo-support.domo.com/s/article/360042924614,2023-04-12 07:40:05.470379
+360042925294,Specifying the Size of Bars in Bar Charts,https://domo-support.domo.com/s/article/360042925294,2023-04-12 07:40:14.709155
+360043428793,Creating a Map with Regions,https://domo-support.domo.com/s/article/360043428793,2023-04-12 07:40:27.436374
+360043429033,Country Map,https://domo-support.domo.com/s/article/360043429033,2023-04-12 07:40:44.612904
+360043429853,Properties for Maps,https://domo-support.domo.com/s/article/360043429853,2023-04-12 07:41:08.800444
+360042932974,Using the Federated Data Solution,https://domo-support.domo.com/s/article/360042932974,2023-04-12 07:41:43.292384
+360043436053,Amazon Redshift v1 Connector,https://domo-support.domo.com/s/article/360043436053,2023-04-12 07:42:20.679370
+360043436033,Amazon Redshift Advanced Connector,https://domo-support.domo.com/s/article/360043436033,2023-04-12 07:42:30.153212
+360042931614,Amazon Redshift SSH Connector,https://domo-support.domo.com/s/article/360042931614,2023-04-12 07:42:39.079143
+360042930534,Apache Kafka Connector,https://domo-support.domo.com/s/article/360042930534,2023-04-12 07:42:48.526199
+360043433113,Apache Kafka REST Connector,https://domo-support.domo.com/s/article/360043433113,2023-04-12 07:42:57.945203
+360042930554,Cvent Connector,https://domo-support.domo.com/s/article/360042930554,2023-04-12 07:43:09.746871
+7963308557463,GitHub Enterprise,https://domo-support.domo.com/s/article/7963308557463,2023-04-12 07:43:21.650293
+360042931694,Hive Connector,https://domo-support.domo.com/s/article/360042931694,2023-04-12 07:43:31.225721
+360043434973,JIRA Rest API Connector,https://domo-support.domo.com/s/article/360043434973,2023-04-12 07:43:41.509037
+360042932034,JSON Advanced Connector,https://domo-support.domo.com/s/article/360042932034,2023-04-12 07:43:55.214956
+360043436113,IBM DB2 Connector,https://domo-support.domo.com/s/article/360043436113,2023-04-12 07:44:05.256450
+360043433393,IBM Informix Connector,https://domo-support.domo.com/s/article/360043433393,2023-04-12 07:44:15.507516
+360043433413,IBM Informix SSH Connector,https://domo-support.domo.com/s/article/360043433413,2023-04-12 07:44:24.565647
+360043436173,Microsoft SQL Server Connector,https://domo-support.domo.com/s/article/360043436173,2023-04-12 07:44:33.692135
+360042931734,MongoDB Connector,https://domo-support.domo.com/s/article/360042931734,2023-04-12 07:44:42.778769
+360043436193,MySQL Connector,https://domo-support.domo.com/s/article/360043436193,2023-04-12 07:44:52.189771
+360043436213,MySQL SSH Connector,https://domo-support.domo.com/s/article/360043436213,2023-04-12 07:45:00.945610
+360043436233,Oracle Database Connector,https://domo-support.domo.com/s/article/360043436233,2023-04-12 07:45:10.433863
+360043436253,Oracle Database SSH Connector,https://domo-support.domo.com/s/article/360043436253,2023-04-12 07:45:19.879041
+360043436273,PostgreSQL Connector,https://domo-support.domo.com/s/article/360043436273,2023-04-12 07:45:29.433580
+360042931754,PostgreSQL SSH Connector,https://domo-support.domo.com/s/article/360042931754,2023-04-12 07:45:38.264217
+360043436293,SAP Adaptive Server Enterprise Connector,https://domo-support.domo.com/s/article/360043436293,2023-04-12 07:45:51.825554
+360042931774,SAP Adaptive Server Enterprise SSH Connector,https://domo-support.domo.com/s/article/360042931774,2023-04-12 07:46:00.707527
+360042929094,ServiceNow Connector,https://domo-support.domo.com/s/article/360042929094,2023-04-12 07:46:10.104573
+360042929114,Splunk Connector,https://domo-support.domo.com/s/article/360042929114,2023-04-12 07:46:19.364335
+360042931874,Vertica Connector,https://domo-support.domo.com/s/article/360042931874,2023-04-12 07:46:28.533661
+360042922794,Submitting Domo Product Feedback,https://domo-support.domo.com/s/article/360042922794,2023-04-12 07:46:38.926599
+360043441593,Publication Groups and You: The Not Quite Definitive Primer,https://domo-support.domo.com/s/article/360043441593,2023-04-12 07:47:17.251337
+4407033576471,Workbench 5.1 Training Topics,https://domo-support.domo.com/s/article/4407033576471,2023-04-12 07:47:31.406451
+360043437493,Setting Up Direct Upload in Workbench 5,https://domo-support.domo.com/s/article/360043437493,2023-04-12 07:47:51.086908
+360042924914,Radar Chart,https://domo-support.domo.com/s/article/360042924914,2023-04-12 07:48:01.510762
+360042925094,Word Cloud Chart,https://domo-support.domo.com/s/article/360042925094,2023-04-12 07:48:12.620406
+360043427973,Calendar,https://domo-support.domo.com/s/article/360043427973,2023-04-12 07:48:23.265319
+360042923874,Box Plot Chart,https://domo-support.domo.com/s/article/360042923874,2023-04-12 07:48:36.099843
+360043429173,High-low Chart,https://domo-support.domo.com/s/article/360043429173,2023-04-12 07:48:47.924765
+360043427993,Candlestick Chart,https://domo-support.domo.com/s/article/360043427993,2023-04-12 07:48:56.630110
+360042924394,Category Scatter Chart,https://domo-support.domo.com/s/article/360042924394,2023-04-12 07:49:05.957528
+360043429553,Symbol Chart,https://domo-support.domo.com/s/article/360043429553,2023-04-12 07:49:17.200072
+360042925034,Symbol Overlay Chart,https://domo-support.domo.com/s/article/360042925034,2023-04-12 07:49:29.482309
+360043428953,Available Miscellaneous Charts,https://domo-support.domo.com/s/article/360043428953,2023-04-12 07:49:39.997727
+360042923014,Optimizing a SQL DataFlow,https://domo-support.domo.com/s/article/360042923014,2023-04-12 07:49:59.391567
+360044289573,Supported Functions in Magic ETL,https://domo-support.domo.com/s/article/360044289573,2023-04-12 07:50:10.437331
+4408794063639,Upgrading Magic ETL,https://domo-support.domo.com/s/article/4408794063639,2023-04-12 07:50:24.924575
+360042934954,Social User FAQs and Video,https://domo-support.domo.com/s/article/360042934954,2023-04-12 07:50:35.067663
+360042934454,Adding User Licenses in Domo,https://domo-support.domo.com/s/article/360042934454,2023-04-12 07:50:45.361893
+360043439113,Specifying Worklog Settings,https://domo-support.domo.com/s/article/360043439113,2023-04-12 07:50:54.196052
+4407021955991,Managing Plugins in Workbench 5.1,https://domo-support.domo.com/s/article/4407021955991,2023-04-12 07:51:03.395374
+4406022964375,Installing Workbench 5.1,https://domo-support.domo.com/s/article/4406022964375,2023-04-12 07:51:16.156319
+4407022160791,Running Workbench 5.1,https://domo-support.domo.com/s/article/4407022160791,2023-04-12 07:51:28.627557
+4407026671767,Workbench 5.1 FAQs,https://domo-support.domo.com/s/article/4407026671767,2023-04-12 07:51:38.808725
+4407013897367,Setting the Time Zone for a Workbench 5.1 Job,https://domo-support.domo.com/s/article/4407013897367,2023-04-12 07:51:55.068002
+4407021587735,"Encrypting, Decrypting, and Hashing Workbench 5.1 Data",https://domo-support.domo.com/s/article/4407021587735,2023-04-12 07:52:08.242737
+4407013674519,Setting a Custom Date Format on a Column in Workbench 5.1,https://domo-support.domo.com/s/article/4407013674519,2023-04-12 07:52:25.004725
+4407013084439,Filtering Columns in Workbench 5.1,https://domo-support.domo.com/s/article/4407013084439,2023-04-12 07:52:37.303592
+4407022083351,Replacing a Column Value in Workbench 5.1,https://domo-support.domo.com/s/article/4407022083351,2023-04-12 07:52:49.566358
+4407019431831,Combining DataSets in Workbench 5.1,https://domo-support.domo.com/s/article/4407019431831,2023-04-12 07:53:02.548411
+360043427913,Top 5 Issues Users Experience with DataFlows in Domo,https://domo-support.domo.com/s/article/360043427913,2023-04-12 07:53:16.277740
+360042924934,Radial Gauge,https://domo-support.domo.com/s/article/360042924934,2023-04-12 07:53:26.983776
+360042924434,Comparative Gauge,https://domo-support.domo.com/s/article/360042924434,2023-04-12 07:53:37.315197
+4546361976087,Radial Progress Gauge,https://domo-support.domo.com/s/article/4546361976087,2023-04-12 07:53:47.658577
+4546378883863,Multi Radial Progress Gauge,https://domo-support.domo.com/s/article/4546378883863,2023-04-12 07:53:58.127469
+4546335931031,Waffle Gauge,https://domo-support.domo.com/s/article/4546335931031,2023-04-12 07:54:08.820898
+1500003419382,Dependency Gantt Chart,https://domo-support.domo.com/s/article/1500003419382,2023-04-12 07:54:20.195230
+360042924614,Grouped Bar Chart,https://domo-support.domo.com/s/article/360042924614,2023-04-12 07:54:33.523585
+360042925294,Specifying the Size of Bars in Bar Charts,https://domo-support.domo.com/s/article/360042925294,2023-04-12 07:54:43.145696
+360043428793,Creating a Map with Regions,https://domo-support.domo.com/s/article/360043428793,2023-04-12 07:54:53.368880
+360043429033,Country Map,https://domo-support.domo.com/s/article/360043429033,2023-04-12 07:55:12.032184
+360043429853,Properties for Maps,https://domo-support.domo.com/s/article/360043429853,2023-04-12 07:55:31.179811
+360049429094,Snowflake Federated Data Setup,https://domo-support.domo.com/s/article/360049429094,2023-04-12 07:55:59.189428
+360042932974,Using the Federated Data Solution,https://domo-support.domo.com/s/article/360042932974,2023-04-12 07:56:20.597559
+360043436053,Amazon Redshift v1 Connector,https://domo-support.domo.com/s/article/360043436053,2023-04-12 07:56:39.333440
+360043436033,Amazon Redshift Advanced Connector,https://domo-support.domo.com/s/article/360043436033,2023-04-12 07:56:52.600337
+360042931614,Amazon Redshift SSH Connector,https://domo-support.domo.com/s/article/360042931614,2023-04-12 07:57:03.692245
+360042930534,Apache Kafka Connector,https://domo-support.domo.com/s/article/360042930534,2023-04-12 07:57:13.268757
+360043433113,Apache Kafka REST Connector,https://domo-support.domo.com/s/article/360043433113,2023-04-12 07:57:23.064522
+360042930554,Cvent Connector,https://domo-support.domo.com/s/article/360042930554,2023-04-12 07:57:34.848810
+7963308557463,GitHub Enterprise,https://domo-support.domo.com/s/article/7963308557463,2023-04-12 07:57:44.549362
+360042931694,Hive Connector,https://domo-support.domo.com/s/article/360042931694,2023-04-12 07:57:54.098614
+360043434973,JIRA Rest API Connector,https://domo-support.domo.com/s/article/360043434973,2023-04-12 07:58:04.684049
+360042932034,JSON Advanced Connector,https://domo-support.domo.com/s/article/360042932034,2023-04-12 07:58:14.041811
+360043436113,IBM DB2 Connector,https://domo-support.domo.com/s/article/360043436113,2023-04-12 07:58:24.591789
+360043433393,IBM Informix Connector,https://domo-support.domo.com/s/article/360043433393,2023-04-12 07:58:36.151348
+360043433413,IBM Informix SSH Connector,https://domo-support.domo.com/s/article/360043433413,2023-04-12 07:58:45.770336
+360043436173,Microsoft SQL Server Connector,https://domo-support.domo.com/s/article/360043436173,2023-04-12 07:58:58.010028
+360042931734,MongoDB Connector,https://domo-support.domo.com/s/article/360042931734,2023-04-12 07:59:08.753746
+4410071437335,MySQL Advanced Security Connector,https://domo-support.domo.com/s/article/4410071437335,2023-04-12 07:59:20.859922
+360043436193,MySQL Connector,https://domo-support.domo.com/s/article/360043436193,2023-04-12 07:59:33.367909
+360043436213,MySQL SSH Connector,https://domo-support.domo.com/s/article/360043436213,2023-04-12 07:59:44.171151
+360043436233,Oracle Database Connector,https://domo-support.domo.com/s/article/360043436233,2023-04-12 07:59:53.615509
+360043436253,Oracle Database SSH Connector,https://domo-support.domo.com/s/article/360043436253,2023-04-12 08:00:06.129073
+360043436273,PostgreSQL Connector,https://domo-support.domo.com/s/article/360043436273,2023-04-12 08:00:15.726943
+360042931754,PostgreSQL SSH Connector,https://domo-support.domo.com/s/article/360042931754,2023-04-12 08:00:25.613946
+360043436293,SAP Adaptive Server Enterprise Connector,https://domo-support.domo.com/s/article/360043436293,2023-04-12 08:00:37.448533
+360042931774,SAP Adaptive Server Enterprise SSH Connector,https://domo-support.domo.com/s/article/360042931774,2023-04-12 08:00:50.590187
+360042929094,ServiceNow Connector,https://domo-support.domo.com/s/article/360042929094,2023-04-12 08:01:03.398938
+360042929114,Splunk Connector,https://domo-support.domo.com/s/article/360042929114,2023-04-12 08:01:12.835647
+360042931874,Vertica Connector,https://domo-support.domo.com/s/article/360042931874,2023-04-12 08:01:23.379230
+360042922794,Submitting Domo Product Feedback,https://domo-support.domo.com/s/article/360042922794,2023-04-12 08:01:32.849194
+360043441593,Publication Groups and You: The Not Quite Definitive Primer,https://domo-support.domo.com/s/article/360043441593,2023-04-12 08:01:48.155050
+4407033576471,Workbench 5.1 Training Topics,https://domo-support.domo.com/s/article/4407033576471,2023-04-12 08:02:02.081353
+360043437233,Connecting to CSV Data in Workbench 5,https://domo-support.domo.com/s/article/360043437233,2023-04-12 08:02:20.445674
+360043437493,Setting Up Direct Upload in Workbench 5,https://domo-support.domo.com/s/article/360043437493,2023-04-12 08:02:30.659096
+360042924274,Available Line Charts,https://domo-support.domo.com/s/article/360042924274,2023-04-12 08:02:41.436484
+360042924914,Radar Chart,https://domo-support.domo.com/s/article/360042924914,2023-04-12 08:03:05.565713
+360042925094,Word Cloud Chart,https://domo-support.domo.com/s/article/360042925094,2023-04-12 08:03:41.759354
+360043427973,Calendar,https://domo-support.domo.com/s/article/360043427973,2023-04-12 08:03:57.048249
+360042923874,Box Plot Chart,https://domo-support.domo.com/s/article/360042923874,2023-04-12 08:04:11.591767
+360043429173,High-low Chart,https://domo-support.domo.com/s/article/360043429173,2023-04-12 08:04:24.278450
+360043427993,Candlestick Chart,https://domo-support.domo.com/s/article/360043427993,2023-04-12 08:04:34.878935
+360042924694,Scatter Plot Chart,https://domo-support.domo.com/s/article/360042924694,2023-04-12 08:04:44.805177
+360042924394,Category Scatter Chart,https://domo-support.domo.com/s/article/360042924394,2023-04-12 08:04:54.252152
+360043429553,Symbol Chart,https://domo-support.domo.com/s/article/360043429553,2023-04-12 08:05:04.615934
+360042925034,Symbol Overlay Chart,https://domo-support.domo.com/s/article/360042925034,2023-04-12 08:05:17.474108
+360042934954,Social User FAQs and Video,https://domo-support.domo.com/s/article/360042934954,2023-04-12 08:05:30.756628
+4406022964375,Installing Workbench 5.1,https://domo-support.domo.com/s/article/4406022964375,2023-04-12 08:05:45.629682
+4407023720343,"Starting, Stopping, and Restarting the Workbench 5.1 Service",https://domo-support.domo.com/s/article/4407023720343,2023-04-12 08:05:58.151152
+4407022160791,Running Workbench 5.1,https://domo-support.domo.com/s/article/4407022160791,2023-04-12 08:06:09.726743
+360049429094,Snowflake Federated Data Setup,https://domo-support.domo.com/s/article/360049429094,2023-04-12 08:06:20.940473
+4410071437335,MySQL Advanced Security Connector,https://domo-support.domo.com/s/article/4410071437335,2023-04-12 08:06:42.295892
+360042932654,Understanding the Workbench 5 User Interface,https://domo-support.domo.com/s/article/360042932654,2023-04-12 08:06:53.439710
+360043212294,Scheduling a Job in Workbench 5,https://domo-support.domo.com/s/article/360043212294,2023-04-12 08:08:06.472820
+360043437333,Setting Notifications in Workbench 5,https://domo-support.domo.com/s/article/360043437333,2023-04-12 08:08:24.697252
+360043437413,"Encrypting, Decrypting, and Hashing Workbench 5 Data",https://domo-support.domo.com/s/article/360043437413,2023-04-12 08:08:37.312745
+360042932794,Creating Columns in Workbench 5 Using Calculations,https://domo-support.domo.com/s/article/360042932794,2023-04-12 08:08:53.259878
+360043437473,Setting a Custom Date Format on a Column in Workbench 5,https://domo-support.domo.com/s/article/360043437473,2023-04-12 08:09:06.726791
+360043437433,Replacing a Column Value in Workbench 5,https://domo-support.domo.com/s/article/360043437433,2023-04-12 08:09:20.705414
+360043437193,Combining DataSets in Workbench 5,https://domo-support.domo.com/s/article/360043437193,2023-04-12 08:09:34.142074
+360042932814,Filtering Columns in Workbench 5,https://domo-support.domo.com/s/article/360042932814,2023-04-12 08:09:47.160530
+360043437173,Workbench 5 Training Topics,https://domo-support.domo.com/s/article/360043437173,2023-04-12 08:10:01.145222
+360043437233,Connecting to CSV Data in Workbench 5,https://domo-support.domo.com/s/article/360043437233,2023-04-12 08:10:13.293584
+360043429233,Line Chart,https://domo-support.domo.com/s/article/360043429233,2023-04-12 08:10:26.246882
+360042924754,Multi-Line Chart,https://domo-support.domo.com/s/article/360042924754,2023-04-12 08:10:38.537408
+360043429153,Grouped Bar with Line Chart,https://domo-support.domo.com/s/article/360043429153,2023-04-12 08:10:48.985446
+360043428053,Stacked Bar with Line Chart,https://domo-support.domo.com/s/article/360043428053,2023-04-12 08:11:02.659314
+360042924594,Grouped and Stacked Bar with Line Chart,https://domo-support.domo.com/s/article/360042924594,2023-04-12 08:11:19.141356
+360042924274,Available Line Charts,https://domo-support.domo.com/s/article/360042924274,2023-04-12 08:11:29.948546
+4407023720343,"Starting, Stopping, and Restarting the Workbench 5.1 Service",https://domo-support.domo.com/s/article/4407023720343,2023-04-12 08:12:54.644565
+360042932634,Adding an Account in Workbench 5,https://domo-support.domo.com/s/article/360042932634,2023-04-12 08:13:04.322076
+360042932714,Connecting to JSON Data in Workbench 5,https://domo-support.domo.com/s/article/360042932714,2023-04-12 08:13:45.343076
+360043437353,Managing Plugins in Workbench 5,https://domo-support.domo.com/s/article/360043437353,2023-04-12 08:13:58.539280
+360044356293,Backing Up Workbench 5 Jobs,https://domo-support.domo.com/s/article/360044356293,2023-04-12 08:14:16.818942
+360043437213,Connecting to an OLAP Cube in Workbench 5,https://domo-support.domo.com/s/article/360043437213,2023-04-12 08:14:31.690211
+360042932734,Connecting to ODBC Data in Workbench 5,https://domo-support.domo.com/s/article/360042932734,2023-04-12 08:14:43.281818
+360043437253,Connecting to Excel Data in Workbench 5,https://domo-support.domo.com/s/article/360043437253,2023-04-12 08:14:55.826735
+360042932774,Connecting to XML Data in Workbench 5,https://domo-support.domo.com/s/article/360042932774,2023-04-12 08:15:14.647191
+360042932754,Connecting to QuickBooks Data in Workbench 5,https://domo-support.domo.com/s/article/360042932754,2023-04-12 08:15:25.085026
+360043437273,Connecting to JIRA Data in Workbench 5,https://domo-support.domo.com/s/article/360043437273,2023-04-12 08:15:38.745161
+360042932654,Understanding the Workbench 5 User Interface,https://domo-support.domo.com/s/article/360042932654,2023-04-12 08:15:50.132689
+360043212294,Scheduling a Job in Workbench 5,https://domo-support.domo.com/s/article/360043212294,2023-04-12 08:17:19.774596
+360043437333,Setting Notifications in Workbench 5,https://domo-support.domo.com/s/article/360043437333,2023-04-12 08:17:37.202292
+360043437413,"Encrypting, Decrypting, and Hashing Workbench 5 Data",https://domo-support.domo.com/s/article/360043437413,2023-04-12 08:17:50.094594
+360042932794,Creating Columns in Workbench 5 Using Calculations,https://domo-support.domo.com/s/article/360042932794,2023-04-12 08:18:05.190697
+360043437473,Setting a Custom Date Format on a Column in Workbench 5,https://domo-support.domo.com/s/article/360043437473,2023-04-12 08:18:24.067788
+360043437433,Replacing a Column Value in Workbench 5,https://domo-support.domo.com/s/article/360043437433,2023-04-12 08:18:39.277988
+360043437193,Combining DataSets in Workbench 5,https://domo-support.domo.com/s/article/360043437193,2023-04-12 08:18:52.989005
+360042932814,Filtering Columns in Workbench 5,https://domo-support.domo.com/s/article/360042932814,2023-04-12 08:19:08.918615
+360043437173,Workbench 5 Training Topics,https://domo-support.domo.com/s/article/360043437173,2023-04-12 08:19:22.470322
+360042925234,Filtering Outliers in a Line Chart,https://domo-support.domo.com/s/article/360042925234,2023-04-12 08:19:58.092357
+360043429233,Line Chart,https://domo-support.domo.com/s/article/360043429233,2023-04-12 08:20:17.706578
+360042924754,Multi-Line Chart,https://domo-support.domo.com/s/article/360042924754,2023-04-12 08:20:38.007382
+360042924294,Available Bar Charts,https://domo-support.domo.com/s/article/360042924294,2023-04-12 08:20:53.352592
+360043429773,Syncing Value Scales in a Dual-Scale Chart,https://domo-support.domo.com/s/article/360043429773,2023-04-12 08:22:21.569234
+360043429153,Grouped Bar with Line Chart,https://domo-support.domo.com/s/article/360043429153,2023-04-12 08:22:32.643056
+360043428053,Stacked Bar with Line Chart,https://domo-support.domo.com/s/article/360043428053,2023-04-12 08:22:46.742683
+360042924574,Grouped and Stacked Bar Chart,https://domo-support.domo.com/s/article/360042924574,2023-04-12 08:23:05.511453
+360042924594,Grouped and Stacked Bar with Line Chart,https://domo-support.domo.com/s/article/360042924594,2023-04-12 08:23:18.960792
+360042932634,Adding an Account in Workbench 5,https://domo-support.domo.com/s/article/360042932634,2023-04-12 08:23:34.109253
+360042932714,Connecting to JSON Data in Workbench 5,https://domo-support.domo.com/s/article/360042932714,2023-04-12 08:23:51.768077
+360043437353,Managing Plugins in Workbench 5,https://domo-support.domo.com/s/article/360043437353,2023-04-12 08:24:05.636956
+360044356293,Backing Up Workbench 5 Jobs,https://domo-support.domo.com/s/article/360044356293,2023-04-12 08:24:25.008228
+360043437213,Connecting to an OLAP Cube in Workbench 5,https://domo-support.domo.com/s/article/360043437213,2023-04-12 08:24:41.372313
+360043437373,Workbench 5 FAQs,https://domo-support.domo.com/s/article/360043437373,2023-04-12 08:25:15.589236
+360042932734,Connecting to ODBC Data in Workbench 5,https://domo-support.domo.com/s/article/360042932734,2023-04-12 08:25:30.703309
+360043437253,Connecting to Excel Data in Workbench 5,https://domo-support.domo.com/s/article/360043437253,2023-04-12 08:25:47.027026
+360042932774,Connecting to XML Data in Workbench 5,https://domo-support.domo.com/s/article/360042932774,2023-04-12 08:25:58.687519
+360042932754,Connecting to QuickBooks Data in Workbench 5,https://domo-support.domo.com/s/article/360042932754,2023-04-12 08:26:08.315620
+360043437273,Connecting to JIRA Data in Workbench 5,https://domo-support.domo.com/s/article/360043437273,2023-04-12 08:26:21.953859
+360042925234,Filtering Outliers in a Line Chart,https://domo-support.domo.com/s/article/360042925234,2023-04-12 08:26:59.095731
+360042924794,Nested Bar Chart,https://domo-support.domo.com/s/article/360042924794,2023-04-12 08:27:18.598784
+360043429393,Nested Bar with Line Chart,https://domo-support.domo.com/s/article/360043429393,2023-04-12 08:27:32.315738
+360043428993,100 Percent Stacked Bar Chart,https://domo-support.domo.com/s/article/360043428993,2023-04-12 08:27:44.865904
+360042923854,100 Percent Stacked Bar with Line Chart,https://domo-support.domo.com/s/article/360042923854,2023-04-12 08:28:02.772364
+360043429453,Percent of Total Chart,https://domo-support.domo.com/s/article/360043429453,2023-04-12 08:28:14.523120
+360042924734,Marimekko Chart,https://domo-support.domo.com/s/article/360042924734,2023-04-12 08:28:23.881456
+360043429433,Pareto Chart,https://domo-support.domo.com/s/article/360043429433,2023-04-12 08:28:36.603213
+360043429613,Waterfall Chart,https://domo-support.domo.com/s/article/360043429613,2023-04-12 08:28:49.041019
+360042924974,Running Total Bar Chart,https://domo-support.domo.com/s/article/360042924974,2023-04-12 08:29:12.835024
+360042924994,Running Total Grouped Bar Chart,https://domo-support.domo.com/s/article/360042924994,2023-04-12 08:29:28.347502
+360042924674,Running Total Stacked Bar Chart,https://domo-support.domo.com/s/article/360042924674,2023-04-12 08:29:42.643045
+360043429413,Overlay Bar Chart,https://domo-support.domo.com/s/article/360043429413,2023-04-12 08:29:52.173792
+360043429193,Histogram,https://domo-support.domo.com/s/article/360043429193,2023-04-12 08:30:30.411527
+360043429113,Funnel Chart,https://domo-support.domo.com/s/article/360043429113,2023-04-12 08:30:43.270983
+360042924294,Available Bar Charts,https://domo-support.domo.com/s/article/360042924294,2023-04-12 08:30:55.357383
+360043429773,Syncing Value Scales in a Dual-Scale Chart,https://domo-support.domo.com/s/article/360043429773,2023-04-12 08:32:31.037814
+360042924574,Grouped and Stacked Bar Chart,https://domo-support.domo.com/s/article/360042924574,2023-04-12 08:32:42.614812
+360043437173,Workbench 5 Training Topics,https://domo-support.domo.com/s/article/360043437173,2023-04-12 08:32:53.093139
+360042932574,Installing Workbench 5,https://domo-support.domo.com/s/article/360042932574,2023-04-12 08:33:03.224048
+360042932594,Running Workbench 5,https://domo-support.domo.com/s/article/360042932594,2023-04-12 08:33:17.761539
+360043437373,Workbench 5 FAQs,https://domo-support.domo.com/s/article/360043437373,2023-04-12 08:33:27.453184
+360042924794,Nested Bar Chart,https://domo-support.domo.com/s/article/360042924794,2023-04-12 08:33:41.692923
+360043429393,Nested Bar with Line Chart,https://domo-support.domo.com/s/article/360043429393,2023-04-12 08:33:54.891502
+360043428993,100 Percent Stacked Bar Chart,https://domo-support.domo.com/s/article/360043428993,2023-04-12 08:34:35.625508
+360042923854,100 Percent Stacked Bar with Line Chart,https://domo-support.domo.com/s/article/360042923854,2023-04-12 08:34:49.175365
+360043429453,Percent of Total Chart,https://domo-support.domo.com/s/article/360043429453,2023-04-12 08:35:10.269051
+360042924854,Pie Chart,https://domo-support.domo.com/s/article/360042924854,2023-04-12 08:35:19.713518
+360042924734,Marimekko Chart,https://domo-support.domo.com/s/article/360042924734,2023-04-12 08:35:33.436274
+360043429433,Pareto Chart,https://domo-support.domo.com/s/article/360043429433,2023-04-12 08:35:43.759235
+360043429613,Waterfall Chart,https://domo-support.domo.com/s/article/360043429613,2023-04-12 08:35:54.644194
+360042924974,Running Total Bar Chart,https://domo-support.domo.com/s/article/360042924974,2023-04-12 08:36:45.884695
+360042924994,Running Total Grouped Bar Chart,https://domo-support.domo.com/s/article/360042924994,2023-04-12 08:37:02.987770
+360042924674,Running Total Stacked Bar Chart,https://domo-support.domo.com/s/article/360042924674,2023-04-12 08:37:45.290735
+360043429413,Overlay Bar Chart,https://domo-support.domo.com/s/article/360043429413,2023-04-12 08:37:56.559512
+360043429193,Histogram,https://domo-support.domo.com/s/article/360043429193,2023-04-12 08:38:32.134915
+360043429113,Funnel Chart,https://domo-support.domo.com/s/article/360043429113,2023-04-12 08:38:42.671031
+360042932574,Installing Workbench 5,https://domo-support.domo.com/s/article/360042932574,2023-04-12 08:38:56.895520
+360043437153,"Starting, Stopping, and Restarting the Workbench 5 Service",https://domo-support.domo.com/s/article/360043437153,2023-04-12 08:39:11.191019
+360042932594,Running Workbench 5,https://domo-support.domo.com/s/article/360042932594,2023-04-12 08:39:21.895529
+360043428913,Available Pie-Type Charts,https://domo-support.domo.com/s/article/360043428913,2023-04-12 08:39:35.531279
+360042924854,Pie Chart,https://domo-support.domo.com/s/article/360042924854,2023-04-12 08:39:45.316347
+360043437153,"Starting, Stopping, and Restarting the Workbench 5 Service",https://domo-support.domo.com/s/article/360043437153,2023-04-12 08:40:02.879291
+360042924494,Donut Chart,https://domo-support.domo.com/s/article/360042924494,2023-04-12 08:40:16.014123
+360042925054,Tree Map,https://domo-support.domo.com/s/article/360042925054,2023-04-12 08:40:32.241783
+360043428913,Available Pie-Type Charts,https://domo-support.domo.com/s/article/360043428913,2023-04-12 08:40:50.316851
+360042924494,Donut Chart,https://domo-support.domo.com/s/article/360042924494,2023-04-12 08:41:02.101906
+360042925054,Tree Map,https://domo-support.domo.com/s/article/360042925054,2023-04-12 08:41:19.660002
