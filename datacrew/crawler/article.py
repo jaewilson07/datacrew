@@ -94,6 +94,19 @@ class Article:
     def md_soup(soup, **options):
         return md.MarkdownConverter(**options).convert_soup(soup)
 
+    def add_child_category_to_ls(self, child):
+
+        if child not in self.child_category_ls:
+            self.child_category_ls.append(child)
+
+        return self.child_category_ls
+    
+    def add_child_article_to_ls(self, url):
+        if url not in self.child_article_ls:
+            self.child_article_ls.append(url)
+
+        return self.child_article_ls
+
     def add_url_to_ls(self, url, is_remove_query_string_parameters: bool = True, debug_prn: bool = False):
 
         _old_url_ls = self.url_ls
@@ -296,8 +309,8 @@ class Article_Category(Article):
         child_article_ls=None,
         is_child_recursive: bool = False,
         debug_prn: bool = False,
-        parent = None,
-        top_parent = None
+        parent=None,
+        top_parent=None
     ):
         self.parent = parent
         self.top_parent = top_parent
@@ -328,16 +341,14 @@ class Article_Category(Article):
             child_article_ls=child_article_ls,
         )
 
-        print(self.child_article_ls, self.child_category_ls)
-
         self.article_soup = self.process_soup(soup, debug_prn=debug_prn)
         self.is_success = True
-        
+
     def process_soup(self, soup: BeautifulSoup, debug_prn: bool = False):
         if self.is_child_recursive:
             self.top_parent = self.top_parent or self.parent or self
             self.parent = self.parent or self
-        
+
         # process parent attributes
 
         article_soup = soup.find(class_=["cDomoKBCategoryNav"])
@@ -354,7 +365,8 @@ class Article_Category(Article):
         table_soup = article_soup.find_all(class_=[table_item_term])
 
         if not table_soup or table_soup == []:
-            raise ArticleKB_ProcessSoupError(url=self.url, search_term=table_item_term)
+            raise ArticleKB_ProcessSoupError(
+                url=self.url, search_term=table_item_term)
 
         # process children
         for row in table_soup:
@@ -362,58 +374,55 @@ class Article_Category(Article):
             url = row.find("a").get("href")
             if url[0] == "/":
                 url = url_parse.urljoin(self.base_url, url)
-            
+
             child_id = url.split("/")[-1]
 
             print(f"❤️ child url - {url}, {child_id}")
-            
+
             # update url recursively
             self.add_url_to_ls(url)
-            
             self.parent and self.parent.add_url_to_ls(url)
-            
             self.top_parent and self.top_parent.add_url_to_ls(url)
 
             if "/s/article/" in url:
-                self.child_article_ls.append(url)
-                self.parent and self.parent.child_article_ls.append(url)
-                self.top_parent and self.top_parent.child_article_ls.append(url)
+                self.add_child_article_to_ls(url)
+                self.parent and self.parent.add_child_article_to_ls(url)
+                self.top_parent and self.top_parent.add_child_article_to_ls(
+                    url)
                 continue
-                
+
             # if anything else
             if not self.url_entity_prefix in url:
                 print(f'skipping {url}')
                 continue
-                
+
             # if category
-            
-            child_obj = {"category": row.get_text(), "id": child_id, "url": url}
 
-            if self.is_child_recursive:
-                child_obj.update(
-                    {
-                        "child_article": Article_Category(
-                            url=url,
-                            base_url=self.base_url,
-                            url_entity_prefix=self.url_entity_prefix,
-                            driver=self.driver,
-                            child_article_ls = self.child_article_ls,
-                            child_category_ls = self.child_category_ls,
-                            top_parent = self.top_parent or None,
-                            parent = self.parent or None
-                        )
-                    }
-                )
+            child_obj = Article_Category(
+                url=url,
+                base_url=self.base_url,
+                url_entity_prefix=self.url_entity_prefix,
+                driver=self.driver,
+                child_article_ls=self.child_article_ls,
+                child_category_ls=self.child_category_ls,
+                top_parent=self.top_parent or None,
+                parent=self.parent or None
+            ) if self.is_child_recursive else Article_Category(
+                url=url,
+                base_url=self.base_url,
+                url_entity_prefix=self.url_entity_prefix,
+                driver=self.driver)
 
-            self.child_category_ls.append(child_obj)
-            self.parent and self.parent.child_category_ls.append(child_obj)            
-            self.top_parent and self.top_parent.child_category_ls.append(child_obj)
+            self.add_child_category_to_ls(child_obj)
+            self.parent and self.parent.add_child_category_to_ls(child_obj)
+            self.top_parent and self.top_parent.add_child_category_to_ls(child_obj)
 
         return {
             "category": category_soup,
             "description": category_description_soup,
             "children": table_soup,
         }
+
 
 # %% ../../nbs/crawler/article.ipynb 18
 @dataclass(init=False)
