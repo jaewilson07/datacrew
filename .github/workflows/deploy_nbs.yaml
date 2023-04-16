@@ -1,0 +1,17 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: ["main", "master"]
+  workflow_dispatch:
+jobs:
+  runMultipleCommands:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: |
+          nbdev_export
+          pip install -e .
+          git add .
+          git commit -m "updated via action"
+          git push
+      - run: echo "One last message"
