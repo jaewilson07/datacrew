@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: nbdev_export
 on:
   push:
     branches: ["main", "master"]
