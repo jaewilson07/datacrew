@@ -20,7 +20,7 @@ from dateutil import parser
 
 import datacrew.crawler.crawler as dcc
 
-# %% ../../nbs/crawler/article.ipynb 4
+# %% ../../nbs/crawler/article.ipynb 5
 @dataclass
 class Article:
     url: str
@@ -30,23 +30,27 @@ class Article:
     url_entity_prefix: str = None
     url_id: str = None
 
+
     driver: selenium.webdriver = field(repr=False, default=None)
     soup: BeautifulSoup = field(repr=False, default=None)
     article_soup: BeautifulSoup = field(repr=False, default=None)
 
     is_success: bool = False
 
-    url_ls: list[str] = field(default_factory=list)
-    image_ls: list[str] = field(default_factory=list)
+    url_ls: list[str] = field(default_factory= lambda : [])
+    image_ls: list[str] = field(default_factory= lambda : [])
 
-    def __post_init__(self):
-        if self.url_entity_prefix[0] != "/":
+    child_category_ls: list[dict] = field(default_factory=lambda : [])
+    child_article_ls: list[dict] = field(default_factory= lambda: [])
+
+    def __post_init__(self):    
+        if self.url_entity_prefix and self.url_entity_prefix[0] != "/":
             self.url_entity_prefix = f"/{self.url_entity_prefix}"
 
         if self.url_entity_prefix and self.url_entity_prefix in self.base_url:
             self.base_url = self.base_url.replace(self.url_entity_prefix, "")
 
-        self.entity_base_url = url_parse.urljoin(self.base_url, self.url_entity_prefix)
+        self.entity_base_url = url_parse.urljoin(self.base_url, self.url_entity_prefix or '')
 
         self.set_id()
 
@@ -55,40 +59,39 @@ class Article:
     def __eq__(self, other):
         return  (self.url_id == other.url_id) or (self.url ==other.url)
 
-    @classmethod
-    def get_from_url(
-        cls,
-        url: str,
-        driver: selenium.webdriver,
-        base_url: str,
-        url_entity_prefix: str = None,
-        element_type=By.CLASS_NAME,
-        element_id="slds-form-element",
-    ):
+    # @classmethod
+    # def get_from_url(
+    #     cls,
+    #     url: str,
+    #     driver: selenium.webdriver,
+    #     base_url: str,
+    #     url_entity_prefix: str = None,
+    #     element_type=By.CLASS_NAME,
+    #     element_id="slds-form-element",
+    # ):
 
-        soup = dcc.pagesource(
-            driver=driver,
-            url=url,
-            element_type=element_type,
-            element_id=element_id,
-        )
+    #     soup = dcc.pagesource(
+    #         driver=driver,
+    #         url=url,
+    #         element_type=element_type,
+    #         element_id=element_id,
+    #     )
 
-        return cls(
-            url=url,
-            url_entity_prefix=url_entity_prefix,
-            base_url=base_url,
-            soup=soup,
-            driver=driver,
-        )
+    #     return cls(
+    #         url=url,
+    #         url_entity_prefix=url_entity_prefix,
+    #         base_url=base_url,
+    #         soup=soup,
+    #         driver=driver,
+    #     )
 
     @staticmethod
     def md_soup(soup, **options):
         return md.MarkdownConverter(**options).convert_soup(soup)
 
-    def add_url_to_ls(self, url, is_remove_query_string_parameters: bool = True):
-        
-        if not self.url_ls:
-            self.url_ls = []
+    def add_url_to_ls(self, url, is_remove_query_string_parameters: bool = True, debug_prn: bool = False):
+
+        _old_url_ls = self.url_ls
 
         if url.startswith("/") and self.url_entity_prefix in url:
             url = url_parse.urljoin(self.base_url, url)
@@ -97,7 +100,9 @@ class Article:
             url = url_parse.urljoin(url, url_parse.urlparse(url).path)
 
         if not url.startswith(self.base_url):
-            return
+            if debug_prn:
+                print(f"not adding {url}")
+            return self.url_ls
 
         if url.endswith("/"):
             url = url[:-1]
@@ -106,10 +111,18 @@ class Article:
             url = "/".join(url.split("/")[:-1])
 
         if url not in self.url_ls:
+            if debug_prn:
+                print(f"{_old_url_ls} adding {url} to {self.url} list")
             self.url_ls.append(url)
+        
+        return self.url_ls
 
-    def get_urls(self):
-        for soup_link in self.soup.find_all("a"):
+    def get_urls(self, soup = None):
+        soup = soup or self.soup
+        if not soup:
+            return
+
+        for soup_link in soup.find_all("a"):
             url = soup_link.get("href")
 
             if not url:
@@ -153,7 +166,7 @@ class Article:
             print(self.image_ls)
         return self.image_ls
 
-# %% ../../nbs/crawler/article.ipynb 5
+# %% ../../nbs/crawler/article.ipynb 8
 class ArticleKB_GetSoupError(Exception):
     def __init__(self, url):
         super().__init__(f"failed to retrieve soup for {url}")
@@ -178,6 +191,10 @@ class Article_KB(Article):
         url,
         base_url,
         driver,
+        child_category_ls=None,
+        child_article_ls=None,
+
+
         url_entity_prefix="/s/article/",
         debug_prn: bool = False,
     ):
@@ -198,6 +215,9 @@ class Article_KB(Article):
             soup=soup,
             url_entity_prefix=url_entity_prefix,
             driver=driver,
+            child_category_ls=child_category_ls,
+            child_article_ls=child_article_ls,
+
         )
 
         if not soup:
@@ -212,7 +232,8 @@ class Article_KB(Article):
         table = soup.find_all(class_=[search_term])
 
         if not table or table == []:
-            raise ArticleKB_ProcessSoupError(url=self.url, search_term=search_term)
+            raise ArticleKB_ProcessSoupError(
+                url=self.url, search_term=search_term)
 
         tarticle = []
         for row in table:
@@ -230,7 +251,8 @@ class Article_KB(Article):
         self.md_str = self.md_soup(kb_soup.get("Article Body"))
         self.article_id = self.md_soup(kb_soup.get("Article Number"))
         self.views = self.md_soup(kb_soup.get("Article Total View Count"))
-        self.created = parser.parse(self.md_soup(kb_soup.get("Article Created Date")))
+        self.created = parser.parse(self.md_soup(
+            kb_soup.get("Article Created Date")))
 
         self.last_updated = parser.parse(
             self.md_soup(kb_soup.get("First Published Date"))
@@ -243,7 +265,8 @@ class Article_KB(Article):
 
         return kb_soup
 
-# %% ../../nbs/crawler/article.ipynb 9
+
+# %% ../../nbs/crawler/article.ipynb 12
 @dataclass(init=False)
 class Article_Category(Article):
 
@@ -251,7 +274,6 @@ class Article_Category(Article):
     category_description: str = None
 
     is_child_recursive: bool = True
-    crawl_category_id_ls: [str] = field(default=None)
 
     child_category_ls: list[dict] = field(default_factory=[])
     child_article_ls: list[dict] = field(default_factory=[])
@@ -261,15 +283,15 @@ class Article_Category(Article):
         url,
         base_url,
         url_entity_prefix="s/topic/",
-        crawl_category_id_ls=None,
-        debug_prn: bool = False,
         driver=None,
+        child_category_ls=None,
+        child_article_ls=None,
         is_child_recursive: bool = False,
+        debug_prn: bool = False,
     ):
 
-        self.child_article_ls = []
-        self.child_category_ls = []
-        self.crawl_category_id_ls = crawl_category_id_ls or []
+        self.child_article_ls = child_article_ls or []
+        self.child_category_ls = child_category_ls or []
         self.is_child_recursive = is_child_recursive
 
         if not driver:
@@ -292,6 +314,9 @@ class Article_Category(Article):
             soup=soup,
             url_entity_prefix=url_entity_prefix,
             driver=driver,
+            child_category_ls=child_category_ls,
+            child_article_ls=child_article_ls,
+
         )
 
         self.article_soup = self.process_soup(soup, debug_prn=debug_prn)
@@ -322,12 +347,12 @@ class Article_Category(Article):
             url = row.find("a").get("href")
             if url[0] == "/":
                 url = url_parse.urljoin(self.base_url, url)
+            
 
             child_id = url.split("/")[-1]
 
             print(f"❤️ child url - {url}, {child_id}")
-
-            self.add_url_to_ls(url)
+            print(self.add_url_to_ls(url, debug_prn = True))
 
             # if article
             if "/s/article/" in url:
@@ -369,7 +394,7 @@ class Article_Category(Article):
             "children": table_soup,
         }
 
-# %% ../../nbs/crawler/article.ipynb 12
+# %% ../../nbs/crawler/article.ipynb 16
 @dataclass(init=False)
 class Article_KB_Home(Article):
 
