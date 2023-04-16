@@ -1326,3 +1326,85 @@ id,name,url,updated, output_file_path
 360042923774,Linking Related Cards,https://domo-support.domo.com/s/article/360042923774,2023-04-12 14:58:55.634355,../../raw_kb\article\linking_related_cards\index.html
 360042923814,Locking or Unlocking Page Content,https://domo-support.domo.com/s/article/360042923814,2023-04-12 14:59:04.769072,../../raw_kb\article\locking_or_unlocking_page_content\index.html
 360043428253,Managing Pages,https://domo-support.domo.com/s/article/360043428253,2023-04-12 14:59:18.922792,../../raw_kb\article\managing_pages\index.html
+360042923254,Moving or Copying Cards to Other Pages,https://domo-support.domo.com/s/article/360042923254,2023-04-12 14:59:34.853174,../../raw_kb\article\moving_or_copying_cards_to_other_pages\index.html
+360042923614,Rearranging Cards on a Page,https://domo-support.domo.com/s/article/360042923614,2023-04-12 14:59:47.234693,../../raw_kb\article\rearranging_cards_on_a_page\index.html
+360042923294,Removing Cards from a Page,https://domo-support.domo.com/s/article/360042923294,2023-04-12 14:59:56.859193,../../raw_kb\article\removing_cards_from_a_page\index.html
+360043428613,Restricting Edit Capability for a Card,https://domo-support.domo.com/s/article/360043428613,2023-04-12 15:00:08.934677,../../raw_kb\article\restricting_edit_capability_for_a_card\index.html
+4529227357975,Using Smart Text,https://domo-support.domo.com/s/article/4529227357975,2023-04-12 15:00:21.055116,../../raw_kb\article\using_smart_text\index.html
+360042932994,Sharing and Removing Access to Cards and Dashboards,https://domo-support.domo.com/s/article/360042932994,2023-04-12 15:00:54.510790,../../raw_kb\article\sharing_and_removing_access_to_cards_and_dashboards\index.html
+360042933074,Sharing Content in Domo FAQs,https://domo-support.domo.com/s/article/360042933074,2023-04-12 15:01:06.967743,../../raw_kb\article\sharing_content_in_domo_faqs\index.html
+360043430233,Adding a Notebook Card,https://domo-support.domo.com/s/article/360043430233,2023-04-12 15:02:39.628606,../../raw_kb\article\adding_a_notebook_card\index.html
+360042925654,Editing a Notebook Card,https://domo-support.domo.com/s/article/360042925654,2023-04-12 15:03:12.368671,../../raw_kb\article\editing_a_notebook_card\index.html
+360042925594,Deleting a Document Version,https://domo-support.domo.com/s/article/360042925594,2023-04-12 15:03:24.276291,../../raw_kb\article\deleting_a_document_version\index.html
+360043430193,Downloading a Document from Domo,https://domo-support.domo.com/s/article/360043430193,2023-04-12 15:03:33.311540,../../raw_kb\article\downloading_a_document_from_domo\index.html
+360042925634,Permitted File Types for Attachments,https://domo-support.domo.com/s/article/360042925634,2023-04-12 15:03:43.991587,../../raw_kb\article\permitted_file_types_for_attachments\index.html
+360043430213,Previewing a Document,https://domo-support.domo.com/s/article/360043430213,2023-04-12 15:03:54.590512,../../raw_kb\article\previewing_a_document\index.html
+360042925614,Updating a Doc Card,https://domo-support.domo.com/s/article/360042925614,2023-04-12 15:04:06.263576,../../raw_kb\article\updating_a_doc_card\index.html
+360042925694,Adding a Poll Card to Domo,https://domo-support.domo.com/s/article/360042925694,2023-04-12 15:04:18.619211,../../raw_kb\article\adding_a_poll_card_to_domo\index.html
+360042925674,Adding a Sumo Card,https://domo-support.domo.com/s/article/360042925674,2023-04-12 15:04:30.046340,../../raw_kb\article\adding_a_sumo_card\index.html
+360043430253,Opening a Sumo Card for Editing,https://domo-support.domo.com/s/article/360043430253,2023-04-12 15:04:40.943289,../../raw_kb\article\opening_a_sumo_card_for_editing\index.html
+360046752694,Sumo Editor Layout,https://domo-support.domo.com/s/article/360046752694,2023-04-12 15:04:50.393896,../../raw_kb\article\sumo_editor_layout\index.html
+360043429913,Adding a Beast Mode Calculation to Your Chart,https://domo-support.domo.com/s/article/360043429913,2023-04-12 15:05:02.284496,../../raw_kb\article\adding_a_beast_mode_calculation_to_your_chart\index.html
+360043430033,"Adding Graphics, Links, and Images to Table Cards Using Beast Mode",https://domo-support.domo.com/s/article/360043430033,2023-04-12 15:05:15.406694,../../raw_kb\article\adding_graphics_links_and_images_to_table_cards_using_beast_mode\index.html
+360043430053,Beast Mode FAQs,https://domo-support.domo.com/s/article/360043430053,2023-04-12 15:05:29.470416,../../raw_kb\article\beast_mode_faqs\index.html
+4408174643607,Beast Mode FIXED Functions,https://domo-support.domo.com/s/article/4408174643607,2023-04-12 15:05:39.304089,../../raw_kb\article\beast_mode_fixed_functions\index.html
+360043429933,Beast Mode Functions Reference Guide,https://domo-support.domo.com/s/article/360043429933,2023-04-12 15:05:58.876062,../../raw_kb\article\beast_mode_functions_reference_guide\index.html
+360042925474,Beast Mode Manager,https://domo-support.domo.com/s/article/360042925474,2023-04-12 15:06:07.992153,../../raw_kb\article\beast_mode_manager\index.html
+360042925434,Bucketing Data Using Beast Mode,https://domo-support.domo.com/s/article/360042925434,2023-04-12 15:06:26.468410,../../raw_kb\article\bucketing_data_using_beast_mode\index.html
+360043429953,Date Format Specifier Characters for Beast Mode,https://domo-support.domo.com/s/article/360043429953,2023-04-12 15:06:37.375813,../../raw_kb\article\date_format_specifier_characters_for_beast_mode\index.html
+360043429993,Sample Beast Mode Calculations,https://domo-support.domo.com/s/article/360043429993,2023-04-12 15:06:47.055738,../../raw_kb\article\sample_beast_mode_calculations\index.html
+360043430073,Sample Beast Mode Calculations: Basic Transforms,https://domo-support.domo.com/s/article/360043430073,2023-04-12 15:06:56.750886,../../raw_kb\article\sample_beast_mode_calculations_basic_transforms\index.html
+360043430093,Sample Beast Mode Calculations: Card Element Transforms,https://domo-support.domo.com/s/article/360043430093,2023-04-12 15:07:06.513901,../../raw_kb\article\sample_beast_mode_calculations_card_element_transforms\index.html
+360042925494,Sample Beast Mode Calculations: Date Transforms,https://domo-support.domo.com/s/article/360042925494,2023-04-12 15:07:28.642126,../../raw_kb\article\sample_beast_mode_calculations_date_transforms\index.html
+360042925514,Sample Beast Mode Calculations: Mathematical Transforms,https://domo-support.domo.com/s/article/360042925514,2023-04-12 15:07:42.084546,../../raw_kb\article\sample_beast_mode_calculations_mathematical_transforms\index.html
+360043430113,Sample Beast Mode Calculations: Miscellaneous Transforms,https://domo-support.domo.com/s/article/360043430113,2023-04-12 15:07:52.664286,../../raw_kb\article\sample_beast_mode_calculations_miscellaneous_transforms\index.html
+360043430133,Sample Beast Mode Calculations: Period-over-Period Transforms,https://domo-support.domo.com/s/article/360043430133,2023-04-12 15:08:05.154176,../../raw_kb\article\sample_beast_mode_calculations_periodoverperiod_transforms\index.html
+360043430153,Top 5 Issues Users Experience with Beast Mode in Domo,https://domo-support.domo.com/s/article/360043430153,2023-04-12 15:08:14.917834,../../raw_kb\article\top_5_issues_users_experience_with_beast_mode_in_domo\index.html
+7903767835031,Variables Overview,https://domo-support.domo.com/s/article/7903767835031,2023-04-12 15:08:27.357836,../../raw_kb\article\variables_overview\index.html
+360043428393,Adding an Existing Card to a Dashboard,https://domo-support.domo.com/s/article/360043428393,2023-04-12 15:09:24.000372,../../raw_kb\article\adding_an_existing_card_to_a_dashboard\index.html
+360043429693,Formatting Data Label and Hover Text in Your Chart,https://domo-support.domo.com/s/article/360043429693,2023-04-12 15:09:41.757926,../../raw_kb\article\formatting_data_label_and_hover_text_in_your_chart\index.html
+360042934614,Creating and Deleting PDP Policies,https://domo-support.domo.com/s/article/360042934614,2023-04-12 15:10:03.387567,../../raw_kb\article\creating_and_deleting_pdp_policies\index.html
+4403489663127,Aggregated Filters,https://domo-support.domo.com/s/article/4403489663127,2023-04-12 15:10:20.148839,../../raw_kb\article\aggregated_filters\index.html
+360043438973,Managing Custom Roles,https://domo-support.domo.com/s/article/360043438973,2023-04-12 15:10:50.551057,../../raw_kb\article\managing_custom_roles\index.html
+360042923794,Changing a Card Owner,https://domo-support.domo.com/s/article/360042923794,2023-04-12 15:11:17.953456,../../raw_kb\article\changing_a_card_owner\index.html
+360042923934,Card Details View Layout,https://domo-support.domo.com/s/article/360042923934,2023-04-12 15:11:39.633537,../../raw_kb\article\card_details_view_layout\index.html
+360042923594,Changing the Size of Cards on a Dashboard,https://domo-support.domo.com/s/article/360042923594,2023-04-12 15:12:06.980234,../../raw_kb\article\changing_the_size_of_cards_on_a_dashboard\index.html
+360043438953,Default Security Role Reference,https://domo-support.domo.com/s/article/360043438953,2023-04-12 15:12:27.795257,../../raw_kb\article\default_security_role_reference\index.html
+360042923314,Creating and Managing Card Collections,https://domo-support.domo.com/s/article/360042923314,2023-04-12 15:12:39.169941,../../raw_kb\article\creating_and_managing_card_collections\index.html
+360043428553,Understanding Pages,https://domo-support.domo.com/s/article/360043428553,2023-04-12 15:13:05.161089,../../raw_kb\article\understanding_pages\index.html
+360043437893,Exporting Dashboards to PDF or PowerPoint,https://domo-support.domo.com/s/article/360043437893,2023-04-12 15:13:29.813170,../../raw_kb\article\exporting_dashboards_to_pdf_or_powerpoint\index.html
+360042923914,Applying Page-Level Filters with Filter Views,https://domo-support.domo.com/s/article/360042923914,2023-04-12 15:13:46.089461,../../raw_kb\article\applying_pagelevel_filters_with_filter_views\index.html
+360043430173,Adding a Doc Card to Domo,https://domo-support.domo.com/s/article/360043430173,2023-04-12 15:14:21.145554,../../raw_kb\article\adding_a_doc_card_to_domo\index.html
+360042924094,Adding a Drill Path to Your Chart,https://domo-support.domo.com/s/article/360042924094,2023-04-12 15:14:54.263034,../../raw_kb\article\adding_a_drill_path_to_your_chart\index.html
+360043428433,Creating Domo Stories,https://domo-support.domo.com/s/article/360043428433,2023-04-12 15:15:05.602402,../../raw_kb\article\creating_domo_stories\index.html
+360043428593,Deleting Cards from Domo,https://domo-support.domo.com/s/article/360043428593,2023-04-12 15:15:59.825797,../../raw_kb\article\deleting_cards_from_domo\index.html
+4423762260375,Domo Bricks,https://domo-support.domo.com/s/article/4423762260375,2023-04-12 15:16:10.926201,../../raw_kb\article\domo_bricks\index.html
+4530782510871,Drag-and-Drop Apps,https://domo-support.domo.com/s/article/4530782510871,2023-04-12 15:16:22.424381,../../raw_kb\article\draganddrop_apps\index.html
+360042924014,Filtering Data in a Card Details View,https://domo-support.domo.com/s/article/360042924014,2023-04-12 15:16:41.339630,../../raw_kb\article\filtering_data_in_a_card_details_view\index.html
+360042923274,"Duplicating Cards (""Save As"")",https://domo-support.domo.com/s/article/360042923274,2023-04-12 15:16:52.847652,../../raw_kb\article\duplicating_cards_save_as\index.html
+360043428573,Understanding Cards,https://domo-support.domo.com/s/article/360043428573,2023-04-12 15:17:03.561506,../../raw_kb\article\understanding_cards\index.html
+360042924074,Adding Filters to Your Chart,https://domo-support.domo.com/s/article/360042924074,2023-04-12 15:17:20.662213,../../raw_kb\article\adding_filters_to_your_chart\index.html
+360043437773,Scheduling Reports,https://domo-support.domo.com/s/article/360043437773,2023-04-12 15:17:38.903256,../../raw_kb\article\scheduling_reports\index.html
+360042934254,Controlling Access to Cards and Pages,https://domo-support.domo.com/s/article/360042934254,2023-04-12 15:18:10.424571,../../raw_kb\article\controlling_access_to_cards_and_pages\index.html
+360043428273,"Duplicating Dashboards (""Save As"")",https://domo-support.domo.com/s/article/360043428273,2023-04-12 15:18:21.413561,../../raw_kb\article\duplicating_dashboards_save_as\index.html
+360042923774,Linking Related Cards,https://domo-support.domo.com/s/article/360042923774,2023-04-12 15:18:31.530706,../../raw_kb\article\linking_related_cards\index.html
+360042934414,Adding Company Pages,https://domo-support.domo.com/s/article/360042934414,2023-04-12 15:18:42.286256,../../raw_kb\article\adding_company_pages\index.html
+360042923814,Locking or Unlocking Page Content,https://domo-support.domo.com/s/article/360042923814,2023-04-12 15:18:53.553144,../../raw_kb\article\locking_or_unlocking_page_content\index.html
+360043428253,Managing Pages,https://domo-support.domo.com/s/article/360043428253,2023-04-12 15:19:07.762789,../../raw_kb\article\managing_pages\index.html
+360042923254,Moving or Copying Cards to Other Pages,https://domo-support.domo.com/s/article/360042923254,2023-04-12 15:19:24.190439,../../raw_kb\article\moving_or_copying_cards_to_other_pages\index.html
+360042923614,Rearranging Cards on a Page,https://domo-support.domo.com/s/article/360042923614,2023-04-12 15:19:36.662712,../../raw_kb\article\rearranging_cards_on_a_page\index.html
+360042923294,Removing Cards from a Page,https://domo-support.domo.com/s/article/360042923294,2023-04-12 15:19:46.092376,../../raw_kb\article\removing_cards_from_a_page\index.html
+360043428613,Restricting Edit Capability for a Card,https://domo-support.domo.com/s/article/360043428613,2023-04-12 15:19:55.572655,../../raw_kb\article\restricting_edit_capability_for_a_card\index.html
+4529227357975,Using Smart Text,https://domo-support.domo.com/s/article/4529227357975,2023-04-12 15:20:06.735318,../../raw_kb\article\using_smart_text\index.html
+360043430533,Managing Your Alerts,https://domo-support.domo.com/s/article/360043430533,2023-04-12 15:20:39.563999,../../raw_kb\article\managing_your_alerts\index.html
+360043439153,Specifying Default Overview Content for Users,https://domo-support.domo.com/s/article/360043439153,2023-04-12 15:21:01.695839,../../raw_kb\article\specifying_default_overview_content_for_users\index.html
+360042934534,Specifying Authorized Domains for Invited Users,https://domo-support.domo.com/s/article/360042934534,2023-04-12 15:21:38.729699,../../raw_kb\article\specifying_authorized_domains_for_invited_users\index.html
+360042932994,Sharing and Removing Access to Cards and Dashboards,https://domo-support.domo.com/s/article/360042932994,2023-04-12 15:21:48.191823,../../raw_kb\article\sharing_and_removing_access_to_cards_and_dashboards\index.html
+360043438873,Adding and Removing Accessible Content for a Group,https://domo-support.domo.com/s/article/360043438873,2023-04-12 15:21:59.707045,../../raw_kb\article\adding_and_removing_accessible_content_for_a_group\index.html
+360042933054,Printing a Visualization Card,https://domo-support.domo.com/s/article/360042933054,2023-04-12 15:22:33.778661,../../raw_kb\article\printing_a_visualization_card\index.html
+360043437833,Exporting Sumo Data,https://domo-support.domo.com/s/article/360043437833,2023-04-12 15:22:44.175046,../../raw_kb\article\exporting_sumo_data\index.html
+360043437873,Emailing a Visualization Card,https://domo-support.domo.com/s/article/360043437873,2023-04-12 15:22:53.740342,../../raw_kb\article\emailing_a_visualization_card\index.html
+360043437813,Exporting Visualization Cards,https://domo-support.domo.com/s/article/360043437813,2023-04-12 15:23:04.512408,../../raw_kb\article\exporting_visualization_cards\index.html
+360043437953,Using the Domo PowerPoint Plugin,https://domo-support.domo.com/s/article/360043437953,2023-04-12 15:23:14.983894,../../raw_kb\article\using_the_domo_powerpoint_plugin\index.html
+360043437933,Using the Domo Excel Plugin,https://domo-support.domo.com/s/article/360043437933,2023-04-12 15:23:24.091325,../../raw_kb\article\using_the_domo_excel_plugin\index.html
+360042926134,Exporting DataSets,https://domo-support.domo.com/s/article/360042926134,2023-04-12 15:23:38.558533,../../raw_kb\article\exporting_datasets\index.html
