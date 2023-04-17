@@ -91,8 +91,29 @@ class Article:
 
     @staticmethod
     def md_soup(soup, **options):
-        """conerts soup to markdown text"""
-        return md.MarkdownConverter(**options).convert_soup(soup)
+
+        class CustomConverter(md.MarkdownConverter):
+            def convert_div(self, el, text, convert_as_inline):
+                classList = el.get("class")
+                if classList and "mt-video-widget" in classList:
+                    # print(el)
+                    # custom transformation
+                    # unwrap child nodes of <a class="searched_found">
+                    text = ""
+                    for child in el.children:
+                        # print(child.get('src'))
+                        text += child.get('src')
+                    text = f'{"{{< video"} {text}{" >}}"}'
+                    # print(text)
+                    return text
+
+                # default transformation
+                return super().convert_a(el, text, convert_as_inline)
+
+        """converts soup to markdown text"""
+
+        return CustomConverter(**options).convert_soup(soup)
+
 
     def add_child_category_to_ls(self, child):
 
