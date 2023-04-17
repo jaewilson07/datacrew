@@ -23,8 +23,8 @@ import datacrew.crawler.crawler as dcc
 # %% ../../nbs/crawler/article.ipynb 5
 @dataclass
 class Article:
-    url: str
-    base_url: str
+    url: str = None
+    base_url: str = None
     entity_base_url: str = None
 
     url_entity_prefix: str = None
@@ -200,6 +200,7 @@ class ArticleKB_ProcessSoupError(Exception):
 @dataclass(init=False)
 class Article_KB(Article):
     title: str = None
+    path_html: str = None
     md_str: str = field(default=None, repr=False)
     views: int = None
     created: dt.date = None
@@ -208,8 +209,8 @@ class Article_KB(Article):
 
     def __init__(
         self,
-        url,
-        base_url,
+        url : str = None,
+        base_url : str = None,
         path_html: str= None,
         driver = None,
         child_category_ls=None,
@@ -219,12 +220,13 @@ class Article_KB(Article):
     ):
         self.url = url
         self.base_url = base_url
+        self.path_html = path_html
 
         soup = None
 
         if path_html:
             page = open(path_html)
-            soup = BeautifulSoup(page.read())
+            soup = BeautifulSoup(page.read(), features="lxml")
         else: 
             soup = dcc.pagesource(
                 driver=self.driver,
@@ -296,6 +298,7 @@ class Article_KB(Article):
 class Article_Category(Article):
     top_parent = None
     parent = None
+    path_html :str = None
 
     category: str = None
     category_description: str = None
@@ -321,6 +324,7 @@ class Article_Category(Article):
     ):
         self.parent = parent
         self.top_parent = top_parent
+        self.path_html = path_html
 
         self.is_child_recursive = is_child_recursive
 
@@ -329,7 +333,7 @@ class Article_Category(Article):
         if path_html:
             self.is_child_recursive = False
             page = open(path_html)
-            soup = BeautifulSoup(page.read())
+            soup = BeautifulSoup(page.read(), features="lxml")
 
         else:
             if not driver:
@@ -412,26 +416,33 @@ class Article_Category(Article):
                 continue
 
             # if category
+            child_obj = None
 
-            child_obj = Article_Category(
-                url=url,
-                base_url=self.base_url,
-                url_entity_prefix=self.url_entity_prefix,
-                driver=self.driver,
-                child_article_ls=self.child_article_ls,
-                child_category_ls=self.child_category_ls,
-                top_parent=self.top_parent or None,
-                parent=self.parent or None,
-                is_child_recursive = self.is_child_recursive
-            ) if self.is_child_recursive else Article_Category(
+            if self.is_child_recursive:
+
+                child_obj = Article_Category(
+                    url=url,
+                    base_url=self.base_url,
+                    url_entity_prefix=self.url_entity_prefix,
+                    driver=self.driver,
+                    child_article_ls=self.child_article_ls,
+                    child_category_ls=self.child_category_ls,
+                    top_parent=self.top_parent or None,
+                    parent=self.parent or None,
+                    is_child_recursive = self.is_child_recursive
+                )
+            
+            elif not self.path_html:
+                child_obj = Article_Category(
                 url=url,
                 base_url=self.base_url,
                 url_entity_prefix=self.url_entity_prefix,
                 driver=self.driver)
 
-            self.add_child_category_to_ls(child_obj)
-            self.parent and self.parent.add_child_category_to_ls(child_obj)
-            self.top_parent and self.top_parent.add_child_category_to_ls(child_obj)
+            if child_obj:
+                self.add_child_category_to_ls(child_obj)
+                self.parent and self.parent.add_child_category_to_ls(child_obj)
+                self.top_parent and self.top_parent.add_child_category_to_ls(child_obj)
         
         self.md_str = self.md_soup(article_soup)
 
