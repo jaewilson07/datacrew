@@ -7,5 +7,6 @@ lxml
 nbdev
 datacrew
 markdownify
+requests
 
 [dev]

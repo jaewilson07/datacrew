@@ -30,7 +30,6 @@ class Article:
     url_entity_prefix: str = None
     url_id: str = None
 
-
     driver: selenium.webdriver = field(repr=False, default=None)
     soup: BeautifulSoup = field(repr=False, default=None)
     article_soup: BeautifulSoup = field(repr=False, default=None)
@@ -92,6 +91,7 @@ class Article:
 
     @staticmethod
     def md_soup(soup, **options):
+        """conerts soup to markdown text"""
         return md.MarkdownConverter(**options).convert_soup(soup)
 
     def add_child_category_to_ls(self, child):
@@ -210,24 +210,29 @@ class Article_KB(Article):
         self,
         url,
         base_url,
-        driver,
+        path_html: str= None,
+        driver = None,
         child_category_ls=None,
         child_article_ls=None,
-
-
         url_entity_prefix="/s/article/",
         debug_prn: bool = False,
     ):
         self.url = url
         self.base_url = base_url
 
-        soup = dcc.pagesource(
-            driver=self.driver,
-            url=self.url,
-            element_type=By.CLASS_NAME,
-            element_id="slds-form-element",
-            is_return_soup=True,
-        )
+        soup = None
+
+        if path_html:
+            page = open(path_html)
+            soup = BeautifulSoup(page.read())
+        else: 
+            soup = dcc.pagesource(
+                driver=self.driver,
+                url=self.url,
+                element_type=By.CLASS_NAME,
+                element_id="slds-form-element",
+                is_return_soup=True,
+            )
 
         super().__init__(
             url=url,
@@ -239,8 +244,6 @@ class Article_KB(Article):
             child_article_ls=child_article_ls,
 
         )
-
-        print(  self.child_category_ls, self.child_article_ls)
 
         if not soup:
             raise ArticleKB_GetSoupError(url=self.url)
@@ -288,7 +291,7 @@ class Article_KB(Article):
         return kb_soup
 
 
-# %% ../../nbs/crawler/article.ipynb 14
+# %% ../../nbs/crawler/article.ipynb 16
 @dataclass(init=False)
 class Article_Category(Article):
     top_parent = None
@@ -299,11 +302,15 @@ class Article_Category(Article):
 
     is_child_recursive: bool = True
 
+    md_str: str = field(default=None, repr=False)
+
+
     def __init__(
         self,
         url,
         base_url,
         url_entity_prefix="s/topic/",
+        path_html: str = None,
         driver=None,
         child_category_ls=None,
         child_article_ls=None,
@@ -317,16 +324,24 @@ class Article_Category(Article):
 
         self.is_child_recursive = is_child_recursive
 
-        if not driver:
-            driver = dcc.driversetup(is_headless=False)
+        soup = None
 
-        soup = dcc.pagesource(
-            driver=driver,
-            url=url,
-            element_type=By.CLASS_NAME,
-            element_ls=["section-list-item", "article-list-item"],
-            is_return_soup=True,
-        )
+        if path_html:
+            self.is_child_recursive = False
+            page = open(path_html)
+            soup = BeautifulSoup(page.read())
+
+        else:
+            if not driver:
+                driver = dcc.driversetup(is_headless=False)
+
+            soup = dcc.pagesource(
+                driver=driver,
+                url=url,
+                element_type=By.CLASS_NAME,
+                element_ls=["section-list-item", "article-list-item"],
+                is_return_soup=True,
+            )
 
         if not soup:
             raise ArticleKB_GetSoupError(url=url)
@@ -406,7 +421,8 @@ class Article_Category(Article):
                 child_article_ls=self.child_article_ls,
                 child_category_ls=self.child_category_ls,
                 top_parent=self.top_parent or None,
-                parent=self.parent or None
+                parent=self.parent or None,
+                is_child_recursive = self.is_child_recursive
             ) if self.is_child_recursive else Article_Category(
                 url=url,
                 base_url=self.base_url,
@@ -416,6 +432,8 @@ class Article_Category(Article):
             self.add_child_category_to_ls(child_obj)
             self.parent and self.parent.add_child_category_to_ls(child_obj)
             self.top_parent and self.top_parent.add_child_category_to_ls(child_obj)
+        
+        self.md_str = self.md_soup(article_soup)
 
         return {
             "category": category_soup,
@@ -424,7 +442,7 @@ class Article_Category(Article):
         }
 
 
-# %% ../../nbs/crawler/article.ipynb 18
+# %% ../../nbs/crawler/article.ipynb 21
 @dataclass(init=False)
 class Article_KB_Home(Article):
     category: str = None
