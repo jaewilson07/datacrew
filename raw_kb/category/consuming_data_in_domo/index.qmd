@@ -1,0 +1,10 @@
+
+
+
+Consuming Data In Domo
+======================
+
+Increase the productivity for your business using built-in tools like Buzz, Projects and Tasks, and Domo Alerts.
+***
+* [Exporting Cards And Dashboards](..\exporting_cards_and_dashboards\index.qmd)
+* [Interacting With Cards And Dashboards](..\interacting_with_cards_and_dashboards\index.qmd)

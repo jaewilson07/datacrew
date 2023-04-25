@@ -1,13 +1,13 @@
 ---
-title : Adding a Beast Mode Calculation to Your Chart
+title : Searching in Domo
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
-date: 2022-10-24 22:40:00
-url : https://domo-support.domo.com/s/article/360043429913
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429993', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428753']
-article_id : 000004076
-views : 10,979
-created_date : 2022-10-24 21:20:00
-last updated : 2022-10-24 22:40:00
+date: 2022-10-24 22:39:00
+url : https://domo-support.domo.com/s/article/360043427393
+linked_kbs :  ['https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360042922894', 'https://domo-support.domo.com/s/article/360043427393', 'https://domo-support.domo.com/s/article/360043428553', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360043428573', 'https://domo-support.domo.com/s/article/360043438913', 'https://domo-support.domo.com/s/article/360043438953', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360042925574', 'https://domo-support.domo.com/s/article/360043429913']
+article_id : 000004341
+views : 4,397
+created_date : 2022-10-24 21:41:00
+last updated : 2022-10-24 22:39:00
 ---
 
 
@@ -16,172 +16,117 @@ Intro
 -----
 
 
-You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
-
-
-**Video - Intro to Beast Mode**
-
-
-{{< video www.youtube.com/embed/SpVbmZPMAsM >}}
- 
-
-
-**Video - Creating a Calculated Field**
-
-
-{{< video www.youtube.com/embed/h6SQR_H9OsY >}}
- 
-
-
-**Video - Case Statement Overview**
-
-
-{{< video www.youtube.com/embed/xFofhklohSc >}}
- 
-
-
-Parts of the Beast Mode dialog
-------------------------------
-
-
-The following screenshot shows how the Beast Mode dialog looks:
-
-
-![Beast_Mode_Dialog.jpg](Beast_Mode_Dialog.jpg)
-
-
-You can learn about the user interface components of the Beast Mode dialog in the following table:
+You can perform a global (Domo-wide) search to locate any of the following:
 
 
 
+* [Pages](..\understanding_pages\index.html "Understanding Pages") (referred to as "Dashboards" in the UI) (includesÂ subPages)
+* [Cards](..\understanding_cards\index.html "Understanding Cards")
+* [People](..\..\category\user_and_group_management\index.html "Managing Users and Groups")
+* [Groups](/s/article/360043438913 "Creating and Managing User Groups")
+* [DataSets](..\..\category\data_center_overview\index.html "Managing DataSets") (searches names as well as row values)
+* [DataFlows](..\..\category\transforming_data_in_domo\index.html "Magic Transforms")
+* [Connectors](..\..\category\connectors\index.html "Configuring Each Connector")
+* [Buzz conversations](..\chatting_in_buzz\index.html "Chatting in Buzz")Â (including group conversations, public and private channels, message threads, and Card and Page conversations)
+* [Available Appstore apps](/s/topic/0TO5w000000ZampGAC "The Appstore")
+* [Projects and tasks](..\..\category\projects_and_tasks\index.html "Projects and Tasks")
+* [Alerts](..\..\category\notifications_and_alerts\index.html "Notifications and Alerts")
+* Knowledge Base articles
+* [Community ForumÂ posts](..\finding_solutions_using_the_community_forum\index.md)
+* "Quick Links" to various Domo tools
 
-| Name | Description |
-| --- | --- |
-| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
-| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
-| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
-| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
-| Function Description | Displays the description of the selected function. |
-| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
-| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
+
+You can also search specifically for Pages and SubpagesÂ in the **Filter by name** field at the top of the left-hand navigation pane.Â 
 
 
-Adding a Beast Mode calculation
+Performing a global search
+--------------------------
+
+
+You can perform a Domo-wide search to locate any of the entities listed above. This is a keyword-specific search, so searching for "sales" would return only those items. You can use quotation marks around search terms when you want to search for the term as a whole instead of the individual words. Boolean operators and wildcards are supported.
+
+
+Your search returns only those items that you have sufficient access rights to view. For more information about security roles, see [DefaultÂ Security Role Reference](..\default_security_role_reference\index.md).
+
+
+Search results are usually accompanied by helpful metadata. For example, search results for Cards show you the Card type andÂ the owner and the number of views. Search results for people show you their contact information (if it has been entered in their Profile Page). Clicking a search result usually opens the associated item in Domo. For example, clicking a Buzz message opens the parent conversation in Buzz with that message selected; clicking a Card opens the Card Details view; and so on.
+
+
+### Performing a basic search
+
+
+To perform a basic global search in Domo, you simply open the Search interface by clicking the magnifying glass icon ![Screen_Shot_2020-04-21_at_11.51.38_AM.png](Screen_Shot_2020-04-21_at_11.51.38_AM.png) in the toolbar at the top of the screen, then enter your search term into the **Search Domo** field. All results matching your query are then returned, grouped by category, including Pages, Cards, Buzz, People, DataSets, Groups, etc.Â The category bar at the top of the screen shows the number of search results withinÂ each category. Any categories that do not fit in your category bar can be found in the **More**Â menu, on the right side of the bar.Â   
+  
+![search_more_menu.png](search_more_menu.png)
+
+
+### Filtering and sorting search results
+
+
+There are many ways to filter and sort your search results to better find what you're looking for, including the following:
+
+
+
+* Filtering on a specific category of search results by clicking the category name under the search bar.Â   
+   
+ In the following example, the user has first entered "marketing" as a search term. He then clicks on theÂ **People**Â category, which filters the search results to show all people whose title or department includes the keyword "marketing."  
+   
+ ![search_people_filter.png](search_people_filter.png)
+* Choosing a filter from the pane on the left-hand side of the screen.  
+   
+ This pane is context-sensitive, meaning options appear depending on the currently selected search category. For example, if you selectÂ **Buzz**Â as the search category, you get "Date created" options for filtering by creation date, along with Buzz-specific filters, includingÂ **Message from**,Â **Message @mentions**,Â **In conversation**, andÂ **Conversation type**; you can also specify whether the message contains attachments or links. If the defaultÂ **All Domo**Â category is selected, all filter options are available.Â   
+   
+ Continuing with the previous example, the user wants to filter the search results to show only those individuals with "Marketing Automation" in their title. Clicking in theÂ **Search job titles**Â field opens a list of marketing-related job titles in your DomoÂ instance. The user locates "Marketing Automation" in the list and clicks on it.  
+   
+ ![search_marketing_automation.png](search_marketing_automation.png)  
+   
+ This filters the results to show only "Lowry Akers" and "Jeff Cullimore," the two people in the instance with "Marketing Automation" in their titles.  
+   
+ ![search_marketing_automation2.png](search_marketing_automation2.png)  
+ Â
+* Sorting the results by selecting a sort option in the dropdown menu above the search results. You can choose to sort by relevance, by newest or oldest creation date, or by newest or oldest updated date. "Relevance" in this case returns search results based on how frequently the provided query occurs in a given search result.Â  In addition, certain fields are deemed more relevant than others (for example, "User Name" is considered more relevant than "User Department").  
+   
+ ![search_sort_new.png](search_sort_new.png)
+* Combinations of all of the above.
+
+
+### Save search results
+
+
+Once you have filtered and sorted your search results to better find what you're looking for, you can now save those results and easily come back to your common searchesâ€”no matter how complex they are.
+
+
+1. Click the Star icon in the search bar to favorite a filter.
+2. Name the filter and click Save.  
+   
+ ![Save_Search.png](Save_Search.png)
+3. It will now display under the Saved Filters section so that you can easily pull up the results.  
+   
+ ![Saved_Filter.png](Saved_Filter.png)
+
+
+### Clearing search results
+
+
+You can clear the results of the latest search by clicking **Clear search**Â in the left-hand pane.Â 
+
+
+![search_clear.png](search_clear.png)
+
+
+Searching for a Page or Subpage
 -------------------------------
 
 
-Use the information in this section to add calculations for transforming data using Beast Mode. 
+In the **Filter by name**Â fieldÂ at the top of the left-hand navigation pane in the **Dashboards**Â tab, you canÂ filter to showÂ the desired Page(s) or Subpage(s). You can then click a Page or Subpage to open it. Subpages in search results will include the name of the parent Page or SubpageÂ above them.Â 
 
 
-**To add a Beast Mode calculation,**
+![filter_by_name.png](filter_by_name.png)
 
 
-1. On the KPI card where you want to add a calculation, click ![](1.png), then select **Edit Card**.
-2. In Analyzer, click **Add Calculated Field**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
+**To search for a Page or Subpage,**
 
 
-The Beast Mode dialog appears.
-3. In **Calculated Field Name**, enter the title of the calculation.
-
-
-**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
-![Beast_Mode_Modal.png](Beast_Mode_Modal.png)
-**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
-4. In **Formula**, enter the calculation you want.  
-You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
-For more information about functions, see [Beast Mode Functions Reference Guide](../../raw_kb/article/beast_mode_functions_reference_guide/index.html).
-5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
-6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
-If there are errors, revise your calculation.   
-After saving, the calculation column appears in the Categories list for the card in Analyzer.
-
-
-**To edit a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
-3. Make any changes you want, then click **Save & Close**.
-
-
-**To delete a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
-3. Click **Remove** to confirm deleting the calculation.
-
-
-Calculation usage notes
------------------------
-
-
-* Most calculations use one of the following general formats: 
-
-
-
-| Format | Description |
-| --- | --- |
-| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
-| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
-| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
-| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](../../raw_kb/article/date_format_specifier_characters_for_beast_mode/index.html "Date Format Specifier Characters in Beast Mode"). |
-
-
-* In calculations, Beast Mode function names are *not* case sensitive.
-* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
-* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
-Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
-* Use single quotes (') for strings: 'mystring'
-* You can escape a quote using two single quotes: 'O''Neal'
-* You can insert a space in a calculation using single quotes: `' '`  
-This is useful with functions like CONCAT when you need to combine strings.
-* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
-* You cannot refer to a specific calculation by name in another calculation.  
-For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
-* Calculations can be completed automatically as you enter them.
-
-
-	+ As you enter functions, a list of functions appears, which you can select from.
-	+ If you enter a backtick ('), a list of column names appears, which you can select from.
-* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
-* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
-* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
-* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](../../raw_kb/article/adding_a_drill_path_to_your_chart/index.html "Adding Drill Path to Your Chart").
-* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
-* Do *not* mix data types of values you put in a transformed column.  
-For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
-* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
-* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
-* You can drag and drop a column name from the DataSet Fields list to your calculation.
-* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
-
-
-For Beast Mode syntax examples, see [Sample Beast Mode Calculations](../../raw_kb/article/sample_beast_mode_calculations/index.html).
-
-
-Applying a calculation to a summary number
-------------------------------------------
-
-
-If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
-
-
-* AVG
-* COUNT
-* COUNT (DISTINCT)
-* MAX
-* MIN
-* SUM
-* SUM (DISTINCT)
-* STDDEV\_POP, VAR\_POP
-
-
-When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
-
-
-**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number.
-For more information about summary numbers, see [Configuring Your Chart Summary Number](../../raw_kb/article/configuring_your_chart_summary_number/index.html "Configuring Your Chart Summary Number").
+1. (Conditional) ClickÂ **Dashboards**Â in the top left corner of Domo if it is not open already.
+2. In theÂ **Filter by name**Â field, enter the name of the desired Page or Subpage.  
+ The PagesÂ and Subpages matching your query are filtered as you add or remove letters. Â Â Â

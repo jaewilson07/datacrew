@@ -1,0 +1,14 @@
+
+
+
+Interacting With Cards And Dashboards
+=====================================
+***
+* [Adding Cards as Favorites](..\..\article\adding_cards_as_favorites\index.qmd)
+* [Adding Dashboards as Favorites](..\..\article\adding_dashboards_as_favorites\index.qmd)
+* [Applying Page-Level Filters with Filter Views](..\..\article\applying_pagelevel_filters_with_filter_views\index.qmd)
+* [Card Details View Layout](..\..\article\card_details_view_layout\index.qmd)
+* [Reporting Issues with Cards](..\..\article\reporting_issues_with_cards\index.qmd)
+* [Understanding Cards](..\..\article\understanding_cards\index.qmd)
+* [Understanding Pages](..\..\article\understanding_pages\index.qmd)
+* [Using Story Presentation Mode](..\..\article\using_story_presentation_mode\index.qmd)

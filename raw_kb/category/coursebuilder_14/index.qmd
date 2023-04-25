@@ -1,0 +1,20 @@
+
+
+
+CourseBuilder 1.4
+=================
+***
+* [Adding and Designing Pages in CourseBuilder](..\..\article\adding_and_designing_pages_in_coursebuilder\index.qmd)
+* [Best Practices for Using CourseBuilder](..\..\article\best_practices_for_using_coursebuilder\index.qmd)
+* [CourseBuilder FAQs](..\..\article\coursebuilder_faqs\index.qmd)
+* [Creating a Card from Your CourseBuilder App in the Asset Library](..\..\article\creating_a_card_from_your_coursebuilder_app_in_the_asset_library\index.qmd)
+* [Creating and Importing CourseBuilder Apps](..\..\article\creating_and_importing_coursebuilder_apps\index.qmd)
+* [Customizing or Branding Your CourseBuilder App](..\..\article\customizing_or_branding_your_coursebuilder_app\index.qmd)
+* [Importing Files into Your CourseBuilder App Project](..\..\article\importing_files_into_your_coursebuilder_app_project\index.qmd)
+* [Installing CourseBuilder](..\..\article\installing_coursebuilder\index.qmd)
+* [Previewing and Exporting Your CourseBuilder App](..\..\article\previewing_and_exporting_your_coursebuilder_app\index.qmd)
+* [Setting Up a Google Analytics Report in Domo for Your Training App](..\..\article\setting_up_a_google_analytics_report_in_domo_for_your_training_app\index.qmd)
+* [Setting Up Google Analytics Tracking on a Training App](..\..\article\setting_up_google_analytics_tracking_on_a_training_app\index.qmd)
+* [Understanding the CourseBuilder Layout](..\..\article\understanding_the_coursebuilder_layout\index.qmd)
+* [Updating Google Analytics Tracking for a Training App](..\..\article\updating_google_analytics_tracking_for_a_training_app\index.qmd)
+* [Why Use CourseBuilder?](..\..\article\why_use_coursebuilder\index.qmd)

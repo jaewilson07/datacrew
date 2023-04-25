@@ -1,0 +1,13 @@
+
+
+
+Onboarding Resources
+====================
+***
+* [Analyzer Card Basics](..\..\article\analyzer_card_basics\index.qmd)
+* [Domo Program Roles](..\..\article\domo_program_roles\index.qmd)
+* [Domo University: Training Paths](..\..\article\domo_university_training_paths\index.qmd)
+* [Fun Sample DataSets](..\..\article\fun_sample_datasets\index.qmd)
+* [New User Glossary](..\..\article\new_user_glossary\index.qmd)
+* [Training Overview](..\..\article\training_overview\index.qmd)
+* [What Should I Know?](..\..\article\what_should_i_know\index.qmd)

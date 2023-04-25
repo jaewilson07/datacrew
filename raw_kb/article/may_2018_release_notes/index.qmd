@@ -1,187 +1,234 @@
 ---
-title : Adding a Beast Mode Calculation to Your Chart
+title : May 2018 Release Notes
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
-date: 2022-10-24 22:40:00
-url : https://domo-support.domo.com/s/article/360043429913
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429993', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428753']
-article_id : 000004076
-views : 10,979
-created_date : 2022-10-24 21:20:00
-last updated : 2022-10-24 22:40:00
+date: 2022-10-24 22:42:00
+url : https://domo-support.domo.com/s/article/360042935034
+linked_kbs :  ['https://domo-support.domo.com/s/article/360043429333', 'https://domo-support.domo.com/s/article/360042935034', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043429353', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042933094', 'https://domo-support.domo.com/s/article/360042922874', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043430273', 'https://domo-support.domo.com/s/article/360043429853', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043429913']
+article_id : 000004430
+views : 3,988
+created_date : 2022-10-24 22:09:00
+last updated : 2022-10-24 22:42:00
 ---
 
 
 
-Intro
------
-
-
-You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
-
-
-**Video - Intro to Beast Mode**
-
-
-{{< video www.youtube.com/embed/SpVbmZPMAsM >}}
- 
-
-
-**Video - Creating a Calculated Field**
-
-
-{{< video www.youtube.com/embed/h6SQR_H9OsY >}}
- 
-
-
-**Video - Case Statement Overview**
-
-
-{{< video www.youtube.com/embed/xFofhklohSc >}}
- 
-
-
-Parts of the Beast Mode dialog
+New features and enhancementsÂ
 ------------------------------
 
 
-The following screenshot shows how the Beast Mode dialog looks:
+Features and enhancements for our May 2018 release include the following:
 
 
-![Beast_Mode_Dialog.jpg](Beast_Mode_Dialog.jpg)
+### Alerts Wizard with Custom Message Builder
 
 
-You can learn about the user interface components of the Beast Mode dialog in the following table:
+Creating alerts in DomoÂ is now easier than ever thanks to our new 3-step Alerts Wizard. In addition to guiding you through longstanding alert-building processes such as configuring alert rules and sharing alerts, the WizardÂ also includes a Custom Message Builder. This new tool allows you toÂ customize the message that is sent when an alert is triggered. Instead of having to read a system-generated message that may not always make sense to recipients, you canÂ now configure your own templates on a per-alert basis.Â 
 
 
+When you goÂ to set up a new alert, you can write yourÂ own text and incorporate system variables to produce a more human-readable, friendly, and informative alert message, which can provide more context to recipients faster. The result is dynamically-generated messages sent to alert recipientsÂ that clearly provide information on what the alert is supposed to tell them about, as well as what has triggered the alert.Â   
+  
+Managing by exception and keeping everyone on the same page at the same time just got one notch easier.  
+  
+![custom_alert_message_rn.png](custom_alert_message_rn.png)
 
 
-| Name | Description |
-| --- | --- |
-| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
-| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
-| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
-| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
-| Function Description | Displays the description of the selected function. |
-| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
-| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
+For more information about creating alerts, seeÂ Creating a Custom Alert for a KPI Card.
 
 
-Adding a Beast Mode calculation
--------------------------------
+### Custom Charts
 
 
-Use the information in this section to add calculations for transforming data using Beast Mode. 
+Domo has added support for custom data-driven maps. All you need to do is upload an image and Domo does the rest. You can create any maps pertinent to your business, such as maps for countries not available by defaultÂ in Domo, like this map of Hong Kong:  
+Â 
 
 
-**To add a Beast Mode calculation,**
+![custommaps_hongkong.png](custommaps_hongkong.png)  
+Â 
 
 
-1. On the KPI card where you want to add a calculation, click ![](1.png), then select **Edit Card**.
-2. In Analyzer, click **Add Calculated Field**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
+Or you can build geographical maps divided by region, like this regionalized sales map for the United States:![custommaps_usregions.png](custommaps_usregions.png)  
+  
+  
+  
+  
+  
+You can evenÂ build maps of objects like office layouts, assembly lines, production/shipping facilities, or seats on an airplane, like the following:Â   
+Â 
 
 
-The Beast Mode dialog appears.
-3. In **Calculated Field Name**, enter the title of the calculation.
+![custommaps_plane.png](custommaps_plane.png)
 
 
-**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
-![Beast_Mode_Modal.png](Beast_Mode_Modal.png)
-**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
-4. In **Formula**, enter the calculation you want.  
-You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
-For more information about functions, see [Beast Mode Functions Reference Guide](../../raw_kb/article/beast_mode_functions_reference_guide/index.html).
-5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
-6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
-If there are errors, revise your calculation.   
-After saving, the calculation column appears in the Categories list for the card in Analyzer.
+Â 
 
 
-**To edit a Beast Mode calculation,**
+All of these mapsÂ are powered by your own data, so any time your data updates, your maps will update as well.Â Â 
 
 
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
-3. Make any changes you want, then click **Save & Close**.
+Depending on the complexity of your maps, you may be able to upload maps without having to edit the SVG, or you may need to make code changes, which will most likely require a working knowledge of XML.Â 
 
 
-**To delete a Beast Mode calculation,**
+For more information, seeÂ Adding Custom Charts to Domo.Â 
 
 
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
-3. Click **Remove** to confirm deleting the calculation.
+### Microsoft Word Plugin
 
 
-Calculation usage notes
------------------------
+Use the Domo Word plugin to download cards or DataSet data from DomoÂ into Microsoft Word.Â This is an excellent way to share your Domo data with others in your company who may not have access to Domo.Â 
 
 
-* Most calculations use one of the following general formats: 
+Using this plugin, you can do all of the following:
 
 
 
-| Format | Description |
-| --- | --- |
-| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
-| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
-| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
-| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](../../raw_kb/article/date_format_specifier_characters_for_beast_mode/index.html "Date Format Specifier Characters in Beast Mode"). |
+* ImportÂ KPIÂ cardsÂ or individual components of KPI cards (such as chart/table content, summary numbers, owner name, etc.) into Word.
+* Use query tables to import DataSet data as selected fields or as a single value.
+* Highlight the Domo content in your Word document so viewers can recognize it immediately.
+* Refresh the contentâ€”if anything has changed in the card or DataSet, it will be "redownloaded."
 
 
-* In calculations, Beast Mode function names are *not* case sensitive.
-* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
-* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
-Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
-* Use single quotes (') for strings: 'mystring'
-* You can escape a quote using two single quotes: 'O''Neal'
-* You can insert a space in a calculation using single quotes: `' '`  
-This is useful with functions like CONCAT when you need to combine strings.
-* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
-* You cannot refer to a specific calculation by name in another calculation.  
-For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
-* Calculations can be completed automatically as you enter them.
+Users with whom you share documents with Domo content do not need to have the plugin installed to edit or view those documents. However, if they want to update the Domo content, they must have the plugin installed.Â 
 
 
-	+ As you enter functions, a list of functions appears, which you can select from.
-	+ If you enter a backtick ('), a list of column names appears, which you can select from.
-* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
-* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
-* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
-* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](../../raw_kb/article/adding_a_drill_path_to_your_chart/index.html "Adding Drill Path to Your Chart").
-* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
-* Do *not* mix data types of values you put in a transformed column.  
-For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
-* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
-* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
-* You can drag and drop a column name from the DataSet Fields list to your calculation.
-* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
+Just as with Domo's other Microsoft Office plugins, the Word plugin is not available forÂ the Mac OS.Â Â Â 
 
 
-For Beast Mode syntax examples, see [Sample Beast Mode Calculations](../../raw_kb/article/sample_beast_mode_calculations/index.html).
+![word_plugin_rn.png](word_plugin_rn.png)
 
 
-Applying a calculation to a summary number
-------------------------------------------
+For more information, seeÂ [Using the Domo Word Plugin](..\using_the_domo_word_plugin\index.html "Using the Domo Word Plugin").
 
 
-If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
+### NLQ Bots
 
 
-* AVG
-* COUNT
-* COUNT (DISTINCT)
-* MAX
-* MIN
-* SUM
-* SUM (DISTINCT)
-* STDDEV\_POP, VAR\_POP
+SometimesÂ youÂ just want to see single-valued key metrics in the fastest possible way. Domo's new Natural Language QueryÂ (NLQ) Bots allow youÂ to query Domo directly from Buzz to get an answer in a language that everyone can understand.Â   
+  
+To use NLQ Bots, youÂ simply install aÂ Bot in Buzz, just like an app,Â then query Buzz for information using natural language. Buzz returns a response to the query in natural language too. This enables business leaders to quickly get insights on demand on any platform that supports Buzz. For example, if you had the ShopifyÂ Bot integrated with your Buzz, you would simply enterÂ /shopifyÂ followed by a question such as "how many refunds for march?" Buzz would then generate and display the answer to your question. For any connector with NLQ Bots enabled, you can see several sample questions just by clicking the "?" icon next to theÂ **Command NameÂ**field.  
+Â 
 
 
-When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
+![nlg_bots_rn.png](nlg_bots_rn.png)
 
 
-**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number.
-For more information about summary numbers, see [Configuring Your Chart Summary Number](../../raw_kb/article/configuring_your_chart_summary_number/index.html "Configuring Your Chart Summary Number").
+For more information about Bots, seeÂ [Adding a Bot to Buzz](..\adding_a_bot_to_buzz\index.html "Adding a Bot to Buzz").
+
+
+### DomoStats
+
+
+Introducing the freedom to explore what is happening in Domo for your company. Have you ever wondered how many users you have, who has logged in this past week, what cards are being created, and which DataSets are running? DomoStats lets MajorDomos and Admin users power up a QuickStart app with a pre-built dashboard with details about card views, user logins, and DataSet creation so they can see everything happening in their Domo. The live DataSets behind DomoStats gives you the visibility into these questions and the opportunity to build cards, alerts, and DataFlows around these new and powerful stats.Â Find DomoStatsÂ in the Appstore right now and get started exploring!
+
+
+![domostats_rn.png](domostats_rn.png)
+
+
+### Unannounced Features and Enhancements
+
+
+The following features have been available now for the past month but are just beingÂ announced:Â 
+
+
+### Custom Card Sizing
+
+
+We are excited to announce custom sizing for Domo cards. Now you can display your cards usingÂ custom size configurations toÂ more easily convey your business stories. From tall and skinny layouts, to wide and short views, toÂ really large full-page cards, you can choose the optimal sizesÂ for every card type while still maintaining the clean and grid organization you expect in your Domo dashboards. Emphasize your most important cards and shrink your supporting cards to draw attention to what really matters in your data.
+
+
+![table_card_resize_rn.png](table_card_resize_rn.png)Â 
+
+
+### Spark Line and Spark Bar Charts
+
+
+Two new chart types have been added to Domo's expansive chart library, Spark Line and Spark Bar.Â These new charts giveÂ you even more options for presenting business stories to meet your company's needs.
+
+
+SparkÂ Line and Spark Bar graphs are similar in most respects toÂ standard Line and Bar graphs except that they
+
+
+
+* includeÂ a built-in gauge that shows the degree of change in the chart data, enabling you to answer your business questions at a glance, and
+* do not include axes, providing a simple and uncluttered view of rises and falls in your data.  
+ Â
+
+
+**Spark Line graph**
+
+
+![spark_line_kpi_example.png](spark_line_kpi_example.png)
+
+
+  
+**Spark Bar graph**  
+  
+![spark_bar_kpi_example.png](spark_bar_kpi_example.png)
+
+
+  
+For more information about these chart types, see the following:
+
+
+
+* [Spark Line Graph](..\spark_line_chart\index.html "Spark Line Graph")
+* [Spark Bar Graph](..\spark_bar_chart\index.html "Spark Bar Graph")
+
+
+### Map Improvements
+
+
+A number of improvements designed to increase usefulness ofÂ maps have been released. You can now do all of the following:
+
+
+
+* Zoom and pan on maps using your mouse's scroll button.
+* Add data labels to any map.
+* Toggle progressive disclosure of city names (i.e. more cities will appear on the map as you zoom in).
+* Filter to see selected regions.
+* Auto-zoom to show only those regions included in your DataSet.
+* Hide "No Data" items on the map.
+* Add hover text.
+* Create a full ZIP code map by filtering to one state.
+
+
+For more information about all of these options, seeÂ [Properties for Maps](..\properties_for_maps\index.html "Properties for Maps").
+
+
+Other News
+----------
+
+
+### Discontinuation Announcement for Workbench 2 and 3
+
+
+Workbench 2 and 3 have been discontinued as of April 28, 2018. If you have any outstanding Workbench 2 or 3 jobs, you will need to migrate these to Workbench 4.6. This comes with many added benefits and significant improvements to the UI experience.Â Â These benefits include heightened security, newer libraries and memory fixes, support for XML and JSON datatypes, and Workbench 4 help from the Domo Support team.Â   
+  
+Feel free to reach out directly to [Support](..\getting_help\index.html "https:\domo-support.domo.com\minasan\s\") where you can get one-on-one help with upgrading your Workbench instance to the latest version.
+
+
+For more information about Workbench, seeÂ Connecting to Data Using Workbench 4. For specific information about migrating to Workbench 4, seeÂ Migrating to Workbench 4 from Previous Versions.
+
+
+Getting HelpÂ
+-------------
+
+
+You can view the latest release notes information in the Help Center, which you can access from Domo by clickingÂ ![](10.png)Â ****> Help Center****.
+
+
+If you have questions about Domo,
+
+
+
+* search for a topic in the Help Center
+* train in Domo University atÂ [http://university.domo.com](http://university.domo.com/ "http://university.domo.com")
+* search for training apps in the Appstore
+* get answers in the Domo Community atÂ [https://dojo.domo.com](https://dojo.domo.com/ "https://dojo.domo.com")
+* contact Technical Support by entering a help ticket in the Domo Support Portal.
+* reach out to your Domo Customer Success Manager or Technical Consultant
+
+
+If you have feedback, please send it from within Domo (![](10.png)Â ****> Feedback****). Or send an email toÂ [product.feedback@domo.com](mailto:product.feedback@domo.com "product.feedback@domo.com").
+
+
+For more information about getting help, seeÂ [Getting Help](..\getting_help\index.html "Getting Help").

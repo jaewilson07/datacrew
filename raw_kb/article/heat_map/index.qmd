@@ -1,13 +1,13 @@
 ---
-title : Adding a Beast Mode Calculation to Your Chart
+title : Heat Map
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
-date: 2022-10-24 22:40:00
-url : https://domo-support.domo.com/s/article/360043429913
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429993', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428753']
-article_id : 000004076
-views : 10,979
-created_date : 2022-10-24 21:20:00
-last updated : 2022-10-24 22:40:00
+date: 2022-10-24 22:39:00
+url : https://domo-support.domo.com/s/article/360042924634
+linked_kbs :  ['https://domo-support.domo.com/s/article/360043429653', 'https://domo-support.domo.com/s/article/360042924634', 'https://domo-support.domo.com/s/article/360043428693', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428713']
+article_id : 000004709
+views : 4,603
+created_date : 2022-10-24 22:25:00
+last updated : 2022-10-24 22:39:00
 ---
 
 
@@ -16,172 +16,110 @@ Intro
 -----
 
 
-You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
+Heat maps are a special type of chart in which both the X and Y axes contain category data. Rectangle colors vary depending on how a particular data point fits into the specified data ranges. Heat maps allow you to visualize relationships between data categories and draw attention to "hot spots" of activity and trends.
 
 
-**Video - Intro to Beast Mode**
+Powering heat maps
+------------------
 
 
-{{< video www.youtube.com/embed/SpVbmZPMAsM >}}
+Heat maps require three data columns or rows from your data source. Two of these contain category data, and the other contains the values for each category pair. No series data is represented. Values for each category pair are represented in your map by varying shades of color, each of which corresponds to a specific range. Ranges are determined automatically based on the distribution of values in your DataSet; however, you can also specify your own ranges in **Chart Properties > Ranges**. Ranges are represented by a legend, which is automatically included under the chart.
+
+
+For information about value, category, and series data, see [Understanding Chart Data](..\understanding_chart_data\index.qmd "Understanding Chart Data").
+
+
+In the Analyzer, you choose the columns containing the data for your heat map. For more information about choosing data columns, see [Applying DataSet Columns to Your Chart](..\applying_dataset_columns_to_your_chart\index.qmd "Applying DataSet Columns to Your Chart").
+
+
+For more information about formatting charts in the Analyzer, see [Visualization Card Building Part 2: The Analyzer](..\..\category\analyzer\index.qmd "KPI Card Building Part 2: The Card Builder").
+
+
+The following graphic shows you how data from a typical column-based spreadsheet is converted into a heat map:
+
+
+![heatmap_spreadsheet_example_new.png](heatmap_spreadsheet_example_new.png)
+
+
+Customizing heat maps
+---------------------
+
+
+You can customize the appearance of a heat map by editing its **Chart Properties**. For information about all chart properties, see [Chart Properties](..\..\category\chart_properties\index.qmd "Chart Properties"). 
+
+
+**Video - Creating and Customizing Heat Maps**
+
+
+{{< video www.youtube.com/embed/0WOEhWTDG30 >}}
  
 
 
-**Video - Creating a Calculated Field**
-
-
-{{< video www.youtube.com/embed/h6SQR_H9OsY >}}
- 
-
-
-**Video - Case Statement Overview**
-
-
-{{< video www.youtube.com/embed/xFofhklohSc >}}
- 
-
-
-Parts of the Beast Mode dialog
-------------------------------
-
-
-The following screenshot shows how the Beast Mode dialog looks:
-
-
-![Beast_Mode_Dialog.jpg](Beast_Mode_Dialog.jpg)
-
-
-You can learn about the user interface components of the Beast Mode dialog in the following table:
+Unique properties of heat maps include the following. You can click a thumbnail image to see a larger image.
 
 
 
 
-| Name | Description |
-| --- | --- |
-| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
-| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
-| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
-| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
-| Function Description | Displays the description of the selected function. |
-| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
-| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
+| Property | Description | Example |
+| --- | --- | --- |
+| General > Theme | Allows you to change the color theme for a heat map. For more information about setting colors, see [Changing the Default Colors in Your Chart](..\changing_the_default_colors_in_your_chart\index.qmd "Changing the Default Colors in Your Chart"). | — |
+| General > Inner Margin | Allows you to set the amount of space, in pixels, that separates the cells in your heat map. The example shows a heat map with margins set to 8. | heatmap_margins.png |
+| General > Balanced Distribution | Adjusts maps and heat maps to include a balanced number of items within each range. This is helpful in spreading values across each range when your data contains extreme outliers.
+The pair of maps in the screenshots at right how **Balanced Distribution** works. In these heat maps, the values of most of the squares are in the range of 2 to 100. The outlier, Eastern diamondbacks for the city of Tampa, has a value of 214. **Balanced Distribution** has not been turned on in the top map, so a skewed version of the data is shown—Eastern diamondbacks/Tampa appears dark and all of the other provinces appear light. In the bottom map, the user has turned on **Balanced Distribution**, so Eastern diamondbacks/Tampa is grouped into the same range as the square with the next highest value. | heatmap_balanced_distribution_off.png
+heatmap_balanced_distribution_on.png |
+| General > Override Maximum Value | Lets you specify the maximum value for a map or heat map. 
+By default, Domo uses the highest value in the DataSet as the maximum value. However, by setting this property you can override this value. | — |
+| Diverging > Show | When selected, the map will be shown as a diverging map with 2 sets of color ranges, one above and one below the midpoint. | HeatMap_No_Midpoint.png |
+| Diverging > Number of Ranges | The number of ranges to be displayed either above or below the midpoint. (Maximum is 5) | — |
+| Diverging > Midpoint Value Type | The type or value to be used as the midpoint. The default value is the median value. | — |
+| Diverging > Midpoint Value | The value used as the midpoint when the value type is set to "Manual". | — |
+| Diverging > Show Midpoint Range | When set, a range will be displayed for the midpoint value in the legend and chart. | HeatMap_MidPoint.png |
+| Diverging > Midpoint Range Color | The color to be used for the range representing the midpoint. | — |
+| Diverging > Upper Color Theme | The colors used for ranges above the midpoint. | — |
+| Diverging > Lower Color Theme | The color theme used for the colors below the midpoint. | — |
+| Ranges > Show Zero like No-data | Determines whether squares in a heat map with a value of 0 display in the same gray color as those squares with no data. | — |
+| Ranges > Range *X*Maximum Value | Lets you specify the maximum value for a given range. For more information, see the next section. | — |
+| Ranges > Range *X*Minimum Value | Lets you specify the minimum value for a given range. For more information, see the next section. | — |
+| Ranges > Range *X*Color | Lets you select the color for a given range. For more information, see the next section. | — |
 
 
-Adding a Beast Mode calculation
--------------------------------
+### Setting custom ranges
 
 
-Use the information in this section to add calculations for transforming data using Beast Mode. 
+When you create a heat map, Domo determines the range values automatically. It also bases all colors off of the theme you select in **Theme** in **Chart Properties**. If you want, you can set custom ranges by specifying the minimum and maximum range values and selecting the color for each range. You can customize up to nine ranges in a heat map. 
 
 
-**To add a Beast Mode calculation,**
+For example, the following screenshot shows a heat map with ranges and colors determined automatically by Domo:
 
 
-1. On the KPI card where you want to add a calculation, click ![](1.png), then select **Edit Card**.
-2. In Analyzer, click **Add Calculated Field**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
+![heatmap_ranges_before.png](heatmap_ranges_before.png)
 
 
-The Beast Mode dialog appears.
-3. In **Calculated Field Name**, enter the title of the calculation.
-
-
-**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
-![Beast_Mode_Modal.png](Beast_Mode_Modal.png)
-**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
-4. In **Formula**, enter the calculation you want.  
-You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
-For more information about functions, see [Beast Mode Functions Reference Guide](../../raw_kb/article/beast_mode_functions_reference_guide/index.html).
-5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
-6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
-If there are errors, revise your calculation.   
-After saving, the calculation column appears in the Categories list for the card in Analyzer.
-
-
-**To edit a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
-3. Make any changes you want, then click **Save & Close**.
-
-
-**To delete a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
-3. Click **Remove** to confirm deleting the calculation.
-
-
-Calculation usage notes
------------------------
-
-
-* Most calculations use one of the following general formats: 
+The Card creator decides the Card would be easier to interpret if more colors were present. He also wants to set the ranges manually instead of using the automatically determined ranges. So he sets five ranges, as follows:
 
 
 
-| Format | Description |
-| --- | --- |
-| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
-| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
-| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
-| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](../../raw_kb/article/date_format_specifier_characters_for_beast_mode/index.html "Date Format Specifier Characters in Beast Mode"). |
+* Range 1 — Minimum 1 and Maximum 20, with color set to blue
+* Range 2 — Minimum 21 and Maximum 40, with color set to green
+* Range 3 — Minimum 41 and Maximum 60, with color set to yellow
+* Range 4 — Minimum 61 and Maximum 80, with color set to orange
+* Range 5 — Minimum 81 and Maximum 100, with color set to red
 
 
-* In calculations, Beast Mode function names are *not* case sensitive.
-* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
-* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
-Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
-* Use single quotes (') for strings: 'mystring'
-* You can escape a quote using two single quotes: 'O''Neal'
-* You can insert a space in a calculation using single quotes: `' '`  
-This is useful with functions like CONCAT when you need to combine strings.
-* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
-* You cannot refer to a specific calculation by name in another calculation.  
-For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
-* Calculations can be completed automatically as you enter them.
+The resulting heat map appears as follows:
 
 
-	+ As you enter functions, a list of functions appears, which you can select from.
-	+ If you enter a backtick ('), a list of column names appears, which you can select from.
-* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
-* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
-* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
-* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](../../raw_kb/article/adding_a_drill_path_to_your_chart/index.html "Adding Drill Path to Your Chart").
-* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
-* Do *not* mix data types of values you put in a transformed column.  
-For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
-* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
-* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
-* You can drag and drop a column name from the DataSet Fields list to your calculation.
-* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
+![heatmap_ranges_after.png](heatmap_ranges_after.png)
 
 
-For Beast Mode syntax examples, see [Sample Beast Mode Calculations](../../raw_kb/article/sample_beast_mode_calculations/index.html).
+**To set custom ranges on a heat map,**
 
 
-Applying a calculation to a summary number
-------------------------------------------
-
-
-If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
-
-
-* AVG
-* COUNT
-* COUNT (DISTINCT)
-* MAX
-* MIN
-* SUM
-* SUM (DISTINCT)
-* STDDEV\_POP, VAR\_POP
-
-
-When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
-
-
-**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number.
-For more information about summary numbers, see [Configuring Your Chart Summary Number](../../raw_kb/article/configuring_your_chart_summary_number/index.html "Configuring Your Chart Summary Number").
+1. Open the Analyzer for the gauge.
+2. In **Chart Properties**, click **Ranges**.
+3. Enter a minimum value in the **Range 1****Minimum Value** field.  
+This value is the minimum value for your first range.
+4. Enter a maximum value in the **Range 1****Maximum Value** field.  
+This value is the maximum value for your first range.
+5. Click the menu next to **Range 1 Color**and select a color for the range.
+6. (Optional) Continue adding new ranges as desired.

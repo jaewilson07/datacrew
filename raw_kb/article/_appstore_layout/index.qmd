@@ -1,13 +1,13 @@
 ---
-title : Adding a Beast Mode Calculation to Your Chart
+title : > Appstore Layout
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
-date: 2022-10-24 22:40:00
-url : https://domo-support.domo.com/s/article/360043429913
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429993', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428753']
-article_id : 000004076
-views : 10,979
-created_date : 2022-10-24 21:20:00
-last updated : 2022-10-24 22:40:00
+date: 2022-10-24 22:42:00
+url : https://domo-support.domo.com/s/article/360043438013
+linked_kbs :  ['https://domo-support.domo.com/s/article/360042926274', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043438013', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/4403442101143', 'https://domo-support.domo.com/s/article/360043429913']
+article_id : 000004119
+views : 4,034
+created_date : 2022-10-24 21:22:00
+last updated : 2022-10-24 22:42:00
 ---
 
 
@@ -16,172 +16,174 @@ Intro
 -----
 
 
-You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
+In the Appstore, you can selectÂ apps to add to your Domo instance, view information on all installedÂ apps, and remove installed apps. The Appstore is composed of a main page divided intoÂ several tabs, as follows:
 
 
-**Video - Intro to Beast Mode**
 
 
-{{< video www.youtube.com/embed/SpVbmZPMAsM >}}
- 
+| Name | Icon | Description |
+| --- | --- | --- |
+| Home | appstore_home_tab_icon.png | Shows you featured apps, QuickStarts, new and trending apps, and connectors.Â  |
+| Search | appstore_search_tab_icon.png | Lets you search for specific Appstore content using a variety of filters and search options. |
+| Installed | appstore_installed_tab_icon.png | Shows all apps that have been installed in your DomoÂ instance.Â  |
+| Asset Library | appstore_asset_library_tab_icon.png | Shows both pending and live apps you have created as well as custom app designs. |
+| Store Manager | appstore_manage_tab_icon.png | Allows you to see all apps that have been pushed to publication and choose whether to grant or deny publication for apps in this list. You must have a default security role of "Admin" or a custom role with the "Manage Appstore" grant enabled to access this tab. For more information about security roles, seeÂ [Managing Custom Roles](https://domohelp.domo.com/Administer/Controlling_Access_in_Domo/Managing_Custom_Roles "Managing Custom Roles"). |
 
 
-**Video - Creating a Calculated Field**
+Â 
 
 
-{{< video www.youtube.com/embed/h6SQR_H9OsY >}}
- 
+You can switch between tabs by clicking the icon for the desired tab in the left-hand navigation pane. If the pane is not visible, you can clickÂ ![alert_center_expand_names.png](alert_center_expand_names.png)Â to open it.Â 
 
 
-**Video - Case Statement Overview**
+If you click a thumbnail for an app or connector in the **HomeÂ**or **Search**Â tab, a Details/install page opens for the app or connector. For more information about connectors, see [Adding a DataSet Using a Data Connector](..\adding_a_dataset_using_a_connector\index.md).
 
 
-{{< video www.youtube.com/embed/xFofhklohSc >}}
- 
+You are not limited to one version of an app per company Domo instance. For example, multiple users could each have their own version of the FacebookÂ QuickStart app. Each user's individual version of the FacebookÂ QuickStart app would contain cards powered up by his or her personal Facebook data.
 
 
-Parts of the Beast Mode dialog
-------------------------------
+â€‹Appstore tabs
+----------------
 
 
-The following screenshot shows how the Beast Mode dialog looks:
+This section discusses each of the tabs in the Appstore. Â 
 
 
-![Beast_Mode_Dialog.jpg](Beast_Mode_Dialog.jpg)
+### HomeÂ tabÂ
 
 
-You can learn about the user interface components of the Beast Mode dialog in the following table:
+TheÂ **Home**Â tab contains a carousel of recommended apps you can navigate through. It also contains cardsÂ for all apps available to be installed in your Domo, as well as all connectors. This is the default tab that appears when you open the Appstore. If you navigate to another tab, you can return here by clicking theÂ ![appstore_home_tab_icon.png](appstore_home_tab_icon.png)Â icon in the left-hand navigation pane.Â 
+
+
+The following screenshot points out the most important parts of theÂ **HomeÂ**tab:
+
+
+![appstore_2020_home_tab.png](appstore_2020_home_tab.png)
+
+
+You can learn about the components in the following table:
 
 
 
 
 | Name | Description |
 | --- | --- |
-| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
-| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
-| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
-| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
-| Function Description | Displays the description of the selected function. |
-| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
-| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
+| Categories filter | Lets you filter to locate apps belonging to a specific category. When you click a filter, theÂ **Search**Â tab opens with your category filter already applied.Â  |
+| Search bar | Lets you search for specific apps by typing keywords. When you search in this way, the **Search**Â tab then opens with your search already applied. Keywords are matched to both names and descriptions. So if you typed "mail" as a keyword, the MailChimpÂ QuickStart app would appear, as well as any apps or connectors with the word "mail" in their descriptions. |
+| Featured apps carousel | Displays featured apps in Domo. Click an app in the carousel to display the details view for that app. You can scroll through the previews by mousing over the carousel and clicking theÂ app_carousel_scroll_left.png andÂ app_carousel_scroll_right.pngÂ buttons that appear.Â  |
+| QuickStarts pane | Displays featured QuickStart apps. Click a QuickStartÂ to open its details view. You can see all QuickStartÂ apps in the **Search**Â tab by clickingÂ **View All**.Â  |
+| New and trending apps pane | Displays new and trending apps (with "trending" status based on metadata such as the number of times the app has been deployed). Click an app to open its details view. You can see all new and trending apps in the **Search**Â tab by clickingÂ **View All**. |
+| Connectors pane | Shows Domo connectors. By default, onlyÂ a fewÂ connectors are shown; click **View All** to show all connectors in the **SearchÂ**tab. Click a connector to open the details view for that connector. For more information aboutÂ connectors, seeÂ [Adding a DataSet Using a Data Connector](..\adding_a_dataset_using_a_connector\index.md). Â  |
+| Capabilities filter | Lets you filter to locate data science apps, enterprise apps, writeback connectors, or DataFlow-related apps. When you click a filter, theÂ **Search**Â tab opens with your capability filter already applied.Â  |
 
 
-Adding a Beast Mode calculation
--------------------------------
+### Search tab
 
 
-Use the information in this section to add calculations for transforming data using Beast Mode. 
+In theÂ **Search**Â tab you canÂ see previews for all apps that are available to be installed in your Domo. You can access this tab in the Appstore by clickingÂ ![appstore_search_tab_icon.png](appstore_search_tab_icon.png)Â in the left-hand navigation pane.Â 
 
 
-**To add a Beast Mode calculation,**
+The following screenshot points out all of the parts of this tab:
 
 
-1. On the KPI card where you want to add a calculation, click ![](1.png), then select **Edit Card**.
-2. In Analyzer, click **Add Calculated Field**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
+![appstore_2020_search_tab.png](appstore_2020_search_tab.png)
 
 
-The Beast Mode dialog appears.
-3. In **Calculated Field Name**, enter the title of the calculation.
-
-
-**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
-![Beast_Mode_Modal.png](Beast_Mode_Modal.png)
-**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
-4. In **Formula**, enter the calculation you want.  
-You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
-For more information about functions, see [Beast Mode Functions Reference Guide](../../raw_kb/article/beast_mode_functions_reference_guide/index.html).
-5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
-6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
-If there are errors, revise your calculation.   
-After saving, the calculation column appears in the Categories list for the card in Analyzer.
-
-
-**To edit a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
-3. Make any changes you want, then click **Save & Close**.
-
-
-**To delete a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
-3. Click **Remove** to confirm deleting the calculation.
-
-
-Calculation usage notes
------------------------
-
-
-* Most calculations use one of the following general formats: 
+You can learn about the components in the following table:
 
 
 
-| Format | Description |
+
+| Name | Description |
 | --- | --- |
-| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
-| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
-| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
-| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](../../raw_kb/article/date_format_specifier_characters_for_beast_mode/index.html "Date Format Specifier Characters in Beast Mode"). |
+| Filter pane | Lets you filter the apps in theÂ **SearchÂ**pane using a variety of criteria, such as by category, by publisher, by data source, and more. For many of these, you can expand the available filter criteria by clickingÂ **Show More**.Â  |
+| Search bar | Lets you type keywords to filter the apps in the **Search** tab. Keywords are matched to both app names and descriptions. So if you typed "mail" as a keyword, the MailChimpÂ QuickStart app would appear, as well as any appsÂ with the word "mail" in their descriptions. |
+| Search results | Shows all of the results of your current search. If you have not searched, this area shows all of the apps in your instance. Click on a result to open the details view for the app.Â  |
+| Sort menuÂ  | Lets you choose a sort option for the appsÂ in the Appstore.Â You can sort ascending or descending alphabetically or by relevance.Â  |
 
 
-* In calculations, Beast Mode function names are *not* case sensitive.
-* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
-* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
-Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
-* Use single quotes (') for strings: 'mystring'
-* You can escape a quote using two single quotes: 'O''Neal'
-* You can insert a space in a calculation using single quotes: `' '`  
-This is useful with functions like CONCAT when you need to combine strings.
-* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
-* You cannot refer to a specific calculation by name in another calculation.  
-For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
-* Calculations can be completed automatically as you enter them.
+### Installed tab
 
 
-	+ As you enter functions, a list of functions appears, which you can select from.
-	+ If you enter a backtick ('), a list of column names appears, which you can select from.
-* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
-* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
-* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
-* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](../../raw_kb/article/adding_a_drill_path_to_your_chart/index.html "Adding Drill Path to Your Chart").
-* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
-* Do *not* mix data types of values you put in a transformed column.  
-For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
-* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
-* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
-* You can drag and drop a column name from the DataSet Fields list to your calculation.
-* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
+TheÂ InstalledÂ tab shows apps installed in your Domo, divided into two sectionsâ€”those installed by you and those installed by others.Â You can click any app to open the Details view for that app. You can open this tab in the Appstore by clicking theÂ ![appstore_installed_tab_icon.png](appstore_installed_tab_icon.png)Â icon in the left-hand navigation pane.Â 
 
 
-For Beast Mode syntax examples, see [Sample Beast Mode Calculations](../../raw_kb/article/sample_beast_mode_calculations/index.html).
+### AssetÂ Library tab
 
 
-Applying a calculation to a summary number
-------------------------------------------
+The **AssetÂ Library** tab shows you all of the apps you have pushed to publication along with your custom designs. This tab has three quick filters that can be appliedâ€”**My** **Apps**,Â **Shared With** **Me**, and **All Apps**. In theÂ **My Apps** filter, you can view all of your apps or filter to see those that are pending or live. In **Shared With Me**, you can view all apps that have been shared with you. In the **All Apps** filter, if you are an Admin, you can see all the apps in your instance. For more information about the Asset Library, see [Asset Library](..\asset_library\index.md). For more information about the app-building process, visit the developer portal at [developer.domo.com](https://developer.domo.com/).Â 
 
 
-If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
+### Store Manager tab
 
 
-* AVG
-* COUNT
-* COUNT (DISTINCT)
-* MAX
-* MIN
-* SUM
-* SUM (DISTINCT)
-* STDDEV\_POP, VAR\_POP
+In theÂ Store Manager, you can manage the publication process for apps that have been published in your company Domo instance. You access this tab by clicking ![appstore_manage_tab_icon.png](appstore_manage_tab_icon.png)Â in the Appstore in the left-hand navigation pane. This tabÂ consists of three subtabsâ€”**Pending**, which shows apps that have been pushed to the Appstore in your company Domo instance butÂ have not been approved or denied;Â **Live**, whichÂ shows all apps that have been approved for publication by an administrator; andÂ **Denied**, which shows apps that have been denied publication.
 
 
-When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
+You must have a default security role of "Admin" or a custom role with the "Manage Appstore" grant enabled to access this tab. For more information about security roles, seeÂ [Managing Custom Roles](https://domohelp.domo.com/Administer/Controlling_Access_in_Domo/Managing_Custom_Roles "Managing Custom Roles").
 
 
-**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number.
-For more information about summary numbers, see [Configuring Your Chart Summary Number](../../raw_kb/article/configuring_your_chart_summary_number/index.html "Configuring Your Chart Summary Number").
+The following screenshot points out the most important parts of the **Store ManagerÂ**tab:
+
+
+![appstore_2020_store_manager_tab.png](appstore_2020_store_manager_tab.png)
+
+
+You can learn about the components in the following table:
+
+
+
+
+| Name | Description |
+| --- | --- |
+| Tabs | Let you switch between the **Pending**, **Live**, and **Denied**Â subtabs in the **Store ManagerÂ**tab. |
+| Apps | Shows all appsÂ in the selected subtab (**Pending**, **Live**, or **Denied**). |
+| Search box | Lets you type keywords to filter the apps in the **Store Manager**Â tab. Keywords are matched to both app names and descriptions. So if you typed "mail" as a keyword, the MailChimpÂ QuickStart app would appear, as well as any other apps with the word "mail" in their descriptions. |
+| Sort menu | Lets you choose a sort option for the appsÂ in the selectedÂ subtab.Â You can sort ascending or descending alphabetically or by ascending or descending date. |
+
+
+App Details view
+----------------
+
+
+You can open the details view for anÂ app cardÂ in theÂ AppstoreÂ by clicking the appÂ OR byÂ selectingÂ ![gear_menu_icon.png](gear_menu_icon.png)Â **> View App Details**Â inÂ aÂ QuickStart app page in your Domo.Â 
+
+
+The following screenshot points out the most important components of the app details view. Note that this screenshot is specific to a connector, so several of these options are connector-specific, such as the tabs and option buttons.
+
+
+![appstore_2020_app_details.png](appstore_2020_app_details.png)Â Â 
+
+
+You can learn about the components of the details viewÂ in the following table:
+
+
+
+
+| Name | Description |
+| --- | --- |
+| Tabs | Let you change the view in the left-side pane to see different information about this app or connector. Details views for apps include only one tab,Â **Overview**, which includes a screenshot of the app and descriptive information. Details views for connectors (shown in the example) include three other tabsâ€”**DataSets**, which lists all of the DataSetsÂ you can pull into Domo using this connector;Â **FAQ**, which lists frequently asked questions about the connector; andÂ **Reviews**, in which you can see the average rating of the connector and rate it yourself if you want.Â  |
+| Option buttons | Let you perform various actions related to this app or connector. Different options are available depending on whether the details view is for an app or a connector and which tab you are viewing it in.Â 
+General options for apps include the following:
+* **Get**. Deploys this app toÂ your DomoÂ instance.
+
+Options for connectors include the following:
+* **Get the Data**. Opens the "Create DataSet" page for this connector so you can configure it and pull data into Domo. For more information, see [Adding a DataSet Using a Data Connector](..\adding_a_dataset_using_a_connector\index.md).
+* **Get the Cards**. Lets you deploy cards for the Sample App for this connector, if one is available. This allows you to power up several prebuilt, live cards based on your own data, without having to configure advanced options. This is a great way to "preview" the connector to make sure it provides the data you want. If you choose this option, you are asked to select the desired account or input your account information if you haven't created an account for this connector yet.
+
+Options for apps in theÂ **InstalledÂ**tab include the following:
+* **Open**. Opens this app in your Domo instance.
+* **Uninstall**. Uninstalls this app from your Domo instance.Â
+
+Options for apps in theÂ **Store Manager**Â tab include the following:Â 
+* **ApproveÂ**(**PendingÂ**tab only). Lets you approve this app for publication to Domo's Appstore.Â Approved apps are shown in theÂ **Live**Â tab.
+* **DenyÂ**(**PendingÂ**tab only). Lets you deny publication of this app. Denied apps are shown in theÂ **Denied**Â tab.
+* **TestÂ**(**Live**Â andÂ **Denied**Â tabs). Lets you run a test-deploy of the app.Â
+* **Remove from Store** (**Live**Â tab only). Removes this app from the Appstore.Â
+ |
+| App information | Provides information about the app, such asÂ a description, usage requirements, last update,Â and license information.Â 
+If you have installed this app, a status indicator also appears.Â This showsÂ the current state of thisÂ app. It contains anÂ **Edit** button. Click the button to open aÂ dialog where you can see other installed versions of the app and add new connections. Â Â  |
+| Preview and Ratings tabs | Let you switch between the **Preview** and **Ratings** panes at the bottom of the window. **Preview** shows you a preview of this app. **Ratings** shows the average rating for the app. In addition, if you have installed this app, you can rate the app by clicking **Rate This app**. |
+
+
+Â

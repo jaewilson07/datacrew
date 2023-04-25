@@ -1,0 +1,27 @@
+
+
+
+Governance Tools
+================
+***
+* [Admin Settings: Governance](..\..\article\admin_settings_governance\index.qmd)
+* [Attributes](..\..\article\attributes\index.qmd)
+* [Domo Enterprise Toolkit](..\..\article\domo_enterprise_toolkit\index.qmd)
+* [Domo Sandbox](..\..\article\domo_sandbox\index.qmd)
+* [Domo Sandbox: Linked Repositories](..\..\article\domo_sandbox_linked_repositories\index.qmd)
+* [DomoStats - Activity Log](..\..\article\domostats__activity_log\index.qmd)
+* [DomoStats - DataSets and DataFlows](..\..\article\domostats__datasets_and_dataflows\index.qmd)
+* [DomoStats - People](..\..\article\domostats__people\index.qmd)
+* [DomoStats - Projects and Tasks](..\..\article\domostats__projects_and_tasks\index.qmd)
+* [Governance Toolkit: DataSet Backup](..\..\article\governance_toolkit_dataset_backup\index.qmd)
+* [Governance Toolkit: DataSet Sharing](..\..\article\governance_toolkit_dataset_sharing\index.qmd)
+* [Governance Toolkit: DataSet Tagging](..\..\article\governance_toolkit_dataset_tagging\index.qmd)
+* [Governance Toolkit: DataSet Watchdog](..\..\article\governance_toolkit_dataset_watchdog\index.qmd)
+* [Governance Toolkit: Group Management](..\..\article\governance_toolkit_group_management\index.qmd)
+* [Governance Toolkit: Observability Metrics](..\..\article\governance_toolkit_observability_metrics\index.qmd)
+* [Governance Toolkit: PDP Automation](..\..\article\governance_toolkit_pdp_automation\index.qmd)
+* [Governance Toolkit: Schema Management](..\..\article\governance_toolkit_schema_management\index.qmd)
+* [Governance Toolkit: Triggered Reports](..\..\article\governance_toolkit_triggered_reports\index.qmd)
+* [Governance Toolkit: User Management](..\..\article\governance_toolkit_user_management\index.qmd)
+* [Snowflake Federated Data Setup](..\..\article\snowflake_federated_data_setup\index.qmd)
+* [Viewing Activity Logs](..\..\article\viewing_activity_logs\index.qmd)

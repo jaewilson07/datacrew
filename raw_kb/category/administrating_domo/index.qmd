@@ -1,0 +1,17 @@
+
+
+
+Administrating Domo
+===================
+
+Learn how to manage users and groups, control access to content, configure security settings, and more.
+***
+* [Implementing SSO](..\implementing_sso\index.qmd)
+* [Certifications](..\certifications\index.qmd)
+* [Domo Security Options](..\domo_security_options\index.qmd)
+* [Governance Tools](..\governance_tools\index.qmd)
+* [Controlling Access In Domo](..\controlling_access_in_domo\index.qmd)
+* [Specifying Company Settings](..\specifying_company_settings\index.qmd)
+* [Admin Settings Overview](..\admin_settings_overview\index.qmd)
+* [Approvals](..\approvals\index.qmd)
+* [Workflows](..\workflows\index.qmd)

@@ -1,0 +1,12 @@
+
+
+
+Personalized Data Permissions (PDP)
+===================================
+***
+* [Creating and Deleting PDP Policies](..\..\article\creating_and_deleting_pdp_policies\index.qmd)
+* [PDP and Alerts](..\..\article\pdp_and_alerts\index.qmd)
+* [PDP and DataFlows/DataFusions](..\..\article\pdp_and_dataflowsdatafusions\index.qmd)
+* [PDP Policy Autocreation](..\..\article\pdp_policy_autocreation\index.qmd)
+* [PDP vs. Publication Groups](..\..\article\pdp_vs_publication_groups\index.qmd)
+* [Using PDP to Manage All-Rows Policies](..\..\article\using_pdp_to_manage_allrows_policies\index.qmd)

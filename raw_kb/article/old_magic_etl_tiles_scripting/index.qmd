@@ -1,187 +1,309 @@
 ---
-title : Adding a Beast Mode Calculation to Your Chart
+title : Old Magic ETL Tiles: Scripting
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
-date: 2022-10-24 22:40:00
-url : https://domo-support.domo.com/s/article/360043429913
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429993', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428753']
-article_id : 000004076
-views : 10,979
-created_date : 2022-10-24 21:20:00
-last updated : 2022-10-24 22:40:00
+date: 2022-10-24 22:41:00
+url : https://domo-support.domo.com/s/article/360043427773
+linked_kbs :  ['https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360043427773', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043429913']
+article_id : 000002990
+views : 4,457
+created_date : 2022-10-24 20:58:00
+last updated : 2022-10-24 22:41:00
 ---
 
 
 
+**Note:**Â  This feature is availableÂ *on demand and paid*.
+
+
+Â 
+
+
+To request this feature be enabled,
+
+
+
+* Reach out to your Domo Customer Success Manager, Technical Consultant, or AE.
+* If you do not have contact information for your CSM, TC, or AE, contact Technical Support by using /Support in Buzz or by email at [support@domo.com](mailto:support@domo.com "mailto:support@domo.com")
+
+
+Depending on the feature, you may be required to complete training before you can use the feature.
 Intro
 -----
 
 
-You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
+Â 
 
 
-**Video - Intro to Beast Mode**
+**Note:** This article is for the old Magic ETL. For information on the new Magic ETL, see [Magic ETL](..\..\category\magic_etl\index.md).
+Scripting tiles are a powerful tool within Domo's Magic ETL feature. They allow you to write custom R or Python algorithms and implement them directly into DataFlows. With this, you can create complex data science analyses that run every time your data updates.
 
 
-{{< video www.youtube.com/embed/SpVbmZPMAsM >}}
- 
+General Information for All Scripting Tiles
+-------------------------------------------
 
 
-**Video - Creating a Calculated Field**
-
-
-{{< video www.youtube.com/embed/h6SQR_H9OsY >}}
- 
-
-
-**Video - Case Statement Overview**
-
-
-{{< video www.youtube.com/embed/xFofhklohSc >}}
- 
-
-
-Parts of the Beast Mode dialog
-------------------------------
-
-
-The following screenshot shows how the Beast Mode dialog looks:
-
-
-![Beast_Mode_Dialog.jpg](Beast_Mode_Dialog.jpg)
-
-
-You can learn about the user interface components of the Beast Mode dialog in the following table:
+This section provides information pertinent to all scripting tiles in Magic ETL. For information on specific tiles, click on any of the following links to jump to the section for that tile:
 
 
 
+* [Python Package API Reference](#h_01F0MYVYJ5AWYHA74WT9ZVK3X0 "ETL Actions: Scripting")
+* [R Package API Reference](#h_01F0MYW6D4WPC0510R8XX210YY "Scripting Actions in ETL")
 
-| Name | Description |
+
+### Take A Tour
+
+
+All scripting tiles haveÂ the same look. The only difference between them is the supported language.
+
+
+The main body of the tile is the code editor. This is where youÂ write your script. It includesÂ syntax highlighting for the specific language the tile supports.
+
+
+![scripting_actions_code_editor.png](scripting_actions_code_editor.png)
+
+
+On the right side of the tile is a searchable list of input tiles currently connected to the scripting tile. Click on the name of an input to inject a code snippetÂ into the script at the location of the cursor. This code snippet will read the data into the script and store it in a variable. Rename the variable to whatever you would like.
+
+
+![scripting_actions_inputs.png](scripting_actions_inputs.png)
+
+
+There is a second tab on the right side of the tile called **Packages**.Â When you click the tab, a searchable list of available packages for the supported language is displayed. Hover over the package name for a description, or click on the arrow that appears to go to the package's documentation website. AsÂ with inputs, if you click on a package, a code snippet isÂ injected into the script at the location of the cursor. This code snippet importsÂ the selected library for use in the script.
+
+
+![scripting_actions_packages.png](scripting_actions_packages.png)
+
+
+On the right side of the tile editor panel toolbar is a template icon button ![scripting_actions_code_template_icon.png](scripting_actions_code_template_icon.png). Clicking this button resets the script to the example code template that exists when you first open a scripting tile. Be careful thoughâ€”if you have alreadyÂ writtenÂ a script, clicking this button overwrites your script (after a confirmation prompt). However, as long as you do not close the tile, you can retrieve your overwritten script by placing the cursor within the code editor and pressing Command+z or CTRL+z.
+
+
+In the **Schema** tab,Â you tell the tile what the results of your script looks like. To use this, clickÂ **Schema**Â in the tile editor panel toolbar. For a deep dive into this tab, see the [Populating the Resulting Schema](#h_01F0MYYD9TKK9HK3SBPN8AFWHK "Scripting Actions in ETL")Â section of this documentation.
+
+
+![scripting_actions_schema.png](scripting_actions_schema.png)
+
+
+In the **Console** tab, you can see the standard out (stdout) and standard error (stderr) that your script produces. This tab is not available until after preview is run on the tile, when it will appear as an option in the tile editor panel toolbar.
+
+
+![scripting_actions_console.png](scripting_actions_console.png)
+
+
+In the **Preview** tab, you can see the results of running your script. This tab also does not appear until after a preview is run. It will then appear as an option in the tile editor panel toolbar.
+
+
+![scripting_actions_preview.png](scripting_actions_preview.png)
+
+
+Â 
+
+
+### Getting Data In and Out of the Scripting Action
+
+
+Domo provides a basic API for importing data (read) from the Domo ecosystem into your script and then for exporting your results out (writing) of the script and back into the Domo ecosystem. The API is different for each scripting language and tries to follow the semantics of the language.
+
+
+**Note:** Be aware of the following data type issues when using scripting tiles in Domo:Â 
+
+
+
+* In Python, LONG becomes DOUBLE in Python because NumPY does not support NULLs in integer columns.
+* In both Python and R, DECIMAL becomes DOUBLE because there is no analogous type in NumPY or R.
+Â 
+
+
+The easiest way to see the specific API calls for your language is to examine the initial code template that is provided in a newly created and connected Scripting tile.
+
+
+#### Step 1: ImportÂ The Domo Package
+
+
+The first line in any script should be used for importing the language-specific Domo package into the script. This follows standard package import semantics for the chosen language. It is part of the initial code template.Â Alternatively,Â you can search for "domo" in the **Packages** list to the right of the code editor and click on the package to inject the code snippet into the editor.
+
+
+#### Step 2: Read Data Into The Script
+
+
+The next step in writing a script is getting access to the data. Each language will have its own semantic version of a Domo "read" method. This is included in the initial code template.Â Alternatively, you can click on one of the inputs in the input list to the right of the code editor. This injects a code snippet that is reading the input data and storing it in a variable. You can rename this variable if you like.
+
+
+#### Step 3: Export Data Out Of The Script
+
+
+The last step in writing a script is returning the results to the Domo ecosystem. Each language has its own semantic version of a Domo "write" method. This is alsoÂ included in the initial code template. There is no other way of injecting a code snippet for this, however. Provide the name of the variable that is storing the results of your script to this "write" method. **There can only be one export per script.**
+
+
+### Populating The Resulting Schema
+
+
+There are three ways to tell the tile what schema your script produces. These methods can be mixed and matched as necessary to get the proper result. You perform all of these in the **Schema**Â tab of the tile.
+
+
+#### Manually Adding the Columns
+
+
+To add the columns manually...
+
+
+1. Type the name of a column that your script will produce into the **Column Name**Â field.  
+  
+![scripting_actions_manual_column_name.png](scripting_actions_manual_column_name.png)
+2. In the list of available data types, select the data type for this column.  
+  
+![scripting_actions_manual_data_type.png](scripting_actions_manual_data_type.png)
+3. Add another column by clicking the **Add ColumnÂ button**.  
+  
+![scripting_actions_manual_add_column.png](scripting_actions_manual_add_column.png)  
+Â 
+
+
+**Important:Â**All added columns *must* be filled out in order for the tile to be considered configured.
+
+
+#### Bulk Adding the Columns
+
+
+To add the columns in bulk...
+
+
+1. Add all of the columns from a particular "Input DataSet" tile in bulk by clicking on the **Add From DataSet**Â button and selecting the "Input DataSet" tile you want to populate from.  
+  
+![scripting_actions_bulk_add_from_dataset.png](scripting_actions_bulk_add_from_dataset.png)
+
+
+2. Remove any excess columns using the "X" button on the far right side of the column.  
+  
+![scripting_actions_bulk_schema_output.png](scripting_actions_bulk_schema_output.png)
+
+
+#### Letting Domo Run The Script
+
+
+To have Domo run the script for you...
+
+
+1. Click either the ![scripting_actions_preview_icon.png](scripting_actions_preview_icon.png)Â button on the right side of the tile editor panel toolbar or the **Run Preview**Â button in the toolbar at the top of the canvas. (If there is an issue with your preview, see the [Troubleshooting](#h_01F0MZ2F5ZAP7Y02SRPZ1HQ60K "Scripting Actions in ETL")Â section of this documentation.)  
+  
+After the preview has finished running, a sentence appears under the text inputs for creating new columns. ThisÂ tells you how many columns the preview returned that are not currently listed as being part of the tile's schema.
+2. Click the button at the end of the sentence.Â
+
+
+After you populate the schema, the tile knows what the results of your script look like and will be marked as configured (as long as you have also written a script).
+
+
+The columns listed in the **Schema** tab will be passed to the next tile in the DataFlow.
+
+
+### Configuration Steps
+
+
+If you have not done so already, check out the [Take a Tour](#h_01F0MZ2SVBQ3MQDS2AXC4XSBES "Scripting Actions in ETL")Â section of this article to become familiar with the different features of the scripting tile.
+
+
+1. Start a new Magic ETL DataFlow.
+2. Drag an "Input DataSet" tile onto the canvas and select the DataSet you want to use.  
+  
+You will find the Scripting tiles under the "Data Science" section of the left sidebar.
+3. Drag the Scripting tile for the language you want to write onto the canvas and then drag a connection from the "Input DataSet" to this Scripting tile.  
+  
+![scripting_actions_configure1.png](scripting_actions_configure1.png)
+4. (Conditional) If the editor panel is not open at the bottom of the screen, click the Scripting tile you just added to the canvas so that it is selected; the editor panel will then open.  
+  
+The code editor will be auto-populated with an initial code template. For more information on what is included in the template, see the [Getting Data In and Out of the Scripting Action](#h_01F0MZ3QRPJ6SQ3Q5ZZ2DD62A8 "Scripting Actions in ETL")Â section of this documentation. A yellow banner will also be displayed. Ignore this for now; it will be addressed later on in the configuration steps.  
+  
+You will see that the template is pulling the data from the "Input DataSet" tile that is connected to the Scripting tile and storing it in a variable. This is the variable that your script should manipulate.  
+  
+![scripting_actions_code_editor.png](scripting_actions_code_editor.png)
+5. (Conditional) If you have multiple data sources, simply drag out another "Input DataSet,"Â select the next DataSet you need, connect this tile to the Scripting Action, and add another import statement to the script.  
+  
+![scripting_actions_configure2.png](scripting_actions_configure2.png)  
+  
+Underneath the line that is creating the variable to hold your data, you will see a space for you to write your script.  
+  
+![scripting_actions_configure3.png](scripting_actions_configure3.png)
+6. Write your script in the line provided,Â makingÂ sure that the export statement at the very bottom of the template is exporting the variable that represents the final product of your script.  
+  
+You will notice that your tile is still not marked as configured and there is still a yellow banner at the top of the tile telling you this. This is because the tile does not yet know what the result of your script looks like.
+7. To provide the tile with this information...
+
+
+	1. Click the **Schema**Â tab in the toolbar of the tile editor panel.
+	2. Â Choose one of the methods listed in the [Populating The Resulting Schema](#h_01F0MYYD9TKK9HK3SBPN8AFWHK "Scripting Actions in ETL")Â section of this article and follow the steps there. Afterwards, continue the rest of the steps listed below.
+8. Drag an "Output DataSet" tile from the sidebar and drop it onto the canvas.
+9. Drag a connection from the Scripting tile to this new "Output DataSet" tile.  
+  
+![scripting_actions_configure4.png](scripting_actions_configure4.png)
+10. Open the "Output DataSet" tile and give it a name and description.  
+  
+The tiles within the DataFlow are now fully configured.
+11. Next, enter a name forÂ the DataFlowÂ in the fieldÂ in the top left corner.
+12. Configure the settings in the panel using the **Settings**Â button in the canvas toolbar.
+13. Save the DataFlow.
+
+
+Congratulations! You have created a DataFlow that utilizes a Scripting tile. This has been a very basic configuration that only uses a single Input DataSet tile, a single Scripting tile, and a single Output DataSet tile. Don't forget that you can still use all of the classic DataFlow tiles to manipulate the data before and after your Scripting tile.
+
+
+API ReferenceÂ
+--------------
+
+
+domomagic is the simple API provided to both the Magic ETL "Python Action" and "R Action" authors, allowing them to load and unload data to and from the Python and R contexts.
+
+
+### Python ModuleÂ API Reference
+
+
+
+
+| Method Signature | Parameters | Returns |
+| --- | --- | --- |
+| read\_dataframe(input\_name=None) | *input\_name:Â*Name of the Magic ETL input tile. Not required if only one input is available. | A Pandas DataFrame representing the tiles input.Â  |
+| write\_dataframe(dataframe) | *dataframe:* Pandas DataFrame that will be used as the output for the Magic ETL tile.Â  | N/A |
+| read\_array(column\_name,input\_name=None) | *column\_name*: Name of theÂ column.*input\_name:Â*Name of the Magic ETL input tile. Not required if only one input is available. | A single column from the input as a NumPy array. |
+| read\_array\_dict(input\_name=None) | *input\_name:Â*Name of the Magic ETL input tile. Not required if only one input is available. | The input as an OrderedDict of column names mapping to NumPy arrays. |
+| write\_array\_dict(array\_dict) | *array\_dict*: The dictionary of column names mapping to NumPy arrays as output to the Magic ETL context. The arrays must be of equal length. | N/A |
+
+
+### R Package API Reference
+
+
+
+
+| Method Signature | Parameters | Returns |
+| --- | --- | --- |
+| read.dataframe([input.name](http://input.name)=NULL, see below) | [input.name](http://input.name)*:Â*Name of the Magic ETL input tile. Optional if only one input is available. | The tiles input data.frame. |
+| write.dataframe(table) | table*:* Exports a data.frame or matrix as the output for a Magic ETL tile.Â  | N/A |
+
+
+The R PackageÂ read.dataframeÂ function also supports the following parameters that allow you to customize its behavior:
+
+
+
+
+| Parameter | Description |
 | --- | --- |
-| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
-| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
-| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
-| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
-| Function Description | Displays the description of the selected function. |
-| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
-| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
+| colClasses | A named character vector of classes to be assigned to the named columns. |
+| stringsAsFactors | Logical value determining whether or not string columns will be read as factors. Defaults to false, and is overridden by colClasses. |
+| integersAsNumerics | Logical value determining whether integers should be read as numerics (floating point numbers). Defaults to true, and is overridden by colClasses. |
+| allVerbatimExcept | Character vector of column names which should be read according to default behavior. All other columns will be read in verbatim as strings and written out with their original types. Useful when translation to and from the R context is causing loss of precision or errors and the column is not necessary for the calculation being performed. |
+| allIgnoredExcept | Character vector of column names which will be read. All other columns will be ignored. |
 
 
-Adding a Beast Mode calculation
--------------------------------
-
-
-Use the information in this section to add calculations for transforming data using Beast Mode. 
-
-
-**To add a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to add a calculation, click ![](1.png), then select **Edit Card**.
-2. In Analyzer, click **Add Calculated Field**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-
-
-The Beast Mode dialog appears.
-3. In **Calculated Field Name**, enter the title of the calculation.
-
-
-**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
-![Beast_Mode_Modal.png](Beast_Mode_Modal.png)
-**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
-4. In **Formula**, enter the calculation you want.  
-You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
-For more information about functions, see [Beast Mode Functions Reference Guide](../../raw_kb/article/beast_mode_functions_reference_guide/index.html).
-5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
-6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
-If there are errors, revise your calculation.   
-After saving, the calculation column appears in the Categories list for the card in Analyzer.
-
-
-**To edit a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
-3. Make any changes you want, then click **Save & Close**.
-
-
-**To delete a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
-3. Click **Remove** to confirm deleting the calculation.
-
-
-Calculation usage notes
------------------------
-
-
-* Most calculations use one of the following general formats: 
+Troubleshooting
+---------------
 
 
 
-| Format | Description |
-| --- | --- |
-| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
-| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
-| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
-| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](../../raw_kb/article/date_format_specifier_characters_for_beast_mode/index.html "Date Format Specifier Characters in Beast Mode"). |
+* If your tile is not marked as configured after writing the script, make sure you have provided a resulting schema. See the [Populating The Resulting Schema](#h_01F0MYYD9TKK9HK3SBPN8AFWHK "Scripting Actions in ETL")Â section of this articleÂ for more info.
+* Running a preview is the easiest way to get feedback on the behavior of your script. You can run a preview by clicking the preview button on the right side of the tile editor panel toolbar or the preview button in the toolbar at the top of the canvas.
+* After running a preview, a **Console**Â tab appears in the tile editor panel toolbar. This displays the standard out (stdout) and standard error (stderr) that your script produces. If the preview fails, check this console for errors.
+* If a script is failing, check that you have properly finished all three of the steps listed in the [Getting Data In and Out of the Scripting Action](#h_01F0MZ3QRPJ6SQ3Q5ZZ2DD62A8 "Scripting Actions in ETL")Â section of this article. Double-check the variable name that you are writing back to Domo to make sure it is correct.
+* Previews run on just a sample of your dataset. If your script requires a certain variability in data to function properly, the sample grabbed by the preview might not meet this variability requirement. You can control the size of the preview sample by changing the **Row Limit**Â in the canvas toolbar.
 
 
-* In calculations, Beast Mode function names are *not* case sensitive.
-* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
-* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
-Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
-* Use single quotes (') for strings: 'mystring'
-* You can escape a quote using two single quotes: 'O''Neal'
-* You can insert a space in a calculation using single quotes: `' '`  
-This is useful with functions like CONCAT when you need to combine strings.
-* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
-* You cannot refer to a specific calculation by name in another calculation.  
-For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
-* Calculations can be completed automatically as you enter them.
-
-
-	+ As you enter functions, a list of functions appears, which you can select from.
-	+ If you enter a backtick ('), a list of column names appears, which you can select from.
-* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
-* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
-* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
-* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](../../raw_kb/article/adding_a_drill_path_to_your_chart/index.html "Adding Drill Path to Your Chart").
-* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
-* Do *not* mix data types of values you put in a transformed column.  
-For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
-* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
-* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
-* You can drag and drop a column name from the DataSet Fields list to your calculation.
-* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
-
-
-For Beast Mode syntax examples, see [Sample Beast Mode Calculations](../../raw_kb/article/sample_beast_mode_calculations/index.html).
-
-
-Applying a calculation to a summary number
-------------------------------------------
-
-
-If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
-
-
-* AVG
-* COUNT
-* COUNT (DISTINCT)
-* MAX
-* MIN
-* SUM
-* SUM (DISTINCT)
-* STDDEV\_POP, VAR\_POP
-
-
-When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
-
-
-**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number.
-For more information about summary numbers, see [Configuring Your Chart Summary Number](../../raw_kb/article/configuring_your_chart_summary_number/index.html "Configuring Your Chart Summary Number").
+**Note:**Â Note that larger sample sizes will result in longer preview run times.
+* Have you explicitly imported the packages/libraries that you need for your script to run? A list of available packages is in the **Package**Â tab of the section to the right of the code editor.
+* If a column is resulting in all null values, it could mean that the column is not actually produced by your script. If a column is provided in the list in the **Schema**Â tab, that column isÂ added to the results regardless of whether the script actually produces it or not. If the script does not produce that column, then all of the values for that column are set to null. You can see which of your columns are and are not created by the script by running a preview and then looking at the **Schema**Â tab. The status of each column will be displayed to the right of the column data type.
+* If your script is failing during runtime with an out of memory error, your input DataSet could be too large or your script could be doing some sort of join that is causing the data to explode. Try filtering the data before it gets injected into the scriptingÂ tile and/or refactoring your script to prevent data explosion.

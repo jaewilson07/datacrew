@@ -1,0 +1,9 @@
+
+
+
+DataFusion
+==========
+***
+* [Combining DataSets Using DataFusion](..\..\article\combining_datasets_using_datafusion\index.qmd)
+* [DataFusion Performance Recommendations](..\..\article\datafusion_performance_recommendations\index.qmd)
+* [Editing a DataFusion](..\..\article\editing_a_datafusion\index.qmd)

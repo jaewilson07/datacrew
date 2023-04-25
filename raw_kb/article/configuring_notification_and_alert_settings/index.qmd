@@ -1,12 +1,12 @@
 ---
-title : Adding a Beast Mode Calculation to Your Chart
+title : Configuring Notification and Alert Settings
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 date: 2022-10-24 22:40:00
-url : https://domo-support.domo.com/s/article/360043429913
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429993', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428753']
-article_id : 000004076
-views : 10,979
-created_date : 2022-10-24 21:20:00
+url : https://domo-support.domo.com/s/article/360042925814
+linked_kbs :  ['https://domo-support.domo.com/s/article/360042925954', 'https://domo-support.domo.com/s/article/360043430513', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360042934394', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043428373', 'https://domo-support.domo.com/s/article/360043439193', 'https://domo-support.domo.com/s/article/360042925814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043427513', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042925994', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
+article_id : 000004354
+views : 5,361
+created_date : 2022-10-24 21:45:00
 last updated : 2022-10-24 22:40:00
 ---
 
@@ -16,172 +16,177 @@ Intro
 -----
 
 
-You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
+You can specify how you are notified about certain events when they occur in Domo. You can be notified about the following kinds of events:
 
 
-**Video - Intro to Beast Mode**
+
+* Triggered Alerts on Visualization Cards and DataSets. You can configure Alerts to be sent instantly or in daily or weekly summary emails (emails listing all triggered Alerts within the specified time frame). For more information about configuring Alerts, see [Creating an Alert for a DataSet](..\creating_an_alert_for_a_dataset\index.qmd).
+* Non-Alert events such as someone @-mentioning you in Buzz, sharing a Card or Page with you, assigning a task to you, etc. Messages sent to you for these kinds of events are called *Notifications* and are sent immediately. You can configure these to be sent via email, SMS, Domo Mobile, and/or pop-up messages on your computer. For more information about Notifications, see [Receiving and Viewing Notifications](..\receiving_and_viewing_notifications\index.qmd "Receiving and Viewing Notifications").
 
 
-{{< video www.youtube.com/embed/SpVbmZPMAsM >}}
+You can configure Notification and Alert settings in the Settings screen. The screen contains tabs for General settings, Notifications, Instant Alerts, Daily Alerts, and Weekly Alerts, and the options are different for each tab. For example, you configure Buzz Notification settings in the **Notifications** tab. 
+
+
+**Video - Managing Alerts and Notifications**
+
+
+{{< video www.youtube.com/embed/rrRDjC_prWA >}}
  
 
 
-**Video - Creating a Calculated Field**
+General
+-------
 
 
-{{< video www.youtube.com/embed/h6SQR_H9OsY >}}
- 
-
-
-**Video - Case Statement Overview**
-
-
-{{< video www.youtube.com/embed/xFofhklohSc >}}
- 
-
-
-Parts of the Beast Mode dialog
-------------------------------
-
-
-The following screenshot shows how the Beast Mode dialog looks:
-
-
-![Beast_Mode_Dialog.jpg](Beast_Mode_Dialog.jpg)
-
-
-You can learn about the user interface components of the Beast Mode dialog in the following table:
+In the **General** tab you can configure a number of general settings for your Domo instance, including:
 
 
 
-
-| Name | Description |
-| --- | --- |
-| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
-| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
-| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
-| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
-| Function Description | Displays the description of the selected function. |
-| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
-| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
-
-
-Adding a Beast Mode calculation
--------------------------------
-
-
-Use the information in this section to add calculations for transforming data using Beast Mode. 
-
-
-**To add a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to add a calculation, click ![](1.png), then select **Edit Card**.
-2. In Analyzer, click **Add Calculated Field**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-
-
-The Beast Mode dialog appears.
-3. In **Calculated Field Name**, enter the title of the calculation.
-
-
-**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
-![Beast_Mode_Modal.png](Beast_Mode_Modal.png)
-**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
-4. In **Formula**, enter the calculation you want.  
-You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
-For more information about functions, see [Beast Mode Functions Reference Guide](../../raw_kb/article/beast_mode_functions_reference_guide/index.html).
-5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
-6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
-If there are errors, revise your calculation.   
-After saving, the calculation column appears in the Categories list for the card in Analyzer.
-
-
-**To edit a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
-3. Make any changes you want, then click **Save & Close**.
-
-
-**To delete a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
-3. Click **Remove** to confirm deleting the calculation.
-
-
-Calculation usage notes
------------------------
-
-
-* Most calculations use one of the following general formats: 
+* [Changing your password](..\changing_your_password\index.qmd "Changing a Forgotten or Expired Password")
+* [Enabling multi-factor verification](..\turning_on_multifactor_authentication\index.qmd "Turning On Multi-Factor Authentication")
+* [Changing your time zone](..\setting_your_time_zone_and_regional_formatting\index.qmd "Setting Your Time Zone")
+* General Buzz settings, as follows:
 
 
 
-| Format | Description |
-| --- | --- |
-| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
-| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
-| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
-| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](../../raw_kb/article/date_format_specifier_characters_for_beast_mode/index.html "Date Format Specifier Characters in Beast Mode"). |
+	+ **Disabling conversation auto-switching when you navigate**. By default, when you navigate to different items in Domo, the open Buzz conversation automatically updates to reflect the newly selected item. For example, if you were on the "Marketing" Page, a conversation specific to that Page would be open in Buzz. If you then clicked on the "Marketing Reach" Card, the conversation for "Marketing Reach" would open instead. If you check this box, new conversations do not appear when you navigate.
+	+ **Include thread conversations in the Buzz menu**. If you select this option, the Buzz menu shows dropdown arrows for all conversation threads. You can click an arrow to see the thread names. You can then click a thread name to open the thread in Buzz.  
+	  
+	![](0.png)
+	+ **Send emails even if you are logged in and active**. By default Domo does not send you Notification emails if you are logged in; however, you can check this box if you want to receive emails anyway.
+	+ **Automatically remove conversations from your Buzz menu**. Here you can choose how long inactive conversations remain in your Inbox before being removed. If you choose **Never**, conversations are never removed due to inactivity. Note that when conversations are removed, they are *not* permanently removed from Domo; they are simply removed from your Inbox view.   
+	  
+	For more information about Buzz, see [Buzz](..\..\category\buzz\index.qmd "Buzz").
 
 
-* In calculations, Beast Mode function names are *not* case sensitive.
-* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
-* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
-Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
-* Use single quotes (') for strings: 'mystring'
-* You can escape a quote using two single quotes: 'O''Neal'
-* You can insert a space in a calculation using single quotes: `' '`  
-This is useful with functions like CONCAT when you need to combine strings.
-* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
-* You cannot refer to a specific calculation by name in another calculation.  
-For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
-* Calculations can be completed automatically as you enter them.
+**To configure general settings,**
 
 
-	+ As you enter functions, a list of functions appears, which you can select from.
-	+ If you enter a backtick ('), a list of column names appears, which you can select from.
-* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
-* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
-* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
-* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](../../raw_kb/article/adding_a_drill_path_to_your_chart/index.html "Adding Drill Path to Your Chart").
-* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
-* Do *not* mix data types of values you put in a transformed column.  
-For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
-* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
-* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
-* You can drag and drop a column name from the DataSet Fields list to your calculation.
-* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
+1. Click your user profile photo ![](1.png), then click ![](2.png).
+2. Your user Settings page opens, with the **General**tab selected by default.
+3. Configure your settings as desired.
 
 
-For Beast Mode syntax examples, see [Sample Beast Mode Calculations](../../raw_kb/article/sample_beast_mode_calculations/index.html).
+Notifications
+-------------
 
 
-Applying a calculation to a summary number
-------------------------------------------
+You can set delivery options for all of the following kinds of Notifications in the **Notifications** tab in the Settings screen:
 
 
-If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
+
+* Someone @-mentioning you in a Buzz conversation.
+* Any activity occurring in a Buzz conversation you're a member of.
+* Someone sharing a Card or Page with you.
+* Someone assigning a Task to you or updating a Task assigned to you.
+* Updating of a Doc Card you have added as a Favorite.
+* Automatic weekly activity report ("What's Happening in Domo?") emails.
 
 
-* AVG
-* COUNT
-* COUNT (DISTINCT)
-* MAX
-* MIN
-* SUM
-* SUM (DISTINCT)
-* STDDEV\_POP, VAR\_POP
+For all of these Notification types, you can choose whether the Notifications are sent via pop-up messages ![](3.png), email ![](4.png), SMS ![](5.png), Domo Mobile ![](6.png), or any combination of these. 
 
 
-When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
+**To set Notifications,**
 
 
-**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number.
-For more information about summary numbers, see [Configuring Your Chart Summary Number](../../raw_kb/article/configuring_your_chart_summary_number/index.html "Configuring Your Chart Summary Number").
+1. Click your user profile photo ![](1.png), then click ![](2.png).
+2. In the **Notifications** tab, enable or disable Notification settings for each Notification type or event.
+
+
+In the following example, the user is notified via pop-up messages on his screen when any activity occurs in a Buzz conversation he is following; by Domo Mobile and email when he is @-mentioned in a conversation; by email alone when a task is updated; and so on. 
+
+
+![](9.png)
+
+
+In the **Notifications** tab, you can also configure settings for Domo product updates and education subscriptions. You can choose to receive emails with educational information, product feedback, best practices, and so on.
+
+
+**To configure Domo email subscriptions,**
+
+
+1. Mouse over your user menu ![](1.png), then click ![](2.png).
+2. In the **Notifications** tab, click **Manage** next to **Product Updates and Education** near the bottom of the screen.  
+You are taken into a new window where you can configure email subscriptions.
+3. Check or uncheck the boxes as necessary to turn subscriptions on or off.
+4. Click **Update**.
+
+
+Alerts
+------
+
+
+There are three Alerts tabs in the Manage Notifications & Alerts screen: **Instant Alerts**, **Daily Alerts**, and **Weekly Alerts**. Instant Alert Notifications are sent instantly to email, SMS, or Domo Mobile when those Alerts are triggered. Daily and weekly Alert Notifications are sent to your email as summaries of Alerts that were triggered during a given day or week, respectively. For daily Alert Notifications, you can set the time when the summary email is sent each day; for weekly Alert Notifications, you can set both the day and time when the email is sent.
+
+
+**Tip**: You can also configure Alert settings in the **Settings** screen in the Alert Center. The options in this screen are same as those of the **Instant Alerts**, **Daily Alerts**, and **Weekly Alerts**tabs in the Manage Notifications & Alerts screen.
+When you create or follow an Alert, you are prompted to select whether you want to receive immediate, daily, or weekly Notifications, or any combination of these. In the Manage Notifications & Alerts screen, Alerts appear in the tabs corresponding to the options you've selected. For example, if you create an Alert then select **Daily** as the Notification option, the Alert appears in the **Daily Alerts** tab. You can change these settings in the Manage Notifications & Alerts screen by clicking **Following** for the Alert you want to change and selecting the desired options. If you uncheck all of the options in this screen, the Alert disappears from the Manage Notifications & Alerts screen. To restore the Alert to the screen, you must locate it in the Alert Center, click **Following**, and check the desired boxes.
+
+
+For more information about creating Alerts, see Creating a Custom Alert for a KPI Card. For information about following Alerts and using the Alert Center, see Managing Custom Alerts.
+
+
+### Instant Alerts
+
+
+In the **Instant Alerts** tab, you can configure whether you want to be notified about triggered Alerts via email, SMS, or Domo Mobile, or any combination of these. These Alert Notifications are sent instantly using all of the delivery options you've selected. For more information about creating Alerts, see [Creating an Alert for a Visualization Card](..\creating_an_alert_for_a_visualization_card\index.qmd).
+
+
+**To set delivery options for instant Alerts,**
+
+
+1. Mouse over your user menu ![](1.png), then click ![](2.png).
+2. Click **Instant Alerts**.
+3. Under **Delivery Options**, enable or disable Notification settings as necessary.
+
+
+### Daily Alerts
+
+
+In the **Daily Alerts** tab, you can set the time at which daily summary emails (lists of Alerts) are sent to you. You can also specify whether updates to "Favorited" cards are included in the email. Only "Favorited" cards that include Summary Numbers appear in the email. For more information about Summary Numbers, see [Adding Cards as Favorites](..\adding_cards_as_favorites\index.qmd "Configuring Your Chart Summary Number").
+
+
+**To set the time for your daily Alerts,**
+
+
+1. Mouse over your user menu ![](1.png), then click ![](2.png).
+2. Click **Daily Alerts**.
+3. Select a time from the **Select Time** menu.
+4. (Optional) To include "Favorited" cards in the Daily Alerts email, check the box reading "Include updates about your favorite cards."
+
+
+There is no "master switch" that turns off Daily Alerts. If you want to unsubscribe from Daily Alerts, you must do so for each individual Alert. When you are unsubscribed from all Alerts, emails will no longer be sent. Because your subscribed Alerts appear in the **Daily Alerts** pane, it is easy to unsubscribe from them. 
+
+
+**To unsubscribe from daily Alerts,**
+
+
+1. Mouse over your user menu ![](1.png), then click ![](2.png).
+2. Click **Daily Alerts**.
+3. For each Alert appearing in the right-hand pane, click **Subscribed**, then uncheck the **Daily** box.
+
+
+### Weekly Alerts
+
+
+In the **Weekly Alerts** tab, you can set the day of the week and time when weekly summary emails are sent to you. 
+
+
+**To specify weekly Notifications**
+
+
+1. Mouse over your user menu ![](1.png), then click ![](2.png).
+2. Click **Weekly Alerts**.
+3. Select the letter corresponding to the desired day.
+4. Select the time of day in the **Select Time** menu.
+
+
+As with Daily Alerts, if you want to unsubscribe from Weekly Alerts, you must do so for each individual Alert. When you are unsubscribed from all Alerts, emails will no longer be sent. Because your subscribed Alerts appear in the ****Weekly Alerts**** pane, it is easy to unsubscribe from them. 
+
+
+****To unsubscribe from daily Alerts,****
+
+
+1. Mouse over your user menu ![](1.png), then click ![](2.png).
+2. Click **Weekl**y Alerts****.
+3. For each Alert appearing in the right-hand pane, click ****Subscribed****, then uncheck the ****Weekly**** box.

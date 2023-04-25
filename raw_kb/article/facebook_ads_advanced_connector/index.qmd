@@ -1,13 +1,13 @@
 ---
-title : Adding a Beast Mode Calculation to Your Chart
+title : Facebook Ads Advanced Connector
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
-date: 2022-10-24 22:40:00
-url : https://domo-support.domo.com/s/article/360043429913
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429993', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428753']
-article_id : 000004076
-views : 10,979
-created_date : 2022-10-24 21:20:00
-last updated : 2022-10-24 22:40:00
+date: 2022-10-24 22:39:00
+url : https://domo-support.domo.com/s/article/360042926754
+linked_kbs :  ['https://domo-support.domo.com/s/article/360042926274', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360042926054', 'https://domo-support.domo.com/s/article/360043431213', 'https://domo-support.domo.com/s/article/4405691996439', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360043429913']
+article_id : 000003216
+views : 2,165
+created_date : 2022-10-24 21:11:00
+last updated : 2022-10-24 22:39:00
 ---
 
 
@@ -16,172 +16,423 @@ Intro
 -----
 
 
-You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
+Marketing experts use Facebook Ads to create targeted ads designed to reach different audiences and help them meet their business goals. To learn more about the Facebook API, visit their page ([https://developers.facebook.com/docs/marketing-apis](https://developers.facebook.com/docs/marketing-apis "https://developers.facebook.com/docs/marketing-apis")).
 
 
-**Video - Intro to Beast Mode**
+This Advanced version of the Facebook Ads connector allows you to access more reports than the standard Facebook Ads connector but also requires more configuration. For information about the simplified version, see [Facebook Ads Connector](..\facebook_ads_connector\index.html "Facebook Ads Connector").  
 
 
-{{< video www.youtube.com/embed/SpVbmZPMAsM >}}
- 
-
-
-**Video - Creating a Calculated Field**
-
-
-{{< video www.youtube.com/embed/h6SQR_H9OsY >}}
- 
-
-
-**Video - Case Statement Overview**
-
-
-{{< video www.youtube.com/embed/xFofhklohSc >}}
- 
-
-
-Parts of the Beast Mode dialog
-------------------------------
-
-
-The following screenshot shows how the Beast Mode dialog looks:
-
-
-![Beast_Mode_Dialog.jpg](Beast_Mode_Dialog.jpg)
-
-
-You can learn about the user interface components of the Beast Mode dialog in the following table:
+You connect to your Facebook account in the Data Center. This topic discusses the fields and menus that are specific to the Facebook Ads connector user interface. General information for adding DataSets, setting update schedules, and editing DataSet information is discussed in [Adding a DataSet Using a Data Connector](..\adding_a_dataset_using_a_connector\index.html "Adding a DataSet Using a Data Connector").
 
 
 
 
-| Name | Description |
+|  |  |
 | --- | --- |
-| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
-| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
-| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
-| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
-| Function Description | Displays the description of the selected function. |
-| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
-| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
+| **Primary Use Cases** | 
+* Tracking how many people view individual ads
+* Tracking how many people are reached by each campaign
+* Tracking how much money has been spent on campaigns
+ |
+| **Primary Metrics** | 
+* Reach
+* Spend
+* Cost per Lead
+* Leads generated
+* Impressions
+* Clicks
+* Cost per Click
+ |
+| **Primary Company Roles** | Online marketers |
+| **Average Implementation Time** | 1-2 hours |
+| **Ease of Use (on a 1-to-10 scale with 1 being easiest)** | 4 |
 
 
-Adding a Beast Mode calculation
--------------------------------
-
-
-Use the information in this section to add calculations for transforming data using Beast Mode. 
-
-
-**To add a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to add a calculation, click ![](1.png), then select **Edit Card**.
-2. In Analyzer, click **Add Calculated Field**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-
-
-The Beast Mode dialog appears.
-3. In **Calculated Field Name**, enter the title of the calculation.
-
-
-**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
-![Beast_Mode_Modal.png](Beast_Mode_Modal.png)
-**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
-4. In **Formula**, enter the calculation you want.  
-You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
-For more information about functions, see [Beast Mode Functions Reference Guide](../../raw_kb/article/beast_mode_functions_reference_guide/index.html).
-5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
-6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
-If there are errors, revise your calculation.   
-After saving, the calculation column appears in the Categories list for the card in Analyzer.
-
-
-**To edit a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
-3. Make any changes you want, then click **Save & Close**.
-
-
-**To delete a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
-3. Click **Remove** to confirm deleting the calculation.
-
-
-Calculation usage notes
------------------------
-
-
-* Most calculations use one of the following general formats: 
+Best Practices
+--------------
 
 
 
-| Format | Description |
+* The Facebook Ads connector provides ready-made reports that you can use right away. The "Custom Insights" report is the most flexible report in this connector. It allows you the most control over the reports you generate.
+* This connector can take a long time to run if the date range is very long and/or the account selected has a large number of campaigns or ads. The long run time occurs because Facebook is taking a long time to calculate the selected metrics. If the DataSet is taking too long or doesn't complete, the date range needs to be smaller.
+* Metrics for ads placed through Instagram can be found by using the "Custom Insights" report and setting the **Breakdown** value to **Placement**. Instagram is then listed as one of the placement values in the results.
+* You can also return metrics for Instagram video views. This is discussed later in this article, under [Instagram Video Views](#FacebookAdsFeasibility-InstagramVideoViews "Facebook Ads Advanced Connector").
+
+
+Prerequisites
+-------------
+
+
+To connect to Facebook and create a Facebook Ads DataSet, you must have the following:
+
+
+
+* The email address associated with your Facebook account, or your telephone number
+* Your Facebook password
+* Access to your company's Facebook Ads account
+
+
+Connecting to Your Facebook Account
+-----------------------------------
+
+
+This section enumerates the options in the Credentials and Details panes in the Facebook Ads Connector page. The components of the other panes in this page, **Scheduling**and **Name & Describe Your DataSet,** are universal across most connector types and are discussed in greater length in [Adding a DataSet Using a Data Connector](..\adding_a_dataset_using_a_connector\index.html "Adding a DataSet Using a Data Connector").
+
+
+### Credentials Pane
+
+
+The Domo Facebook Ads connector uses OAuth to connect, so there is no need to enter credentials within Domo. Click **Connect** (or select **Add Account** if you have existing Facebook Ads accounts in Domo) to open the Facebook OAuth screen where you can enter your Facebook credentials. Once you have entered valid Facebook credentials, you can use the same account any time you go to create a new Facebook Ads DataSet. You can manage connector accounts in the **Accounts** tab in the Data Center. For more information about this tab, see [Managing User Accounts for Connectors](..\managing_user_accounts_for_connectors\index.html "Managing User Accounts for Connectors").
+
+
+**Note:** If you are already logged into Facebook when you connect in Domo, you are authenticated automatically when you click **Add account**. If you want to connect to an account that is different from the one you are logged into, you must first log out of Facebook.
+### Details Pane
+
+
+This pane contains a primary **Reports** menu, along with various other menus which may or may not appear depending on the report type you select.
+
+
+Many report types include a number of sub-reports called "edges." These are also described below.
+
+
+#### Reports and Edges
+
+
+
+
+| Menu | Description |
 | --- | --- |
-| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
-| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
-| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
-| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](../../raw_kb/article/date_format_specifier_characters_for_beast_mode/index.html "Date Format Specifier Characters in Beast Mode"). |
+| Report | Select the Facebook Ads report you want to run. The following reports are available:
+
+|  |  |
+| --- | --- |
+| Ad Accounts | Returns details on the specified account. |
+| Ad Campaigns | Returns statistics on ad campaigns. |
+| Ad Sets | Returns ad-related data for a specified set. |
+| Ads | Returns data for a specified ad. |
+| Ads Advanced | Returns information about one or more Ads defined in the selected **Ad Set(s)** with separate column for Ad link URLs. |
+| Custom Insights | Returns user-selected insight information at a reporting level defined by the **Level** field. |
+| General Metrics | Returns commonly-used insight metrics at the Campaign level. |
+| Object Information | This report enables you to retrieve the Info edge of the Account, Campaign, Ad set, or Ad objects associated with the Ad Accounts you select. Select the Ad Accounts and the object type you need information about. |
+| Object Insights | This report enables you to retrieve the Insights edge of the Account, Campaign, Ad set, or Ad objects associated with the Ad Accounts you select. Select the Ad Accounts and the object type you need insights about, and complete the other insight metrics. |
+| Page Actions (Ad Sets) | Returns insights related to Page and Post interactions at the Adset level. |
+| Page Actions (Ads) | Returns insights related to Page and Post interactions at the Ad level. |
+| Placement Metrics | Returns common metrics, broken down by screen placement, at the Campaign level. |
+| Responder Demographics | Returns common metrics, broken down by age and gender, at the Adset level. |
+| User | Returns details on the authenticated user. |
+
+ |
+| Ad Account Edge | Select the ad account edge you want to retrieve information for. The following edges are available:
+
+|  |  |
+| --- | --- |
+| Activities | Returns a log of the actions taken on the selected account. |
+| Ad Account Info | Returns information about the selected account. |
+| Ad Campaigns | Returns a list of ad campaigns for the selected account. |
+| Ad Sets | Returns a list of ad sets for the selected account. |
+| Ads | Returns a list of ads for the selected account. |
+| Custom Audiences | Returns the custom audiences owned by or shared with the selected account. |
+| Insights | Returns insight information for the specified criteria. |
+| Partners | Returns a list of ad partners for the selected account. |
+| Rate Card | Returns a list of currency rates. |
+| Reach Estimate | Returns the reach estimate for the selected account and given targeting spec. |
+| Users | Returns user IDs, permissions, and roles for the selected account. |
+
+ |
+| Ad Campaign Edge | Select the ad campaign edge you want to retrieve information for. The following edges are available:
+
+|  |  |
+| --- | --- |
+| Ad Campaign Info | Returns information about the selected campaign. |
+| Insights | Returns insight information for the specified criteria. |
+
+ |
+| Ad Set Edge | Select the ad set edge you want to retrieve information for. The following edges are available:
+
+|  |  |
+| --- | --- |
+| Ad Set Info | Returns information about the selected ad set. |
+| Activities | Returns a log of actions taken on the selected ad set. |
+| Ad Creatives | Returns a list of ad creative for the selected ad set. |
+| Insights | Returns insight information for the specified criteria. |
+| Reach Estimate (Deprecated) | Returns the reach estimate for the selected ad set. |
+
+ |
+| Ad Edge | Select the ad edge you want to retrieve information for. The following edges are available:
+
+|  |  |
+| --- | --- |
+| Ad Info | Returns information about the selected ad. |
+| Ad Creatives | Returns a list of creative for the selected ad. |
+| Insights | Returns insight information for the specified criteria. |
+| Keyword Stats | Returns keyword statistics for the selected ad. |
+| Reach Estimate | Returns the reach estimate for the selected ad. |
+| Targeting Sentence Lines | Returns the targeting description sentence for the selected ad. |
+
+ |
+| User Edge | Select the user edge you want to retrieve information for. The following edges are available:
+
+|  |  |
+| --- | --- |
+| User Info | Returns the authenticated user's name and ID. |
+| Ad Accounts | Returns information for the authenticated user's ad accounts, such as balance, capabilities, funding sources, etc. |
+
+ |
 
 
-* In calculations, Beast Mode function names are *not* case sensitive.
-* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
-* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
-Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
-* Use single quotes (') for strings: 'mystring'
-* You can escape a quote using two single quotes: 'O''Neal'
-* You can insert a space in a calculation using single quotes: `' '`  
-This is useful with functions like CONCAT when you need to combine strings.
-* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
-* You cannot refer to a specific calculation by name in another calculation.  
-For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
-* Calculations can be completed automatically as you enter them.
+#### Report Options
 
 
-	+ As you enter functions, a list of functions appears, which you can select from.
-	+ If you enter a backtick ('), a list of column names appears, which you can select from.
-* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
-* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
-* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
-* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](../../raw_kb/article/adding_a_drill_path_to_your_chart/index.html "Adding Drill Path to Your Chart").
-* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
-* Do *not* mix data types of values you put in a transformed column.  
-For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
-* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
-* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
-* You can drag and drop a column name from the DataSet Fields list to your calculation.
-* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
+The following options may or may not be available depending on your selected report (and edge, if applicable).
 
 
-For Beast Mode syntax examples, see [Sample Beast Mode Calculations](../../raw_kb/article/sample_beast_mode_calculations/index.html).
 
 
-Applying a calculation to a summary number
-------------------------------------------
+| Option | Description |
+| --- | --- |
+| Breakdowns | Select how you want the report data to be broken down. |
+| Action Breakdowns | Select the desired action breakdown(s) for the report. |
+| Action Report Time | Select the desired action report time value. |
+| Action Attribution Window | Select the desired action attribution window for the report. |
+| Level | Select the ad level for the report. |
+| Duration | Select whether to pull data for a single date or a range of dates. |
+| Report Date | Specify whether the report data is for a specific or relative date. Choose **Relative** if you always want the report to retrieve data for a given number of days back from the current date (which you specify in **Days Back**). For example, if you enter 5 for **Days Back** and set the DataSet to update daily, each new day the report will update to show information for the date 5 days in the past. |
+| Select Specific Date | Select the report date using the date selector. |
+| Start Date | Specify whether the first date in your date range is a specific or relative date. Choose **Relative** if you always want the report to retrieve data for a given number of days back from the current date (which you specify in **Days Back to Start From**). If you choose **Relative** here, you should also choose **Relative** for **End Date** and specify a value for **Days Back to End At**.
+For example, if you enter 10 for **Days Back to Start From** and 5 for **Days Back to End At** and you set the DataSet to update daily, each new day the report will update to show information for 5 to 10 days in the past. |
+| End Date | Specify whether the last date in your date range is a specific or relative date. Choose **Relative** if you always want the report to retrieve data for a given number of days back from the current date (which you specify in **Days Back to End At**). If you choose **Relative** here, you should also choose **Relative** for **Start Date** and specify a value for **Days Back to Start From**.
+For example, if you enter 10 for **Days Back to Start From** and 5 for **Days Back to End At**and you set the DataSet to update daily, each new day the report will update to show information for 5 to 10 days in the past. |
+| Select Specific Start Date | Select the first date in your date range using the date selector. |
+| Select Specific End Date | Select the last date in your date range using the date selector. |
+| Ad | Select the ad you want to retrieve data for. |
+| Ad Account ID | Select the ID for the ad account you want to retrieve information for. |
+| Ad Campaign | Select the ad campaign you want to retrieve information for. |
+| Ad Label IDs | Enter the label IDs for the ads you want to retrieve data for. |
+| Ad Set | Select the ad set you want to retrieve data for. |
+| Query | Enter a search query to return results based on that query. |
+| Targeting Spec | Enter the targeting specs you want to retrieve data for. |
+| Time Increment | Enter the number of days the report data should be aggregated by. This should be an integer between 1 and 90. You can also enter monthly to show data by month or all\_days to show data for all days. |
 
 
-If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
+### Other Panes
 
 
-* AVG
-* COUNT
-* COUNT (DISTINCT)
-* MAX
-* MIN
-* SUM
-* SUM (DISTINCT)
-* STDDEV\_POP, VAR\_POP
+For information about the remaining sections of the connector interface, including how to configure scheduling, retry, and update options, see [Adding a DataSet Using a Data Connector](..\adding_a_dataset_using_a_connector\index.html "Adding a DataSet Using a Data Connector").
 
 
-When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
+Tips and Tricks
+---------------
 
 
-**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number.
-For more information about summary numbers, see [Configuring Your Chart Summary Number](../../raw_kb/article/configuring_your_chart_summary_number/index.html "Configuring Your Chart Summary Number").
+### Choosing Insight Columns
+
+
+The "Custom Insights" report is very flexible and allows you to create nearly any report that can be created in the Facebook Ads UI. However, figuring out how to map between the column names shown in the Facebook Ads UI and the list of available columns/categories can be tricky. The following steps can help:
+
+
+1. In the Facebook Ads UI, open the report that you want to duplicate in Domo.
+2. Select **Columns > Customize Columns**.  
+A dialog box opens that lets you choose and reorder columns in the report.
+3. Pick a column to add to the report and click **Apply**.  
+If you look at the URL, you’ll see a parameter called "columns." This will look something like the following:  
+  
+columns=["name"%2C"date\_start"%2C"date\_stop"%2C"reach"%2C"frequency"%2C"impressions"%2C"cpm"%2C"cpp"%2C"spend"%2C"clicks"%2C"unique\_clicks"%2C"ctr"%2C"unique\_ctr"%2C"cpc"%2C"actions%3Aoffsite\_conversion.lead"%2C"social\_reach"]  
+  
+Each of the items between quotes is a column, and this is the API name for it. The names that are shown in the **Columns** field are typically close (or identical) to these names.  
+  
+The tricky columns are ones that are actually part of a bigger category in the Domo UI. This includes columns like "Actions," which expands into several smaller fields, including actions%3Aoffsite\_conversion.lead shown above (which is “Leads (Conversion)” in the UI).
+
+
+### Instagram Video Views
+
+
+To show Instagram video views, do the following:
+
+
+1. Create a "Custom Insights" report.
+2. Select interesting metrics. “Actions” should bring back a column about video views.
+3. Select **Placement** as the breakdown option.
+4. Choose the level to report (**Account**, **Campaign**, **AdSet**, **Ad**).
+5. Select the date range and time increment.
+
+
+ This will return information for many different placement options. The most interesting one is called “instagramstream.” There should also be a column called “ActionsVideoView” that lists the number of video views.
+
+
+### Aggregating Statistics
+
+
+It is often tempting to use a Custom Insights report that is reporting at a very detailed level to calculate results for a higher level. For example, a DataSet may be reporting daily metrics for multiple campaigns. You could add up the daily data for all the campaigns in order to determine the total for the account that holds the campaigns. This works for some metrics like Clicks, Spend, or Impressions. However, for metrics that count individual people (such as "Reach"), this approach will fail and produce incorrect values. "Reach," for example, fails because individuals are counted for each day they saw an ad. Then, if the Reach values for the month are added together, those people are counted multiple times. If the user compares this result to the result for the month in the Facebook Ads UI, they find that the aggregated value is far too high. The Facebook Ads UI removed the duplicated viewers, and only counted them once in the specified time period.
+
+
+To avoid this problem, any time the user wants to get a value for a larger time period, the period needs to be defined in the DataSet itself, and not calculated afterward. If a user wants Reach for a particular month, the DataSet should be defined with the start and end dates for the month, and the **Time Increment** value should be set to all\_days or left blank. The user can get monthly data, aggregated and deduplicated by Facebook, by setting a large date range (for example, Jan 1, 2016 to Dec 31, 2016) and entering monthly as the **Time Increment** value. Similarly, if a user wants Reach data at the Account level, the user needs to set the DataSet's **Level** value to **Accounts** (not **Campaigns**), followed by summing the values in Domo.
+
+
+It is often useful to compare the results of the connector to the results available in the Facebook Ads UI. To perform the comparison correctly, however, the UI and the connector need to be configured identically. They need to be set to the same time period (start and end dates) as well as the same reporting level and time increment value.
+
+
+Troubleshooting
+---------------
+
+
+
+* The most common problem occurs when the returned data and the Facebook Ads UI do not match. This happens when the DataSet and the report in the Facebook UI are not configured exactly the same way. Make sure the following parameters match:
+
+
+
+	+ Start Date
+	+ End Date
+	+ Breakdown
+	+ Level
+	+ Time Increment.
+* Metrics related to individuals (such as Reach) should NOT be aggregated across time periods in Domo. These metrics have duplicates already removed by the Facebook Ads system.
+
+
+FAQ
+---
+
+
+#### What kind of credentials do I need to power up this connector?
+
+
+You will need the email address that is associated with your Facebook account, and your Facebook password. The login process uses the OAuth process, so your password is never seen or stored by Domo. This keeps your login secure. You can revoke Domo's access to your account at any time.
+
+
+#### Do I need a certain kind of account to set up the connector?
+
+
+You will need a Facebook account that has access to the Facebook Ads account(s) that you are interested in. There are three levels of access available: Analyst, Advertiser and Administrator. Analyst-level access is enough for the reports available in the connector.
+
+
+#### How do I choose the columns I need in a Custom Insights report?
+
+
+The Custom Insights report is very flexible and will allow you to create nearly any report that can be created in the Facebook Ads UI. However, figuring out how to map between the column names shown in the Facebook Ads UI and the list of available columns/categories can be tricky. The following steps can help:
+
+
+1. In the Facebook Ads UI, open the report that you want to duplicate in Domo.
+2. On the right-hand side of the screen click the button labeled **Columns** and select **Customize Columns**. You should now see a dialog box that lets you choose and reorder columns that will be in the report.
+3. Pick a column to add to the report and click **Apply**.
+4. If you look at the URL, you'll see a URL parameter called 'columns'. This will look something like this:  
+columns=["name","date\_start","date\_stop","reach","cpm","cpp","spend","clicks","unique\_clicks","ctr","unique\_ctr","cpc","actions:offsite\_conversion.lead","social\_reach"]
+
+	* Each of the items between quotes is a column. The names that are shown in the Columns field are identical or very close to the names presented by Domo.
+	* Columns that are part of a larger category may vary slightly in this interface and the Domo interface. For example, "actions" expands into several smaller fields, including "actions:offsite\_conversion.lead". In the Domo interface, this column is called "Leads (Conversion)".
+
+
+#### How do I get statistics about Instagram Views?
+
+
+Instagram ads are included as a special placement option for ads. The following steps will get statistics about them:
+
+
+1. Create a **Custom Insights** report.
+2. Select interesting metrics. (For example, **Actions** should bring back a column about video views.)
+3. Select **Placement** as the breakdown option.
+4. Choose the level to report (Account, Campaign, AdSet, Ad).
+5. Select the date range and time increment.
+
+
+This will return information for a lot of different placement options, including **instagramstream** and **ActionsVideoView**.
+
+
+#### How do I get information or insights for all my campaigns, ad sets, or ads, including new campaigns, ad sets, or ads I create in the future?
+
+
+To get information on all campaigns, ad sets, or ads associated with specific accounts (even if you create those campaigns, ad sets, or ads after the creation of the report):
+
+
+1. Select the new **Object Information** report and the account(s) you wish to report on.
+2. Select the **Object Type** (Account, Campaign, Ad Set, or Ad).
+
+
+OR
+
+
+1. Select the **Ad Accounts** report and the account(s) you wish to report on.
+2. Select the appropriate **Ad Account e**dge.
+
+	* To get information on all campaigns, select **Ad Campaigns**.
+	* To get information on all ad sets, select **Ad Sets**.
+	* To get information on all ads, select **Ads**.
+
+
+To get insights on all campaigns, ad sets, or ads associated with specific accounts (even if you create those campaigns, ad sets, or ads after the creation of the report):
+
+
+1. Select the new **Object Insights** report and the account(s) you wish to report on.
+2. Select the **Object Type** (Account, Campaign, Ad Set, or Ad).
+3. Select the desired parameters in all the other fields.
+
+
+OR
+
+
+1. Select the **Ad Accounts** report and the account(s) you wish to report on.
+2. Select the **Insights Ad Account** edge.
+3. Select the appropriate Level.
+
+	* To get insights on all campaigns, select **Ad Campaign**.
+	* To get insights on all ad sets, select **Ad Set**.
+	* To get insights on all ads, select **Ad**.
+4. Select the desired parameters in all the other fields.
+
+
+#### What is the difference between the Facebook Ads and Facebook Ads Advanced connectors?
+
+
+The Facebook Ads Advanced connector provides far more reports and options than the Facebook Ads connector. The biggest difference is that the Custom Insights report is only available in the Advanced connector. Also, this connector supports the **Ads Advanced** report that provides information about one or more Ads defined in the selected Ad Set(s) with separate column for Ad link URLs.
+
+
+The Facebook Ads connector is a predefined set of easy-to-use reports. For more options and flexibility with report configuration, we recommend to use the Advanced connector.
+
+
+#### How often can the data be updated?
+
+
+The data in this connector is roughly real-time. However, many statistics are subject to change for up to 3 days as Facebook determines the exact number of views, etc.
+
+
+#### Are there any API limits I should be aware of?
+
+
+Facebook may enforce rate limits on calls to its API, but you should not have to worry about this.
+
+
+#### My Facebook Ads DataSets take a long time to run. What can I do to make them run faster?
+
+
+Facebook Ads is known to take a long time because Facebook has to calculate the results of a query before we can start pulling the data. Depending on the load on their servers, this can take a LONG time. It seems that scheduling queries for off-peak times helps DataSets run faster. For example, one team in India was able to run a Facebook Ads DataSet in 15 minutes, but when another user tried the same DataSet 6-8 hours later, it took about 2 hours.
+
+
+#### What version of the Facebook API does this connector use?
+
+
+This connector uses version 3.3 of the Facebook API ([https://graph.facebook.com/v3.3](https://graph.facebook.com/v3.3 "https://graph.facebook.com/v3.3")).
+
+
+#### Which endpoint(s) does each report call in this connector?
+
+
+
+
+| Report Name | Endpoint URL(s) |
+| --- | --- |
+| Ad Accounts | /{AD\_ACCOUNT\_ID}/info |
+| Ad Campaigns | /{AD\_ACCOUNT\_ID}/adcampaign\_groups |
+| Ad Keyword Statistics | /keywordstats |
+| Ad Sets | /{AD\_ACCOUNT\_ID}/adcampaigns |
+| Ads | /{AD\_ACCOUNT\_ID}/adgroups |
+| Ads Advanced | /{AD\_ACCOUNT\_ID}/adgroups |
+| Custom Insights | /{AD\_ACCOUNT\_ID}/insights |
+| General Metrics | /{CAMPAIGN\_GROUP\_ID}/insights |
+| Object Informaion-NEW | Account Object | /{AD\_ACCOUNT\_ID}/insights |
+| Campaign Object | /{AD\_ACCOUNT\_ID}/insights |
+| Ad Sets Object | {AD\_ACCOUNT\_ID}/adsets |
+| Ads Object | /{AD\_ACCOUNT\_ID}/ads |
+| Object Insights-NEW | /{AD\_ACCOUNT\_ID}/insights |
+| Page Actions (Ad sets) | /{AD\_SET\_ID}/insights |
+| Page Actions (Ads) | /{AD\_SET\_ID}/insights |
+| Placement Metrics | /{CAMPAIGN\_GROUP\_ID}/insights |
+| Responder Demographics | /{AD\_SET\_ID}/insights |
+| User | /{USER\_ID} |

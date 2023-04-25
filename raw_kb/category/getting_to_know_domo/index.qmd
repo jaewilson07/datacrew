@@ -1,0 +1,18 @@
+
+
+
+Getting To Know Domo
+====================
+
+Everything you need to know to get underway in Domo. Get access to support articles, system requirements, white papers, and more.
+***
+* [Getting Started](..\getting_started\index.qmd)
+* [Notifications And Alerts](..\notifications_and_alerts\index.qmd)
+* [Buzz](..\buzz\index.qmd)
+* [Goals Center](..\goals_center\index.qmd)
+* [Projects And Tasks](..\projects_and_tasks\index.qmd)
+* [Support Resources](..\support_resources\index.qmd)
+* [User Profile](..\user_profile\index.qmd)
+* [Business In A Box](..\business_in_a_box\index.qmd)
+* [Free Domo](..\free_domo\index.qmd)
+* [Domo Mobile](..\domo_mobile\index.qmd)

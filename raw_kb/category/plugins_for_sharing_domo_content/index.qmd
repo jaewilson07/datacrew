@@ -1,0 +1,10 @@
+
+
+
+Plugins For Sharing Domo Content
+================================
+***
+* [Google Sheets Add-On](..\..\article\google_sheets_addon\index.qmd)
+* [Using the Domo Excel Plugin](..\..\article\using_the_domo_excel_plugin\index.qmd)
+* [Using the Domo PowerPoint Plugin](..\..\article\using_the_domo_powerpoint_plugin\index.qmd)
+* [Using the Domo Word Plugin](..\..\article\using_the_domo_word_plugin\index.qmd)

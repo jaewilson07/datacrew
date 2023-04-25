@@ -1,0 +1,12 @@
+
+
+
+Visualization Card Details View Actions
+=======================================
+***
+* [Adding Chart Annotations](..\..\article\adding_chart_annotations\index.qmd)
+* [Changing the Default Sentiment for Insights](..\..\article\changing_the_default_sentiment_for_insights\index.qmd)
+* [Drilling into Data](..\..\article\drilling_into_data\index.qmd)
+* [Filtering Data in a Card Details View](..\..\article\filtering_data_in_a_card_details_view\index.qmd)
+* [Taking Snapshots of Cards](..\..\article\taking_snapshots_of_cards\index.qmd)
+* [Using Card Interaction Tools in a Card Details View](..\..\article\using_card_interaction_tools_in_a_card_details_view\index.qmd)

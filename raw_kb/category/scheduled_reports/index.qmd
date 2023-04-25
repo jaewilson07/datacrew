@@ -1,0 +1,7 @@
+
+
+
+Scheduled Reports
+=================
+***
+* [Scheduling Reports](..\..\article\scheduling_reports\index.qmd)

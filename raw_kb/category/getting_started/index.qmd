@@ -1,0 +1,22 @@
+
+
+
+Getting Started
+===============
+***
+* [Domo Architecture](..\..\article\domo_architecture\index.qmd)
+* [Domo Layout](..\..\article\domo_layout\index.qmd)
+* [Domo University Knowledge Base Updates](..\..\article\domo_university_knowledge_base_updates\index.qmd)
+* [Getting Up and Running in Domo (Video)](..\..\article\getting_up_and_running_in_domo_video\index.qmd)
+* [How to Connect" Schematic Diagram](..\..\article\how_to_connect_schematic_diagram\index.qmd)
+* [Joining Domo](..\..\article\joining_domo\index.qmd)
+* [Legal Notices](/s/article/360043427413)
+* [New Navigation Announcement](..\..\article\new_navigation_announcement\index.qmd)
+* [Resource Library](..\..\article\resource_library\index.qmd)
+* [Searching in Domo](..\..\article\searching_in_domo\index.qmd)
+* [Setting User-Specific Landing Pages](..\..\article\setting_userspecific_landing_pages\index.qmd)
+* [Signing into Domo](..\..\article\signing_into_domo\index.qmd)
+* [Support for Screen Readers in Stories](..\..\article\support_for_screen_readers_in_stories\index.qmd)
+* [System Requirements](..\..\article\system_requirements\index.qmd)
+* [What is Domo?](..\..\article\what_is_domo\index.qmd)
+* [White Papers](..\..\article\white_papers\index.qmd)

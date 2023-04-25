@@ -1,0 +1,8 @@
+
+
+
+Approvals
+=========
+***
+* [Creating a Request Template](..\..\article\creating_a_request_template\index.qmd)
+* [Submitting or Approving a Request](..\..\article\submitting_or_approving_a_request\index.qmd)

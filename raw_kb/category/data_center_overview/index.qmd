@@ -1,0 +1,23 @@
+
+
+
+Data Center Overview
+====================
+***
+* [Advanced Tools Launch Center](..\..\article\advanced_tools_launch_center\index.qmd)
+* [Best Practices for Managing DataSets](..\..\article\best_practices_for_managing_datasets\index.qmd)
+* [Changing the Owner of a DataSet](..\..\article\changing_the_owner_of_a_dataset\index.qmd)
+* [Connecting Cards to a Different DataSet](..\..\article\connecting_cards_to_a_different_dataset\index.qmd)
+* [Data Center Layout](..\..\article\data_center_layout\index.qmd)
+* [Data Fundamentals: Understanding Relational Data, Domo Architecture, and Data Pipeline Optimization](..\..\article\data_fundamentals_understanding_relational_data_domo_architecture_and_data_pipeline_optimization\index.qmd)
+* [DataSet Update Methods](..\..\article\dataset_update_methods\index.qmd)
+* [Deleting DataSets](..\..\article\deleting_datasets\index.qmd)
+* [Executing DataSets](..\..\article\executing_datasets\index.qmd)
+* [Exporting DataSets](..\..\article\exporting_datasets\index.qmd)
+* [Group Ownership of Accounts (Beta)](/s/article/4403537355543)
+* [Managing User Accounts for Connectors](..\..\article\managing_user_accounts_for_connectors\index.qmd)
+* [Optimizing Data Performance](..\..\article\optimizing_data_performance\index.qmd)
+* [Setting the Expected Update Frequency for a DataSet](..\..\article\setting_the_expected_update_frequency_for_a_dataset\index.qmd)
+* [Understanding the Connector Options Menu Items](..\..\article\understanding_the_connector_options_menu_items\index.qmd)
+* [Using the Data Warehouse to Manage Data](..\..\article\using_the_data_warehouse_to_manage_data\index.qmd)
+* [Viewing the Impact of Changes to DataSets](..\..\article\viewing_the_impact_of_changes_to_datasets\index.qmd)

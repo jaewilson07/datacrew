@@ -1,0 +1,11 @@
+
+
+
+Paid Training
+=============
+***
+* [Domo Certification](..\..\article\domo_certification\index.qmd)
+* [Domo Certification Exam Retake Policy](..\..\article\domo_certification_exam_retake_policy\index.qmd)
+* [Domo University Programs](..\..\article\domo_university_programs\index.qmd)
+* [Domo University Training Offerings](..\..\article\domo_university_training_offerings\index.qmd)
+* [Instructor-Led Courses](..\..\article\instructorled_courses\index.qmd)

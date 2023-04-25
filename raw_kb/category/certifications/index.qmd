@@ -1,0 +1,7 @@
+
+
+
+Certifications
+==============
+***
+* [Certifying Cards and DataSets](..\..\article\certifying_cards_and_datasets\index.qmd)

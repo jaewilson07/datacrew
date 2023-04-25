@@ -1,13 +1,13 @@
 ---
-title : Adding a Beast Mode Calculation to Your Chart
+title : Allowlisting IP Addresses for Connectors & Federated Adapters
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
-date: 2022-10-24 22:40:00
-url : https://domo-support.domo.com/s/article/360043429913
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429993', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428753']
-article_id : 000004076
-views : 10,979
-created_date : 2022-10-24 21:20:00
-last updated : 2022-10-24 22:40:00
+date: 2022-10-24 22:41:00
+url : https://domo-support.domo.com/s/article/360043630093
+linked_kbs :  ['https://domo-support.domo.com/s/article/360042930554', 'https://domo-support.domo.com/s/article/360042932074', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043436193', 'https://domo-support.domo.com/s/article/360042929094', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043439173', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360043436293', 'https://domo-support.domo.com/s/article/360042932974', 'https://domo-support.domo.com/s/article/360043630093', 'https://domo-support.domo.com/s/article/360043436053', 'https://domo-support.domo.com/s/article/360043436013', 'https://domo-support.domo.com/s/article/360042931694', 'https://domo-support.domo.com/s/article/360043436253', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/7963308557463', 'https://domo-support.domo.com/s/article/360042931874', 'https://domo-support.domo.com/s/article/360042931734', 'https://domo-support.domo.com/s/article/360043433113', 'https://domo-support.domo.com/s/article/360043436113', 'https://domo-support.domo.com/s/article/360042930534', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360042931894', 'https://domo-support.domo.com/s/article/360043433413', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043436513', 'https://domo-support.domo.com/s/article/360043436173', 'https://domo-support.domo.com/s/article/360043433393', 'https://domo-support.domo.com/s/article/360043436233', 'https://domo-support.domo.com/s/article/360043434973', 'https://domo-support.domo.com/s/article/360042929114', 'https://domo-support.domo.com/s/article/360043436273', 'https://domo-support.domo.com/s/article/360042932034', 'https://domo-support.domo.com/s/article/360042931614', 'https://domo-support.domo.com/s/article/360043436213', 'https://domo-support.domo.com/s/article/360042931754', 'https://domo-support.domo.com/s/article/360042931774', 'https://domo-support.domo.com/s/article/360043436033']
+article_id : 000003961
+views : 8,406
+created_date : 2022-10-24 21:17:00
+last updated : 2022-10-24 22:41:00
 ---
 
 
@@ -16,172 +16,154 @@ Intro
 -----
 
 
-You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
+Allowlisting IP addresses is usually required for database Connectors and standard (cloud-based) federated adapters. These Connectors must also have SSL enabled on their database server in order to authenticate.
 
 
-**Video - Intro to Beast Mode**
+**Note:** The federated agent (on-premise deployment) does not require incoming IP allowlisting. See this article for more details on the federated agent architecture: [Using the Federated Data Solution](..\using_the_federated_data_solution\index.md).
+Affected Connectors
+-------------------
 
 
-{{< video www.youtube.com/embed/SpVbmZPMAsM >}}
- 
+All of the following Connectors require allowlisting:
 
 
-**Video - Creating a Calculated Field**
 
+* [Amazon QuickSight SPICE](/s/article/360043436013)
+* [Amazon Redshift](..\amazon_redshift_v1_connector\index.html "Amazon Redshift Connector")
+* [Amazon Redshift Advanced](..\amazon_redshift_advanced_connector\index.html "Amazon Redshift Advanced Connector")
+* [Amazon Redshift SSH](..\amazon_redshift_ssh_connector\index.html "Amazon Redshift SSH Connector")
+* [Apache Kafka](..\apache_kafka_connector\index.html "Apache Kafka Connector")
+* [Apache Kafka REST](..\apache_kafka_rest_connector\index.html "Apache Kafka REST Connector")
+* [CSV Advanced](..\csv_advanced_connector\index.html "https:\knowledge.domo.com\Connect\Connecting_to_Data_with_Connectors\Configuring_Each_Connector\Connectors_for_File_Retrieval\CSV_Advanced_Connector")
+* [CSV SFTP Pull](..\csv_sftp_pull_connector\index.html "https:\knowledge.domo.com\Connect\Connecting_to_Data_with_Connectors\Configuring_Each_Connector\Connectors_for_File_Retrieval\CSV_SFTP_Pull_Connector")
+* [Cvent](..\cvent_connector\index.html "https:\knowledge.domo.com\Connect\Connecting_to_Data_with_Connectors\Configuring_Each_Connector\Connectors_for_Communication\Cvent_Connector")
+* [GitHub Enterprise](..\github_enterprise\index.md)
+* [Hive](..\hive_connector\index.html "Hive Connector")
+* [Jira](..\jira_rest_api_connector\index.md)
+* [JSON Advanced](..\json_advanced_connector\index.md)
+* [IBM DB2](..\ibm_db2_connector\index.html "IBM DB2 Connector")
+* [IBM Informix](..\ibm_informix_connector\index.html "IBM Informix Connector")
+* [IBM Informix SSH](..\ibm_informix_ssh_connector\index.html "IBM Informix SSH Connector")
+* [Microsoft Excel SFTP](..\microsoft_excel_sftp_connector\index.html "https:\knowledge.domo.com\Connect\Connecting_to_Data_with_Connectors\Configuring_Each_Connector\Connectors_for_File_Retrieval\Microsoft_Excel_SFTP_Connector")
+* [Microsoft SQL Server](..\microsoft_sql_server_connector\index.html "Microsoft SQL Server Connector")
+* [MongoDB](..\mongodb_connector\index.html "MongoDB Connector")
+* [MySQL](..\mysql_connector\index.html "MySQL Connector")
+* [MySQL SSH](..\mysql_ssh_connector\index.html "MySQL SSH Connector")
+* [Oracle Database](..\oracle_database_connector\index.html "Oracle Database Connector")
+* [Oracle Database SSH](..\oracle_database_ssh_connector\index.html "Oracle Database SSH Connector")
+* [PostgreSQL](..\postgresql_connector\index.html "PostgreSQL Connector")
+* [PostgreSQL SSH](..\postgresql_ssh_connector\index.html "PostgreSQL SSH Connector")
+* [SAP Adaptive Server Enterprise](..\sap_adaptive_server_enterprise_connector\index.html "SAP Adaptive Server Enterprise Connector")
+* [SAP Adaptive Server Enterprise SSH](..\sap_adaptive_server_enterprise_ssh_connector\index.html "SAP Adaptive Server Enterprise SSH Connector")
+* [ServiceNow](..\servicenow_connector\index.md)
+* [Splunk](..\splunk_connector\index.html "https:\knowledge.domo.com\Connect\Connecting_to_Data_with_Connectors\Configuring_Each_Connector\Connectors_for_IT\Splunk_Connector")
+* [Vertica](..\vertica_connector\index.html "Vertica Connector")
 
-{{< video www.youtube.com/embed/h6SQR_H9OsY >}}
- 
 
+IP Addresses to Allowlist
+-------------------------
 
-**Video - Case Statement Overview**
 
+**Important:** The IPs listed below must be allowlisted on your database server. You should *not* add these IPs to the allowlist in your Domo instance. Doing so will simply lock everyone out of the instance who is not coming from the IP addresses listed below. If you add these IPs to the allowlist in your Domo instance rather than on your server, incoming users will receive an error upon trying to log in that says "We're sorry but the system is not performing right now."
 
-{{< video www.youtube.com/embed/xFofhklohSc >}}
- 
 
+If a Domo Connector or federated adapter need access to your servers, you will need to allowlist all of the following IPs in the section below corresponding to where your Domo instance is hosted. IPs are given using CIDR notation for convenience when working with AWS Security Groups and other network security systems.
 
-Parts of the Beast Mode dialog
-------------------------------
 
+If you are unsure where your DomoÂ instance is hosted, it's most likely US East (AWS).
 
-The following screenshot shows how the Beast Mode dialog looks:
 
+**Tip:Â**A /32 after an IP address is CIDR notation for a single address. Smaller numbers, such as /27,Â indicateÂ a range of IP addresses.  
+Ex:Â 3.214.145.64/27 means theÂ range of IPs fromÂ 3.214.145.64Â toÂ 3.214.145.95 inclusive.
+###### US East (AWS):
 
-![Beast_Mode_Dialog.jpg](Beast_Mode_Dialog.jpg)
 
+`3.214.145.64/27` (Includes all IPs from 3.214.145.64 through 3.214.145.95 inclusive.)
 
-You can learn about the user interface components of the Beast Mode dialog in the following table:
 
+`54.208.87.122/32`
 
 
+`54.208.94.194/32`
 
-| Name | Description |
-| --- | --- |
-| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
-| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
-| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
-| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
-| Function Description | Displays the description of the selected function. |
-| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
-| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
 
+`54.208.95.167/32`
 
-Adding a Beast Mode calculation
--------------------------------
 
+`54.208.95.237/32`
 
-Use the information in this section to add calculations for transforming data using Beast Mode. 
 
+`34.198.214.100`
 
-**To add a Beast Mode calculation,**
 
+`34.202.52.248`
 
-1. On the KPI card where you want to add a calculation, click ![](1.png), then select **Edit Card**.
-2. In Analyzer, click **Add Calculated Field**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
 
+###### US East (Azure):
 
-The Beast Mode dialog appears.
-3. In **Calculated Field Name**, enter the title of the calculation.
 
+`13.92.125.193/32`
 
-**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
-![Beast_Mode_Modal.png](Beast_Mode_Modal.png)
-**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
-4. In **Formula**, enter the calculation you want.  
-You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
-For more information about functions, see [Beast Mode Functions Reference Guide](../../raw_kb/article/beast_mode_functions_reference_guide/index.html).
-5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
-6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
-If there are errors, revise your calculation.   
-After saving, the calculation column appears in the Categories list for the card in Analyzer.
 
+`40.76.8.174/32`
 
-**To edit a Beast Mode calculation,**
 
+###### US West (AWS):
 
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
-3. Make any changes you want, then click **Save & Close**.
 
+`35.82.136.240/28` (Includes all IPs from 35.82.136.240 through 35.82.136.255 inclusive.)
 
-**To delete a Beast Mode calculation,**
 
+###### Australia (Sydney):
 
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
-3. Click **Remove** to confirm deleting the calculation.
 
+`52.62.103.83/32`
 
-Calculation usage notes
------------------------
 
+###### Canada:
 
-* Most calculations use one of the following general formats: 
 
+`15.222.16.24/29` (Includes all IPs from 15.222.16.24 through 15.222.16.31 inclusive.)
 
 
-| Format | Description |
-| --- | --- |
-| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
-| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
-| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
-| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](../../raw_kb/article/date_format_specifier_characters_for_beast_mode/index.html "Date Format Specifier Characters in Beast Mode"). |
+###### Ireland (Dublin):
 
 
-* In calculations, Beast Mode function names are *not* case sensitive.
-* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
-* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
-Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
-* Use single quotes (') for strings: 'mystring'
-* You can escape a quote using two single quotes: 'O''Neal'
-* You can insert a space in a calculation using single quotes: `' '`  
-This is useful with functions like CONCAT when you need to combine strings.
-* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
-* You cannot refer to a specific calculation by name in another calculation.  
-For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
-* Calculations can be completed automatically as you enter them.
+`52.18.90.222/32`
 
 
-	+ As you enter functions, a list of functions appears, which you can select from.
-	+ If you enter a backtick ('), a list of column names appears, which you can select from.
-* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
-* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
-* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
-* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](../../raw_kb/article/adding_a_drill_path_to_your_chart/index.html "Adding Drill Path to Your Chart").
-* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
-* Do *not* mix data types of values you put in a transformed column.  
-For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
-* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
-* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
-* You can drag and drop a column name from the DataSet Fields list to your calculation.
-* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
+###### Japan (Tokyo):
 
 
-For Beast Mode syntax examples, see [Sample Beast Mode Calculations](../../raw_kb/article/sample_beast_mode_calculations/index.html).
+`54.168.46.79/32`
 
 
-Applying a calculation to a summary number
-------------------------------------------
+Â 
 
 
-If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
+For information about controlling access to DomoÂ based on IP address, seeÂ [Whitelisting IP Addresses in Domo](..\whitelisting_ip_addresses_in_domo\index.html "Whitelisting IP Addresses in Domo").
 
 
-* AVG
-* COUNT
-* COUNT (DISTINCT)
-* MAX
-* MIN
-* SUM
-* SUM (DISTINCT)
-* STDDEV\_POP, VAR\_POP
+**Note:** For the JSON Advanced connector, you need to allowlist the IP 34.198.214.100
+S3 Bucket policy for the Amazon S3 Connectors
+---------------------------------------------
 
 
-When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
+You only need to use these endpoints if all of the following conditions are met:
 
 
-**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number.
-For more information about summary numbers, see [Configuring Your Chart Summary Number](../../raw_kb/article/configuring_your_chart_summary_number/index.html "Configuring Your Chart Summary Number").
+
+* You are using any of Domo's S3 connectors
+* Your Domo instance is in the same region as your S3 bucket
+* You are restricting network access via a bucket policy
+
+
+If your S3 bucket is in a different region than your Domo instance, you should use the standard Connector IPs posted in the documentation.
+
+
+
+* us-east-1 (N. Virginia) vpce-3857b651: prod1, prod2, prod3, prod4, prod5, prod6, prod7, prod9
+* ap-southeast-2 (Sydney) vpce-bf4fa1d6: prod8
+* eu-west-1 (Ireland) vpce-c4788cad: prod10
+* ap-northeast-1 (Tokyo) vpce-0055e53d26f729c54: prod12
+* ca-central-1 (Canada Central) vpce-058575bcc0a0034ae: prod14

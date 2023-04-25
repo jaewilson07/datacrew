@@ -1,0 +1,16 @@
+
+
+
+Transforming Data In Domo
+=========================
+
+Learn how to prepare your data to provide real value. Includes Magic ETL, SQL DataFlows, DataFusion, and more.
+***
+* [Magic ETL](..\magic_etl\index.qmd)
+* [DataSet Views](..\dataset_views\index.qmd)
+* [SQL DataFlows](..\sql_dataflows\index.qmd)
+* [DataFlow Management](..\dataflow_management\index.qmd)
+* [SDKs](..\sdks\index.qmd)
+* [Enterprise Stacker](..\enterprise_stacker\index.qmd)
+* [Transformation Tips And Tricks](..\transformation_tips_and_tricks\index.qmd)
+* [DataFusion](..\datafusion\index.qmd)

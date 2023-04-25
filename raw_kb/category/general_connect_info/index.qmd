@@ -1,0 +1,9 @@
+
+
+
+General Connect Info
+====================
+***
+* [Adding a DataSet Using a Connector](..\..\article\adding_a_dataset_using_a_connector\index.qmd)
+* [Allowlisting IP Addresses for Connectors & Federated Adapters](..\..\article\allowlisting_ip_addresses_for_connectors__federated_adapters\index.qmd)
+* [Connector FAQs and Troubleshooting](/s/article/360042926294)

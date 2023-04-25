@@ -1,13 +1,13 @@
 ---
-title : Adding a Beast Mode Calculation to Your Chart
+title : Drilling into Data
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
-date: 2022-10-24 22:40:00
-url : https://domo-support.domo.com/s/article/360043429913
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429993', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428753']
-article_id : 000004076
-views : 10,979
-created_date : 2022-10-24 21:20:00
-last updated : 2022-10-24 22:40:00
+date: 2022-10-24 22:42:00
+url : https://domo-support.domo.com/s/article/360042923994
+linked_kbs :  ['https://domo-support.domo.com/s/article/360042925674', 'https://domo-support.domo.com/s/article/360042924634', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043437813', 'https://domo-support.domo.com/s/article/360043428433', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042923994', 'https://domo-support.domo.com/s/article/360042924014']
+article_id : 000004757
+views : 5,739
+created_date : 2022-10-24 22:29:00
+last updated : 2022-10-24 22:42:00
 ---
 
 
@@ -16,172 +16,160 @@ Intro
 -----
 
 
-You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
+In any KPI Card, by clicking on graph elements such as bars, points on a line, bubbles, etc., you can "drill down" to see filtered views or underlying data for those elements. The number of views in a drill path depends on the number of drill layers that have been incorporated into the Card; for example, if the Card designer added three drill layers into the Card, you would be able to see three unique filtered views for the Card.
 
 
-**Video - Intro to Beast Mode**
+Drilldown is available in both the Details view and in Pages with Domo Stories Dashboards enabled. For drilldown to be available in a Dashboard, you must first go into the **Interaction settings** for the Card and enable **Drill in place**. For more information, see Setting Card Interactions. Many drilldown options are available only when drilling from the Details view, such as the ability to remove filters in a drill view. 
 
 
-{{< video www.youtube.com/embed/SpVbmZPMAsM >}}
- 
+By default, the final view in a drill path is a table showing the underlying data for all of the filtered elements. If no drill layers have been incorporated into the Card, this is the view you see when you click any element in the chart. This table view provides many options for changing how the data displays, including applying Filters and sorting, grouping and ungrouping like rows, changing the date grain and formatting, and so on. The table view is available *only* when drilling down in the Details view for a Card; it is *not*available when drilling from the Page view.
 
 
-**Video - Creating a Calculated Field**
+**Note:** Drilldown is *not* available in Funnel graphs.
 
 
-{{< video www.youtube.com/embed/h6SQR_H9OsY >}}
- 
+---
 
 
-**Video - Case Statement Overview**
+**Tip:**You can filter to show the underlying data for any item in a Heat Map by clicking its scale label. For more information about Heat Maps, see [Heat Map](..\heat_map\index.qmd "Heat Map").
+In the Details view only, while drilling down through data layers in a Card, you can temporarily remove Filters to show more information. Only you see the data with the removed Filter, and when you exit the drill view the Filters reset.
 
 
-{{< video www.youtube.com/embed/xFofhklohSc >}}
- 
+If the content in a Card is filtered due to PDP policies, those Filters are retained when you drill down. For example, if you were a member of a PDP policy allowing you to see only the data in western states, you would still see only data relevant to you upon drilldown. For more information about PDP, see [Personalized Data Permissions (PDP)](..\..\category\personalized_data_permissions_pdp\index.qmd "Personalized Data Permissions (PDP)").
 
 
-Parts of the Beast Mode dialog
-------------------------------
+You can also export data from a drill layer into Excel or CSV (Details view only). 
 
 
-The following screenshot shows how the Beast Mode dialog looks:
+This topic discusses drilling down into a Card and the options available when drilling. It does *not* discuss adding drill layers to a KPI Card. For information about adding drill layers, see [Adding Drill Path to Your Chart](..\..\category\personalized_data_permissions_pdp\index.qmd "Adding Drill Path to Your Chart").
 
 
-![Beast_Mode_Dialog.jpg](Beast_Mode_Dialog.jpg)
+Domo also provides other means of performing in-depth data analysis, such as applying Filters. For more information, see [Filtering Data in a Card Details View](..\filtering_data_in_a_card_details_view\index.qmd "Filtering Data in a Card Details View"). 
 
 
-You can learn about the user interface components of the Beast Mode dialog in the following table:
+Example Scenario of Drilling Down
+---------------------------------
 
 
+The following scenario shows how a user might navigate through a typical series of drill layers. Note that this scenario is specific to the Details view. 
 
 
-| Name | Description |
-| --- | --- |
-| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
-| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
-| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
-| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
-| Function Description | Displays the description of the selected function. |
-| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
-| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
+The KPI Card, "2010 Sales Chart," shows sales for a certain company throughout 2010. The top layer consists of a series of bars representing sales for each month of the year.  
+  
+![](0.png)
 
 
-Adding a Beast Mode calculation
+The user clicks the bar for July. A view appears, showing customers in a pie chart. In addition, a Filter is applied for the month of July. With the Filter, the chart shows only those customers who made purchases in July. If the user had clicked the bar for June, the view would be a pie chart of customers who made purchases in June. (The Card designer specifically designed the first drill layer to show sales by customer. The month is determined by the Filter.)  
+  
+![](1.png)
+
+
+The user clicks the pie wedge for "Risus, Inc." A third view appears, showing purchases by state. (Because the Card designer defined this view to show amounts by state, the view is always a map with both the month and customer determined by the Filters.) Due to the Filters, Maine is the only state that appears in the third view.  
+  
+![](2.png)
+
+
+The user clicks the state of Maine in the map. The last view appears, showing a table with all the filtered data. (The last view is a default view that is not defined by the Card designer.)  
+  
+![](3.png)
+
+
+The final table view is available only when drilling from the Details view; it is not available in the Page view. 
+
+
+Removing Filters while Drilling
 -------------------------------
 
 
-Use the information in this section to add calculations for transforming data using Beast Mode. 
+When you navigate through drill layers within a Card, a new Filter is applied for every new level of drilldown. So, for example, the top level in a drill path might display a bar graph with sales for each month in the year. Clicking on the bar for a month might open a new view with a pie chart, with each slice in the pie showing amounts gained from different customers. In this case, a Filter for the month you clicked would be applied. As you drill deeper, new Filters would be applied *in addition* to those already added. 
 
 
-**To add a Beast Mode calculation,**
+In any view in a drill path, you can remove any Filters to show more information. (This option is available only in the Details view.) You do this by clicking the "x" on the right side of the Filter bar. Filter bars are blue and are displayed above the chart, as follows:  
+  
+![](4.png)
 
 
-1. On the KPI card where you want to add a calculation, click ![](1.png), then select **Edit Card**.
-2. In Analyzer, click **Add Calculated Field**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
+In the following sequential example, the user has drilled down two levels into a chart showing sales for 2010. In the first level, a Filter was applied for the month of January, and in the second level, an additional Filter was applied for the customer "Mauris, Inc." In the resulting map shown below, the only state that passes the Filters is California.  
+  
+![](5.png)
 
 
-The Beast Mode dialog appears.
-3. In **Calculated Field Name**, enter the title of the calculation.
+Because this view does not contain much information, the user broadens the scope by removing the "Cust" Filter to show all states with customers who made purchases in the month of January:  
+  
+![](6.png)
 
 
-**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
-![Beast_Mode_Modal.png](Beast_Mode_Modal.png)
-**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
-4. In **Formula**, enter the calculation you want.  
-You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
-For more information about functions, see [Beast Mode Functions Reference Guide](../../raw_kb/article/beast_mode_functions_reference_guide/index.html).
-5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
-6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
-If there are errors, revise your calculation.   
-After saving, the calculation column appears in the Categories list for the card in Analyzer.
+The user removes the remaining Filter. The map shows all states with customers for the entire year:  
+  
+![](7.png)
 
 
-**To edit a Beast Mode calculation,**
+**Note:**Removing Filters from a drill path affects the view only for you. When you leave the view, the Filters reset.
+Understanding the Options in the End-of-Drill Table View
+--------------------------------------------------------
 
 
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
-3. Make any changes you want, then click **Save & Close**.
+In the table view that appears at the end of a drill path (Details view only), you have various options for manipulating and formatting the data in the columns. These options are the same as those in **Column View** for a Sumo Card. For more information about Sumo, see [Adding a Sumo Card](..\adding_a_sumo_card\index.qmd "Adding a Sumo Card").  
+  
+![](8.png)
 
 
-**To delete a Beast Mode calculation,**
+Mousing over any column causes two icons to appear. You can click ![](9.png) to sort a column. Clicking the icon once sorts the column alphabetically; clicking it a second time applies a descending sort; and clicking it a third time turns off sorting in the column.
 
 
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
-3. Click **Remove** to confirm deleting the calculation.
-
-
-Calculation usage notes
------------------------
-
-
-* Most calculations use one of the following general formats: 
+Click ![](10.png) to access options for manipulating the data in a column. Available options include the following:
 
 
 
-| Format | Description |
+
+| Option | Description |
 | --- | --- |
-| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
-| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
-| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
-| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](../../raw_kb/article/date_format_specifier_characters_for_beast_mode/index.html "Date Format Specifier Characters in Beast Mode"). |
+| Sort Ascending/Sort Descending | Allows you to sort columns using an ascending or descending sort. You can have only one column sort at a time. For example, you could not sort by date and then have a separate sort for your values column for each represented date. |
+| Group | Combines all rows with like headings for the column you apply it to and aggregates the data in those rows. Cells in columns that cannot be aggregated display a value of "Unique" by default, which is a count of all unique items within that column. For example, if a column with salesperson names contained five instances of the name "Bob Jones," that name would only be counted once in the "Unique" aggregation. You can change the aggregation type by clicking in the second row or by choosing **Change Aggregate** in the column dropdown menu and selecting the desired aggregation type. This option is available for all columns *except* date columns. |
+| Ungroup | Breaks apart rows that have been grouped. |
+| Date Grain | Lets you change how date data is represented, either by day, week, quarter, month, or year. |
+| Change Aggregate | Appears in the column dropdown menus after you have rolled up one or more columns (except for the column(s) you rolled up).You can also change how your column totals are aggregated. You do this by clicking the aggregation indicator in a "Total" cell to pop up a list of alternate aggregation types. If you change the total aggregation type for a column that has itself been aggregated (by applying a "Group" or "Date Grain" to the table), the aggregation type for the column is also changed. Otherwise, changing the aggregation type affects only the total for the column.Available aggregations include the following:
+* **Total**: Totals all values in the rows for this column.
+* **Average**: Shows the average value for all rows.
+* **Unique**: Shows the number of unique items in the column.
+* **Count**: Shows the number of all items in the column.
+* **Min**: Shows the smallest value in the column.
+* **Max**: Shows the largest value in the column.
+ |
+| Filter | Filters rows. For a text column, you select the specific items that you want to appear in the table. For a value column, you select the desired value range from a number of comparisons like "greater than," "less than," etc. For a date column, you select a date range from a number of options. When you add a Filter, a bar for that Filter appears above the table. You can click the bar to open the Filter for editing or removal. |
+| Formatting | Lets you apply different formatting to numbers in value and date columns. |
+| Conditional Formatting | Lets you set rules for a value or string column so that any values or strings that meet certain conditions appear with a different text color and/or background. |
 
 
-* In calculations, Beast Mode function names are *not* case sensitive.
-* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
-* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
-Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
-* Use single quotes (') for strings: 'mystring'
-* You can escape a quote using two single quotes: 'O''Neal'
-* You can insert a space in a calculation using single quotes: `' '`  
-This is useful with functions like CONCAT when you need to combine strings.
-* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
-* You cannot refer to a specific calculation by name in another calculation.  
-For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
-* Calculations can be completed automatically as you enter them.
+Exporting Data from a Drill Path
+--------------------------------
 
 
-	+ As you enter functions, a list of functions appears, which you can select from.
-	+ If you enter a backtick ('), a list of column names appears, which you can select from.
-* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
-* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
-* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
-* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](../../raw_kb/article/adding_a_drill_path_to_your_chart/index.html "Adding Drill Path to Your Chart").
-* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
-* Do *not* mix data types of values you put in a transformed column.  
-For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
-* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
-* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
-* You can drag and drop a column name from the DataSet Fields list to your calculation.
-* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
+In a KPI Card, you can export the filtered data from any layer in a drill path to Microsoft Excel or CSV (Details view only).
 
 
-For Beast Mode syntax examples, see [Sample Beast Mode Calculations](../../raw_kb/article/sample_beast_mode_calculations/index.html).
+For information about exporting Cards, see [Exporting KPI Cards](..\exporting_visualization_cards\index.qmd "Exporting KPI Cards").
 
 
-Applying a calculation to a summary number
-------------------------------------------
+**To export data from a drill path layer,**
 
 
-If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
+1. Open the Details view for the chart and drill down to the layer you want to export data from.
+2. Click the **Export** button in the top right corner of the Details view.
+3. Select **Excel** or **CSV**.  The filtered version of the data is exported to Excel or CSV.
 
 
-* AVG
-* COUNT
-* COUNT (DISTINCT)
-* MAX
-* MIN
-* SUM
-* SUM (DISTINCT)
-* STDDEV\_POP, VAR\_POP
+Drilling from the Page View
+---------------------------
 
 
-When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
+You can drill down into Cards from the Page view if the following conditions are met:
 
 
-**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number.
-For more information about summary numbers, see [Configuring Your Chart Summary Number](../../raw_kb/article/configuring_your_chart_summary_number/index.html "Configuring Your Chart Summary Number").
+
+* Drill path has been enabled on the Card. For more information, see [Adding Drill Path to Your Chart](..\adding_a_drill_path_to_your_chart\index.qmd "Adding Drill Path to Your Chart").
+* The Card is found in a Domo Stories Dashboard (but *not*in the Appendix). For more information, see [Creating Domo Stories](..\creating_domo_stories\index.qmd "Creating Domo Stories").
+* You have enabled "Drill in place" in the Interaction Settings for the Card. For more information, see Setting Card Interactions in [Creating Domo Dashboards](..\creating_domo_stories\index.qmd "Creating Domo Stories").
+
+
+Page drilldown has fewer options than Details drilldown. For example, you cannot see or interact with drilldown filters while drilling into a Card. However, you can still apply Card-to-Card Filters to change the view as you drill. For more information about Card-to-Card Filters, see [Applying Card-to-Card Filters](https://knowledge.domo.com/Optimize/Filtering_Data/02Applying_Page-Level_Filters#Applying_Card-to-Card_Filters "Applying Page-Level Filters").

@@ -1,13 +1,13 @@
 ---
-title : Adding a Beast Mode Calculation to Your Chart
+title : Properties Available for Most Charts
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
-date: 2022-10-24 22:40:00
-url : https://domo-support.domo.com/s/article/360043429913
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429993', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428753']
-article_id : 000004076
-views : 10,979
-created_date : 2022-10-24 21:20:00
-last updated : 2022-10-24 22:40:00
+date: 2022-11-02 21:04:00
+url : https://domo-support.domo.com/s/article/360043429793
+linked_kbs :  ['https://domo-support.domo.com/s/article/360042925274', 'https://domo-support.domo.com/s/article/360043429753', 'https://domo-support.domo.com/s/article/360043429793', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360042925214', 'https://domo-support.domo.com/s/article/360042925174', 'https://domo-support.domo.com/s/article/360043428713', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042923594', 'https://domo-support.domo.com/s/article/360042924074', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360042924134', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043429673', 'https://domo-support.domo.com/s/article/360043429913']
+article_id : 000005024
+views : 2,476
+created_date : 2022-11-02 21:00:00
+last updated : 2022-11-02 21:04:00
 ---
 
 
@@ -16,172 +16,254 @@ Intro
 -----
 
 
-You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
+Refer to this topic to find information about chart properties available for most chart types, such as those for configuring data labels and hovers, scale markers, value and category scale labels, and so on.Â 
 
 
-**Video - Intro to Beast Mode**
+"General" Properties
+--------------------
 
 
-{{< video www.youtube.com/embed/SpVbmZPMAsM >}}
- 
+The properties in the following table are found in theÂ **General**Â category in Chart Properties.
 
 
-**Video - Creating a Calculated Field**
-
-
-{{< video www.youtube.com/embed/h6SQR_H9OsY >}}
- 
-
-
-**Video - Case Statement Overview**
-
-
-{{< video www.youtube.com/embed/xFofhklohSc >}}
- 
-
-
-Parts of the Beast Mode dialog
-------------------------------
-
-
-The following screenshot shows how the Beast Mode dialog looks:
-
-
-![Beast_Mode_Dialog.jpg](Beast_Mode_Dialog.jpg)
-
-
-You can learn about the user interface components of the Beast Mode dialog in the following table:
-
-
-
-
-| Name | Description |
-| --- | --- |
-| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
-| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
-| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
-| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
-| Function Description | Displays the description of the selected function. |
-| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
-| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
-
-
-Adding a Beast Mode calculation
--------------------------------
-
-
-Use the information in this section to add calculations for transforming data using Beast Mode. 
-
-
-**To add a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to add a calculation, click ![](1.png), then select **Edit Card**.
-2. In Analyzer, click **Add Calculated Field**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-
-
-The Beast Mode dialog appears.
-3. In **Calculated Field Name**, enter the title of the calculation.
-
-
-**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
-![Beast_Mode_Modal.png](Beast_Mode_Modal.png)
-**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
-4. In **Formula**, enter the calculation you want.  
-You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
-For more information about functions, see [Beast Mode Functions Reference Guide](../../raw_kb/article/beast_mode_functions_reference_guide/index.html).
-5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
-6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
-If there are errors, revise your calculation.   
-After saving, the calculation column appears in the Categories list for the card in Analyzer.
-
-
-**To edit a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
-3. Make any changes you want, then click **Save & Close**.
-
-
-**To delete a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
-3. Click **Remove** to confirm deleting the calculation.
-
-
-Calculation usage notes
+| Option | Description | Examples |
+| --- | --- | --- |
+| Font Size | Allows you to increase or decrease the font size for category and value scale labels in many chart types.
+For Textboxes, aÂ number of sizes are available ranging from Small to XX-Large. If you select **Default**, the size is chosen that best matches the amount of available space. So, if you had the maximum amount of space available, the "XX-Large" size would be used.
+For more information, seeÂ [Changing the Font Size in Your Chart](..\changing_the_font_size_in_your_chart\index.html "Changing the Font Size in Your Chart"). | â€” |
+| Portrait View Legend Position | Determines where legends appear in charts in portrait view. By default, legends appear on the bottom of the chart in this view. For more information, see [Changing the Legend Position in Your Chart](..\changing_the_legend_position_in_your_chart\index.html "Changing the Legend Position in Your Chart"). | â€” |
+| Landscape View Legend Position | Determines where legends appear in charts in landscape view. By default, legends appear on the right of the chart in this view. If you select **Auto**, the legend appears to the right of the chart if it contains 10 or fewer items. Otherwise it appears at the bottom of the chart. For more information, see [Changing the Legend Position in Your Chart](..\changing_the_legend_position_in_your_chart\index.html "Changing the Legend Position in Your Chart"). | â€” |
+| Reverse Legend Layout Order | Reverses the order in which legend items appear. | â€” |
+| Disable Animation | Turns off the animations that play when the viewing a chart in the Details view. | â€” |
+"Grid Lines" Properties
 -----------------------
 
 
-* Most calculations use one of the following general formats: 
+The properties in the following table are found in theÂ **Grid Lines**Â category in Chart Properties for most kinds of charts.Â 
 
 
 
-| Format | Description |
-| --- | --- |
-| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
-| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
-| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
-| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](../../raw_kb/article/date_format_specifier_characters_for_beast_mode/index.html "Date Format Specifier Characters in Beast Mode"). |
+
+| Option | Description | Examples |
+| --- | --- | --- |
+| Zero Line Color | Determines the color for the "zero line" on most single-axis charts. You can enter either the name of the color or the hexadecimal color code (such as FF0000 for red). This attribute does not work if the zero line is also the baseline (that is, the chart must contain negative values). In the example, this property has been set to red. |  |
+| Zero Line Width | Determines the width of the "zero line" on most single-axis charts, in pixels. This attribute does not work if the zero line is also the baseline (that is, the chart must contain negative values). In the example, this property has been set to 5. |  |
+| Calculated Line | Lets you set an additional grid lineÂ that denotes the median or average value in the chart. In the example, the user has selectedÂ **Average**.Â  | gridline_average.png |
 
 
-* In calculations, Beast Mode function names are *not* case sensitive.
-* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
-* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
-Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
-* Use single quotes (') for strings: 'mystring'
-* You can escape a quote using two single quotes: 'O''Neal'
-* You can insert a space in a calculation using single quotes: `' '`  
-This is useful with functions like CONCAT when you need to combine strings.
-* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
-* You cannot refer to a specific calculation by name in another calculation.  
-For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
-* Calculations can be completed automatically as you enter them.
+"Data Label Settings" Properties
+--------------------------------
 
 
-	+ As you enter functions, a list of functions appears, which you can select from.
-	+ If you enter a backtick ('), a list of column names appears, which you can select from.
-* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
-* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
-* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
-* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](../../raw_kb/article/adding_a_drill_path_to_your_chart/index.html "Adding Drill Path to Your Chart").
-* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
-* Do *not* mix data types of values you put in a transformed column.  
-For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
-* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
-* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
-* You can drag and drop a column name from the DataSet Fields list to your calculation.
-* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
+The properties in the following table are found in theÂ **Data Label Settings**Â category in Chart Properties.
 
 
-For Beast Mode syntax examples, see [Sample Beast Mode Calculations](../../raw_kb/article/sample_beast_mode_calculations/index.html).
 
 
-Applying a calculation to a summary number
-------------------------------------------
+| Option | Description | Examples |
+| --- | --- | --- |
+| TextÂ  | Specifies text for data labels. This property is the "on switch" for data labelsâ€”you must specify text for them to appear.
+For more information about creating data label text, including a list of available macros, seeÂ [Formatting Data Label and Hover Text in Your Chart](..\formatting_data_label_and_hover_text_in_your_chart\index.html "Formatting Data Label and Hover Text in Your Chart"). | â€” |
+| PositionÂ  | Determines where data labels are shown in relation to their corresponding data items.Â 
+Available positions differ between chart types. For example, Pie and Funnel graphs include **Outside Leaders**Â and **Outside Arranged LeadersÂ**options. Leaders are lines that connect data labels to their associated data items in the graph. If you select **Outside Leaders**, diagonal leaders are used; if you select **Outside Arranged Leaders**, the leaders are horizontal.
+The example shows a chart in which the data label position is set to **Inside Top** for a Vertical Bar graph. |  |
+| Fill | Lets you add a colored fillÂ to your data labels. The example at right shows a chart in which a red fill color with 45% transparency has been added.Â  | data_labels_fill.png |
+| Fill Color | Lets you specify the color for the fill in your data labels. This property is only available when you check theÂ **Fill**Â box. | â€” |
+| Fill Transparency Percent | Lets you specify the fill transparency for data labels. You can specify any number between 0 and 100, in which 0 is completely opaque and 100 is completely transparent. This property is only available when you check theÂ **Fill**Â box. | â€” |
+| Rotate | Lets you rotate data labels 90 degrees. The example at right shows a chart in which this has been done. | data_labels_rotated.png |
+| JustificationÂ  | Determines the justification for multi-line data labelsâ€”either **Left**, **Center**, or **Right**.Â For information about creating data label text, see [Formatting Data Label and Hover Text in Your Chart](..\formatting_data_label_and_hover_text_in_your_chart\index.html "Formatting Data Label and Hover Text in Your Chart"). The example graph includes multi-line data labels that have been left-justified (by selecting **Left** for the **Justification** property). |  |
+| Show WhenÂ Zero | Determines whether data labels are shown for graph elements with a value of 0.Â  | â€” |
+| Use Scale Format | Determines whether data labels use the same formatting that has been set for the value scale.Â  | â€” |
+| Use Scale Abbreviation | Determines whether data labels use the same scale abbreviation that has been set for the value scale.Â  | â€” |
+| Percent Value Decimal Places | Determines the number of decimal places used in percentage values in data labels. | â€” |
+| Allow Overlap | Determines whether data labels are still shown when they overlap.Â  | â€” |
+| Show Data Labels OnÂ  | Determines whether data labels appear for lines, bars, or both in line-bar combination charts. Â  | â€” |
 
 
-If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
+"Hover Text Settings" Properties
+--------------------------------
 
 
-* AVG
-* COUNT
-* COUNT (DISTINCT)
-* MAX
-* MIN
-* SUM
-* SUM (DISTINCT)
-* STDDEV\_POP, VAR\_POP
+The properties in the following table are found in the **Hover Text Settings**Â category in Chart Properties.
 
 
-When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
 
 
-**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number.
-For more information about summary numbers, see [Configuring Your Chart Summary Number](../../raw_kb/article/configuring_your_chart_summary_number/index.html "Configuring Your Chart Summary Number").
+| Option | Description | Examples |
+| --- | --- | --- |
+| Hover Text | Lets you set the text that appears in chart hovers. A variety of macros for showing chart values in your hovers is available. For more information and a list of available macros, see [Formatting Data Label and Hover Text in Your Chart](..\formatting_data_label_and_hover_text_in_your_chart\index.html "Formatting Data Label and Hover Text in Your Chart"). | â€” |
+| Use scale format | Determines whether hovers use the same formatting that has been set for the value scale. This property overrides the **Hover Format**, **Divide Value By**, **Decimal Places**, and **Negative Numbers** properties. | â€” |
+| Use scale abbreviation | Determines whether hovers use the same scale abbreviation that has been set for the value scale. | â€” |
+| Hover Format | Determines whether values in hovers have currency or percent symbols affixed. This property is overridden by the **Use scale format** property. | â€” |
+| Divide Value By | When set, values in hovers are divided by the specified factor. This option is useful when the values in your chart are very large and you want to abbreviate them by dividing by a common number. For example, if the values in your chart represented millions of dollars, you could choose to divide by millionsâ€”all of the values in the hovers would then be reduced to more manageable single digits. When you choose to divide by **Percentage**, the numbers in the value scale are multiplied by 100. This property is overridden by the **Use scale format** property. | â€” |
+| Decimal Places | Determines the number of decimal places in values in hovers. This property is overridden by the **Use scale format** property. | â€” |
+
+
+"Value Scale" Properties
+------------------------
+
+
+The properties in the following table are found in the **Value ScaleÂ**category in Chart Properties.
+
+
+
+
+| Option | Description | Examples |
+| --- | --- | --- |
+| Title | Determines whether labels appear alongside value scales. For more information, see [Adding Scale Titles to Your Chart](..\adding_scale_labels_to_your_charts\index.html "Adding Scale Titles to Your Chart").Â The example shows a Grouped Bar with Line chart in which value scale labels are used to distinguish the line and bar data. |  |
+| Show Label | Determines whether labels appear for value items. | â€” |
+| Label Format | Determines the general number format for value scale numbers and data labels. For more information, seeÂ [Formatting Values in Your Chart](..\formatting_values_in_your_chart\index.html "Formatting Values in Your Chart"). | â€” |
+| Divide Scale By | Refers to the number that values in the value scale are to be divided by, if any. This option is useful when the numbers on your value scale are very large and you want to abbreviate them by dividing by a common number. For example, if all of the numbers on the value scale represented millions of dollars, you could choose to divide by millionsâ€”all of the numbers on the scale would then be reduced to more manageable single digits. When you choose to divide by **Percentage**, the numbers in the value scale are multiplied by 100. | â€” |
+| Decimal Places | Determines the number of decimal places used in decimal values. You can choose from **Default**, **None**, and options for numbers of decimal places (from ".0" to ".00000"). By default, Domo automatically determines the optimal number of decimal places for each number in the chart. When you select **None**, all values are rounded to the nearest whole number. | â€” |
+| Negative Numbers | Determines the format for negative numbers. If you select **-100**, all negative numbers have a minus symbol affixed. If you select **(100)**, all negative numbers are enclosed in parentheses. | â€” |
+| Max | Determines the maximum values on a value scale. For more information, seeÂ [Setting the Minimum or Maximum Value on Your Chart's Value Scale](..\setting_the_minimum_or_maximum_value_for_your_chart\index.html "Setting the Minimum or Maximum Value on Your Chart&#39;s Value Scale"). | â€” |
+| Min | Determines the minimum values on a value scale. For more information, see [Setting the Minimum or Maximum Value on Your Chart's Value Scale.](..\setting_the_minimum_or_maximum_value_for_your_chart\index.md) | â€” |
+| Divisions | Determines the number of value scale gridlines in a chart. For more information, see [Specifying the Number of Value Scale Gridlines in Your Chart](..\specifying_the_number_of_value_scale_gridlines_in_your_chart\index.html "Specifying the Number of Value Scale Gridlines in Your Chart").Â The example shows a chart with eight value scale gridlines. |  |
+| Log Scale | Determines whether the value scale increments logarithmically. On a logarithmic scale, each successive increase is exponential. These scales are useful when you have a wide range of data that doesn't fit well on a regular linear scale. The example shows a chart that uses a logarithmic scale to handle a wide range of data. |  |
+| Include Zero | Determines whether a line for "0" appears in the chart. | â€” |
+
+
+"Category Scale" Properties
+---------------------------
+
+
+The properties in the following table are found in the **Category Scale**Â category in Chart Properties.
+
+
+
+
+| Option | Description | Examples |
+| --- | --- | --- |
+| Title | Determines whether labels appear alongside category scales. For more information, see [Adding Scale Titles to Your Chart.](..\adding_scale_labels_to_your_charts\index.md)Â The example shows a chart in which a category scale label is used. |  |
+| Show Label | Determines whether labels appear for category items. | â€” |
+| Tiered Dates | Determines whether multiple levels of dates are shown and, if so, how many. You can have up to 3 levels of dates. For example, if the dates in your chart were represented by week and you selectedÂ **3 Tiers**, the timeline would continue to show weekly data but the weeks would be broken out into monthly divisions, and the months would be broken out into quarters, as shown in the screenshot.Â 
+For more information about Tiered Dates, seeÂ [Applying DataSet Columns to Your Chart](..\applying_dataset_columns_to_your_chart\index.html "Applying DataSet Columns to Your Chart"). | tiered_dates_example.png |
+| Date Output Format | Determines how dates appear in the chart. For more information, see [Adding Filters to Your Chart](..\adding_filters_to_your_chart\index.html "Changing the Date Format in Your Chart"). | â€” |
+| Label Interval | The interval at which labels appear for items on the category scale when there are too many items to show. By default, when there are more labels than fit on the category scale, Domo automatically trims out enough labels to prevent label overlapping. However, you can specify the interval at which labels are trimmed. For example, if you wanted every third label to appear in your chart and all others to be trimmed, you would enter `3` in the **Label Interval** field. The example shows a chart in which the user set the **Label Interval** property to `8`, so a label appears for every eighth item in the chart. |  |
+| Max Label Length | Determines the maximum number of characters that appear for each category label. This property does not work unless a value is also entered for **Max Rotated Label Length**. The example shows a chart in which the **Max Label Length** has been set to `5`. |  |
+| Allow Label Rotation | Determines whether labels are rotated if necessary in most kinds of Line charts. | â€” |
+| Max Rotated Label Length | Determines the maximum number of characters that appear when labels are rotated. This property does not work unless a **Max Label Length** value is specified. | â€” |
+| Never Use Time Scale | Determines which type of time scale is used in supported chart types with time data. By default, when time data is used in supported charts, such as Line and Bar charts, Domo automatically makes it appear using a date grain appropriate for your data. This is shown in the first example at right, in which the timeline takes date data spanning several months and shows it by month. IfÂ there areÂ periods with no data, gaps are shown accordingly in the timeline. If you check this box, however, date data appears as it does in your DataSet, using individual dates and applying the **Date Output Format** setting. This is shown in the second example at right, in which the time scale uses individual dates, as in the DataSet. If there are periods with no data, gaps are not shown for those periods in the timeline. | [timescales_off.png](index.html "\@api\deki\files\1343\timescales_on.png")
+Â  |
+| Show Tiered or Extra Categories | In the event that your chart includes either [additional dimensions](..\applying_dataset_columns_to_your_chart\index.html "Applying DataSet Columns to Your Chart"), this option determines whether the extra category names appear above (default) or below the chart. In the example at right, the names appear below.Â  | tiered_dates_below.png |
+
+
+"Trellis/Tiered Dates" properties
+---------------------------------
+
+
+
+
+| Option | Description | Examples |
+| --- | --- | --- |
+| Show As | Lets you either turn on trellis categories or tiered dates in most chart types. When you turn on trellis categories, new fields in which you can drag and drop additional series are added above the chart preview. When you turn on tiered dates, multiple levels of dates are activated in your chart. Both of these features are discussed inÂ [Applying DataSet Columns to Your Chart](..\applying_dataset_columns_to_your_chart\index.html "Applying DataSet Columns to Your Chart").Â  | â€” |
+| Tiered Date Levels | Determines how manyÂ levels of dates are shown. You can have up to 3 levels of dates. For example, if the dates in your chart were represented by week and you selectedÂ **3 Levels**, the timeline would continue to show weekly data but the weeks would be broken out into monthly divisions, and the months would be broken out into quarters, as shown in the screenshot.Â 
+For more information about tiered dates, seeÂ [Applying DataSet Columns to Your Chart](..\applying_dataset_columns_to_your_chart\index.html "Applying DataSet Columns to Your Chart"). | tiered_dates_example.png |
+| Divider Color | Lets you specify the color for the dividing lines in your trellis chart or tiered dates chart. In the example at right, the dividing lines have been set to blue-green. | trellis_divider_color.png |
+| Mid Word Title Wrap | Determines whether category name titles wrap in the middle of words and not just on spaces.Â  | â€” |
+| Show Tiered or Extra Categories | Determines whether the extra category names appear above (default) or below your trellis or tiered dates chart. In the example at right, the names appear below.Â  | tiered_dates_below.png |
+| Maximum Bars | Sets the maximum bars to be displayed in each group. This can be used with the "Sort on Totals" property to create a Top 10 type chart. | Top_N_Trellis_Chart_edit.png |
+
+
+"Number Format" Properties
+--------------------------
+
+
+The properties in the following table are found in the **Number Format**Â category in Chart Properties.
+
+
+
+
+| Option | Description | Examples |
+| --- | --- | --- |
+| Currency Symbol | Refers to the symbol for currency numbers. The default currency symbol is "$." You must select **Currency** as your label format for this to work. For more information, seeÂ [Formatting Values in Your Chart](..\formatting_values_in_your_chart\index.html "Formatting Values in Your Chart"). | â€” |
+| Currency Symbol Position | Determines whether a currency symbol appears before or after its value. The default currency symbol position is **Before**. You must select **Currency** as your label format for this to work. For more information, see [Formatting Values in Your Chart](..\formatting_values_in_your_chart\index.html "Formatting Values in Your Chart"). | â€” |
+| Decimal Separator | Determines the symbol for separate decimal values. The default decimal separator is a period. | â€” |
+| Thousands Separator | Determines the symbol for separate thousands in large numbers. The default thousands separator is a comma. | â€” |
+
+
+"Scale Marker" Properties
+-------------------------
+
+
+The properties in the following table are found in the **Scale Marker**Â category in Chart Properties.
+
+
+
+
+| Option | Description | Example |
+| --- | --- | --- |
+| Text | Lets you specifyÂ text to replace the default word "GOAL" that normally appears above the top left corner of the chart when a scale marker has been set. If the graph contains a legend, an item for the scale marker is added to the legend with this text (unless you hide it by checking the **Scale Marker > Hide in Legend**Â box).Â 
+The example shows a chart in which "MONTHLY TARGET" has been entered as the custom text.Â  |  |
+| Scale | In dual-scale graphs, lets you specify whether the goal in the graph is associated with the left orÂ right scale. | â€” |
+| Type | Lets you specify whether the scale marker consists ofÂ a single line, a range of values, or a set of quantiles.Â  | â€” |
+| Value Type | Lets you determine how the scale marker line is calculated. A range of options is available, such as minimum and maximum, average, standard deviation, and more. If you selectÂ **Manual**Â (the default), you enter the desired value in theÂ **Value**Â field. Otherwise the value is calculated from the data in the graph. | â€” |
+| Value | Lets you specify the value of your scale marker line when you have selected **Manual**Â (or **Default)Â**for **Value Type**. This option is only available when you selectÂ **Line**Â in theÂ **TypeÂ**menu. | â€” |
+| Percentile Value | Lets you calculate the value of your line based on a specified percentile value between 0 and 100. This option is available only when you selectÂ **Line**Â in theÂ **Type**Â menu andÂ **Percentile**Â in theÂ **Value TypeÂ**menu. | â€” |
+| Percentage Of | Lets you specify whether your percentage is derived from the maximum, minimum, average, or median value of the chart.Â This option is available only when you selectÂ **Line**Â in theÂ **Type**Â menu andÂ **Percentage**Â in theÂ **Value TypeÂ**menu.Â  | â€” |
+| Percentage Value | Lets you specify the percentage value calculated from the maximum, minimum, average, or median value of the chart (as selected in theÂ **Percentage Of**Â field).Â This option is available only when you selectÂ **Line**Â in theÂ **Type**Â menu andÂ **Percentage**Â in theÂ **Value TypeÂ**menu.Â Â Â  | â€” |
+| Standard Deviations | Lets you calculate your scale marker value based on a specified number of standard deviations from the mean. If you enter a positive value, your scale marker value will be above the mean. If you enter a negative value, your scale marker value will be below the mean. | â€” |
+| Color | Lets you specify the colorÂ of your scale marker line, together with the color of the goal value that appears above the top left corner of the graph.Â This option is only available when you selectÂ **Line**Â in theÂ **TypeÂ**menu.
+In the example, the user has selected a red-orange color for the line and value.Â  |  |
+| Width | Lets you specify the width of your scale marker lineâ€”either **ThinÂ**(the default), **Medium**, and **Thick**. This option is only available when you selectÂ **Line**Â in theÂ **TypeÂ**menu.
+In the example, the user has selected **Thick**Â for this option.Â  |  |
+| Style | Lets you select whether your scale marker line appears solid (default) or dashed.Â This option is only available when you selectÂ **Line**Â in theÂ **TypeÂ**menu.
+In the example, the user has selected **Dashed**Â for this option.Â  |  |
+| Upper Value Type | Lets you determine how the upper boundary of your scale marker rangeÂ is calculated. A range of options is available, such as minimum and maximum, average, standard deviation, and more. If you selectÂ **Manual**Â (the default), you enter the desired value in theÂ **Upper Value** field. Otherwise the value is calculated from the data in the graph. | â€” |
+| Upper Value | Lets you select the value for the upper line in your scale marker range.Â This option is only available when you selectÂ **Range**Â in theÂ **TypeÂ**menu.
+Â  | â€” |
+| Upper Percentile Value | Lets you calculate the value of yourÂ range's upper boundary based on a specified percentile value between 0 and 100. This option is available only when you selectÂ **Range**Â in theÂ **Type**Â menu andÂ **Percentile**Â in theÂ **UpperÂ****Value TypeÂ**menu. | â€” |
+| Upper Percentage Of | Lets you specify whether the percentage for your range's upper boundary is derived from the maximum, minimum, average, or median value of the chart.Â This option is available only when you selectÂ **Range**Â in theÂ **Type**Â menu andÂ **Percentage**Â in theÂ **UpperÂ****Value TypeÂ**menu.Â  | â€” |
+| Upper Percentage Value | Lets you specify the percentage value for your range's upper boundary calculated from the maximum, minimum, average, or median value of the chart (as selected in the **UpperÂ****Percentage Of**Â field).Â This option is available only when you select **RangeÂ**in theÂ **Type**Â menu andÂ **Percentage**Â in the **UpperÂ****Value TypeÂ**menu.Â Â Â  | â€” |
+| Upper Standard Deviations | Lets you calculate your upper range boundary's value based on a specified number of standard deviations from the mean. If you enter a positive value, your scale marker value will be above the mean. If you enter a negative value, your scale marker value will be below the mean. | â€” |
+| Lower Value Type | Lets you determine how the lower boundary of your scale marker rangeÂ is calculated. A range of options is available, such as minimum and maximum, average, standard deviation, and more. If you selectÂ **Manual**Â (the default), you enter the desired value in theÂ **Lower Value**Â fields. Otherwise the value is calculated from the data in the graph. | â€” |
+| Lower Value | Lets you select the value for the lower boundaryÂ in your scale marker range.Â This option is only available when you selectÂ **Range**Â in theÂ **TypeÂ**menu. | â€” |
+| Lower Percentile Value | Lets you calculate the value of yourÂ range's lower boundary based on a specified percentile value between 0 and 100. This option is available only when you selectÂ **Range**Â in theÂ **Type**Â menu andÂ **Percentile**Â in theÂ **LowerÂ****Value TypeÂ**menu. | â€” |
+| Lower Percentage Of | Lets you specify whether the percentage for your range's lowerÂ boundary is derived from the maximum, minimum, average, or median value of the chart.Â This option is available only when you selectÂ **Range**Â in theÂ **Type**Â menu andÂ **Percentage**Â in theÂ **LowerÂ****Value TypeÂ**menu.Â  | â€” |
+| Lower Percentage Value | Lets you specify the percentage value for your range's lower boundary calculated from the maximum, minimum, average, or median value of the chart (as selected in the **LowerÂ****Percentage Of**Â field).Â This option is available only when you select **RangeÂ**in theÂ **Type**Â menu andÂ **Percentage**Â in the **LowerÂ****Value TypeÂ**menu.Â Â Â  | â€” |
+| Lower Standard Deviations | Lets you calculate your lower range boundary's value based on a specified number of standard deviations from the mean. If you enter a positive value, your scale marker value will be above the mean. If you enter a negative value, your scale marker value will be below the mean. | â€” |
+| Fill Color | Lets you select the fill colorÂ forÂ your scale marker range.Â This option is only available when you selectÂ **Range**Â in theÂ **TypeÂ**menu. | â€” |
+| Fill Transparency Percent | Lets you enter an transparencyÂ percentage for the fill in your scale marker range. This should be a value between 0 and 100. The higher the value, the more transparent the fill. This option is only available when you selectÂ **Range**Â in theÂ **TypeÂ**menu. | â€” |
+| Border Color | Lets you select theÂ border colorÂ forÂ your scale marker range.Â This option is only available when you selectÂ **Range**Â in theÂ **TypeÂ**menu. | â€” |
+| Border Style | Lets you select whether the borders of your scale marker rangeÂ appearÂ solid (default) or dashed.Â This option is only available when you selectÂ **Range**Â in theÂ **TypeÂ**menu. | â€” |
+| Number of Quantiles | Lets you specify the number of quantilesÂ that appear in your chart. You can specify any number between 3 and 10.Â This option is only available when you selectÂ **Quantiles**Â in theÂ **TypeÂ**menu.
+The example shows a Line chart in which 6 quantilesÂ (sextiles) have been added.Â  |  |
+| Quantile Line Color | Lets you specify the color for your quantiles. The default is gray. This option is only available when you selectÂ **Quantiles**Â in theÂ **TypeÂ**menu. | â€” |
+| Quantile Line Style | Lets you specify whether your quantilesÂ are solid (default) or dashed.Â This option is only available when you selectÂ **Quantiles**Â in theÂ **TypeÂ**menu. | â€” |
+| Quantile Fill ColorÂ  | Lets you select a fill color for the spaces between your quantiles.Â If you select **Default**, no fill color is applied. This option is only available when you selectÂ **Quantiles**Â in theÂ **TypeÂ**menu. |  |
+| QuantileÂ Fill Transparency Percent Start | Lets you select the transparency for the upper portion of your quantiles. You can enter a value from 0 (totally opaque) to 100 (totally transparent).Â This option is only available when you selectÂ **Quantiles**Â in theÂ **TypeÂ**menu.
+In the example at right, this property has been set to 10. |  |
+| Quantile Fill Transparency Percent End | Lets you select the transparency for the lower portion of your quantiles. You can enter a value from 0 (totally opaque) to 100 (totally transparent).Â This option is only available when you selectÂ **Quantiles**Â in theÂ **TypeÂ**menu.
+In the example at right, this property has been set to 10. |  |
+| Decimal Places | Lets you specify the number of decimal places in the goal value, both in the title as well as in theÂ hover text.Â  | â€” |
+| Value Abbreviation | Lets you specify whether values are abbreviated based on the scale marker abbreviation (default) or 3 significant digits. | â€” |
+| Hide in Legend | Lets you prevent a scale marker item from being added to the legend (if the graph contains a legend). | â€” |
+| Hide Title | Hides the goal text and value that normally appear over the top left corner of the graph. | â€” |
+
+
+"Data Table" Properties
+-----------------------
+
+
+The properties in the following table are found in the **Data Table**Â category in Chart Properties.
+
+
+
+
+| Option | Description | Example |
+| --- | --- | --- |
+| Show Data Table | Allows you to include a data table under your chart. This data table appears in the Details view of the chart (though *notÂ*in the page view). This property is available for most vertical chart types.Â 
+The example at right shows a chart in which the data table option has been enabled. | [data_table_example.png](index.html "Properties Available for Most Charts") |
+| Auto Abbreviate Values | Allows you to abbreviate values in the data table.Â  | â€” |
+
+
+Â "Full Size Settings" Properties
+---------------------------------
+
+
+
+
+|  |  |  |
+| --- | --- | --- |
+| Full Size Settings | Allows you to set custom sizing on tables in the card view when the "Full Size" option is selectedâ€”anywhere from 1 to 6 card sizes in both width and height. For more information about card sizing, seeÂ [Changing the Size of Cards in a Page](..\changing_the_size_of_cards_on_a_dashboard\index.html "Changing the Size of Cards in a Page").
+The first table in the example at right shows a table in the card view that has been set to a 4-card width by a 1-card height. The second table has been set to a 3-card width by a 3-card height. | [table_card_resize_rn.png](index.html "@api\deki\files\4718\table_card_resize_rn.png") |

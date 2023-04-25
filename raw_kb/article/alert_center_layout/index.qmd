@@ -1,12 +1,12 @@
 ---
-title : Adding a Beast Mode Calculation to Your Chart
+title : Alert Center Layout
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 date: 2022-10-24 22:40:00
-url : https://domo-support.domo.com/s/article/360043429913
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429993', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428753']
-article_id : 000004076
-views : 10,979
-created_date : 2022-10-24 21:20:00
+url : https://domo-support.domo.com/s/article/360043430373
+linked_kbs :  ['https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360042925574', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042925814', 'https://domo-support.domo.com/s/article/360043430533', 'https://domo-support.domo.com/s/article/360043430373', 'https://domo-support.domo.com/s/article/360042925994', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360042925954', 'https://domo-support.domo.com/s/article/360042934674', 'https://domo-support.domo.com/s/article/360042933074', 'https://domo-support.domo.com/s/article/360043428373', 'https://domo-support.domo.com/s/article/360043429913']
+article_id : 000004350
+views : 10,353
+created_date : 2022-10-24 21:45:00
 last updated : 2022-10-24 22:40:00
 ---
 
@@ -16,172 +16,222 @@ Intro
 -----
 
 
-You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
+In Domo, you can configure Alerts to set thresholds on metrics and receive notifications when there are important changes to your business. With Domo Alerts, you canÂ take action when they arrive, and rest easy when they don't.
 
 
-**Video - Intro to Beast Mode**
+In the AlertÂ Center,Â you can do all of the following:
 
 
-{{< video www.youtube.com/embed/SpVbmZPMAsM >}}
- 
+
+* View Alerts in a variety of categoriesâ€”triggered, subscribed, owned by you, needs attention, and suggested.Â
+* Share Alerts with other users in your Domo instance.
+* Subscribe to suggested Alerts created by other users or unsubscribe from Alerts.
+* See the trigger history for any Alert.
+* Delete any Alert.
+* Change the rule (i.e. the criteria that must be met for the Alert to trigger) and messaging for your Alerts.Â
+* Change your Alert Notification settings.
+* Open theÂ **Discover**Â tool for Alerts.Â
 
 
-**Video - Creating a Calculated Field**
+You can access the AlertÂ CenterÂ from any Page or Subpage by clickingÂ ****Alerts****Â in the Page navigation bar at the top of the screen.
 
 
-{{< video www.youtube.com/embed/h6SQR_H9OsY >}}
- 
+![new_alert_center_ui.png](new_alert_center_ui.png)
 
 
-**Video - Case Statement Overview**
+Parts of the Alert Center
+-------------------------
 
 
-{{< video www.youtube.com/embed/xFofhklohSc >}}
- 
-
-
-Parts of the Beast Mode dialog
-------------------------------
-
-
-The following screenshot shows how the Beast Mode dialog looks:
-
-
-![Beast_Mode_Dialog.jpg](Beast_Mode_Dialog.jpg)
-
-
-You can learn about the user interface components of the Beast Mode dialog in the following table:
+The Alert Center is made up of 3 main screens, which you can switch between using the navigation bar on the left side of the screen. These screensâ€”and the icons you click on to access themâ€”are as follows:
 
 
 
 
-| Name | Description |
+|  |  |
 | --- | --- |
-| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
-| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
-| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
-| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
-| Function Description | Displays the description of the selected function. |
-| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
-| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
+| Icon | Screen |
+| alert_center_alerts_icon.png | **Alerts** screen. This is the "main" screen of the Alert Center, in which you can view and manage Alerts.Â  |
+| alert_center_discover_icon.png | **Discover** screen. The Discover tool provides an active view of all of the activity happening in your Domo instance. |
+| alert_center_settings_icon.png | **Settings** screen. In this screen, you can configure when and how Notifications are sent for your Alerts.Â  |
 
 
-Adding a Beast Mode calculation
--------------------------------
+The navigation bar also contains theÂ ![alert_center_expand_names.png](alert_center_expand_names.png)icon, which shows or hides the names of the various screens next to the icons.Â 
 
 
-Use the information in this section to add calculations for transforming data using Beast Mode. 
+The rest of this article discusses each of the above screens in detail.
 
 
-**To add a Beast Mode calculation,**
+### Alerts screen
 
 
-1. On the KPI card where you want to add a calculation, click ![](1.png), then select **Edit Card**.
-2. In Analyzer, click **Add Calculated Field**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
+The following screenshot points out the main components of the Alerts screen in the Alert Center:
 
 
-The Beast Mode dialog appears.
-3. In **Calculated Field Name**, enter the title of the calculation.
+![new_alert_center_ui.png](new_alert_center_ui.png)
 
 
-**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
-![Beast_Mode_Modal.png](Beast_Mode_Modal.png)
-**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
-4. In **Formula**, enter the calculation you want.  
-You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
-For more information about functions, see [Beast Mode Functions Reference Guide](../../raw_kb/article/beast_mode_functions_reference_guide/index.html).
-5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
-6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
-If there are errors, revise your calculation.   
-After saving, the calculation column appears in the Categories list for the card in Analyzer.
-
-
-**To edit a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
-3. Make any changes you want, then click **Save & Close**.
-
-
-**To delete a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
-3. Click **Remove** to confirm deleting the calculation.
-
-
-Calculation usage notes
------------------------
-
-
-* Most calculations use one of the following general formats: 
+You can use the following table to find out more about each of these components:
 
 
 
-| Format | Description |
+
+| Component | Description |
 | --- | --- |
-| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
-| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
-| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
-| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](../../raw_kb/article/date_format_specifier_characters_for_beast_mode/index.html "Date Format Specifier Characters in Beast Mode"). |
+| Quick Filters | Let you switch between different categories of Alerts available in your Domo instance. These Alert categories are as follows:
+
+|  |  |
+| --- | --- |
+| All Alerts | Shows all Alerts in your Domo instance. |
+| Triggered | Shows all Alerts you are subscribed to that have been triggered. |
+| Subscribed | Shows all Alerts you have subscribed to that have not been triggered. (This includes Alerts that you own.) |
+| Owned by you | Shows all Alerts you are the owner of. |
+| Needs attention | Shows all Alerts you own that are broken. |
+| Suggested | Shows Alerts you are not following that are recommended by Domo based on your metadata. |
+
+ |
+| Search/Filter bar | Lets you search for Alerts by keyword as well as apply a filter to your search (**Owned by**,Â **Created Date**,Â **Subscribed to by**, orÂ **Disabled**).Â **Owned by**Â lets you filter to show Alerts owned by (or not owned by) a specified user.Â **Created DateÂ**lets you filter to show Alerts created on a certain date or within a certain range; various custom filters are available to help you customize your range.Â **Subscribed to by**Â lets you filter to show Alerts that a specified user is subscribed to (or not subscribed to).Â **Disabled**Â lets you filter to show Alerts that are disabled or not disabled.Â Â Â  |
+| Alert cards | Provide information and options for individual Alerts. Information in an Alert card includes the name of the Alert, the Card where it is found, the owner of the Alert, subscribers (followers) of the Alert, and the trigger frequency. If you click an Alert card, a panel appears with additional options. This panel is discussed in more detail later.
+If the name of an Alert appears inÂ *orange*, this indicates the Alert is in a triggered state.Â  |
+| Share icon | Lets you share this Alert with other users. For more information, seeÂ [Sharing the Alert](..\creating_an_alert_for_a_dataset\index.html "Creating an Alert for a DataSet"). |
+| Subscribe button | Lets you subscribe to (follow) this Alert. You can choose whether you want to receive Notifications via text, email, push notifications, or phone call. You can also choose whether to add Notifications for the Alert to your Daily or Weekly summary email. For more information, seeÂ [Receiving and Viewing Notifications](..\receiving_and_viewing_notifications\index.html "Receiving and Viewing Notifications"). |
 
 
-* In calculations, Beast Mode function names are *not* case sensitive.
-* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
-* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
-Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
-* Use single quotes (') for strings: 'mystring'
-* You can escape a quote using two single quotes: 'O''Neal'
-* You can insert a space in a calculation using single quotes: `' '`  
-This is useful with functions like CONCAT when you need to combine strings.
-* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
-* You cannot refer to a specific calculation by name in another calculation.  
-For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
-* Calculations can be completed automatically as you enter them.
+#### Alert information panel
 
 
-	+ As you enter functions, a list of functions appears, which you can select from.
-	+ If you enter a backtick ('), a list of column names appears, which you can select from.
-* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
-* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
-* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
-* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](../../raw_kb/article/adding_a_drill_path_to_your_chart/index.html "Adding Drill Path to Your Chart").
-* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
-* Do *not* mix data types of values you put in a transformed column.  
-For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
-* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
-* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
-* You can drag and drop a column name from the DataSet Fields list to your calculation.
-* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
+If you click on any Alert card in theÂ **Alerts**Â screen, a panel appears with additional information and options for this Alert. The following screenshot points out the most important parts of thisÂ panel.  
+Â 
 
 
-For Beast Mode syntax examples, see [Sample Beast Mode Calculations](../../raw_kb/article/sample_beast_mode_calculations/index.html).
+![alert_center_info_panel.png](alert_center_info_panel.png)  
+Â 
 
 
-Applying a calculation to a summary number
-------------------------------------------
+You can use the following table to find out more about each of these components:
 
 
-If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
 
 
-* AVG
-* COUNT
-* COUNT (DISTINCT)
-* MAX
-* MIN
-* SUM
-* SUM (DISTINCT)
-* STDDEV\_POP, VAR\_POP
+| Component | Description |
+| --- | --- |
+| Alert name | The name of this Alert. You can rename an Alert by clicking the pencil icon to the right of the name.Â  |
+| Trigger status | Shows whether this Alert is currently in a triggered state. If it is, the status message tells you the current value of the Alert.Â  |
+| Alert rule | Shows the rule, i.e. the conditions that must be met for this Alert to be triggered. You can click theÂ **Edit**Â button to edit the Alert rule. For more information about creating and editing Alert rules, seeÂ [Setting up Your Alert rule](..\creating_an_alert_for_a_dataset\index.html "Creating a Custom Alert for a KPI Card").Â  |
+| Alert message preview | Shows a preview of the message that will be delivered when the Alert is triggered. You can click theÂ **Edit**Â button to edit the message. For more information about creating and editing Alert messages, seeÂ [Customizing your Alert message](..\managing_your_alerts\index.html "Creating a Custom Alert for a KPI Card"). |
+| Mr. Roboto analysis | Displays an analysis of the trigger history for this Alert, automatically generated by Mr. Roboto, Domo'sÂ native AI tool.Â  |
+| History view toggle | Lets you toggle the history view for this Alert. You can choose to show the history as a line chart (by clicking alert_center_history_view_line.png) or a chronological listing (by clickingÂ alert_center_history_view_list.png).Â  |
+| Owner avatar | Shows the owner of this Alert. If you click the photo, a panel will pop up with information about this user, along with options for [sending him/her a Buzz message](..\chatting_in_buzz\index.html "Following a User in Domo"). |
+| Share button | Lets you share this Alert with other users. For more information, seeÂ [Sharing the Alert](..\creating_an_alert_for_a_dataset\index.html "Creating an Alert for a DataSet"). |
+| Card | Shows the name of the Card in which this Alert is found. You can click on the Card name to open that Card. |
+| Alert History area | Shows the trigger history for this Alert. This history appears as either a trendlineÂ or a chronological listing of trigger events, depending on the view toggle you have selected (for more information, see "History view toggle" in this table).Â  |
+| Subscribe button | Lets you subscribe to (follow) this Alert. You can choose whether you want to receive Notifications via text, email, push notifications, or phone call. You can also choose whether to add Notifications for the Alert to your Daily or Weekly summary email. For more information, seeÂ [Receiving and Viewing Notifications](..\receiving_and_viewing_notifications\index.html "Receiving and Viewing Notifications"). |
+| Delete icon | Lets you delete this Alert.Â  |
 
 
-When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
+### Settings screen
 
 
-**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number.
-For more information about summary numbers, see [Configuring Your Chart Summary Number](../../raw_kb/article/configuring_your_chart_summary_number/index.html "Configuring Your Chart Summary Number").
+In theÂ **Settings**Â screen, you can configure settings for your Alerts. The options in this screen are the same as those in theÂ **Instant Alerts**,Â **Daily Alerts**, andÂ **Weekly Alerts**Â tabs in the globalÂ **Settings**Â screen, which you access by clicking on your user photo in the top right corner of DomoÂ then clickingÂ ![settings_menu_icon.png](settings_menu_icon.png). For more information about these tabs, seeÂ [Configuring Notification and Alert Settings -- Alerts](..\configuring_notification_and_alert_settings\index.html "Configuring Notification and Alert Settings").
+
+
+### Discover tool
+
+
+The Alert Discover tool helps business leaders keep a pulse on all the important things happening in their business. Imagine a central command center with updates about opportunities being pushed from this monthâ€™s pipeline, unusual spikes in cost per conversion, trending hot topics in your organization, or important obstacles as simple as data connection failures. All of these updates and more live side-by-side in the Discover tool, where you can then take action as a team to capitalize on the most valuable opportunities.
+
+
+Discover brings all of the important information into a central location where you can discover and interact with new content. Domo intelligently organizes all the activity into a rich set of topics that users can explore. Subscribe to your bossâ€™s Alert. Share a card with someone on your team. Start a new conversation with an old friend who logged into Domo for the first time.
+
+
+**Video - Alerts Overview**
+
+
+{{< video www.youtube.com/embed/rrRDjC_prWA >}}
+Â 
+
+
+#### Parts of Discover
+
+
+The following screenshot points out the most important parts of the Discover tool:
+
+
+![alert_center_discover.png](alert_center_discover.png)
+
+
+You can refer to the following table to find out more about these components:
+
+
+
+
+| Component | Description |
+| --- | --- |
+| Topics | Allow you to find out more about the Alerts in your Domo. Mousing over a category "freezes" the hopper/heat map, allowing you to more easily see the number of Alerts in that category as a percentage of all Alerts in the heat map. Clicking on a category opens the card carousel for that category (see below).
+Alerts are divided into a number of topic categories, as follows:
+* **Say hello to new people**. Shows the number of new people in your Domo instance.
+* **Subscribe to these Alerts**. Shows the number of suggested Alerts in your Domo.
+* **Everyone views these cards**. Shows the number of trending (most viewed) cards in your Domo.
+* **Alerts you follow**. Shows the number of Alerts you are following.
+* **Recently shared with you**. Shows the number of cards that have been shared with you recently.
+* **Cards you should be following**. Shows the number of cards Domo recommends you follow.
+* **Recently discussed cards**. Shows cards that have been discussed recently in Buzz conversations.
+ |
+| Search | Lets you search DiscoverÂ for an Alert in any of the four topic categories.
+When you enter a search term without pressing Enter, any topics in which the search term is found filter down to show the number of Alerts that include that search term, while topics without the search term are grayed out.
+The heat map also freezes when you enter a search term. Any Alerts in the heat map that include the search term appear in their usual colors, and all other Alerts are grayed out. This makes it easy to pinpoint and open the desired Alerts in the card carousel (see below).
+If you enter a search term and press Enter, the card carousel opens and shows cards for all Alerts corresponding to the search term.
+The following screenshot shows an example of using search. The user has searched for the term "mark." Three results are returned. Two of these are for new people (both named "Mark") and one is for a trending card called "Marketing Inquiries." All three are shown in the heat mapâ€”two are green (those corresponding to new people) and one is purple (the one corresponding to the trending card).
+Â  |
+| Heat map | Provides a dynamic, ever-changing visual representation of your Domo Alerts. The heat map continually updates as new Alerts fly in from the hopper. There are a number of colors of Alerts, each of which corresponds to a topic category. For example, "New people" Alerts appear green; "Suggested" and "Subscribed" Alerts appear orange; and "Trending" Alerts appear purple.
+If you mouse over a square in the heat map, the action freezes and all squares belonging to that category appear colorized, while squares in all other categories are grayed out. This is shown in the following screenshot, in which the user has moused over a green square:
+
+If you click a square in the heat map, the Alerts in that category open in the card carousel (see below). |
+| Hopper | Shows new Alerts in your DomoÂ instance as they fly into the heat map.
+There are a number of colors of Alerts, each of which corresponds to a topic category. For example, "New people" Alerts appear green; "Suggested" and "Subscribed" Alerts appear orange; and "Trending" Alerts appear purple.
+If you mouse over an Alert in the hopper, the action freezes and all squares in the heat map belonging to that category appear colorized, while squares in all other categories are grayed out.
+If you click an Alert in the hopper, the Alerts in that category open in the card carousel (see below). |
+
+
+#### Card Carousel
+
+
+When you click a topic category, heat map square, or hopper Alert, or when you perform a search, the card carousel opens. Usually this displays cards for all Alerts pertaining to the given category. The exception to this is when you perform a search, in which case the card carousel shows cards for all Alerts that include your search term. All Alert cards have options, such as subscribing to an Alert, adding a trending cards as a favorite, and so on. The specific options available for an Alert card depend on the topic category.
+
+
+In the following example, the user has clicked on an orange "Suggested Alert" square in the heat map. The card carousel opens to show cards for all suggested Alerts, with the Alert the user clicked on appearing in the center and the others flanking it.Â 
+
+
+![alert_center_card_carousel_updated.png](alert_center_card_carousel_updated.png)Â 
+
+
+Note that although options appear on all cards in the carousel, they are only clickable in the center card.
+
+
+You can navigate through Alerts in the carousel by clicking the left and right navigation arrows on either end of the carousel, or close the carousel by clicking the "x" in the top right corner.
+
+
+Options available for each topic category are as follows:
+
+
+
+
+| Topic Category | Available Options |
+| --- | --- |
+| New People | 
+* **View Profile**. Opens the Profile Page for this user. For more information, see [Profile Page](..\profile_page_layout\index.html "Profile Page").
+* **Say Hello**. Lets you send a Buzz message to this user. For more information, see [Chatting in Buzz](..\chatting_in_buzz\index.html "Chatting in Buzz").
+ |
+| Suggested Alerts/Subscribed Alerts | 
+* **Subscribe**. Lets you subscribe to (follow) this Alert. For more information, see [Following or unfollowing an Alert](..\configuring_notification_and_alert_settings\index.html "Managing Custom Alerts").
+* **View**. Opens the options dialog for this Alert. For more information, see [Managing Custom Alerts](..\configuring_notification_and_alert_settings\index.html "Managing Custom Alerts").
+ |
+| Most Viewed (Trending) Cards/Recently Shared with You/Cards You Should Be Following | 
+* **Favorite**. Lets you add this card as a Favorite. For more information, see [Adding Cards as Favorites](..\adding_cards_as_favorites\index.html "Adding Cards as Favorites").
+* **Share**. Lets you share this card with users inside or outside your Domo. For more information, see [Sharing Content in Domo](..\sharing_content_in_domo_faqs\index.html "Sharing Content in Domo").
+* **View**. Displays this card in a pop-over view.
+ |
+| Recently Discussed Cards | 
+* **View Card**. Displays this card in a pop-over view.
+* **Buzz**. Opens the Buzz conversation around this card so you can read or join in the conversation.
+ |

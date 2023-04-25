@@ -1,0 +1,14 @@
+
+
+
+Distributing Domo Content
+=========================
+
+Learn how to share your Domo data within your own company and with the rest of the world. Includes info about exporting Cards, building slide presentations, Domo Embed, and more.
+***
+* [Domo Everywhere](..\domo_everywhere\index.qmd)
+* [Scheduled Reports](..\scheduled_reports\index.qmd)
+* [Publications (Slideshows)](..\publications_slideshows\index.qmd)
+* [Publication Groups](..\publication_groups\index.qmd)
+* [Plugins For Sharing Domo Content](..\plugins_for_sharing_domo_content\index.qmd)
+* [Microsoft Office Add-ins](..\microsoft_office_addins\index.qmd)

@@ -1,13 +1,13 @@
 ---
-title : Adding a Beast Mode Calculation to Your Chart
+title : Formatting Values in Your Chart
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
-date: 2022-10-24 22:40:00
-url : https://domo-support.domo.com/s/article/360043429913
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429993', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428753']
-article_id : 000004076
-views : 10,979
-created_date : 2022-10-24 21:20:00
-last updated : 2022-10-24 22:40:00
+date: 2022-10-24 22:41:00
+url : https://domo-support.domo.com/s/article/360042924134
+linked_kbs :  ['https://domo-support.domo.com/s/article/360043428753', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043428713', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042925154', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360042924134', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043429913']
+article_id : 000004642
+views : 11,328
+created_date : 2022-10-24 22:18:00
+last updated : 2022-10-24 22:41:00
 ---
 
 
@@ -16,172 +16,158 @@ Intro
 -----
 
 
-You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
+By default, values in a chart do not display with formatting such as currency or percent symbols, even if such formatting is used in the original DataSet. You can add value formatting in the AnalyzerÂ in the following ways:
 
 
-**Video - Intro to Beast Mode**
+
+* Specifying formatting in theÂ column options dialog for the value column.  
+You open this dialog by clicking the column name in the fields region above the chart. Any formatting youÂ apply in thisÂ dialog is applied to *all* values in the chartâ€”scale labels, data labels, hover text, and legends. Summary numbers are *not* affected. For more information about summary numbers, seeÂ [Configuring Your Chart Summary Number](..\configuring_your_chart_summary_number\index.html "Configuring Your Chart Summary Number").
+* Setting the appropriate format in [Chart Properties](..\applying_and_resetting_chart_properties\index.html "Chart Properties").  
+In contrast to theÂ column options dialog, which allows you to apply the same change to all numbers in the chart with a single click, **Chart Properties** lets you make changes to individual properties. These changes override anyÂ column options settings you have selected.
 
 
-{{< video www.youtube.com/embed/SpVbmZPMAsM >}}
- 
+Because you can set formatting for all numbers in theÂ column optionsÂ dialog and individual properties in **Chart Properties**, it may be useful to use a combination of these when designing your charts. For example, you could selectÂ **Type > Currency** in the column options dialogÂ to affix dollar signs to all of the values in your chart. Then you could go into **Chart Properties** and change the currency symbol. The new symbol would replace all of the dollar signs in your chart.
 
 
-**Video - Creating a Calculated Field**
+**Note:Â**In chart types with dual y-axes, it is possible to have different number formatting on both axes. For example, you could have percent symbols affixed to the values on one axis and currency symbols on the other. You can set the different number formatting by setting differentÂ formattingÂ for both the value and series. However, this only works when you add a value column as a series, as described in [Applying DataSet Columns to Your Chart](..\applying_dataset_columns_to_your_chart\index.html "Applying DataSet Columns to Your Chart").Â If your series data consists of text, you can still format the axes separately, but you must use the **Chart Properties** to do so.
+Formatting values using the column options dialog
+-------------------------------------------------
 
 
-{{< video www.youtube.com/embed/h6SQR_H9OsY >}}
- 
+The column options dialog contains various options for formatting values in a chart. Different options appear depending on what you select in the **Type** menu.
 
 
-**Video - Case Statement Overview**
+![Formatting_Values.png](Formatting_Values.png)
 
 
-{{< video www.youtube.com/embed/xFofhklohSc >}}
- 
-
-
-Parts of the Beast Mode dialog
-------------------------------
-
-
-The following screenshot shows how the Beast Mode dialog looks:
-
-
-![Beast_Mode_Dialog.jpg](Beast_Mode_Dialog.jpg)
-
-
-You can learn about the user interface components of the Beast Mode dialog in the following table:
+The following table describes the formatting options available:
 
 
 
 
-| Name | Description |
+| Option | Description |
 | --- | --- |
-| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
-| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
-| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
-| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
-| Function Description | Displays the description of the selected function. |
-| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
-| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
+| Display as | Lets you choose how values appear in your chart. Options include the following:
+**Number** - Values appear as is, with no currency or percent symbols
+**Currency -** Values appear with currency symbols affixed. You can change the currency symbol in the **$** menu that appears. If the **$** dropdown does not contain the currency symbol you want, you can enter your desired symbol in **Chart Properties** (**Number Format > Currency Symbol**). By default, the currency symbols areÂ affixed to the front of values (for example,`$10`). You can change this default behavior in **Chart Properties** (**Number Format > Currency Symbol Position**).
+**Percentage -** Values appear as percentages. If you check the **Multiply by 100** box that appears when this option is selected, values are multiplied by 100 (for example, the value ".1" would appear in your chart as `10%`). If you leave this box unchecked, values in your chart appear as-isâ€”no multiplication occurs (for example, the value ".1" would appear as `.1%`).Â Â Â  |
+| Decimals | Lets you choose the number of decimal places in values in your chart, either 0, 1, or 2. If you want values to contain more than 2 decimal places, you can specify up to 5 in **Chart Properties** (**Value Scale > Decimal Places**). By default, decimals are indicated by periods (.). You can specify the desired decimal separator in **Chart PropertiesÂ**(**Number Format > Decimal Separator**). |
+| Use Thousands Separator | By default, commas (,) are used as the thousands separator. You can specify the desired thousands separator in **Chart Properties** (**Number Format > Thousands Separator**). |
+| Preview | Shows you a preview of how your chart values will look with your settings applied. |
 
 
-Adding a Beast Mode calculation
--------------------------------
+**To format values using the column options,**
 
 
-Use the information in this section to add calculations for transforming data using Beast Mode. 
+1. Open the AnalyzerÂ for the chart you want to edit.
+2. Click the value column name in the fields region above the chart preview.  
+The columnÂ options dialog opens.  
+For information about applying a value column to a chart, seeÂ [Applying DataSet Columns to Your Chart](..\applying_dataset_columns_to_your_chart\index.html "Applying DataSet Columns to Your Chart").
+3. Select the desiredÂ formatting options in the dialog.
 
 
-**To add a Beast Mode calculation,**
+Formatting values using Chart Properties
+----------------------------------------
 
 
-1. On the KPI card where you want to add a calculation, click ![](1.png), then select **Edit Card**.
-2. In Analyzer, click **Add Calculated Field**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
+**Chart Properties** contains countless options for formatting values in charts. As mentioned previously, any changes you make in **Chart Properties** override the universal formatting that is applied when you select an option in the column options dialog.
 
 
-The Beast Mode dialog appears.
-3. In **Calculated Field Name**, enter the title of the calculation.
+This section lists and describes some of the chart properties commonly used for formatting numbers. This list is by no means exhaustive.
 
 
-**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
-![Beast_Mode_Modal.png](Beast_Mode_Modal.png)
-**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
-4. In **Formula**, enter the calculation you want.  
-You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
-For more information about functions, see [Beast Mode Functions Reference Guide](../../raw_kb/article/beast_mode_functions_reference_guide/index.html).
-5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
-6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
-If there are errors, revise your calculation.   
-After saving, the calculation column appears in the Categories list for the card in Analyzer.
+### Value Scale properties
 
 
-**To edit a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
-3. Make any changes you want, then click **Save & Close**.
-
-
-**To delete a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
-3. Click **Remove** to confirm deleting the calculation.
-
-
-Calculation usage notes
------------------------
-
-
-* Most calculations use one of the following general formats: 
+These properties pertain to the values that appear along the measuring scale in most chart types. For example, in a vertical Bar graph, these are the values found on the vertical axis on the left side of the graph.
 
 
 
-| Format | Description |
+
+| Property | Description |
 | --- | --- |
-| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
-| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
-| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
-| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](../../raw_kb/article/date_format_specifier_characters_for_beast_mode/index.html "Date Format Specifier Characters in Beast Mode"). |
+| Label Format | Determines the type of number formatting found in scale values. You can customize the actual symbols used in values in the **Number Format** properties (see the next section for more information).
+**Number** â€” Numbers appear without currency or percentage symbols. (Default)
+**Currency** â€” Affixes a "$" to scale values.
+**Percentage** â€” Affixes a "%" to scale values. |
+| Divide Scale By | Refers to the number that values in the value scale are to be divided by if any. This option is useful when the numbers on your value scale are very large and you want to abbreviate them by dividing by a common number. For example, if all of the numbers on the value scale represented millions of dollars, you could choose to divide by millionsâ€”all of the numbers on the scale would then be reduced to more manageable single digits. When you choose to divide by **Percentage**, the numbers in the value scale are multiplied by 100. This is especially useful when your values are in decimal format and you want them to appear as percentages. |
+| Decimal Places | Determines the number of decimal places used in decimal values. You can choose from **Default**, **None**, and options for numbers of decimal places (from ".0" to ".00000"). |
+| Negative Numbers | Determines the format for negative numbers. If you select **-100**, all negative numbers have a minus symbol affixed. If you select **(100)**, all negative numbers are enclosed in parentheses. |
 
 
-* In calculations, Beast Mode function names are *not* case sensitive.
-* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
-* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
-Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
-* Use single quotes (') for strings: 'mystring'
-* You can escape a quote using two single quotes: 'O''Neal'
-* You can insert a space in a calculation using single quotes: `' '`  
-This is useful with functions like CONCAT when you need to combine strings.
-* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
-* You cannot refer to a specific calculation by name in another calculation.  
-For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
-* Calculations can be completed automatically as you enter them.
+### Number Format properties
 
 
-	+ As you enter functions, a list of functions appears, which you can select from.
-	+ If you enter a backtick ('), a list of column names appears, which you can select from.
-* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
-* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
-* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
-* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](../../raw_kb/article/adding_a_drill_path_to_your_chart/index.html "Adding Drill Path to Your Chart").
-* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
-* Do *not* mix data types of values you put in a transformed column.  
-For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
-* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
-* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
-* You can drag and drop a column name from the DataSet Fields list to your calculation.
-* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
+These properties pertain to the actual symbols used in values in your chart. Changes you make here are applied to all of the values in the chart.
 
 
-For Beast Mode syntax examples, see [Sample Beast Mode Calculations](../../raw_kb/article/sample_beast_mode_calculations/index.html).
 
 
-Applying a calculation to a summary number
-------------------------------------------
+| Property | Description |
+| --- | --- |
+| Currency Symbol | The symbol or group of symbols used to denote currency in values in your chart. The default currency symbol is "$."
+**Note:Â**If you use a close parenthesis as part of your currency symbol, you *must* pair it with an open parenthesis. |
+| Currency Symbol Position | Determines whether currency symbols appear before or after their values. |
+| Decimal Separator | Determines the symbol for separate decimal values. The default decimal separator is a period. |
+| Thousands Separator | Determines the symbol used to separate thousands in large numbers. The default thousands separator is a comma. |
 
 
-If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
+### Data Label Settings
 
 
-* AVG
-* COUNT
-* COUNT (DISTINCT)
-* MAX
-* MIN
-* SUM
-* SUM (DISTINCT)
-* STDDEV\_POP, VAR\_POP
+These properties pertain to the data labels that appear in a chart when you enter text into the **Data Label Settings > Text** field. For more information about data labels, seeÂ [Formatting Data Label and Hover Text in Your Chart](..\formatting_data_label_and_hover_text_in_your_chart\index.html "Formatting Data Label and Hover Text in Your Chart").
 
 
-When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
 
 
-**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number.
-For more information about summary numbers, see [Configuring Your Chart Summary Number](../../raw_kb/article/configuring_your_chart_summary_number/index.html "Configuring Your Chart Summary Number").
+| Property | Description |
+| --- | --- |
+| Use Scale Format | When this box is checked, data labels use the same number formatting set for scale values in the chart. |
+| Percent Value Decimal Places | Determines the number of decimal places used in data labels. The default is none. |
+
+
+### Hover Text Settings
+
+
+These properties pertain to text that appears when you mouse over an element in a chart. For more information about hover text, see [Formatting Data Label and Hover Text in Your Chart](..\formatting_data_label_and_hover_text_in_your_chart\index.html "Formatting Data Label and Hover Text in Your Chart").
+
+
+
+
+| Property | Description |
+| --- | --- |
+| Use Scale Format | When this box is checked, hover text uses the same formatting set for scale values in the chart. |
+| Hover Format | Determines the type of number formatting found in scale values. You can customize the actual symbols used in values in the **Number Format** properties (see the next section for more information).
+**Number** â€” Numbers appear without currency or percentage symbols. (Default)
+**Currency** â€” Affixes a "$" to scale values.
+**Percentage** â€” Affixes a "%" to scale values. |
+| Divide Value By | Refers to the number that values in hovers are to be divided by, if any. This option is useful when the values in your chart are very large and you want to abbreviate them by dividing by a common number. For example, if all of the values in the chart represented millions of dollars, you could choose to divide by millionsâ€”all of the values in hovers would then be reduced to more manageable single digits. When you choose to divide by **Percentage**, values in hovers are multiplied by 100. This is especially useful when your values are in decimal format and you want them to appear as percentages. |
+| Decimal Places | Determines the number of decimal places used in decimal values in hovers. You can choose from **Default**, **None**, and options for numbers of decimal places (from ".0" to ".00000"). |
+| Negative Numbers | Determines the format for negative numbers in hovers. If you select **-100**, all negative numbers have a minus symbol affixed. If you select **(100)**, all negative numbers are enclosed in parentheses. |
+
+
+**To format values in Chart Properties,**
+
+
+1. Open the AnalyzerÂ for the chart you want to edit.
+2. In **Chart Properties**,Â mouse overÂ the desired category to display the options in that category.
+3. Make the changes you want.Â
+
+
+**Tips for converting numbers into percentages:**
+
+
+
+* The easiest way to convert numbers into percentages is by selecting the desired percentage option in the column options dialog. This converts *all* values in your chart (except for summary numbers) into percent format. You can choose whether percent values appear as is (for example, "10" becomes "10%") or the values are first multiplied by 100 (for example, ".1" becomes "10%"). You can then make any property changes to your percent values in **Chart Properties**.Â
+* If you plan to use **Chart Properties** entirely, without applying universal value formatting in the column options dialog, the following tips may be of use:
+
+
+
+	+ Ensure that your data column values use a "x.xx" format. For example, if you wanted a number on your value scale to read "40%," that value would read as ".40" in your DataSet.
+	+ Convert your data label values into percentages by selecting **Percentage** under **Label Format** in the Chart Properties.
+	+ Convert decimal values into percentages by selecting **Percentage** under **Divide Scale By** in Chart Properties You can then append percent values by changing the number format to a percentage, as described above. However, it is *not* recommended that you perform these steps in reverse order.
+	+ Use Beast Mode to transform column values into percentages. You can use the calculation   
+	  
+	CASE WHEN `value2` > 0 THEN `value1` / `value2` ELSE 0 END   
+	  
+	to prevent zero values being divided by zero. For more information about Beast Mode, see Transforming Data Using [Beast Mode](..\..\category\beast_mode\index.md).

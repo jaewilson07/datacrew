@@ -6,20 +6,20 @@ __all__ = ['Article', 'ArticleKB_GetSoupError', 'ArticleKB_ProcessSoupError',
 
 # %% ../../nbs/crawler/article.ipynb 3
 import datetime as dt
-from dataclasses import dataclass, field
 import urllib.parse as url_parse
+from dataclasses import dataclass, field
 
-from bs4 import BeautifulSoup
+import chardet
+import markdownify as md
 import selenium.webdriver
+from bs4 import BeautifulSoup
+from dateutil import parser
 from selenium.webdriver.common.by import By
+
+import datacrew.crawler.crawler as dcc
 
 # from fastcore.basics import patch_to
 
-import markdownify as md
-from dateutil import parser
-
-
-import datacrew.crawler.crawler as dcc
 
 # %% ../../nbs/crawler/article.ipynb 5
 
@@ -221,6 +221,29 @@ class Article:
             print(self.image_ls)
         return self.image_ls
 
+    @staticmethod
+    def detect_encoding(file_path, debug_prn: bool = False):
+        detector = chardet.universaldetector.UniversalDetector()
+        with open(file_path, "rb") as f:
+            for line in f:
+                detector.feed(line)
+                if detector.done:
+                    break
+        detector.close()
+
+        encoding = detector.result
+
+        if debug_prn:
+            print(encoding)
+
+        with open(file_path, encoding=encoding['encoding']) as f:
+            try:
+                return f.read()
+            except Exception as e:
+                return e
+            finally:
+                f.close()
+
 # %% ../../nbs/crawler/article.ipynb 9
 
 
@@ -262,8 +285,9 @@ class Article_KB(Article):
         soup = None
 
         if path_html:
-            page = open(path_html)
-            soup = BeautifulSoup(page.read(), features="lxml")
+            page_decoded = self.detect_encoding(path_html, debug_prn=debug_prn)
+
+            soup = BeautifulSoup(page_decoded, features="lxml")
         else:
             soup = dcc.pagesource(
                 driver=self.driver,
@@ -368,8 +392,9 @@ class Article_Category(Article):
 
         if path_html:
             self.is_child_recursive = False
-            page = open(path_html)
-            soup = BeautifulSoup(page.read(), features="lxml")
+            page_decoded = self.detect_encoding(path_html, debug_prn=debug_prn)
+
+            soup = BeautifulSoup(page_decoded, features="lxml")
 
         else:
             if not driver:

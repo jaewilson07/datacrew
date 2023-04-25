@@ -1,13 +1,13 @@
 ---
-title : Adding a Beast Mode Calculation to Your Chart
+title : JIRA Rest API Connector
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
-date: 2022-10-24 22:40:00
-url : https://domo-support.domo.com/s/article/360043429913
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429993', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428753']
-article_id : 000004076
-views : 10,979
-created_date : 2022-10-24 21:20:00
-last updated : 2022-10-24 22:40:00
+date: 2022-10-24 22:39:00
+url : https://domo-support.domo.com/s/article/360043434973
+linked_kbs :  ['https://domo-support.domo.com/s/article/360042926274', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360043434973', 'https://domo-support.domo.com/s/article/360042926054', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043429913']
+article_id : 000003416
+views : 4,438
+created_date : 2022-10-24 21:12:00
+last updated : 2022-10-24 22:39:00
 ---
 
 
@@ -16,172 +16,253 @@ Intro
 -----
 
 
-You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
+JIRA helps teams get organized and work together to build incredible products, but product teams are just one part of your organization. With Domo, you can combine data from multiple sources into a single platform--pulling data from product development, marketing, sales, operations, and finance for a real-time, holistic view of your business. Once your data is in Domo, you can get stunning, dynamic JIRA visualizations with real-time data, on any device.  
+Domo's JIRA connector allows you to connect to your JIRA account to extract data from JIRA. You can import data including issue tracking, completed tickets per team, ticket resolution time, and project management metrics, using either custom or predefined queries. To learn more about the JIRA API, see [https://developer.atlassian.com/jira...e-query-issues](https://developer.atlassian.com/jiradev/jira-apis/jira-rest-apis/jira-rest-api-tutorials/jira-rest-api-example-query-issues "https://developer.atlassian.com/jiradev/jira-apis/jira-rest-apis/jira-rest-api-tutorials/jira-rest-api-example-query-issues").Â
+The JIRA Rest API Connector is a "Cloud App" connector, meaning it retrieves data stored in the cloud. In the Data Center, you can access the connector page for this and other Cloud App connectors by clicking **Cloud App** in the toolbar at the top of the window.
 
 
-**Video - Intro to Beast Mode**
-
-
-{{< video www.youtube.com/embed/SpVbmZPMAsM >}}
- 
-
-
-**Video - Creating a Calculated Field**
-
-
-{{< video www.youtube.com/embed/h6SQR_H9OsY >}}
- 
-
-
-**Video - Case Statement Overview**
-
-
-{{< video www.youtube.com/embed/xFofhklohSc >}}
- 
-
-
-Parts of the Beast Mode dialog
-------------------------------
-
-
-The following screenshot shows how the Beast Mode dialog looks:
-
-
-![Beast_Mode_Dialog.jpg](Beast_Mode_Dialog.jpg)
-
-
-You can learn about the user interface components of the Beast Mode dialog in the following table:
+You connect to your JIRA account in the Data Center. This topic discusses the fields and menus that are specific to the JIRA connector user interface. General information for adding DataSets, setting update schedules, and editing DataSet information is discussed inÂ [Adding a DataSet Using a Data Connector](..\adding_a_dataset_using_a_connector\index.html "Adding a DataSet Using a Data Connector").
 
 
 
 
-| Name | Description |
+|  |  |
 | --- | --- |
-| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
-| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
-| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
-| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
-| Function Description | Displays the description of the selected function. |
-| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
-| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
+| **Primary Use Cases** | 
+* Tracking progress and movement of tickets
+* Number of tickets assigned to specific users or groups
+* Seeing if too many tickets of a certain type are open (bugs)
+ |
+| **Primary Metrics** | 
+* Bug / issue / ticket tracking (by age, type, status, submitter)
+* Completed tickets per team
+* Ticket resolution time
+* Project management metrics (tracking individual tasks of a larger project or epic).
+ |
+| **Primary Company Roles** | Product managers |
+| **Average Implementation Time** | This can vary wildly depending on the implementation and the user's level of knowledge of their JIRAÂ system. |
+| **Ease of Use (on a 1-to-10 scale with 1 being easiest)** | 7 |
 
 
-Adding a Beast Mode calculation
--------------------------------
-
-
-Use the information in this section to add calculations for transforming data using Beast Mode. 
-
-
-**To add a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to add a calculation, click ![](1.png), then select **Edit Card**.
-2. In Analyzer, click **Add Calculated Field**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-
-
-The Beast Mode dialog appears.
-3. In **Calculated Field Name**, enter the title of the calculation.
-
-
-**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
-![Beast_Mode_Modal.png](Beast_Mode_Modal.png)
-**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
-4. In **Formula**, enter the calculation you want.  
-You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
-For more information about functions, see [Beast Mode Functions Reference Guide](../../raw_kb/article/beast_mode_functions_reference_guide/index.html).
-5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
-6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
-If there are errors, revise your calculation.   
-After saving, the calculation column appears in the Categories list for the card in Analyzer.
-
-
-**To edit a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
-3. Make any changes you want, then click **Save & Close**.
-
-
-**To delete a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
-3. Click **Remove** to confirm deleting the calculation.
-
-
-Calculation usage notes
------------------------
-
-
-* Most calculations use one of the following general formats: 
+Best Practices
+--------------
 
 
 
-| Format | Description |
+* You should usually use "Replace" with the JIRA connector, as "Append" does not work well.
+* If the query is for data across a long time period, scheduling should be kept to a minimum (once a day). For shorter queries, more frequent updates are appropriate.Â
+
+
+Prerequisites
+-------------
+
+
+To connect to your JIRA account and create a DataSet, you must have the following:
+
+
+
+* The username and password/API key you use to log into JIRA. The Jira cloud users must use an API Key. You can create one here: <http://id.atlassian.com>
+* The URL for your company's JIRA instance
+* The JQL query you will use to pull data (if you are building a custom report)
+
+
+Credentials are received upon account creation. A JIRAÂ Admin is likely to have created username and passwords for most users in your company if you useÂ an on-premise JIRA implementation.
+
+
+### SSO
+
+
+Single Sign-On (SSO) credentials will NOT work.Â However, you can work around SSO limitations by doing the following:
+
+
+1. Have your JIRA administrator create a local account with a username and password specifically for API use.
+2. Create an API key atÂ [http://id.atlassian.com/](http://id.atlassian.com/ "http://id.atlassian.com/").Â
+3. On the JIRA connector page in Domo, enter the API key you created instead of the password. (Depending on the account, you may need to enter your username or JIRA account email address as the username.)Â
+
+
+Connecting to Your JIRA Instance
+--------------------------------
+
+
+This section enumerates the options in theÂ **Credentials**Â andÂ **Details** panes in the JIRA Rest PAI Connector page. The components of the other panes in this page, **Scheduling**Â andÂ **Name & Describe Your DataSet**, are universal across most connector types and are discussed in greater length inÂ [Adding a DataSet Using a Data Connector](..\adding_a_dataset_using_a_connector\index.html "Adding a DataSet Using a Data Connector").
+
+
+### Credentials Pane
+
+
+This pane contains fields for entering credentials to connect to your JIRA instance. The following table describes what is needed for each field: Â 
+
+
+
+
+| Field | Description |
 | --- | --- |
-| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
-| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
-| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
-| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](../../raw_kb/article/date_format_specifier_characters_for_beast_mode/index.html "Date Format Specifier Characters in Beast Mode"). |
+| Username | Enter the username you use to log into your JIRA instance. |
+| Password | Enter the password you use to log into your JIRA instance. The Jira Cloud users must use an API Key. You can create one here: <http://id.atlassian.com> |
+| Server URL | Enter the URL for your JIRA instance (for example, [onjira.mycompany.com](http://onjira.mycompany.com)). |
 
 
-* In calculations, Beast Mode function names are *not* case sensitive.
-* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
-* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
-Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
-* Use single quotes (') for strings: 'mystring'
-* You can escape a quote using two single quotes: 'O''Neal'
-* You can insert a space in a calculation using single quotes: `' '`  
-This is useful with functions like CONCAT when you need to combine strings.
-* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
-* You cannot refer to a specific calculation by name in another calculation.  
-For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
-* Calculations can be completed automatically as you enter them.
+Once you have entered valid JIRA credentials, you can use the same account any time you go to create a new JIRA Rest API DataSet. You can manage connector accounts in the AccountsÂ tab in theÂ Data Center. For more information about this tab, seeÂ [Managing User Accounts for Connectors](..\managing_user_accounts_for_connectors\index.html "Managing User Accounts for Connectors").
 
 
-	+ As you enter functions, a list of functions appears, which you can select from.
-	+ If you enter a backtick ('), a list of column names appears, which you can select from.
-* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
-* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
-* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
-* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](../../raw_kb/article/adding_a_drill_path_to_your_chart/index.html "Adding Drill Path to Your Chart").
-* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
-* Do *not* mix data types of values you put in a transformed column.  
-For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
-* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
-* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
-* You can drag and drop a column name from the DataSet Fields list to your calculation.
-* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
+### Details Pane
 
 
-For Beast Mode syntax examples, see [Sample Beast Mode Calculations](../../raw_kb/article/sample_beast_mode_calculations/index.html).
+This pane contains a primaryÂ **Reports**Â menu, along with various other menus which may or may not appear depending on the report type you select.
 
 
-Applying a calculation to a summary number
-------------------------------------------
 
 
-If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
+| Menu | Description |
+| --- | --- |
+| Report | Select the report you want to run. The following reports are available:
+
+| Report | Description |
+| --- | --- |
+| Issue Query | Allows the user to query issues using JQL (JIRA Query Language). |
+| Boards | Returns a list of scrum boards. |
+| Board Sprints | Returns a list of sprints for the selected board. |
+| Sprint Issues | Returns issues for the selected sprints. |
+| Fields | Returns a list of fields used in the user's JIRA account. |
+| Group Members | Returns a list of users that belong to the specified group. You must have admin access to run this report. |
+| Projects | Returns a list of all projects the user has access to. |
+| Project Versions | Returns a list of all versions of the specified project. |
+
+ |
+| JQL Query | Enter a JQL query to pull custom data.Â [Jira Documentation](https://confluence.atlassian.com/display/JIRA/Advanced+Searching).
+
+| Description | Query Examples |
+| --- | --- |
+| All issues created at the start of the month, 3 months ago. | created >= STARTOFMONTH(-3) |
+| All issues created at the start of the day, 10 days ago. | created >= STARTOFDAY(-10) |
+| All issues updated since a specific date. | updated >= '2020-01-01' |
+| All issues assigned to me. | assignee = currentUser() |
+| All issues for project 'Some Project' that are closed | project = 'Some Project' and status = closed |
+| All issues reported by a specific user | reporter = '[user.name](http://user.name)' |
+
+ |
+| Â Data Option | 
+
+| Data Option | Description |
+| --- | --- |
+| Comments Report | Returns JIRA tickets with their related comments. |
+| Changelog Report | Returns changelogs per issue applicable to the query. The Changelog report is only available to Jira Cloud users. |
+| Labels Report | Returns labels for issues applicable to the query. |
+| Linked Issues Report | Returns linked issues for issues applicable to the query. |
+| Sprint Report | Returns details of sprints for issues applicable to the query. |
+| Standard Ticket Report | Returns columns for nearly every parameter for JIRA tickets, such as issue summary and description, creation date, resolution date, impacted customer name, environment, etc. |
+| Ticket History Report | Returns historical information about tickets. |
+| Worklog Report | Returns worklogs per issue applicable to the query. |
+
+ |
+| Filter Type | Select to include or exclude specific fields from the returned dataset. |
+| Flatten All Fields | Select which fields you want to see expanded in data. |
+| Reset Schema | Select this checkbox to include only columns that are imported in the current execution. This option only works for the **Replace** update method. |
+| Group Name | Enter the group that contains the users you wish to retrieve. This report requires an Administrator account. |
 
 
-* AVG
-* COUNT
-* COUNT (DISTINCT)
-* MAX
-* MIN
-* SUM
-* SUM (DISTINCT)
-* STDDEV\_POP, VAR\_POP
+### Other Panes
 
 
-When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
+For information about the remaining sections of the connector interface, including how to configure scheduling, retry, and update options, seeÂ [AddingÂ a DataSet Using a Data Connector](..\adding_a_dataset_using_a_connector\index.md).
 
 
-**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number.
-For more information about summary numbers, see [Configuring Your Chart Summary Number](../../raw_kb/article/configuring_your_chart_summary_number/index.html "Configuring Your Chart Summary Number").
+### FAQs
+
+
+#### When should I use this connector?
+
+
+The JIRA REST API connector allows you to connect to a JIRA server instance and bring your JIRA data into Domo. This connector requires a local username and password.
+
+
+#### Which endpoint(s) does each report call in this connector?
+
+
+
+
+| Report Name |  | Endpoint URL(s) |
+| --- | --- | --- |
+| Agile API: | Agile Boards | /rest/agile/1.0/board |
+| Board Sprints | /rest/agile/1.0/board/{boardId}/sprint |
+| Sprint Issues | /rest/agile/1.0/board/{boardId}/sprint/{SprintId}/issue |
+| Fields |  | /rest/api/2/field |
+| Group Members |  | /rest/api/2/group/member |
+| Issue Query |  | /rest/api/2/search |
+| Projects |  | /rest/api/2/project |
+| Project Versions |  | /rest/api/2/project/{projectId}/versions |
+
+
+#### What kind of credentials do I need to power up this connector?
+
+
+You need the username, password, and server URL for your Jira instance.
+
+
+#### Domo is reporting that my Jira credentials are invalid. What am I doing wrong?
+
+
+Possible reasons for this error include:
+
+
+
+* Your Jira server has not had API access enabled. Contact your Jira administrator to ensure that API access is turned on.
+* You're using your email address instead of your actual Jira username. In many cases, these may be the same; however, it's not uncommon for "[user.name@company.com](mailto:user.name@company.com)" to be your email while "[user.name](http://user.name)" is your actual username.
+
+
+#### Can I use my SSO account to login?
+
+
+SSO implementations are not supported in Jira. However you can work around these limitations.
+
+
+
+* Jira Server â€“ Your Jira administrator can create a local account with a user name and password specifically for API use.
+* Jira Cloud â€“ You can create an API key at [ATLASSIAN](https://id.atlassian.com/login). On the connectors page, enter the API key youâ€™ve created instead of the password.  
+ Note: Depending on your account, you may need to enter your username or your Jira account email address as the username.
+
+
+#### How frequently will my data update?
+
+
+Data from Jira's servers is usually made available to the API immediately.
+
+
+#### How do I know if my query is right?
+
+
+Jira's platform provides a handy tool to verify if your query is valid. An easy way to access this tool is simply to do a search in Jira's search bar. Once on the search screen, you will see a green check box next to the query string for your search to indicate that it is valid. Otherwise you will see a red X. You can switch back to the basic search functionality to build a query from the available selectors, and then switch again to advanced to see the resulting query.
+
+
+#### I keep running into connection errors (gateway timeout, bad gateway, connection timed out, connection reset, etc...). How do I fix that?
+
+
+The most common cause of connection errors is that your Jira server has too much load to handle your requests. Contact your Jira administrator to see about allocating more resources to your Jira server.
+
+
+#### Can this connector pull custom fields?
+
+
+Because Jira returns so much data, the connector enables you to specify fields either as inclusive or exclusive. If you choose inclusive, only the fields you specify will be returned. If you choose exclusive, all fields will be returned except for those that you specify.
+
+
+**Note**: Field ids must be entered. If the field names are entered, then they will be ignored.
+#### How can I pull the data from boards?
+
+
+Select the report type as **Agile API** and the agile report as **Agile Boards** to get the list of all agile boards you have access to.
+
+
+#### Can I use OAuth on this connector?
+
+
+If you wish to use OAuth on Jira instances, use the Jira Cloud connector. Jira Cloud connector supports OAuth2 authentication. You can authenticate to the Jira Cloud connector with the same credentials you use to log into your Jira account online.
+
+
+Troubleshooting
+---------------
+
+
+
+* Jira requires a fair amount of configuration from the side of the JIRAÂ admin to ensure that API access is enabled. Common issues include setting the timeouts too shortÂ or not providing sufficient resources to the JIRA server.
+* If users have trouble understanding how to format JQL, the easiest thing is to log into the JIRA front end. Via the search bar, JIRA provides a tool that can construct a JQL query with preset filters. After constructing your query, if you hit the **Advanced**Â button, JIRAÂ presents you with your selectionsÂ in JQL format.

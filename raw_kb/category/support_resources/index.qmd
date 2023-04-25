@@ -1,0 +1,17 @@
+
+
+
+Support Resources
+=================
+***
+* [Changing Your Password](..\..\article\changing_your_password\index.qmd)
+* [Creating a New List in the Customer Portal](..\..\article\creating_a_new_list_in_the_customer_portal\index.qmd)
+* [Domo Customer Success Overview](..\..\article\domo_customer_success_overview\index.qmd)
+* [FAQs](..\..\article\faqs\index.qmd)
+* [Finding Solutions Using the Community Forum](..\..\article\finding_solutions_using_the_community_forum\index.qmd)
+* [Getting Help](..\..\article\getting_help\index.qmd)
+* [Glossary](/s/article/360043427453)
+* [Standard Domo Support](..\..\article\standard_domo_support\index.qmd)
+* [Submitting Domo Product Feedback](..\..\article\submitting_domo_product_feedback\index.qmd)
+* [Troubleshooting Domo](..\..\article\troubleshooting_domo\index.qmd)
+* [Understanding the Customer Support Portal](..\..\article\understanding_the_customer_support_portal\index.qmd)

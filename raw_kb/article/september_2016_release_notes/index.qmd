@@ -1,187 +1,254 @@
 ---
-title : Adding a Beast Mode Calculation to Your Chart
+title : September 2016 Release Notes
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
-date: 2022-10-24 22:40:00
-url : https://domo-support.domo.com/s/article/360043429913
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429993', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428753']
-article_id : 000004076
-views : 10,979
-created_date : 2022-10-24 21:20:00
-last updated : 2022-10-24 22:40:00
+date: 2022-10-24 22:42:00
+url : https://domo-support.domo.com/s/article/360042934934
+linked_kbs :  ['https://domo-support.domo.com/s/article/360043438993', 'https://domo-support.domo.com/s/article/360043439193', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043427393', 'https://domo-support.domo.com/s/article/360043429013', 'https://domo-support.domo.com/s/article/360042934454', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360042934934', 'https://domo-support.domo.com/s/article/360042922874', 'https://domo-support.domo.com/s/article/360042934574', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360042923934', 'https://domo-support.domo.com/s/article/360043429913']
+article_id : 000004448
+views : 2,042
+created_date : 2022-10-24 22:11:00
+last updated : 2022-10-24 22:42:00
 ---
 
 
 
-Intro
------
+Â 
 
 
-You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
+Â
+**Note:** Depending on the product version you are using, the documentation may include information about features that may not be available or may have changed.
+New features and enhancements
+-----------------------------
 
 
-**Video - Intro to Beast Mode**
+Features and enhancements in this release include the following:
 
 
-{{< video www.youtube.com/embed/SpVbmZPMAsM >}}
- 
+### Drill Path Reorder Capability
 
 
-**Video - Creating a Calculated Field**
+Previously when you set a drill path on a card, if you inadvertently added the drill levels in the wrong order, you had no choice but to delete all of the levels and start again from scratchâ€”an extremely frustrating scenario. With our new drill reorder capability, that frustration is now a thing of the past. In the updated drill edit screen, drill pathÂ levels are represented as movable tiles. If you add a level in the wrong sequence, worry notâ€”you can simply click and drag it almostÂ anywhere in the drill sequenceÂ (except for to the top or bottom of the drill path, since those spots are reserved for your top level view and table view, respectively), automatically adjusting your card's drill path. You can also edit or delete any movable path in the sequence.Â 
 
 
-{{< video www.youtube.com/embed/h6SQR_H9OsY >}}
- 
+![](0.png)Â Â Â Â Â Â 
 
 
-**Video - Case Statement Overview**
+For more information, seeÂ [Adding Drill Path to Your Chart](..\adding_a_drill_path_to_your_chart\index.html "Adding Drill Path to Your Chart").Â 
 
 
-{{< video www.youtube.com/embed/xFofhklohSc >}}
- 
+### Workbench 4.5
 
 
-Parts of the Beast Mode dialog
-------------------------------
+Workbench 4.5 is being released. In addition to bug fixes, this release provides the following improvements designed to make your Workbench experience easier:
 
 
-The following screenshot shows how the Beast Mode dialog looks:
 
+* You no longer have to be an Admin in Windows to run Workbench. Non-Admin users can now access Workbench as long as they are assigned to the "Domo Workbench Users Group." All members of this group are allowed to configure and use Domo Workbench to upload data to Domo.  
+   
+ ![](1.png) Â
+* Previously all data readers would do impersonation. We now launch the Data Collector Process as an impersonated user, which should especially help plugin writers.Â Â
+* A new security option underÂ **Settings**Â allows you to require impersonation credentials for all DataSet Jobs. This option can only be modified by an Admin user.
+* A new option underÂ **Additional Settings**Â for a DataSet Job lets you specify whether the Job waits for Adrenaline indexing before completing.Â
+* If you change the impersonation credentials on a DataSet Job, Workbench now asks you if you want to change the credentials for all jobs that use those credentials.  
+   
+ ![](2.png)  
+   
+ Likewise, if you change the impersonation credentials for a provider, you are asked if you want toÂ change credentialsÂ on all Jobs that use that provider.  
+   
+ ![](3.png)
+* In the Job Scheduler, if a DataSet Job is from a local file provider, you can now selectÂ **Watch File**Â for the Job. The Job will then run every time theÂ localÂ file is updated.
+* A new plugin platform allows for backwards compatibility with older plugins.
+* Password-protected Excel files are now supported.
+* You can now change the name of a Workbench-imported DataSet in Domo.
+* Improved migration between Workbench 2 and Workbench 4.5.Â
 
-![Beast_Mode_Dialog.jpg](Beast_Mode_Dialog.jpg)
 
+### New Publication Groups UIÂ
 
-You can learn about the user interface components of the Beast Mode dialog in the following table:
 
+The Publication Groups interfaceÂ has been enhanced to provide a more intuitive user experience. The interface now guides users through the process of adding pages, setting DataSet filters, and configuring access groups.
 
 
+![](4.png)
 
-| Name | Description |
-| --- | --- |
-| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
-| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
-| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
-| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
-| Function Description | Displays the description of the selected function. |
-| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
-| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
 
+For more information, seeÂ [Setting Up Publication Groups](..\setting_up_publication_groups\index.html "Setting Up Publication Groups").Â 
 
-Adding a Beast Mode calculation
--------------------------------
 
+### 2-Factor AuthenticationÂ Â
 
-Use the information in this section to add calculations for transforming data using Beast Mode. 
 
+Â
+Â
+**Note:**Â This feature is availableÂ *on demand.*  
+Â 
 
-**To add a Beast Mode calculation,**
 
+To request that this feature be enabled,Â reach out to your Domo Customer Success Manager or Technical Consultant.
 
-1. On the KPI card where you want to add a calculation, click ![](1.png), then select **Edit Card**.
-2. In Analyzer, click **Add Calculated Field**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
 
+Depending on the feature, you may be required to complete training before you can use the feature.
+You can nowÂ enable multi-factor authentication for your company.Â InÂ **Admin Settings > Security > Authentication**, you have access to the following multi-factor authentication options:
 
-The Beast Mode dialog appears.
-3. In **Calculated Field Name**, enter the title of the calculation.
 
 
-**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
-![Beast_Mode_Modal.png](Beast_Mode_Modal.png)
-**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
-4. In **Formula**, enter the calculation you want.  
-You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
-For more information about functions, see [Beast Mode Functions Reference Guide](../../raw_kb/article/beast_mode_functions_reference_guide/index.html).
-5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
-6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
-If there are errors, revise your calculation.   
-After saving, the calculation column appears in the Categories list for the card in Analyzer.
+* You can set a requirement that usersÂ redo their multi-factor authentication after a given number of days.
+* You canÂ set a requirement that codes expire after a given number of failed attempts.Â
+* You can see a list of all users who have notÂ entered their mobile number into theirÂ **Profile**Â pages. You can also sendÂ these users a Buzz message reminding them to provide their numbers.
 
 
-**To edit a Beast Mode calculation,**
+Users willÂ *not*Â be able toÂ log into DomoÂ if you enable multi-factor authentication before they have a chance to enter their mobile numbers in theirÂ **Profile**Â pages. Make sure all of the employees in your company have entered their numbers before activating this feature.
 
 
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
-3. Make any changes you want, then click **Save & Close**.
+![](5.png)
 
 
-**To delete a Beast Mode calculation,**
+For more information, seeÂ [Turning On Multi-Factor Authentication](..\turning_on_multifactor_authentication\index.html "Turning On Multi-Factor Authentication").
 
 
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
-3. Click **Remove** to confirm deleting the calculation.
+### Activity Logs
 
 
-Calculation usage notes
------------------------
+With the new Activity LogsÂ tool in the Admin Settings, you can get greater visibility of whatâ€™s changing and whoâ€™s changing it. View activityÂ logs for all users in your DomoÂ instance. Quickly filter the logs using any of four commonly used "quick filters." Or, if you want to dig deeper into the logs to single out a specific log or pinpoint a small range of logs, create customizedÂ combinations of filters. You can also refresh the logs appearing in the tabÂ or export the logs as a CSV file. Activity Logs provide data for the last 6 months.Â Â 
 
 
-* Most calculations use one of the following general formats: 
+![](6.png)
 
 
+For more information, seeÂ [Viewing Activity Logs](..\viewing_activity_logs\index.html "Viewing User Logs").
 
-| Format | Description |
-| --- | --- |
-| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
-| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
-| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
-| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](../../raw_kb/article/date_format_specifier_characters_for_beast_mode/index.html "Date Format Specifier Characters in Beast Mode"). |
 
+### License Management
 
-* In calculations, Beast Mode function names are *not* case sensitive.
-* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
-* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
-Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
-* Use single quotes (') for strings: 'mystring'
-* You can escape a quote using two single quotes: 'O''Neal'
-* You can insert a space in a calculation using single quotes: `' '`  
-This is useful with functions like CONCAT when you need to combine strings.
-* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
-* You cannot refer to a specific calculation by name in another calculation.  
-For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
-* Calculations can be completed automatically as you enter them.
 
+TheÂ **User Licenses**Â tab in the Admin Settings shows you the number of licenses in use and lets you add new licenses.Â (If you have exceeded your number of licenses, this number appears red.) It also shows a history of license requests, with the date of request, the name of the requestor, and the number of requests for each individual transactions.
 
-	+ As you enter functions, a list of functions appears, which you can select from.
-	+ If you enter a backtick ('), a list of column names appears, which you can select from.
-* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
-* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
-* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
-* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](../../raw_kb/article/adding_a_drill_path_to_your_chart/index.html "Adding Drill Path to Your Chart").
-* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
-* Do *not* mix data types of values you put in a transformed column.  
-For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
-* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
-* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
-* You can drag and drop a column name from the DataSet Fields list to your calculation.
-* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
 
+![](7.png)Â 
 
-For Beast Mode syntax examples, see [Sample Beast Mode Calculations](../../raw_kb/article/sample_beast_mode_calculations/index.html).
 
+When you choose to add licenses and confirm the transaction, an email is sent to your AE, who then follows up with you, sends an invoice, etc. Â The License Manager doesÂ *notÂ*impede your ability to add new users on the fly.
 
-Applying a calculation to a summary number
-------------------------------------------
 
+For more information, seeÂ [Adding User Licenses in Domo](..\adding_user_licenses_in_domo\index.html "Adding User Licenses in Domo").
 
-If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
 
+### Design Studio improvements
 
-* AVG
-* COUNT
-* COUNT (DISTINCT)
-* MAX
-* MIN
-* SUM
-* SUM (DISTINCT)
-* STDDEV\_POP, VAR\_POP
 
+This update provides a new method for transitioning widgets to the artboard.Â Previously, a representation of the widget was placed on the artboard. This representation was in SVG formatÂ and could cause some confusion on what could be directly edited on the artboard versus within the configuration options for that widget. It also prevented exact representations for some widgets, such as the Table and YouTube Player from being shown accurately. The new HTML screenshot method gives a significant performance boost and more accurately represents how the widget will look once on the design. Whatever configurations are chosen for the widget, the artboard will replicate that. In addition, it will allow elements such as Legends to be moved more accurately on the design.Â 
 
-When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
 
+Â
+**Note:** Some widgets are HTML based and require this upgrade to be available in the Add Widgets menu. This includes the Table, YouTube Player, some Maps, and Filter control widgets. Â If you do not see these widgets on your list, you will need to upgrade to 2.0.6. Â Any designs that were created in an older version of Design Studio will function normally. Â
+This release also includes
 
-**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number.
-For more information about summary numbers, see [Configuring Your Chart Summary Number](../../raw_kb/article/configuring_your_chart_summary_number/index.html "Configuring Your Chart Summary Number").
+
+
+* Additional support for SSO authentication
+* Updated Table widget instructional text
+* Various bug fixes
+
+
+### Page Search in More menuÂ
+
+
+In theÂ **More**Â menu in the card page navigation bar, you canÂ filter to showÂ the desired page(s) or subpage(s) with their owners.Â By default,Â only top-level pages appear in theÂ **More**Â menu. However, when you enter a search term, both top-level pagesÂ *and*Â subpages appear in the menu as search results.Â 
+
+
+![](8.png)
+
+
+For more information, seeÂ [Searching in Domo](..\searching_in_domo\index.html "Searching in Domo").
+
+
+### App search
+
+
+Domo's global search now includes Appstore Apps matching your keyword in addition to Buzz messages, cards, and so on.Â Â 
+
+
+![](9.png)
+
+
+For more information, seeÂ [Searching in Domo](..\searching_in_domo\index.html "Searching in Domo").
+
+
+### New Maps
+
+
+Country maps are now available for India, Panama, and Peru. In addition, a region-level map that includes countries in the United Kingdom is now available.
+
+
+![india_rn.png](india_rn.png)
+
+
+**India**  
+Â 
+
+
+**![panama_rn.png](panama_rn.png)**
+
+
+**Panama**
+
+
+**![peru_rn.png](peru_rn.png)**
+
+
+**Peru**
+
+
+  
+**![uk_country_rn.png](uk_country_rn.png)**
+
+
+**UK Country**  
+Â 
+
+
+For information about the India, Panama, and Peru maps, seeÂ [Continental/Regional Map](..\continental_and_regional_maps\index.html "Country Map").
+
+
+### Full Page DomoÂ Apps
+
+
+You can now view Domo Apps in full-screen mode by clickingÂ ![](14.png)Â in the Details view for the App.
+
+
+![](15.png)
+
+
+For more information about the Details view user interface, seeÂ [Card Details View Layout](..\card_details_view_layout\index.html "Card Details View Layout").
+
+
+### PDP and Group API
+
+
+You can now utilize our APIs to onboard users and assign them to the correct Domo groups as well as set PDP permissions.Â 
+
+
+For more information about APIs in Domo, visitÂ [https://developer.domo.com/manage-domo](https://developer.domo.com/manage-domo "https://developer.domo.com/manage-domo").Â 
+
+
+Getting Help
+------------
+
+
+You can view the latest release notes information in the Help Center, which you can access from Domo by clickingÂ ![](16.png)Â **> Help Center**.
+
+
+If you have questions about Domo,
+
+
+
+* search for a topic in the Help Center
+* train in Domo University at [http://www.domo.com/university](http://www.domo.com/university "http://www.domo.com/university")
+* get answers in the Domo Community at dojo.domo.com
+* reach out to your Domo Customer Success Manager or Technical Consultant
+
+
+If you have feedback, please send it from within Domo (![](16.png)Â **> Feedback**). Or send an email to [product.feedback@domo.com](mailto:product.feedback@domo.com "product.feedback@domo.com").
+
+
+For more information about getting help, see [Getting Help](..\getting_help\index.html "Getting Help").Â

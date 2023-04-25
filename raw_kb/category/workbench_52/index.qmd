@@ -1,0 +1,10 @@
+
+
+
+Workbench 5.2
+=============
+***
+* [Cloud Amplifier Support in Workbench 5.2](/s/article/9337403057943)
+* [Duplicating a Job in Workbench 5.2](..\..\article\duplicating_a_job_in_workbench_52\index.qmd)
+* [Upgrade to Workbench 5.2](..\..\article\upgrade_to_workbench_52\index.qmd)
+* [Workbench 5.2 Overview](..\..\article\workbench_52_overview\index.qmd)

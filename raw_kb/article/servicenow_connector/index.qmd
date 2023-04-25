@@ -1,13 +1,13 @@
 ---
-title : Adding a Beast Mode Calculation to Your Chart
+title : ServiceNow Connector
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
-date: 2022-10-24 22:40:00
-url : https://domo-support.domo.com/s/article/360043429913
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429993', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428753']
-article_id : 000004076
-views : 10,979
-created_date : 2022-10-24 21:20:00
-last updated : 2022-10-24 22:40:00
+date: 2022-10-24 22:42:00
+url : https://domo-support.domo.com/s/article/360042929094
+linked_kbs :  ['https://domo-support.domo.com/s/article/360042926274', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360042929094', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042926054', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043630093', 'https://domo-support.domo.com/s/article/360043429913']
+article_id : 000003559
+views : 4,209
+created_date : 2022-10-24 21:13:00
+last updated : 2022-10-24 22:42:00
 ---
 
 
@@ -16,172 +16,244 @@ Intro
 -----
 
 
-You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
+ServiceNow is a software platform that supports IT service management and automates common business practices.Â Use Domo'sÂ ServiceNowÂ connector to retrieve a data table from a list or provide a custom table name.Â For more information about the ServiceNow API, visitÂ their website.Â ([http://wiki.servicenow.com/index.php...\_API#gsc.tab=0](http://wiki.servicenow.com/index.php?title=REST_API#gsc.tab=0 "http://wiki.servicenow.com/index.php?title=REST_API#gsc.tab=0"))
 
 
-**Video - Intro to Beast Mode**
+The ServiceNow connector is a "Cloud App" connector, meaning it retrieves data stored in the cloud. In the Data Center, you can access the connector page for this and other Cloud App connectors by clicking **Cloud App** in the toolbar at the top of the window.
 
 
-{{< video www.youtube.com/embed/SpVbmZPMAsM >}}
- 
+In addition to the standard ServiceNow connector, Domo also provides a "ServiceNow Upsert" connector. This connector is exactly the same as the standard ServiceNow connector except that it also offers "Upsert" as an update option alongside "Append" and "Replace." This option is discussed in this article underÂ Other Panes.Â Â 
 
 
-**Video - Creating a Calculated Field**
-
-
-{{< video www.youtube.com/embed/h6SQR_H9OsY >}}
- 
-
-
-**Video - Case Statement Overview**
-
-
-{{< video www.youtube.com/embed/xFofhklohSc >}}
- 
-
-
-Parts of the Beast Mode dialog
-------------------------------
-
-
-The following screenshot shows how the Beast Mode dialog looks:
-
-
-![Beast_Mode_Dialog.jpg](Beast_Mode_Dialog.jpg)
-
-
-You can learn about the user interface components of the Beast Mode dialog in the following table:
+You connect to your ServiceNowÂ account in theÂ Data Center. This topic discusses the fields and menus that are specific to theÂ ServiceNowÂ connector user interface. General information for adding DataSets, setting update schedules, and editing DataSet information is discussed inÂ [Adding a DataSet Using a Data Connector](..\adding_a_dataset_using_a_connector\index.html "Adding a DataSet Using a Data Connector").
 
 
 
 
-| Name | Description |
+|  |  |
 | --- | --- |
-| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
-| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
-| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
-| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
-| Function Description | Displays the description of the selected function. |
-| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
-| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
+| **Primary Use Cases** | 
+* Monitor trends for incidents and find ways to reduce incident counts.
+* Track change request volume and remove bottlenecks in the change request process.
+* Track problem submissions and look for relationships to incident counts.
+ |
+| **Primary Metrics** | 
+* Open high priority incidents
+* Incident trends
+* Incident Mean Time To Resolve (MTTR)
+* Incident volume by severity, priority, impact and urgency
+* Change volume trend
+* Open emergency changes
+* Problem volume trend
+ |
+| **Primary Company Roles** | IT service desk manager |
+| **Average Implementation Time** | 3 hours |
+| **Ease of Use (on a 1-to-10 scale with 1 being easiest)** | 5 |
 
 
-Adding a Beast Mode calculation
--------------------------------
+Best Practices
+--------------
 
 
-Use the information in this section to add calculations for transforming data using Beast Mode. 
+Schedule reports at frequent intervals to maintain an accurate and current picture of the status of incidents, problems and change requests.
 
 
-**To add a Beast Mode calculation,**
+Prerequisites
+-------------
 
 
-1. On the KPI card where you want to add a calculation, click ![](1.png), then select **Edit Card**.
-2. In Analyzer, click **Add Calculated Field**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
+To connect to yourÂ ServiceNowÂ account and create a DataSet, you must have a ServiceNowÂ username and password. You will also need to provideÂ the URL for your ServiceNow server. Usually this will be in the formatÂ <https://mycompany.servicenow.com>.
 
 
-The Beast Mode dialog appears.
-3. In **Calculated Field Name**, enter the title of the calculation.
+Connecting to YourÂ ServiceNowÂ Account
+---------------------------------------
 
 
-**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
-![Beast_Mode_Modal.png](Beast_Mode_Modal.png)
-**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
-4. In **Formula**, enter the calculation you want.  
-You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
-For more information about functions, see [Beast Mode Functions Reference Guide](../../raw_kb/article/beast_mode_functions_reference_guide/index.html).
-5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
-6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
-If there are errors, revise your calculation.   
-After saving, the calculation column appears in the Categories list for the card in Analyzer.
+This section enumerates the options in theÂ **Credentials**Â andÂ **Details**Â panes in theÂ ServiceNowÂ Connector page.Â The components of the other panes in this page,Â **Scheduling**Â andÂ **Name & Describe Your DataSet**, are universal across most connector types and are discussed in greater length inÂ [Adding a DataSet Using a Data Connector](..\adding_a_dataset_using_a_connector\index.html "Adding a DataSet Using a Data Connector").
 
 
-**To edit a Beast Mode calculation,**
+### Credentials Pane
 
 
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
-3. Make any changes you want, then click **Save & Close**.
-
-
-**To delete a Beast Mode calculation,**
-
-
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
-3. Click **Remove** to confirm deleting the calculation.
-
-
-Calculation usage notes
------------------------
-
-
-* Most calculations use one of the following general formats: 
+This pane contains fields for entering credentials to connect to your ServiceNowÂ account. The following table describes what is needed for each field: Â 
 
 
 
-| Format | Description |
+
+| Field | Description |
 | --- | --- |
-| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
-| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
-| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
-| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](../../raw_kb/article/date_format_specifier_characters_for_beast_mode/index.html "Date Format Specifier Characters in Beast Mode"). |
+| Host URL | Enter the URL for your ServiceNow server, e.g.Â <https://mycompany.servicenow.com>.Â  |
+| Username | Enter your ServiceNow username. User needs to have their timezone set to GMT time for accurate dates. |
+| PasswordÂ  | Enter your ServiceNowÂ password.Â  |
 
 
-* In calculations, Beast Mode function names are *not* case sensitive.
-* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
-* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
-Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
-* Use single quotes (') for strings: 'mystring'
-* You can escape a quote using two single quotes: 'O''Neal'
-* You can insert a space in a calculation using single quotes: `' '`  
-This is useful with functions like CONCAT when you need to combine strings.
-* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
-* You cannot refer to a specific calculation by name in another calculation.  
-For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
-* Calculations can be completed automatically as you enter them.
+Once you have entered validÂ ServiceNowÂ credentials, you can use the same account any time you go to create a newÂ ServiceNowÂ DataSet. You can manage connector accounts in theÂ **Accounts**Â tab in theÂ Data Center. For more information about this tab, seeÂ [Managing User Accounts for Connectors](..\managing_user_accounts_for_connectors\index.html "Managing User Accounts for Connectors").
 
 
-	+ As you enter functions, a list of functions appears, which you can select from.
-	+ If you enter a backtick ('), a list of column names appears, which you can select from.
-* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
-* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
-* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
-* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](../../raw_kb/article/adding_a_drill_path_to_your_chart/index.html "Adding Drill Path to Your Chart").
-* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
-* Do *not* mix data types of values you put in a transformed column.  
-For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
-* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
-* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
-* You can drag and drop a column name from the DataSet Fields list to your calculation.
-* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
+Â
+**Note:** The user account for the connected ServiceNow credentials *must* be set to Greenwich Mean Time (GMT); otherwise problems will occur. To edit your profile's time zone, do the following: 
+1. While logged into ServiceNow, navigate to **Self Service > My Profile**.
+2. Locate the property called **Time Zone**.
+3. Select **GMT** as the time zone.
+### Details Pane
 
 
-For Beast Mode syntax examples, see [Sample Beast Mode Calculations](../../raw_kb/article/sample_beast_mode_calculations/index.html).
+This pane contains a primaryÂ **Report**Â menu in which you select the type of table you want to pull. Depending on the table type you select, other options may appear.
 
 
-Applying a calculation to a summary number
-------------------------------------------
 
 
-If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
+| Menu | Description |
+| --- | --- |
+| Report | Select a ServiceNow report. The following reports are available:
+
+|  |  |
+| --- | --- |
+| Custom Query | Create a custom query. Includes the ability to select which fields are returned to the DataSet. |
+| Custom Table | Provide a custom table name to retrieve data from. |
+| Standard Table | Select from a list of standard tables from Service Now. |
+
+ |
+| Table | Select the ServiceNow table you want to retrieve data for. The following tables are available:
+
+|  |  |
+| --- | --- |
+| Incident | Retrieve data about incidents for a given date range, including impact, urgency level, description, close notes, etc.Â  |
+| Change Request | Retrieve change requests for a given date range. |
+| Problem | Retrieve data about problems for a given date range. |
+| User Groups | Retrieve data about user groups for a given date range. |
+| Users | Retrieve data about users for a given date range.Â  |
+
+ |
+| Table Name | Enter the name of the table you want to retrieve data for. |
+| Custom Query | Enter a custom query. Include only query values directly related to sysparm\_query. The fields sysparm\_limit and sysparm\_offset should not be included. If the field sys\_created\_on is included, the value should be in the following format: yyyy-MM-dd HH:mm:ss
+For example: 
+ORDERBYDESCsys\_created\_on^sys\_created\_on>2016-09-25+00:00:00^sys\_created\_on<2016-09-27+23:59:59
+For more information about query building, visit [http://wiki.servicenow.com/index.php...le\_API#Methods](http://wiki.servicenow.com/index.php?title=Table_API#Methods "http://wiki.servicenow.com/index.php?title=Table_API#Methods").
+Â
+**Important:** When creating custom queries, only include query values directly related to sysparm\_query. The fields sysparm\_limit and sysparm\_offset should not be included. If the field sys\_created\_on is included, the value should be in the following format: yyyy-MM-dd HH:mm:ss. |
+| Fields | Enter a comma-separated list of fields to return in your DataSet.
+For example:
+`parent,sys_updated_on,number` |
+| Data Date Format | Select the format you expect the ServiceNow API will return date fields. If you select String, Domo will not process the date at all, and return the literal string returned from the ServiceNow API. |
+| Upsert/Merge Key | Enter the upsert/merge key. By default sys\_id will be used as upsert/merge key. |
+| Select Date Type for Query | 
+
+|  |  |
+| --- | --- |
+| **Update Method** | **Description** |
+| Append | 
+
+|  |  |
+| --- | --- |
+| **First run** | Create Query with the selected Date Type for the selected DURATION. |
+| **Consecutive run** | Create Query with **sys\_updated\_on**from the last successful run date to Today, and Append to the existing data. |
+
+ |
+| Merge | 
+
+|  |  |
+| --- | --- |
+| **First run** | Create Query with the selected Date Type for the selected DURATION. |
+| **Consecutive run** | Create Query with**sys\_updated\_on**from the last successful run date to Today, and Merge to the existing data. |
+
+ |
+
+Â  |
+| Duration | Select the duration for the report (a Single Date, or a Date Range) |
+| Report Date | Specify whether theÂ data is for a specificÂ or relative date.Â ChooseÂ **Relative**Â if you always want the report toÂ retrieve data for aÂ given number of days back (which you specify inÂ **Days Back**) from the current date. For example, if you enterÂ 5Â for **Days Back**Â and set theÂ DataSet to updateÂ daily, eachÂ new day the report will update to show information for the date 5 days in the past. |
+| Select Specific Date | Select the date you want to retrieveÂ data for.Â Â  |
+| Days Back | Enter the number of days back from the current date that will be presented in the report.Â  |
+| Start Date | Specify whether theÂ first date in your date range is a specific or relative date. ChooseÂ **Relative**Â if you always want the report to retrieve data for a given number of days back (which you specify inÂ **Days Back to Start From**) from the current date.Â If you chooseÂ **Relative**Â here, you should also chooseÂ **RelativeÂ**forÂ **End Date**Â and specifyÂ a value forÂ **DaysÂ Back to End At**.Â 
+For example, if you enterÂ 10Â forÂ **Days Back to Start FromÂ**andÂ 5Â forÂ **Days Back to End AtÂ**and you set theÂ DataSet to updateÂ daily, each new day the report will update to show information for 5 to 10 days in the past.Â Â Â Â  |
+| Select Specific Start Date | Select the first date in your date range.Â Â  |
+| End Date | Specify whether theÂ last date in your date range is a specific or relative date. ChooseÂ **Relative**Â if you always want the report to retrieve data for a given number of days back (which you specify inÂ **Days Back toÂ End At**) from the current date.Â If you chooseÂ **Relative**Â here, you should also chooseÂ **RelativeÂ**forÂ **Start Date**Â and specifyÂ a value forÂ **DaysÂ Back toÂ Start From**.Â 
+For example, if you enterÂ 10Â forÂ **Days Back to Start FromÂ**andÂ 5Â forÂ **Days Back to End AtÂ**and you set theÂ DataSet to updateÂ daily, each new day the report will update to show information for 5 to 10 days in the past. |
+| Select Specific End Date | Select theÂ last date in your date range.Â  |
+| Days Back to Start From | Enter the number of days before the current date to use as the start date. Â 
+For example, if you enterÂ 10Â forÂ **Days Back to Start FromÂ**andÂ 5Â forÂ **Days Back to End At**Â and you set the DataSet to update daily, each day the report updates to show information for a 5-day range, starting 10 days ago and ending 5 days ago.Â  |
+| Days Back to End At | Enter the number of days before the current date to use as theÂ end date. Â 
+For example, if you enterÂ 10Â forÂ **Days Back to Start FromÂ**andÂ 5Â forÂ **Days Back to End At**Â and you set the DataSet to update daily, each day the report updates to show information for a 5-day range, starting 10 days ago and ending 5 days ago.Â Â  |
 
 
-* AVG
-* COUNT
-* COUNT (DISTINCT)
-* MAX
-* MIN
-* SUM
-* SUM (DISTINCT)
-* STDDEV\_POP, VAR\_POP
+### Other Panes
 
 
-When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
+The "Upsert" version of this connector includesÂ **Upsert**Â as an updateÂ option, alongside the standard "Replace" and "Append." When you select this option, you are asked to provide an upsert key that the system uses to match old data. If there are anyÂ existingÂ rows of data that use that key, they will be replaced with the new data instead of being added to the DataSet as new rows.
 
 
-**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number.
-For more information about summary numbers, see [Configuring Your Chart Summary Number](../../raw_kb/article/configuring_your_chart_summary_number/index.html "Configuring Your Chart Summary Number").
+The following points explain the preservation of a schema with varying column numbers and different column datatypes to avoid any confusion:
+
+
+
+* Domo preserves old schemas to avoid anyone making a mistake and thereby returning a different schema from the initial one, which can break all assets using the old schema.
+* If a query does not return a previously populated field, then the field in the dataset will be blank but not deleted..
+* Domo tries to infer the data type of a column when it ingests it. We could tell the connector to not change datatypes but in the case of a custom query where we donâ€™t have insight into the fields before they come over, it would not be advisable. E.g., suppose the connector initially infers that column is a numeric because thatâ€™s what coming in during the first run. If on the next run, the query returns something with a character and a numeric, then the connector will fail because it will recognize the column as String instead of numeric.
+* The connector will ingest the fields the API sends over. So if the API does not send over a field, the connector cannot ingest it.
+
+
+For information about the remaining sections of the connector interface, including how to configure scheduling, retry, and update options, seeÂ [Â Adding a DataSet Using a Data Connector](..\adding_a_dataset_using_a_connector\index.html "Adding a DataSet Using a Data Connector").Â Â 
+
+
+### FAQ
+
+
+##### Does this connector require whitelisting or allowlisting?
+
+
+You need to add the connector to the network's whitelist to power up.  
+You also must allow Domo's connector to talk to your ServiceNow instance by working with your IT team to Refer to the [add Domo's IPs to your network's allowlist](..\allowlisting_ip_addresses_for_connectors__federated_adapters\index.md)
+
+
+##### What version of the ServiceNow API does this connector use?
+
+
+This connector uses version 1 of the ServiceNow API (<https://{>hostName}/api/now/v1.)
+
+
+##### Which endpoint(s) does each report call in this connector?
+
+
+
+
+| Report Name | Endpoint URL |
+| --- | --- |
+| Custom Query | /table/{tableName} |
+| Custom Table | /table/{tableName} |
+| Standard Table | /table/{tableName} |
+
+
+##### What kind of credentials do I need to power up this connector?
+
+
+You need a host URL (ex: <https://mycompany.service-now.com>), and the username and password used to log into your ServiceNow instance.
+
+
+##### Do I need a certain kind of account with the data service to set up the connector?
+
+
+Your account needs to have the appropriate roles, and the table you are trying to access must have web services enabled.
+
+
+##### What else do I need to do to power up my connector?
+
+
+You have the option to choose one of the default tables we have included, however, if you need to pull from a custom table, you will need the table name. You also have the option of performing a custom ServiceNow query by providing a sysparmquery. Information on the structure of such a query can be found in the ServiceNow Table API documentation.
+
+
+##### How do I know if my query is right?
+
+
+You can test queries inside ServiceNow if you have the proper access.
+
+
+##### I keep running into failed datasets. How do I fix that?
+
+
+If the returned dates are incorrect, you need to verify if your ServiceNow instance is set to GMT or UTC format so that when we receive the data, we can properly translate it into your Domo timezone. If you are unable to change this for the entire company, you could create an individual user with their Timezone set to GMT or UTC specifically for the use inside DOMO.
+
+
+##### What's the difference between the ServiceNow connector and ServiceNow Upsert connector?
+
+
+The ServiceNow Upsert connector supports the upsert mode along with the append and replace modes, for scheduling the datasets.

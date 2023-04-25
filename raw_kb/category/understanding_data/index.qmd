@@ -1,0 +1,7 @@
+
+
+
+Understanding Data
+==================
+***
+* [Data Literacy](..\data_literacy\index.qmd)

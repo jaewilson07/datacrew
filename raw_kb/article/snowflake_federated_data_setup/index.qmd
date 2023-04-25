@@ -1,13 +1,13 @@
 ---
-title : Adding a Beast Mode Calculation to Your Chart
+title : Snowflake Federated Data Setup
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
-date: 2022-10-24 22:40:00
-url : https://domo-support.domo.com/s/article/360043429913
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429993', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043931814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428753']
-article_id : 000004076
-views : 10,979
-created_date : 2022-10-24 21:20:00
-last updated : 2022-10-24 22:40:00
+date: 2022-10-24 22:42:00
+url : https://domo-support.domo.com/s/article/360049429094
+linked_kbs :  ['https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360049429094', 'https://domo-support.domo.com/s/article/360043429913']
+article_id : 000003038
+views : 4,705
+created_date : 2022-10-24 21:05:00
+last updated : 2022-10-24 22:42:00
 ---
 
 
@@ -16,172 +16,128 @@ Intro
 -----
 
 
-You can use Beast Mode to add a calculation for use in transforming columns in your chart. 
+Domo has a new streamlined Federated connection setup experience for cloud native data warehouses, starting exclusively with Snowflake. You can directly setup a Snowflake connected account from Domoâ€™s Data Center experience and use that to create Federated DataSets from your Snowflake database tables.
 
 
-**Video - Intro to Beast Mode**
+Pre-requisites
+--------------
 
 
-{{< video www.youtube.com/embed/SpVbmZPMAsM >}}
- 
+To connect to your data in your Snowflake data warehouse, you need standard connection parameters such as your Snowflake account name, warehouses, databases to connect to, and the username/password. In general, you can start with a small-sized warehouse, however, we recommend a multi-cluster configuration which allows Snowflake to auto-scale to additional warehouses as needed to support your query volume.
 
 
-**Video - Creating a Calculated Field**
+Step-by-Step Walk through
+-------------------------
 
 
-{{< video www.youtube.com/embed/h6SQR_H9OsY >}}
- 
+1. Start with Domoâ€™s data warehouse platter visualization and click on the **+**Â **Add New Data Warehouse**Â button.  
+  
+![Warehouse_step_1.png](Warehouse_step_1.png)
+2. Select **Snowflake** Driver and clickÂ **Next**.  
+  
+![Warehouse_step_2.png](Warehouse_step_2.png)
+3. Enter your connection parameters specific to the Snowflake database you need to connect to. The following fields are required:
+	1. Account Name (to reference within Domo.)
+	2. Host â€“ This is the Snowflake account name for your Snowflake account. Note that your full account name may include additional segments that identify the region and the cloud service provider where your Snowflake account is hosted e.g. [xyz1234.us](http://xyz1234.us)-east-1, xyz1234.west-europe.azure, etc. You need to provide your full hostname, e.g. *[yourcompany.snowflakecomputing.com](http://yourcompany.snowflakecomputing.com)*
+	3. Warehouse â€“ Existing Snowflake warehouse you need want to use to send queries from Domo. We recommend setting a warehouse specific to Domo.
+	4. Username â€“ Snowflake username you want to connect with. We recommend creating a new user in your Snowflake account specifically to service Federated queries from Domo.
+	5. Password â€“ Password for your username.
+	6. Role and Port are optional depending on your Snowflake account setup.  
+	  
+	![Warehouse_step_3.png](Warehouse_step_3.png)
+4. You should have a Snowflake federate account created now. Common errors are typically due to incorrect connection parameters. Please contact SupportÂ for any help needed.  
+  
+![Warehouse_step_4.png](Warehouse_step_4.png)
+5. To create a new Federated DataSet, click on **Federated** in the connect data section of the header in the Data Center.  
+  
+![Warehouse_step_5.png](Warehouse_step_5.png)
+6. You will see a list of available databases in Snowflake, and you can choose the database and the specific table you want to create the Federated DataSet from. The Pane on the right shows you a preview of the data from your Snowflake table.  
+  
+![2.png](2.png)
+7. Enter the name for the DataSet (how you want to reference it in Domo), and you can optionally select a TTL for the cache. The default TTL value for cache is recommended at 900 seconds (15 minutes). If your Snowflake database table is expected to update faster than 15 minutes then you can choose a lower TTL.
 
 
-**Video - Case Statement Overview**
+On the preview pane on the right, you can also toggle between viewing a preview of the data or viewing the schema of the table being used. ClickÂ the **Create**Â button to complete your DomoÂ Federated DataSet creation.  
+  
+![Warehouse_step_6.png](Warehouse_step_6.png)
+8. You now have a DataSet created in Domo from your Snowflake data! You can create Cards using Analyzer from this DataSet, but ETL, SQL DataFlows and DataSet Alerts are not available to operate on Federated DataSets.
 
 
-{{< video www.youtube.com/embed/xFofhklohSc >}}
- 
+**Note:** DataSet Views (Beta) is available for Snowflake Federated DataSets. Please contact your Account Manager or Customer Success Manager for more details.
 
 
-Parts of the Beast Mode dialog
-------------------------------
+![Warehouse_step_8.png](Warehouse_step_8.png)
 
 
-The following screenshot shows how the Beast Mode dialog looks:
+![Warehouse_step_9.png](Warehouse_step_9.png)
 
 
-![Beast_Mode_Dialog.jpg](Beast_Mode_Dialog.jpg)
+FAQ
+---
 
 
-You can learn about the user interface components of the Beast Mode dialog in the following table:
+##### What connection mechanism is Domo using for the Snowflake Federated direct queries?
 
 
+Domo uses native Snowflake connectivity to query data from your Snowflake tables.
 
 
-| Name | Description |
-| --- | --- |
-| Calculated Field Name | Contains the name of a calculation, which appears in the Categories list in Analyzer, and as the heading of the transform column in cards. You can edit the name. This name cannot be the same as the name of any column in the DataSet; otherwise an error appears reading, "Your specified name for the calculation is invalid." |
-| Formula | Contains the functions you want in your calculation.You can add column names, calculations, and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists. You can validate your calculation by clicking **Validate Formula** (which appears after you edit the calculation in the **Formula** field) or by clicking **Save & Close**. If the calculation passes, a "Valid Formula" message appears. If the calculation does not pass, an "Invalid Formula" message appears. |
-| DataSet Fields | Lists categories, values, and calculations that you can double-click to add to your calculation.Calculation columns appear as categories in the list.You can search for items in the list or filter by type. If you enter `=` (equal sign) as the first character, only Beast Mode calculations display. |
-| Functions | Lists categories of functions that you can double-click to add to your calculation.You can search for items in the list or filter by type. |
-| Function Description | Displays the description of the selected function. |
-| Share Calculation on DataSet | Lets you share the selected calculation on the DataSet, meaning the calculation is available for use in other cards powered up by this DataSet. |
-| Save & Close | Lets you validate and save the selected calculation, and close the dialog.The calculation *must* be valid before you can use it to power up charts. |
+##### Can Domoâ€™s Connectors be used to bring data into the Snowflake warehouse?
 
 
-Adding a Beast Mode calculation
--------------------------------
+You can bring data into Domo by using Domoâ€™s 1000+ Connectors supporting various sources. Once your data is in Domo, and transformed as needed, you can use Domoâ€™s Snowflake Write-Back connector to push data into your Snowflake warehouse. Write-Back connectors are part of Domoâ€™s [Integration Studio](https://www.domo.com/product/integration-studio "https://www.domo.com/product/integration-studio") suite. More information on setting up Snowflake Write-Back connector can be found [here](https://domohelp.domo.com/Connect/Connecting_to_Data_with_Connectors/Configuring_Each_Connector/Writeback_Connectors/Snowflake_Writeback_Connector "https://knowledge.domo.com/Connect/Connecting_to_Data_with_Connectors/Configuring_Each_Connector/Writeback_Connectors/Snowflake_Writeback_Connector").
 
 
-Use the information in this section to add calculations for transforming data using Beast Mode. 
+##### Is there a limit on how many Snowflake Federated accounts and DataSets you can create?
 
 
-**To add a Beast Mode calculation,**
+Specific limits on accounts and DataSets depend on your account tier. Please contact your CSM or AE for more details.
 
 
-1. On the KPI card where you want to add a calculation, click ![](1.png), then select **Edit Card**.
-2. In Analyzer, click **Add Calculated Field**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
+##### What is the warehouse sizing guidance for using Domo Federated queries for Snowflake?
 
 
-The Beast Mode dialog appears.
-3. In **Calculated Field Name**, enter the title of the calculation.
+Warehouse sizing depends on how many DataSets, Dashboards, and Visualizations you have in Domo. At a minimum, we recommend a medium sized warehouse (M), and Auto Resume set to ON. For the best Domo and Snowflake experience, we recommend using a Large Snowflake warehouse (L). If you want to Auto suspend your warehouse during periods of inactivity, you can set that as needed. Domo can help you with sizing your Snowflake warehouses as your Domo usage changes.
 
 
-**Note:**The title is used as the heading of the created column that may appear in Cards. If you name the Beast Mode the same name as another Beast Mode or column in the DataSet, a modal will pop up allowing you to change the Beast Mode name (along with any others that need to be fixed.)  
-![Beast_Mode_Modal.png](Beast_Mode_Modal.png)
-**Important:** It is best to avoid naming Beast Modes as a single keyword that is used in a function, such as "Date" or "Sum". Using words like this can cause the Beast Mode to fail. Whereas "Date Created" and "Sum of Sales" are acceptable.
-4. In **Formula**, enter the calculation you want.  
-You can add column names and functions to your calculation by double-clicking items in the **DataSet Fields** and **Functions** lists.  
-For more information about functions, see [Beast Mode Functions Reference Guide](../../raw_kb/article/beast_mode_functions_reference_guide/index.html).
-5. (Optional) Mark the option to share the calculation with any cards using the DataSet.
-6. Click **Save & Close** to validate the syntax of the calculation and save your changes.  
-If there are errors, revise your calculation.   
-After saving, the calculation column appears in the Categories list for the card in Analyzer.
+##### Do Alerts work with federated data?
 
 
-**To edit a Beast Mode calculation,**
+Alerts are supported for Domo Cards built from Federated DataSets. However, DataSet Alerts are not supported currently.
 
 
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, click the calculation column you want to edit.
-3. Make any changes you want, then click **Save & Close**.
+##### Does Domoâ€™s DataSet Views Explorer work on Snowflake Federated DataSets?
 
 
-**To delete a Beast Mode calculation,**
+Yes, Domoâ€™s interactive, easy to use DataSet views feature can be used to explore Snowflake Federated DataSets. You can filter, group, limit, sort, and join DataSets, as well as create new calculated columns and save your transformation as new DataSet Views. These DataSet Views are virtual in Domo, and do not create Views in the customer Snowflake Data warehouse.
 
 
-1. On the KPI card where you want to edit a calculation, click ![](1.png), then select **Edit Card**.  
-For more information about Analyzer, see [Analyzer Layout](../../raw_kb/article/analyzer_layout/index.html "Card Builder Layout").
-2. In Analyzer, in the **Categories** list, mouse over the calculation column you want to remove, then click **X**.
-3. Click **Remove** to confirm deleting the calculation.
+##### Can Domoâ€™s ETL and SQL tools be used to transform federated DataSets?
 
 
-Calculation usage notes
------------------------
+No, currently this isnâ€™t supported, but we would love to understand your use case. Please reach out via your CSM or AE to talk to Domoâ€™s product team.
 
 
-* Most calculations use one of the following general formats: 
+##### What is the timeout for loading data from Snowflake?
 
 
+Viewing data on-screen and exporting data are subject to different timeouts within Domo. These timeouts only apply to the Domo side of the action and are not issued to Snowflake. However, Domo does respect the Snowflake session timeout.
 
-| Format | Description |
-| --- | --- |
-| `FUNCTIONNAME(`Column Name`)` | Used when some single, specific change is applied to all of the cells in a column. Examples of functions used in this kind of calculation include `AVG`, `MONTHNAME`, and `CEILING`. |
-| `FUNCTIONNAME(`Column Name1`,`Column Name2`,...)` | Used when a calculation is applied across two or more columns. One example of a function used in this kind of calculation is `CONCAT`, which combines strings from different columns. |
-| `FUNCTIONNAME(`Column Name`,*somevalue*)` | Used when a calculation involving a specified value is applied to a column. An example of a function used in this kind of calculation is `POWER`. When using this calculation, you specify the power you want all the cells in a column to be raised to. |
-| `FUNCTIONNAME(`Column Name`, '*string*')` | Used when a calculation involving a specified string is applied to a column. An example of a function used in this kind of calculation is `DATE_FORMAT`. When using this calculation, you specify specifier characters to use in formatting the date value. For more information, see [Date Format Specifier Characters in Beast Mode](../../raw_kb/article/date_format_specifier_characters_for_beast_mode/index.html "Date Format Specifier Characters in Beast Mode"). |
 
+Examples:
 
-* In calculations, Beast Mode function names are *not* case sensitive.
-* In calculations, column names are case sensitive and are separated by commas. Do *not* use Beast Mode function names as column names; Beast Mode function names are reserved.
-* Use backticks (aka *backquotes*) (`) or double quotes (") for column names: `Customers` or "Customers"  
-Wrap column names of two or more words with backticks (`) or double quotes ("). If you use any column name that matches the name of a function (such as DATE), then use backticks or double quotes (") to wrap the column name.
-* Use single quotes (') for strings: 'mystring'
-* You can escape a quote using two single quotes: 'O''Neal'
-* You can insert a space in a calculation using single quotes: `' '`  
-This is useful with functions like CONCAT when you need to combine strings.
-* You can use most standard arithmetic operators in your custom calculations, such as + (addition), - (subtraction), \* (multiplication), / (division), and so on.
-* You cannot refer to a specific calculation by name in another calculation.  
-For example, if you create a calculation called "MaxColumn1," you cannot use that name when defining another calculation.
-* Calculations can be completed automatically as you enter them.
 
 
-	+ As you enter functions, a list of functions appears, which you can select from.
-	+ If you enter a backtick ('), a list of column names appears, which you can select from.
-* When you check the box for **Share Calculation on DataSet** for a calculation, that calculation is saved to the DataSet. The calculation is then available for use in any other charts that use this DataSet.
-* If your calculation aggregates rows in your DataSet, you can apply it to your card summary number. For more information, see the [next](#h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc "Adding a Beast Mode Calculation to Your Chart") section.
-* While you can combine some functions in a calculation, you *cannot* stack numerical functions. For example, SUM(MIN()) is invalid.
-* Calculations you create using Beast Mode are inherited when you drill from one view to another using the same DataSet. However, calculations are not inherited when you drill to a new DataSet. For information about drill paths, see [Adding Drill Path to Your Chart](../../raw_kb/article/adding_a_drill_path_to_your_chart/index.html "Adding Drill Path to Your Chart").
-* You can make selecting filter options easier by using "Yes" and "No" rather than "1" and "0" in calculations.
-* Do *not* mix data types of values you put in a transformed column.  
-For example, in a CASE function, do not store "Yes" (string) and "0" (number) in the same column.
-* You can double click categories, values, functions, and DataSet fields in the lists to add them to your calculation.
-* As you type a column or function name, a menu appears, which you can select from to add them to your calculation. For example, enter ` to see the column list, then select the column you want.
-* You can drag and drop a column name from the DataSet Fields list to your calculation.
-* Any Beast Mode calculations that use processing intensive functions such as COUNT (DISTINCT) or SUM (DISTINCT) will slow down the visualization performance of cards that are built off of large DataSets. This also happens with complex case statements that are over 30 lines of code. If you have to build these functions into a large DataSet, we recommend you do it in a DataFlow to optimize visualization performance.
+* If a Card cannot be rendered within the Domo timeout, an error message is displayed on-screen, but the Snowflake query is not canceled. That query is then subject to the timeout defined in Snowflake.
+* If a Card cannot be rendered within the Snowflake timeout, and that timeout is less than the Domo timeout, an error message is displayed on-screen and the query is canceled (from the Snowflake side).
 
 
-For Beast Mode syntax examples, see [Sample Beast Mode Calculations](../../raw_kb/article/sample_beast_mode_calculations/index.html).
+Timeouts:
 
 
-Applying a calculation to a summary number
-------------------------------------------
 
+* Cards will attempt to render on-screen for up to 1-minute.
+* Exports, both from Cards and DataSets, will attempt to export for up to 12-hours.
 
-If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
 
-
-* AVG
-* COUNT
-* COUNT (DISTINCT)
-* MAX
-* MIN
-* SUM
-* SUM (DISTINCT)
-* STDDEV\_POP, VAR\_POP
-
-
-When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
-
-
-**Note:**For a Beast Mode column to work as the Summary Number, it must be aggregated in some way (for example, the SUM() function) or be the result of an operation on values within functions (for example, SUM() functions). For instance,  'Customers' does *not* work for a Summary Number, but SUM('Customers') may be used as a Summary Number.
-For more information about summary numbers, see [Configuring Your Chart Summary Number](../../raw_kb/article/configuring_your_chart_summary_number/index.html "Configuring Your Chart Summary Number").
+To change the Snowflake session timeout, adjust the STATEMENT\_TIMEOUT\_IN\_SECONDS session parameter. We recommend adjusting this setting based on the primary usage of your DataSets. For example, if they're primarily used for exporting, you may want a longer timeout than if the DataSets are primarily being used to render Cards in Domo.

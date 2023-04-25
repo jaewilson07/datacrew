@@ -1,0 +1,18 @@
+
+
+
+DataFlow Management
+===================
+***
+* [Changing the Owner of a DataFlow](..\..\article\changing_the_owner_of_a_dataflow\index.qmd)
+* [Configuring Notifications for Failed DataFlows](..\..\article\configuring_notifications_for_failed_dataflows\index.qmd)
+* [Copying a DataFlow](..\..\article\copying_a_dataflow\index.qmd)
+* [DataFlows Disabled Due to Extended Inactivity](/s/article/4404652354583)
+* [Disabling or Deleting a DataFlow](..\..\article\disabling_or_deleting_a_dataflow\index.qmd)
+* [Running a DataFlow](..\..\article\running_a_dataflow\index.qmd)
+* [Scheduling DataFlows](..\..\article\scheduling_dataflows\index.qmd)
+* [Separating Staging and Production Data](..\..\article\separating_staging_and_production_data\index.qmd)
+* [Should I Use a DataFusion or a DataFlow?](..\..\article\should_i_use_a_datafusion_or_a_dataflow\index.qmd)
+* [Top 5 Issues Users Experience with DataFlows in Domo](..\..\article\top_5_issues_users_experience_with_dataflows_in_domo\index.qmd)
+* [Viewing DataFlow Details](..\..\article\viewing_dataflow_details\index.qmd)
+* [Viewing the Version History for a DataFlow](..\..\article\viewing_the_version_history_for_a_dataflow\index.qmd)
