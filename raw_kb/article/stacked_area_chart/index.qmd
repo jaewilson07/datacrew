@@ -3,7 +3,7 @@ title : Stacked Area Chart
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 date: 2022-10-24 22:41:00
 url : https://domo-support.domo.com/s/article/360043428033
-linked_kbs :  ['https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043428033', 'https://domo-support.domo.com/s/article/360043428713', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360043428693', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360042923334', 'https://domo-support.domo.com/s/article/360043429913']
+linked_kbs :  ['https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043428693', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043428033', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360042923334', 'https://domo-support.domo.com/s/article/360043428713']
 article_id : 000004751
 views : 4,008
 created_date : 2022-10-24 22:29:00
@@ -16,10 +16,10 @@ Intro
 -----
 
 
-A Stacked Area chart is a multi-line [Stacked Bar Chart](..\stacked_bar_chart\index.html "Line Graph"). The total size of the area for each segment reflects the cumulative value of all data items in that category.
+A Stacked Area chart is a multi-line [Stacked Bar Chart](..\stacked_bar_chart\index.qmd "Line Graph"). The total size of the area for each segment reflects the cumulative value of all data items in that category.
 
 
-A Stacked Area chart is similar to a standard Area chart; however, in a Stacked Area chart, all segments are shown at once, either side by side or on top of each other, whereas in a standard Area chart, all segments have the same baseline and therefore overlap.Â 
+A Stacked Area chart is similar to a standard Area chart; however, in a Stacked Area chart, all segments are shown at once, either side by side or on top of each other, whereas in a standard Area chart, all segments have the same baseline and therefore overlap. 
 
 
 Subtypes
@@ -42,32 +42,32 @@ Stacked Area charts have a number of subtypes, including all of the following:
 * Horizontal 100% Step Stacked Area
 
 
-For explanations and screenshots for these subtypes, see [Available Chart Types](..\..\category\chart_types\index.html "Available Chart Types").Â 
+For explanations and screenshots for these subtypes, see [Available Chart Types](..\..\category\chart_types\index.qmd "Available Chart Types"). 
 
 
 Powering Stacked Area charts
 ----------------------------
 
 
-Stacked Area charts require three columns or rows of data from your DataSetâ€”one for categories (generally dates), one for series in those categories, and one for values. For information about value, category, and series data, see [Understanding Chart Data](..\understanding_chart_data\index.html "Understanding Chart Data").
+Stacked Area charts require three columns or rows of data from your DataSet—one for categories (generally dates), one for series in those categories, and one for values. For information about value, category, and series data, see [Understanding Chart Data](..\understanding_chart_data\index.qmd "Understanding Chart Data").
 
 
-In the Analyzer,Â you choose the columns containing the data for your Stacked Area chart. For more information about choosing data columns, seeÂ [Applying DataSet Columns to Your Chart](..\applying_dataset_columns_to_your_chart\index.html "Applying DataSet Columns to Your Chart").
+In the Analyzer, you choose the columns containing the data for your Stacked Area chart. For more information about choosing data columns, see [Applying DataSet Columns to Your Chart](..\applying_dataset_columns_to_your_chart\index.qmd "Applying DataSet Columns to Your Chart").
 
 
-For more information about formatting charts in the Analyzer, see [VisualizationÂ Card Building Part 2: The Analyzer](..\..\category\analyzer\index.md).
+For more information about formatting charts in the Analyzer, see [Visualization Card Building Part 2: The Analyzer](..\..\category\analyzer\index.qmd).
 
 
 The following graphic shows you how the data from a typical column-based spreadsheet is converted into a horizontal Stacked Area chart:
 ![area_graph_spreadsheet_example_new.png](area_graph_spreadsheet_example_new.png)
 
 
-Â
+
 Customizing Stacked Area charts
 -------------------------------
 
 
-You can customize the appearance of a Stacked Area chart by editing its **Chart Properties**. For information about all chart properties, see [Chart Properties](..\..\category\chart_properties\index.html "Chart Properties"). Unique properties of Stacked Area charts include the following:
+You can customize the appearance of a Stacked Area chart by editing its **Chart Properties**. For information about all chart properties, see [Chart Properties](..\..\category\chart_properties\index.qmd "Chart Properties"). Unique properties of Stacked Area charts include the following:
 
 
 
@@ -75,6 +75,3 @@ You can customize the appearance of a Stacked Area chart by editing its **Chart 
 | Property | Description | Example |
 | --- | --- | --- |
 | General > Style | Determines the style for a Stacked Area chart, either "Flat," "Folded," "Curved" or "Step." The default style of the chart depends on the specific subtype you have selected. If you select "Folded," the chart takes on a 3-D appearance, as shown in the example at right. | folded_area.png |
-
-
-Â

@@ -3,7 +3,7 @@ title : Magic ETL Tiles: Performance
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 date: 2022-10-24 22:41:00
 url : https://domo-support.domo.com/s/article/4405156517527
-linked_kbs :  ['https://domo-support.domo.com/s/article/360055259234', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360045485833', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042922874', 'https://domo-support.domo.com/s/article/4405156517527', 'https://domo-support.domo.com/s/article/360047553253', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043429913']
+linked_kbs :  ['https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/4405156517527', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360045485833', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360055259234', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360047553253', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360042922874']
 article_id : 000003000
 views : 4,118
 created_date : 2022-10-24 20:59:00
@@ -12,11 +12,10 @@ last updated : 2022-10-24 22:41:00
 
 
 
-Â
-**Note:**Â  This feature is availableÂ *on demand and paid*.
+**Note:**  This feature is available *on demand and paid*.
 
 
-Â 
+ 
 
 
 To request this feature be enabled,
@@ -24,7 +23,7 @@ To request this feature be enabled,
 
 
 * Reach out to your Domo Customer Success Manager, Technical Consultant, or AE.
-* If you do not have contact information for your CSM, TC, or AE, contact Technical Support for information on how to contact Support, please see: [Getting Help](..\getting_help\index.md)
+* If you do not have contact information for your CSM, TC, or AE, contact Technical Support for information on how to contact Support, please see: [Getting Help](..\getting_help\index.qmd)
 
 
 Depending on the feature, you may be required to complete training before you can use the feature.
@@ -40,14 +39,13 @@ There are two available tiles in the Performance tab of Magic ETL DataFlows. The
 * Restore Columns
 
 
-For information about creating a Magic ETL DataFlow, see [Creating a Magic ETL DataFlow](..\creating_a_magic_etl_dataflow\index.html "Creating a Magic ETL DataFlow").
+For information about creating a Magic ETL DataFlow, see [Creating a Magic ETL DataFlow](..\creating_a_magic_etl_dataflow\index.qmd "Creating a Magic ETL DataFlow").
 
 
 For information about the Data Center, see [Data Center Layout](https://domo-support.domo.com/s/article/360047553253?language=en_US).
 
 
-Â
-**Important:** There are significant behavioral differences in the new Magic ETL. Read the Behavior Changes and Feature Updates in Magic ETLÂ article before converting mission-critical Magic ETL DataFlows.Â **Failure to do so may risk an unintended change to your DataFlowâ€™s behavior.**
+**Important:** There are significant behavioral differences in the new Magic ETL. Read the Behavior Changes and Feature Updates in Magic ETL article before converting mission-critical Magic ETL DataFlows. **Failure to do so may risk an unintended change to your DataFlow’s behavior.**
 ![Performance_Tab.png](Performance_Tab.png)
 
 
@@ -55,7 +53,7 @@ Prerequisites
 -------------
 
 
-The Performance tiles are intended for use with either the Python or R Scripting tiles. For more information on the Scripting tiles, see [Magic ETL Tiles: Scripting](..\magic_etl_tiles_scripting\index.md).
+The Performance tiles are intended for use with either the Python or R Scripting tiles. For more information on the Scripting tiles, see [Magic ETL Tiles: Scripting](..\magic_etl_tiles_scripting\index.qmd).
 
 
 ![Performance_Tiles_Configuration.png](Performance_Tiles_Configuration.png)
@@ -82,8 +80,7 @@ The Select and Store Columns tile allows you to store/remove columns that are no
 3. Select the columns you want to use in the subsequent Python or R Scripting tile.
 4. (Optional) To verify all desired columns have been selected, hide all non-selected columns in the list by clicking ![Eye.png](Eye.png).
 5. Name the column that you will use to restore the columns to the DataFlow.
- Â
-**Important:** Do not modify the column you named in this step in any other tile in the DataFlow or the Restore Columns tile will not work as expected.
+ **Important:** Do not modify the column you named in this step in any other tile in the DataFlow or the Restore Columns tile will not work as expected.
 
 
 Restore Columns Tile

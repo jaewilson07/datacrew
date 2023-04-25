@@ -3,7 +3,7 @@ title : Magic ETL Tiles: Combine Data
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 date: 2022-10-24 22:41:00
 url : https://domo-support.domo.com/s/article/360044876194
-linked_kbs :  ['https://domo-support.domo.com/s/article/360055259234', 'https://domo-support.domo.com/s/article/360047787514', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360044876194', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360047553253', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043429913']
+linked_kbs :  ['https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360044876194', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360055259234', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360047553253', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360047787514']
 article_id : 000002998
 views : 5,845
 created_date : 2022-10-24 20:58:00
@@ -24,15 +24,14 @@ There are two available tiles in the Combine Data tab of Magic ETL DataFlows. Th
 * Join Data
 
 
-For information about creating a Magic ETL DataFlow, see [Creating a Magic ETL DataFlow](..\creating_a_magic_etl_dataflow\index.html "Creating a Magic ETL DataFlow").
+For information about creating a Magic ETL DataFlow, see [Creating a Magic ETL DataFlow](..\creating_a_magic_etl_dataflow\index.qmd "Creating a Magic ETL DataFlow").
 
 
 For information about the Data Center, see [Data Center Layout](https://domo-support.domo.com/s/article/360047553253?language=en_US).
 
 
-Â
-**Important:** There are significant behavioral differences in the new Magic ETL. Read the **[Behavior Changes and Feature Updates in Magic ETL](..\behavior_changes_and_feature_updates_in_magic_etl\index.html "Upgrading to the New Magic ETL")**Â article before converting mission-critical Magic ETL DataFlows. **Failure to do so may risk an unintended change to your DataFlowâ€™s behavior.**
-Â 
+**Important:** There are significant behavioral differences in the new Magic ETL. Read the **[Behavior Changes and Feature Updates in Magic ETL](..\behavior_changes_and_feature_updates_in_magic_etl\index.qmd "Upgrading to the New Magic ETL")** article before converting mission-critical Magic ETL DataFlows. **Failure to do so may risk an unintended change to your DataFlow’s behavior.**
+ 
 
 
 ![Combine_Data_Tab.png](Combine_Data_Tab.png)
@@ -46,13 +45,12 @@ Append Rows Tile
 The Append Rows tile lets you append rows from multiple DataSets (with similar columns and data structure) into one DataSet, returning occurrences of all matches, including duplicate rows.
 
 
-Â
-**Note:Â**You can only append data rows from input DataSets having the same data structure and data type. If the data structures do not match, the Append Rows tile creates extra columns to accommodate the non-matching data.Â For example, if you tried to append text to a whole numbersÂ column, two columns would be createdâ€”one for the whole numbers column and one for the text column.**Â Â**
-**Video -Â Appending Rows inÂ Magic ETL**
+**Note:**You can only append data rows from input DataSets having the same data structure and data type. If the data structures do not match, the Append Rows tile creates extra columns to accommodate the non-matching data. For example, if you tried to append text to a whole numbers column, two columns would be created—one for the whole numbers column and one for the text column.
+**Video - Appending Rows in Magic ETL**
 
 
 {{< video www.youtube.com/embed/6UL-R4jGdTg >}}
-Â 
+ 
 
 
 **Example**
@@ -88,8 +86,7 @@ and this data...
 ![Append_Configuration.png](Append_Configuration.png)
 
 
-Â
-**Note:Â**When previewing, the transformed data might not sort rows in the order you expect. You can control the row order when displaying data in table cards.
+**Note:**When previewing, the transformed data might not sort rows in the order you expect. You can control the row order when displaying data in table cards.
 **To configure the Append Rows tile,**
 
 
@@ -107,33 +104,30 @@ and this data...
 4. Review changes to be made to each DataSet.
 
 
-Â
-**Tip:** You can preview the data transformed by a tileÂ by running a preview, clicking the tile in the canvas, then clicking the **Preview** tab.
-Â
+**Tip:** You can preview the data transformed by a tile by running a preview, clicking the tile in the canvas, then clicking the **Preview** tab.
 Join Data Tile
 --------------
 
 
-Â ![Join_Data.png](Join_Data.png)
+ ![Join_Data.png](Join_Data.png)
 
 
-The Join Data tile lets you combine columns from two DataSets or data "streams" into one DataSetÂ using common values in a specific column (or set of columns).Â The columns *must* exist in both input DataSets and have the same data structure.
+The Join Data tile lets you combine columns from two DataSets or data "streams" into one DataSet using common values in a specific column (or set of columns). The columns *must* exist in both input DataSets and have the same data structure.
 
 
-Â
-**Note:Â**JOINs inÂ Magic ETLÂ for matching the lookup and matching columns are case-sensitive.Â
-**Video - Comparing Types of Joins inÂ Magic ETL**
+**Note:**JOINs in Magic ETL for matching the lookup and matching columns are case-sensitive.
+**Video - Comparing Types of Joins in Magic ETL**
 
 
 {{< video www.youtube.com/embed/zmjzOjP2_l0 >}}
-Â 
+ 
 
 
-**Video - Joining Data in Magic ETL**Â â€‹
+**Video - Joining Data in Magic ETL** ​
 
 
 {{< video www.youtube.com/embed/2ndqQitova4 >}}
-Â 
+ 
 
 
 **Example**
@@ -169,23 +163,21 @@ and this data...
 ![Join_Fix.png](Join_Fix.png)
 
 
-Â
-Â **Notes:**
+**Notes:**
 
 
 
 * In the transformed data, Domo adds "\_1" to the name of specified matching columns.
-* When previewing, the transformed data might not sort rows in the order you expect. You can control the row order when displaying data in table cards.Â
+* When previewing, the transformed data might not sort rows in the order you expect. You can control the row order when displaying data in table cards.
 **To configure the Join Data tile,**
 
 
 1. Click the **Join Data** tile in the canvas.
 2. (Optional) Rename the tile by clicking ![de_edit.png](de_edit.png), then entering the name you want.
-3. Determine the column to use in combining data.Â 
+3. Determine the column to use in combining data. 
 
 
-Â
-**Notes:** 1)Â The specific column used to combine rows *must* exist in both DataSets and have the same data structure. 2)Â Domo refers to the column in the first input DataSet as the *identifying column* and refers to the column in the second input DataSet as the *matching column.Â*3)Â For Inner, Left Outer, and Full Outer joins, specify the primary or "lookup table" with the unique values as the first input DataSet (on the left). (The identifying column *cannot* have more than 10,000 duplicates of any value.)
+**Notes:** 1) The specific column used to combine rows *must* exist in both DataSets and have the same data structure. 2) Domo refers to the column in the first input DataSet as the *identifying column* and refers to the column in the second input DataSet as the *matching column.*3) For Inner, Left Outer, and Full Outer joins, specify the primary or "lookup table" with the unique values as the first input DataSet (on the left). (The identifying column *cannot* have more than 10,000 duplicates of any value.)
 4. Select the first input DataSet (on the left), then select the identifying column you want.  
  The identifying column must be paired with a matching column in the second input DataSet.
 5. Select the second input DataSet (on the right), then select the matching column you want.  
@@ -196,12 +188,11 @@ and this data...
 
 | Join Type | Description |
 | --- | --- |
-| etljoin_inner.pngÂ  Inner | Includes only matching rows in both input DataSets. |
+| etljoin_inner.png  Inner | Includes only matching rows in both input DataSets. |
 | etljoin_leftouter.png Left Outer | Includes all rows from the first input DataSet (on the left) and matching rows from the second input DataSet (on the right). |
 | etljoin_rightouter.png Right Outer | Includes all rows from the second input DataSet (on the right) and matching rows from the first input DataSet (on the left). |
 | etljoin_fullouter.png Full Outer | Includes all rows from both input DataSets. |
 7. (Conditional) If you want to define another pair of columns, click **Match Another Column**, then configure the paired columns.
 
 
-Â
-**Tip:** You can preview the data transformed by a tileÂ by running a preview, clicking the tile in the canvas, then clicking the **Preview** tab.
+**Tip:** You can preview the data transformed by a tile by running a preview, clicking the tile in the canvas, then clicking the **Preview** tab.

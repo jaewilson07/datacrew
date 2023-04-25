@@ -3,7 +3,7 @@ title : Adding a Goal Line to Your Chart
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 date: 2022-10-24 22:40:00
 url : https://domo-support.domo.com/s/article/360043428773
-linked_kbs :  ['https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360043428773', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043429913']
+linked_kbs :  ['https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043428773', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 article_id : 000004634
 views : 4,729
 created_date : 2022-10-24 22:17:00
@@ -19,7 +19,7 @@ Intro
 In the Analyzer, you can specify a scale marker or range for a goal you hope to achieve (or a scenario you want to avoid, such as dropping under a certain value). For example, in the following screenshot, a scale marker has been set for $1000, which the company achieved on January 5th and 14th.
 
 
-![](0.png)ï»¿
+![](0.png)﻿
 
 
 You can do this using two different methods: by entering a value into the **Goal** field above the chart, or by using Chart Properties. If you enter goals using both methods, two different goal markers are added to the chart.
@@ -29,7 +29,7 @@ Adding a Goal Using the Goal Field
 ----------------------------------
 
 
-The simplest way to configure a goal marker is by entering a target value in the **Goal** field.Â This fieldÂ is foundÂ in the dialog of additional optionsÂ that appears when you click a column name in the fields region above the chart preview.Â This field is available only for value data.
+The simplest way to configure a goal marker is by entering a target value in the **Goal** field. This field is found in the dialog of additional options that appears when you click a column name in the fields region above the chart preview. This field is available only for value data.
 
 
 ![](1.png)
@@ -44,7 +44,7 @@ The **Goal** option is available for most kinds of Bar and Line graphs, as well 
 **To add a goal in this way,**
 
 
-1. In the field region above the chart preview in Analyzer, click the value columnÂ you want to add a goal to.Â
+1. In the field region above the chart preview in Analyzer, click the value column you want to add a goal to.
 2. Enter your numerical goal into the **Goal** field.
 
 
@@ -69,27 +69,27 @@ The following table lists and describes all of the properties available for conf
 
 | Option | Description | Example |
 | --- | --- | --- |
-| Text | Lets you specifyÂ text to replace the default word "GOAL" that normally appears above the top left corner of the graph when a scale marker has been set. If the graph contains a legend, an item for the scale marker is added to the legend with this text (unless you hide it by checking the **Scale Marker > Hide in Legend**Â box).Â 
-The example shows a chart in which "MONTHLY TARGET" has been entered as the custom text.Â  |  |
-| Scale | In dual-scale graphs, lets you specify whether the goal in the graph is associated with the left orÂ right scale. | â€” |
-| Type | Lets you specify whether the scale marker is a line or a range of values.Â  | â€” |
-| Value | Lets you specify the value of your scale marker line. This option is only available when you selectÂ **Line**Â in theÂ **TypeÂ**menu. | â€” |
-| Color | Lets you specify the colorÂ of your scale marker line, together with the color of the goal value that appears above the top left corner of the graph.Â This option is only available when you selectÂ **Line**Â in theÂ **TypeÂ**menu.
-In the example, the user has selected a red-orange color for the line and value.Â  |  |
-| Width | Lets you specify the width of your scale marker lineâ€”either **ThinÂ**(the default), **Medium**, and **Thick**. This option is only available when you selectÂ **Line**Â in theÂ **TypeÂ**menu.
-In the example, the user has selected **Thick**Â for this option.Â  |  |
-| Style | Lets you select whether your scale marker line appears solid (default) or dashed.Â This option is only available when you selectÂ **Line**Â in theÂ **TypeÂ**menu.
-In the example, the user has selected **Dashed**Â for this option.Â  |  |
-| Upper Value | Lets you select the value for the upper line in your scale marker range.Â This option is only available when you selectÂ **Range**Â in theÂ **TypeÂ**menu.
-Â  | â€” |
-| Lower Value | Lets you select the value for the lowerÂ line in your scale marker range.Â This option is only available when you selectÂ **Range**Â in theÂ **TypeÂ**menu. | â€” |
-| Fill Color | Lets you select the fill colorÂ forÂ your scale marker range.Â This option is only available when you selectÂ **Range**Â in theÂ **TypeÂ**menu. | â€” |
-| Fill Transparency Percent | Lets you enter an transparencyÂ percentage for the fill in your scale marker range. This should be a value between 0 and 100. The higher the value, the more transparent the fill. This option is only available when you selectÂ **Range**Â in theÂ **TypeÂ**menu. | â€” |
-| Border Color | Lets you select theÂ border colorÂ forÂ your scale marker range.Â This option is only available when you selectÂ **Range**Â in theÂ **TypeÂ**menu. | â€” |
-| Border Style | Lets you select whether the borders of your scale marker rangeÂ appearÂ solid (default) or dashed.Â This option is only available when you selectÂ **Range**Â in theÂ **TypeÂ**menu. | â€” |
-| Outlier Fill Color | Lets you select the fill color between the line and scale marker range.Â This option is only available only for Line graphs and only when you selectÂ **Range**Â in theÂ **TypeÂ**menu. | â€” |
-| Outlier Fill Transparency Percent | Lets you enter an transparencyÂ percentage for the fill between the line and scale marker range.Â This should be a value between 0 and 100. The higher the value, the more transparent the fill. This option is only available only for Line graphs and only when you selectÂ **Range**Â in theÂ **TypeÂ**menu. | â€” |
-| Decimal Places | Lets you specify the number of decimal places in the goal value, both in the title as well as in theÂ hover text.Â  | â€” |
-| Value Abbreviation | Lets you specify whether values are abbreviated based on the scale marker abbreviation (default) or 3 significant digits. | â€” |
-| Hide in Legend | Lets you prevent a scale marker item from being added to the legend (if the graph contains a legend). | â€” |
-| Hide Title | Hides the goal text and value that normally appear over the top left corner of the graph. | â€” |
+| Text | Lets you specify text to replace the default word "GOAL" that normally appears above the top left corner of the graph when a scale marker has been set. If the graph contains a legend, an item for the scale marker is added to the legend with this text (unless you hide it by checking the **Scale Marker > Hide in Legend** box). 
+The example shows a chart in which "MONTHLY TARGET" has been entered as the custom text.  |  |
+| Scale | In dual-scale graphs, lets you specify whether the goal in the graph is associated with the left or right scale. | — |
+| Type | Lets you specify whether the scale marker is a line or a range of values.  | — |
+| Value | Lets you specify the value of your scale marker line. This option is only available when you select **Line** in the **Type**menu. | — |
+| Color | Lets you specify the color of your scale marker line, together with the color of the goal value that appears above the top left corner of the graph. This option is only available when you select **Line** in the **Type**menu.
+In the example, the user has selected a red-orange color for the line and value.  |  |
+| Width | Lets you specify the width of your scale marker line—either **Thin**(the default), **Medium**, and **Thick**. This option is only available when you select **Line** in the **Type**menu.
+In the example, the user has selected **Thick** for this option.  |  |
+| Style | Lets you select whether your scale marker line appears solid (default) or dashed. This option is only available when you select **Line** in the **Type**menu.
+In the example, the user has selected **Dashed** for this option.  |  |
+| Upper Value | Lets you select the value for the upper line in your scale marker range. This option is only available when you select **Range** in the **Type**menu.
+  | — |
+| Lower Value | Lets you select the value for the lower line in your scale marker range. This option is only available when you select **Range** in the **Type**menu. | — |
+| Fill Color | Lets you select the fill color for your scale marker range. This option is only available when you select **Range** in the **Type**menu. | — |
+| Fill Transparency Percent | Lets you enter an transparency percentage for the fill in your scale marker range. This should be a value between 0 and 100. The higher the value, the more transparent the fill. This option is only available when you select **Range** in the **Type**menu. | — |
+| Border Color | Lets you select the border color for your scale marker range. This option is only available when you select **Range** in the **Type**menu. | — |
+| Border Style | Lets you select whether the borders of your scale marker range appear solid (default) or dashed. This option is only available when you select **Range** in the **Type**menu. | — |
+| Outlier Fill Color | Lets you select the fill color between the line and scale marker range. This option is only available only for Line graphs and only when you select **Range** in the **Type**menu. | — |
+| Outlier Fill Transparency Percent | Lets you enter an transparency percentage for the fill between the line and scale marker range. This should be a value between 0 and 100. The higher the value, the more transparent the fill. This option is only available only for Line graphs and only when you select **Range** in the **Type**menu. | — |
+| Decimal Places | Lets you specify the number of decimal places in the goal value, both in the title as well as in the hover text.  | — |
+| Value Abbreviation | Lets you specify whether values are abbreviated based on the scale marker abbreviation (default) or 3 significant digits. | — |
+| Hide in Legend | Lets you prevent a scale marker item from being added to the legend (if the graph contains a legend). | — |
+| Hide Title | Hides the goal text and value that normally appear over the top left corner of the graph. | — |

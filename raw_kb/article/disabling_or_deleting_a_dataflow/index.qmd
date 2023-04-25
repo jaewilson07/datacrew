@@ -3,7 +3,7 @@ title : Disabling or Deleting a DataFlow
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 date: 2022-10-24 22:41:00
 url : https://domo-support.domo.com/s/article/360043427833
-linked_kbs :  ['https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360047553253', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043427833', 'https://domo-support.domo.com/s/article/360043429913']
+linked_kbs :  ['https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043427833', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360047553253', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 article_id : 000004557
 views : 4,090
 created_date : 2022-10-24 22:14:00
@@ -18,11 +18,11 @@ You can disable or delete a DataFlow in Domo. Disabling it causes any DataSets p
 **To disable or delete a DataFlow,**
 
 
-1. In Domo, clickÂ **Data**Â in the toolbar at the top of the screen.
-2. Click ![data_center_dataflows_icon.png](data_center_dataflows_icon.png)Â in the left-hand navigation pane.
+1. In Domo, click **Data** in the toolbar at the top of the screen.
+2. Click ![data_center_dataflows_icon.png](data_center_dataflows_icon.png) in the left-hand navigation pane.
 3. Locate the DataFlow you want to disable or delete.  
  You can use the filter options to narrow down the DataFlows that appear in the list.
-4. Mouse over the desired DataFlow then clickÂ ![Screen_Shot_2020-04-09_at_11.29.59_AM.png](Screen_Shot_2020-04-09_at_11.29.59_AM.png)Â to display a list of options.
+4. Mouse over the desired DataFlow then click ![Screen_Shot_2020-04-09_at_11.29.59_AM.png](Screen_Shot_2020-04-09_at_11.29.59_AM.png) to display a list of options.
 5. (Conditional) To disable the DataFlow, click **Disable**. To delete the DataFlow, click **Delete**.
 
 
@@ -32,18 +32,18 @@ You can also access this option from the Details view for the DataFlow.
 **To delete multiple DataFlows,**
 
 
-1. In Domo, clickÂ **Data**Â in the toolbar at the top of the screen.
-2. ClickÂ ![data_center_dataflows_icon.png](data_center_dataflows_icon.png)Â in the left-hand navigation pane.  
- TheÂ **DataFlows**Â tab opens.
+1. In Domo, click **Data** in the toolbar at the top of the screen.
+2. Click ![data_center_dataflows_icon.png](data_center_dataflows_icon.png) in the left-hand navigation pane.  
+ The **DataFlows** tab opens.
 3. Locate one of the DataFlows you want to delete.  
- For more information about searching and filtering DataFlows in the Data Center, seeÂ [Data Center Layout](https://domo-support.domo.com/s/article/360047553253?language=en_US).
-4. Mouse over the row for the DataFlow and click the circled checkmark that pops up over the connector icon.Â   
+ For more information about searching and filtering DataFlows in the Data Center, see [Data Center Layout](https://domo-support.domo.com/s/article/360047553253?language=en_US).
+4. Mouse over the row for the DataFlow and click the circled checkmark that pops up over the connector icon.   
    
  ![data_center_bulk_checkbox.png](data_center_bulk_checkbox.png)
-5. In the blue bar that appears at the top of the screen, click theÂ ![data_center_bulk_gear_icon.png](data_center_bulk_gear_icon.png)Â icon.
-6. SelectÂ **Delete**.  
+5. In the blue bar that appears at the top of the screen, click the ![data_center_bulk_gear_icon.png](data_center_bulk_gear_icon.png) icon.
+6. Select **Delete**.  
    
  ![](5.png)
 
 
-All of the DataFlowsÂ you have selected should now be deleted.
+All of the DataFlows you have selected should now be deleted.

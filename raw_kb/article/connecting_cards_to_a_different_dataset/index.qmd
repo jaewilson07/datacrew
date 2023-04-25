@@ -3,7 +3,7 @@ title : Connecting Cards to a Different DataSet
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 date: 2022-10-24 22:42:00
 url : https://domo-support.domo.com/s/article/360043430653
-linked_kbs :  ['https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043430653', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043429913']
+linked_kbs :  ['https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043430653', 'https://domo-support.domo.com/s/article/360042924034', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 article_id : 000004901
 views : 4,486
 created_date : 2022-10-24 22:34:00
@@ -19,17 +19,17 @@ Intro
 You can connect cards powered by a specific DataSet to another DataSet by moving the cards from one DataSet to another, or *switching DataSets*.
 
 
-You can switch the DataSet either for all cards that use a given DataSet or for a single card.Â 
+You can switch the DataSet either for all cards that use a given DataSet or for a single card. 
 
 
 Switching all cards powered by a DataSet
 ----------------------------------------
 
 
-To switch all cards powered byÂ a givenÂ DataSet to a different DataSet, you use the **Switch cards to a different DataSet** option.Â 
+To switch all cards powered by a given DataSet to a different DataSet, you use the **Switch cards to a different DataSet** option. 
 
 
-**Notes:Â**Using this method,Â 
+**Notes:**Using this method, 
 
 
 
@@ -37,22 +37,22 @@ To switch all cards powered byÂ a givenÂ DataSet to a different DataSet, you
 * For best results, the target DataSet *should* have the same schema (columns, names, and data types) as the current DataSet.  
 You can switch DataSets when the schemas do *not* match. When switching DataSets, a warning appears if the schemas do not match. You can proceed to switch the DataSet, despite the warning, but doing so may affect cards powered by the DataSet.
 * When cards are moved to the target DataSet, Beast Mode calculations associated with a card are moved with the card and Beast Mode calculations associated with the current DataSet are copied to the target DataSet.
-* Connecting cards to a different DataSetÂ will not switch the DataSets of any drill path cards listed on the card page. Cards with drill paths include a banner to help you differentiate them.
+* Connecting cards to a different DataSet will not switch the DataSets of any drill path cards listed on the card page. Cards with drill paths include a banner to help you differentiate them.
 **Video - Switching Cards to a Different DataSet**
 
 
 {{< video www.youtube.com/embed/Duqbik-57so >}}
-Â 
+ 
 
 
-**To switch all cards powered byÂ a DataSet to another DataSet,**
+**To switch all cards powered by a DataSet to another DataSet,**
 
 
 1. Click **Data** in the toolbar at the top of the screen.  
-The Data Center opens, with theÂ **Data Warehouse**Â tab opened by default.Â
-2. Click theÂ ![data_center_datasets_icon.png](data_center_datasets_icon.png)Â icon on the left side of the screen to open theÂ **DataSetsÂ**tab.
-3. Locate and clickÂ the current DataSet containing the cards you want to move.
-4. In the DataSet detailsÂ view, click theÂ **Cards** tab.
+The Data Center opens, with the **Data Warehouse** tab opened by default.
+2. Click the ![data_center_datasets_icon.png](data_center_datasets_icon.png) icon on the left side of the screen to open the **DataSets**tab.
+3. Locate and click the current DataSet containing the cards you want to move.
+4. In the DataSet details view, click the **Cards** tab.
 5. Click **Switch cards to a different DataSet**.  
 This option appears if you are the owner of the DataSet, depending on the DataSet type.  
 A list of DataSets appears.
@@ -68,10 +68,10 @@ Switching a single card powered by a DataSet
 --------------------------------------------
 
 
-To switch a single cardÂ powered byÂ a givenÂ DataSet to a different DataSet, you use theÂ **Change DataSet**Â option.
+To switch a single card powered by a given DataSet to a different DataSet, you use the **Change DataSet** option.
 
 
-**Notes:Â**Using this method,
+**Notes:**Using this method,
 
 
 
@@ -87,7 +87,7 @@ You can switch DataSets when the schemas do *not* match. When switching DataSets
 A dialog appears.
 
 
-**Tip:Â**You can also open this dialog in a KPI card's Details view, by clicking the **Update Data** link near the bottom of the screen.
+**Tip:**You can also open this dialog in a KPI card's Details view, by clicking the **Update Data** link near the bottom of the screen.
 3. Select **Change DataSet**.  
 The dialog expands to display DataSet types (existing data, Microsoft Excel, Google Drive, Domo online form).
 4. Depending on the DataSet type you are switching to, do one of the following:
@@ -106,4 +106,4 @@ The dialog expands to display DataSet types (existing data, Microsoft Excel, Goo
 	* (Conditional) If switching to a Microsoft Excel or CSV spreadsheet, click **Excel**, select the desired spreadsheet, click **Continue**, build the chart for your data, then click **Update**.
 	* (Conditional) If switching to a Google Sheet spreadsheet, click **Google Drive**, sign in to your Google account, select the spreadsheet you want, build the chart for your data, then click **Update**.
 	* (Conditional) If switching to a Domo online form, click **Domo online form**, edit the data as desired, click **Save & Continue**, build the chart for your data, then click **Update**.  
-	For more information about editing chart data, seeÂ [Analyzer Layout](..\analyzer_layout\index.html "KPI Card Building Part 2: The Card Builder").
+	For more information about editing chart data, see [Analyzer Layout](..\analyzer_layout\index.qmd "KPI Card Building Part 2: The Card Builder").

@@ -3,7 +3,7 @@ title : Managing User Accounts for Connectors
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 date: 2022-10-24 22:39:00
 url : https://domo-support.domo.com/s/article/360042926054
-linked_kbs :  ['https://domo-support.domo.com/s/article/360042926274', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360042926074', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042925814', 'https://domo-support.domo.com/s/article/360043438973', 'https://domo-support.domo.com/s/article/360042926054', 'https://domo-support.domo.com/s/article/360047553253', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360042934334']
+linked_kbs :  ['https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360042926054', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043438973', 'https://domo-support.domo.com/s/article/360042926274', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360042925814', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360042934334', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360047553253', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360042926074']
 article_id : 000004907
 views : 7,033
 created_date : 2022-10-24 22:35:00
@@ -19,13 +19,13 @@ Intro
 In the **Accounts** tab in the Data Center, you can add, remove, share, and edit the accounts associated with DataSets through connectors. Each account appears as an item in the list, with the name and logo of the connector, the email addresses associated with the account, and the number of DataSets being powered from this account. You can see and manage only your own accounts and the accounts that are shared with you; however, you can transfer DataSets to other users' accounts or change the accounts associated with DataSets. You can also share connector accounts with others so they can also create DataSets using that connector.
 
 
-When the OAuth token for an account is about to expire, you receive notifications in Domo and via email/SMS. For information about setting notification preferences, seeÂ [Customizing Notification and Alert Settings](..\configuring_notification_and_alert_settings\index.html "Customizing Notification and Alert Settings").
+When the OAuth token for an account is about to expire, you receive notifications in Domo and via email/SMS. For information about setting notification preferences, see [Customizing Notification and Alert Settings](..\configuring_notification_and_alert_settings\index.qmd "Customizing Notification and Alert Settings").
 
 
-If you delete a user from Domo and reassign his/her DataSets to another user, the permissions for the DataSet accounts *is not* passed to the new user. The account ownership must be transferred manually.Â For more information, seeÂ [Removing Users from Domo](..\removing_users_from_domo\index.html "Removing Users from Domo").
+If you delete a user from Domo and reassign his/her DataSets to another user, the permissions for the DataSet accounts *is not* passed to the new user. The account ownership must be transferred manually. For more information, see [Removing Users from Domo](..\removing_users_from_domo\index.qmd "Removing Users from Domo").
 
 
-For more information about the layout of this tab, see [Data Center Layout](..\data_center_layout\index.html "Data Center Layout").
+For more information about the layout of this tab, see [Data Center Layout](..\data_center_layout\index.qmd "Data Center Layout").
 
 
 Accessing the Accounts tab
@@ -39,13 +39,13 @@ You access the **Accounts** tab from the Data Center.
 
 
 1. Click **Data** in the toolbar at the top of the screen.  
-The Data Center opens, with theÂ **DataSets**Â tab opened by default.Â 
+The Data Center opens, with the **DataSets** tab opened by default. 
 
 
 ![DataCetner-DataSet.png](DataCetner-DataSet.png)
 
 
-2. Click the ![data_center_accounts_icon.png](data_center_accounts_icon.png) icon from the left pane of the screen to open the **AccountsÂ**tab.
+2. Click the ![data_center_accounts_icon.png](data_center_accounts_icon.png) icon from the left pane of the screen to open the **Accounts**tab.
 
 
 Adding an account
@@ -53,7 +53,7 @@ You can add an account to Domo by doing either of the following:
 
 
 
-* By adding a DataSet to Domo and entering new account information (as opposed to selecting an existing account). An entry for the new account appears automatically in the **Accounts** view. This method is discussed in more detail inÂ [Adding a Dataset Using a Data Connector](..\adding_a_dataset_using_a_connector\index.html "Connecting to Data with Connectors").
+* By adding a DataSet to Domo and entering new account information (as opposed to selecting an existing account). An entry for the new account appears automatically in the **Accounts** view. This method is discussed in more detail in [Adding a Dataset Using a Data Connector](..\adding_a_dataset_using_a_connector\index.qmd "Connecting to Data with Connectors").
 * By clicking **Add Account** in the **Accounts** view and following the steps in the wizard.
 
 
@@ -81,7 +81,7 @@ You can disconnect (delete) any account listing from the **Accounts** view. Any 
 
 
 1. Mouse over the account you want to delete.
-2. ClickÂ ![](2.png) and select **Delete Account**.
+2. Click ![](2.png) and select **Delete Account**.
 3. Click **Delete Account** to confirm.
 
 
@@ -111,7 +111,7 @@ For connectors that use OAuth to authenticate, you can reconnect, if necessary i
 
 
 1. Mouse over the account you want to reconnect.
-2. ClickÂ ![](2.png) and select **Re-connect**.
+2. Click ![](2.png) and select **Re-connect**.
 3. (Conditional) Enter your credentials or grant account access to Domo, if you are asked to do so.
 
 
@@ -119,16 +119,16 @@ Renaming accounts
 -----------------
 
 
-When you create accounts, eitherÂ by adding them in theÂ **Accounts** tab or entering credentials for a new DataSet, those accounts take the name of the connector. For example, if you add an account for Facebook, that account is called "Facebook Account."Â Subsequently added accounts for the same connector share this name. This can make it confusing to differentiate between accounts for the same connector. You can eliminate this confusion by givingÂ unique names to accounts in theÂ **Accounts** tab.Â 
+When you create accounts, either by adding them in the **Accounts** tab or entering credentials for a new DataSet, those accounts take the name of the connector. For example, if you add an account for Facebook, that account is called "Facebook Account." Subsequently added accounts for the same connector share this name. This can make it confusing to differentiate between accounts for the same connector. You can eliminate this confusion by giving unique names to accounts in the **Accounts** tab. 
 
 
-**To rename accountsÂ in the Accounts tab,**
+**To rename accounts in the Accounts tab,**
 
 
-1. Click the accountÂ name. (You can also select **Edit account** in the gear menu.)  
+1. Click the account name. (You can also select **Edit account** in the gear menu.)  
 The account name and credentials open for editing.
-2. EnterÂ a new name for the account.
-3. ClickÂ **Save Changes**.Â
+2. Enter a new name for the account.
+3. Click **Save Changes**.
 
 
 Editing connector account credentials
@@ -168,7 +168,7 @@ You can see accounts that have been shared with you in the **Accounts** tab. Sha
 ![Share_Account-old.png](Share_Account-old.png)
 
 
-3. A Share Account access dialog for the the selected account appears, listing the users with access to the DataSets from this account.Â 
+3. A Share Account access dialog for the the selected account appears, listing the users with access to the DataSets from this account. 
 
 
 4. Click the "Add a person..." search bar to search for the user name you want to share the account with.
@@ -177,10 +177,10 @@ You can see accounts that have been shared with you in the **Accounts** tab. Sha
 ![Search_user_dropdown.png](Search_user_dropdown.png)
 
 
-5. Select the desired user and click **Add**.Â 
+5. Select the desired user and click **Add**. 
 
 
-6. The newly added user will appear in the **Shared with** section.Â Repeat the same process to add multiple users you want to share the account with.
+6. The newly added user will appear in the **Shared with** section. Repeat the same process to add multiple users you want to share the account with.
 
 
 The users you select have access to the DataSets associated with this account.
@@ -199,13 +199,13 @@ You can remove a user from the account that you added earlier. The removed user 
 1. Mouse over the account you want to remove access from.
 
 
-2. Click ![](2.png) and select **Share account**.Â 
+2. Click ![](2.png) and select **Share account**. 
 
 
 3. A dialog appears listing the users with access to DataSets from this account in the **Shared with** section.
 
 
-4. Click the cross (![Cross.png](Cross.png)) in front of the the user name that you want to remove the access for.Â 
+4. Click the cross (![Cross.png](Cross.png)) in front of the the user name that you want to remove the access for. 
 
 
 ![Remove_user-old.png](Remove_user-old.png)
@@ -230,17 +230,17 @@ Transferring ownership lets another user manage DataSets but continue to let ass
 After transferring ownership, both users can view the associated DataSets in the **Accounts** tab, but only the user with ownership can manage the associated DataSets. If you want to configure the DataSet to use credentials in a different connection account when connecting to the third-party system to get data, change the connection account. For more information, see [Changing the connection account of multiple DataSets](#HowdoImanageuseraccountsforconnectors?-connectionaccount "Managing User Accounts for Connectors").
 
 
-**Note:Â**Transferring ownership of multiple DataSets requires the following:
+**Note:**Transferring ownership of multiple DataSets requires the following:
 
 
 
-* You *must* be the owner of all the DataSets or have an "Admin" default security role or a custom role with the "Manage DataSets" privilege enabled.Â   
-Users with a default security role of "Privileged" or "Editor" can only assign ownership for their user-associated DataSets to another user. Users with a default security role of "Admin"Â can assign ownership for any user-associated DataSets. For more information about default security roles, see [Managing Roles](..\managing_custom_roles\index.html "Security Role Reference").
+* You *must* be the owner of all the DataSets or have an "Admin" default security role or a custom role with the "Manage DataSets" privilege enabled.   
+Users with a default security role of "Privileged" or "Editor" can only assign ownership for their user-associated DataSets to another user. Users with a default security role of "Admin" can assign ownership for any user-associated DataSets. For more information about default security roles, see [Managing Roles](..\managing_custom_roles\index.qmd "Security Role Reference").
 * When transferring ownership in bulk, you *must* assign ownership for *all* DataSets of the associated user.
-Â 
+ 
 
 
-**Tip:Â**You can change ownership of a single DataSet in the Details view for the DataSet. For more information, see [Changing the Owner of a DataSet](..\changing_the_owner_of_a_dataset\index.html "Changing the Owner of a DataSet").
+**Tip:**You can change ownership of a single DataSet in the Details view for the DataSet. For more information, see [Changing the Owner of a DataSet](..\changing_the_owner_of_a_dataset\index.qmd "Changing the Owner of a DataSet").
 **To transfer ownership of DataSets associated with a user,**
 
 
@@ -278,7 +278,7 @@ You can bulk change the credentials that multiple DataSets use in connecting to 
 
 * when the connection account was for use in development but not production
 * when you need to consolidate accounts
-* when permissions are insufficient in the connection accountÂ
+* when permissions are insufficient in the connection account
 * when you need to change the credentials in the connection account (which requires creating a new connection account and adding DataSets to it)
 
 
@@ -288,22 +288,22 @@ Changing the connection account configures the associated DataSets to use the cr
 After changing the connection account, the previous connection account is disconnected and removed if no DataSets are associated.
 
 
-**Note:Â**Changing the connection account of multiple DataSets, requires the following:
+**Note:**Changing the connection account of multiple DataSets, requires the following:
 
 
 
-* You *must* be the owner of all the DataSets or have an "Admin" default security role or a custom role in which the "Manage DataSets" privilege is enabled.Â   
-Users with an "Admin," "Privileged," or "Editor" default security role can only change the connection account for their user-associated DataSets from one of their connection accounts to another of their connection accounts. For more information about default security roles, see [Managing Roles](..\managing_custom_roles\index.html "Security Role Reference").  
+* You *must* be the owner of all the DataSets or have an "Admin" default security role or a custom role in which the "Manage DataSets" privilege is enabled.   
+Users with an "Admin," "Privileged," or "Editor" default security role can only change the connection account for their user-associated DataSets from one of their connection accounts to another of their connection accounts. For more information about default security roles, see [Managing Roles](..\managing_custom_roles\index.qmd "Security Role Reference").  
 If you need to consolidate account ownership *before* changing the connection account used for multiple DataSets, first transfer ownership before changing accounts. For more information, see [Transferring ownership of multiple DataSets](#h_01F9BZ162FNRZA734YK8SP3SSV "Managing User Accounts for Connectors").
 * When changing the connection account in bulk, you *must* change the connection account for *all* DataSets of the associated user.
 * Both connection accounts *must* use the same data connector.
-Â 
+ 
 
 
-Â 
+ 
 
 
-**Tip:Â**You can change the connection account associated with a single DataSet in the Details view for the DataSet.
+**Tip:**You can change the connection account associated with a single DataSet in the Details view for the DataSet.
 **To change the connection account of multiple DataSets,**
 
 

@@ -3,7 +3,7 @@ title : Stream Funnel Chart
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 date: 2022-10-24 22:41:00
 url : https://domo-support.domo.com/s/article/360043429513
-linked_kbs :  ['https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043428033', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043428713', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043428693', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043429513', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043429533', 'https://domo-support.domo.com/s/article/360043429913']
+linked_kbs :  ['https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043428693', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429513', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043428033', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360042924094', 'https://domo-support.domo.com/s/article/360043429533', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043428713']
 article_id : 000004673
 views : 4,030
 created_date : 2022-10-24 22:20:00
@@ -16,10 +16,10 @@ Intro
 -----
 
 
-A Stream Funnel chart is cross between a Funnel chart and a [Stacked Area chart](..\stacked_area_chart\index.html "Stacked Area Graph"). Unlike other pie-type charts in Domo, Stream Funnel charts allow you to include series data (though this is not required). Legends are not shown in a Stream Funnel chart unless series data is included. Stream Funnel charts also do not show value data except upon mouse-over. Therefore they are most effective for showing relative differences between stages rather than representing exact amounts.
+A Stream Funnel chart is cross between a Funnel chart and a [Stacked Area chart](..\stacked_area_chart\index.qmd "Stacked Area Graph"). Unlike other pie-type charts in Domo, Stream Funnel charts allow you to include series data (though this is not required). Legends are not shown in a Stream Funnel chart unless series data is included. Stream Funnel charts also do not show value data except upon mouse-over. Therefore they are most effective for showing relative differences between stages rather than representing exact amounts.
 
 
-This chart type is exactly the same as a [Stream chart](..\stream_chart\index.html "Stream Graph") (classified in the Chart Picker as an Area chart rather than a pie-type chart) but is shown vertically rather than horizontally. Â 
+This chart type is exactly the same as a [Stream chart](..\stream_chart\index.qmd "Stream Graph") (classified in the Chart Picker as an Area chart rather than a pie-type chart) but is shown vertically rather than horizontally.  
 
 
 The following example shows a Stream Funnel without series data:
@@ -28,7 +28,7 @@ The following example shows a Stream Funnel without series data:
 ![stream_funnel_without_series.png](stream_funnel_without_series.png)
 
 
-Â 
+ 
 
 
 Whereas the next example shows the same chart with series data applied:
@@ -37,23 +37,23 @@ Whereas the next example shows the same chart with series data applied:
 ![stream_funnel_with_series.png](stream_funnel_with_series.png)
 
 
-Â 
+ 
 
 
-Also unlike other types of Funnel charts, drill path is available in Stream Funnel charts. For more information about drilling, seeÂ [Adding Drill Path to Your Chart](..\adding_a_drill_path_to_your_chart\index.html "Adding Drill Path to Your Chart").
+Also unlike other types of Funnel charts, drill path is available in Stream Funnel charts. For more information about drilling, see [Adding Drill Path to Your Chart](..\adding_a_drill_path_to_your_chart\index.qmd "Adding Drill Path to Your Chart").
 
 
 Powering Stream Funnel Charts
 -----------------------------
 
 
-Stream Funnel charts require two columns or rows of data from your DataSetâ€”a category column or row containing the names of each stage, and a value column or row containing the corresponding values for each stage. You can also add a column containing series data if you want. For information about value, category, and series data, see [Understanding Chart Data](..\understanding_chart_data\index.html "Understanding Chart Data").
+Stream Funnel charts require two columns or rows of data from your DataSet—a category column or row containing the names of each stage, and a value column or row containing the corresponding values for each stage. You can also add a column containing series data if you want. For information about value, category, and series data, see [Understanding Chart Data](..\understanding_chart_data\index.qmd "Understanding Chart Data").
 
 
-In the Analyzer,Â you choose the columns containing the data for your Stream Funnel chart. For more information about choosing data columns, seeÂ [Applying DataSet Columns to Your Chart](..\applying_dataset_columns_to_your_chart\index.html "Applying DataSet Columns to Your Chart").
+In the Analyzer, you choose the columns containing the data for your Stream Funnel chart. For more information about choosing data columns, see [Applying DataSet Columns to Your Chart](..\applying_dataset_columns_to_your_chart\index.qmd "Applying DataSet Columns to Your Chart").
 
 
-For more information about formatting charts in the Analyzer, seeÂ [Visualization Card Building Part 2: The Analyzer](..\..\category\analyzer\index.html "KPI Card Building Part 2: The Analyzer").
+For more information about formatting charts in the Analyzer, see [Visualization Card Building Part 2: The Analyzer](..\..\category\analyzer\index.qmd "KPI Card Building Part 2: The Analyzer").
 
 
 The following graphic shows you how the data from the category, value, and series columns in a typical column-based spreadsheet is converted into a Stream Funnel chart:
@@ -66,4 +66,4 @@ Customizing Stream Funnel Charts
 --------------------------------
 
 
-You can customize the appearance of a Stream Funnel chart by editing its **Chart Properties**. For information about all chart properties, seeÂ [Chart Properties](..\..\category\chart_properties\index.html "Chart Properties").
+You can customize the appearance of a Stream Funnel chart by editing its **Chart Properties**. For information about all chart properties, see [Chart Properties](..\..\category\chart_properties\index.qmd "Chart Properties").

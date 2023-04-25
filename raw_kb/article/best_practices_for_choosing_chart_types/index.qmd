@@ -3,7 +3,7 @@ title : Best Practices for Choosing Chart Types
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 date: 2022-10-24 22:39:00
 url : https://domo-support.domo.com/s/article/360042935294
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043440273', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042926154', 'https://domo-support.domo.com/s/article/360042935294', 'https://domo-support.domo.com/s/article/360042935334', 'https://domo-support.domo.com/s/article/360043439993', 'https://domo-support.domo.com/s/article/360043440173', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043439953', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043430493', 'https://domo-support.domo.com/s/article/360043429913']
+linked_kbs :  ['https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360042935334', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043439953', 'https://domo-support.domo.com/s/article/360043440273', 'https://domo-support.domo.com/s/article/360043440173', 'https://domo-support.domo.com/s/article/360042935294', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360042926154', 'https://domo-support.domo.com/s/article/360043439993', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360043430493', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 article_id : 000004486
 views : 11,192
 created_date : 2022-10-24 22:12:00
@@ -12,17 +12,17 @@ last updated : 2022-10-24 22:39:00
 
 
 
-The type of chart you select for a KPI cardÂ depends on the specific information you want to convey to your audience. For instance, to show financial fluctuations over time, you would want to use a line graph; to compare values, your best choice would be a bar graph; and so on. Choosing the wrong graph type for your data could impair your audience's ability to receive the message, so it is important that you understand when to use the different graph types.
+The type of chart you select for a KPI card depends on the specific information you want to convey to your audience. For instance, to show financial fluctuations over time, you would want to use a line graph; to compare values, your best choice would be a bar graph; and so on. Choosing the wrong graph type for your data could impair your audience's ability to receive the message, so it is important that you understand when to use the different graph types.
 
 
-For a list of chart types available in Domo, see [Available Chart Types](..\leaving_table_cards_behind_effective_chart_types_for_reporting\index.html "Available Chart Types").
+For a list of chart types available in Domo, see [Available Chart Types](..\leaving_table_cards_behind_effective_chart_types_for_reporting\index.qmd "Available Chart Types").
 
 
 Information Type Table
 ----------------------
 
 
-There are different types of information represented in charts. The most common of these, along with the most appropriate chartÂ types to use, are listed in the following table.Â You can click a thumbnail image to see a larger image.
+There are different types of information represented in charts. The most common of these, along with the most appropriate chart types to use, are listed in the following table. You can click a thumbnail image to see a larger image.
 
 
 
@@ -44,9 +44,9 @@ There are different types of information represented in charts. The most common 
 * a line graph to emphasize the overall pattern with the time series, or
 * a vertical bar graph to emphasize measures.
 
-**Note:Â**In all graphs that represent deviation, be sure to include a deviation reference line against which to compare the measures.Â Â
-Â 
-Â  |  |
+**Note:**In all graphs that represent deviation, be sure to include a deviation reference line against which to compare the measures.
+ 
+  |  |
 | Single Distribution | Used to count items per subdivision on an interval scale. | Use
 * a vertical bar graph or histogram to emphasize values, or
 * a line graph to emphasize the overall pattern (frequency polygon).
@@ -76,7 +76,7 @@ Video
 
 
 {{< video www.youtube.com/embed/lBHGX9jbHCI >}}
-Â 
+ 
 
 
 Other Best Practices Topics
@@ -87,11 +87,11 @@ For more Domo best practices, visit the following topics:
 
 
 
-* [Projects and Tasks Best Practices](..\projects_and_tasks_best_practices\index.html "Projects and Tasks Best Practices")
-* [Best Practices for Managing DataSets](..\best_practices_for_managing_datasets\index.html "Best Practices for Managing DataSets")
-* [Best Practices for Creating KPI Cards](..\best_practices_for_creating_visualization_cards\index.html "Best Practices for Creating KPI Cards")
-* [Top 10 Dashboard Design Best Practices](..\top_10_dashboard_design_best_practices\index.html "Top 10 Dashboard Design Best Practices")
-* [Best Practices for Standardizing KPIs](..\best_practices_for_standardizing_visualization_cards\index.html "Best Practices for Standardizing KPIs")
+* [Projects and Tasks Best Practices](..\projects_and_tasks_best_practices\index.qmd "Projects and Tasks Best Practices")
+* [Best Practices for Managing DataSets](..\best_practices_for_managing_datasets\index.qmd "Best Practices for Managing DataSets")
+* [Best Practices for Creating KPI Cards](..\best_practices_for_creating_visualization_cards\index.qmd "Best Practices for Creating KPI Cards")
+* [Top 10 Dashboard Design Best Practices](..\top_10_dashboard_design_best_practices\index.qmd "Top 10 Dashboard Design Best Practices")
+* [Best Practices for Standardizing KPIs](..\best_practices_for_standardizing_visualization_cards\index.qmd "Best Practices for Standardizing KPIs")
 * [Best Practices for Designing KPIs](/s/article/360042935334 "Best Practices for Designing KPIs")
 
 

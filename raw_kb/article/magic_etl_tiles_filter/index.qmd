@@ -3,7 +3,7 @@ title : Magic ETL Tiles: Filter
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 date: 2022-10-24 22:41:00
 url : https://domo-support.domo.com/s/article/360044876614
-linked_kbs :  ['https://domo-support.domo.com/s/article/360055259234', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360044876614', 'https://domo-support.domo.com/s/article/360047553253', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360044296573', 'https://domo-support.domo.com/s/article/360043429913']
+linked_kbs :  ['https://domo-support.domo.com/s/article/360044296573', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360055259234', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360047553253', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360044876614']
 article_id : 000003002
 views : 5.369
 created_date : 2022-10-24 20:59:00
@@ -24,14 +24,13 @@ There are two available tiles in the Filter tab of Magic ETL DataFlows. These in
 * Remove Duplicates
 
 
-For information about creating a Magic ETL DataFlow, see [Creating a Magic ETL DataFlow](..\creating_a_magic_etl_dataflow\index.html "Creating a Magic ETL DataFlow").
+For information about creating a Magic ETL DataFlow, see [Creating a Magic ETL DataFlow](..\creating_a_magic_etl_dataflow\index.qmd "Creating a Magic ETL DataFlow").
 
 
 For information about the Data Center, see [Data Center Layout](https://domo-support.domo.com/s/article/360047553253?language=en_US).
 
 
-Â
-**Important:** There are significant behavioral differences in the new Magic ETL. Read the Behavior Changes and Feature Updates in Magic ETLÂ article before converting mission-critical Magic ETL DataFlows.Â **Failure to do so may risk an unintended change to your DataFlowâ€™s behavior.**
+**Important:** There are significant behavioral differences in the new Magic ETL. Read the Behavior Changes and Feature Updates in Magic ETL article before converting mission-critical Magic ETL DataFlows. **Failure to do so may risk an unintended change to your DataFlow’s behavior.**
 Filter_Tab.png
 --------------
 
@@ -49,7 +48,7 @@ The Filter Rows tile lets you include or exclude rows based on specified rules.
 **Example**
 
 
-For example, the Filter RowsÂ tile transforms this data...
+For example, the Filter Rows tile transforms this data...
 
 
 ![etl_filterrows_datain.png](etl_filterrows_datain.png)
@@ -78,7 +77,7 @@ For example, the Filter RowsÂ tile transforms this data...
 
 	1. Select a column to filter on.
 	2. Select the operation to use.  
-	 Â Operation items appear in the list, depending on the type of data in the column to filter on.
+	  Operation items appear in the list, depending on the type of data in the column to filter on.
 	3. Select whether to compare against values in a specific column or a specific value, then do one of the following:
 	
 	
@@ -86,28 +85,26 @@ For example, the Filter RowsÂ tile transforms this data...
 		* (Conditional) If comparing against a column, select the column to use.
 		* (Conditional) If comparing against a specific value, enter the value to use.
 	4. (Conditional) If you want to add another rule, select either **Add Filter Rule** or **Add Formula Rule**.
-5. (Conditional) For each **FormulaÂ Rule**, do the following:
+5. (Conditional) For each **Formula Rule**, do the following:
 	1. (Optional) Open the Formula Editor.
 	2. Enter the formula you wish to use.
 	3. Validate the formula.
 	4. (Conditional) If you want to add another rule, select either **Add Filter Rule** or **Add Formula Rule**.
 	
 	
-	Â
-	**Note:** For more information on creating aÂ successfulÂ filter using the Formula Rule, see [Writing a Filter Formula in Magic ETL](..\writing_a_filter_formula_in_magic_etl\index.html "How to Write a Filter Formula in Magic ETL v2 (Beta)").
+	**Note:** For more information on creating a successful filter using the Formula Rule, see [Writing a Filter Formula in Magic ETL](..\writing_a_filter_formula_in_magic_etl\index.qmd "How to Write a Filter Formula in Magic ETL v2 (Beta)").
 6. Select whether to include rows that meet all or any of the rules you define.
 
 
-Â
-**Tip:** You can preview the data transformed by a tileÂ by running a preview, clicking the tile in the canvas, then clicking the **Preview** tab.
+**Tip:** You can preview the data transformed by a tile by running a preview, clicking the tile in the canvas, then clicking the **Preview** tab.
 Remove Duplicates Tile
 ----------------------
 
 
-Â ![Remove_Duplicates.png](Remove_Duplicates.png)
+ ![Remove_Duplicates.png](Remove_Duplicates.png)
 
 
-The Remove Duplicates tile lets you removeÂ duplicate rows, based on specific columns.
+The Remove Duplicates tile lets you remove duplicate rows, based on specific columns.
 
 
 **Video - Removing Duplicates in Magic ETL**
@@ -136,25 +133,21 @@ For example, the Remove Duplicates tile transforms this data...
 ![etl_removeduplicates_sampleui.png](etl_removeduplicates_sampleui.png)
 
 
-Â
-**Note:Â**Duplicate rows with the same base margin were removed.
+**Note:**Duplicate rows with the same base margin were removed.
 **To configure the Remove Duplicates tile,**
 
 
 1. Ensure that the column with values you want exists in the DataSet.
-2. Click the **Remove Duplicates**Â tile in the canvas.
+2. Click the **Remove Duplicates** tile in the canvas.
 3. (Optional) Rename the tile by clicking ![de_edit.png](de_edit.png), then entering the name you want.
 4. For each column with duplicate values you want to remove, do the following:
 
 
 	1. Select the column you want.  
-	 For example, "Product Base Margin".Â
+	 For example, "Product Base Margin".
 	2. Mark whether the comparison is case sensitive.
 	3. (Conditional) If you want to add another column, then click **Add Column Comparison**.
 
 
-Â
-**Note:Â**For a row to be removed, all of the columns selected in the Remove Duplicates tileÂ *must* be duplicates.
-Â
-Â
-**Tip:** You can preview the data transformed by a tileÂ by running a preview, clicking the tile in the canvas, then click the **Preview** tab.
+**Note:**For a row to be removed, all of the columns selected in the Remove Duplicates tile *must* be duplicates.
+**Tip:** You can preview the data transformed by a tile by running a preview, clicking the tile in the canvas, then click the **Preview** tab.

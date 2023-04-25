@@ -3,7 +3,7 @@ title : Top 10 Dashboard Design Best Practices
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 date: 2022-10-24 22:41:00
 url : https://domo-support.domo.com/s/article/360043440173
-linked_kbs :  ['https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360042926154', 'https://domo-support.domo.com/s/article/360042935294', 'https://domo-support.domo.com/s/article/360042935334', 'https://domo-support.domo.com/s/article/360043439993', 'https://domo-support.domo.com/s/article/360043440173', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043439953', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043430493', 'https://domo-support.domo.com/s/article/360043429913']
+linked_kbs :  ['https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360042935334', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360043439953', 'https://domo-support.domo.com/s/article/360042935294', 'https://domo-support.domo.com/s/article/360043440173', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360042926154', 'https://domo-support.domo.com/s/article/360043439993', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360043430493', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 article_id : 000004463
 views : 4,521
 created_date : 2022-10-24 22:12:00
@@ -12,10 +12,7 @@ last updated : 2022-10-24 22:41:00
 
 
 
-Â 
-
-
-1. Create with your audiencesâ€™ needs in mind.
+1. Create with your audiences’ needs in mind.
 2. Simplify user navigation by using page and sub-page names that help users know what to expect.
 3. Name collection titles on pages according to the business question answered by that collection.
 4. Include descriptions below the collection title to clarify what business questions are answered and how users can act on the data.
@@ -23,7 +20,7 @@ last updated : 2022-10-24 22:41:00
 6. Enlarge the size of the most important card(s) in the collection and keep less critical cards sized smaller.
 7. Use summary numbers in cards to give the user the primary take-away message.
 8. Name cards to make it clear what business question is being answered.
-9. Choose a chart type for each card that matches the data story youâ€™re trying to tell.
+9. Choose a chart type for each card that matches the data story you’re trying to tell.
 10. Try to limit the number of collections to 5 per page and the number of cards to 4-6 per collection.
 
 
@@ -35,11 +32,11 @@ For more Domo best practices, visit the following topics:
 
 
 
-* [Projects and Tasks Best Practices](..\projects_and_tasks_best_practices\index.html "Projects and Tasks Best Practices")
-* [Best Practices for Managing DataSets](..\best_practices_for_managing_datasets\index.html "Best Practices for Managing DataSets")
-* [Best Practices for Choosing Chart Types](..\best_practices_for_choosing_chart_types\index.html "Best Practices for Choosing Chart Types")
-* [Best Practices for Creating KPI Cards](..\best_practices_for_creating_visualization_cards\index.html "Best Practices for Creating KPI Cards")
-* [Best Practices for Standardizing KPIs](..\best_practices_for_standardizing_visualization_cards\index.html "Best Practices for Standardizing KPIs")
+* [Projects and Tasks Best Practices](..\projects_and_tasks_best_practices\index.qmd "Projects and Tasks Best Practices")
+* [Best Practices for Managing DataSets](..\best_practices_for_managing_datasets\index.qmd "Best Practices for Managing DataSets")
+* [Best Practices for Choosing Chart Types](..\best_practices_for_choosing_chart_types\index.qmd "Best Practices for Choosing Chart Types")
+* [Best Practices for Creating KPI Cards](..\best_practices_for_creating_visualization_cards\index.qmd "Best Practices for Creating KPI Cards")
+* [Best Practices for Standardizing KPIs](..\best_practices_for_standardizing_visualization_cards\index.qmd "Best Practices for Standardizing KPIs")
 * [Best Practices for Designing KPIs](/s/article/360042935334 "Best Practices for Designing KPIs")
 
 
