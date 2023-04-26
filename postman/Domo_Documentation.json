@@ -356,7 +356,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"type\":\"USER\",\"id\":1256759792,\"accessLevel\":\"CAN VIEW\"}",
+									"raw": "{\"type\":\"USER\",\"id\":1256759792,\"accessLevel\":\"CAN_VIEW\"}",
 									"options": {
 										"raw": {
 											"language": "json"
