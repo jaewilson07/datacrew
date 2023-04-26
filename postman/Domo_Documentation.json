@@ -368,7 +368,7 @@
 							"response": []
 						},
 						{
-							"name": "Share Account_v1",
+							"name": "Share Account_v1 - DEPRECATED",
 							"id": "dd965314-0931-4183-9088-e9e6c6fbc174",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
