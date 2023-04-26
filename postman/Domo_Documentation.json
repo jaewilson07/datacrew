@@ -346,7 +346,7 @@
 							"response": []
 						},
 						{
-							"name": "Share Account",
+							"name": "Share Account_v2",
 							"id": "e6093847-c575-4d65-b2b4-90831dd67559",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
