@@ -368,6 +368,28 @@
 							"response": []
 						},
 						{
+							"name": "Share Account_v1",
+							"id": "dd965314-0931-4183-9088-e9e6c6fbc174",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"type\":\"USER\",\"id\":1256759792,\"accessLevel\":\"CAN_VIEW\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/data/v2/accounts/share/{{account_id}}"
+							},
+							"response": []
+						},
+						{
 							"name": "Edit Account - Config Details",
 							"id": "af60edd8-70ef-4f73-9691-c2d146159505",
 							"protocolProfileBehavior": {
