@@ -518,6 +518,7 @@ class Article_Category(Article):
 # %% ../../nbs/crawler/article.ipynb 21
 @dataclass(init=False)
 class Article_KB_Home(Article):
+    path_html: str = None
     category: str = None
     category_description: str = None
 
@@ -526,20 +527,31 @@ class Article_KB_Home(Article):
         url,
         base_url,
         url_entity_prefix="s/knowledge-base",
+        path_html = None,
         debug_prn: bool = False,
         driver=None,
     ):
 
-        if not driver:
-            driver = dcc.driversetup(is_headless=False)
+        soup = None
 
-        soup = dcc.pagesource(
-            driver=driver,
-            url=url,
-            element_type=By.CLASS_NAME,
-            element_ls=["blocks-list"],
-            is_return_soup=True,
-        )
+        if path_html:
+            self.path_html = path_html
+            self.is_child_recursive = False
+            page_decoded = self.detect_encoding(path_html, debug_prn=debug_prn)
+
+            soup = BeautifulSoup(page_decoded, features="lxml")
+
+        else:
+            if not driver:
+                driver = dcc.driversetup(is_headless=False)
+
+            soup = dcc.pagesource(
+                driver=driver,
+                url=url,
+                element_type=By.CLASS_NAME,
+                element_ls=["blocks-list"],
+                is_return_soup=True,
+            )
 
         if not soup:
             raise ArticleKB_GetSoupError(url=url)
@@ -586,9 +598,18 @@ class Article_KB_Home(Article):
             print(f"❤️ child url - {url}, {child_id}")
 
             self.add_url_to_ls(url)
+        
+        self.get_images(
+            test_base_url="https://domo-support.domo.com/servlet/rtaImage",
+            debug_prn=debug_prn,
+        )
+
+        self.md_str = self.md_soup(article_soup)
 
         return {
             "category": category_soup,
             "description": category_description_soup,
             "children": table_soup,
         }
+
+# %%

@@ -3,7 +3,7 @@ title : Getting Help
 categories: ['https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC']
 date: 2022-10-24 22:42:00
 url : https://domo-support.domo.com/s/article/360042922874
-linked_kbs :  ['https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043427573', 'https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/knowledge-base', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043427533', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043427473', 'https://domo-support.domo.com/s/article/360042922874']
+linked_kbs :  ['https://domo-support.domo.com/s/article/360043429913', 'https://domo-support.domo.com/s/article/360042922874', 'https://domo-support.domo.com/s/article/360043429953', 'https://domo-support.domo.com/s/article/360043429933', 'https://domo-support.domo.com/s/article/360043427473', 'https://domo-support.domo.com/s/article/360043429693', 'https://domo-support.domo.com/s/article/360042925494', 'https://domo-support.domo.com/s/article/360043427573', 'https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC', 'https://domo-support.domo.com/s/article/360043427533', 'https://domo-support.domo.com/s/knowledge-base']
 article_id : 000004376
 views : 4,594
 created_date : 2022-10-24 21:45:00
