@@ -1,98 +1,98 @@
 id,name,url,updated,output_file_path
-0TO5w000000ZamoGAC,Creating Content In Domo,https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC,2023-04-27 20:20:38.111006,../../raw_kb\category\creating_content_in_domo\index.html
-0TO5w000000ZamwGAC,Release Notes,https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC,2023-04-27 20:21:53.066922,../../raw_kb\category\release_notes\index.html
-0TO5w000000ZanAGAS,Beast Mode,https://domo-support.domo.com/s/topic/0TO5w000000ZanAGAS,2023-04-27 23:57:11.174013,../../raw_kb\category\beast_mode\index.html
-0TO5w000000ZanDGAS,Card And Dashboard Management,https://domo-support.domo.com/s/topic/0TO5w000000ZanDGAS,2023-04-27 23:56:39.608664,../../raw_kb\category\card_and_dashboard_management\index.html
-0TO5w000000ZaoEGAS,Sharing Access To Cards And Dashboards,https://domo-support.domo.com/s/topic/0TO5w000000ZaoEGAS,2023-04-27 23:56:43.046129,../../raw_kb\category\sharing_access_to_cards_and_dashboards\index.html
-0TO5w000000ZaoNGAS,Visualization Cards,https://domo-support.domo.com/s/topic/0TO5w000000ZaoNGAS,2023-04-27 23:56:55.676640,../../raw_kb\category\visualization_cards\index.html
-0TO5w000000ZanwGAC,Notebook Cards,https://domo-support.domo.com/s/topic/0TO5w000000ZanwGAC,2023-04-27 23:56:58.925188,../../raw_kb\category\notebook_cards\index.html
-0TO5w000000ZanZGAS,Doc Cards,https://domo-support.domo.com/s/topic/0TO5w000000ZanZGAS,2023-04-27 23:57:01.939318,../../raw_kb\category\doc_cards\index.html
-0TO5w000000Zao4GAC,Poll Cards,https://domo-support.domo.com/s/topic/0TO5w000000Zao4GAC,2023-04-27 23:57:05.554764,../../raw_kb\category\poll_cards\index.html
-0TO5w000000ZaoHGAS,Sumo Cards,https://domo-support.domo.com/s/topic/0TO5w000000ZaoHGAS,2023-04-27 23:57:08.599667,../../raw_kb\category\sumo_cards\index.html
-0TO5w000000ZdTCGA0,Variables,https://domo-support.domo.com/s/topic/0TO5w000000ZdTCGA0,2023-04-27 23:57:13.680317,../../raw_kb\category\variables\index.html
-0TO5w000000Zan7GAC,Archived Feature Release Notes,https://domo-support.domo.com/s/topic/0TO5w000000Zan7GAC,2023-04-27 20:21:55.475230,../../raw_kb\category\archived_feature_release_notes\index.html
-0TO5w000000ZanNGAS,Current Release Notes,https://domo-support.domo.com/s/topic/0TO5w000000ZanNGAS,2023-04-27 20:21:58.025770,../../raw_kb\category\current_release_notes\index.html
-0TO5w000000ZaoUGAS,Analyzer,https://domo-support.domo.com/s/topic/0TO5w000000ZaoUGAS,2023-04-28 15:15:45.418891,../../raw_kb\category\analyzer\index.html
-0TO5w000000ZapBGAS,Powering Your Card,https://domo-support.domo.com/s/topic/0TO5w000000ZapBGAS,2023-04-28 00:03:11.454729,../../raw_kb\category\powering_your_card\index.html
-0TO5w000000ZapOGAS,Visualization Card Details View Actions,https://domo-support.domo.com/s/topic/0TO5w000000ZapOGAS,2023-04-28 00:02:08.455535,../../raw_kb\category\visualization_card_details_view_actions\index.html
-0TO5w000000ZaodGAC,Chart Properties,https://domo-support.domo.com/s/topic/0TO5w000000ZaodGAC,2023-04-28 14:55:24.841367,../../raw_kb\category\chart_properties\index.html
-0TO5w000000ZaoeGAC,Chart Types,https://domo-support.domo.com/s/topic/0TO5w000000ZaoeGAC,2023-04-28 00:03:48.670731,../../raw_kb\category\chart_types\index.html
-0TO5w000000ZamsGAC,Getting To Know Domo,https://domo-support.domo.com/s/topic/0TO5w000000ZamsGAC,2023-04-28 14:28:56.785686,../../raw_kb\category\getting_to_know_domo\index.html
-0TO5w000000ZammGAC,Connecting Data To Domo,https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC,2023-04-27 20:19:57.156675,../../raw_kb\category\connecting_data_to_domo\index.html
-0TO5w000000ZamzGAC,Transforming Data In Domo,https://domo-support.domo.com/s/topic/0TO5w000000ZamzGAC,2023-04-27 20:20:15.715016,../../raw_kb\category\transforming_data_in_domo\index.html
-0TO5w000000ZamnGAC,Consuming Data In Domo,https://domo-support.domo.com/s/topic/0TO5w000000ZamnGAC,2023-04-27 20:20:43.535927,../../raw_kb\category\consuming_data_in_domo\index.html
-0TO5w000000ZamlGAC,Administrating Domo,https://domo-support.domo.com/s/topic/0TO5w000000ZamlGAC,2023-04-27 20:21:01.862554,../../raw_kb\category\administrating_domo\index.html
-0TO5w000000ZamqGAC,Distributing Domo Content,https://domo-support.domo.com/s/topic/0TO5w000000ZamqGAC,2023-04-27 20:21:13.256382,../../raw_kb\category\distributing_domo_content\index.html
-0TO5w000000Zan0GAC,Understanding Data,https://domo-support.domo.com/s/topic/0TO5w000000Zan0GAC,2023-04-27 20:21:17.318491,../../raw_kb\category\understanding_data\index.html
-0TO5w000000Zan2GAC,Working With DataSets In Domo,https://domo-support.domo.com/s/topic/0TO5w000000Zan2GAC,2023-04-27 20:21:25.404008,../../raw_kb\category\working_with_datasets_in_domo\index.html
-0TO5w000000Zan1GAC,Using Domo APIs,https://domo-support.domo.com/s/topic/0TO5w000000Zan1GAC,2023-04-27 20:21:36.802830,../../raw_kb\category\using_domo_apis\index.html
-0TO5w000000ZamyGAC,Training,https://domo-support.domo.com/s/topic/0TO5w000000ZamyGAC,2023-04-27 20:21:47.779299,../../raw_kb\category\training\index.html
-0TO5w000000ZanlGAC,Getting Started,https://domo-support.domo.com/s/topic/0TO5w000000ZanlGAC,2023-04-27 20:33:09.437244,../../raw_kb\category\getting_started\index.html
-0TO5w000000ZanxGAC,Notifications And Alerts,https://domo-support.domo.com/s/topic/0TO5w000000ZanxGAC,2023-04-27 20:33:11.961651,../../raw_kb\category\notifications_and_alerts\index.html
-0TO5w000000ZanCGAS,Buzz,https://domo-support.domo.com/s/topic/0TO5w000000ZanCGAS,2023-04-27 20:33:14.440088,../../raw_kb\category\buzz\index.html
-0TO5w000000ZanmGAC,Goals Center,https://domo-support.domo.com/s/topic/0TO5w000000ZanmGAC,2023-04-27 20:33:17.045054,../../raw_kb\category\goals_center\index.html
-0TO5w000000Zao5GAC,Projects And Tasks,https://domo-support.domo.com/s/topic/0TO5w000000Zao5GAC,2023-04-27 20:33:19.641056,../../raw_kb\category\projects_and_tasks\index.html
-0TO5w000000ZaoIGAS,Support Resources,https://domo-support.domo.com/s/topic/0TO5w000000ZaoIGAS,2023-04-27 20:33:22.188307,../../raw_kb\category\support_resources\index.html
-0TO5w000000ZaoLGAS,User Profile,https://domo-support.domo.com/s/topic/0TO5w000000ZaoLGAS,2023-04-27 20:33:24.604050,../../raw_kb\category\user_profile\index.html
-0TO5w000000ZanBGAS,Business In A Box,https://domo-support.domo.com/s/topic/0TO5w000000ZanBGAS,2023-04-27 20:33:27.074488,../../raw_kb\category\business_in_a_box\index.html
-0TO5w000000ZankGAC,Free Domo,https://domo-support.domo.com/s/topic/0TO5w000000ZankGAC,2023-04-27 20:33:29.551700,../../raw_kb\category\free_domo\index.html
-0TO5w000000ZancGAC,Domo Mobile,https://domo-support.domo.com/s/topic/0TO5w000000ZancGAC,2023-04-27 20:33:32.096945,../../raw_kb\category\domo_mobile\index.html
-0TO5w000000ZanLGAS,Connectors,https://domo-support.domo.com/s/topic/0TO5w000000ZanLGAS,2023-04-27 20:52:12.326714,../../raw_kb\category\connectors\index.html
-0TO5w000000Zjd3GAC,Cloud Amplifier,https://domo-support.domo.com/s/topic/0TO5w000000Zjd3GAC,2023-04-27 20:52:14.751728,../../raw_kb\category\cloud_amplifier\index.html
-0TO5w000000ZaoPGAS,Workbench,https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS,2023-04-27 20:52:22.460981,../../raw_kb\category\workbench\index.html
-0TO5w000000ZanzGAC,Other Connection Methods,https://domo-support.domo.com/s/topic/0TO5w000000ZanzGAC,2023-04-27 20:52:24.829066,../../raw_kb\category\other_connection_methods\index.html
-0TO5w000000ZaoQGAS,API Connectors,https://domo-support.domo.com/s/topic/0TO5w000000ZaoQGAS,2023-04-27 20:52:27.368598,../../raw_kb\category\api_connectors\index.html
-0TO5w000000ZapAGAS,Partition Connectors,https://domo-support.domo.com/s/topic/0TO5w000000ZapAGAS,2023-04-27 22:27:08.159966,../../raw_kb\category\partition_connectors\index.html
-0TO5w000000ZaoVGAS,Available Custom Connectors,https://domo-support.domo.com/s/topic/0TO5w000000ZaoVGAS,2023-04-27 22:30:28.716467,../../raw_kb\category\available_custom_connectors\index.html
-0TO5w000000ZaojGAC,Database Connectors,https://domo-support.domo.com/s/topic/0TO5w000000ZaojGAC,2023-04-27 22:32:39.271407,../../raw_kb\category\database_connectors\index.html
-0TO5w000000ZaoyGAC,General Connect Info,https://domo-support.domo.com/s/topic/0TO5w000000ZaoyGAC,2023-04-27 22:45:17.723719,../../raw_kb\category\general_connect_info\index.html
-0TO5w000000ZapVGAS,Writeback Connectors,https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS,2023-04-27 22:45:50.642500,../../raw_kb\category\writeback_connectors\index.html
-0TO5w000000ZaowGAC,File Connectors,https://domo-support.domo.com/s/topic/0TO5w000000ZaowGAC,2023-04-27 22:56:29.532145,../../raw_kb\category\file_connectors\index.html
-0TO5w000000ZapTGAS,Workbench 5,https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS,2023-04-27 23:04:59.965589,../../raw_kb\category\workbench_5\index.html
-0TO5w000000ZapSGAS,Workbench 4,https://domo-support.domo.com/s/topic/0TO5w000000ZapSGAS,2023-04-27 23:12:58.986500,../../raw_kb\category\workbench_4\index.html
-0TO5w000000ZapUGAS,Workbench 5.1,https://domo-support.domo.com/s/topic/0TO5w000000ZapUGAS,2023-04-27 23:19:35.866462,../../raw_kb\category\workbench_51\index.html
-0TO5w000000ZdT7GAK,Workbench 5.2,https://domo-support.domo.com/s/topic/0TO5w000000ZdT7GAK,2023-04-27 23:29:22.819079,../../raw_kb\category\workbench_52\index.html
-0TO5w000000ZanvGAC,Magic ETL,https://domo-support.domo.com/s/topic/0TO5w000000ZanvGAC,2023-04-27 23:37:23.081777,../../raw_kb\category\magic_etl\index.html
-0TO5w000000ZanWGAS,DataSet Views,https://domo-support.domo.com/s/topic/0TO5w000000ZanWGAS,2023-04-27 23:37:25.500784,../../raw_kb\category\dataset_views\index.html
-0TO5w000000Zao9GAC,SQL DataFlows,https://domo-support.domo.com/s/topic/0TO5w000000Zao9GAC,2023-04-27 23:37:27.927770,../../raw_kb\category\sql_dataflows\index.html
-0TO5w000000ZanUGAS,DataFlow Management,https://domo-support.domo.com/s/topic/0TO5w000000ZanUGAS,2023-04-27 23:37:30.386085,../../raw_kb\category\dataflow_management\index.html
-0TO5w000000Zao8GAC,SDKs,https://domo-support.domo.com/s/topic/0TO5w000000Zao8GAC,2023-04-27 23:37:33.291874,../../raw_kb\category\sdks\index.html
-0TO5w000000ZaniGAC,Enterprise Stacker,https://domo-support.domo.com/s/topic/0TO5w000000ZaniGAC,2023-04-27 23:37:35.750136,../../raw_kb\category\enterprise_stacker\index.html
-0TO5w000000ZaoJGAS,Transformation Tips And Tricks,https://domo-support.domo.com/s/topic/0TO5w000000ZaoJGAS,2023-04-27 23:37:38.123302,../../raw_kb\category\transformation_tips_and_tricks\index.html
-0TO5w000000ZanVGAS,DataFusion,https://domo-support.domo.com/s/topic/0TO5w000000ZanVGAS,2023-04-27 23:37:40.620603,../../raw_kb\category\datafusion\index.html
-0TO5w000000ZdTHGA0,Tiles,https://domo-support.domo.com/s/topic/0TO5w000000ZdTHGA0,2023-04-27 23:37:43.100359,../../raw_kb\category\tiles\index.html
-0TO5w000000ZanjGAC,Exporting Cards And Dashboards,https://domo-support.domo.com/s/topic/0TO5w000000ZanjGAC,2023-04-28 15:15:20.402597,../../raw_kb\category\exporting_cards_and_dashboards\index.html
-0TO5w000000ZansGAC,Interacting With Cards And Dashboards,https://domo-support.domo.com/s/topic/0TO5w000000ZansGAC,2023-04-28 15:28:35.633684,../../raw_kb\category\interacting_with_cards_and_dashboards\index.html
-0TO5w000000ZanoGAC,Implementing SSO,https://domo-support.domo.com/s/topic/0TO5w000000ZanoGAC,2023-04-28 14:31:25.767683,../../raw_kb\category\implementing_sso\index.html
-0TO5w000000ZanGGAS,Certifications,https://domo-support.domo.com/s/topic/0TO5w000000ZanGGAS,2023-04-28 16:23:10.070559,../../raw_kb\category\certifications\index.html
-0TO5w000000ZandGAC,Domo Security Options,https://domo-support.domo.com/s/topic/0TO5w000000ZandGAC,2023-04-28 16:04:18.685729,../../raw_kb\category\domo_security_options\index.html
-0TO5w000000ZannGAC,Governance Tools,https://domo-support.domo.com/s/topic/0TO5w000000ZannGAC,2023-04-28 15:22:38.859019,../../raw_kb\category\governance_tools\index.html
-0TO5w000000ZanMGAS,Controlling Access In Domo,https://domo-support.domo.com/s/topic/0TO5w000000ZanMGAS,2023-04-28 14:45:51.942457,../../raw_kb\category\controlling_access_in_domo\index.html
-0TO5w000000ZaoGGAS,Specifying Company Settings,https://domo-support.domo.com/s/topic/0TO5w000000ZaoGGAS,2023-04-28 15:04:41.433085,../../raw_kb\category\specifying_company_settings\index.html
-0TO5w000000Zan4GAC,Admin Settings Overview,https://domo-support.domo.com/s/topic/0TO5w000000Zan4GAC,2023-04-28 15:18:05.746065,../../raw_kb\category\admin_settings_overview\index.html
-0TO5w000000Zan5GAC,Approvals,https://domo-support.domo.com/s/topic/0TO5w000000Zan5GAC,2023-04-28 15:29:44.679523,../../raw_kb\category\approvals\index.html
-0TO5w000000ZkAMGA0,Workflows,https://domo-support.domo.com/s/topic/0TO5w000000ZkAMGA0,2023-04-28 15:04:27.305236,../../raw_kb\category\workflows\index.html
-0TO5w000000ZapEGAS,Roles,https://domo-support.domo.com/s/topic/0TO5w000000ZapEGAS,2023-04-28 15:38:47.738980,../../raw_kb\category\roles\index.html
-0TO5w000000ZapJGAS,User And Group Management,https://domo-support.domo.com/s/topic/0TO5w000000ZapJGAS,2023-04-28 14:31:03.372986,../../raw_kb\category\user_and_group_management\index.html
-0TO5w000000ZanbGAC,Domo Everywhere,https://domo-support.domo.com/s/topic/0TO5w000000ZanbGAC,2023-04-28 15:16:56.708756,../../raw_kb\category\domo_everywhere\index.html
-0TO5w000000ZaoBGAS,Scheduled Reports,https://domo-support.domo.com/s/topic/0TO5w000000ZaoBGAS,2023-04-28 15:22:11.086698,../../raw_kb\category\scheduled_reports\index.html
-0TO5w000000Zao7GAC,Publications (Slideshows),https://domo-support.domo.com/s/topic/0TO5w000000Zao7GAC,2023-04-28 16:17:37.088875,../../raw_kb\category\publications_slideshows\index.html
-0TO5w000000Zao6GAC,Publication Groups,https://domo-support.domo.com/s/topic/0TO5w000000Zao6GAC,2023-04-28 14:34:35.145751,../../raw_kb\category\publication_groups\index.html
-0TO5w000000Zao3GAC,Plugins For Sharing Domo Content,https://domo-support.domo.com/s/topic/0TO5w000000Zao3GAC,2023-04-28 15:23:35.511061,../../raw_kb\category\plugins_for_sharing_domo_content\index.html
-0TO5w000000ZkAlGAK,Microsoft Office Add-ins,https://domo-support.domo.com/s/topic/0TO5w000000ZkAlGAK,2023-04-28 15:06:53.483611,../../raw_kb\category\microsoft_office_addins\index.html
-0TO5w000000ZanSGAS,Data Literacy,https://domo-support.domo.com/s/topic/0TO5w000000ZanSGAS,2023-04-28 15:19:04.646067,../../raw_kb\category\data_literacy\index.html
-0TO5w000000ZanRGAS,Data Center Overview,https://domo-support.domo.com/s/topic/0TO5w000000ZanRGAS,2023-04-28 16:16:05.271155,../../raw_kb\category\data_center_overview\index.html
-0TO5w000000ZaoFGAS,Sharing Access To DataSets,https://domo-support.domo.com/s/topic/0TO5w000000ZaoFGAS,2023-04-28 15:58:15.187595,../../raw_kb\category\sharing_access_to_datasets\index.html
-0TO5w000000Zao2GAC,Personalized Data Permissions (PDP),https://domo-support.domo.com/s/topic/0TO5w000000Zao2GAC,2023-04-28 14:45:45.552415,../../raw_kb\category\personalized_data_permissions_pdp\index.html
-0TO5w000000Zan8GAC,AutoML (Machine Learning),https://domo-support.domo.com/s/topic/0TO5w000000Zan8GAC,2023-04-28 16:27:52.649123,../../raw_kb\category\automl_machine_learning\index.html
-0TO5w000000ZanYGAS,Developer Topics,https://domo-support.domo.com/s/topic/0TO5w000000ZanYGAS,2023-04-28 15:34:47.113715,../../raw_kb\category\developer_topics\index.html
-0TO5w000000ZaoCGAS,Self-Service Training,https://domo-support.domo.com/s/topic/0TO5w000000ZaoCGAS,2023-04-28 15:16:42.068739,../../raw_kb\category\selfservice_training\index.html
-0TO5w000000Zao1GAC,Paid Training,https://domo-support.domo.com/s/topic/0TO5w000000Zao1GAC,2023-04-28 15:20:32.305307,../../raw_kb\category\paid_training\index.html
-0TO5w000000ZaoXGAS,Best Practices Resources,https://domo-support.domo.com/s/topic/0TO5w000000ZaoXGAS,2023-04-28 15:32:51.537614,../../raw_kb\category\best_practices_resources\index.html
-0TO5w000000ZaoYGAS,Business Users And Adoption Resources,https://domo-support.domo.com/s/topic/0TO5w000000ZaoYGAS,2023-04-28 14:54:17.738629,../../raw_kb\category\business_users_and_adoption_resources\index.html
-0TO5w000000ZaogGAC,CourseBuilder 1.4,https://domo-support.domo.com/s/topic/0TO5w000000ZaogGAC,2023-04-28 15:19:18.747908,../../raw_kb\category\coursebuilder_14\index.html
-0TO5w000000Zap7GAC,Onboarding Resources,https://domo-support.domo.com/s/topic/0TO5w000000Zap7GAC,2023-04-28 15:07:37.776585,../../raw_kb\category\onboarding_resources\index.html
-0TO5w000000ZampGAC,Creating Custom Visualizations,https://domo-support.domo.com/s/topic/0TO5w000000ZampGAC,2023-04-27 20:21:32.699233,../../raw_kb\category\creating_custom_visualizations\index.html
-0TO5w000000ZanOGAS,Publish in the Appstore,https://domo-support.domo.com/s/topic/0TO5w000000ZanOGAS,2023-04-28 14:34:09.840525,../../raw_kb\category\publish_in_the_appstore\index.html
-0TO5w000000Zan9GAC,Available Apps,https://domo-support.domo.com/s/topic/0TO5w000000Zan9GAC,2023-04-28 14:51:54.627720,../../raw_kb\category\available_apps\index.html
-0TO5w000000ZaoMGAS,Explore the Appstore,https://domo-support.domo.com/s/topic/0TO5w000000ZaoMGAS,2023-04-28 15:43:17.748355,../../raw_kb\category\explore_the_appstore\index.html
+0TO5w000000ZamoGAC,Creating Content In Domo,https://domo-support.domo.com/s/topic/0TO5w000000ZamoGAC,2023-04-29 07:44:34.508144,../../raw_kb\category\creating_content_in_domo\index.html
+0TO5w000000ZamwGAC,Release Notes,https://domo-support.domo.com/s/topic/0TO5w000000ZamwGAC,2023-04-29 07:49:49.568601,../../raw_kb\category\release_notes\index.html
+0TO5w000000ZanAGAS,Beast Mode,https://domo-support.domo.com/s/topic/0TO5w000000ZanAGAS,2023-04-29 07:45:56.780987,../../raw_kb\category\beast_mode\index.html
+0TO5w000000ZanDGAS,Card And Dashboard Management,https://domo-support.domo.com/s/topic/0TO5w000000ZanDGAS,2023-04-29 07:46:25.137229,../../raw_kb\category\card_and_dashboard_management\index.html
+0TO5w000000ZaoEGAS,Sharing Access To Cards And Dashboards,https://domo-support.domo.com/s/topic/0TO5w000000ZaoEGAS,2023-04-29 07:49:23.658084,../../raw_kb\category\sharing_access_to_cards_and_dashboards\index.html
+0TO5w000000ZaoNGAS,Visualization Cards,https://domo-support.domo.com/s/topic/0TO5w000000ZaoNGAS,2023-04-29 07:46:38.982637,../../raw_kb\category\visualization_cards\index.html
+0TO5w000000ZanwGAC,Notebook Cards,https://domo-support.domo.com/s/topic/0TO5w000000ZanwGAC,2023-04-29 07:42:48.999861,../../raw_kb\category\notebook_cards\index.html
+0TO5w000000ZanZGAS,Doc Cards,https://domo-support.domo.com/s/topic/0TO5w000000ZanZGAS,2023-04-29 07:49:26.129657,../../raw_kb\category\doc_cards\index.html
+0TO5w000000Zao4GAC,Poll Cards,https://domo-support.domo.com/s/topic/0TO5w000000Zao4GAC,2023-04-29 07:49:05.801640,../../raw_kb\category\poll_cards\index.html
+0TO5w000000ZaoHGAS,Sumo Cards,https://domo-support.domo.com/s/topic/0TO5w000000ZaoHGAS,2023-04-29 07:49:31.147603,../../raw_kb\category\sumo_cards\index.html
+0TO5w000000ZdTCGA0,Variables,https://domo-support.domo.com/s/topic/0TO5w000000ZdTCGA0,2023-04-29 07:46:54.367540,../../raw_kb\category\variables\index.html
+0TO5w000000Zan7GAC,Archived Feature Release Notes,https://domo-support.domo.com/s/topic/0TO5w000000Zan7GAC,2023-04-29 07:43:53.644307,../../raw_kb\category\archived_feature_release_notes\index.html
+0TO5w000000ZanNGAS,Current Release Notes,https://domo-support.domo.com/s/topic/0TO5w000000ZanNGAS,2023-04-29 07:42:56.816337,../../raw_kb\category\current_release_notes\index.html
+0TO5w000000ZaoUGAS,Analyzer,https://domo-support.domo.com/s/topic/0TO5w000000ZaoUGAS,2023-04-29 07:48:38.638586,../../raw_kb\category\analyzer\index.html
+0TO5w000000ZapBGAS,Powering Your Card,https://domo-support.domo.com/s/topic/0TO5w000000ZapBGAS,2023-04-29 07:42:51.681420,../../raw_kb\category\powering_your_card\index.html
+0TO5w000000ZapOGAS,Visualization Card Details View Actions,https://domo-support.domo.com/s/topic/0TO5w000000ZapOGAS,2023-04-29 07:44:39.719139,../../raw_kb\category\visualization_card_details_view_actions\index.html
+0TO5w000000ZaodGAC,Chart Properties,https://domo-support.domo.com/s/topic/0TO5w000000ZaodGAC,2023-04-29 07:45:22.621252,../../raw_kb\category\chart_properties\index.html
+0TO5w000000ZaoeGAC,Chart Types,https://domo-support.domo.com/s/topic/0TO5w000000ZaoeGAC,2023-04-29 07:48:11.086449,../../raw_kb\category\chart_types\index.html
+0TO5w000000ZamsGAC,Getting To Know Domo,https://domo-support.domo.com/s/topic/0TO5w000000ZamsGAC,2023-04-29 07:47:28.620490,../../raw_kb\category\getting_to_know_domo\index.html
+0TO5w000000ZammGAC,Connecting Data To Domo,https://domo-support.domo.com/s/topic/0TO5w000000ZammGAC,2023-04-29 07:48:36.054916,../../raw_kb\category\connecting_data_to_domo\index.html
+0TO5w000000ZamzGAC,Transforming Data In Domo,https://domo-support.domo.com/s/topic/0TO5w000000ZamzGAC,2023-04-29 07:46:12.338817,../../raw_kb\category\transforming_data_in_domo\index.html
+0TO5w000000ZamnGAC,Consuming Data In Domo,https://domo-support.domo.com/s/topic/0TO5w000000ZamnGAC,2023-04-29 07:45:33.326389,../../raw_kb\category\consuming_data_in_domo\index.html
+0TO5w000000ZamlGAC,Administrating Domo,https://domo-support.domo.com/s/topic/0TO5w000000ZamlGAC,2023-04-29 07:43:20.079040,../../raw_kb\category\administrating_domo\index.html
+0TO5w000000ZamqGAC,Distributing Domo Content,https://domo-support.domo.com/s/topic/0TO5w000000ZamqGAC,2023-04-29 07:48:58.220652,../../raw_kb\category\distributing_domo_content\index.html
+0TO5w000000Zan0GAC,Understanding Data,https://domo-support.domo.com/s/topic/0TO5w000000Zan0GAC,2023-04-29 07:44:00.484911,../../raw_kb\category\understanding_data\index.html
+0TO5w000000Zan2GAC,Working With DataSets In Domo,https://domo-support.domo.com/s/topic/0TO5w000000Zan2GAC,2023-04-29 07:47:39.705122,../../raw_kb\category\working_with_datasets_in_domo\index.html
+0TO5w000000Zan1GAC,Using Domo APIs,https://domo-support.domo.com/s/topic/0TO5w000000Zan1GAC,2023-04-29 07:45:42.713070,../../raw_kb\category\using_domo_apis\index.html
+0TO5w000000ZamyGAC,Training,https://domo-support.domo.com/s/topic/0TO5w000000ZamyGAC,2023-04-29 07:44:50.815291,../../raw_kb\category\training\index.html
+0TO5w000000ZanlGAC,Getting Started,https://domo-support.domo.com/s/topic/0TO5w000000ZanlGAC,2023-04-29 07:48:43.853747,../../raw_kb\category\getting_started\index.html
+0TO5w000000ZanxGAC,Notifications And Alerts,https://domo-support.domo.com/s/topic/0TO5w000000ZanxGAC,2023-04-29 07:44:37.142386,../../raw_kb\category\notifications_and_alerts\index.html
+0TO5w000000ZanCGAS,Buzz,https://domo-support.domo.com/s/topic/0TO5w000000ZanCGAS,2023-04-29 07:46:19.872431,../../raw_kb\category\buzz\index.html
+0TO5w000000ZanmGAC,Goals Center,https://domo-support.domo.com/s/topic/0TO5w000000ZanmGAC,2023-04-29 07:46:51.811956,../../raw_kb\category\goals_center\index.html
+0TO5w000000Zao5GAC,Projects And Tasks,https://domo-support.domo.com/s/topic/0TO5w000000Zao5GAC,2023-04-29 07:44:56.527243,../../raw_kb\category\projects_and_tasks\index.html
+0TO5w000000ZaoIGAS,Support Resources,https://domo-support.domo.com/s/topic/0TO5w000000ZaoIGAS,2023-04-29 07:47:31.201034,../../raw_kb\category\support_resources\index.html
+0TO5w000000ZaoLGAS,User Profile,https://domo-support.domo.com/s/topic/0TO5w000000ZaoLGAS,2023-04-29 07:46:59.566490,../../raw_kb\category\user_profile\index.html
+0TO5w000000ZanBGAS,Business In A Box,https://domo-support.domo.com/s/topic/0TO5w000000ZanBGAS,2023-04-29 07:45:04.416557,../../raw_kb\category\business_in_a_box\index.html
+0TO5w000000ZankGAC,Free Domo,https://domo-support.domo.com/s/topic/0TO5w000000ZankGAC,2023-04-29 07:49:18.705327,../../raw_kb\category\free_domo\index.html
+0TO5w000000ZancGAC,Domo Mobile,https://domo-support.domo.com/s/topic/0TO5w000000ZancGAC,2023-04-29 07:49:13.704563,../../raw_kb\category\domo_mobile\index.html
+0TO5w000000ZanLGAS,Connectors,https://domo-support.domo.com/s/topic/0TO5w000000ZanLGAS,2023-04-29 07:47:52.514067,../../raw_kb\category\connectors\index.html
+0TO5w000000Zjd3GAC,Cloud Amplifier,https://domo-support.domo.com/s/topic/0TO5w000000Zjd3GAC,2023-04-29 07:45:25.322995,../../raw_kb\category\cloud_amplifier\index.html
+0TO5w000000ZaoPGAS,Workbench,https://domo-support.domo.com/s/topic/0TO5w000000ZaoPGAS,2023-04-29 07:45:54.196365,../../raw_kb\category\workbench\index.html
+0TO5w000000ZanzGAC,Other Connection Methods,https://domo-support.domo.com/s/topic/0TO5w000000ZanzGAC,2023-04-29 07:43:48.445007,../../raw_kb\category\other_connection_methods\index.html
+0TO5w000000ZaoQGAS,API Connectors,https://domo-support.domo.com/s/topic/0TO5w000000ZaoQGAS,2023-04-29 07:47:57.927339,../../raw_kb\category\api_connectors\index.html
+0TO5w000000ZapAGAS,Partition Connectors,https://domo-support.domo.com/s/topic/0TO5w000000ZapAGAS,2023-04-29 07:42:46.286284,../../raw_kb\category\partition_connectors\index.html
+0TO5w000000ZaoVGAS,Available Custom Connectors,https://domo-support.domo.com/s/topic/0TO5w000000ZaoVGAS,2023-04-29 07:48:03.322149,../../raw_kb\category\available_custom_connectors\index.html
+0TO5w000000ZaojGAC,Database Connectors,https://domo-support.domo.com/s/topic/0TO5w000000ZaojGAC,2023-04-29 07:46:14.842202,../../raw_kb\category\database_connectors\index.html
+0TO5w000000ZaoyGAC,General Connect Info,https://domo-support.domo.com/s/topic/0TO5w000000ZaoyGAC,2023-04-29 07:46:17.340566,../../raw_kb\category\general_connect_info\index.html
+0TO5w000000ZapVGAS,Writeback Connectors,https://domo-support.domo.com/s/topic/0TO5w000000ZapVGAS,2023-04-29 07:46:22.510125,../../raw_kb\category\writeback_connectors\index.html
+0TO5w000000ZaowGAC,File Connectors,https://domo-support.domo.com/s/topic/0TO5w000000ZaowGAC,2023-04-29 07:49:00.760528,../../raw_kb\category\file_connectors\index.html
+0TO5w000000ZapTGAS,Workbench 5,https://domo-support.domo.com/s/topic/0TO5w000000ZapTGAS,2023-04-29 07:43:32.966646,../../raw_kb\category\workbench_5\index.html
+0TO5w000000ZapSGAS,Workbench 4,https://domo-support.domo.com/s/topic/0TO5w000000ZapSGAS,2023-04-29 07:48:00.747299,../../raw_kb\category\workbench_4\index.html
+0TO5w000000ZapUGAS,Workbench 5.1,https://domo-support.domo.com/s/topic/0TO5w000000ZapUGAS,2023-04-29 07:45:27.929615,../../raw_kb\category\workbench_51\index.html
+0TO5w000000ZdT7GAK,Workbench 5.2,https://domo-support.domo.com/s/topic/0TO5w000000ZdT7GAK,2023-04-29 07:44:03.028566,../../raw_kb\category\workbench_52\index.html
+0TO5w000000ZanvGAC,Magic ETL,https://domo-support.domo.com/s/topic/0TO5w000000ZanvGAC,2023-04-29 07:46:29.311095,../../raw_kb\category\magic_etl\index.html
+0TO5w000000ZanWGAS,DataSet Views,https://domo-support.domo.com/s/topic/0TO5w000000ZanWGAS,2023-04-29 07:46:49.238539,../../raw_kb\category\dataset_views\index.html
+0TO5w000000Zao9GAC,SQL DataFlows,https://domo-support.domo.com/s/topic/0TO5w000000Zao9GAC,2023-04-29 07:45:14.742193,../../raw_kb\category\sql_dataflows\index.html
+0TO5w000000ZanUGAS,DataFlow Management,https://domo-support.domo.com/s/topic/0TO5w000000ZanUGAS,2023-04-29 07:42:59.473979,../../raw_kb\category\dataflow_management\index.html
+0TO5w000000Zao8GAC,SDKs,https://domo-support.domo.com/s/topic/0TO5w000000Zao8GAC,2023-04-29 07:45:07.014568,../../raw_kb\category\sdks\index.html
+0TO5w000000ZaniGAC,Enterprise Stacker,https://domo-support.domo.com/s/topic/0TO5w000000ZaniGAC,2023-04-29 07:45:45.484354,../../raw_kb\category\enterprise_stacker\index.html
+0TO5w000000ZaoJGAS,Transformation Tips And Tricks,https://domo-support.domo.com/s/topic/0TO5w000000ZaoJGAS,2023-04-29 07:46:56.997662,../../raw_kb\category\transformation_tips_and_tricks\index.html
+0TO5w000000ZanVGAS,DataFusion,https://domo-support.domo.com/s/topic/0TO5w000000ZanVGAS,2023-04-29 07:47:55.113441,../../raw_kb\category\datafusion\index.html
+0TO5w000000ZdTHGA0,Tiles,https://domo-support.domo.com/s/topic/0TO5w000000ZdTHGA0,2023-04-29 07:46:46.675050,../../raw_kb\category\tiles\index.html
+0TO5w000000ZanjGAC,Exporting Cards And Dashboards,https://domo-support.domo.com/s/topic/0TO5w000000ZanjGAC,2023-04-29 07:43:56.263083,../../raw_kb\category\exporting_cards_and_dashboards\index.html
+0TO5w000000ZansGAC,Interacting With Cards And Dashboards,https://domo-support.domo.com/s/topic/0TO5w000000ZansGAC,2023-04-29 07:43:22.562590,../../raw_kb\category\interacting_with_cards_and_dashboards\index.html
+0TO5w000000ZanoGAC,Implementing SSO,https://domo-support.domo.com/s/topic/0TO5w000000ZanoGAC,2023-04-29 07:45:36.169130,../../raw_kb\category\implementing_sso\index.html
+0TO5w000000ZanGGAS,Certifications,https://domo-support.domo.com/s/topic/0TO5w000000ZanGGAS,2023-04-29 07:44:53.298976,../../raw_kb\category\certifications\index.html
+0TO5w000000ZandGAC,Domo Security Options,https://domo-support.domo.com/s/topic/0TO5w000000ZandGAC,2023-04-29 07:43:51.055299,../../raw_kb\category\domo_security_options\index.html
+0TO5w000000ZannGAC,Governance Tools,https://domo-support.domo.com/s/topic/0TO5w000000ZannGAC,2023-04-29 07:43:25.150454,../../raw_kb\category\governance_tools\index.html
+0TO5w000000ZanMGAS,Controlling Access In Domo,https://domo-support.domo.com/s/topic/0TO5w000000ZanMGAS,2023-04-29 07:49:11.207016,../../raw_kb\category\controlling_access_in_domo\index.html
+0TO5w000000ZaoGGAS,Specifying Company Settings,https://domo-support.domo.com/s/topic/0TO5w000000ZaoGGAS,2023-04-29 07:42:54.298706,../../raw_kb\category\specifying_company_settings\index.html
+0TO5w000000Zan4GAC,Admin Settings Overview,https://domo-support.domo.com/s/topic/0TO5w000000Zan4GAC,2023-04-29 07:43:43.342716,../../raw_kb\category\admin_settings_overview\index.html
+0TO5w000000Zan5GAC,Approvals,https://domo-support.domo.com/s/topic/0TO5w000000Zan5GAC,2023-04-29 07:48:41.177422,../../raw_kb\category\approvals\index.html
+0TO5w000000ZkAMGA0,Workflows,https://domo-support.domo.com/s/topic/0TO5w000000ZkAMGA0,2023-04-29 07:48:08.504490,../../raw_kb\category\workflows\index.html
+0TO5w000000ZapEGAS,Roles,https://domo-support.domo.com/s/topic/0TO5w000000ZapEGAS,2023-04-29 07:49:03.292033,../../raw_kb\category\roles\index.html
+0TO5w000000ZapJGAS,User And Group Management,https://domo-support.domo.com/s/topic/0TO5w000000ZapJGAS,2023-04-29 07:45:20.157266,../../raw_kb\category\user_and_group_management\index.html
+0TO5w000000ZanbGAC,Domo Everywhere,https://domo-support.domo.com/s/topic/0TO5w000000ZanbGAC,2023-04-29 07:45:01.753688,../../raw_kb\category\domo_everywhere\index.html
+0TO5w000000ZaoBGAS,Scheduled Reports,https://domo-support.domo.com/s/topic/0TO5w000000ZaoBGAS,2023-04-29 07:49:33.662929,../../raw_kb\category\scheduled_reports\index.html
+0TO5w000000Zao7GAC,Publications (Slideshows),https://domo-support.domo.com/s/topic/0TO5w000000Zao7GAC,2023-04-29 07:45:12.188588,../../raw_kb\category\publications_slideshows\index.html
+0TO5w000000Zao6GAC,Publication Groups,https://domo-support.domo.com/s/topic/0TO5w000000Zao6GAC,2023-04-29 07:49:21.172554,../../raw_kb\category\publication_groups\index.html
+0TO5w000000Zao3GAC,Plugins For Sharing Domo Content,https://domo-support.domo.com/s/topic/0TO5w000000Zao3GAC,2023-04-29 07:45:09.638811,../../raw_kb\category\plugins_for_sharing_domo_content\index.html
+0TO5w000000ZkAlGAK,Microsoft Office Add-ins,https://domo-support.domo.com/s/topic/0TO5w000000ZkAlGAK,2023-04-29 07:46:44.085655,../../raw_kb\category\microsoft_office_addins\index.html
+0TO5w000000ZanSGAS,Data Literacy,https://domo-support.domo.com/s/topic/0TO5w000000ZanSGAS,2023-04-29 07:43:45.903172,../../raw_kb\category\data_literacy\index.html
+0TO5w000000ZanRGAS,Data Center Overview,https://domo-support.domo.com/s/topic/0TO5w000000ZanRGAS,2023-04-29 07:49:16.224931,../../raw_kb\category\data_center_overview\index.html
+0TO5w000000ZaoFGAS,Sharing Access To DataSets,https://domo-support.domo.com/s/topic/0TO5w000000ZaoFGAS,2023-04-29 07:45:38.819458,../../raw_kb\category\sharing_access_to_datasets\index.html
+0TO5w000000Zao2GAC,Personalized Data Permissions (PDP),https://domo-support.domo.com/s/topic/0TO5w000000Zao2GAC,2023-04-29 07:48:46.531330,../../raw_kb\category\personalized_data_permissions_pdp\index.html
+0TO5w000000Zan8GAC,AutoML (Machine Learning),https://domo-support.domo.com/s/topic/0TO5w000000Zan8GAC,2023-04-29 07:43:27.751925,../../raw_kb\category\automl_machine_learning\index.html
+0TO5w000000ZanYGAS,Developer Topics,https://domo-support.domo.com/s/topic/0TO5w000000ZanYGAS,2023-04-29 07:47:11.538711,../../raw_kb\category\developer_topics\index.html
+0TO5w000000ZaoCGAS,Self-Service Training,https://domo-support.domo.com/s/topic/0TO5w000000ZaoCGAS,2023-04-29 07:44:11.574013,../../raw_kb\category\selfservice_training\index.html
+0TO5w000000Zao1GAC,Paid Training,https://domo-support.domo.com/s/topic/0TO5w000000Zao1GAC,2023-04-29 07:49:28.592768,../../raw_kb\category\paid_training\index.html
+0TO5w000000ZaoXGAS,Best Practices Resources,https://domo-support.domo.com/s/topic/0TO5w000000ZaoXGAS,2023-04-29 07:48:05.934120,../../raw_kb\category\best_practices_resources\index.html
+0TO5w000000ZaoYGAS,Business Users And Adoption Resources,https://domo-support.domo.com/s/topic/0TO5w000000ZaoYGAS,2023-04-29 07:43:30.335098,../../raw_kb\category\business_users_and_adoption_resources\index.html
+0TO5w000000ZaogGAC,CourseBuilder 1.4,https://domo-support.domo.com/s/topic/0TO5w000000ZaogGAC,2023-04-29 07:49:36.252218,../../raw_kb\category\coursebuilder_14\index.html
+0TO5w000000Zap7GAC,Onboarding Resources,https://domo-support.domo.com/s/topic/0TO5w000000Zap7GAC,2023-04-29 07:46:41.527250,../../raw_kb\category\onboarding_resources\index.html
+0TO5w000000ZampGAC,Creating Custom Visualizations,https://domo-support.domo.com/s/topic/0TO5w000000ZampGAC,2023-04-29 07:47:08.920087,../../raw_kb\category\creating_custom_visualizations\index.html
+0TO5w000000ZanOGAS,Publish in the Appstore,https://domo-support.domo.com/s/topic/0TO5w000000ZanOGAS,2023-04-29 07:43:35.527337,../../raw_kb\category\publish_in_the_appstore\index.html
+0TO5w000000Zan9GAC,Available Apps,https://domo-support.domo.com/s/topic/0TO5w000000Zan9GAC,2023-04-29 07:45:17.435043,../../raw_kb\category\available_apps\index.html
+0TO5w000000ZaoMGAS,Explore the Appstore,https://domo-support.domo.com/s/topic/0TO5w000000ZaoMGAS,2023-04-29 07:47:02.128609,../../raw_kb\category\explore_the_appstore\index.html
