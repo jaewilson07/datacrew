@@ -1,0 +1,212 @@
+PROMPT:
+
+Use the following passage to give a detailed answer to the question:
+
+
+QUESTION: are dataset views supported in MySQL dataflows?
+
+
+PASSAGE: 
+**Note:** Depending on the product version you are using, the documentation may include information about features that may not be available or may have changed.
+New features and enhancements
+-----------------------------
+
+
+Features and enhancements in this release include the following:
+
+
+### The Data Warehouse
+
+
+TheData Warehouse provides a visually engaging way foryou to interact withyour data warehouse that has been built within Domo. The Data Warehousegives youquick insight into the breadth of your data and also allowsyou to drive into the depth of individual data providers. You can thentakeyour newly gained insights and take effective action on a specific data source or create new data source where a gap was discovered.
+
+
+TheData Warehouseprovides a three-dimensional visual representation of all data sources and Magic connectors in your Domo, along with data currently flowing into and between them.These are represented as stacks on a rotating palette.You can configure the order and height of the stacks to indicate different metrics.
+
+
+###### Data Warehouse main view
+
+
+!
+
+
+Mousing over a stack causes the palette tostop rotating, and an information panel appears for the data source or Magic connector. This panel shows information such as the number of DataSets for the data source or connector, the number of cards built, the number of successful and failed runs, etc.
+
+
+You can click and drag the panel tomove it manually. The panel can bemoved in three dimensions.
+
+
+Stacks are colored differently depending on their type and current activity. Green indicates a functional data source, blue indicates a Magic connector,orange indicates a warning state for a data source, and red indicates that one or more DataSetsfor a data sourceis broken and needs immediate attention.
+
+
+The arrangement of stacks around the palette and the height of the individual stacksindicatespecified metrics. By default, stack arrangement indicates status and stack height indicates the number of rows of data. If you want, you can change the criteria determined by arrangement and height.For example, you could set the arrangementof stacks around the palette to indicate the number of cards built using thedatasource or Magic connectorand the height of the stacks to indicate the number of DataSets.
+
+
+Clicking a connector stackchanges the view to show three-dimensional representations of all DataSets for the connector. This view also shows the data sources, the number of DataSets, and the number of rows for the data source or connector.
+
+
+###### Connector stack view for The Data Warehouse
+
+
+!
+
+
+For information about The Data Warehouse, see.
+
+
+### Workbench 4
+
+
+Workbenchversion 4 is here.The latest version of Domo Workbench provides a clean and intuitive user experience that will help you get the most out of Workbench. New features like API token login and parallel job processing improve security and performance while new connections like the external process plugin will extend the reach to Workbench to almost any data you have in your Data Center.
+
+
+The user interface has been updated with all of the following improvements:
+
+
+
+* Uses .Net and Windows best practices
+* Provides wizards for executing primary activities
+* Uses a tree navigation system to provideacleaner flow for the creation ofaccounts, DataSet Jobs, and transforms
+* Provides enhanced logging
+
+
+!
+
+
+In Workbench 4 you also have access to numerous security and performance upgrades, including the following:
+
+
+
+* The use of API tokens for all Workbench users
+* Implementation of multi-part uploading for all large DataSet Jobs
+* Automated proxy setting determination
+* Simplification of multiple instance connections
+* Parallel job processing
+
+
+Workbench 4 also includes a new developer plugin model that will enable you to do all of the following:
+
+
+
+* Install new plugins directly in Workbench
+* Create data provider, transport, and transform plugins that can be consumed in a common format (DLL)
+
+
+In addition to all this, this release includes other new functionality such as the ability to connect to OLAP cubes; the ability to define connections using externalprocess file providers; the ability to create groups of DataSet Jobs on the same update schedule; and more.
+
+
+For information about Workbench 4, see.
+
+
+### Buzz v3
+
+
+Buzz has been updated to providemore enjoyable and meaningful social experiences with your colleagues in Domo.
+
+
+You can view a discussion in the Buzz panel or expand it to fill the screen. The Buzz panel now displays only the first and last comments in each conversation in chronological order; however,you can expand any particular conversation to show only that conversation in its entirety. You can also filter the feed activity to show only discussions that are connected to a trending topic, card, or project.
+
+
+In addition, you can now do all of the following in Buzz:
+
+
+
+* @ mention the users or groups you want to see your message
+* @mention cards or projects you want to reference in the message
+* reference specific users, cards, groups, or projects using @or popular topics using #
+* add new hash tags #
+* select images for URLs
+* attach documents and images by selecting from the browser, dragging and dropping, or entering the image URL
+* attach YouTube videos that can be played inline
+* navigate through previews of referenced cards using a card carousel
+* filter by browse mode or trending topic, card, or project
+* specify a post as public or private
+* "mute" discussionsso youdon't receive notifications whennew comments are added to that discussion
+
+
+###### Buzz - Main panel
+
+
+###### Buzz - New discussionview
+
+
+For more information about Buzz, see.
+
+
+### NotificationsManagement
+
+
+Notifications provide a way for you to know when important things happen in Domo that demand your attention.The new **Manage Notifications & Alerts** page in Domo gives you the flexibility to determine how, when, and whichnotifications come to you. This page lets you set options for Notifications, Instant Alerts, Daily Alerts, and Weekly Alerts.
+
+
+In the **Notifications** tab, you can toggle global settings for receiving notifications via email, mobile app, or SMS. You can alsospecify if and how you receive notifications for all of the following:
+
+
+
+* Someone @ mentioning you or a group you're in
+* Someone commenting on a conversation you're mentioned in
+* Someone liking something you posted
+* Someone sharing a card or page with you
+* Someone assigning a task to you or updating your task
+* Someone uploading a new version of a document card you've favorite
+
+
+You can alsotoggle subscription emails in the Notifications tab.
+
+
+###### Manage Notifications & Alerts - Notifications tab
+
+
+In the **Instant Alerts** tab, you can set options for instant notifications for triggered alerts. In the **Daily Alerts**tab, you canset the time at whichdaily summary emails(lists of alerts) are sent to you.You can also specify whether updates to "Favorited" cards are included in the email.In the **Weekly Alerts**  tab you can set the day of the week and time when weekly summary emails are sent.
+
+
+###### ManageNotifications & Alerts - Daily Alerts tab
+
+
+For any alert, you cannow select whether you want to receive instant,daily, and/or weekly notifications.Alerts with**Daily** selected appearin your daily summary email, and alerts with**Weekly** selected appear in your weekly summary email.
+
+
+For more information, see.
+
+
+### Alert Summary card
+
+
+Domo's existing alert interface has been updated in the form of an alert summary card.This card contains all of the information and options necessary for understanding, editing, and deleting alerts. The card is available from theAlerts Center, thecardDetails view, and the Profile page.
+
+
+The alert summary cardallows you to do all of the following from one place:
+
+
+
+* Set instant, daily, and weekly notifications on the alert
+* Edit the alert
+* Delete the alert
+* View theDetails view for the card in which the alert has been set
+* See the creator and followers of the alert
+* View the 180-day history for the alert
+* View a list ofevents when the alert has been triggered
+
+
+For more information, see.
+
+
+### Domo University training videos access
+
+
+You can now access and authenticate to Domo University using a link in the Domo product. This link provides access to a new Domo University page where hundreds of training videos can be viewed. No separate login is required, and new videos are added at frequent intervals. Customers should visit the Help Center to register for webinars and/or public courses.
+
+
+### Improved document card
+
+
+The document card has beenupdated with anumber of exciting new capabilities. Now you can make Domo the place where all of your documents are stored so you can collaborate around them, compare them with data, and easily view the version history. You'll know exactly when a file has been updated, and you'll never have to leave Domo to view your documents.
+
+
+DETAILED ANSWER: '
+
+============
+
+ RESPONSE:
+
+No, dataset views are not supported in MySQL dataflows. The Data Warehouse feature in Domo provides a visually engaging way to interact with data warehouses built within Domo, and it includes a three-dimensional visual representation of all data sources and Magic connectors in your Domo, along with data currently flowing into and between them. However, this feature does not support dataset views. Workbench 4 includes numerous security and performance upgrades, including the use of API tokens for all Workbench users and implementation of multi-part uploading for all large DataSet Jobs. It also includes a new developer plugin model that will enable you to install new plugins directly in Workbench and create data provider, transport, and transform plugins that can be consumed in a common format (DLL). Buzz v3 provides more enjoyable and meaningful social experiences with colleagues in Domo, but it does not support dataset views either. Notifications Management provides a way for users to know when important things happen in Domo that demand their attention, but it does not support dataset views. The Alert Summary card contains all of the information and options necessary for understanding, editing, and deleting alerts, but it does not support dataset views either. Finally, Domo University training videos access provides access to hundreds of training videos without requiring a separate login, but it does not support dataset views.

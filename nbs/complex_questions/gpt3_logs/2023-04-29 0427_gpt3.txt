@@ -1,0 +1,161 @@
+PROMPT:
+
+Use the following passage to give a detailed answer to the question:
+
+
+QUESTION: Are Dataset views supported in MySQL dataflows?
+
+
+PASSAGE: Intro
+-----
+
+
+With DataSet Alerts, you can build flexible and powerful Alerts right on a DataSet. Youcan be Alerted based on *any* change or addition to your data. Unlike traditional Alerts, these can be built on multiple trigger rules. And the Alert message can include complex calculations and even data from other DataSets, making the custom message more customizableand more useful. 
+
+
+For example, let's say user Barry is a sales manager for his company. He wants to know the exact moment that a new deal closes, along with any pertinent information about the deal, such as the salesperson who closed the deal, the name of the customer, the amount of the deal, the number of consulting hours purchased, and so on. Before DataSet Alerts, Barry could only set Alerts on the Card level. These Alerts would indicate that a predefined threshold had been surpassed but could not relay any other data from the DataSet. But now, with DataSet Alerts, Barry can set an Alert on the DataSet level. The Alert message can include *any* information from the DataSet, including all of the data Barry wanted.
+
+
+Barry's Alert message as created in Domolooks as follows:
+
+
+`[Sales Rep], on the [Sales Team] team, closed a deal with [Account Name] for [Deal Amount]. This deal includes [# of Users] users and [# of Consulting Hours Purchased] consulting hours (at a rate of [Consulting Rate] per hour). The competitor for this deal was [Competitor Name]. This opportunity was created on [Opportunity Start Date] from a [Lead Type].`
+
+
+Thereafter, when a deal closes, the Alert message that is sent out is populated with the data from the indicated columns. This message might appear as follows:
+
+
+"Darcy McKay, on the Corporate team, closed a deal with Kablinko Toys for $23,560. This deal includes 12 users and 8 consulting hours (at a rate of $225 per hour). The competitor for this deal was Red Puffin Electronics. This opportunity was created on 08-12-2017 from a Marketing-generated Lead."
+
+
+You manage DataSet Alerts in the Alert Center, just as with Card Alerts. There you can edit rules and messages, change your notification settings, see the Alert history, share Alerts with other users, and subscribe to other DataSet Alerts.For more information about the Alert Center, see.
+
+
+**Video - Using DataSet Alerts**
+
+
+{{< video www.youtube.com/embed/kiByVmF8A80 >}}
+
+
+
+Creating a DataSetAlert
+------------------------
+
+
+You create DataSet Alerts in the Data Center, in the . Click on**Alerts**in the details view tab bar to open the**Alerts**tab. This tab shows cards for all Alerts that have been created on this DataSet. You can click any Alert to open a panel in which you can edit the Alert, see its history, share it, and so on. In this tab you can also click**New Alert**to open the 3-step Alert wizard, whereyou can configure yournew Alert.The steps in the wizard are as follows:
+
+
+1. **Rule.**Here you specify the conditions that trigger your Alert. You can also specify how often Domo checks to see if the Alert conditions have been met.
+2. **Message**. Here you can customize the message for the Alert using a variety of different macros to indicate available metrics.
+3. **Share**. Here you specify the users, groups, and Buzz conversationsthat receive notifications when the Alert is triggered.
+
+
+All of these steps are described in more detail in continuation.
+
+
+### Setting Up Your Alert Rule
+
+
+In Step 1 of the wizard, you specify the conditions that cause your Alert to trigger. You can also set the frequency at which Domochecks to see if the Alert has triggered.
+
+
+If PDP policies have been set on thisDataSet, you can specify how PDPis applied to Alerts in Step 1 of the wizard. For more information, see.
+
+
+#### Specifying the Alert Conditions
+
+
+There are two types of DataSet Alerts: individual row Alerts and column aggregation Alerts. You select the type of Alert you want in the**Metric**menu in the**Rule**section of the Alert wizard.  
+  
+!
+
+
+##### Individual row Alerts
+
+
+You can create Alerts that trigger when changes are made to individual rows in your DataSet. These changes include rows being added, changed, or deleted from the DataSet. For example, you might have an Alert set to trigger when a row for a new customer account is added to your sales DataSet.
+
+
+**Note:** The following DataSet types do not support row Alerts:
+
+
+
+* Fusions
+* Views
+* Appends
+* Upserts
+* Federated DataSets
+* DataSets with more than 1M rows.
+When you choose an individual row option, two additional configuration options appear. The first of these,**Add Filter**,is optional. Here, you can set your Alert to trigger*only*when specific rows are added, changed, or deleted. To do this, you choose the desired column in the**Metric**menu, select an operator in the**Meets this condition** menu, then enter or select the desired value in the**For this value**field. So for example, if user Fiona only wants to receive Alerts when the "Marketing" department is impacted, she would select**Department**in the first menu and**Is equal to****(=)**in the second menu, then check the box for "Marketing" in the blank field.  
+  
+You can add additional filters by clicking**Add Filter**.
+
+
+!  
+  
+By adding multiple filters, you can build complex Alert rules for your DataSets. For example, let's say I have a DataSetthat includes rows for customer deals in the pipeline. I want to receive an Alert*only*when these three criteria are met:
+
+
+
+* I have won the deal (indicated by the "isWon" column being set to "True").
+* The deal was previously open (indicated by the "isClosed" column being previously set to "False").
+* The deal is now closed (indicated by the "isClosed" column being now set to "True").
+
+
+I could build a single rule incorporating all three of these criteria. by creating three separate filters, as follows:
+
+
+!  
+
+
+
+The second option asks you to selectone or more columns that identify a row in this DataSet as unique. In the previous example, I specified "AccountID" as this column because the account ID is unique for every row. Unlike the filters option, this is required to proceed.
+
+
+##### Column aggregation Alerts
+
+
+Column aggregation Alertsoccur when the aggregation for a column meets a specified threshold, just as with Card Alerts. For example, you might have an Alert set to trigger when the sum of the "Total Budget" column for your DataSetfalls below a certain value. 
+
+
+To build a column aggregation Alert, you first choose a column in the **Metric**menu, followed by the desired aggregation. Different aggregation types are available depending on the data type of the selected column.
+
+
+Available aggregations for string columns are as follows:
+
+
+
+* **Unique Count**. The number of unique values in the column (i.e. if a value appears more than once, it is only counted once).
+* **Null Count**. The number of NULL values in the column.
+* **Non-null Count**. The number of non-NULL values in the column.
+* **Total Count**. The total number of values in the column, including all null and non-unique values.
+* **Minimum String Length**. The length in characters of the shortest string in the column.
+* **Maximum String Length.**The length in characters of the longest string in the column.
+* **Average String Length**. Theaverage length of characters of all of the strings in the column.
+
+
+Available aggregations for value and date columns are as follows:
+
+
+
+* **Unique Count**. The number of unique values in this column (i.e. if a value appears more than once, it is only counted once).
+* **Null Count**. The number of NULL values in the column.
+* **Non-null Count**. The number of non-NULL values in the column.
+* **Total Count**. The total number of values in the column, including all null and non-unique values.
+* **Minimum**. The smallest value or earliest date in the column.
+* **Maximum**. The largest value or latest date in the column.
+* **Average**. The average value in the column.
+* **Sum**. The sum of all of the values in the column.
+* **Standard Deviation**. The standard deviation of the values in the column.
+* **Median**. The median value in the column.
+* **Lower Quartile**. The lower quartile for the column.
+* **Upper Quartile**. The upper quartile for the column.
+
+
+DETAILED ANSWER: '
+
+============
+
+ RESPONSE:
+
+No, dataset views are not supported in MySQL dataflows. DataSet Alerts can be created on any change or addition to the data, but they cannot be built on multiple trigger rules. The Alert message can include complex calculations and data from other DataSets, but it cannot include data from dataset views. The Alert message is populated with the data from the indicated columns, and users can manage DataSet Alerts in the Alert Center. To create a DataSet Alert, users specify the conditions that cause the Alert to trigger in Step 1 of the wizard, and they can also set the frequency at which Domo checks to see if the Alert has triggered. There are two types of DataSet Alerts: individual row Alerts and column aggregation Alerts. Individual row Alerts trigger when changes are made to individual rows in the DataSet, while column aggregation Alerts occur when the aggregation for a column meets a specified threshold. Different aggregations are available depending on the data type of the selected column.
