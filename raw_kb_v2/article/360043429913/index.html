@@ -493,9 +493,9 @@ function loadViaAjax(linkEl, cssVariables) {
 window.Aura.rewriteCssVars = rewriteCssVars;
 }());
   </script>
-  <script data-src="/jslibrary/1682536480000/canvas/CanvasRendering.js">
+  <script data-src="/jslibrary/1682618256000/canvas/CanvasRendering.js">
   </script>
-  <script data-src="/jslibrary/1682536480000/ui-analytics-reporting/EclairNG.js">
+  <script data-src="/jslibrary/1682618256000/ui-analytics-reporting/EclairNG.js">
   </script>
   <!--"'-->
   <script nonce="">
@@ -505,7 +505,7 @@ window.Aura.rewriteCssVars = rewriteCssVars;
  */
 var ContentAssetGlobalValueProvider=function(a,b){this.orgId=a;this.contentDomainUrl=b};ContentAssetGlobalValueProvider.prototype.merge=function(){};ContentAssetGlobalValueProvider.prototype.isStorable=function(){return!1};ContentAssetGlobalValueProvider.prototype.get=function(a){var b="";if(!a||0===a.length)return null;b=a+"?oid\x3d"+this.orgId+"\x26";a="/file-asset/"+b;var b=$A.get("$SfdcSite.pathPrefix"),c=$A.get("$Absolute.url");return b?[c||b||"",a].join(""):[this.contentDomainUrl||"",a].join("")};
 
-//# sourceMappingURL=/javascript/1682493542126/ui-sfdc-javascript-impl/source/ContentAssetGVP.js.map
+//# sourceMappingURL=/javascript/1682580246685/ui-sfdc-javascript-impl/source/ContentAssetGVP.js.map
 
 $A.addValueProvider('$ContentAsset', new ContentAssetGlobalValueProvider('00D300000006KcL',''))
  ; }); window.Aura.beforeFrameworkInit.push(function() { /*
@@ -516,11 +516,11 @@ var RecordGlobalValueProvider=function(a,b,c,d,e){this._cmp=null;this.configs={r
 RecordGlobalValueProvider.prototype.get=function(a,b){if("configs"===a)return this.configs;this._requestFromServer(a)};RecordGlobalValueProvider.prototype._requestFromServer=function(a){if(this._createCmp()){var b=this._cmp.get("c.getRecord");b.setParams({recordDescriptor:a});b.setCallback(this,$A.getCallback(function(b){"INCOMPLETE"===b.getState()&&this._cmp.helper.handleIncomplete.call(this._cmp.helper,a)}));$A.enqueueAction(b);$A.run(function(){},"RecordGlobalValueProvider._requestFromServer")}};
 RecordGlobalValueProvider.prototype._createCmp=function(){this._cmp||(this._cmp=$A.createComponentFromConfig({descriptor:"markup://force:recordGlobalValueProvider",attributes:null}));return!$A.util.isUndefinedOrNull(this._cmp)};
 
-//# sourceMappingURL=/javascript/1682493542126/ui-sfdc-javascript-impl/source/RecordGVP.js.map
+//# sourceMappingURL=/javascript/1682580246685/ui-sfdc-javascript-impl/source/RecordGVP.js.map
 
 $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57.0', '56.0')) ; });  }());
   </script>
-  <script src="/s/sfsites/l/%7B%22mode%22%3A%22PROD%22%2C%22app%22%3A%22siteforce%3AcommunityApp%22%2C%22fwuid%22%3A%222kszAdlijI-L2tQGa5JU9w%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fsiteforce%3AcommunityApp%22%3A%22V2DbYM5VB6CTpybCXoXPiA%22%7D%2C%22apce%22%3A1%2C%22apck%22%3A%22JzFTh1avqkPU41cHftQKSA%22%2C%22mlr%22%3A1%2C%22pathPrefix%22%3A%22%22%2C%22dns%22%3A%22c%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22348087373%22%7D/resources.js?pv=168272339000053473592&amp;rv=1682714474000">
+  <script src="/s/sfsites/l/%7B%22mode%22%3A%22PROD%22%2C%22app%22%3A%22siteforce%3AcommunityApp%22%2C%22fwuid%22%3A%222kszAdlijI-L2tQGa5JU9w%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fsiteforce%3AcommunityApp%22%3A%22V2DbYM5VB6CTpybCXoXPiA%22%7D%2C%22apce%22%3A1%2C%22apck%22%3A%22JzFTh1avqkPU41cHftQKSA%22%2C%22mlr%22%3A1%2C%22pathPrefix%22%3A%22%22%2C%22dns%22%3A%22c%22%2C%22ls%22%3A1%2C%22lrmc%22%3A%22348087373%22%7D/resources.js?pv=168292896500053473592&amp;rv=1682714474000">
   </script>
   <script src="/s/sfsites/auraFW/javascript/2kszAdlijI-L2tQGa5JU9w/aura_prod.js">
   </script>
@@ -1146,12 +1146,12 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
              </div>
             </article>
             <article class="content" data-aura-rendered-by="70:143;a">
-             <div class="full forcePageBlock forceRecordLayout" data-aura-class="forcePageBlock forceRecordLayout" data-aura-rendered-by="381:200;a">
-              <div class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView" data-aura-class="forcePageBlockSection forcePageBlockSectionView" data-aura-rendered-by="52:200;a">
-               <h3 class="slds-section__title test-id__section-header-container" data-aura-rendered-by="54:200;a">
-                <button aria-controls="4:200;a" aria-expanded="true" class="slds-button test-id__section-header-button slds-section__title-action" data-aura-rendered-by="64:200;a" type="button">
-                 <!--render facet: 65:200;a-->
-                 <lightning-icon class="slds-icon-utility-chevrondown test-id__section-header-icon section-icon slds-m-right_x-small slds-button__icon slds-icon_container forceIcon" data-aura-class="forceIcon" data-aura-rendered-by="60:200;a" data-data-rendering-service-uid="151" icon-name="utility:chevrondown">
+             <div class="full forcePageBlock forceRecordLayout" data-aura-class="forcePageBlock forceRecordLayout" data-aura-rendered-by="381:194;a">
+              <div class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView" data-aura-class="forcePageBlockSection forcePageBlockSectionView" data-aura-rendered-by="52:194;a">
+               <h3 class="slds-section__title test-id__section-header-container" data-aura-rendered-by="54:194;a">
+                <button aria-controls="4:194;a" aria-expanded="true" class="slds-button test-id__section-header-button slds-section__title-action" data-aura-rendered-by="64:194;a" type="button">
+                 <!--render facet: 65:194;a-->
+                 <lightning-icon class="slds-icon-utility-chevrondown test-id__section-header-icon section-icon slds-m-right_x-small slds-button__icon slds-icon_container forceIcon" data-aura-class="forceIcon" data-aura-rendered-by="60:194;a" data-data-rendering-service-uid="151" icon-name="utility:chevrondown">
                   <span part="boundary">
                    <lightning-primitive-icon>
                     <svg aria-hidden="true" class="slds-icon slds-icon_xx-small" data-key="chevrondown" focusable="false" part="icon" viewbox="0 0 52 52">
@@ -1163,105 +1163,105 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
                    </lightning-primitive-icon>
                   </span>
                  </lightning-icon>
-                 <span class="test-id__section-header-title slds-truncate" data-aura-rendered-by="61:200;a">
+                 <span class="test-id__section-header-title slds-truncate" data-aura-rendered-by="61:194;a">
                   Information
                  </span>
-                 <!--render facet: 68:200;a-->
+                 <!--render facet: 68:194;a-->
                 </button>
                </h3>
-               <div aria-hidden="false" class="test-id__section-content slds-section__content section__content" data-aura-rendered-by="69:200;a" id="4:200;a" style="transition: none 0s ease 0s;">
-                <div class="slds-form slds-form_stacked" data-aura-rendered-by="70:200;a">
-                 <div class="slds-grid slds-gutters_small full cols-1 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="24:200;a">
-                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="11:200;a">
-                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="12:200;a">
-                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="13:200;a">
-                     <span class="test-id__field-label" data-aura-rendered-by="14:200;a">
+               <div aria-hidden="false" class="test-id__section-content slds-section__content section__content" data-aura-rendered-by="69:194;a" id="4:194;a" style="transition: none 0s ease 0s;">
+                <div class="slds-form slds-form_stacked" data-aura-rendered-by="70:194;a">
+                 <div class="slds-grid slds-gutters_small full cols-1 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="24:194;a">
+                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="11:194;a">
+                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="12:194;a">
+                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="13:194;a">
+                     <span class="test-id__field-label" data-aura-rendered-by="14:194;a">
                       Title
                      </span>
                     </div>
-                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="16:200;a">
-                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="17:200;a">
-                      <span class="uiOutputText" data-aura-class="uiOutputText" data-aura-rendered-by="9:200;a">
+                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="16:194;a">
+                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="17:194;a">
+                      <span class="uiOutputText" data-aura-class="uiOutputText" data-aura-rendered-by="9:194;a">
                        Adding a Beast Mode Calculation to Your Chart
                       </span>
                      </span>
-                     <!--render facet: 19:200;a-->
-                     <!--render facet: 20:200;a-->
+                     <!--render facet: 19:194;a-->
+                     <!--render facet: 20:194;a-->
                     </div>
                    </div>
                   </div>
                  </div>
-                 <div class="slds-grid slds-gutters_small full cols-1 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="48:200;a">
-                  <div class="slds-col slds-grid slds-has-flexi-truncate full long-text forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="35:200;a">
-                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="36:200;a">
-                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="37:200;a">
-                     <span class="test-id__field-label" data-aura-rendered-by="38:200;a">
+                 <div class="slds-grid slds-gutters_small full cols-1 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="48:194;a">
+                  <div class="slds-col slds-grid slds-has-flexi-truncate full long-text forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="35:194;a">
+                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="36:194;a">
+                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="37:194;a">
+                     <span class="test-id__field-label" data-aura-rendered-by="38:194;a">
                       Article Body
                      </span>
                     </div>
-                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="40:200;a">
-                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="41:200;a">
-                      <div class="slds-rich-text-editor__output uiOutputRichText forceOutputRichText" data-aura-class="uiOutputRichText forceOutputRichText" data-aura-rendered-by="32:200;a" dir="ltr">
-                       <h2 data-aura-rendered-by="33:200;a">
+                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="40:194;a">
+                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="41:194;a">
+                      <div class="slds-rich-text-editor__output uiOutputRichText forceOutputRichText" data-aura-class="uiOutputRichText forceOutputRichText" data-aura-rendered-by="32:194;a" dir="ltr">
+                       <h2 data-aura-rendered-by="33:194;a">
                         Intro
                         <span class="rangySelectionBoundary" id="selectionBoundary_1463205775353_5184752617496997" style="display: none;">
                         </span>
                        </h2>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                         You can use Beast Mode to add a calculation for use in transforming columns in your chart.
                        </p>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                         <span class="mt-font-size-22">
                          <strong>
                           Video - Intro to Beast Mode
                          </strong>
                         </span>
                        </p>
-                       <div class="mt-video-widget" data-aura-rendered-by="33:200;a">
+                       <div class="mt-video-widget" data-aura-rendered-by="33:194;a">
                         <iframe allowfullscreen="" frameborder="0" height="315" scrolling="auto" src="//www.youtube-nocookie.com/embed/SpVbmZPMAsM" width="560">
                         </iframe>
                        </div>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                        </p>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                         <span class="mt-font-size-22">
                          <strong>
                           Video - Creating a Calculated Field
                          </strong>
                         </span>
                        </p>
-                       <div class="mt-video-widget" data-aura-rendered-by="33:200;a">
+                       <div class="mt-video-widget" data-aura-rendered-by="33:194;a">
                         <iframe allowfullscreen="" frameborder="0" height="315" scrolling="auto" src="//www.youtube-nocookie.com/embed/h6SQR_H9OsY" width="560">
                         </iframe>
                        </div>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                        </p>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                         <span class="mt-font-size-22">
                          <strong>
                           Video - Case Statement Overview
                          </strong>
                         </span>
                        </p>
-                       <div class="mt-video-widget" data-aura-rendered-by="33:200;a">
+                       <div class="mt-video-widget" data-aura-rendered-by="33:194;a">
                         <iframe allowfullscreen="" frameborder="0" height="315" scrolling="auto" src="//www.youtube-nocookie.com/embed/xFofhklohSc" width="560">
                         </iframe>
                        </div>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                        </p>
-                       <h2 data-aura-rendered-by="33:200;a">
+                       <h2 data-aura-rendered-by="33:194;a">
                         Parts of the Beast Mode dialog
                        </h2>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                         The following screenshot shows how the Beast Mode dialog looks:
                        </p>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                         <img alt="Beast_Mode_Dialog.jpg" src="/servlet/rtaImage?eid=ka05w000001248e&amp;feoid=00N5w00000Ri7BU&amp;refid=0EM5w000005vOEH"/>
                        </p>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                         You can learn about the user interface components of the Beast Mode dialog in the following table:
                        </p>
-                       <table border="1" cellpadding="2" cellspacing="2" data-aura-rendered-by="33:200;a" style="width: 100%;">
+                       <table border="1" cellpadding="2" cellspacing="2" data-aura-rendered-by="33:194;a" style="width: 100%;">
                         <thead>
                          <tr>
                           <th colspan="1" rowspan="1">
@@ -1391,18 +1391,18 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
                          </tr>
                         </tbody>
                        </table>
-                       <h2 data-aura-rendered-by="33:200;a">
+                       <h2 data-aura-rendered-by="33:194;a">
                         Adding a Beast Mode calculation
                        </h2>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                         Use the information in this section to add calculations for transforming data using Beast Mode.
                        </p>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                         <strong>
                          To add a Beast Mode calculation,
                         </strong>
                        </p>
-                       <ol data-aura-rendered-by="33:200;a">
+                       <ol data-aura-rendered-by="33:194;a">
                         <li>
                          <p>
                           On the KPI card where you want to add a calculation, click
@@ -1519,12 +1519,12 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
                          </p>
                         </li>
                        </ol>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                         <strong>
                          To edit a Beast Mode calculation,
                         </strong>
                        </p>
-                       <ol data-aura-rendered-by="33:200;a">
+                       <ol data-aura-rendered-by="33:194;a">
                         <li>
                          <p>
                           On the KPI card where you want to edit a calculation, click
@@ -1561,12 +1561,12 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
                          </p>
                         </li>
                        </ol>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                         <strong>
                          To delete a Beast Mode calculation,
                         </strong>
                        </p>
-                       <ol data-aura-rendered-by="33:200;a">
+                       <ol data-aura-rendered-by="33:194;a">
                         <li>
                          <p>
                           On the KPI card where you want to edit a calculation, click
@@ -1607,10 +1607,10 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
                          </p>
                         </li>
                        </ol>
-                       <h2 data-aura-rendered-by="33:200;a">
+                       <h2 data-aura-rendered-by="33:194;a">
                         Calculation usage notes
                        </h2>
-                       <ul data-aura-rendered-by="33:200;a">
+                       <ul data-aura-rendered-by="33:194;a">
                         <li>
                          <p>
                           Most calculations use one of the following general formats:
@@ -1727,7 +1727,7 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
                          </table>
                         </li>
                        </ul>
-                       <ul data-aura-rendered-by="33:200;a">
+                       <ul data-aura-rendered-by="33:194;a">
                         <li>
                          <p>
                           In calculations, Beast Mode function names are
@@ -1916,20 +1916,20 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
                          </p>
                         </li>
                        </ul>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                         For Beast Mode syntax examples, see
                         <a href="/s/article/360043429993" target="_self">
                          Sample Beast Mode Calculations
                         </a>
                         .
                        </p>
-                       <h2 data-aura-rendered-by="33:200;a" id="h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc">
+                       <h2 data-aura-rendered-by="33:194;a" id="h_2a5bf7f4-c37e-4765-9237-ea23bf43c3fc">
                         Applying a calculation to a summary number
                        </h2>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                         If your Beast Mode calculation aggregates rows in your DataSet, it can be used in your card summary number. Calculations built using any of the following functions can be applied to your summary number:
                        </p>
-                       <ul data-aura-rendered-by="33:200;a">
+                       <ul data-aura-rendered-by="33:194;a">
                         <li>
                          <p>
                           <span class="mt-font-courier-new">
@@ -1987,10 +1987,10 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
                          </p>
                         </li>
                        </ul>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                         When you add such a calculation, the Beast Mode is automatically added to the list of available columns that may be used in the summary number for this chart.
                        </p>
-                       <div class="info-box note" data-aura-rendered-by="33:200;a">
+                       <div class="info-box note" data-aura-rendered-by="33:194;a">
                         <div class="info-box-wrapper">
                          <div class="info-box-icon-container">
                           <span class="info-box-icon">
@@ -2026,7 +2026,7 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
                          </div>
                         </div>
                        </div>
-                       <p data-aura-rendered-by="33:200;a">
+                       <p data-aura-rendered-by="33:194;a">
                         For more information about summary numbers, see
                         <a href="/s/article/360043428753" target="_blank" title="Configuring Your Chart Summary Number">
                          Configuring Your Chart Summary Number
@@ -2035,8 +2035,8 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
                        </p>
                       </div>
                      </span>
-                     <!--render facet: 43:200;a-->
-                     <!--render facet: 44:200;a-->
+                     <!--render facet: 43:194;a-->
+                     <!--render facet: 44:194;a-->
                     </div>
                    </div>
                   </div>
@@ -2044,11 +2044,11 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
                 </div>
                </div>
               </div>
-              <div class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView" data-aura-class="forcePageBlockSection forcePageBlockSectionView" data-aura-rendered-by="141:200;a">
-               <h3 class="slds-section__title test-id__section-header-container" data-aura-rendered-by="143:200;a">
-                <button aria-controls="71:200;a" aria-expanded="true" class="slds-button test-id__section-header-button slds-section__title-action" data-aura-rendered-by="153:200;a" type="button">
-                 <!--render facet: 154:200;a-->
-                 <lightning-icon class="slds-icon-utility-chevrondown test-id__section-header-icon section-icon slds-m-right_x-small slds-button__icon slds-icon_container forceIcon" data-aura-class="forceIcon" data-aura-rendered-by="149:200;a" data-data-rendering-service-uid="152" icon-name="utility:chevrondown">
+              <div class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView" data-aura-class="forcePageBlockSection forcePageBlockSectionView" data-aura-rendered-by="141:194;a">
+               <h3 class="slds-section__title test-id__section-header-container" data-aura-rendered-by="143:194;a">
+                <button aria-controls="71:194;a" aria-expanded="true" class="slds-button test-id__section-header-button slds-section__title-action" data-aura-rendered-by="153:194;a" type="button">
+                 <!--render facet: 154:194;a-->
+                 <lightning-icon class="slds-icon-utility-chevrondown test-id__section-header-icon section-icon slds-m-right_x-small slds-button__icon slds-icon_container forceIcon" data-aura-class="forceIcon" data-aura-rendered-by="149:194;a" data-data-rendering-service-uid="152" icon-name="utility:chevrondown">
                   <span part="boundary">
                    <lightning-primitive-icon>
                     <svg aria-hidden="true" class="slds-icon slds-icon_xx-small" data-key="chevrondown" focusable="false" part="icon" viewbox="0 0 52 52">
@@ -2060,61 +2060,61 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
                    </lightning-primitive-icon>
                   </span>
                  </lightning-icon>
-                 <span class="test-id__section-header-title slds-truncate" data-aura-rendered-by="150:200;a">
+                 <span class="test-id__section-header-title slds-truncate" data-aura-rendered-by="150:194;a">
                   Summary (only shown to internal users)
                  </span>
-                 <!--render facet: 157:200;a-->
+                 <!--render facet: 157:194;a-->
                 </button>
                </h3>
-               <div aria-hidden="false" class="test-id__section-content slds-section__content section__content" data-aura-rendered-by="158:200;a" id="71:200;a" style="transition: none 0s ease 0s;">
-                <div class="slds-form slds-form_stacked" data-aura-rendered-by="159:200;a">
-                 <div class="slds-grid slds-gutters_small full cols-1 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="93:200;a">
-                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="80:200;a">
-                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="81:200;a">
-                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="82:200;a">
-                     <span class="test-id__field-label" data-aura-rendered-by="83:200;a">
+               <div aria-hidden="false" class="test-id__section-content slds-section__content section__content" data-aura-rendered-by="158:194;a" id="71:194;a" style="transition: none 0s ease 0s;">
+                <div class="slds-form slds-form_stacked" data-aura-rendered-by="159:194;a">
+                 <div class="slds-grid slds-gutters_small full cols-1 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="93:194;a">
+                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="80:194;a">
+                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="81:194;a">
+                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="82:194;a">
+                     <span class="test-id__field-label" data-aura-rendered-by="83:194;a">
                       Preview Article
                      </span>
                     </div>
-                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="85:200;a">
-                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="86:200;a">
-                      <span class="lvm-grid-no-fade-out undefined forceOutputFormulaHtml" data-aura-class="forceOutputFormulaHtml" data-aura-rendered-by="77:200;a">
-                       <a data-aura-rendered-by="78:200;a" href="https://domo-support.domo.com/s/article/360043429913" target="_blank">
+                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="85:194;a">
+                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="86:194;a">
+                      <span class="lvm-grid-no-fade-out undefined forceOutputFormulaHtml" data-aura-class="forceOutputFormulaHtml" data-aura-rendered-by="77:194;a">
+                       <a data-aura-rendered-by="78:194;a" href="https://domo-support.domo.com/s/article/360043429913" target="_blank">
                         Click here to preview
                        </a>
                       </span>
                      </span>
-                     <!--render facet: 88:200;a-->
-                     <!--render facet: 89:200;a-->
+                     <!--render facet: 88:194;a-->
+                     <!--render facet: 89:194;a-->
                     </div>
                    </div>
                   </div>
                  </div>
-                 <div class="slds-grid slds-gutters_small full cols-1 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="114:200;a">
-                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="101:200;a">
-                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="102:200;a">
-                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="103:200;a">
-                     <span class="test-id__field-label" data-aura-rendered-by="104:200;a">
+                 <div class="slds-grid slds-gutters_small full cols-1 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="114:194;a">
+                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="101:194;a">
+                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="102:194;a">
+                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="103:194;a">
+                     <span class="test-id__field-label" data-aura-rendered-by="104:194;a">
                       URL Name
                      </span>
                     </div>
-                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="106:200;a">
-                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="107:200;a">
-                      <span class="uiOutputText" data-aura-class="uiOutputText" data-aura-rendered-by="99:200;a">
+                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="106:194;a">
+                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="107:194;a">
+                      <span class="uiOutputText" data-aura-class="uiOutputText" data-aura-rendered-by="99:194;a">
                        360043429913
                       </span>
                      </span>
-                     <!--render facet: 109:200;a-->
-                     <!--render facet: 110:200;a-->
+                     <!--render facet: 109:194;a-->
+                     <!--render facet: 110:194;a-->
                     </div>
                    </div>
                   </div>
                  </div>
-                 <div class="slds-grid slds-gutters_small full cols-1 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="137:200;a">
-                  <div class="slds-col slds-grid slds-has-flexi-truncate has-tooltip full long-text forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="124:200;a">
-                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="125:200;a">
-                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="126:200;a">
-                     <span class="test-id__field-label" data-aura-rendered-by="127:200;a">
+                 <div class="slds-grid slds-gutters_small full cols-1 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="137:194;a">
+                  <div class="slds-col slds-grid slds-has-flexi-truncate has-tooltip full long-text forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="124:194;a">
+                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="125:194;a">
+                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="126:194;a">
+                     <span class="test-id__field-label" data-aura-rendered-by="127:194;a">
                       Summary
                      </span>
                      <div aria-describedby="tt-for-420:0" class="tooltip-trigger uiTooltip" data-aura-class="uiTooltip" data-aura-rendered-by="423:0" tabindex="0">
@@ -2135,14 +2135,14 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
                       </span>
                      </div>
                     </div>
-                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="129:200;a">
-                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="130:200;a">
-                      <span class="uiOutputTextArea" data-aura-class="uiOutputTextArea" data-aura-rendered-by="120:200;a">
-                       <!--render facet: 122:200;a-->
+                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="129:194;a">
+                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="130:194;a">
+                      <span class="uiOutputTextArea" data-aura-class="uiOutputTextArea" data-aura-rendered-by="120:194;a">
+                       <!--render facet: 122:194;a-->
                       </span>
                      </span>
-                     <!--render facet: 132:200;a-->
-                     <!--render facet: 133:200;a-->
+                     <!--render facet: 132:194;a-->
+                     <!--render facet: 133:194;a-->
                     </div>
                    </div>
                   </div>
@@ -2150,11 +2150,11 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
                 </div>
                </div>
               </div>
-              <div class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView" data-aura-class="forcePageBlockSection forcePageBlockSectionView" data-aura-rendered-by="361:200;a">
-               <h3 class="slds-section__title test-id__section-header-container" data-aura-rendered-by="363:200;a">
-                <button aria-controls="160:200;a" aria-expanded="true" class="slds-button test-id__section-header-button slds-section__title-action" data-aura-rendered-by="373:200;a" type="button">
-                 <!--render facet: 374:200;a-->
-                 <lightning-icon class="slds-icon-utility-chevrondown test-id__section-header-icon section-icon slds-m-right_x-small slds-button__icon slds-icon_container forceIcon" data-aura-class="forceIcon" data-aura-rendered-by="369:200;a" data-data-rendering-service-uid="154" icon-name="utility:chevrondown">
+              <div class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView" data-aura-class="forcePageBlockSection forcePageBlockSectionView" data-aura-rendered-by="361:194;a">
+               <h3 class="slds-section__title test-id__section-header-container" data-aura-rendered-by="363:194;a">
+                <button aria-controls="160:194;a" aria-expanded="true" class="slds-button test-id__section-header-button slds-section__title-action" data-aura-rendered-by="373:194;a" type="button">
+                 <!--render facet: 374:194;a-->
+                 <lightning-icon class="slds-icon-utility-chevrondown test-id__section-header-icon section-icon slds-m-right_x-small slds-button__icon slds-icon_container forceIcon" data-aura-class="forceIcon" data-aura-rendered-by="369:194;a" data-data-rendering-service-uid="154" icon-name="utility:chevrondown">
                   <span part="boundary">
                    <lightning-primitive-icon>
                     <svg aria-hidden="true" class="slds-icon slds-icon_xx-small" data-key="chevrondown" focusable="false" part="icon" viewbox="0 0 52 52">
@@ -2166,194 +2166,194 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
                    </lightning-primitive-icon>
                   </span>
                  </lightning-icon>
-                 <span class="test-id__section-header-title slds-truncate" data-aura-rendered-by="370:200;a">
+                 <span class="test-id__section-header-title slds-truncate" data-aura-rendered-by="370:194;a">
                   System Information (only shown to internal users)
                  </span>
-                 <!--render facet: 377:200;a-->
+                 <!--render facet: 377:194;a-->
                 </button>
                </h3>
-               <div aria-hidden="false" class="test-id__section-content slds-section__content section__content" data-aura-rendered-by="378:200;a" id="160:200;a" style="transition: none 0s ease 0s;">
-                <div class="slds-form slds-form_stacked" data-aura-rendered-by="379:200;a">
-                 <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="197:200;a">
-                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="167:200;a">
-                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="168:200;a">
-                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="169:200;a">
-                     <span class="test-id__field-label" data-aura-rendered-by="170:200;a">
+               <div aria-hidden="false" class="test-id__section-content slds-section__content section__content" data-aura-rendered-by="378:194;a" id="160:194;a" style="transition: none 0s ease 0s;">
+                <div class="slds-form slds-form_stacked" data-aura-rendered-by="379:194;a">
+                 <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="197:194;a">
+                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="167:194;a">
+                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="168:194;a">
+                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="169:194;a">
+                     <span class="test-id__field-label" data-aura-rendered-by="170:194;a">
                       Article Number
                      </span>
                     </div>
-                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="172:200;a">
-                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="173:200;a">
-                      <span class="uiOutputText" data-aura-class="uiOutputText" data-aura-rendered-by="165:200;a">
+                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="172:194;a">
+                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="173:194;a">
+                      <span class="uiOutputText" data-aura-class="uiOutputText" data-aura-rendered-by="165:194;a">
                        000004076
                       </span>
                      </span>
-                     <!--render facet: 175:200;a-->
-                     <!--render facet: 176:200;a-->
+                     <!--render facet: 175:194;a-->
+                     <!--render facet: 176:194;a-->
                     </div>
                    </div>
                   </div>
-                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="184:200;a">
-                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="185:200;a">
-                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="186:200;a">
-                     <span class="test-id__field-label" data-aura-rendered-by="187:200;a">
+                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="184:194;a">
+                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="185:194;a">
+                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="186:194;a">
+                     <span class="test-id__field-label" data-aura-rendered-by="187:194;a">
                       Archived Date
                      </span>
                     </div>
-                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="189:200;a">
-                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="190:200;a">
-                      <span class="uiOutputDateTime" data-aura-class="uiOutputDateTime" data-aura-rendered-by="182:200;a">
+                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="189:194;a">
+                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="190:194;a">
+                      <span class="uiOutputDateTime" data-aura-class="uiOutputDateTime" data-aura-rendered-by="182:194;a">
                       </span>
                      </span>
-                     <!--render facet: 192:200;a-->
-                     <!--render facet: 193:200;a-->
+                     <!--render facet: 192:194;a-->
+                     <!--render facet: 193:194;a-->
                     </div>
                    </div>
                   </div>
                  </div>
-                 <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="252:200;a">
-                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="206:200;a">
-                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="207:200;a">
-                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="208:200;a">
-                     <span class="test-id__field-label" data-aura-rendered-by="209:200;a">
+                 <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="252:194;a">
+                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="206:194;a">
+                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="207:194;a">
+                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="208:194;a">
+                     <span class="test-id__field-label" data-aura-rendered-by="209:194;a">
                       Language
                      </span>
                     </div>
-                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="211:200;a">
-                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="212:200;a">
-                      <span data-aura-rendered-by="203:200;a">
+                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="211:194;a">
+                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="212:194;a">
+                      <span data-aura-rendered-by="203:194;a">
                        English
                       </span>
                      </span>
-                     <!--render facet: 214:200;a-->
-                     <!--render facet: 215:200;a-->
+                     <!--render facet: 214:194;a-->
+                     <!--render facet: 215:194;a-->
                     </div>
                    </div>
                   </div>
-                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="239:200;a">
-                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="240:200;a">
-                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="241:200;a">
-                     <span class="test-id__field-label" data-aura-rendered-by="242:200;a">
+                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="239:194;a">
+                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="240:194;a">
+                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="241:194;a">
+                     <span class="test-id__field-label" data-aura-rendered-by="242:194;a">
                       Primary Version
                      </span>
                     </div>
-                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="244:200;a">
-                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="245:200;a">
-                      <!--render facet: 221:200;a-->
-                      <!--render facet: 223:200;a-->
-                      <!--render facet: 225:200;a-->
-                      <a class="outputLookupLink slds-truncate outputLookupLink-ka05w000001248eAAA-219:200;a forceOutputLookup" data-aura-class="forceOutputLookup" data-aura-rendered-by="230:200;a" data-navigable="true" data-ownerid="219:200;a" data-recordid="ka05w000001248eAAA" data-refid="recordId" data-special-link="true" href="javascript:void(0);" rel="noreferrer" target="_blank" title="Adding a Beast Mode Calculation to Your Chart">
+                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="244:194;a">
+                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="245:194;a">
+                      <!--render facet: 221:194;a-->
+                      <!--render facet: 223:194;a-->
+                      <!--render facet: 225:194;a-->
+                      <a class="outputLookupLink slds-truncate outputLookupLink-ka05w000001248eAAA-219:194;a forceOutputLookup" data-aura-class="forceOutputLookup" data-aura-rendered-by="230:194;a" data-navigable="true" data-ownerid="219:194;a" data-recordid="ka05w000001248eAAA" data-refid="recordId" data-special-link="true" href="javascript:void(0);" rel="noreferrer" target="_blank" title="Adding a Beast Mode Calculation to Your Chart">
                        Adding a Beast Mode Calculation to Your Chart
-                       <!--render facet: 233:200;a-->
+                       <!--render facet: 233:194;a-->
                       </a>
                      </span>
-                     <!--render facet: 247:200;a-->
-                     <!--render facet: 248:200;a-->
+                     <!--render facet: 247:194;a-->
+                     <!--render facet: 248:194;a-->
                     </div>
                    </div>
                   </div>
                  </div>
-                 <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="287:200;a">
-                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="260:200;a">
-                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="261:200;a">
-                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="262:200;a">
-                     <span class="test-id__field-label" data-aura-rendered-by="263:200;a">
+                 <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="287:194;a">
+                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="260:194;a">
+                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="261:194;a">
+                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="262:194;a">
+                     <span class="test-id__field-label" data-aura-rendered-by="263:194;a">
                       Article Total View Count
                      </span>
                     </div>
-                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="265:200;a">
-                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="266:200;a">
-                      <span class="uiOutputNumber" data-aura-class="uiOutputNumber" data-aura-rendered-by="258:200;a" dir="auto">
-                       12,133
+                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="265:194;a">
+                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="266:194;a">
+                      <span class="uiOutputNumber" data-aura-class="uiOutputNumber" data-aura-rendered-by="258:194;a" dir="auto">
+                       12,223
                       </span>
                      </span>
-                     <!--render facet: 268:200;a-->
-                     <!--render facet: 269:200;a-->
+                     <!--render facet: 268:194;a-->
+                     <!--render facet: 269:194;a-->
                     </div>
                    </div>
                   </div>
-                  <div class="slds-col slds-grid slds-has-flexi-truncate full blank-item forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="274:200;a">
-                   <div class="slds-form-element slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="275:200;a">
-                    <div class="test-id__field-label-container slds-form-element__label slds-hide" data-aura-rendered-by="276:200;a">
-                     <span class="test-id__field-label" data-aura-rendered-by="277:200;a">
+                  <div class="slds-col slds-grid slds-has-flexi-truncate full blank-item forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="274:194;a">
+                   <div class="slds-form-element slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="275:194;a">
+                    <div class="test-id__field-label-container slds-form-element__label slds-hide" data-aura-rendered-by="276:194;a">
+                     <span class="test-id__field-label" data-aura-rendered-by="277:194;a">
                      </span>
                     </div>
-                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="279:200;a">
-                     <span class="test-id__field-value slds-form-element__static slds-grow slds-is-empty is-read-only" data-aura-rendered-by="280:200;a">
-                      <!--render facet: 281:200;a-->
+                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="279:194;a">
+                     <span class="test-id__field-value slds-form-element__static slds-grow slds-is-empty is-read-only" data-aura-rendered-by="280:194;a">
+                      <!--render facet: 281:194;a-->
                      </span>
-                     <!--render facet: 282:200;a-->
-                     <!--render facet: 283:200;a-->
+                     <!--render facet: 282:194;a-->
+                     <!--render facet: 283:194;a-->
                     </div>
                    </div>
                   </div>
                  </div>
-                 <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="322:200;a">
-                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="295:200;a">
-                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="296:200;a">
-                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="297:200;a">
-                     <span class="test-id__field-label" data-aura-rendered-by="298:200;a">
+                 <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="322:194;a">
+                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="295:194;a">
+                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="296:194;a">
+                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="297:194;a">
+                     <span class="test-id__field-label" data-aura-rendered-by="298:194;a">
                       Article Created Date
                      </span>
                     </div>
-                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="300:200;a">
-                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="301:200;a">
-                      <span class="uiOutputDateTime" data-aura-class="uiOutputDateTime" data-aura-rendered-by="293:200;a">
+                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="300:194;a">
+                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="301:194;a">
+                      <span class="uiOutputDateTime" data-aura-class="uiOutputDateTime" data-aura-rendered-by="293:194;a">
                        10/24/2022, 9:20 PM
                       </span>
                      </span>
-                     <!--render facet: 303:200;a-->
-                     <!--render facet: 304:200;a-->
+                     <!--render facet: 303:194;a-->
+                     <!--render facet: 304:194;a-->
                     </div>
                    </div>
                   </div>
-                  <div class="slds-col slds-grid slds-has-flexi-truncate full blank-item forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="309:200;a">
-                   <div class="slds-form-element slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="310:200;a">
-                    <div class="test-id__field-label-container slds-form-element__label slds-hide" data-aura-rendered-by="311:200;a">
-                     <span class="test-id__field-label" data-aura-rendered-by="312:200;a">
+                  <div class="slds-col slds-grid slds-has-flexi-truncate full blank-item forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="309:194;a">
+                   <div class="slds-form-element slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="310:194;a">
+                    <div class="test-id__field-label-container slds-form-element__label slds-hide" data-aura-rendered-by="311:194;a">
+                     <span class="test-id__field-label" data-aura-rendered-by="312:194;a">
                      </span>
                     </div>
-                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="314:200;a">
-                     <span class="test-id__field-value slds-form-element__static slds-grow slds-is-empty is-read-only" data-aura-rendered-by="315:200;a">
-                      <!--render facet: 316:200;a-->
+                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="314:194;a">
+                     <span class="test-id__field-value slds-form-element__static slds-grow slds-is-empty is-read-only" data-aura-rendered-by="315:194;a">
+                      <!--render facet: 316:194;a-->
                      </span>
-                     <!--render facet: 317:200;a-->
-                     <!--render facet: 318:200;a-->
+                     <!--render facet: 317:194;a-->
+                     <!--render facet: 318:194;a-->
                     </div>
                    </div>
                   </div>
                  </div>
-                 <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="357:200;a">
-                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="330:200;a">
-                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="331:200;a">
-                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="332:200;a">
-                     <span class="test-id__field-label" data-aura-rendered-by="333:200;a">
+                 <div class="slds-grid slds-gutters_small full cols-2 forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow" data-aura-rendered-by="357:194;a">
+                  <div class="slds-col slds-grid slds-has-flexi-truncate full forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="330:194;a">
+                   <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="331:194;a">
+                    <div class="test-id__field-label-container slds-form-element__label" data-aura-rendered-by="332:194;a">
+                     <span class="test-id__field-label" data-aura-rendered-by="333:194;a">
                       First Published Date
                      </span>
                     </div>
-                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="335:200;a">
-                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="336:200;a">
-                      <span class="uiOutputDateTime" data-aura-class="uiOutputDateTime" data-aura-rendered-by="328:200;a">
+                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="335:194;a">
+                     <span class="test-id__field-value slds-form-element__static slds-grow is-read-only" data-aura-rendered-by="336:194;a">
+                      <span class="uiOutputDateTime" data-aura-class="uiOutputDateTime" data-aura-rendered-by="328:194;a">
                        10/24/2022, 10:40 PM
                       </span>
                      </span>
-                     <!--render facet: 338:200;a-->
-                     <!--render facet: 339:200;a-->
+                     <!--render facet: 338:194;a-->
+                     <!--render facet: 339:194;a-->
                     </div>
                    </div>
                   </div>
-                  <div class="slds-col slds-grid slds-has-flexi-truncate full blank-item forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="344:200;a">
-                   <div class="slds-form-element slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="345:200;a">
-                    <div class="test-id__field-label-container slds-form-element__label slds-hide" data-aura-rendered-by="346:200;a">
-                     <span class="test-id__field-label" data-aura-rendered-by="347:200;a">
+                  <div class="slds-col slds-grid slds-has-flexi-truncate full blank-item forcePageBlockItem forcePageBlockItemView" data-aura-class="forcePageBlockItem forcePageBlockItemView" data-aura-rendered-by="344:194;a">
+                   <div class="slds-form-element slds-grow slds-hint-parent override--slds-form-element" data-aura-rendered-by="345:194;a">
+                    <div class="test-id__field-label-container slds-form-element__label slds-hide" data-aura-rendered-by="346:194;a">
+                     <span class="test-id__field-label" data-aura-rendered-by="347:194;a">
                      </span>
                     </div>
-                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="349:200;a">
-                     <span class="test-id__field-value slds-form-element__static slds-grow slds-is-empty is-read-only" data-aura-rendered-by="350:200;a">
-                      <!--render facet: 351:200;a-->
+                    <div class="slds-form-element__control slds-grid itemBody" data-aura-rendered-by="349:194;a">
+                     <span class="test-id__field-value slds-form-element__static slds-grow slds-is-empty is-read-only" data-aura-rendered-by="350:194;a">
+                      <!--render facet: 351:194;a-->
                      </span>
-                     <!--render facet: 352:200;a-->
-                     <!--render facet: 353:200;a-->
+                     <!--render facet: 352:194;a-->
+                     <!--render facet: 353:194;a-->
                     </div>
                    </div>
                   </div>
@@ -2416,18 +2416,18 @@ $A.addValueProvider('$Record', new RecordGlobalValueProvider(30, 1800, 5120, '57
               </li>
               <li>
                <community_article-topic-trending-articles-item class="comm-topic-trending-articles__item">
-                <a class="slds-p-vertical_small slds-border_bottom slds-hyphenate" data-special-link="true" href="/s/article/360043931814">
+                <a class="slds-p-vertical_small slds-border_bottom slds-hyphenate" data-special-link="true" href="/s/article/360043429913">
                  <span class="slds-text-body_small slds-show">
-                  Fun Sample DataSets
+                  Adding a Beast Mode Calculation to Your Chart
                  </span>
                 </a>
                </community_article-topic-trending-articles-item>
               </li>
               <li>
                <community_article-topic-trending-articles-item class="comm-topic-trending-articles__item">
-                <a class="slds-p-vertical_small slds-border_bottom slds-hyphenate" data-special-link="true" href="/s/article/360043429913">
+                <a class="slds-p-vertical_small slds-border_bottom slds-hyphenate" data-special-link="true" href="/s/article/360043931814">
                  <span class="slds-text-body_small slds-show">
-                  Adding a Beast Mode Calculation to Your Chart
+                  Fun Sample DataSets
                  </span>
                 </a>
                </community_article-topic-trending-articles-item>
