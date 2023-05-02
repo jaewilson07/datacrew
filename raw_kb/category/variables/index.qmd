@@ -1,7 +1,0 @@
-
-
-
-Variables
-=========
-***
-* [Variables Overview](..\..\article\variables_overview\index.qmd)

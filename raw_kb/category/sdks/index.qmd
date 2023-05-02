@@ -1,8 +1,0 @@
-
-
-
-SDKs
-====
-***
-* [Installing the R SDK](..\..\article\installing_the_r_sdk\index.qmd)
-* [Python SDKs](..\..\article\python_sdks\index.qmd)

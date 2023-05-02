@@ -1,7 +1,0 @@
-
-
-
-Sharing Access To DataSets
-==========================
-***
-* [Sharing a DataSet](..\..\article\sharing_a_dataset\index.qmd)

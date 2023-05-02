@@ -1,8 +1,0 @@
-
-
-
-Publications (Slideshows)
-=========================
-***
-* [Publications Page Layout](..\..\article\publications_page_layout\index.qmd)
-* [Sharing Content Using Slideshows](..\..\article\sharing_content_using_slideshows\index.qmd)

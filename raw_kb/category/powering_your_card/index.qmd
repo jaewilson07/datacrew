@@ -1,9 +1,0 @@
-
-
-
-Powering Your Card
-==================
-***
-* [Assigning Users to Power Up Template Visualization Cards](..\..\article\assigning_users_to_power_up_template_visualization_cards\index.qmd)
-* [Powering a Visualization Card with Data](..\..\article\powering_a_visualization_card_with_data\index.qmd)
-* [Updating or Refreshing the DataSet for a Visualization Card](..\..\article\updating_or_refreshing_the_dataset_for_a_visualization_card\index.qmd)

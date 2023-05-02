@@ -1,9 +1,0 @@
-
-
-
-Roles
-=====
-***
-* [Assigning a Security Role to a User](..\..\article\assigning_a_security_role_to_a_user\index.qmd)
-* [Managing Custom Roles](..\..\article\managing_custom_roles\index.qmd)
-* [Social User FAQs and Video](..\..\article\social_user_faqs_and_video\index.qmd)
