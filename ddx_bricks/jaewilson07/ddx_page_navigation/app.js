@@ -31,7 +31,7 @@ async function get_data_v2(dataset, userEmail) {
   
   data = await domo.post(
     `/sql/v1/${dataset}`,
-    `SELECT * FROM ${dataset} WHERE lower(user_email) = '${userEmail}' and parent_page_title is null and lower(domo_instance) = 'playstation-beta'`,
+    `SELECT * FROM ${dataset} WHERE lower(user_email) = '${userEmail}' and parent_page_title is null`,
     { contentType: 'text/plain' }
   );
 
