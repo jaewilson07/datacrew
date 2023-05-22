@@ -6084,7 +6084,27 @@
 										}
 									}
 								},
-								"url": "https://{{domo_instance}}.domo.com/api/content/v1/share"
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/content/v1/share?sendEmail=false",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"content",
+										"v1",
+										"share"
+									],
+									"query": [
+										{
+											"key": "sendEmail",
+											"value": "false"
+										}
+									]
+								}
 							},
 							"response": []
 						},
