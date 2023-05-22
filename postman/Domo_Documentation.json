@@ -6073,11 +6073,11 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"resources\": [\r\n        {\r\n            \"type\": \"page\",\r\n            \"id\": 127044793\r\n        }\r\n    ],\r\n    \"recipients\": [\r\n        {\r\n            \"type\": \"user\",\r\n            \"id\": 1893952720\r\n        }\r\n    ],\r\n    \"message\": \"I thought you might find this page interesting.\"\r\n}",
+									"raw": "{\r\n    \"resources\": [\r\n        {\r\n            \"type\": \"page\",\r\n            \"id\": 575932570\r\n        }\r\n    ],\r\n    \"recipients\": [\r\n        {\r\n            \"type\": \"group\",\r\n            \"id\": \"{{group_id}}\"\r\n        }\r\n    ],\r\n    \"message\": \"I thought you might find this page interesting.\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
