@@ -8985,6 +8985,92 @@
 						"url": "https://{{domo_instance}}.domo.com/api/data/v1/accesstokens"
 					},
 					"response": []
+				},
+				{
+					"name": "https://{{domo_instance}}.domo.com/api/content/v1/customer-states/user.roleid.default",
+					"id": "f4546550-54ed-422d-b9a7-24c989fa77e3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authority",
+								"value": "domo-community.domo.com"
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "en"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=utf-8"
+							},
+							{
+								"key": "cookie",
+								"value": "PLAY_SESSION=c36fa5593ab7be756ccf9fcecc80563927abcc89-isProxied=false; eb03b5b0dbaeb744_cfid=6e7cbe03893161b68e1j919f7c0f40441dbdc11a7bb13744695846ce83ae6d29b47eb46b1543b8a663b4bd587i0e3i77052i971b74492j3ha77109709ib833bd; CENTERVIEWSESSIONID=1893952720-mmmm-0012-0200; __stripe_mid=2fb1df80-ef2c-4b40-a1b6-3e764c3c0d0752ee1e; ELOQUA=GUID=5210998338634E94B549C958A7960B11; BE_CLA3=p_id%3DRJP48PN8A444R8JJP6NLNPP28AAAAAAAAH%26bf%3Ddc0db23c9c4a345f9df05c8b0ab399e8%26bn%3D6%26bv%3D3.46%26s_expire%3D1684615387783%26s_id%3DRJP48PN8A444RR42NPPLNPP28AAAAAAAAH; _ga_P3SE4R9WJH=GS1.1.1684784024.1.1.1684784803.0.0.0; redirectUrl=%2Fdomoapp%2Fcard%2Fedit%2F1418612522%3Fpage%3D1614788699; _ga=GA1.2.1349719739.1684775504; _ga_3RM9SF8PCZ=GS1.1.1684884593.4.0.1684884593.60.0.0; DA-SID-prod15-mmmm-0027-6492=eyJjdXN0b21lcklkIjoibW1tbS0wMDI3LTY0OTIiLCJleHBpcmF0aW9uIjoxNjg0OTg5MzU2MDAwLCJobWFjU2lnbmF0dXJlIjoiMjg5NjYxNjJkZTFiMzAzZDZiYTBiMjBmODNmMGFiMzE0ODgzNTMyNzhlYmNhMTYxOWEzZWIwYTAxNDRmZDJkYyIsInNpZCI6IjBkY2MyMDZmLTJkOTMtNDAwZC04YjYyLWE5YjIxMGJhMDcyNSIsInRpbWVzdGFtcCI6MTY4NDk2MDU1NjAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiIxNTUyNzIwMTk1In0%3D; DA-SID-prod15-mmmm-0027-6479=eyJjdXN0b21lcklkIjoibW1tbS0wMDI3LTY0NzkiLCJleHBpcmF0aW9uIjoxNjg1MDExMzY5MDAwLCJobWFjU2lnbmF0dXJlIjoiNjIzZDM2Y2FkMjcyYjNjOTkwZTBiOTMyMTYzZjgzMGY4YWI4OTNkZmExNzJiZGI1MzFjMzNjNDBiMjg3ZTBkZSIsInNpZCI6IjkwMWQ0NGIxLTFmZjgtNDdjYi05ZGY3LTRmNjdhNWJhMzI0YSIsInRpbWVzdGFtcCI6MTY4NDk4MjU2OTAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiI2MDI1NDU2ODYifQ%3D%3D; SESSION_TOE=QCFFTNAIA1; mbox=PC#6494426451c944ff9804d2d560b91d79.35_0#1748227460|session#09039bbe028b408da1418861938f89a9#1684984521; _dsidv1=c8b4f037-c38f-4796-88a8-1fbbf1c1c901; _pubweb_idc=mmmm-0012-0200_#_standard; _gid=GA1.2.50458822.1684982665; csrf-token=d46b5059-dc3f-4176-9303-1e2c7f143398; _gat_gtag_UA_142474332_1=1; DA-SID-prod1-mmmm-0012-0200=eyJjdXN0b21lcklkIjoibW1tbS0wMDEyLTAyMDAiLCJleHBpcmF0aW9uIjoxNjg1MDExNDY2MDAwLCJobWFjU2lnbmF0dXJlIjoiYjljZWQwZDBjODdjNzcyYjc2NzE3NjQ4NTY0ZGJjYWEwYjJkMTQ5MjljZmM0NzUzMDU0ZmZjNDc2MjUwYTRiOCIsInNpZCI6ImQ4NjU0Njk0LWYxZTEtNDhkZS04MGExLWUyYmFjOGRkODg5YyIsInRpbWVzdGFtcCI6MTY4NDk4MjY2NjAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiIxODkzOTUyNzIwIn0%3D; amp_c68dc3=-V_lvnmog_qoox0Gz7iKSH.MzlGQjAwQTRGNjJGQ0I0QzMzNkE4QTZCN0NDMjJFMzU4NThBOTc2NzgwMDRCRDkzMDA0N0MyMENEQjA3NzlBOQ==..1h18c5082.1h18cmfu7.am.1q.cg; DA-SID-prod15-mmmm-0012-0350=eyJjdXN0b21lcklkIjoibW1tbS0wMDEyLTAzNTAiLCJleHBpcmF0aW9uIjoxNjg1MDExNTA2MDAwLCJobWFjU2lnbmF0dXJlIjoiM2UyNDcxNWM5OWNhMjM3OWYwOWVkZDRjM2YyM2RhNTVjYjJmN2VkYWRiZGNlZGM5NGEyYjVkMGIxZGM3NzY5YiIsInNpZCI6IjY3ZDYzY2YyLTViMTYtNGM1Zi1iYmZmLTBmODc3YTFlZTJhMyIsInRpbWVzdGFtcCI6MTY4NDk4MjcwNjAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiI5NjQ4MjgyMDkifQ%3D%3D"
+							},
+							{
+								"key": "origin",
+								"value": "https://domo-community.domo.com"
+							},
+							{
+								"key": "referer",
+								"value": "https://domo-community.domo.com/admin/roles?tab=roles"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"112\", \"Not_A Brand\";v=\"24\", \"Opera\";v=\"98\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 OPR/98.0.0.0"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "7f27e2d8-93b1-4848-ab01-6eb8af792271"
+							},
+							{
+								"key": "x-domo-requestcontext",
+								"value": "{\"clientToe\":\"QCFFTNAIA1-LIDU6\"}"
+							},
+							{
+								"key": "x-requested-with",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"user.roleid.default\",\"value\":\"2\"}"
+						},
+						"url": "https://{{domo_instance}}.domo.com/api/content/v1/customer-states/user.roleid.default"
+					},
+					"response": []
 				}
 			],
 			"id": "c33f3285-f1e6-47ff-ac91-0326da20399b",
