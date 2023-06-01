@@ -206,6 +206,42 @@
 						"url": "https://domo-dojo.domo.com/api/content/v2/users/me"
 					},
 					"response": []
+				},
+				{
+					"name": "https://{{domo_instance}}.domo.com/api/content/v2/authentication",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "49cff43c-89b7-4469-8afb-40cd86539f37",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"postman.setEnvironmentVariable(\"session_token\", jsonData.sessionToken);\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "5e3269f8-3657-4630-a4d7-1e1cc411bfd1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"method\": \"password\",\r\n    \"emailAddress\": \"{{username}}\",\r\n    \"password\": \"{{password}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://{{domo_instance}}.domo.com/api/content/v2/authentication"
+					},
+					"response": []
 				}
 			],
 			"id": "9029bb43-dcaf-4558-ac58-41debd4624f2"
@@ -8232,6 +8268,28 @@
 						{
 							"name": "Set Default Role",
 							"id": "4570bbfb-7f1d-4c34-9945-c4cd28ebdb00",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"user.roleid.default\",\r\n    \"value\": {{role_id}}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/content/v1/customer-states/user.roleid.default"
+							},
+							"response": []
+						},
+						{
+							"name": "Set Default Role Copy",
+							"id": "c8b632fa-7209-4e48-8fef-6e6162d7d0e3",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
