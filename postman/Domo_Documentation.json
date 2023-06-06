@@ -5379,7 +5379,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Get User Invite Email Enabled",
 							"id": "3fd5d8b7-aad5-4e50-9d05-4c2b5cac64f4",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
