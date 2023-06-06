@@ -24,9 +24,6 @@ website:
     background: primary
     search: true
 
-    left:
-      - text: "Knowledge Base"
-        href: projects/kb_md/index.qmd
     right:
       - icon: github
         href: "https://github.com/jaewilson07/datacrew"
