@@ -5377,6 +5377,18 @@
 								"url": "https://{{domo_instance}}.domo.com/api/content/v1/customer-states/authorized-domains"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "3fd5d8b7-aad5-4e50-9d05-4c2b5cac64f4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "6a0f34da-4182-41e5-b458-c5552f0f72ee",
