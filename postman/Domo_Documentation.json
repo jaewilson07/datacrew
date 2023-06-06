@@ -5386,7 +5386,8 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": "https://{{domo_instance}}.domo.com/api/customer/v1/properties/user.invite.email.enabled"
 							},
 							"response": []
 						}
