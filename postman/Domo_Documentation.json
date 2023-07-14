@@ -4041,7 +4041,7 @@
 							]
 						},
 						{
-							"name": "Get Dataset Schema Copy",
+							"name": "Alter Dataset Schema",
 							"id": "6e38a04a-5106-4a19-9e66-79d98a7d351f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
