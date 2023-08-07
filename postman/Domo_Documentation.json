@@ -4611,7 +4611,7 @@
 							"response": []
 						},
 						{
-							"name": "Connector - get",
+							"name": "Stream (Connector) - get",
 							"id": "0f78b83d-adb6-4177-8014-a0704891cbaa",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
