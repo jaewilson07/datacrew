@@ -4703,7 +4703,7 @@
 							]
 						},
 						{
-							"name": "Connector - update",
+							"name": "Stream(Connector) - update",
 							"id": "1f512162-9872-4f99-88eb-edce5529c1c3",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
