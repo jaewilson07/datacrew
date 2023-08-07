@@ -4589,7 +4589,7 @@
 							]
 						},
 						{
-							"name": "Connector - create",
+							"name": "Stream (Connector) - create",
 							"id": "3217df37-1927-4080-9c9c-a90bd959424d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
