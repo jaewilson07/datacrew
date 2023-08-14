@@ -5443,7 +5443,8 @@
 										}
 									}
 								},
-								"url": "https://{{domo_instance}}.domo.com/api/content/v3/customers/features/free-invite"
+								"url": "https://{{domo_instance}}.domo.com/api/content/v3/customers/features/free-invite",
+								"description": "[https://domo-support.domo.com/s/article/360043438893?language=en_US#:~:text=Note:%20If%20you%20do%20not,able%20to%20access%20this%20tab]()."
 							},
 							"response": []
 						}
