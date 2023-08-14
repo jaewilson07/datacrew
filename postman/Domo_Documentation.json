@@ -5424,6 +5424,28 @@
 								"url": "https://{{domo_instance}}.domo.com/api/customer/v1/properties/user.invite.email.enabled"
 							},
 							"response": []
+						},
+						{
+							"name": "Toggle Social Users",
+							"id": "de85c4ee-7b6d-4f73-980f-0f1ef216dc9e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"enabled\":true}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/content/v3/customers/features/free-invite"
+							},
+							"response": []
 						}
 					],
 					"id": "6a0f34da-4182-41e5-b458-c5552f0f72ee",
