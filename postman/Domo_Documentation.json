@@ -4041,6 +4041,40 @@
 							]
 						},
 						{
+							"name": "Alter Dataset Schema",
+							"id": "6e38a04a-5106-4a19-9e66-79d98a7d351f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"columns\": [\r\n        {\r\n            \"name\": \"name\",\r\n            \"id\": \"name\",\r\n            \"type\": \"STRING\",\r\n            \"visible\": true,\r\n            \"order\": 0\r\n        },\r\n        {\r\n            \"name\": \"id\",\r\n            \"id\": \"id\",\r\n            \"type\": \"LONG\",\r\n            \"visible\": true,\r\n            \"order\": 0\r\n        },\r\n        {\r\n            \"name\": \"alertId\",\r\n            \"id\": \"alertId\",\r\n            \"type\": \"LONG\",\r\n            \"visible\": true,\r\n            \"order\": 0\r\n        },\r\n        {\r\n            \"name\": \"message\",\r\n            \"id\": \"message\",\r\n            \"type\": \"STRING\",\r\n            \"visible\": true,\r\n            \"order\": 0\r\n        },\r\n        {\r\n            \"name\": \"timestamp\",\r\n            \"id\": \"timestamp\",\r\n            \"type\": \"LONG\",\r\n            \"visible\": true,\r\n            \"order\": 0\r\n        },\r\n        {\r\n            \"name\": \"_BATCH_ID_\",\r\n            \"id\": \"_BATCH_ID_\",\r\n            \"type\": \"DOUBLE\",\r\n            \"visible\": true,\r\n            \"order\": 0\r\n        },\r\n        {\r\n            \"name\": \"_BATCH_LAST_RUN_\",\r\n            \"id\": \"_BATCH_LAST_RUN_\",\r\n            \"type\": \"DATETIME\",\r\n            \"visible\": true,\r\n            \"order\": 0\r\n        }\r\n    ],\r\n    \"objects\": [],\r\n    \"views\": []\r\n}"
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/data/v2/datasources/{{dataset_id}}/schemas",
+								"description": "#### Description (usage)\n\nGet Dataset Schema by Dataset ID.\n\n#### **UI reference**\n\nLeft bar menu -> Datasets\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/categories/4418219258647-Working-with-DataSets-in-Domo)\n\n#### Required parameters\n\n*   Dataset ID\n    \n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Dataset schema with columns, their types, ids, etc.\n    \n\nPlease refer to the example below:"
+							},
+							"response": []
+						},
+						{
 							"name": "Get Cards for a Dataset ID",
 							"id": "afdb7202-888d-4c4b-99b5-a85a1e96a9d0",
 							"protocolProfileBehavior": {
@@ -4555,7 +4589,7 @@
 							]
 						},
 						{
-							"name": "Connector - create",
+							"name": "Stream (Connector) - create",
 							"id": "3217df37-1927-4080-9c9c-a90bd959424d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -4577,7 +4611,7 @@
 							"response": []
 						},
 						{
-							"name": "Connector - get",
+							"name": "Stream (Connector) - get",
 							"id": "0f78b83d-adb6-4177-8014-a0704891cbaa",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -4669,7 +4703,7 @@
 							]
 						},
 						{
-							"name": "Connector - update",
+							"name": "Stream(Connector) - update",
 							"id": "1f512162-9872-4f99-88eb-edce5529c1c3",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -5388,6 +5422,29 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://{{domo_instance}}.domo.com/api/customer/v1/properties/user.invite.email.enabled"
+							},
+							"response": []
+						},
+						{
+							"name": "Toggle Social Users",
+							"id": "de85c4ee-7b6d-4f73-980f-0f1ef216dc9e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"enabled\":true}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/content/v3/customers/features/free-invite",
+								"description": "[https://domo-support.domo.com/s/article/360043438893?language=en_US#:~:text=Note:%20If%20you%20do%20not,able%20to%20access%20this%20tab]()."
 							},
 							"response": []
 						}
