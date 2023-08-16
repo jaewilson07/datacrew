@@ -49,35 +49,36 @@ var domo = window.domo; // For more on domo.js: https://developer.domo.com/docs/
 var datasets = window.datasets;
 var $ = window.jQuery;
 
-const paint_modal = (element_id, dataObject, tableList) => {
+const paint_table = (
+  modal_id,
+  table_id,
+  dataObject,
+  tableList,
+  collectionService
+) => {
   // Link JavasScript to the HTML elements
-  var modalEl = document.getElementById(element_id);
-
+  var modalEl = document.getElementById(modal_id);
   var myModal = new FormModal(modalEl, dataObject, {
+    collectionService,
     addTitle: "Add Person",
     editTitle: "Edit Person",
-    onSubmit: function () {
+    onSubmit: () => {
       tableList.showLoading();
     },
-    afterSubmit: function (res) {
+    afterSubmit: (res) => {
       tableList.load();
     },
-    onClear: function () {
+    onClear: () => {
       tableList.clear();
     },
   });
-
-  return modalEl;
-};
-const paint_table = (element_id, dataObject, collectionService) => {
-  var tableEl = document.getElementById(element_id);
-
+  var tableEl = document.getElementById(table_id);
   var tableList = new TableList(tableEl, dataObject, collectionService, {
     onEdit: function (doc) {
       myModal.edit(doc);
     },
   });
-  return { tableEl, tableList };
+  return { tableEl, tableList, modalEl, myModal };
 };
 
 const paint_searchContainer = (element_id, tableList, collectionService) => {
@@ -130,19 +131,25 @@ const main = async () => {
     syncToDataset
   );
 
+  console.log(await collectionService.getCollectionInfo());
+
   const myDiv = document.getElementById("myDiv");
 
-  let { tableEl, tableList } = paint_table(
+  let { tableEl, tableList, modalEl, myModal } = paint_table(
     "tableList",
+    "myModal",
+    table_id,
     dataObject,
+    tableList,
     collectionService
   );
 
-  let modalEl = paint_modal("myModal", dataObject, tableList);
+  let searchContainerEl = paint_searchContainer("searchContainer", tableList, collectionService);
 
-  let searchContainerEl = paint_searchContainer("searchContainer");
-
-  let addButtonEl = paint_button("addButton", addButtonLabel, myModal.show);
+  let addButtonEl = paint_button("addButton", addButtonLabel, () => {
+    console.log("click");
+    myModal.show();
+  });
 
   let exportButtonEl = paint_button("exportButton", exportButtonLabel, () => {
     ExportData(dataObject, collectionService);
@@ -153,6 +160,7 @@ const main = async () => {
   });
 
   isShowButton = await isViewerTheOwner(collectionService);
+  console.log(isShowButton, "isViewerTheOwner");
 
   if (isShowButton) {
     tableEl.classList.add("isOwner");
@@ -163,7 +171,7 @@ const main = async () => {
     }
   }
 
-  $(document).ready( () => {
+  $(document).ready(() => {
     tableList.load();
   });
 };
@@ -378,13 +386,13 @@ function FormModal(modalEl, dataObj, opts) {
     var person = formToJson(this);
 
     if (person.id == null || person.id == "") {
-      collectionService
+      opts.collectionService
         .add(person)
         .then((res) => opts.afterSubmit && opts.afterSubmit(res));
     } else {
       var id = person.id;
       person.id = undefined;
-      collectionService
+      opts.collectionService
         .update(id, person)
         .then((res) => opts.afterSubmit && opts.afterSubmit(res));
     }
