@@ -9582,6 +9582,18 @@
 								"url": "https://{{domo_instance}}.domo.com/api/datascience/v1/workspaces/"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "a8cb4e73-b845-4640-ab1d-1c7b346805e1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "810a228d-be4c-4359-b1ab-5c6badd72632"
