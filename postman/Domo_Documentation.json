@@ -9130,7 +9130,7 @@
 					"name": "DomoJupyter",
 					"item": [
 						{
-							"name": "https://playstation-beta.domo.com/api/datascience/v1/search/notebooks",
+							"name": "search for notebooks",
 							"id": "7ec4ff65-e33b-407c-9a9f-2408a8e27ce0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
