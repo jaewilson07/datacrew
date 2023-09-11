@@ -9204,7 +9204,7 @@
 							"response": []
 						},
 						{
-							"name": "https://{{domo_instance}}.domo.com/api/datascience/v1/workspaces/",
+							"name": "get workspaces",
 							"id": "35972a15-5e05-45a0-b4b1-9a9391d6ed9a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
