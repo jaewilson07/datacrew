@@ -9187,7 +9187,7 @@
 									"mode": "raw",
 									"raw": "{\"filters\":[{\"type\":\"DATA_FLOW_ID\",\"values\":[16]}]}"
 								},
-								"url": "https://playstation-beta.domo.com/api/datascience/v1/search/notebooks"
+								"url": "https://{{domo_instance}}.domo.com/api/datascience/v1/search/notebooks"
 							},
 							"response": []
 						}
