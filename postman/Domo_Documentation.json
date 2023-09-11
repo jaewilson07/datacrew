@@ -9392,6 +9392,196 @@
 								"url": "https://{{domo_instance}}.domo.com/api/datascience/v1/workspaces/"
 							},
 							"response": []
+						},
+						{
+							"name": "get workspace config",
+							"id": "e6118f90-112d-460a-91ac-c2e517e0012e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "sec-ch-ua",
+										"value": "\"Not/A)Brand\";v=\"99\", \"Opera\";v=\"101\", \"Chromium\";v=\"115\""
+									},
+									{
+										"key": "x-csrf-token",
+										"value": "a4699dfa-1051-466b-af91-059bd8d206df"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en"
+									},
+									{
+										"key": "sec-ch-ua-mobile",
+										"value": "?0"
+									},
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 OPR/101.0.0.0"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Referer",
+										"value": ""
+									},
+									{
+										"key": "X-DOMO-RequestContext",
+										"value": "{\"clientToe\":\"KHKBPQ32QV-9LUC8\"}"
+									},
+									{
+										"key": "X-Requested-With",
+										"value": "XMLHttpRequest"
+									},
+									{
+										"key": "sec-ch-ua-platform",
+										"value": "\"Windows\""
+									},
+									{
+										"key": "x-requested-with",
+										"value": "XMLHttpRequest"
+									},
+									{
+										"key": "X-DOMO-DataFlow-Password",
+										"value": ""
+									},
+									{
+										"key": "accept-language",
+										"value": "en"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json;charset=utf-8"
+									},
+									{
+										"key": "accept",
+										"value": "application/json, text/plain, */*"
+									},
+									{
+										"key": "x-domo-requestcontext",
+										"value": "{\"clientToe\":\"KHKBPQ32QV-BPDVN\"}"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive"
+									},
+									{
+										"key": "Cookie",
+										"value": "jupyterhub-hub-login=\"2|1:0|10:1694449167|20:jupyterhub-hub-login|44:NmQwNzdlMDkxZGQ4NDBhNDkyYTNhNmEwMTJjNzZkMWE=|08691e8cd8087c44a69d5f5f5ef3e6e1015066628478087d6275bc983762591c\"; jupyterhub-session-id=d65a3fb16f7e4c0884b5a04092fc87e3; _xsrf=2|23153bd7|5dadbf16097512f63ab611ec8d4afbf9|1694449167"
+									},
+									{
+										"key": "Sec-Fetch-Dest",
+										"value": "iframe"
+									},
+									{
+										"key": "Sec-Fetch-Mode",
+										"value": "navigate"
+									},
+									{
+										"key": "Sec-Fetch-Site",
+										"value": "cross-site"
+									},
+									{
+										"key": "Sec-Fetch-User",
+										"value": "?1"
+									},
+									{
+										"key": "Upgrade-Insecure-Requests",
+										"value": "1"
+									},
+									{
+										"key": "If-None-Match",
+										"value": "\"2f6fc3d341b4d3e65e2e13d2ee3f870233cd9352\""
+									},
+									{
+										"key": "authority",
+										"value": "playstation-config.domo.com"
+									},
+									{
+										"key": "cookie",
+										"value": "PLAY_SESSION=c36fa5593ab7be756ccf9fcecc80563927abcc89-isProxied=false; CENTERVIEWSESSIONID=672596669-mmmm-0029-0374; _ga_ZH4TQCL1RC=GS1.1.1694026147.1.1.1694026475.60.0.0; _ga_3RM9SF8PCZ=GS1.1.1694026148.1.1.1694026475.60.0.0; redirectUrl=%2Fadmin%2Fdomo-everywhere%2Fsubscriptions; eb03b5b0dbaeb744_cfid=920d07360c8fb20g1j8c31b77b606ac1b17i4i54b36bb2ba7e8f68ad343c6e35613g9e9ga1bd2gbc38071e3j3657491f075g056116737jc42f98503f16939g32; _ga=GA1.1.1817260597.1694026148; _ga_P3SE4R9WJH=GS1.1.1694196256.2.0.1694196256.0.0.0; SESSION_TOE=KHKBPQ32QV; _dsidv1=53567756-cb26-484d-8262-f4905e839699; DA-SID-prod15-mmmm-0027-8994=eyJjdXN0b21lcklkIjoibW1tbS0wMDI3LTg5OTQiLCJleHBpcmF0aW9uIjoxNjk0NDY3NjM0MDAwLCJobWFjU2lnbmF0dXJlIjoiMDVjYzEzNTE5MjE2NzQ0Mjg4Zjg2NWJmMWIwNzMxYzVlYWM2ZTA4MzYxMzZiOTcwY2ZkNTM1YjFmN2FhZjNhZSIsInNpZCI6ImFmOWExZTgwLWI1ZjQtNGM1ZS1iNDRlLTI5M2EzOWI3ZjJjZSIsInRpbWVzdGFtcCI6MTY5NDQzODgzNDAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiIzMjg0MDcwMDIifQ%3D%3D; DA-SID-prod15-mmmm-0013-1082=eyJjdXN0b21lcklkIjoibW1tbS0wMDEzLTEwODIiLCJleHBpcmF0aW9uIjoxNjk0NDczMTIzMDAwLCJobWFjU2lnbmF0dXJlIjoiNWNhZGViMTZlZmYyM2Q2OTY5YjE5M2MwMzk5YWRjMzU4YjFkZTU3MTVmOGRhZGI1ODY3NDViMDc2MTRmZDExYiIsInNpZCI6ImRjNjU0Njk3LWNhMzAtNGEzOC1iNGEwLTcyY2I2ZWE1NmJiNSIsInRpbWVzdGFtcCI6MTY5NDQ0NDMyMzAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiI3ODA5MzE1MDYifQ%3D%3D; mbox=PC#d503215e4dab430482aa02148c001365.35_0#1757689344|session#56fb754188604d6d859d8ae062329252#1694446404; _pubweb_idc=mmmm-0029-0374_#_platform5; csrf-token=a4699dfa-1051-466b-af91-059bd8d206df; DA-SID-prod15-mmmm-0012-0350=eyJjdXN0b21lcklkIjoibW1tbS0wMDEyLTAzNTAiLCJleHBpcmF0aW9uIjoxNjk0NDc4NTIzMDAwLCJobWFjU2lnbmF0dXJlIjoiYmFhZGE5ZTE5OWUzZTA0NWU5NWVhMWVkYzM4NDhmYThjNzRlYzEzZDUwZmUyMTVmMDQ4MWRiM2NkZWNlNzY2ZCIsInNpZCI6ImJmYmNhZmI1LTU4MzQtNDViOS1hZjk4LWQ3NTYxOWE3YjEyMCIsInRpbWVzdGFtcCI6MTY5NDQ0OTcyMzAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiI5NjQ4MjgyMDkifQ%3D%3D; DA-SID-prod15-mmmm-0029-0374=eyJjdXN0b21lcklkIjoibW1tbS0wMDI5LTAzNzQiLCJleHBpcmF0aW9uIjoxNjk0NDc4NTUwMDAwLCJobWFjU2lnbmF0dXJlIjoiZDQ3ZmU4ODgwNGY5MjBmNzcxMjlhMGVlMjAwOWFlZWZjOTUwNDc2MGE5NGRiZDg0N2RiYTJkZDE3YjQ5MzAxOSIsInNpZCI6IjYwZGUwYTU2LTIwNzgtNGQ4Yi04MmNhLTJkYWYyMGQ0NjM2NCIsInRpbWVzdGFtcCI6MTY5NDQ0OTc1MDAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiI2NzI1OTY2NjkifQ%3D%3D; amp_c68dc3=7ugVU-KKkpTJY1r6Y4bV37.QTI3RjlENEJDNEFDRTJGNzAwOUQ4QkZDN0VGQUNGMjdFNTM5Njk5NzM1RTFCMzE2NDIzNTc5QjREQkRGN0JDQQ==..1ha2fmgen.1ha2hek7o.mq.5h.sb"
+									},
+									{
+										"key": "sec-fetch-dest",
+										"value": "iframe"
+									},
+									{
+										"key": "sec-fetch-mode",
+										"value": "navigate"
+									},
+									{
+										"key": "sec-fetch-site",
+										"value": "cross-site"
+									},
+									{
+										"key": "sec-fetch-user",
+										"value": "?1"
+									},
+									{
+										"key": "upgrade-insecure-requests",
+										"value": "1"
+									},
+									{
+										"key": "user-agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 OPR/101.0.0.0"
+									},
+									{
+										"key": "If-Modified-Since",
+										"value": "Wed, 23 Aug 2023 21:35:29 GMT"
+									},
+									{
+										"key": "Authorization",
+										"value": "token KKmfaG2jbJnx5gDb797JauVg9NZ0iV"
+									},
+									{
+										"key": "X-XSRFToken",
+										"value": "2|eb5ae3d4|bef5de4906b6dfda5e84487c68aa8af5|1694450021"
+									},
+									{
+										"key": "Pragma",
+										"value": "no-cache"
+									},
+									{
+										"key": "Origin",
+										"value": "https://playstation-config.jupyter-prod15.domodatascience.com"
+									},
+									{
+										"key": "Sec-WebSocket-Key",
+										"value": "/fhonX/RKh2gm/YuK0iD8g=="
+									},
+									{
+										"key": "Upgrade",
+										"value": "websocket"
+									},
+									{
+										"key": "Cache-Control",
+										"value": "no-cache"
+									},
+									{
+										"key": "Sec-WebSocket-Version",
+										"value": "13"
+									},
+									{
+										"key": "Sec-WebSocket-Extensions",
+										"value": "permessage-deflate; client_max_window_bits"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/datascience/v1/workspaces/"
+							},
+							"response": []
 						}
 					],
 					"id": "810a228d-be4c-4359-b1ab-5c6badd72632"
