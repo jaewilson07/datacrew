@@ -8877,6 +8877,40 @@
 							"response": []
 						},
 						{
+							"name": "Get User by Id_v3 Copy",
+							"id": "9d19018e-2664-4e6a-bb1d-fd6467a36dd8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/content/v3/users/{{user_id}}?includeDetails=true",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"content",
+										"v3",
+										"users",
+										"{{user_id}}"
+									],
+									"query": [
+										{
+											"key": "includeDetails",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Get User by Id_v2",
 							"id": "ccfae0a2-e5d7-4b31-991f-c7b8de0001fe",
 							"protocolProfileBehavior": {
@@ -9091,6 +9125,11 @@
 						}
 					],
 					"id": "fec2308c-977b-42e5-a44b-5e3f3abba2d4"
+				},
+				{
+					"name": "DomoJupyter",
+					"item": [],
+					"id": "810a228d-be4c-4359-b1ab-5c6badd72632"
 				},
 				{
 					"name": "Generate Developer Token",
