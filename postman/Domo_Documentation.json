@@ -9128,7 +9128,70 @@
 				},
 				{
 					"name": "DomoJupyter",
-					"item": [],
+					"item": [
+						{
+							"name": "https://playstation-beta.domo.com/api/datascience/v1/search/notebooks",
+							"id": "7ec4ff65-e33b-407c-9a9f-2408a8e27ce0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "sec-ch-ua",
+										"value": "\"Not/A)Brand\";v=\"99\", \"Opera\";v=\"101\", \"Chromium\";v=\"115\""
+									},
+									{
+										"key": "x-csrf-token",
+										"value": "20a1a233-020a-433a-bf1c-ce887fad4164"
+									},
+									{
+										"key": "accept-language",
+										"value": "en"
+									},
+									{
+										"key": "sec-ch-ua-mobile",
+										"value": "?0"
+									},
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 OPR/101.0.0.0"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json;charset=utf-8"
+									},
+									{
+										"key": "accept",
+										"value": "application/json, text/plain, */*"
+									},
+									{
+										"key": "Referer",
+										"value": ""
+									},
+									{
+										"key": "x-domo-requestcontext",
+										"value": "{\"clientToe\":\"KHKBPQ32QV-RKDRQ\"}"
+									},
+									{
+										"key": "x-requested-with",
+										"value": "XMLHttpRequest"
+									},
+									{
+										"key": "sec-ch-ua-platform",
+										"value": "\"Windows\""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"filters\":[{\"type\":\"DATA_FLOW_ID\",\"values\":[16]}]}"
+								},
+								"url": "https://playstation-beta.domo.com/api/datascience/v1/search/notebooks"
+							},
+							"response": []
+						}
+					],
 					"id": "810a228d-be4c-4359-b1ab-5c6badd72632"
 				},
 				{
