@@ -9190,6 +9190,18 @@
 								"url": "https://{{domo_instance}}.domo.com/api/datascience/v1/search/notebooks"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "b95b99e1-a5bd-4148-a8b3-1db24ba6e489",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "810a228d-be4c-4359-b1ab-5c6badd72632"
