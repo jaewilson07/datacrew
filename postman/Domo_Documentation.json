@@ -9633,6 +9633,113 @@
 								"header": []
 							},
 							"response": []
+						},
+						{
+							"name": "https://playstation-beta.jupyter-prod15.domodatascience.com/user/playstation-beta-964828209/b13512ee/api/contents/FORM_User%20add%20from%20webform.ipynb?type=notebook&content=1&1694451142969",
+							"id": "f79426c3-9cd2-45f6-ace4-6cdfaf4a34d9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en-US,en;q=0.9"
+									},
+									{
+										"key": "Authorization",
+										"value": "token Y0zNcg8a2RpDK4ckv1AokVveFL1pSG",
+										"disabled": true
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Cookie",
+										"value": "jupyterhub-user-playstation-beta-964828209-b13512ee-oauth-state=\"2|1:0|10:1694450946|63:jupyterhub-user-playstation-beta-964828209-b13512ee-oauth-state|192:ZXlKMWRXbGtJam9nSWpWbU5tUmlZV1EyTnprMk5EUmhaVE5oWWpFNFpEQXdNV00xTXpBek9UWTRJaXdnSW01bGVIUmZkWEpzSWpvZ0lpOTFjMlZ5TDNCc1lYbHpkR0YwYVc5dUxXSmxkR0V0T1RZME9ESTRNakE1TDJJeE16VXhNbVZsTDJ4aFlqOGlmUQ==|4a376d1cfcf75ccc9b8da7743f2d7c18319f3a9c44c3fda534b2224079cbe1a5\"; jupyterhub-user-playstation-beta-964828209-b13512ee=2|1:0|10:1694450953|51:jupyterhub-user-playstation-beta-964828209-b13512ee|40:WTB6TmNnOGEyUnBESzRja3YxQW9rVnZlRkwxcFNH|d26c79c776582031595f68a12597ff052ccecf998845fe91444517f8e9710168; jupyterhub-session-id=256630878d7d476aa671f64c74624df7; _xsrf=2|bf37f3a9|7131757e3732a23d08c6f346c09e38d3|1694450948",
+										"disabled": true
+									},
+									{
+										"key": "Referer",
+										"value": "https://playstation-beta.jupyter-prod15.domodatascience.com/user/playstation-beta-964828209/b13512ee/lab/workspaces/auto-5"
+									},
+									{
+										"key": "Sec-Fetch-Dest",
+										"value": "empty"
+									},
+									{
+										"key": "Sec-Fetch-Mode",
+										"value": "cors"
+									},
+									{
+										"key": "Sec-Fetch-Site",
+										"value": "same-origin"
+									},
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 OPR/101.0.0.0"
+									},
+									{
+										"key": "X-XSRFToken",
+										"value": "2|bf37f3a9|7131757e3732a23d08c6f346c09e38d3|1694450948"
+									},
+									{
+										"key": "sec-ch-ua",
+										"value": "\"Not/A)Brand\";v=\"99\", \"Opera\";v=\"101\", \"Chromium\";v=\"115\""
+									},
+									{
+										"key": "sec-ch-ua-mobile",
+										"value": "?0"
+									},
+									{
+										"key": "sec-ch-ua-platform",
+										"value": "\"Windows\""
+									}
+								],
+								"url": {
+									"raw": "https://playstation-beta.jupyter-prod15.domodatascience.com/user/playstation-beta-964828209/b13512ee/api/contents/FORM_User%20add%20from%20webform.ipynb?type=notebook&content=1&1694451142969",
+									"protocol": "https",
+									"host": [
+										"playstation-beta",
+										"jupyter-prod15",
+										"domodatascience",
+										"com"
+									],
+									"path": [
+										"user",
+										"playstation-beta-964828209",
+										"b13512ee",
+										"api",
+										"contents",
+										"FORM_User%20add%20from%20webform.ipynb"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "notebook"
+										},
+										{
+											"key": "content",
+											"value": "1"
+										},
+										{
+											"key": "1694451142969",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "810a228d-be4c-4359-b1ab-5c6badd72632"
