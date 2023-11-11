@@ -8,5 +8,9 @@ nbdev
 datacrew
 markdownify
 requests
+os
+pandas
+import
+chardet
 
 [dev]
