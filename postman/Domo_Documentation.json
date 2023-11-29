@@ -186,28 +186,6 @@
 					"response": []
 				},
 				{
-					"name": "Test AccessToken // validates \"me\"",
-					"id": "11b93fc8-bcda-40e1-b1d7-19f517931c0d",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "GET",
-						"header": [
-							{
-								"key": "X-DOMO-Developer-Token",
-								"value": "{{domo_access_token}}",
-								"type": "text"
-							}
-						],
-						"url": "https://domo-dojo.domo.com/api/content/v2/users/me"
-					},
-					"response": []
-				},
-				{
 					"name": "https://{{domo_instance}}.domo.com/api/content/v2/authentication",
 					"event": [
 						{
@@ -8920,6 +8898,28 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://{{domo_instance}}.domo.com/api/content/v2/users/{{user_id}}"
+							},
+							"response": []
+						},
+						{
+							"name": "Test AccessToken // validates \"me\"",
+							"id": "11b93fc8-bcda-40e1-b1d7-19f517931c0d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-DOMO-Developer-Token",
+										"value": "{{domo_access_token}}",
+										"type": "text"
+									}
+								],
+								"url": "https://domo-dojo.domo.com/api/content/v2/users/me"
 							},
 							"response": []
 						}
