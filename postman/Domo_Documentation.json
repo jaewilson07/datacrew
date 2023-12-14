@@ -5838,6 +5838,106 @@
 								"url": "https://{{domo_instance}}.domo.com/api/content/v2/groups/access"
 							},
 							"response": []
+						},
+						{
+							"name": "update group",
+							"id": "3475b6e0-2390-46da-ac50-94c3f372cf91",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"user-agent": true,
+									"accept": true,
+									"connection": true,
+									"accept-encoding": true
+								},
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "authority",
+										"value": "playstation-beta.domo.com",
+										"disabled": true
+									},
+									{
+										"key": "accept",
+										"value": "application/json, text/plain, */*"
+									},
+									{
+										"key": "accept-language",
+										"value": "en",
+										"disabled": true
+									},
+									{
+										"key": "content-type",
+										"value": "application/json;charset=utf-8"
+									},
+									{
+										"key": "cookie",
+										"value": "PLAY_SESSION=c36fa5593ab7be756ccf9fcecc80563927abcc89-isProxied=false; CENTERVIEWSESSIONID=964828209-mmmm-0012-0350; eb03b5b0dbaeb744_cfid=2e18bi961j9c1e0d3d131j4bbe6518bi07464i7j0h74295h0c408c6dbc135ebi8f028a3jb1806ha22b0f499ja7057724b4ad2g138h8acf3ibh144f28169d8g12; _pubweb_is_cus=true; did=3418706920; _ga=GA1.1.2036930102.1702476695; _ga_KCXF7VX0J3=GS1.1.1702476694.1.0.1702476701.0.0.0; redirectUrl=%2Fdatacenter%2Fdatasources; SESSION_TOE=P1M51MK1SO; _dsidv1=604bd2d7-a7c3-45d1-9aaf-850115d576f5; DA-SID-prod15-mmmm-0026-0206=eyJjdXN0b21lcklkIjoibW1tbS0wMDI2LTAyMDYiLCJleHBpcmF0aW9uIjoxNzAyNjEwMzU4MDAwLCJobWFjU2lnbmF0dXJlIjoiMzQ2ZTllNDFmMmY0MmE2YzA3ZjliNjFjZjIzOWM5MTYxMzhkYWEyOWJiOWFiODg3MTcxNzJkYzA3ZTIzZGNlYSIsInNpZCI6IjBhMmFmYWJhLThiYzktNDAzMC05OWRmLWU5Y2E1MjY5MjI1OSIsInRpbWVzdGFtcCI6MTcwMjU4MTU1ODAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiIxNTc1NzQ3NjgifQ%3D%3D; DA-SID-prod15-mmmm-0023-2211=eyJjdXN0b21lcklkIjoibW1tbS0wMDIzLTIyMTEiLCJleHBpcmF0aW9uIjoxNzAyNjE3ODY4MDAwLCJobWFjU2lnbmF0dXJlIjoiYzIzMmZlOTVlYTI0ZDdiZDNmNjg3NWE0NDE3MjFmNDg4YTFhOWUzYTRmNTFiZWMxOGU4NTRiYmIzOTU3YjgwMyIsInNpZCI6ImJmODkwOTY3LTk4NDUtNDJlMy05ZmUyLTg1ZjIwOTczNWY2MSIsInRpbWVzdGFtcCI6MTcwMjU4OTA2ODAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiIxMzgwMzY2Mjg3In0%3D; DA-SID-prod15-mmmm-0029-0374=eyJjdXN0b21lcklkIjoibW1tbS0wMDI5LTAzNzQiLCJleHBpcmF0aW9uIjoxNzAyNjIwOTk1MDAwLCJobWFjU2lnbmF0dXJlIjoiZThiODBkMWZmYTc3ZGFlZDk2YTc2NjEwNWZhODA5NDMzMDQ2Nzg4Njk5M2Y0ZTEzZTMyZGYyNGQ3MThiMTlhNSIsInNpZCI6ImVjMWQ1M2U0LWFlMTYtNDhmZS1hOTc5LTE4OGYwZjdmOThjNiIsInRpbWVzdGFtcCI6MTcwMjU5MjE5NTAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiI2NzI1OTY2NjkifQ%3D%3D; DA-SID-prod15-mmmm-0013-1082=eyJjdXN0b21lcklkIjoibW1tbS0wMDEzLTEwODIiLCJleHBpcmF0aW9uIjoxNzAyNTk2MDAzMDAwLCJobWFjU2lnbmF0dXJlIjoiYzg0YzkyNzk1MjVlYzQzNGU1NTE4NTJjNDk3ZGUxNjc2ZDdmYzA4MzRhODg2NDZhOGJlMWRjYmUxNTIyNzdmMSIsInNpZCI6IjliY2RmMThjLWQ5NTYtNGE4My05NzMyLTFkNzlmY2NjYTZlYyIsInRpbWVzdGFtcCI6MTcwMjU5MjQwMzAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiI3ODA5MzE1MDYifQ%3D%3D; _pubweb_idc=mmmm-0012-0350_#_platform5; csrf-token=690ecc10-8acc-48d8-b689-aec7b82c4633; DA-SID-prod15-mmmm-0012-0350=eyJjdXN0b21lcklkIjoibW1tbS0wMDEyLTAzNTAiLCJleHBpcmF0aW9uIjoxNzAyNjIxMjQ3MDAwLCJobWFjU2lnbmF0dXJlIjoiOTQxZmFkMjZmMWNiNGUwMTAzNmNjMTVmNTQ2ZTExMzliODJhYTM2ZDBkYWVjOTUxM2VhZTM0MzNjNWQ0NmJjMSIsInNpZCI6ImFjMDgzNjg2LWQ0NDEtNGVhNC1iMTcwLTkwNjk4ZTM3NjQ5NyIsInRpbWVzdGFtcCI6MTcwMjU5MjQ0NzAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiI5NjQ4MjgyMDkifQ%3D%3D; amp_c68dc3=WC0qgT-SKK1XiLrlGQvSnl.QTI3RjlENEJDNEFDRTJGNzAwOUQ4QkZDN0VGQUNGMjdFNTM5Njk5NzM1RTFCMzE2NDIzNTc5QjREQkRGN0JDQQ==..1hhl2veqo.1hhl6m4ur.4d.1u.6b"
+									},
+									{
+										"key": "origin",
+										"value": "https://playstation-beta.domo.com"
+									},
+									{
+										"key": "sec-ch-ua",
+										"value": "\"Opera\";v=\"105\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+										"disabled": true
+									},
+									{
+										"key": "sec-ch-ua-mobile",
+										"value": "?0",
+										"disabled": true
+									},
+									{
+										"key": "sec-ch-ua-platform",
+										"value": "\"Windows\"",
+										"disabled": true
+									},
+									{
+										"key": "sec-fetch-dest",
+										"value": "empty",
+										"disabled": true
+									},
+									{
+										"key": "sec-fetch-mode",
+										"value": "cors",
+										"disabled": true
+									},
+									{
+										"key": "sec-fetch-site",
+										"value": "same-origin",
+										"disabled": true
+									},
+									{
+										"key": "user-agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0",
+										"disabled": true
+									},
+									{
+										"key": "x-csrf-token",
+										"value": "9607748a-e8fb-4c13-9b0d-4443deaabc04",
+										"disabled": true
+									},
+									{
+										"key": "x-domo-requestcontext",
+										"value": "{\"clientToe\":\"P1M51MK1SO-6G5TR\"}",
+										"disabled": true
+									},
+									{
+										"key": "x-requested-with",
+										"value": "XMLHttpRequest",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[{\"groupId\":695670217,\"description\":\"test update\"}]"
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/content/v2/groups"
+							},
+							"response": []
 						}
 					],
 					"id": "ed3d96aa-cf69-49e4-bc0e-25bb73c45f10"
