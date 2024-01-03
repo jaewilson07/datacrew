@@ -184,42 +184,6 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "https://{{domo_instance}}.domo.com/api/content/v2/authentication",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "49cff43c-89b7-4469-8afb-40cd86539f37",
-								"exec": [
-									"var jsonData = JSON.parse(responseBody);\r",
-									"postman.setEnvironmentVariable(\"session_token\", jsonData.sessionToken);\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "5e3269f8-3657-4630-a4d7-1e1cc411bfd1",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"method\": \"password\",\r\n    \"emailAddress\": \"{{username}}\",\r\n    \"password\": \"{{password}}\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "https://{{domo_instance}}.domo.com/api/content/v2/authentication"
-					},
-					"response": []
 				}
 			],
 			"id": "9029bb43-dcaf-4558-ac58-41debd4624f2"
@@ -5423,6 +5387,102 @@
 								},
 								"url": "https://{{domo_instance}}.domo.com/api/content/v3/customers/features/free-invite",
 								"description": "[https://domo-support.domo.com/s/article/360043438893?language=en_US#:~:text=Note:%20If%20you%20do%20not,able%20to%20access%20this%20tab]()."
+							},
+							"response": []
+						},
+						{
+							"name": "Get UserAttributes",
+							"id": "b2c58edc-fd3b-42a8-8922-e035848956d0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Host",
+										"value": "domo-community.domo.com"
+									},
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json, text/plain, */*"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en"
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json;charset=utf-8"
+									},
+									{
+										"key": "x-csrf-token",
+										"value": "3ad80a1a-b84a-43b2-b63d-a6ff68b6b33d"
+									},
+									{
+										"key": "x-domo-requestcontext",
+										"value": "{\"clientToe\":\"THLCSLHUGF-EFJF7\"}"
+									},
+									{
+										"key": "x-requested-with",
+										"value": "XMLHttpRequest"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive"
+									},
+									{
+										"key": "Cookie",
+										"value": "mbox=PC#aaf5f85b3d8b49edad74004ed4427024.35_0#1767486027|session#2260eae947014d13a96ffd4542de2135#1704243087; _pubweb_idc=mmmm-0012-0200_#_standard; amp_c68dc3=xquNzR1WGBkYioqvlut2Uj.MzlGQjAwQTRGNjJGQ0I0QzMzNkE4QTZCN0NDMjJFMzU4NThBOTc2NzgwMDRCRDkzMDA0N0MyMENEQjA3NzlBOQ==..1hj6b2sqi.1hj6b3u3h.1fl.a1.1pm; did=2404658101; _pubweb_is_cus=true; eb03b5b0dbaeb744_cfid=14028j7c622j73636g845a511447022a37344g3h6c5c6h755ebe282d9i4ebi80271519a75c8cb051669e0f055g0a370i64252b76512ic39b1abh21c876265g69; _ga_P3SE4R9WJH=GS1.1.1702430618.13.0.1702430618.0.0.0; _ga=GA1.1.811451550.1699993524; _ga_3RM9SF8PCZ=GS1.1.1702385374.7.1.1702385420.14.0.0; _ga_ZH4TQCL1RC=GS1.1.1701123959.2.0.1701123959.60.0.0; amplitude_id_c68dc3f20888d7c6242144da91c31629domo.com=eyJkZXZpY2VJZCI6IjQ2MGUwNDhkLTJiNzgtNGIyZi1iMWNkLWVkYzQyOGE0ZWY1ZVIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTcwMjM4NTM3NDc3NiwibGFzdEV2ZW50VGltZSI6MTcwMjM4NTM4Mzc2MywiZXZlbnRJZCI6NiwiaWRlbnRpZnlJZCI6MjcsInNlcXVlbmNlTnVtYmVyIjozM30=; s_fid=45855F6118AF2D46-181127ABF10E63F5; s_vnum=1953661657476%26vn%3D4; _gcl_au=1.1.534212909.1701200858; ELOQUA=GUID=1762DBABDB3546A596E9CAE139B8585C; _clck=1w7qx72%7C2%7Cfhh%7C0%7C1427; _gac_UA-51290288-1=1.1701980519.CjwKCAiA98WrBhAYEiwA2WvhOswXEZXYNfMmWd9NYJdVPyr2Dcyd7cqo9ibbaP15yBStehtFaWsMPRoCpFgQAvD_BwE; _ga_JNW5SCCVXP=GS1.2.1702385408.1.1.1702385408.0.0.0; DA-SID-prod15-mmmm-0029-0374=eyJjdXN0b21lcklkIjoibW1tbS0wMDI5LTAzNzQiLCJleHBpcmF0aW9uIjoxNzA0MjY1ODQ4MDAwLCJobWFjU2lnbmF0dXJlIjoiODk2MTgyNmYxNTBiMmJkNTBiZjMyYjE5YzRiMDZiNjhlNjZmODA1Y2M3ZmYwZGFlYjhhZjU3ODg3NjI1NTE5ZiIsInNpZCI6ImZmMjEyNWU0LTUzM2ItNDRlMy04MDVmLWFiMjYzNDc1MjVkNSIsInRpbWVzdGFtcCI6MTcwNDIzNzA0ODAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiI2NzI1OTY2NjkifQ%3D%3D; DA-SID-prod15-mmmm-0012-0350=eyJjdXN0b21lcklkIjoibW1tbS0wMDEyLTAzNTAiLCJleHBpcmF0aW9uIjoxNzA0MjU3OTg2MDAwLCJobWFjU2lnbmF0dXJlIjoiZDgyZGM2ZjNmMmEyNDQ4ZDM0MTI3OTgwNGMxOGY2NGQ1NjE2MDJlNjIwMWQyMGI3N2YxYjAzNGE2MzQ4NmZjYyIsInNpZCI6IjBlY2I0ZmYzLTZmNDUtNGZjZC1iN2JhLWQwNzZjOTA0NTFjOCIsInRpbWVzdGFtcCI6MTcwNDIyOTE4NjAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiI5NjQ4MjgyMDkifQ%3D%3D; SESSION_TOE=THLCSLHUGF; redirectUrl=%2F; PLAY_SESSION=c36fa5593ab7be756ccf9fcecc80563927abcc89-isProxied=false; _dsidv1=113aae51-b67e-4532-b85c-615450f23fec; csrf-token=3ad80a1a-b84a-43b2-b63d-a6ff68b6b33d; CENTERVIEWSESSIONID=1893952720-mmmm-0012-0200; DA-SID-prod1-mmmm-0012-0200=eyJjdXN0b21lcklkIjoibW1tbS0wMDEyLTAyMDAiLCJleHBpcmF0aW9uIjoxNzA0MjcwMDMxMDAwLCJobWFjU2lnbmF0dXJlIjoiNmE0ZGRjNmExZTE4MDE3MjY2YzhlMmZlY2ZiNGYyN2JlNzZlMmZkNjhkMzQ0ZDMzM2VhMGQzYWUzZjM3MDRhMSIsInNpZCI6ImRjYzc3ODZhLWYwMzYtNGM3Mi1hODlhLWJjYzQ2ODBjMWE1MyIsInRpbWVzdGFtcCI6MTcwNDI0MTIzMTAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiIxODkzOTUyNzIwIn0%3D"
+									},
+									{
+										"key": "Sec-Fetch-Dest",
+										"value": "empty"
+									},
+									{
+										"key": "Sec-Fetch-Mode",
+										"value": "cors"
+									},
+									{
+										"key": "Sec-Fetch-Site",
+										"value": "same-origin"
+									},
+									{
+										"key": "host",
+										"value": "domo-community.domo.com"
+									}
+								],
+								"url": {
+									"raw": "https://domo-community.domo.com/api/user/v1/properties/meta/keys?issuerTypes=idp,domo-defined,customer-defined",
+									"protocol": "https",
+									"host": [
+										"domo-community",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"user",
+										"v1",
+										"properties",
+										"meta",
+										"keys"
+									],
+									"query": [
+										{
+											"key": "issuerTypes",
+											"value": "idp,domo-defined,customer-defined"
+										}
+									]
+								}
 							},
 							"response": []
 						}
