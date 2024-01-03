@@ -5564,7 +5564,7 @@
 									"mode": "raw",
 									"raw": "{\r\n    \"keyspace\": \"customer-defined\",\r\n    \"key\": \"DomoLibraryStore\",\r\n    \"securityVoter\": \"FULL_VIS_ADMIN_IDP\",\r\n    \"validator\": \"ANY_VALUE\",\r\n    \"title\": \"store_id2\",\r\n    \"description\": \"store ids\"\r\n}"
 								},
-								"url": "https://{{domo_instance}}.domo.com/api/user/v1/properties/meta/keys/{{property_name}}"
+								"url": "https://{{domo_instance}}.domo.com/api/user/v1/properties/meta/keys/{{user_attribute_id}}"
 							},
 							"response": []
 						}
