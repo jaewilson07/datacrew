@@ -18,20 +18,8 @@ Classifier: License :: OSI Approved :: Apache Software License
 Requires-Python: >=3.7
 Description-Content-Type: text/markdown
 License-File: LICENSE
-Requires-Dist: fastcore
-Requires-Dist: python-dotenv
-Requires-Dist: selenium
-Requires-Dist: bs4
-Requires-Dist: python-frontmatter
-Requires-Dist: lxml
 Requires-Dist: nbdev
-Requires-Dist: datacrew
-Requires-Dist: markdownify
-Requires-Dist: requests
-Requires-Dist: os
-Requires-Dist: pandas
-Requires-Dist: import
-Requires-Dist: chardet
+Requires-Dist: matplotlib
 Provides-Extra: dev
 
 datacrew

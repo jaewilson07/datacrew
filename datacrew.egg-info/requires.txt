@@ -1,16 +1,4 @@
-fastcore
-python-dotenv
-selenium
-bs4
-python-frontmatter
-lxml
 nbdev
-datacrew
-markdownify
-requests
-os
-pandas
-import
-chardet
+matplotlib
 
 [dev]
