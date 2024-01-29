@@ -5722,7 +5722,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{name:come-back-to-domo-all-users,value: true\r\n}"
+									"raw": "{\r\n    \"name\": \"come-back-to-domo-all-users\",\r\n    \"value\": \"false\"\r\n}"
 								},
 								"url": "https://{{domo_instance}}.domo.com/api/content/v1/customer-states/come-back-to-domo-all-users"
 							},
