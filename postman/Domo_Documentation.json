@@ -5652,6 +5652,24 @@
 						},
 						{
 							"name": "toggle_weekly_digest",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b206244c-d0f2-4133-b995-753f33dcd77a",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test(\"Response content type is text/xml\", function () {",
+											"    pm.expect(pm.response.headers.get('Content-Type')).to.include('text/xml');",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "e1bc62f7-183e-4917-9664-fb5508fdbbc7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -5660,72 +5678,20 @@
 								"method": "PUT",
 								"header": [
 									{
-										"key": "User-Agent",
-										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0"
-									},
-									{
 										"key": "Accept",
 										"value": "application/json, text/plain, */*"
 									},
 									{
-										"key": "Accept-Language",
-										"value": "en"
-									},
-									{
-										"key": "Accept-Encoding",
-										"value": "gzip, deflate, br"
-									},
-									{
 										"key": "content-type",
 										"value": "application/json;charset=utf-8"
-									},
-									{
-										"key": "x-csrf-token",
-										"value": "2ff0fb75-bfb6-4f32-a95b-154d7edbdffe"
-									},
-									{
-										"key": "x-domo-requestcontext",
-										"value": "{clientToe:4RPJNQG14B-I2IPA}"
-									},
-									{
-										"key": "x-requested-with",
-										"value": "XMLHttpRequest"
-									},
-									{
-										"key": "Origin",
-										"value": "https://playstation-beta.domo.com"
-									},
-									{
-										"key": "Connection",
-										"value": "keep-alive"
-									},
-									{
-										"key": "Cookie",
-										"value": "mbox=PC^#aaf5f85b3d8b49edad74004ed4427024.35_0^#1769764399^|session^#eca6850745fb4bac95e4dd459afd27f6^#1706521459; _pubweb_idc=mmmm-0012-0350_^#_platform5; amp_c68dc3=xquNzR1WGBkYioqvlut2Uj.QTI3RjlENEJDNEFDRTJGNzAwOUQ4QkZDN0VGQUNGMjdFNTM5Njk5NzM1RTFCMzE2NDIzNTc5QjREQkRGN0JDQQ==..1hla7v30m.1hla7vo5n.2dp.dr.2rk; did=2404658101; _pubweb_is_cus=true; eb03b5b0dbaeb744_cfid=14028j7c622j73636g845a511447022a37344g3h6c5c6h755ebe282d9i4ebi80271519a75c8cb051669e0f055g0a370i64252b76512ic39b1abh21c876265g69; _ga_P3SE4R9WJH=GS1.1.1706143776.26.1.1706144075.0.0.0; _ga=GA1.1.811451550.1699993524; _ga_3RM9SF8PCZ=GS1.1.1706049394.11.1.1706049511.24.0.0; _ga_ZH4TQCL1RC=GS1.1.1706107453.5.0.1706107453.60.0.0; amplitude_id_c68dc3f20888d7c6242144da91c31629domo.com=eyJkZXZpY2VJZCI6IjQ2MGUwNDhkLTJiNzgtNGIyZi1iMWNkLWVkYzQyOGE0ZWY1ZVIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTcwNTk2OTgwNTY3OCwibGFzdEV2ZW50VGltZSI6MTcwNTk2OTgwNTY4NSwiZXZlbnRJZCI6OSwiaWRlbnRpZnlJZCI6NDMsInNlcXVlbmNlTnVtYmVyIjo1Mn0=; s_fid=45855F6118AF2D46-181127ABF10E63F5; s_vnum=1953661657476^%^26vn^%^3D9; _gcl_au=1.1.534212909.1701200858; ELOQUA=GUID=1762DBABDB3546A596E9CAE139B8585C; _clck=1w7qx72^%^7C2^%^7Cfig^%^7C0^%^7C1427; _gac_UA-51290288-1=1.1701980519.CjwKCAiA98WrBhAYEiwA2WvhOswXEZXYNfMmWd9NYJdVPyr2Dcyd7cqo9ibbaP15yBStehtFaWsMPRoCpFgQAvD_BwE; _ga_JNW5SCCVXP=GS1.2.1702385408.1.1.1702385408.0.0.0; _ga_KCXF7VX0J3=GS1.1.1704491343.2.1.1704492390.0.0.0; SESSION_TOE=4RPJNQG14B; redirectUrl=^%^2Fapi^%^2Fdomoweb^%^2Fauth^%^2Fcustomerportal^%^3FredirectPath^%^3D; PLAY_SESSION=c36fa5593ab7be756ccf9fcecc80563927abcc89-isProxied=false; _dsidv1=51c72fe0-24c6-4b8e-94ca-222b0f9cc5b6; csrf-token=2ff0fb75-bfb6-4f32-a95b-154d7edbdffe; CENTERVIEWSESSIONID=964828209-mmmm-0012-0350; DA-SID-prod15-mmmm-0012-0350=eyJjdXN0b21lcklkIjoibW1tbS0wMDEyLTAzNTAiLCJleHBpcmF0aW9uIjoxNzA2NTQ4NDU5MDAwLCJobWFjU2lnbmF0dXJlIjoiZjE4MjRiZDExOTUyODhjMmMwNTQzMzE4YjZkZTI5ODdmYWZjN2QyNmUyZmM3MDhhZWU0MzlmMmQzMTkzMTI5NyIsInNpZCI6IjlkYzg2ODc4LTM3ZWQtNDU1YS1hZGEyLWRhOGJmZTYzNzQyYSIsInRpbWVzdGFtcCI6MTcwNjUxOTY1OTAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiI5NjQ4MjgyMDkifQ^%^3D^%^3D"
-									},
-									{
-										"key": "Sec-Fetch-Dest",
-										"value": "empty"
-									},
-									{
-										"key": "Sec-Fetch-Mode",
-										"value": "cors"
-									},
-									{
-										"key": "Sec-Fetch-Site",
-										"value": "same-origin"
-									},
-									{
-										"key": "TE",
-										"value": "trailers"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"come-back-to-domo-all-users\",\r\n    \"value\": \"false\"\r\n}"
+									"raw": "{\r\n    \"name\": \"come-back-to-domo-all-users\",\r\n    \"value\": false\r\n}"
 								},
 								"url": "https://{{domo_instance}}.domo.com/api/content/v1/customer-states/come-back-to-domo-all-users",
-								"description": "This endpoint allows you to update the customer states for all users to \"come back to domo\". The HTTP PUT request should be sent to https://{{domo_instance}}.domo.com/api/content/v1/customer-states/come-back-to-domo-all-users.\n\n### Request Body\n\n- The request should include a raw JSON body with the following parameters:\n    - `name` (string): Name of the customer state.\n    - `value` (string): Value of the customer state.\n\n### Response\n\nThe endpoint returns a 401 status code with a JSON response body including the following fields:\n\n- `status` (number): The status code.\n- `statusReason` (string): The reason for the status.\n- `path` (string): The path related to the response.\n- `message` (string): Additional message related to the response.\n- `toe` (string): Additional information related to the response."
+								"description": "This endpoint makes an HTTP PUT request to update the customer states for all users on the Domo platform. The request should be sent to https://{{domo_instance}}.domo.com/api/content/v1/customer-states/come-back-to-domo-all-users.\n\nThe request body should be in raw format and include the \"name\" and \"value\" parameters.\n\n### Request Body\n\n- `name`: (text) The name of the customer state.\n- `value`: (text) The value associated with the customer state.\n    \n\nThe response to the request will have a status code of 200 and a content type of text/xml. The response body will be null."
 							},
 							"response": []
 						}
