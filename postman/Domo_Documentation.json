@@ -5651,7 +5651,7 @@
 							"response": []
 						},
 						{
-							"name": "weekly update",
+							"name": "toggle_weekly_digest",
 							"id": "e1bc62f7-183e-4917-9664-fb5508fdbbc7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -5724,7 +5724,8 @@
 									"mode": "raw",
 									"raw": "{\r\n    \"name\": \"come-back-to-domo-all-users\",\r\n    \"value\": \"false\"\r\n}"
 								},
-								"url": "https://{{domo_instance}}.domo.com/api/content/v1/customer-states/come-back-to-domo-all-users"
+								"url": "https://{{domo_instance}}.domo.com/api/content/v1/customer-states/come-back-to-domo-all-users",
+								"description": "This endpoint allows you to update the customer states for all users to \"come back to domo\". The HTTP PUT request should be sent to https://{{domo_instance}}.domo.com/api/content/v1/customer-states/come-back-to-domo-all-users.\n\n### Request Body\n\n- The request should include a raw JSON body with the following parameters:\n    - `name` (string): Name of the customer state.\n    - `value` (string): Value of the customer state.\n\n### Response\n\nThe endpoint returns a 401 status code with a JSON response body including the following fields:\n\n- `status` (number): The status code.\n- `statusReason` (string): The reason for the status.\n- `path` (string): The path related to the response.\n- `message` (string): Additional message related to the response.\n- `toe` (string): Additional information related to the response."
 							},
 							"response": []
 						}
