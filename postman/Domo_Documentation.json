@@ -2491,7 +2491,8 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"url": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows/{{dataflow_id}}/executions"
+								"url": "https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows/{{dataflow_id}}/executions",
+								"description": "\n# Execute Dataflow\nThis endpoint allows you to trigger the execution of a specific dataflow.\n\n## Request\n- Method: POST\n- URL: `https://{{domo_instance}}.domo.com/api/dataprocessing/v1/dataflows/{{dataflow_id}}/executions`\n\n## Response\n- Status: 200\n- Content-Type: application/json\n\n### Response Body\n```json\n{\n  \"id\": 0,\n  \"onboardFlowId\": 0,\n  \"previewRows\": 0,\n  \"dapDataFlowExecutionId\": \"\",\n  \"beginTime\": 0,\n  \"lastUpdated\": 0,\n  \"state\": \"\",\n  \"activationType\": \"\",\n  \"executionEngine\": {\n    \"platform\": \"\",\n    \"engine\": \"\"\n  },\n  \"dataProcessor\": \"\",\n  \"dataFlowVersion\": 0\n}\n```\n"
 							},
 							"response": []
 						},
