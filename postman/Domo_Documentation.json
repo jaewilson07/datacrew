@@ -5657,7 +5657,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "b206244c-d0f2-4133-b995-753f33dcd77a",
+										"id": "95c55006-e950-4a4c-8c6b-7caad63a81fd",
 										"exec": [
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
@@ -5665,9 +5665,14 @@
 											"",
 											"pm.test(\"Response content type is text/xml\", function () {",
 											"    pm.expect(pm.response.headers.get('Content-Type')).to.include('text/xml');",
+											"});",
+											"",
+											"pm.test(\"Response is not null\", function () {",
+											"    pm.expect(pm.response.text()).to.not.equal(null);",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"packages": {}
 									}
 								}
 							],
@@ -7719,6 +7724,19 @@
 								"header": [],
 								"url": "https://{{domo_instance}}.domo.com/api/publish/v2/subscription/{{subscription_id}}",
 								"description": "#### Description (usage)\n\nAccepts all jobs waiting to be accepted from Domo instance\n\n#### **UI reference**\n\nAdmin -> Domo everywhere -> Publish\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/4403486465687-Domo-Everywhere-Launch-Page#4.)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\nN/A\n\n#### **Return value**\n\n*   Array wth subsctiptions jobs\n    \n\nPlease refer to the example below:"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Publish Job Associations",
+							"id": "b2dd7887-4d07-4877-ab69-3aa895c49531",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://{{domo_instance}}.domo.com/api/publish/v2/associations/{{publication_id}}/subscribers/{{subscriber_domain}}"
 							},
 							"response": []
 						}
