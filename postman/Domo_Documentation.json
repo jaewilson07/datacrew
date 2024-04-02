@@ -7736,7 +7736,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "https://{{domo_instance}}.domo.com/api/publish/v2/associations/{{publication_id}}/subscribers/{{subscriber_domain}}"
+								"url": "https://{{domo_instance}}.domo.com/api/publish/v2/associations/095426a1-2c35-468b-bb96-36c516382f19/subscribers/"
 							},
 							"response": []
 						}
