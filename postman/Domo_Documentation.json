@@ -6232,7 +6232,28 @@
 									"request": {
 										"method": "PUT",
 										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"layoutId\": {{layout_id}},\r\n  \"userId\": {{user_id}},\r\n  \"lockTimestamp\": 1713911192925,\r\n  \"lockHeartbeat\": 1713911192925\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
 										"url": "https://domo-community.domo.com/api/content/v4/pages/layouts/1668051644/writelock"
+									},
+									"response": []
+								},
+								{
+									"name": "New Request",
+									"id": "e6c3e93c-a84b-43d8-b761-56075132805b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
 									},
 									"response": []
 								}
