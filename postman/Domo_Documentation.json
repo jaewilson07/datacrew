@@ -6246,14 +6246,15 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "GET Page Layout",
 									"id": "e6c3e93c-a84b-43d8-b761-56075132805b",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"url": "https://{{domo_instance}}.domo.com/api/content/v4/pages/layouts/{{layout_id}}"
 									},
 									"response": []
 								},
@@ -6287,7 +6288,41 @@
 											"mode": "raw",
 											"raw": ""
 										},
-										"url": "https://{{domo_instance}}.domo.com/page/{{page_id}}"
+										"url": {
+											"raw": "https://{{domo_instance}}.domo.com/api/content/v3/stacks/{{page_id}}/cards?includeV4PageLayouts=true&parts=metadata,datasources,library,drillPathURNs,owners,certification,dateInfo,subscriptions,slicers,metadataOverrides&stackLoadContext=Page&stackLoadTrigger=page-view",
+											"protocol": "https",
+											"host": [
+												"{{domo_instance}}",
+												"domo",
+												"com"
+											],
+											"path": [
+												"api",
+												"content",
+												"v3",
+												"stacks",
+												"{{page_id}}",
+												"cards"
+											],
+											"query": [
+												{
+													"key": "includeV4PageLayouts",
+													"value": "true"
+												},
+												{
+													"key": "parts",
+													"value": "metadata,datasources,library,drillPathURNs,owners,certification,dateInfo,subscriptions,slicers,metadataOverrides"
+												},
+												{
+													"key": "stackLoadContext",
+													"value": "Page"
+												},
+												{
+													"key": "stackLoadTrigger",
+													"value": "page-view"
+												}
+											]
+										}
 									},
 									"response": []
 								}
