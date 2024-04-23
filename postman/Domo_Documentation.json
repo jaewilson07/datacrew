@@ -6221,6 +6221,25 @@
 					"name": "Page",
 					"item": [
 						{
+							"name": "Edit Page",
+							"item": [
+								{
+									"name": "PUT Writelock",
+									"id": "39697f34-81b4-4877-802a-3e247209f6b0",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": "https://domo-community.domo.com/api/content/v4/pages/layouts/1668051644/writelock"
+									},
+									"response": []
+								}
+							],
+							"id": "4c577c44-1057-4f51-8716-b051185e2f01"
+						},
+						{
 							"name": "Get Pages",
 							"id": "8c485ef7-11c5-4843-b068-ed964b6e9c3f",
 							"protocolProfileBehavior": {
@@ -9831,15 +9850,15 @@
 			"auth": {
 				"type": "apikey",
 				"apikey": {
-					"key": "X-Domo-Authentication",
-					"value": "{{session_token}}"
+					"key": "x-domo-developer-token",
+					"value": "{{access_token}}"
 				}
 			},
 			"event": [
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "f1aa8e63-9de2-4693-b340-6c9ec2a68868",
+						"id": "8f4c7002-ee72-4d02-a838-567903978602",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -9849,7 +9868,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "06fd19ff-6da5-48ca-a397-3af030955610",
+						"id": "5bcfd02c-aae6-4765-bdfe-5468964a7d72",
 						"type": "text/javascript",
 						"exec": [
 							""
