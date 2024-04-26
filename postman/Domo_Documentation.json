@@ -9894,6 +9894,84 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "call CodeEngine function",
+							"id": "207f5c64-d289-4fe9-879f-7640f31fd861",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json, text/plain, */*"
+									},
+									{
+										"key": "accept-language",
+										"value": "en"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json;charset=utf-8"
+									},
+									{
+										"key": "cookie",
+										"value": "eb03b5b0dbaeb744_cfid=422f582c690c02737679513hce089b44413003531jcb9d7a5i0f56c54cafcbbi5b8g4b6b60a15024c11ha8707h9a3c4h27650e1e1bbj422546b9802a8ic74f3h; did=1349600775; _pubweb_is_cus=true; s_fid=3145B0C4CF8D2FA4-1ABB73F9AFDCA573; s_cc=true; _gcl_au=1.1.449642221.1712691465; _clck=2d5ywg%7C2%7Cfl5%7C0%7C1573; _gac_UA-51290288-1=1.1713790327.Cj0KCQjwlZixBhCoARIsAIC745BdM9NKMB1Psjd3-iC8AVA4Bj35EoU7RRCUuaWKpFy5_P2JN6laFkIaAsR8EALw_wcB; _gid=GA1.2.1905289765.1713919988; PLAY_SESSION=c36fa5593ab7be756ccf9fcecc80563927abcc89-isProxied=false; CENTERVIEWSESSIONID=1351541814-mmmm-0034-3815; amplitude_id_c68dc3f20888d7c6242144da91c31629domo.com=eyJkZXZpY2VJZCI6IjIyMWU0NDFiLTE0ZDktNDU2NS05NjNkLWYzZjkwYmUyOTJiZlIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTcxNDA1NDAzNjEyNSwibGFzdEV2ZW50VGltZSI6MTcxNDA1NDAzNjEzNCwiZXZlbnRJZCI6NywiaWRlbnRpZnlJZCI6MjcsInNlcXVlbmNlTnVtYmVyIjozNH0=; s_vnum=1965152264702%26vn%3D5; s_sq=%5B%5BB%5D%5D; intercom-device-id-t2q61wxb=d0095201-6bfa-4115-87b4-2730e479e23c; _ga_3K8W5YY8TT=GS1.1.1714061767.1.0.1714061767.0.0.0; _ga_3RM9SF8PCZ=GS1.1.1714068644.9.1.1714068652.52.0.0; _ga_KCXF7VX0J3=GS1.1.1714068503.2.1.1714068734.0.0.0; redirectUrl=%2Fdomoapp%2Fcard%2Fedit%2F1371251823%3Fpage%3D310817712%26details%3Dtrue; _ga=GA1.1.826560041.1712324965; DA-SID-prod15-mmmm-0029-0374=eyJjdXN0b21lcklkIjoibW1tbS0wMDI5LTAzNzQiLCJleHBpcmF0aW9uIjoxNzE0MTczMjU1MDAwLCJobWFjU2lnbmF0dXJlIjoiYmI0ZGI4YzAzNmE4MTFhOGJmNDhkNGMzODYyNjY0MDcyZTQ4YWE1MjYyNDZmYzZkYTY1OTM1NjgxNmFhMzk3ZSIsInNpZCI6IjJiZWJhY2E4LTgwNzEtNGE4MS1iYWUwLTJiY2RiMzYzODExNiIsInRpbWVzdGFtcCI6MTcxNDE0NDQ1NTAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiI2NzI1OTY2NjkifQ%3D%3D; _ga_P3SE4R9WJH=GS1.1.1714144652.17.0.1714144652.0.0.0; _ga_ZH4TQCL1RC=GS1.1.1714144758.4.0.1714144758.60.0.0; SESSION_TOE=6MLRNTAMF4; mbox=session#492051754a4f488089a47408ef09ca3d#1714147330; _dsidv1=ba544d49-a254-4687-90df-9d9eb65c787d; _pubweb_idc=mmmm-0034-3815_#_freemium; csrf-token=58c4eb63-b31d-4cb3-8bf5-256a6d950df4; amp_c68dc3=SoVrd2IcxjDf8dOwX6PHAm.MUU5NkE3REQ5RDQ1MDFDNzkwNzdCNEFEOUU2QTQ1OTg1NjgyNDA0N0ZBRTlCNDMzOThGRUE0RkY3MjAyQTJFMg==..1hsde3grr.1hsdghn0n.k6.3f.nl; intercom-session-t2q61wxb=Zm83WWlqZnRRNWJZcmdncDlyYWFYVk5YbFlhc1UrbVpoeVhlNUZ4NW1pK1VUTml2cERvL0JDRThxQnhLblVzTC0tb0MyNXZ4V0JsMThLTGlaRCtoU3JGdz09--74a3efcd4a6b7cd63b5fb344d2c71bce2f931144; DA-SID-prod4-mmmm-0034-3815=eyJjdXN0b21lcklkIjoibW1tbS0wMDM0LTM4MTUiLCJleHBpcmF0aW9uIjoxNzE0MTc0ODk1MDAwLCJobWFjU2lnbmF0dXJlIjoiNWJhNzU1M2U5NDIxZGVkMTg2MGNiZTFiNzM4YWJlOTgxNDFiNWQ0ZTgzNDBiNDAxZTM3NGM3MzY3ZDAxYzA4NSIsInNpZCI6ImQ3N2E2NTEzLTI3MDctNDgwMS04NWVjLTMwMzRiMmNhODZkZCIsInRpbWVzdGFtcCI6MTcxNDE0NjA5NTAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiIxMzUxNTQxODE0In0%3D; DA-SID-prod15-mmmm-0023-2211=eyJjdXN0b21lcklkIjoibW1tbS0wMDIzLTIyMTEiLCJleHBpcmF0aW9uIjoxNzE0MTc0OTY4MDAwLCJobWFjU2lnbmF0dXJlIjoiMzZhMTBiNmFiMTU0ZjYwN2Y1Njk2ZWU3MDcwNzI5YjRhNTBiYzMzMDUyMmNiMDEwNjdiZGRjN2RhZWQ0NjQ4NiIsInNpZCI6IjIyODU5ZTBhLTMzNDktNDNiOS05NDUzLTk1ZjU1ZWNkYWFkMiIsInRpbWVzdGFtcCI6MTcxNDE0NjE2ODAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiIxMzgwMzY2Mjg3In0%3D"
+									},
+									{
+										"key": "origin",
+										"value": "https://datacrew-space.domo.com"
+									},
+									{
+										"key": "sec-ch-ua",
+										"value": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\""
+									},
+									{
+										"key": "sec-ch-ua-mobile",
+										"value": "?0"
+									},
+									{
+										"key": "sec-ch-ua-platform",
+										"value": "\"Windows\""
+									},
+									{
+										"key": "sec-fetch-dest",
+										"value": "empty"
+									},
+									{
+										"key": "sec-fetch-mode",
+										"value": "cors"
+									},
+									{
+										"key": "sec-fetch-site",
+										"value": "same-origin"
+									},
+									{
+										"key": "user-agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0"
+									},
+									{
+										"key": "x-csrf-token",
+										"value": "58c4eb63-b31d-4cb3-8bf5-256a6d950df4"
+									},
+									{
+										"key": "x-domo-requestcontext",
+										"value": "{\"clientToe\":\"6MLRNTAMF4-1US0T\"}"
+									},
+									{
+										"key": "x-requested-with",
+										"value": "XMLHttpRequest"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"inputVariables\":{\"account_name\":\"datacrew-space\",\"is_abstract\":false,\"is_json\":false},\"settings\":{\"getLogs\":true}}"
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/codeengine/v2/packages/{{package_id}}/versions/{{version_id}}/functions/{{function_name}}"
+							},
+							"response": []
 						}
 					],
 					"id": "6db50892-e210-48ec-a944-11ebc01b4474"
