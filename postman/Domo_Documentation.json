@@ -7849,6 +7849,18 @@
 								"description": "subscriber_domain must be full domain 'customer.domo.com'"
 							},
 							"response": []
+						},
+						{
+							"name": "Targeted Refresh",
+							"id": "ca373b46-6ad6-4876-82ad-8b5918cbc6fe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "1d951c97-b085-48dc-adbe-6da8bcc0401c"
