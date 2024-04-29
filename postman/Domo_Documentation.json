@@ -7846,7 +7846,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://{{domo_instance}}.domo.com/api/publish/v2/associations/{{publish_id}}/subscribers/{{subscriber_domain}}",
-								"description": "subscriber_domain must be full domain 'customer.domo.com'"
+								"description": "subscriber_domain must be full domain 'customer.domo.com'\n\nwill only return content from within he same region"
 							},
 							"response": []
 						},
