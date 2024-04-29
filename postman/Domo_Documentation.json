@@ -7837,7 +7837,7 @@
 							"response": []
 						},
 						{
-							"name": "Get Publish Job Associations",
+							"name": "Get Publish Job Associations (Subscriber Content)",
 							"id": "b2dd7887-4d07-4877-ab69-3aa895c49531",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -7858,7 +7858,17 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"publicationId\": \"6a60f1ea-9676-49bc-8c7d-c4c51b720de3\",\r\n    \"domains\": [\r\n        \"customer1.domo.com\",\r\n        \"customer2.domo.com \"\r\n    ],\r\n    \"targetContents\": [\r\n        {\r\n            \"domoObjectId\": \"233950733\",\r\n            \"type\": \"CARD\"\r\n        },\r\n        {\r\n            \"domoObjectId\": \"659052271\",\r\n            \"type\": \"PAGE\"\r\n        },\r\n        {\r\n            \"domoObjectId\": \"b292cb85-05c4-4d55-9f2e-913c595a5c92\",\r\n            \"type\": \"DATASET\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/publish/v2/publication/refresh/target-content"
 							},
 							"response": []
 						}
