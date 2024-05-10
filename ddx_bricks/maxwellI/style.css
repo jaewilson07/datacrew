@@ -1,0 +1,68 @@
+body {
+    background: #000e29;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.modal-toggle {
+    display: none; 
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center; 
+    background: rgba(0, 0, 0, 0.1);
+    padding-top: 50px; 
+    visibility: hidden; 
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0s 0.5s; 
+    pointer-events: none; }
+
+.modal-toggle:checked + .modal-backdrop {
+    visibility: visible;
+    opacity: 0.9;
+    pointer-events: all; 
+    transition: opacity 0.5s ease, visibility 0s 0s; 
+}
+
+body .modal-backdrop .alert-simple.alert-info {
+    border: 1px solid #e319372c;
+    background-color: #ffffff;  
+    color: #000000;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    padding: 10px 20px;
+    max-width: 80%;
+    text-align: center;
+    position: relative; 
+}
+
+
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+body .modal-backdrop .btn-primary {
+    background-color: #4CAF50; 
+    color: white; 
+    border: 2px solid #4CAF50; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+body .modal-backdrop .btn-primary:hover {
+    background-color: #45a049; 
+    color: #fff; 
+}
