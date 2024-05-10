@@ -1,0 +1,84 @@
+,dataflow_id,datafow_name,action_type
+0,375,DEV | Swish Central v2,LoadFromVault
+1,375,DEV | Swish Central v2,LoadFromVault
+2,375,DEV | Swish Central v2,LoadFromVault
+3,375,DEV | Swish Central v2,LoadFromVault
+4,375,DEV | Swish Central v2,MergeJoin
+5,375,DEV | Swish Central v2,MergeJoin
+6,375,DEV | Swish Central v2,LoadFromVault
+7,375,DEV | Swish Central v2,MergeJoin
+8,375,DEV | Swish Central v2,UnionAll
+9,375,DEV | Swish Central v2,LoadFromVault
+10,375,DEV | Swish Central v2,MergeJoin
+11,375,DEV | Swish Central v2,LoadFromVault
+12,375,DEV | Swish Central v2,Filter
+13,375,DEV | Swish Central v2,SelectValues
+14,375,DEV | Swish Central v2,MergeJoin
+15,375,DEV | Swish Central v2,LoadFromVault
+16,375,DEV | Swish Central v2,MergeJoin
+17,375,DEV | Swish Central v2,Filter
+18,375,DEV | Swish Central v2,SelectValues
+19,375,DEV | Swish Central v2,Filter
+20,375,DEV | Swish Central v2,Unique
+21,375,DEV | Swish Central v2,ExpressionEvaluator
+22,375,DEV | Swish Central v2,PublishToVault
+23,131,BeastModesGovernance_01_AccumulateHistory,LoadFromVault
+24,131,BeastModesGovernance_01_AccumulateHistory,ExpressionEvaluator
+25,131,BeastModesGovernance_01_AccumulateHistory,PublishToVault
+26,227,DDX_Landing Page_QA,LoadFromVault
+27,227,DDX_Landing Page_QA,WindowAction
+28,227,DDX_Landing Page_QA,ExpressionEvaluator
+29,227,DDX_Landing Page_QA,Metadata
+30,227,DDX_Landing Page_QA,SelectValues
+31,227,DDX_Landing Page_QA,ExpressionEvaluator
+32,227,DDX_Landing Page_QA,PublishToVault
+33,37,EX01_FuzzyMatch_Master,LoadFromVault
+34,37,EX01_FuzzyMatch_Master,LoadFromVault
+35,37,EX01_FuzzyMatch_Master,Unique
+36,37,EX01_FuzzyMatch_Master,SelectValues
+37,37,EX01_FuzzyMatch_Master,Unique
+38,37,EX01_FuzzyMatch_Master,SelectValues
+39,37,EX01_FuzzyMatch_Master,PythonEngineAction
+40,37,EX01_FuzzyMatch_Master,PublishToVault
+41,185,DDX_Landing Page_DEV,LoadFromVault
+42,185,DDX_Landing Page_DEV,WindowAction
+43,185,DDX_Landing Page_DEV,ExpressionEvaluator
+44,185,DDX_Landing Page_DEV,Metadata
+45,185,DDX_Landing Page_DEV,SelectValues
+46,185,DDX_Landing Page_DEV,ExpressionEvaluator
+47,185,DDX_Landing Page_DEV,PublishToVault
+48,38,EX01_FuzzyMatch_Master_RECURSIVE,LoadFromVault
+49,38,EX01_FuzzyMatch_Master_RECURSIVE,LoadFromVault
+50,38,EX01_FuzzyMatch_Master_RECURSIVE,Unique
+51,38,EX01_FuzzyMatch_Master_RECURSIVE,LoadFromVault
+52,38,EX01_FuzzyMatch_Master_RECURSIVE,GroupBy
+53,38,EX01_FuzzyMatch_Master_RECURSIVE,MergeJoin
+54,38,EX01_FuzzyMatch_Master_RECURSIVE,Filter
+55,38,EX01_FuzzyMatch_Master_RECURSIVE,SelectValues
+56,38,EX01_FuzzyMatch_Master_RECURSIVE,Unique
+57,38,EX01_FuzzyMatch_Master_RECURSIVE,SelectValues
+58,38,EX01_FuzzyMatch_Master_RECURSIVE,PythonEngineAction
+59,38,EX01_FuzzyMatch_Master_RECURSIVE,WindowAction
+60,38,EX01_FuzzyMatch_Master_RECURSIVE,Filter
+61,38,EX01_FuzzyMatch_Master_RECURSIVE,UnionAll
+62,38,EX01_FuzzyMatch_Master_RECURSIVE,WindowAction
+63,38,EX01_FuzzyMatch_Master_RECURSIVE,Filter
+64,38,EX01_FuzzyMatch_Master_RECURSIVE,Metadata
+65,38,EX01_FuzzyMatch_Master_RECURSIVE,PublishToVault
+66,226,DDX_Landing Page_DEV,LoadFromVault
+67,226,DDX_Landing Page_DEV,WindowAction
+68,226,DDX_Landing Page_DEV,ExpressionEvaluator
+69,226,DDX_Landing Page_DEV,Metadata
+70,226,DDX_Landing Page_DEV,SelectValues
+71,226,DDX_Landing Page_DEV,ExpressionEvaluator
+72,226,DDX_Landing Page_DEV,PublishToVault
+73,124,Recursive+Partition_Demo,LoadFromVault
+74,124,Recursive+Partition_Demo,Filter
+75,124,Recursive+Partition_Demo,PublishToVault
+76,46,AW_delete,LoadFromVault
+77,46,AW_delete,ValueMapper
+78,46,AW_delete,PublishToVault
+79,81,Hash Email Hash Test,LoadFromVault
+80,81,Hash Email Hash Test,SelectValues
+81,81,Hash Email Hash Test,ExpressionEvaluator
+82,81,Hash Email Hash Test,PublishToVault
