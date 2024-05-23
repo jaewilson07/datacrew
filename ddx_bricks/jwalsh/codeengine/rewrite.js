@@ -12,7 +12,7 @@ async function getPageCards(pageId) {
   }
 }
 
-async function GetCardMetaData(cardId) {
+async function getCardMetaData(cardId) {
   const fetchUrl = `api/content/v1/cards?urns=${cardId}&parts=metadata,metadataOverrides,problems,properties,certification,datasources,dateInfo,domoapp,drillPath,drillPathURNs,library,masonData,owner,owners,problems,properties,slicers&includeFiltered=true`; // Endpoint to fetch card details
   try {
     const response = await codeengine.sendRequest("GET", fetchUrl);
@@ -61,10 +61,10 @@ async function updaeCardDataSource(cardId, newDatasourceId) {
   }
 }
 
-async function updateAllCardTitles(pageId) {
+async function updateAllCardTitles(pageId, newDatasourceId) {
   try {
     // Fetch all card IDs from the page
-    const pageResponse = await PageCards(pageId);
+    const pageResponse = await getPageCards(pageId);
 
     if (!pageResponse || pageResponse.length === 0) {
       throw new Error("No cards found on the page");
@@ -75,7 +75,7 @@ async function updateAllCardTitles(pageId) {
     for (const cardId of cardIds) {
       try {
         // Fetch the current card details
-        const response = await GetCardMetaData(cardId);
+        const response = await getCardMetaData(cardId);
         if (!response || response.length === 0) {
           throw new Error(`No card data found for card ID: ${cardId}`);
         }
@@ -90,7 +90,6 @@ async function updateAllCardTitles(pageId) {
         // Remove "Duplicate of " from the title
         const newTitle = currentTitle.replace(/^Duplicate of /, "");
         // Update the card with the new title
-
         await updateCardTitle(cardId, newTitle);
       } catch (error) {
         console.error(
@@ -100,12 +99,8 @@ async function updateAllCardTitles(pageId) {
       }
 
       try {
-        const datasourcePayload = { datasourceId: newDatasourceId }; // Assuming this is the correct payload structure
-        await codeengine.sendRequest(
-          "PUT",
-          updateDatasourceUrl(cardId),
-          datasourcePayload
-        );
+        // Update the card datasource
+        await updateCardDataSource(cardId, newDatasourceId);
       } catch (updateDatasourceError) {
         console.error(
           `Error updating datasource for card ID: ${cardId}`,
