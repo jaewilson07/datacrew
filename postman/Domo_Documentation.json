@@ -9999,6 +9999,34 @@
 					"id": "6db50892-e210-48ec-a944-11ebc01b4474"
 				},
 				{
+					"name": "AppStudio",
+					"item": [
+						{
+							"name": "Get Dataapps - Admin Summary",
+							"id": "c69af079-72da-4c4b-88ad-c7b229e08b68",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"includeOwnerCluse\": \"true\",\n    \"includeTitleClause\": \"true\",\n    \"orderBy\": \"title\",\n    \"TitleSearchText\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/content/v1/pages/adminsummary"
+							},
+							"response": []
+						}
+					],
+					"id": "0182f815-4c15-44b7-bd16-a5bdbf20ff09"
+				},
+				{
 					"name": "Generate Developer Token",
 					"id": "9bcb4e1a-329e-4b2e-bbde-97ceb36bac04",
 					"protocolProfileBehavior": {
