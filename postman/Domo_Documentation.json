@@ -10008,18 +10008,35 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": [],
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}"
+									}
+								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"includeOwnerCluse\": \"true\",\n    \"includeTitleClause\": \"true\",\n    \"orderBy\": \"title\",\n    \"TitleSearchText\": \"\"\n}",
+									"raw": "{\n    \"includeOwnerClause\": \"true\",\n    \"includeTitleClause\": \"true\",\n    \"orderBy\": \"title\",\n    \"titleSearchText\": \"\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "https://{{domo_instance}}.domo.com/api/content/v1/pages/adminsummary"
+								"url": "https://{{domo_instance}}.domo.com/api/content/v1/dataapps/adminsummary"
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "99332737-a6ed-43b9-b1fd-53ef93c40f5b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
 							},
 							"response": []
 						}
