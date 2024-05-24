@@ -10142,6 +10142,15 @@
 										"value": "{{session_token}}"
 									}
 								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"dataAppIds\": [\"{{data_app_id}}\"],\n    \"recipients\": [\n        {\n            \"type\": \"group\",\n            \"id\": \"{{group_id}}\"\n        }\n    ],\n    \"message\": \"I thought you might find this page interesting.\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
 									"raw": "https://{{domo_instance}}.domo.com/api/content/v1/dataapps/share?sendEmail=false",
 									"protocol": "https",
