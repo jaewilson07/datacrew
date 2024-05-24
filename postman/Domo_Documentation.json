@@ -10118,7 +10118,52 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}"
+									}
+								],
+								"url": "https://{{domo_instance}}.domo.com/api/content/v1/dataapps/{{data_app_id}}/access"
+							},
+							"response": []
+						},
+						{
+							"name": "Share DataApps",
+							"id": "b52589ca-ffce-4204-a541-32678f2de829",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/content/v1/dataapps/share?sendEmail=false",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"content",
+										"v1",
+										"dataapps",
+										"share"
+									],
+									"query": [
+										{
+											"key": "sendEmail",
+											"value": "false"
+										}
+									]
+								}
 							},
 							"response": []
 						}
