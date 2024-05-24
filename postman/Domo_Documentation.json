@@ -10075,9 +10075,14 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}"
+									}
+								],
 								"url": {
-									"raw": "https://{{domo_instance}}.domo.com/api/content/v3/stacks/{{page_id}}/cards?includeV4PageLayouts=true&parts=metadata,datasources,library,drillPathURNs,certification,owners,dateInfo,subscriptions,slicers",
+									"raw": "https://{{domo_instance}}.domo.com/api/content/v1/dataapps/{{data_app_id}}?authoring=true&includeHiddenViews=true",
 									"protocol": "https",
 									"host": [
 										"{{domo_instance}}",
@@ -10087,22 +10092,33 @@
 									"path": [
 										"api",
 										"content",
-										"v3",
-										"stacks",
-										"{{page_id}}",
-										"cards"
+										"v1",
+										"dataapps",
+										"{{data_app_id}}"
 									],
 									"query": [
 										{
-											"key": "includeV4PageLayouts",
+											"key": "authoring",
 											"value": "true"
 										},
 										{
-											"key": "parts",
-											"value": "metadata,datasources,library,drillPathURNs,certification,owners,dateInfo,subscriptions,slicers"
+											"key": "includeHiddenViews",
+											"value": "true"
 										}
 									]
 								}
+							},
+							"response": []
+						},
+						{
+							"name": "DataApps Access List",
+							"id": "07b6d28d-660f-43a9-864f-8f26ca659b78",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
 							},
 							"response": []
 						}
