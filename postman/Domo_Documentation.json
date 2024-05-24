@@ -10066,6 +10066,45 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Get DataApps by ID",
+							"id": "e2b95b1b-1830-4dff-854f-18d0d248a9fa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/content/v3/stacks/{{page_id}}/cards?includeV4PageLayouts=true&parts=metadata,datasources,library,drillPathURNs,certification,owners,dateInfo,subscriptions,slicers",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"content",
+										"v3",
+										"stacks",
+										"{{page_id}}",
+										"cards"
+									],
+									"query": [
+										{
+											"key": "includeV4PageLayouts",
+											"value": "true"
+										},
+										{
+											"key": "parts",
+											"value": "metadata,datasources,library,drillPathURNs,certification,owners,dateInfo,subscriptions,slicers"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "0182f815-4c15-44b7-bd16-a5bdbf20ff09"
