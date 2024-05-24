@@ -10029,14 +10029,41 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Get DataApps",
 							"id": "99332737-a6ed-43b9-b1fd-53ef93c40f5b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/content/v1/dataapps",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"content",
+										"v1",
+										"dataapps"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
 							},
 							"response": []
 						}
