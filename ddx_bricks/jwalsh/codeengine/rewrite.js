@@ -61,6 +61,37 @@ async function updaeCardDataSource(cardId, newDatasourceId) {
   }
 }
 
+async function updateCard(cardId, newDatasourceId) {
+  try {
+    // Fetch the current card details
+    const response = await getCardMetaData(cardId);
+    if (!response || response.length === 0) {
+      throw new Error(`No card data found for card ID: ${cardId}`);
+    }
+
+    const currentTitle = response[0].title;
+    if (!currentTitle) {
+      throw new Error(`Title not found in card data for card ID: ${cardId}`);
+    }
+
+    // Remove "Duplicate of " from the title
+    const newTitle = currentTitle.replace(/^Duplicate of /, "");
+    // Update the card with the new title
+    await updateCardTitle(cardId, newTitle);
+  } catch (error) {
+    console.error(`Error updating card title for card ID: ${cardId}`, error);
+    throw error;
+  }
+
+  try {
+    // Update the card datasource
+    await updateCardDataSource(cardId, newDatasourceId);
+  } catch (updateDatasourceError) {
+    console.error(`Error updating datasource for card ID: ${cardId}`, updateDatasourceError);
+    throw updateDatasourceError;
+  }
+}
+
 async function updateAllCardTitles(pageId, newDatasourceId) {
   try {
     // Fetch all card IDs from the page
@@ -73,44 +104,12 @@ async function updateAllCardTitles(pageId, newDatasourceId) {
     const cardIds = pageResponse.map((card) => card.id);
 
     for (const cardId of cardIds) {
-      try {
-        // Fetch the current card details
-        const response = await getCardMetaData(cardId);
-        if (!response || response.length === 0) {
-          throw new Error(`No card data found for card ID: ${cardId}`);
-        }
-
-        const currentTitle = response[0].title;
-        if (!currentTitle) {
-          throw new Error(
-            `Title not found in card data for card ID: ${cardId}`
-          );
-        }
-
-        // Remove "Duplicate of " from the title
-        const newTitle = currentTitle.replace(/^Duplicate of /, "");
-        // Update the card with the new title
-        await updateCardTitle(cardId, newTitle);
-      } catch (error) {
-        console.error(
-          `Error updating card title for card ID: ${cardId}`,
-          error
-        ); // Log the error for debugging
-      }
-
-      try {
-        // Update the card datasource
-        await updateCardDataSource(cardId, newDatasourceId);
-      } catch (updateDatasourceError) {
-        console.error(
-          `Error updating datasource for card ID: ${cardId}`,
-          updateDatasourceError
-        );
-      }
+      await updateCard(cardId, newDatasourceId);
     }
+
     return true;
   } catch (error) {
-    console.error("Error updating card titles:", error); // Log the error for debugging
+    console.error("Error updating card titles:", error);
     throw error;
   }
 }
