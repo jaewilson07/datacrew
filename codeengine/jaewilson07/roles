@@ -1,0 +1,13 @@
+from codeengine.jaewilson07._base import get_data
+
+
+def list_roles(
+    domo_instance: str = None, account_name: str = None, debug_api: bool = False
+):
+    return get_data(
+        url="/api/authorization/v1/roles",
+        method="get",
+        domo_instance=domo_instance,
+        account_name=account_name,
+        debug_api=debug_api,
+    )
