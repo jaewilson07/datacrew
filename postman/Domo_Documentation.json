@@ -7844,8 +7844,37 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
-								"url": "https://{{domo_instance}}.domo.com/api/publish/v2/associations/{{publish_id}}/subscribers/{{subscriber_domain}}",
+								"header": [
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/publish/v2/associations/{{publish_id}}/subscribers/{{subscriber_domain}}",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"publish",
+										"v2",
+										"associations",
+										"{{publish_id}}",
+										"subscribers",
+										"{{subscriber_domain}}"
+									],
+									"query": [
+										{
+											"key": "x-domo-authentication",
+											"value": "{{session_token}}",
+											"disabled": true
+										}
+									]
+								},
 								"description": "subscriber_domain must be full domain 'customer.domo.com'\n\nwill only return content from within he same region"
 							},
 							"response": []
