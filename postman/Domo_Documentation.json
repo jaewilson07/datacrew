@@ -1094,7 +1094,8 @@
 										}
 									}
 								},
-								"url": "https://{{domo_instance}}.domo.com/api/query/v1/functions/search"
+								"url": "https://{{domo_instance}}.domo.com/api/query/v1/functions/search",
+								"description": "supported filter variants\n\n\\[\n\n{\"field\":\"status\", \"value\":true},\n\n{\"field\":\"unlocked\", \"value\":false},\n\n{\"field\":\"notvariable\"},\n\n{\"field\": \"link\", \"value\": \"DataSet\"} #or \"Card\"\n\n\\]"
 							},
 							"response": [
 								{
