@@ -988,6 +988,18 @@
 									"body": null
 								}
 							]
+						},
+						{
+							"name": "Lock Beast Mode",
+							"id": "8c507dfe-b98d-490b-b07f-d6af4bb68a00",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "281d654e-a92c-4b64-986c-fb5154edf52d"
