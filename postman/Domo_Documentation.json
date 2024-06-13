@@ -1010,6 +1010,93 @@
 								"url": "https://{{domo_instance}}.domo.com/api/query/v1/functions/template/{{beastmode_id}}"
 							},
 							"response": []
+						},
+						{
+							"name": "get all beast modes",
+							"id": "99bb4b8f-9300-4c42-83ad-92a9d9bacf10",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json, text/plain, */*"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en"
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br, zstd"
+									},
+									{
+										"key": "X-DOMO-RequestContext",
+										"value": "{clientToe:1MRKN2QP0S-T3FEE}"
+									},
+									{
+										"key": "x-requested-with",
+										"value": "XMLHttpRequest"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json;charset=utf-8"
+									},
+									{
+										"key": "x-csrf-token",
+										"value": "731c4938-e6c3-471b-960b-2e6afe79c2f9"
+									},
+									{
+										"key": "Origin",
+										"value": "https://playstation-config.domo.com"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive"
+									},
+									{
+										"key": "Cookie",
+										"value": "_pubweb_idc=mmmm-0029-0374_^#_platform5; amp_c68dc3=uyhafyN2qBsDViGKfwqKe0.QTI3RjlENEJDNEFDRTJGNzAwOUQ4QkZDN0VGQUNGMjdFNTM5Njk5NzM1RTFCMzE2NDIzNTc5QjREQkRGN0JDQQ==..1i095itvi.1i095p2hi.p.3.s; SESSION_TOE=1MRKN2QP0S; redirectUrl=^%^2F; PLAY_SESSION=c36fa5593ab7be756ccf9fcecc80563927abcc89-isProxied=false; mbox=session^#a749e70e8bf74eb48c80afc9fee0dd68^#1718296627; _dsidv1=07d3c676-f40c-4c5c-98dd-bb17de3697a2; DA-SID-prod15-mmmm-0029-0374=eyJjdXN0b21lcklkIjoibW1tbS0wMDI5LTAzNzQiLCJleHBpcmF0aW9uIjoxNzE4MzIzNTU0MDAwLCJobWFjU2lnbmF0dXJlIjoiOTkyY2E0MWM2ZDE4MWYzY2ExNTBiYjRkMGYwZjY3Yzc5YWFlOTE5MjAzNjUyMDIwM2UzNjMyZjM2ZjY2YTk5MyIsInNpZCI6ImY4MjhlNTlkLTcxMzctNDQwMC1hYmM1LTRjYjc4NzZjNDU4NyIsInRpbWVzdGFtcCI6MTcxODI5NDc1NDAwMCwidG9lcyI6IlVOS05PV05TSUQiLCJ1c2VySWQiOiI2NzI1OTY2NjkifQ^%^3D^%^3D; csrf-token=731c4938-e6c3-471b-960b-2e6afe79c2f9"
+									},
+									{
+										"key": "Sec-Fetch-Dest",
+										"value": "empty"
+									},
+									{
+										"key": "Sec-Fetch-Mode",
+										"value": "cors"
+									},
+									{
+										"key": "Sec-Fetch-Site",
+										"value": "same-origin"
+									},
+									{
+										"key": "Priority",
+										"value": "u=1"
+									},
+									{
+										"key": "TE",
+										"value": "trailers"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\":\"\",\"filters\":[{\"field\":\"notvariable\"}],\"sort\":{\"field\":\"name\",\"ascending\":true},\"limit\":100,\"offset\":0}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://{{domo_instance}}.domo.com/api/query/v1/functions/search"
+							},
+							"response": []
 						}
 					],
 					"id": "281d654e-a92c-4b64-986c-fb5154edf52d"
