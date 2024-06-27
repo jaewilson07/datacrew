@@ -6292,7 +6292,7 @@
 							]
 						},
 						{
-							"name": "Get All Groups Copy",
+							"name": "Get All Groups where Owner",
 							"id": "e6723340-c958-428d-a5b7-adfef67d897a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
