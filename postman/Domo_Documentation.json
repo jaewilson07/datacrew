@@ -6306,7 +6306,52 @@
 										"type": "text"
 									}
 								],
-								"url": "https://{{domo_instance}}.domo.com/api/content/v2/groups",
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/content/v2/groups/grouplist?ascending=true&includeFullMembership=false&limit=100&offset=0&owner={{owner_id}}&ownerType=USER&sort=name",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"content",
+										"v2",
+										"groups",
+										"grouplist"
+									],
+									"query": [
+										{
+											"key": "ascending",
+											"value": "true"
+										},
+										{
+											"key": "includeFullMembership",
+											"value": "false"
+										},
+										{
+											"key": "limit",
+											"value": "100"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "owner",
+											"value": "{{owner_id}}"
+										},
+										{
+											"key": "ownerType",
+											"value": "USER"
+										},
+										{
+											"key": "sort",
+											"value": "name"
+										}
+									]
+								},
 								"description": "#### Description (usage)\n\nGet the list of groups\n\n#### **UI reference**\n\nAdmin section -> Groups\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934294-Creating-and-Managing-User-Groups#1.1.)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\n*   ignoreCache (true/false)\n*   includeActive (true/false)\n*   includeUsers (true/false)\n    \n\n#### **Return value**\n\n*   Array of groups with properties\n    \n\nPlease refer to the example below:"
 							},
 							"response": [
