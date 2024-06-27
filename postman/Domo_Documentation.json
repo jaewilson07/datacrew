@@ -6292,6 +6292,221 @@
 							]
 						},
 						{
+							"name": "Get All Groups Copy",
+							"id": "e6723340-c958-428d-a5b7-adfef67d897a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-domo-authentication",
+										"value": "{{session_token}}",
+										"type": "text"
+									}
+								],
+								"url": "https://{{domo_instance}}.domo.com/api/content/v2/groups",
+								"description": "#### Description (usage)\n\nGet the list of groups\n\n#### **UI reference**\n\nAdmin section -> Groups\n\n#### **Resources**\n\n[Link to KB](https://domohelp.domo.com/hc/en-us/articles/360042934294-Creating-and-Managing-User-Groups#1.1.)\n\n#### Required parameters\n\nN/A\n\n#### Optional parameters\n\n*   ignoreCache (true/false)\n*   includeActive (true/false)\n*   includeUsers (true/false)\n    \n\n#### **Return value**\n\n*   Array of groups with properties\n    \n\nPlease refer to the example below:"
+							},
+							"response": [
+								{
+									"id": "b36bc08e-969c-4a19-bea8-23232f989b44",
+									"name": "Groups - Get All Groups",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-domo-authentication",
+												"value": "{{session_token}}",
+												"type": "text"
+											}
+										],
+										"url": "https://{{domo_instance}}.domo.com/api/content/v2/groups"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 04 May 2022 18:11:51 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self';"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding, User-Agent"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "[\n    {\n        \"id\": 180920085,\n        \"name\": \"Content\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 0,\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1063525969,\n        \"name\": \"Power User Group\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1589561936000,\n        \"memberCount\": 27,\n        \"guid\": \"14ebea60-9155-11ea-a6eb-12affd108866\",\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1324037627,\n        \"name\": \"Default\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 294,\n        \"active\": true,\n        \"default\": true\n    },\n    {\n        \"id\": 2088006361,\n        \"name\": \"_Inline_Edit_Owners\",\n        \"type\": \"closed\",\n        \"userIds\": [],\n        \"created\": 1617953643000,\n        \"memberCount\": 7,\n        \"guid\": \"f5231ce5-9905-11eb-8e8b-0a775c76e4e4\",\n        \"description\": \"Inline Editor_Owner\",\n        \"active\": true,\n        \"default\": false\n    }\n]"
+								},
+								{
+									"id": "480ff282-4f41-4dba-a1e9-306a5a3a570d",
+									"name": "Get All Groups with optional parameters",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-domo-authentication",
+												"value": "{{session_token}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://{{domo_instance}}.domo.com/api/content/v2/groups?ignoreCache=false&includeActive=false&includeUsers=false",
+											"protocol": "https",
+											"host": [
+												"{{domo_instance}}",
+												"domo",
+												"com"
+											],
+											"path": [
+												"api",
+												"content",
+												"v2",
+												"groups"
+											],
+											"query": [
+												{
+													"key": "ignoreCache",
+													"value": "false"
+												},
+												{
+													"key": "includeActive",
+													"value": "false"
+												},
+												{
+													"key": "includeUsers",
+													"value": "false"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 06 May 2022 15:34:36 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self';"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding, User-Agent"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "[\n    {\n        \"id\": 180920085,\n        \"name\": \"Content\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 0,\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1063525969,\n        \"name\": \"Power User Group\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1589561936000,\n        \"memberCount\": 27,\n        \"guid\": \"14ebea60-9155-11ea-a6eb-12affd108866\",\n        \"active\": true,\n        \"default\": false\n    },\n    {\n        \"id\": 1324037627,\n        \"name\": \"Default\",\n        \"type\": \"adHoc\",\n        \"userIds\": [],\n        \"created\": 1464820852000,\n        \"memberCount\": 294,\n        \"active\": true,\n        \"default\": true\n    },\n    {\n        \"id\": 2088006361,\n        \"name\": \"_Inline_Edit_Owners\",\n        \"type\": \"closed\",\n        \"userIds\": [],\n        \"created\": 1617953643000,\n        \"memberCount\": 7,\n        \"guid\": \"f5231ce5-9905-11eb-8e8b-0a775c76e4e4\",\n        \"description\": \"Inline Editor_Owner\",\n        \"active\": true,\n        \"default\": false\n    }\n]"
+								}
+							]
+						},
+						{
 							"name": "Add Group Owner",
 							"id": "9be80c90-8436-44df-a22a-aea8d48d2711",
 							"protocolProfileBehavior": {
