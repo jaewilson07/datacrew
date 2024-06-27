@@ -1,0 +1,17 @@
+.brick-container {
+  height: 100vh;
+  background-color: white;
+}
+.custom-btn {
+  width: calc(20% + 20px); /* Adjust the width as needed */
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+.console-output {
+  height: 300px; /* Adjust the height as needed */
+  overflow-y: auto;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 10px;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
