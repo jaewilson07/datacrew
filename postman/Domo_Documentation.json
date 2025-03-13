@@ -3593,9 +3593,6 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"auth": {
-											"type": "noauth"
-										},
 										"method": "GET",
 										"header": [
 											{
@@ -3651,6 +3648,80 @@
 												"value": "datacrew-space.domo.com"
 											}
 										],
+										"url": "https://{{domo_instance}}.domo.com/api/ai/readiness/v1/data-dictionary/dataset/{{dataset_id}}",
+										"description": "This endpoint retrieves the data dictionary for a specific dataset using a GET request to the specified URL. The response returns a JSON object containing the data dictionary information for the requested dataset, including the dataset ID, name, description, and a list of columns with their respective details such as column ID, name, description, synonyms, subType, agentEnabled, and beastmodeId.\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"dataDictionary\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"id\": {\"type\": \"string\"},\n        \"datasetId\": {\"type\": \"string\"},\n        \"name\": {\"type\": \"string\"},\n        \"description\": {\"type\": \"string\"},\n        \"columns\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"columnId\": {\"type\": \"string\"},\n              \"name\": {\"type\": \"string\"},\n              \"description\": {\"type\": \"string\"},\n              \"synonyms\": {\n                \"type\": \"array\",\n                \"items\": {\"type\": \"string\"}\n              },\n              \"subType\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"type\": {\"type\": [\"string\", \"null\"]},\n                  \"defaultAggregation\": {\"type\": [\"string\", \"null\"]}\n                }\n              },\n              \"agentEnabled\": {\"type\": \"boolean\"},\n              \"beastmodeId\": {\"type\": \"integer\"}\n            }\n          }\n        }\n      }\n    },\n    \"dataDictionaryWarnings\": {\n      \"type\": \"array\",\n      \"items\": {\"type\": \"string\"}\n    }\n  }\n}\n\n ```"
+									},
+									"response": []
+								},
+								{
+									"name": "CREATE domo readiness data dictionary",
+									"id": "b4b694e1-dac0-40fc-8b26-fb0f65cd85b0",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "sec-ch-ua-platform",
+												"value": "\"Windows\""
+											},
+											{
+												"key": "x-csrf-token",
+												"value": "261341b9-31f1-4069-92bf-9e0406b8c0e2"
+											},
+											{
+												"key": "sec-ch-ua",
+												"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+											},
+											{
+												"key": "sec-ch-ua-mobile",
+												"value": "?0"
+											},
+											{
+												"key": "x-requested-with",
+												"value": "XMLHttpRequest"
+											},
+											{
+												"key": "x-domo-requestcontext",
+												"value": "{\"clientToe\":\"9U79VTQM9T-A990F\"}"
+											},
+											{
+												"key": "accept",
+												"value": "application/json, text/plain, */*"
+											},
+											{
+												"key": "content-type",
+												"value": "application/json;charset=utf-8"
+											},
+											{
+												"key": "User-Agent",
+												"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+											},
+											{
+												"key": "Sec-Fetch-Site",
+												"value": "same-origin"
+											},
+											{
+												"key": "Sec-Fetch-Mode",
+												"value": "cors"
+											},
+											{
+												"key": "Sec-Fetch-Dest",
+												"value": "empty"
+											},
+											{
+												"key": "host",
+												"value": "datacrew-space.domo.com"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": \"398677b7-ca3a-4bc5-9f4d-3a579278b71d\",\r\n    \"datasetId\": \"398677b7-ca3a-4bc5-9f4d-3a579278b71d\",\r\n    \"name\": \"Example Sales Data dictionary\",\r\n    \"description\": \"\",\r\n    \"unitOfAnalysis\": \"\",\r\n    \"columns\": [\r\n        {\r\n            \"name\": \"date_ymd\",\r\n            \"description\": \"\",\r\n            \"synonyms\": [],\r\n            \"subType\": null,\r\n            \"agentEnabled\": true,\r\n            \"beastmodeId\": null\r\n        },\r\n        {\r\n            \"name\": \"department\",\r\n            \"description\": \"\",\r\n            \"synonyms\": [],\r\n            \"subType\": null,\r\n            \"agentEnabled\": true,\r\n            \"beastmodeId\": null\r\n        },\r\n        {\r\n            \"name\": \"revenue\",\r\n            \"description\": \"\",\r\n            \"synonyms\": [],\r\n            \"subType\": null,\r\n            \"agentEnabled\": true,\r\n            \"beastmodeId\": null\r\n        },\r\n        {\r\n            \"name\": \"sales_rep\",\r\n            \"description\": \"\",\r\n            \"synonyms\": [],\r\n            \"subType\": null,\r\n            \"agentEnabled\": true,\r\n            \"beastmodeId\": null\r\n        },\r\n        {\r\n            \"name\": \"state\",\r\n            \"description\": \"\",\r\n            \"synonyms\": [],\r\n            \"subType\": null,\r\n            \"agentEnabled\": true,\r\n            \"beastmodeId\": null\r\n        }\r\n    ]\r\n}"
+										},
 										"url": "https://{{domo_instance}}.domo.com/api/ai/readiness/v1/data-dictionary/dataset/{{dataset_id}}"
 									},
 									"response": []
