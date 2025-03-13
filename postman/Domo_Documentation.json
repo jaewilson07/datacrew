@@ -10436,6 +10436,90 @@
 								"description": "This endpoint retrieves information about a specific Jupyter workspace in the Data Science API. The response is in JSON format and includes details such as the workspace ID, name, description, creation and update timestamps, last run information, instances, input and output configurations, owner and co-owners, kernel settings, resource allocation, sharing status, account configuration, and other related configurations.\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": { \"type\": \"string\" },\n    \"name\": { \"type\": \"string\" },\n    \"description\": { \"type\": \"string\" },\n    \"created\": { \"type\": \"string\" },\n    \"updated\": { \"type\": \"string\" },\n    \"lastRun\": { \"type\": \"string\" },\n    \"instances\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"started\": { \"type\": \"string\" },\n          \"lastActivity\": { \"type\": \"string\" },\n          \"url\": { \"type\": \"string\" },\n          \"status\": { \"type\": \"string\" },\n          \"userId\": { \"type\": \"integer\" }\n        }\n      }\n    },\n    \"inputConfiguration\": { \"type\": \"array\" },\n    \"outputConfiguration\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"dataSourceId\": { \"type\": \"string\" },\n          \"alias\": { \"type\": \"string\" },\n          \"streamId\": { \"type\": \"integer\" }\n        }\n      }\n    },\n    \"owner\": { \"type\": \"integer\" },\n    \"coOwners\": { \"type\": \"array\" },\n    \"bootstrapKernel\": { \"type\": \"boolean\" },\n    \"migrateFiles\": { \"type\": \"boolean\" },\n    \"jupyterKernel\": { \"type\": \"string\" },\n    \"cpu\": { \"type\": \"integer\" },\n    \"memory\": { \"type\": \"integer\" },\n    \"timeoutHours\": { \"type\": \"integer\" },\n    \"instanceTypes\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"cpu\": { \"type\": \"integer\" },\n          \"memory\": { \"type\": \"integer\" }\n        }\n      }\n    },\n    \"sharingEnabled\": { \"type\": \"boolean\" },\n    \"accountConfiguration\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"account_id\": { \"type\": \"integer\" },\n          \"alias\": { \"type\": \"string\" }\n        }\n      }\n    },\n    \"collectionConfiguration\": { \"type\": \"array\" },\n    \"fileshareConfiguration\": { \"type\": \"array\" },\n    \"activityBasedTimeout\": { \"type\": \"boolean\" }\n  }\n}\n\n ```\n\n- status (number): The status code of the response.\n    \n- statusReason (string): The reason for the status code.\n    \n- message (string): Additional information about the error.\n    \n- toe (string): An additional field related to the error.\n    \n\nAdd a description for the 400 Bad Request response.\n\nThis endpoint retrieves details of a specific Jupyter workspace within the Domo instance.\n\n## Request\n\n### Endpoint\n\n`GET https://{{domo_instance}}.domo.com/api/datascience/v1/workspaces/{{jupyter_workspace}}`\n\n## Response\n\n- Status: 200\n    \n- Content-Type: application/json\n    \n\n``` json\n{\n    \"id\": \"\",\n    \"name\": \"\",\n    \"description\": \"\",\n    \"created\": \"\",\n    \"updated\": \"\",\n    \"lastRun\": \"\",\n    \"instances\": [\n        {\n            \"started\": \"\",\n            \"lastActivity\": \"\",\n            \"url\": \"\",\n            \"status\": \"\",\n            \"userId\": 0\n        }\n    ],\n    \"inputConfiguration\": [],\n    \"outputConfiguration\": [\n        {\n            \"dataSourceId\": \"\",\n            \"alias\": \"\",\n            \"streamId\": 0\n        }\n    ],\n    \"owner\": 0,\n    \"coOwners\": [],\n    \"bootstrapKernel\": true,\n    \"migrateFiles\": true,\n    \"jupyterKernel\": \"\",\n    \"cpu\": 0,\n    \"memory\": 0,\n    \"timeoutHours\": 0,\n    \"instanceTypes\": [\n        {\n            \"cpu\": 0,\n            \"memory\": 0\n        }\n    ],\n    \"sharingEnabled\": true,\n    \"accountConfiguration\": [\n        {\n            \"account_id\": 0,\n            \"alias\": \"\"\n        }\n    ],\n    \"collectionConfiguration\": [],\n    \"fileshareConfiguration\": [],\n    \"activityBasedTimeout\": true\n}\n\n ```"
 							},
 							"response": []
+						},
+						{
+							"name": "https://domo-community.jupyter-prod1.domodatascience.com/hub/login?next=%2Fhub%2Fapi%2Foauth2%2Fauthorize%3Fclient_id%3Djupyterhub-user-domo-community-1893952720-1cfe9db4%26redirect_uri%3D%252Fuser%252Fdomo-community-1893952720%252F1cfe9db4%252Foauth_call",
+							"id": "d33cd78d-326e-4b7c-90e2-918f0878efed",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Upgrade-Insecure-Requests",
+										"value": "1"
+									},
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+									},
+									{
+										"key": "Accept",
+										"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+									},
+									{
+										"key": "Sec-Fetch-Site",
+										"value": "cross-site"
+									},
+									{
+										"key": "Sec-Fetch-Mode",
+										"value": "navigate"
+									},
+									{
+										"key": "Sec-Fetch-User",
+										"value": "?1"
+									},
+									{
+										"key": "Sec-Fetch-Dest",
+										"value": "iframe"
+									},
+									{
+										"key": "Sec-Fetch-Storage-Access",
+										"value": "active"
+									},
+									{
+										"key": "sec-ch-ua",
+										"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+									},
+									{
+										"key": "sec-ch-ua-mobile",
+										"value": "?0"
+									},
+									{
+										"key": "sec-ch-ua-platform",
+										"value": "\"Windows\""
+									},
+									{
+										"key": "host",
+										"value": "domo-community.jupyter-prod1.domodatascience.com"
+									}
+								],
+								"url": {
+									"raw": "https://domo-community.jupyter-prod1.domodatascience.com/hub/login?next=%2Fhub%2Fapi%2Foauth2%2Fauthorize%3Fclient_id%3Djupyterhub-user-domo-community-1893952720-1cfe9db4%26redirect_uri%3D%252Fuser%252Fdomo-community-1893952720%252F1cfe9db4%252Foauth_callback%26response_type%3Dcode%26state%3DeyJ1dWlkIjogIjViZmIyNDliMTNlNzQ3NmM5ZDE4OWQ5MzQzODE5YjMyIiwgIm5leHRfdXJsIjogIi91c2VyL2RvbW8tY29tbXVuaXR5LTE4OTM5NTI3MjAvMWNmZTlkYjQvbGFiPyJ9",
+									"protocol": "https",
+									"host": [
+										"domo-community",
+										"jupyter-prod1",
+										"domodatascience",
+										"com"
+									],
+									"path": [
+										"hub",
+										"login"
+									],
+									"query": [
+										{
+											"key": "next",
+											"value": "%2Fhub%2Fapi%2Foauth2%2Fauthorize%3Fclient_id%3Djupyterhub-user-domo-community-1893952720-1cfe9db4%26redirect_uri%3D%252Fuser%252Fdomo-community-1893952720%252F1cfe9db4%252Foauth_callback%26response_type%3Dcode%26state%3DeyJ1dWlkIjogIjViZmIyNDliMTNlNzQ3NmM5ZDE4OWQ5MzQzODE5YjMyIiwgIm5leHRfdXJsIjogIi91c2VyL2RvbW8tY29tbXVuaXR5LTE4OTM5NTI3MjAvMWNmZTlkYjQvbGFiPyJ9"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "810a228d-be4c-4359-b1ab-5c6badd72632"
