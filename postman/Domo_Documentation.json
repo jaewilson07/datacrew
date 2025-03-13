@@ -10372,6 +10372,43 @@
 						},
 						{
 							"name": "Get Workspace",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "e25113c7-493e-4fb0-85c1-3c19460b2202",
+										"exec": [
+											"// Test to check for an invalid response\r",
+											"pm.test(\"Response is not empty and has required properties\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"    \r",
+											"    pm.expect(jsonData).to.not.be.empty;\r",
+											"    pm.expect(jsonData).to.have.property('id');\r",
+											"    pm.expect(jsonData).to.have.property('name');\r",
+											"    pm.expect(jsonData).to.have.property('instances');\r",
+											"    pm.expect(jsonData).to.have.property('inputConfiguration');\r",
+											"    pm.expect(jsonData).to.have.property('outputConfiguration');\r",
+											"    pm.expect(jsonData).to.have.property('owner');\r",
+											"    pm.expect(jsonData).to.have.property('bootstrapKernel');\r",
+											"    pm.expect(jsonData).to.have.property('migrateFiles');\r",
+											"    pm.expect(jsonData).to.have.property('jupyterKernel');\r",
+											"    pm.expect(jsonData).to.have.property('cpu');\r",
+											"    pm.expect(jsonData).to.have.property('memory');\r",
+											"    pm.expect(jsonData).to.have.property('timeoutHours');\r",
+											"    pm.expect(jsonData).to.have.property('instanceTypes');\r",
+											"    pm.expect(jsonData).to.have.property('sharingEnabled');\r",
+											"    pm.expect(jsonData).to.have.property('accountConfiguration');\r",
+											"    pm.expect(jsonData).to.have.property('collectionConfiguration');\r",
+											"    pm.expect(jsonData).to.have.property('fileshareConfiguration');\r",
+											"    pm.expect(jsonData).to.have.property('activityBasedTimeout');\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
 							"id": "bb3fd048-518f-4cba-ba51-41aa0dd952b7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -10380,56 +10417,12 @@
 								"method": "GET",
 								"header": [
 									{
-										"key": "sec-ch-ua-platform",
-										"value": "\"Windows\""
-									},
-									{
-										"key": "x-csrf-token",
-										"value": "0b191ad7-db15-49b0-9c46-3d56a29c661e"
-									},
-									{
-										"key": "sec-ch-ua",
-										"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
-									},
-									{
-										"key": "sec-ch-ua-mobile",
-										"value": "?0"
-									},
-									{
-										"key": "x-requested-with",
-										"value": "XMLHttpRequest"
-									},
-									{
-										"key": "x-domo-requestcontext",
-										"value": "{\"clientToe\":\"CBOSSG9VDU-IN7RE\"}"
-									},
-									{
 										"key": "accept",
 										"value": "application/json, text/plain, */*"
 									},
 									{
 										"key": "content-type",
 										"value": "application/json;charset=utf-8"
-									},
-									{
-										"key": "User-Agent",
-										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
-									},
-									{
-										"key": "Sec-Fetch-Site",
-										"value": "same-origin"
-									},
-									{
-										"key": "Sec-Fetch-Mode",
-										"value": "cors"
-									},
-									{
-										"key": "Sec-Fetch-Dest",
-										"value": "empty"
-									},
-									{
-										"key": "host",
-										"value": "domo-community.domo.com"
 									}
 								],
 								"url": "https://{{domo_instance}}.domo.com/api/datascience/v1/workspaces/{{jupyter_workspace}}",
