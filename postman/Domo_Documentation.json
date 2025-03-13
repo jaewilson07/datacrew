@@ -3584,6 +3584,81 @@
 							"id": "99bd511a-4073-42f8-8f5d-83ef4c949f3c"
 						},
 						{
+							"name": "AI Readiness",
+							"item": [
+								{
+									"name": "GET data dictionary",
+									"id": "0d92b6db-b669-4d66-bbf8-1adaaccf5e0e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "sec-ch-ua-platform",
+												"value": "\"Windows\""
+											},
+											{
+												"key": "x-csrf-token",
+												"value": "261341b9-31f1-4069-92bf-9e0406b8c0e2"
+											},
+											{
+												"key": "sec-ch-ua",
+												"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+											},
+											{
+												"key": "sec-ch-ua-mobile",
+												"value": "?0"
+											},
+											{
+												"key": "x-requested-with",
+												"value": "XMLHttpRequest"
+											},
+											{
+												"key": "x-domo-requestcontext",
+												"value": "{\"clientToe\":\"9U79VTQM9T-A990F\"}"
+											},
+											{
+												"key": "accept",
+												"value": "application/json, text/plain, */*"
+											},
+											{
+												"key": "content-type",
+												"value": "application/json;charset=utf-8"
+											},
+											{
+												"key": "User-Agent",
+												"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+											},
+											{
+												"key": "Sec-Fetch-Site",
+												"value": "same-origin"
+											},
+											{
+												"key": "Sec-Fetch-Mode",
+												"value": "cors"
+											},
+											{
+												"key": "Sec-Fetch-Dest",
+												"value": "empty"
+											},
+											{
+												"key": "host",
+												"value": "datacrew-space.domo.com"
+											}
+										],
+										"url": "https://{{domo_instance}}.domo.com/api/ai/readiness/v1/data-dictionary/dataset/{{dataset_id}}"
+									},
+									"response": []
+								}
+							],
+							"id": "162124ac-3d28-48fc-b6b5-fa20035447b3"
+						},
+						{
 							"name": "Index Dataset",
 							"id": "b53244c4-7626-41ed-b87c-aa34b12b0fba",
 							"protocolProfileBehavior": {
