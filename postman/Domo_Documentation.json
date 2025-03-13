@@ -10403,9 +10403,6 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"auth": {
-									"type": "noauth"
-								},
 								"method": "GET",
 								"header": [
 									{
@@ -10461,7 +10458,8 @@
 										"value": "domo-community.domo.com"
 									}
 								],
-								"url": "https://domo-community.domo.com/api/datascience/v1/workspaces/1cfe9db4-5937-4889-beb3-a311fc42f246"
+								"url": "https://{{domo_instance}}.domo.com/api/datascience/v1/workspaces/{{jupyter_workspace}}",
+								"description": "This endpoint makes an HTTP GET request to retrieve information about the workspace with ID 123. The last execution returned a 400 Bad Request response with the following JSON content:\n\n- status (number): The status code of the response.\n    \n- statusReason (string): The reason for the status code.\n    \n- message (string): Additional information about the error.\n    \n- toe (string): An additional field related to the error.\n    \n\nAdd a description for the 400 Bad Request response.\n\nThis endpoint retrieves details of a specific Jupyter workspace within the Domo instance.\n\n## Request\n\n### Endpoint\n\n`GET https://{{domo_instance}}.domo.com/api/datascience/v1/workspaces/{{jupyter_workspace}}`\n\n## Response\n\n- Status: 200\n    \n- Content-Type: application/json\n    \n\n``` json\n{\n    \"id\": \"\",\n    \"name\": \"\",\n    \"description\": \"\",\n    \"created\": \"\",\n    \"updated\": \"\",\n    \"lastRun\": \"\",\n    \"instances\": [\n        {\n            \"started\": \"\",\n            \"lastActivity\": \"\",\n            \"url\": \"\",\n            \"status\": \"\",\n            \"userId\": 0\n        }\n    ],\n    \"inputConfiguration\": [],\n    \"outputConfiguration\": [\n        {\n            \"dataSourceId\": \"\",\n            \"alias\": \"\",\n            \"streamId\": 0\n        }\n    ],\n    \"owner\": 0,\n    \"coOwners\": [],\n    \"bootstrapKernel\": true,\n    \"migrateFiles\": true,\n    \"jupyterKernel\": \"\",\n    \"cpu\": 0,\n    \"memory\": 0,\n    \"timeoutHours\": 0,\n    \"instanceTypes\": [\n        {\n            \"cpu\": 0,\n            \"memory\": 0\n        }\n    ],\n    \"sharingEnabled\": true,\n    \"accountConfiguration\": [\n        {\n            \"account_id\": 0,\n            \"alias\": \"\"\n        }\n    ],\n    \"collectionConfiguration\": [],\n    \"fileshareConfiguration\": [],\n    \"activityBasedTimeout\": true\n}\n\n ```"
 							},
 							"response": []
 						}
