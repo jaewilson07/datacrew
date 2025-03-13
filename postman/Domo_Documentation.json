@@ -10340,32 +10340,6 @@
 							"response": []
 						},
 						{
-							"name": "get workspace config",
-							"id": "e6118f90-112d-460a-91ac-c2e517e0012e",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									},
-									{
-										"key": "accept",
-										"value": "application/json, text/plain, */*"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
-								"url": "https://{{domo_instance}}.domo.com/api/datascience/v1/workspaces/{{jupyter_workspace}}"
-							},
-							"response": []
-						},
-						{
 							"name": "Download Notebook Content",
 							"id": "a8cb4e73-b845-4640-ab1d-1c7b346805e1",
 							"protocolProfileBehavior": {
@@ -10459,7 +10433,7 @@
 									}
 								],
 								"url": "https://{{domo_instance}}.domo.com/api/datascience/v1/workspaces/{{jupyter_workspace}}",
-								"description": "This endpoint makes an HTTP GET request to retrieve information about the workspace with ID 123. The last execution returned a 400 Bad Request response with the following JSON content:\n\n- status (number): The status code of the response.\n    \n- statusReason (string): The reason for the status code.\n    \n- message (string): Additional information about the error.\n    \n- toe (string): An additional field related to the error.\n    \n\nAdd a description for the 400 Bad Request response.\n\nThis endpoint retrieves details of a specific Jupyter workspace within the Domo instance.\n\n## Request\n\n### Endpoint\n\n`GET https://{{domo_instance}}.domo.com/api/datascience/v1/workspaces/{{jupyter_workspace}}`\n\n## Response\n\n- Status: 200\n    \n- Content-Type: application/json\n    \n\n``` json\n{\n    \"id\": \"\",\n    \"name\": \"\",\n    \"description\": \"\",\n    \"created\": \"\",\n    \"updated\": \"\",\n    \"lastRun\": \"\",\n    \"instances\": [\n        {\n            \"started\": \"\",\n            \"lastActivity\": \"\",\n            \"url\": \"\",\n            \"status\": \"\",\n            \"userId\": 0\n        }\n    ],\n    \"inputConfiguration\": [],\n    \"outputConfiguration\": [\n        {\n            \"dataSourceId\": \"\",\n            \"alias\": \"\",\n            \"streamId\": 0\n        }\n    ],\n    \"owner\": 0,\n    \"coOwners\": [],\n    \"bootstrapKernel\": true,\n    \"migrateFiles\": true,\n    \"jupyterKernel\": \"\",\n    \"cpu\": 0,\n    \"memory\": 0,\n    \"timeoutHours\": 0,\n    \"instanceTypes\": [\n        {\n            \"cpu\": 0,\n            \"memory\": 0\n        }\n    ],\n    \"sharingEnabled\": true,\n    \"accountConfiguration\": [\n        {\n            \"account_id\": 0,\n            \"alias\": \"\"\n        }\n    ],\n    \"collectionConfiguration\": [],\n    \"fileshareConfiguration\": [],\n    \"activityBasedTimeout\": true\n}\n\n ```"
+								"description": "This endpoint retrieves information about a specific Jupyter workspace in the Data Science API. The response is in JSON format and includes details such as the workspace ID, name, description, creation and update timestamps, last run information, instances, input and output configurations, owner and co-owners, kernel settings, resource allocation, sharing status, account configuration, and other related configurations.\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": { \"type\": \"string\" },\n    \"name\": { \"type\": \"string\" },\n    \"description\": { \"type\": \"string\" },\n    \"created\": { \"type\": \"string\" },\n    \"updated\": { \"type\": \"string\" },\n    \"lastRun\": { \"type\": \"string\" },\n    \"instances\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"started\": { \"type\": \"string\" },\n          \"lastActivity\": { \"type\": \"string\" },\n          \"url\": { \"type\": \"string\" },\n          \"status\": { \"type\": \"string\" },\n          \"userId\": { \"type\": \"integer\" }\n        }\n      }\n    },\n    \"inputConfiguration\": { \"type\": \"array\" },\n    \"outputConfiguration\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"dataSourceId\": { \"type\": \"string\" },\n          \"alias\": { \"type\": \"string\" },\n          \"streamId\": { \"type\": \"integer\" }\n        }\n      }\n    },\n    \"owner\": { \"type\": \"integer\" },\n    \"coOwners\": { \"type\": \"array\" },\n    \"bootstrapKernel\": { \"type\": \"boolean\" },\n    \"migrateFiles\": { \"type\": \"boolean\" },\n    \"jupyterKernel\": { \"type\": \"string\" },\n    \"cpu\": { \"type\": \"integer\" },\n    \"memory\": { \"type\": \"integer\" },\n    \"timeoutHours\": { \"type\": \"integer\" },\n    \"instanceTypes\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"cpu\": { \"type\": \"integer\" },\n          \"memory\": { \"type\": \"integer\" }\n        }\n      }\n    },\n    \"sharingEnabled\": { \"type\": \"boolean\" },\n    \"accountConfiguration\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"account_id\": { \"type\": \"integer\" },\n          \"alias\": { \"type\": \"string\" }\n        }\n      }\n    },\n    \"collectionConfiguration\": { \"type\": \"array\" },\n    \"fileshareConfiguration\": { \"type\": \"array\" },\n    \"activityBasedTimeout\": { \"type\": \"boolean\" }\n  }\n}\n\n ```\n\n- status (number): The status code of the response.\n    \n- statusReason (string): The reason for the status code.\n    \n- message (string): Additional information about the error.\n    \n- toe (string): An additional field related to the error.\n    \n\nAdd a description for the 400 Bad Request response.\n\nThis endpoint retrieves details of a specific Jupyter workspace within the Domo instance.\n\n## Request\n\n### Endpoint\n\n`GET https://{{domo_instance}}.domo.com/api/datascience/v1/workspaces/{{jupyter_workspace}}`\n\n## Response\n\n- Status: 200\n    \n- Content-Type: application/json\n    \n\n``` json\n{\n    \"id\": \"\",\n    \"name\": \"\",\n    \"description\": \"\",\n    \"created\": \"\",\n    \"updated\": \"\",\n    \"lastRun\": \"\",\n    \"instances\": [\n        {\n            \"started\": \"\",\n            \"lastActivity\": \"\",\n            \"url\": \"\",\n            \"status\": \"\",\n            \"userId\": 0\n        }\n    ],\n    \"inputConfiguration\": [],\n    \"outputConfiguration\": [\n        {\n            \"dataSourceId\": \"\",\n            \"alias\": \"\",\n            \"streamId\": 0\n        }\n    ],\n    \"owner\": 0,\n    \"coOwners\": [],\n    \"bootstrapKernel\": true,\n    \"migrateFiles\": true,\n    \"jupyterKernel\": \"\",\n    \"cpu\": 0,\n    \"memory\": 0,\n    \"timeoutHours\": 0,\n    \"instanceTypes\": [\n        {\n            \"cpu\": 0,\n            \"memory\": 0\n        }\n    ],\n    \"sharingEnabled\": true,\n    \"accountConfiguration\": [\n        {\n            \"account_id\": 0,\n            \"alias\": \"\"\n        }\n    ],\n    \"collectionConfiguration\": [],\n    \"fileshareConfiguration\": [],\n    \"activityBasedTimeout\": true\n}\n\n ```"
 							},
 							"response": []
 						}
