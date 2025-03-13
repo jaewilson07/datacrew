@@ -3,7 +3,7 @@
 		"_postman_id": "d4b2f432-ee61-488e-92eb-63944bad9690",
 		"name": "Domo Documentation",
 		"description": "DataCrew documentation for hitting documented and undocumented APIs",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.postman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
@@ -10393,6 +10393,75 @@
 										}
 									]
 								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Workspace",
+							"id": "bb3fd048-518f-4cba-ba51-41aa0dd952b7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "sec-ch-ua-platform",
+										"value": "\"Windows\""
+									},
+									{
+										"key": "x-csrf-token",
+										"value": "0b191ad7-db15-49b0-9c46-3d56a29c661e"
+									},
+									{
+										"key": "sec-ch-ua",
+										"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+									},
+									{
+										"key": "sec-ch-ua-mobile",
+										"value": "?0"
+									},
+									{
+										"key": "x-requested-with",
+										"value": "XMLHttpRequest"
+									},
+									{
+										"key": "x-domo-requestcontext",
+										"value": "{\"clientToe\":\"CBOSSG9VDU-IN7RE\"}"
+									},
+									{
+										"key": "accept",
+										"value": "application/json, text/plain, */*"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json;charset=utf-8"
+									},
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+									},
+									{
+										"key": "Sec-Fetch-Site",
+										"value": "same-origin"
+									},
+									{
+										"key": "Sec-Fetch-Mode",
+										"value": "cors"
+									},
+									{
+										"key": "Sec-Fetch-Dest",
+										"value": "empty"
+									},
+									{
+										"key": "host",
+										"value": "domo-community.domo.com"
+									}
+								],
+								"url": "https://domo-community.domo.com/api/datascience/v1/workspaces/1cfe9db4-5937-4889-beb3-a311fc42f246"
 							},
 							"response": []
 						}
