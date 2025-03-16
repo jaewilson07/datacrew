@@ -11422,9 +11422,6 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"auth": {
-									"type": "noauth"
-								},
 								"method": "POST",
 								"header": [
 									{
@@ -11485,7 +11482,7 @@
 									"raw": "{\"fieldSort\":[{\"field\":\"created\",\"order\":\"DESC\"}],\"filters\":[],\"dateFilters\":[]}"
 								},
 								"url": {
-									"raw": "https://{{domo_instance}}.domo.com/api/files/v1/filesets/{{fileset_id}/files/search?directoryPath=&immediateChildren=true",
+									"raw": "https://{{domo_instance}}.domo.com/api/files/v1/filesets/{{fileset_id}}/files/search?directoryPath=&immediateChildren=true",
 									"protocol": "https",
 									"host": [
 										"{{domo_instance}}",
@@ -11497,7 +11494,7 @@
 										"files",
 										"v1",
 										"filesets",
-										"{{fileset_id}",
+										"{{fileset_id}}",
 										"files",
 										"search"
 									],
@@ -11511,9 +11508,172 @@
 											"value": "true"
 										}
 									]
-								}
+								},
+								"description": "### POST /api/files/v1/filesets/{{fileset_id}}/files/search\n\nThis endpoint is used to search for files within a specific fileset, with the option to filter and sort the results.\n\n#### Request Body\n\n- Type: Raw\n    \n- { \"fieldSort\": \\[ { \"field\": \"created\", \"order\": \"DESC\" } \\], \"filters\": \\[\\], \"dateFilters\": \\[\\]}\n    \n\n#### Response\n\n- Status: 200\n    \n- Content-Type: application/json\n    \n- { \"files\": \\[ { \"id\": \"\", \"path\": \"\", \"name\": \"\", \"fileType\": \"\", \"contentType\": \"\", \"size\": 0, \"created\": \"\", \"createdBy\": 0 } \\], \"pageContext\": { \"next\": \"\" }}"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "421226ae-e98c-4320-88e6-3f0a0d323d93",
+									"name": "Search Filesets",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "sec-ch-ua-platform",
+												"value": "\"Windows\""
+											},
+											{
+												"key": "x-csrf-token",
+												"value": "b425eda4-4ef7-45ae-80fa-3de6c9f7b0be"
+											},
+											{
+												"key": "sec-ch-ua",
+												"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+											},
+											{
+												"key": "sec-ch-ua-mobile",
+												"value": "?0"
+											},
+											{
+												"key": "x-requested-with",
+												"value": "XMLHttpRequest"
+											},
+											{
+												"key": "x-domo-requestcontext",
+												"value": "{\"clientToe\":\"59KM3OJBM1-JT9TU\"}"
+											},
+											{
+												"key": "accept",
+												"value": "application/json, text/plain, */*"
+											},
+											{
+												"key": "content-type",
+												"value": "application/json;charset=utf-8"
+											},
+											{
+												"key": "User-Agent",
+												"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+											},
+											{
+												"key": "Sec-Fetch-Site",
+												"value": "same-origin"
+											},
+											{
+												"key": "Sec-Fetch-Mode",
+												"value": "cors"
+											},
+											{
+												"key": "Sec-Fetch-Dest",
+												"value": "empty"
+											},
+											{
+												"key": "host",
+												"value": "domo-community.domo.com"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"fieldSort\":[{\"field\":\"created\",\"order\":\"DESC\"}],\"filters\":[],\"dateFilters\":[]}"
+										},
+										"url": {
+											"raw": "https://{{domo_instance}}.domo.com/api/files/v1/filesets/{{fileset_id}}/files/search?directoryPath=&immediateChildren=true",
+											"protocol": "https",
+											"host": [
+												"{{domo_instance}}",
+												"domo",
+												"com"
+											],
+											"path": [
+												"api",
+												"files",
+												"v1",
+												"filesets",
+												"{{fileset_id}}",
+												"files",
+												"search"
+											],
+											"query": [
+												{
+													"key": "directoryPath",
+													"value": ""
+												},
+												{
+													"key": "immediateChildren",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sun, 16 Mar 2025 18:00:42 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors 'self';"
+										},
+										{
+											"key": "Content-Security-Policy-Report-Only",
+											"value": "report-to csp-endpoint; media-src blob: https:; script-src 'self' https://cdndomo.com https://dev.cdndomo.com https://app.pendo.io https://cdn.pendo.io https://pendo-static-5171025482350592.storage.googleapis.com https://pendo-io-static.storage.googleapis.com https://unpkg.com https://ajax.googleapis.com https://cdnjs.cloudflare.com https://widget.intercom.io https://www.youtube.com 'unsafe-eval' 'unsafe-inline'; object-src 'none'; worker-src 'self' blob:; report-uri https://domo.demo.domo.com/api/iot/v1/webhook/data/eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJmMDI0M2JkYzFmZTc0YmE3YjM2MDAxODkwZWM0MjA4Mjpkb21vOjEwMDgzNzAwMDQifQ.-J5oXbd3f-0PtXgTsqZOpo8DLbGGQ0A6pXp0oKT7rRw; default-src 'self' blob: https://cdndomo.com https://dev.cdndomo.com; connect-src 'self' https: wss:; font-src 'self' https:; frame-src 'self' blob: https:; frame-ancestors 'self'; img-src http: https: blob: file: data:; style-src 'self' blob https://cdndomo.com https://dev.cdndomo.com https://fonts.googleapis.com https://cdn.jsdelivr.net https://cdn.pendo.io 'unsafe-inline';"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Report-To",
+											"value": "{ \"group\": \"csp-endpoint\", \"max_age\": 10886400, \"endpoints\": [{ \"url\": \"https://domo.demo.domo.com/api/iot/v1/webhook/data/eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJmMDI0M2JkYzFmZTc0YmE3YjM2MDAxODkwZWM0MjA4Mjpkb21vOjEwMDgzNzAwMDQifQ.-J5oXbd3f-0PtXgTsqZOpo8DLbGGQ0A6pXp0oKT7rRw\" }] }"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Xss-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"files\": [\n        {\n            \"id\": \"178a21f7-95e3-41ce-a9c6-1cff6e991ae6\",\n            \"path\": \"api_agent.md\",\n            \"name\": \"api_agent.md\",\n            \"fileType\": \"OTHER\",\n            \"contentType\": \"application/octet-stream\",\n            \"size\": 219874,\n            \"created\": \"2025-03-16T17:45:54.857113Z\",\n            \"createdBy\": 1893952720\n        },\n        {\n            \"id\": \"14c6733b-dfdb-4608-8fb4-60d18cc54a25\",\n            \"path\": \"agents.md\",\n            \"name\": \"agents.md\",\n            \"fileType\": \"OTHER\",\n            \"contentType\": \"application/octet-stream\",\n            \"size\": 38710,\n            \"created\": \"2025-03-16T17:45:25.507446Z\",\n            \"createdBy\": 1893952720\n        }\n    ],\n    \"pageContext\": {\n        \"next\": \"eyJpZCI6IjE0YzY3MzNiLWRmZGItNDYwOC04ZmI0LTYwZDE4Y2M1NGEyNSIsInBhdGgiOiJhZ2VudHMubWQiLCJuYW1lIjoiYWdlbnRzLm1kIiwic2l6ZSI6Mzg3MTAsImNyZWF0ZWQiOiIyMDI1LTAzLTE2VDE3OjQ1OjI1LjUwNzQ0NloifQ==\"\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "78af8ed1-f6cd-45ea-9bcb-8af9ec4e53f1"
