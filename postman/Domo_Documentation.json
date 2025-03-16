@@ -11413,6 +11413,112 @@
 					"id": "0182f815-4c15-44b7-bd16-a5bdbf20ff09"
 				},
 				{
+					"name": "Filesets",
+					"item": [
+						{
+							"name": "Search Filesets",
+							"id": "efd6f379-d04a-4a77-a54a-d91c26eee8ed",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "sec-ch-ua-platform",
+										"value": "\"Windows\""
+									},
+									{
+										"key": "x-csrf-token",
+										"value": "b425eda4-4ef7-45ae-80fa-3de6c9f7b0be"
+									},
+									{
+										"key": "sec-ch-ua",
+										"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+									},
+									{
+										"key": "sec-ch-ua-mobile",
+										"value": "?0"
+									},
+									{
+										"key": "x-requested-with",
+										"value": "XMLHttpRequest"
+									},
+									{
+										"key": "x-domo-requestcontext",
+										"value": "{\"clientToe\":\"59KM3OJBM1-JT9TU\"}"
+									},
+									{
+										"key": "accept",
+										"value": "application/json, text/plain, */*"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json;charset=utf-8"
+									},
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+									},
+									{
+										"key": "Sec-Fetch-Site",
+										"value": "same-origin"
+									},
+									{
+										"key": "Sec-Fetch-Mode",
+										"value": "cors"
+									},
+									{
+										"key": "Sec-Fetch-Dest",
+										"value": "empty"
+									},
+									{
+										"key": "host",
+										"value": "domo-community.domo.com"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"fieldSort\":[{\"field\":\"created\",\"order\":\"DESC\"}],\"filters\":[],\"dateFilters\":[]}"
+								},
+								"url": {
+									"raw": "https://{{domo_instance}}.domo.com/api/files/v1/filesets/{{fileset_id}/files/search?directoryPath=&immediateChildren=true",
+									"protocol": "https",
+									"host": [
+										"{{domo_instance}}",
+										"domo",
+										"com"
+									],
+									"path": [
+										"api",
+										"files",
+										"v1",
+										"filesets",
+										"{{fileset_id}",
+										"files",
+										"search"
+									],
+									"query": [
+										{
+											"key": "directoryPath",
+											"value": ""
+										},
+										{
+											"key": "immediateChildren",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "78af8ed1-f6cd-45ea-9bcb-8af9ec4e53f1"
+				},
+				{
 					"name": "Generate Developer Token",
 					"id": "9bcb4e1a-329e-4b2e-bbde-97ceb36bac04",
 					"protocolProfileBehavior": {
