@@ -1,4 +1,0 @@
-nbdev
-matplotlib
-
-[dev]

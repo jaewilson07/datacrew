@@ -1,2 +1,0 @@
-[nbdev]
-datacrew = datacrew._modidx:d

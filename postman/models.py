@@ -248,6 +248,27 @@ class PostmanCollection:
         requests = [PostmanRequest.from_dict(item) for item in data["item"]]
         return cls(info=info, requests=requests)
 
+    @classmethod
+    def from_file(cls, file_path: str) -> "PostmanCollection":
+        """Load a PostmanCollection from a JSON file.
+
+        Args:
+            file_path (str): Path to the Postman collection JSON file
+
+        Returns:
+            PostmanCollection: A structured representation of the collection
+
+        Raises:
+            FileNotFoundError: If the file doesn't exist
+            json.JSONDecodeError: If the file isn't valid JSON
+        """
+        import json
+
+        with open(file_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        return cls.from_dict(data)
+
     def list_all_headers(self) -> Dict[str, List[str]]:
         """List all unique headers and their values from this collection.
 

@@ -5,3 +5,71 @@ _proc/
 .env
 
 /urban-waffle
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# IDE files
+.idea/
+.vscode/
+*.code-workspace
+.history/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Postman specific
+*.postman_collection.json
+test.postman_collection.json
+
+# Project specific
+**/EXPORT/
+**/output/
+*.log
+
+# API credentials
+**/auth_config.json
+**/credentials.json
+**/token.json
+
+# OS specific files
+.DS_Store
+Thumbs.db
+.directory
+desktop.ini
+
+# Debug files
+debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

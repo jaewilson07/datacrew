@@ -41,10 +41,10 @@ def upsert_folder(folder_path: str, is_replace: bool = False) -> None:
 def gd_requests(
     method: str,
     url: str,
-    auth: Dict[str, str],
     headers: Optional[Dict[str, str]] = None,
     params: Optional[Dict[str, str]] = None,
     body: Optional[Union[str, Dict[str, Any]]] = None,
+    debug_api: bool = False,
 ) -> requests.Response:
     """Wrapper around requests.request that handles authentication and common parameters.
 
@@ -60,16 +60,22 @@ def gd_requests(
         requests.Response: The response from the request
     """
     # Merge auth headers with provided headers
-    all_headers = {**auth, **(headers or {})}
 
     # Prepare request data
     data = body if isinstance(body, str) else None
     json_data = body if isinstance(body, dict) else None
 
+    if debug_api:
+        print(f"🚀 Making {method} request to {url}")
+        print(f"Headers: {headers}")
+        print(f"Params: {params}")
+        print(f"Data: {data}")
+        print(f"JSON: {json_data}")
+
     return requests.request(
         method=method,
         url=url,
-        headers=all_headers,
+        headers=headers,
         params=params,
         data=data,
         json=json_data,
