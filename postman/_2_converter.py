@@ -100,7 +100,7 @@ class PostmanRequestConverter:
         endpoint = path_parts[-1] if path_parts else "endpoint"
 
         # Combine method and endpoint
-        name = f"{method.lower()}_{endpoint}"
+        name = f"{endpoint}_{method.lower()}"
 
         # Convert to snake_case
         return to_snake_case(name)
@@ -111,12 +111,11 @@ class PostmanRequestConverter:
         Returns:
             str: A valid Python function name in snake_case
         """
-        # Extract the last part of the URL path
-        path_parts = self.Request.url.path
-        endpoint = path_parts[-1] if path_parts else "endpoint"
 
         # Combine method and endpoint
-        self.function_name = f"{self.Request.method.lower()}_{endpoint}"
+        self.function_name = self._generate_function_name(
+            url=self.Request.url.raw, method=self.Request.method.lower()
+        )
 
         # Convert to snake_case
         self.function_name = to_snake_case(self.function_name)
@@ -145,9 +144,10 @@ class PostmanRequestConverter:
         # Filter by required headers if specified
         if self.required_headers:
             self.headers = {
-                k: v
-                for k, v in self.headers.items()
-                if k.lower() in [h.lower() for h in self.required_headers]
+                key: value
+                for key, value in self.headers.items()
+                if key.lower()
+                in [req_header.lower() for req_header in self.required_headers]
             }
 
         return self.headers
@@ -370,9 +370,9 @@ class PostmanCollectionConverter:
     """Class to handle conversions for entire Postman Collections."""
 
     export_folder: str
+    collection: PostmanCollection
     converters: List[PostmanRequestConverter] = field(default_factory=list)
 
-    collection: PostmanCollection = field(default=None)
     customize: Dict[str, Dict] = field(default_factory=dict)
     required_headers: List[str] = field(default_factory=list)
 
