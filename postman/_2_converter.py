@@ -2,7 +2,7 @@ import os
 import sys
 from typing import List, Dict, Optional, Any
 from dataclasses import dataclass, field
-from models import PostmanRequest, PostmanCollection
+from _1_models import PostmanRequest, PostmanCollection
 from utils import to_snake_case
 from urllib.parse import urljoin, urlparse
 import utils
@@ -218,20 +218,17 @@ class PostmanRequestConverter:
             path += f"?{parsed_url.query}"
 
         # Build function signature with default parameters
-        signature = f"def {self.function_name}("
+        signature = f"def {self.function_name}( auth: Dict[str, str], "
         param_args = []
 
         if self.default_params and self.params:
             for param in self.default_params:
                 if param in self.params:
-                    param_args.append(f"{param}: str = None")
+                    param_args.append(f"{param}: str = '{self.params[param]}', ")
 
         # Add auth parameter after any default parameters
         signature += (
-            ", ".join(
-                param_args + ["auth: Dict[str, str] = None", "debug_api: bool = False"]
-            )
-            + ") -> requests.Response:"
+            ", ".join(param_args) + "debug_api: bool = False ) -> requests.Response:"
         )
 
         code = [
@@ -248,9 +245,7 @@ class PostmanRequestConverter:
                     code.append(
                         f"        {param} (str, optional): Value for the {param} parameter"
                     )
-            code.append(
-                "        auth (Dict[str, str], optional): Authentication information"
-            )
+            code.append("        auth (Dict[str, str]): Authentication information")
             code.append(
                 "        debug_api (bool, optional): Enable debug output for API calls"
             )
@@ -322,15 +317,15 @@ class PostmanRequestConverter:
         param_args = []
         if params_to_use:
             # Add default values for all parameters in test function
-            param_args = [f"{param}=None" for param in params_to_use]
+            param_args = [f"{param}= {self.parms or 'None'}" for param in params_to_use]
 
         return "\n".join(
             [
                 "",
-                f"def test_{func_name}({', '.join(param_args + ['auth: Dict[str, str] = None'])}):",
+                f"def test_{func_name}({', '.join(param_args + ['auth: Dict[str, str] = None, debug_api: bool = False'])}):",
                 f'    """Test the {func_name} function."""',
                 f"    auth = {{'base_url': '', 'headers': {{}}}} if auth is None else auth",
-                f"    response = {func_name}({', '.join(param_args + ['auth'])})",
+                f"    response = {func_name}(auth = auth, debug_api = debug_api, {', '.join(param_args)})",
                 '    assert response.status_code == 200, f"Expected status code 200, got {{response.status_code}}"',
                 "    return response",
             ]
@@ -380,10 +375,6 @@ class PostmanCollectionConverter:
     collection: PostmanCollection = field(default=None)
     customize: Dict[str, Dict] = field(default_factory=dict)
     required_headers: List[str] = field(default_factory=list)
-
-    def __post_init__(self):
-        """Initialize any default values after dataclass initialization"""
-        # Make sure export folder exists
 
     @classmethod
     def from_postman_collection(
@@ -440,8 +431,6 @@ class PostmanCollectionConverter:
         Returns:
             List[PostmanRequestConverter]: List of converters used to generate the files
         """
-        # Create export folder if it doesn't exist
-        os.makedirs(self.export_folder, exist_ok=True)
 
         for request in self.collection.requests:
             # Generate the function name that would be used

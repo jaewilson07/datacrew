@@ -115,7 +115,7 @@ class PostmanRequest_Body:
         """
         if not body_data:
             return None
-        return cls(mode=body_data["mode"], raw=body_data["raw"])
+        return cls(mode=body_data["mode"], raw=body_data.get("raw"))
 
 
 @dataclass
