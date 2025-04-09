@@ -3,9 +3,9 @@ import sys
 from typing import List, Dict, Optional, Any
 from dataclasses import dataclass, field
 from _1_models import PostmanRequest, PostmanCollection
-from utils import to_snake_case
+from postman.converter.utils import to_snake_case
 from urllib.parse import urljoin, urlparse
-import utils
+import postman.converter.utils as utils
 
 
 @dataclass

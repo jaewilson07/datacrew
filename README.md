@@ -79,12 +79,4 @@ Contributions to this repository are welcome! Please consider submitting your ow
 3. CodeEngine scripts
 4. Jupyter notebooks for data workflows
 
-## Resources
-
-- [Domo Developer Portal](https://developer.domo.com/)
-- [DataCrew API Documentation](https://api.datacrew.space)
-- [Domo Help Center](https://domo-support.domo.com/)
-
-## License
-
-[License information]
+Find me in [Slack](https://domousergroup.slack.com/team/U012A577URL)
