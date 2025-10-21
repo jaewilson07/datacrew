@@ -12840,24 +12840,6 @@
 				"header": []
 			},
 			"response": []
-		},
-		{
-			"name": "Create Alert",
-			"id": "6728942b-3264-2ccb-c654-da44aced35cc",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "Share Alert",
-			"id": "8045a758-bf20-af64-04d1-8689222163c4",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
 		}
 	],
 	"event": [
