@@ -12768,15 +12768,6 @@
 				"header": []
 			},
 			"response": []
-		},
-		{
-			"name": "List Alerts",
-			"id": "0ac53b6f-e131-6ca0-e411-1bb4deab010e",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
 		}
 	],
 	"event": [
