@@ -12809,6 +12809,15 @@
 								"header": []
 							},
 							"response": []
+						},
+						{
+							"name": "Get App Manifest (Context)",
+							"id": "d8f7439b-fe8d-8662-0053-d568cc9c582a",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "da177d3f-c953-16fb-6b69-e11b22797aea"
