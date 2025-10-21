@@ -11600,6 +11600,114 @@
 								"header": []
 							},
 							"response": []
+						},
+						{
+							"name": "List Providers",
+							"id": "79aaebb8-e75d-2639-b998-87f33c7d2928",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Accounts for Provider",
+							"id": "449e95fe-3a9c-c133-9da7-70bffab3356c",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Account",
+							"id": "fd84d1cd-9591-ec78-f725-1d743ea893a9",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Account Credentials",
+							"id": "2ea823f5-f096-8b2d-f1d4-e1d5d4da7eb9",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Provider",
+							"id": "0f84bb73-1b58-617c-fca0-727507ebd7b9",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Provider Image",
+							"id": "de2ba9c8-13b7-2299-5f0e-081526f09bab",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Appstore Connector",
+							"id": "cf5586cf-b11d-5d12-8417-743f2cfcee0a",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get DataSets Used by Account",
+							"id": "da53bffe-e4ff-a07c-6e7f-ec1d6c851a9d",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get DataSets Used by Accounts (Bulk)",
+							"id": "f817dbe6-70e7-a81b-66ce-ede6e28513bf",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Validate Account Credentials",
+							"id": "7dfb20c1-9cd5-ae8c-dcbe-e872d81a8075",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Create Account",
+							"id": "7867c627-3a21-9edd-1c35-b051d8dd1a2e",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Update Account Name",
+							"id": "fb438b99-1fd9-71e6-5e67-2b772794719e",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "39592f72-bdf1-928c-9ad4-6debbc77f46b"
