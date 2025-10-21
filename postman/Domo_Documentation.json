@@ -11582,42 +11582,6 @@
 								"header": []
 							},
 							"response": []
-						},
-						{
-							"name": "List OAuth Configurations",
-							"id": "dc041a4c-e54d-a80f-05f4-93f6fea32fc1",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "List Providers with Accounts",
-							"id": "accce02a-e995-ad28-12ae-abf0bc1dcb5b",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "List Providers",
-							"id": "79aaebb8-e75d-2639-b998-87f33c7d2928",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "Get Accounts for Provider",
-							"id": "449e95fe-3a9c-c133-9da7-70bffab3356c",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
 						}
 					],
 					"id": "39592f72-bdf1-928c-9ad4-6debbc77f46b"
