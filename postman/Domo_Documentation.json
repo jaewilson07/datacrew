@@ -12362,42 +12362,6 @@
 								"header": []
 							},
 							"response": []
-						},
-						{
-							"name": "Get Alert",
-							"id": "8e011e9b-fdb2-968f-80e6-71526e021694",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "Get Alert Action",
-							"id": "c360818a-31c3-e9cb-8880-80666688ec08",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "Get Evaluations for Alert",
-							"id": "c7e39595-d05c-4d2c-1610-de4148ac317f",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "Create Alert",
-							"id": "09b5e8f5-9b4a-62d3-ff8c-fadfa59ef504",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
 						}
 					],
 					"id": "e980bcc0-21a6-0da0-2402-07aedd05e1bb"
