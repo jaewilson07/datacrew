@@ -12678,6 +12678,159 @@
 				"header": []
 			},
 			"response": []
+		},
+		{
+			"name": "Ask Chat",
+			"id": "11a92794-7da6-5ad8-be5b-7276f60a0ddc",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List File Shares",
+			"id": "76fdaa4b-23af-78cd-1c15-d5142c0b7b06",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get File Share Permissions",
+			"id": "261b5e9d-ecd4-f05c-372e-242a25c9b2ea",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create File Share",
+			"id": "a89114af-1784-3e7d-eb31-79329140101a",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update File Share",
+			"id": "ffaad4f5-56c3-2a23-aae0-c0bb77bb544b",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update File Share Permissions",
+			"id": "1edf7542-fb86-b23a-8e77-ad279862ce9d",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete File Share",
+			"id": "cc4f4571-6a9a-950d-fa7b-663c001d3c08",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Jupyter Workspaces",
+			"id": "b5e684e0-57f9-9fc7-c5a2-1d3bd7f953db",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List User AI Models",
+			"id": "fe73759d-c57d-b892-1fdc-e979e702688d",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Jupyter Workspace",
+			"id": "12ef9438-5330-2999-6e1c-093026a676d0",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Alerts",
+			"id": "0ac53b6f-e131-6ca0-e411-1bb4deab010e",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Immediate Alerts",
+			"id": "4a2be241-9707-07c5-fe12-a136cc65999c",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Alert Triggered Preferences",
+			"id": "39840d6e-de63-e6a8-73b4-5c97b13a3350",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Search Alerts",
+			"id": "72754867-4ec4-4742-cf03-fa1e4724b417",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Alerts",
+			"id": "ba471512-6ff2-b790-6625-9adee3f47c01",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Alert",
+			"id": "30708582-0fab-4dec-e657-cbe04c4d63e9",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Alert Action",
+			"id": "f492802a-ba99-6e71-97a8-af1ce1d1df39",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
