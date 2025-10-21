@@ -12840,6 +12840,15 @@
 				"header": []
 			},
 			"response": []
+		},
+		{
+			"name": "Create Alert",
+			"id": "6728942b-3264-2ccb-c654-da44aced35cc",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
