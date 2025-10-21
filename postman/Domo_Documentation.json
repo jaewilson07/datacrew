@@ -13173,9 +13173,134 @@
 										"header": []
 									},
 									"response": []
+								},
+								{
+									"name": "Explain Model",
+									"id": "dee48599-f02b-2e16-ff3f-26f4f6db0751",
+									"request": {
+										"method": null,
+										"header": []
+									},
+									"response": []
 								}
 							],
 							"id": "cb21346a-8423-7c10-beb5-033736dc5550"
+						},
+						{
+							"name": "AI Models and Projects (User Generated)",
+							"item": [
+								{
+									"name": "Models",
+									"item": [
+										{
+											"name": "Get Model",
+											"id": "b83f7aa7-ee20-e6e6-b5f4-d6057d7768de",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Update Model",
+											"id": "6fd907a1-8a0b-5efc-b3e8-52fe30c2a815",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Delete Model",
+											"id": "31fe9f11-a58f-6cf0-73af-d8341e2fe1e6",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "bdc4ff47-6017-2184-1810-0bc5884c8191"
+								},
+								{
+									"name": "Projects",
+									"item": [
+										{
+											"name": "List Projects",
+											"id": "00b067a3-5e32-d1e0-08ec-350f554ec10e",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "List Associated AutoML Models",
+											"id": "4afdfa17-6f90-0190-1cfd-78c64f2190a8",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Get Project",
+											"id": "072876af-eca2-5488-65ca-2db0c0beabe0",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "b4144a29-ced1-2621-8ab1-3e22129332c7"
+								}
+							],
+							"id": "58d55708-dcf6-2c2f-a8cf-dd89b9909814"
+						},
+						{
+							"name": "AI Service Layer",
+							"item": [
+								{
+									"name": "Text to SQL",
+									"item": [
+										{
+											"name": "List Models",
+											"id": "94117311-3e4b-0ec0-479a-1eb0914765e3",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Get Default Model",
+											"id": "8f0d1ef2-1576-22f2-e168-25a01a7181a9",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Run Model",
+											"id": "ee53d5c7-19ff-3b04-8667-aa6bbddfa4ae",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "cfea8167-c64b-d4f4-16b8-f7b33a1ca234"
+								},
+								{
+									"name": "Text Generation",
+									"item": [],
+									"id": "d5630499-60e4-9538-b59b-bbe94d51a847"
+								}
+							],
+							"id": "31d10223-d2d5-1386-6c95-f7ecd06e8619"
 						}
 					],
 					"id": "acbbfd0c-b38e-0b18-ddd7-e5b75018f15e"
