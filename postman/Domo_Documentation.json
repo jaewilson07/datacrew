@@ -12930,6 +12930,24 @@
 				"header": []
 			},
 			"response": []
+		},
+		{
+			"name": "Get Datastore Collections",
+			"id": "06787901-92bf-77ca-9f25-def809599421",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Collection",
+			"id": "221baae3-8c6d-505b-5503-445a95c95719",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
