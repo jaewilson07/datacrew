@@ -12638,6 +12638,51 @@
 								"header": []
 							},
 							"response": []
+						},
+						{
+							"name": "Delete Datastore",
+							"id": "f3d6ea21-9e60-2ffb-470e-b123d26677e5",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Collection",
+							"id": "839f77e5-7d3a-0637-1ec7-4e9ef61a4133",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Remove Collection Access",
+							"id": "a9f69603-cbc9-c91c-1496-bc9dbcff8b6a",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Document",
+							"id": "5e079925-a99e-85df-537b-2d363a4403a5",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Documents",
+							"id": "ed9f6ba2-5112-3b55-9458-b876cb05bba9",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "b7eae9fa-915b-e6c4-bd30-3d5038d9d6ae"
