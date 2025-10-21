@@ -12489,6 +12489,51 @@
 				"header": []
 			},
 			"response": []
+		},
+		{
+			"name": "List Models",
+			"id": "189b9a39-dc2f-1773-10f5-2408508afff6",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Default Model",
+			"id": "4fff90ff-ccc4-8091-149f-29c48825d690",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Run Model",
+			"id": "005d1b58-2734-2682-39fb-bee62cc8b062",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Models",
+			"id": "405e8297-dfa1-7f26-bdbd-d6a381de3cc6",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Default Model",
+			"id": "a0f55fa8-d4a1-faa1-bf1b-4ad375cfb366",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
