@@ -12647,9 +12647,87 @@
 								"header": []
 							},
 							"response": []
+						},
+						{
+							"name": "Delete Collection",
+							"id": "839f77e5-7d3a-0637-1ec7-4e9ef61a4133",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Remove Collection Access",
+							"id": "a9f69603-cbc9-c91c-1496-bc9dbcff8b6a",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Document",
+							"id": "5e079925-a99e-85df-537b-2d363a4403a5",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Documents",
+							"id": "ed9f6ba2-5112-3b55-9458-b876cb05bba9",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "b7eae9fa-915b-e6c4-bd30-3d5038d9d6ae"
+				},
+				{
+					"name": "App Studio",
+					"item": [
+						{
+							"name": "List Apps",
+							"id": "7de1eeab-e9df-4c45-717b-8aa3b10684f9",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get App Access",
+							"id": "525ebd9c-92bb-9873-6a48-561c44bc4209",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Share App",
+							"id": "de4dfb4a-5cfc-3f3c-4948-b47ada801e80",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Delete App",
+							"id": "bc0adc28-f903-1356-a1ed-52c01a6233b5",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "ae5e9868-fa4c-cdcf-9a1c-6edd9d7c9e71"
 				},
 				{
 					"name": "Generate Developer Token",
