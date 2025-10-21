@@ -12453,60 +12453,6 @@
 				"header": []
 			},
 			"response": []
-		},
-		{
-			"name": "Delete Model",
-			"id": "0871f366-b89e-9f24-ed7c-09e454e9605c",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "List Projects",
-			"id": "6f7a9a27-5da7-6f89-c525-5c6827084dda",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "List Associated AutoML Models",
-			"id": "0058e9e2-273f-fc7d-beae-6c39fc37b5a3",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "Get Project",
-			"id": "7a678654-d3d2-c67e-4bca-09dc5bcc6daf",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "List Models",
-			"id": "189b9a39-dc2f-1773-10f5-2408508afff6",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "Get Default Model",
-			"id": "4fff90ff-ccc4-8091-149f-29c48825d690",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
 		}
 	],
 	"event": [
