@@ -12299,72 +12299,12 @@
 										"header": []
 									},
 									"response": []
-								},
-								{
-									"name": "Get Jupyter Workspace",
-									"id": "877de2f0-a6b1-970a-d0a0-adb8d015c0d3",
-									"request": {
-										"method": null,
-										"header": []
-									},
-									"response": []
 								}
 							],
 							"id": "b1d0f00b-0aac-2fe4-2c6d-b4e1fcfc94f9"
 						}
 					],
 					"id": "404beb91-563f-2229-3255-19cd1056531d"
-				},
-				{
-					"name": "Alerts",
-					"item": [
-						{
-							"name": "List Alerts",
-							"id": "6795cf3e-3cc5-2aa6-fd36-c077cc3e9e97",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "List Immediate Alerts",
-							"id": "7ac0d5cd-413f-b216-d623-3ca93b2ffd3f",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "List Alert Triggered Preferences",
-							"id": "ca366da8-321b-baa5-770f-cf57e6203984",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "Search Alerts",
-							"id": "433e1556-a28b-4aa6-ee66-9200778d464a",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "Get Alerts",
-							"id": "b7ae5c05-8104-9477-3c83-aa028a5ec451",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						}
-					],
-					"id": "e980bcc0-21a6-0da0-2402-07aedd05e1bb"
 				},
 				{
 					"name": "Generate Developer Token",
