@@ -11708,9 +11708,96 @@
 								"header": []
 							},
 							"response": []
+						},
+						{
+							"name": "Update Account Credentials",
+							"id": "72577b45-8a8e-8e3a-8c41-b088594ae664",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Update Account Access",
+							"id": "967c44ff-8cae-4805-fcfb-4350f66d24d2",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Account",
+							"id": "6af82341-e462-3421-72d0-4ba824871d5d",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "39592f72-bdf1-928c-9ad4-6debbc77f46b"
+				},
+				{
+					"name": "Achievements",
+					"item": [
+						{
+							"name": "List Achievements",
+							"id": "a920afe9-2dca-3330-e433-5c0cdd3509df",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Achievement",
+							"id": "87cbaef2-11c6-4eeb-5b99-dc70f8356f63",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Achievement Admins",
+							"id": "8733197a-837f-4580-91dd-9d02c29e2106",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Create Achievement",
+							"id": "4720f393-c743-dd47-7cfe-69317ff694bb",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Create Achievement Admin",
+							"id": "7c3a09b1-60b4-65e0-6203-cb54ea1bac51",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Update Achievement",
+							"id": "b1b88e4c-62e3-4b96-fabd-5ac8c7bc7972",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "ab91df19-5152-406c-5d60-4801cdf1d7d2"
 				},
 				{
 					"name": "Generate Developer Token",
