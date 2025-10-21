@@ -12767,60 +12767,9 @@
 								"header": []
 							},
 							"response": []
-						},
-						{
-							"name": "Get Hot URL",
-							"id": "97793286-b635-dcb1-b2a2-441e70b039f4",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
 						}
 					],
 					"id": "cbb61cef-7fb2-f9c8-86be-f52b7b89ecb5"
-				},
-				{
-					"name": "Bricks and Pro-Code Apps",
-					"item": [
-						{
-							"name": "List App Designs",
-							"id": "32d107f3-1481-2565-54e1-68c58f74f498",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "Get App",
-							"id": "955d5fcc-7a2a-0861-81ed-13d5530f6399",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "Get App Design",
-							"id": "ac317c56-817d-9a1b-2582-7dffac1dee98",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "Get App Manifest (Context)",
-							"id": "d8f7439b-fe8d-8662-0053-d568cc9c582a",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						}
-					],
-					"id": "da177d3f-c953-16fb-6b69-e11b22797aea"
 				},
 				{
 					"name": "Generate Developer Token",
