@@ -13428,11 +13428,86 @@
 								},
 								{
 									"name": "Image to Text",
-									"item": [],
+									"item": [
+										{
+											"name": "List Models",
+											"id": "719f89cd-1012-b838-6073-96cb9536c570",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Get Default Model",
+											"id": "4b30d02c-f843-1f58-26ee-9154a4c61803",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Run Model",
+											"id": "481ec3bb-0c32-eaa2-4e45-a57b0514b6d3",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
 									"id": "ebba9ff5-a311-56d2-5aec-6ce2ffd9fe92"
+								},
+								{
+									"name": "Get Settings",
+									"id": "8f784f36-2464-2adb-2044-5f989b22dcd4",
+									"request": {
+										"method": null,
+										"header": []
+									},
+									"response": []
+								},
+								{
+									"name": "Get Session",
+									"id": "1c3a3952-4c01-d90d-32f4-2111fbc3e156",
+									"request": {
+										"method": null,
+										"header": []
+									},
+									"response": []
+								},
+								{
+									"name": "Get Session Context",
+									"id": "f057f067-9a5d-d040-c2db-25d8f5489aa1",
+									"request": {
+										"method": null,
+										"header": []
+									},
+									"response": []
+								},
+								{
+									"name": "Ask Chat",
+									"id": "c7cb872a-29a8-d44b-f1ac-73af1f859b02",
+									"request": {
+										"method": null,
+										"header": []
+									},
+									"response": []
 								}
 							],
 							"id": "31d10223-d2d5-1386-6c95-f7ecd06e8619"
+						},
+						{
+							"name": "Jupyter Workspaces",
+							"item": [
+								{
+									"name": "File Shares",
+									"item": [],
+									"id": "fc1d5b78-016d-9352-eb40-554d3fb0e7bb"
+								}
+							],
+							"id": "262f222e-18c6-8373-8dde-ed53caed1ba5"
 						}
 					],
 					"id": "acbbfd0c-b38e-0b18-ddd7-e5b75018f15e"
