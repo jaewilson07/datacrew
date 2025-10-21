@@ -13260,32 +13260,7 @@
 						},
 						{
 							"name": "AI Service Layer",
-							"item": [
-								{
-									"name": "Text to SQL",
-									"item": [
-										{
-											"name": "List Models",
-											"id": "94117311-3e4b-0ec0-479a-1eb0914765e3",
-											"request": {
-												"method": null,
-												"header": []
-											},
-											"response": []
-										},
-										{
-											"name": "Get Default Model",
-											"id": "8f0d1ef2-1576-22f2-e168-25a01a7181a9",
-											"request": {
-												"method": null,
-												"header": []
-											},
-											"response": []
-										}
-									],
-									"id": "cfea8167-c64b-d4f4-16b8-f7b33a1ca234"
-								}
-							],
+							"item": [],
 							"id": "31d10223-d2d5-1386-6c95-f7ecd06e8619"
 						}
 					],
