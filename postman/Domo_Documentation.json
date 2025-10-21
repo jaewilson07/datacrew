@@ -12750,6 +12750,33 @@
 				"header": []
 			},
 			"response": []
+		},
+		{
+			"name": "List User AI Models",
+			"id": "fe73759d-c57d-b892-1fdc-e979e702688d",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Jupyter Workspace",
+			"id": "12ef9438-5330-2999-6e1c-093026a676d0",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Alerts",
+			"id": "0ac53b6f-e131-6ca0-e411-1bb4deab010e",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
