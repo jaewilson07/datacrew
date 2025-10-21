@@ -12255,6 +12255,357 @@
 				"header": []
 			},
 			"response": []
+		},
+		{
+			"name": "Create Account",
+			"id": "b9ab64a0-3d79-90ca-7710-016d048fcae7",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Account Name",
+			"id": "3bfcbb3c-afd0-7c52-7bd7-ac2b78fdaff5",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Account Credentials",
+			"id": "1c39fcbe-8e93-2bee-6464-46d3ced50ce7",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Account Access",
+			"id": "82e71467-e1b8-d6ea-883c-569992230348",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Account",
+			"id": "eec725b2-8ed2-bced-73a2-773dc54ed61e",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Achievements",
+			"id": "ae5e29b6-e49b-832c-4543-ff4ef7bbca68",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Achievement",
+			"id": "78ed4051-de91-9ecf-7fc3-16164edf9355",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Achievement Admins",
+			"id": "e695febf-90e3-4094-3f43-5b7ab1ebae1d",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create Achievement",
+			"id": "d4b3fbbe-08cf-cfdf-c247-b3ac6ce7facb",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create Achievement Admin",
+			"id": "ef5b0fa5-bab4-a2a0-57e6-0409bea97cb7",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Achievement",
+			"id": "8fe5159e-53db-7be0-f030-781dce477758",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Achievement",
+			"id": "6e196ade-b7a4-3c12-d06f-6f3332506283",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Achievement Admin",
+			"id": "ba616a85-5ede-b1d4-454e-0c0f82a35c76",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Object Types",
+			"id": "aa8d32a6-e75e-d4df-e623-4993b48da46b",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Activity Log",
+			"id": "d6152296-ee0e-b31f-be96-776e708139d5",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update OTP Elevation Setting",
+			"id": "ba0f3a60-d499-f8a0-5704-b50dcf50ea35",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Models on DataSet",
+			"id": "f982e124-cfd4-caf0-2286-18c53d98a7ac",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Model",
+			"id": "968959d7-4751-3782-d22f-8d5b4160dded",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Model Schema",
+			"id": "62493c85-2870-d1d3-d545-a1dff8e6a787",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Explain Model",
+			"id": "b5d18c08-0d12-6473-815a-380704024cee",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Model",
+			"id": "b3f77ab7-0b39-ac6f-0ba2-c7389cf00b99",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Model",
+			"id": "10749d27-58cf-fd58-b5a9-c99b71cd1df7",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Model",
+			"id": "0871f366-b89e-9f24-ed7c-09e454e9605c",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Projects",
+			"id": "6f7a9a27-5da7-6f89-c525-5c6827084dda",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Associated AutoML Models",
+			"id": "0058e9e2-273f-fc7d-beae-6c39fc37b5a3",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Project",
+			"id": "7a678654-d3d2-c67e-4bca-09dc5bcc6daf",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Models",
+			"id": "189b9a39-dc2f-1773-10f5-2408508afff6",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Default Model",
+			"id": "4fff90ff-ccc4-8091-149f-29c48825d690",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Run Model",
+			"id": "005d1b58-2734-2682-39fb-bee62cc8b062",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Models",
+			"id": "405e8297-dfa1-7f26-bdbd-d6a381de3cc6",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Default Model",
+			"id": "a0f55fa8-d4a1-faa1-bf1b-4ad375cfb366",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Run Model",
+			"id": "e1f0fed4-fbf8-4056-9055-03daf56c3a03",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Models",
+			"id": "8e90d3fe-b96a-e2ec-0ecf-d699a55e5e3d",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Default Model",
+			"id": "507891c1-4c79-a338-c5b8-c60b339abb60",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Run Model",
+			"id": "f713a2f1-1726-0445-2722-b85b36e2c0ae",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Models",
+			"id": "91a6c527-e97b-f890-33a7-aecf247987ec",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Default Model",
+			"id": "de92395b-2bda-0817-7ea6-036328d6cef5",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Run Model",
+			"id": "e766060d-6e26-7209-82d9-0016531ec4e4",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Models",
+			"id": "1a46e077-6980-51b2-5720-e76d90121f01",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
