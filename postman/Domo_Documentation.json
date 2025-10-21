@@ -12059,9 +12059,93 @@
 												"header": []
 											},
 											"response": []
+										},
+										{
+											"name": "Get Default Model",
+											"id": "750931f4-ddcc-b0ee-3d2f-aff4e7de927b",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Run Model",
+											"id": "203fbba1-6fb1-5d02-e7fd-b78452c3eedc",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
 										}
 									],
 									"id": "64cac596-572f-70ae-f7b2-7694c76cef0c"
+								},
+								{
+									"name": "Text Summarization",
+									"item": [
+										{
+											"name": "List Models",
+											"id": "44d0d9b8-e9ec-4ed1-2e2c-abbd16be0c18",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Get Default Model",
+											"id": "d800e7cd-2fc8-e18c-c10e-d3de1b3b62df",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Run Model",
+											"id": "2f5f99db-8e90-1163-181b-e7571aded5b0",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "1ade117e-a97c-7d67-079e-1ac800866151"
+								},
+								{
+									"name": "Forecasting",
+									"item": [
+										{
+											"name": "List Models",
+											"id": "62156088-250b-f30f-8813-122e18b0c1f9",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Get Default Model",
+											"id": "3a119b24-ec60-471a-1ea6-76be5aeac46f",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Run Model",
+											"id": "d44b9aee-128a-aae9-e207-7730641a1905",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "0e86ee5c-b28b-f93f-0a6c-23e4f7e79cbe"
 								}
 							],
 							"id": "e61225a3-0f6d-4872-6944-81ff761f24be"
