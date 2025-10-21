@@ -11618,9 +11618,351 @@
 								"header": []
 							},
 							"response": []
+						},
+						{
+							"name": "Get Account",
+							"id": "fd84d1cd-9591-ec78-f725-1d743ea893a9",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Account Credentials",
+							"id": "2ea823f5-f096-8b2d-f1d4-e1d5d4da7eb9",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Provider",
+							"id": "0f84bb73-1b58-617c-fca0-727507ebd7b9",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Provider Image",
+							"id": "de2ba9c8-13b7-2299-5f0e-081526f09bab",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Appstore Connector",
+							"id": "cf5586cf-b11d-5d12-8417-743f2cfcee0a",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get DataSets Used by Account",
+							"id": "da53bffe-e4ff-a07c-6e7f-ec1d6c851a9d",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get DataSets Used by Accounts (Bulk)",
+							"id": "f817dbe6-70e7-a81b-66ce-ede6e28513bf",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Validate Account Credentials",
+							"id": "7dfb20c1-9cd5-ae8c-dcbe-e872d81a8075",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Create Account",
+							"id": "7867c627-3a21-9edd-1c35-b051d8dd1a2e",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Update Account Name",
+							"id": "fb438b99-1fd9-71e6-5e67-2b772794719e",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Update Account Credentials",
+							"id": "72577b45-8a8e-8e3a-8c41-b088594ae664",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Update Account Access",
+							"id": "967c44ff-8cae-4805-fcfb-4350f66d24d2",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Account",
+							"id": "6af82341-e462-3421-72d0-4ba824871d5d",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "39592f72-bdf1-928c-9ad4-6debbc77f46b"
+				},
+				{
+					"name": "Achievements",
+					"item": [
+						{
+							"name": "List Achievements",
+							"id": "a920afe9-2dca-3330-e433-5c0cdd3509df",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Achievement",
+							"id": "87cbaef2-11c6-4eeb-5b99-dc70f8356f63",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Achievement Admins",
+							"id": "8733197a-837f-4580-91dd-9d02c29e2106",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Create Achievement",
+							"id": "4720f393-c743-dd47-7cfe-69317ff694bb",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Create Achievement Admin",
+							"id": "7c3a09b1-60b4-65e0-6203-cb54ea1bac51",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Update Achievement",
+							"id": "b1b88e4c-62e3-4b96-fabd-5ac8c7bc7972",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Achievement",
+							"id": "1c92b5d6-0ae1-3758-3648-a9604646977c",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Achievement Admin",
+							"id": "3c68a44f-8201-4a77-158b-ed966f458aac",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "ab91df19-5152-406c-5d60-4801cdf1d7d2"
+				},
+				{
+					"name": "Activity Log",
+					"item": [
+						{
+							"name": "List Object Types",
+							"id": "17972611-f37e-b9f0-587b-1d3d6d131c21",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Activity Log",
+							"id": "0e2a39df-aa70-182a-29c9-b61a5e624461",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "7dd344d7-c95e-179e-130d-fa2baceb5842"
+				},
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "Authentication",
+							"item": [
+								{
+									"name": "Update OTP Elevation Setting",
+									"id": "9896f2dc-4677-9854-cc65-a01cc9357493",
+									"request": {
+										"method": null,
+										"header": []
+									},
+									"response": []
+								}
+							],
+							"id": "8459df32-55ad-4fd7-2bc9-eaf035197b66"
+						}
+					],
+					"id": "a99315f3-612d-f798-977e-71f8fade225c"
+				},
+				{
+					"name": "AI/Data Science",
+					"item": [
+						{
+							"name": "AutoML",
+							"item": [
+								{
+									"name": "List Models on DataSet",
+									"id": "5aea5aa3-5bb8-aab4-4cf2-90bf644c237c",
+									"request": {
+										"method": null,
+										"header": []
+									},
+									"response": []
+								},
+								{
+									"name": "Get Model",
+									"id": "3d97f646-c90c-0847-88f8-02853f190865",
+									"request": {
+										"method": null,
+										"header": []
+									},
+									"response": []
+								},
+								{
+									"name": "Get Model Schema",
+									"id": "39e19652-3702-2417-7085-4b9bc9ad61b6",
+									"request": {
+										"method": null,
+										"header": []
+									},
+									"response": []
+								},
+								{
+									"name": "Explain Model",
+									"id": "16a986e3-2a6f-139f-67d6-f7ff2df48868",
+									"request": {
+										"method": null,
+										"header": []
+									},
+									"response": []
+								}
+							],
+							"id": "4b8463b8-051c-ecec-c105-875d8cb224fd"
+						},
+						{
+							"name": "AI Models and Projects (User Generated)",
+							"item": [
+								{
+									"name": "Models",
+									"item": [
+										{
+											"name": "Get Model",
+											"id": "8c82212f-0c9b-438b-e588-657cac17e5ab",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Update Model",
+											"id": "457429d3-eef3-bbf3-3787-f1a09c1bc50e",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Delete Model",
+											"id": "e8c87887-39f6-296d-f2c5-5a9385a2629d",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "50519466-cb76-603c-47d5-a8419bf632ed"
+								},
+								{
+									"name": "Projects",
+									"item": [
+										{
+											"name": "List Projects",
+											"id": "5b748b33-afdf-16f6-347f-7d6dfa9087ec",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "7b6b2ceb-ed83-5d7f-bee5-d4c756e84dc0"
+								}
+							],
+							"id": "544e4c69-a637-d4ad-36e2-49941845ef99"
+						}
+					],
+					"id": "404beb91-563f-2229-3255-19cd1056531d"
 				},
 				{
 					"name": "Generate Developer Token",
