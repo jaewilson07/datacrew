@@ -12453,6 +12453,15 @@
 				"header": []
 			},
 			"response": []
+		},
+		{
+			"name": "Delete Model",
+			"id": "0871f366-b89e-9f24-ed7c-09e454e9605c",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
