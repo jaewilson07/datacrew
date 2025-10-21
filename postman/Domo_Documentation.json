@@ -12219,6 +12219,96 @@
 				"header": []
 			},
 			"response": []
+		},
+		{
+			"name": "Get Appstore Connector",
+			"id": "54fdfd79-9620-eef8-8d07-ecdab18ace5d",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get DataSets Used by Account",
+			"id": "dcbcec12-921e-dd4f-ef69-ade9bad94b59",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get DataSets Used by Accounts (Bulk)",
+			"id": "a3c4b899-9803-ec1b-20e1-a1472e5d8f33",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Validate Account Credentials",
+			"id": "3fe78e09-053d-b97f-b805-0fe3d2c3d080",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create Account",
+			"id": "b9ab64a0-3d79-90ca-7710-016d048fcae7",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Account Name",
+			"id": "3bfcbb3c-afd0-7c52-7bd7-ac2b78fdaff5",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Account Credentials",
+			"id": "1c39fcbe-8e93-2bee-6464-46d3ced50ce7",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Account Access",
+			"id": "82e71467-e1b8-d6ea-883c-569992230348",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Account",
+			"id": "eec725b2-8ed2-bced-73a2-773dc54ed61e",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Achievements",
+			"id": "ae5e29b6-e49b-832c-4543-ff4ef7bbca68",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
