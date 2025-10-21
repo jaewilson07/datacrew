@@ -12915,6 +12915,96 @@
 								"header": []
 							},
 							"response": []
+						},
+						{
+							"name": "Get Provider",
+							"id": "3ec77add-f631-ba32-8083-fcf63d1ef887",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Provider Image",
+							"id": "c2932c0a-9ff6-6298-a0d7-46661f3dc4a2",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Appstore Connector",
+							"id": "0597e62f-6d82-e7fa-f623-363ac1f35180",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get DataSets Used by Account",
+							"id": "30770ca8-0e4c-d491-da44-dcddda04f7fa",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get DataSets Used by Accounts (Bulk)",
+							"id": "65db69e9-e312-2fb8-7c73-1d8935bae717",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Validate Account Credentials",
+							"id": "0465422a-822c-0d3e-9215-4d768625689b",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Create Account",
+							"id": "65f1ff35-0340-2e57-3850-b31bd4c8a8fd",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Update Account Name",
+							"id": "e8e02418-122e-0a8a-84ac-562fc1ee0924",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Update Account Credentials",
+							"id": "212faf1a-2076-295f-6a41-0bbc22f77ce2",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Update Account Access",
+							"id": "c05afb80-32d4-c04e-a999-ee642317e692",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "7d564f91-5a05-27d8-9492-11aecb0f5374"
