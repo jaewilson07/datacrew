@@ -12156,6 +12156,96 @@
 				"header": []
 			},
 			"response": []
+		},
+		{
+			"name": "List Providers with Accounts",
+			"id": "46f6676f-3b32-1c03-670d-8c15f8d75364",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Providers",
+			"id": "fd14786e-dec4-5a9c-41b5-c02b3b3768d9",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Accounts for Provider",
+			"id": "dbf0603e-ca93-13f3-67e6-6d87345e2ffb",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account",
+			"id": "f281d36c-2de2-8804-df4e-e8ff24bed13f",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account Credentials",
+			"id": "6737e9fd-c314-80da-b91d-090e5b661435",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Provider",
+			"id": "086425d8-bc09-aaa4-f1c5-dbce0e35b12b",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Provider Image",
+			"id": "535e681b-08d7-6dfd-8401-4d800de92104",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Appstore Connector",
+			"id": "54fdfd79-9620-eef8-8d07-ecdab18ace5d",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get DataSets Used by Account",
+			"id": "dcbcec12-921e-dd4f-ef69-ade9bad94b59",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get DataSets Used by Accounts (Bulk)",
+			"id": "a3c4b899-9803-ec1b-20e1-a1472e5d8f33",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
