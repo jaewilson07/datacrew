@@ -13413,9 +13413,23 @@
 												"header": []
 											},
 											"response": []
+										},
+										{
+											"name": "Run Model",
+											"id": "a5a90945-b22a-7788-cad0-70ff5d4f5ded",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
 										}
 									],
 									"id": "d04ca715-6875-471c-2466-3d01c0dd1628"
+								},
+								{
+									"name": "Image to Text",
+									"item": [],
+									"id": "ebba9ff5-a311-56d2-5aec-6ce2ffd9fe92"
 								}
 							],
 							"id": "31d10223-d2d5-1386-6c95-f7ecd06e8619"
