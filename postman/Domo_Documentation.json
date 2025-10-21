@@ -11558,11 +11558,6 @@
 					"id": "78af8ed1-f6cd-45ea-9bcb-8af9ec4e53f1"
 				},
 				{
-					"name": "Product_APIs_Merged",
-					"item": [],
-					"id": "0e319044-56e5-6bbb-b09e-9224c4b15519"
-				},
-				{
 					"name": "Generate Developer Token",
 					"id": "9bcb4e1a-329e-4b2e-bbde-97ceb36bac04",
 					"protocolProfileBehavior": {
@@ -12876,78 +12871,6 @@
 		{
 			"name": "Update Alert Rules",
 			"id": "0d1cb0b4-f301-5ff5-46da-7de4f01d76bb",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "Update Alert Message",
-			"id": "4d5cb91d-c032-95f8-72c1-5be154c84fd6",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Alert",
-			"id": "bfaee2ec-028e-2bc8-d4a6-0b1e48655791",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "Unshare Alert",
-			"id": "4983e633-d88c-2e0f-3c63-fdc02330de0e",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "List Datastores",
-			"id": "9a3bde8d-a713-7876-adb4-ac33801438f1",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "List Collections",
-			"id": "182c5bbe-1c82-202e-7570-6780a3292942",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "Get Datastore",
-			"id": "16491e01-0996-410f-38ca-cb31f50be658",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "Get Datastore Collections",
-			"id": "06787901-92bf-77ca-9f25-def809599421",
-			"request": {
-				"method": null,
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "Get Collection",
-			"id": "221baae3-8c6d-505b-5503-445a95c95719",
 			"request": {
 				"method": null,
 				"header": []
