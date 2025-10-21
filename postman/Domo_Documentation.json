@@ -12843,7 +12843,80 @@
 				},
 				{
 					"name": "Accounts",
-					"item": [],
+					"item": [
+						{
+							"name": "List Accounts",
+							"id": "3453d015-5c2a-69e0-54dc-691fd21b5c4a",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Search Accounts",
+							"id": "803ecdb0-4244-cf6c-bab0-a5c0c98d82ff",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "List OAuth Configurations",
+							"id": "42a090a6-a883-a899-4f8d-292ca983882a",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "List Providers with Accounts",
+							"id": "e886098a-ee80-2413-bde7-c180432772eb",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "List Providers",
+							"id": "d608f794-2d02-ed78-9026-e529e2e902f8",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Accounts for Provider",
+							"id": "65d3a254-021e-4dff-b8e0-cc9d265d5184",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Account",
+							"id": "3a491c73-8016-42aa-7afa-78c5d427eb55",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Account Credentials",
+							"id": "c58b0faa-56e6-eecc-3f28-153aad0f228c",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "7d564f91-5a05-27d8-9492-11aecb0f5374"
 				},
 				{
