@@ -12246,6 +12246,33 @@
 				"header": []
 			},
 			"response": []
+		},
+		{
+			"name": "Validate Account Credentials",
+			"id": "3fe78e09-053d-b97f-b805-0fe3d2c3d080",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create Account",
+			"id": "b9ab64a0-3d79-90ca-7710-016d048fcae7",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Account Name",
+			"id": "3bfcbb3c-afd0-7c52-7bd7-ac2b78fdaff5",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
