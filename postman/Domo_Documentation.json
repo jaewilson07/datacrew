@@ -12842,6 +12842,11 @@
 					"id": "da177d3f-c953-16fb-6b69-e11b22797aea"
 				},
 				{
+					"name": "Accounts",
+					"item": [],
+					"id": "7d564f91-5a05-27d8-9492-11aecb0f5374"
+				},
+				{
 					"name": "Generate Developer Token",
 					"id": "9bcb4e1a-329e-4b2e-bbde-97ceb36bac04",
 					"protocolProfileBehavior": {
