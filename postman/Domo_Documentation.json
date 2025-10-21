@@ -12309,6 +12309,96 @@
 				"header": []
 			},
 			"response": []
+		},
+		{
+			"name": "Get Achievement",
+			"id": "78ed4051-de91-9ecf-7fc3-16164edf9355",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Achievement Admins",
+			"id": "e695febf-90e3-4094-3f43-5b7ab1ebae1d",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create Achievement",
+			"id": "d4b3fbbe-08cf-cfdf-c247-b3ac6ce7facb",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create Achievement Admin",
+			"id": "ef5b0fa5-bab4-a2a0-57e6-0409bea97cb7",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Achievement",
+			"id": "8fe5159e-53db-7be0-f030-781dce477758",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Achievement",
+			"id": "6e196ade-b7a4-3c12-d06f-6f3332506283",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Achievement Admin",
+			"id": "ba616a85-5ede-b1d4-454e-0c0f82a35c76",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Object Types",
+			"id": "aa8d32a6-e75e-d4df-e623-4993b48da46b",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Activity Log",
+			"id": "d6152296-ee0e-b31f-be96-776e708139d5",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update OTP Elevation Setting",
+			"id": "ba0f3a60-d499-f8a0-5704-b50dcf50ea35",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
