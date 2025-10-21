@@ -13097,6 +13097,324 @@
 					"id": "4c110e26-1748-82e0-1d78-e6fdf3152883"
 				},
 				{
+					"name": "Activity Log",
+					"item": [
+						{
+							"name": "List Object Types",
+							"id": "fdf5ed5f-faa8-eb5c-1cb1-86ea93a716c6",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Activity Log",
+							"id": "1c357bc7-15c5-1fa9-6a26-a9d7470a9ff7",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "2c5310dc-dcfb-a7b1-003f-415da7fc64e7"
+				},
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "Authentication",
+							"item": [
+								{
+									"name": "Update OTP Elevation Setting",
+									"id": "a8ff0fb2-4e3e-bd06-26db-c24ea3f76ca3",
+									"request": {
+										"method": null,
+										"header": []
+									},
+									"response": []
+								}
+							],
+							"id": "cc076a9d-697b-58d3-eba2-6bd2b18776fa"
+						}
+					],
+					"id": "87e82b0d-080d-d78e-8304-888e132a51ee"
+				},
+				{
+					"name": "AI/Data Science",
+					"item": [
+						{
+							"name": "AutoML",
+							"item": [
+								{
+									"name": "List Models on DataSet",
+									"id": "94ab3e13-0cc5-1de6-cb55-8239c53e8964",
+									"request": {
+										"method": null,
+										"header": []
+									},
+									"response": []
+								},
+								{
+									"name": "Get Model",
+									"id": "e42e51a0-f373-c1b9-a19b-9b14b09006b2",
+									"request": {
+										"method": null,
+										"header": []
+									},
+									"response": []
+								},
+								{
+									"name": "Get Model Schema",
+									"id": "24bc86e0-c4d7-d10c-f7d3-2f794aa30676",
+									"request": {
+										"method": null,
+										"header": []
+									},
+									"response": []
+								},
+								{
+									"name": "Explain Model",
+									"id": "dee48599-f02b-2e16-ff3f-26f4f6db0751",
+									"request": {
+										"method": null,
+										"header": []
+									},
+									"response": []
+								}
+							],
+							"id": "cb21346a-8423-7c10-beb5-033736dc5550"
+						},
+						{
+							"name": "AI Models and Projects (User Generated)",
+							"item": [
+								{
+									"name": "Models",
+									"item": [
+										{
+											"name": "Get Model",
+											"id": "b83f7aa7-ee20-e6e6-b5f4-d6057d7768de",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Update Model",
+											"id": "6fd907a1-8a0b-5efc-b3e8-52fe30c2a815",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Delete Model",
+											"id": "31fe9f11-a58f-6cf0-73af-d8341e2fe1e6",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "bdc4ff47-6017-2184-1810-0bc5884c8191"
+								},
+								{
+									"name": "Projects",
+									"item": [
+										{
+											"name": "List Projects",
+											"id": "00b067a3-5e32-d1e0-08ec-350f554ec10e",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "List Associated AutoML Models",
+											"id": "4afdfa17-6f90-0190-1cfd-78c64f2190a8",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Get Project",
+											"id": "072876af-eca2-5488-65ca-2db0c0beabe0",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "b4144a29-ced1-2621-8ab1-3e22129332c7"
+								}
+							],
+							"id": "58d55708-dcf6-2c2f-a8cf-dd89b9909814"
+						},
+						{
+							"name": "AI Service Layer",
+							"item": [
+								{
+									"name": "Text to SQL",
+									"item": [
+										{
+											"name": "List Models",
+											"id": "94117311-3e4b-0ec0-479a-1eb0914765e3",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Get Default Model",
+											"id": "8f0d1ef2-1576-22f2-e168-25a01a7181a9",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Run Model",
+											"id": "ee53d5c7-19ff-3b04-8667-aa6bbddfa4ae",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "cfea8167-c64b-d4f4-16b8-f7b33a1ca234"
+								},
+								{
+									"name": "Text Generation",
+									"item": [
+										{
+											"name": "List Models",
+											"id": "aceeeaef-ef73-b3e1-2f80-39fd537745ba",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Get Default Model",
+											"id": "f66d49c5-c961-c984-8fc2-6a203c5ea6b2",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Run Model",
+											"id": "4658685a-883b-3067-f91e-6c784251123f",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "d5630499-60e4-9538-b59b-bbe94d51a847"
+								},
+								{
+									"name": "Text to Beast Mode",
+									"item": [
+										{
+											"name": "List Models",
+											"id": "501b7858-6b21-0090-78f0-0b96be5b4920",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Get Default Model",
+											"id": "d5175fc5-bd3a-31c0-d71e-3b7af23192aa",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Run Model",
+											"id": "06fcb343-7940-cd8c-d7ff-544e0678c16f",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "fcf4bd9a-a5d6-67c7-a501-f0eba740b3a3"
+								},
+								{
+									"name": "Text Summarization",
+									"item": [
+										{
+											"name": "List Models",
+											"id": "ad1df13c-4602-31bc-7674-e8127a8676fa",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Get Default Model",
+											"id": "017359d2-9463-cb7c-ffc0-8c346df42145",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Run Model",
+											"id": "cfe35642-2372-45a0-1b9c-29e3da377742",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "c0c9556a-af68-610b-1407-b7f76398cb15"
+								},
+								{
+									"name": "Forecasting",
+									"item": [
+										{
+											"name": "List Models",
+											"id": "86276160-a0c1-ba3d-a912-765d10c8bf02",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "d04ca715-6875-471c-2466-3d01c0dd1628"
+								}
+							],
+							"id": "31d10223-d2d5-1386-6c95-f7ecd06e8619"
+						}
+					],
+					"id": "acbbfd0c-b38e-0b18-ddd7-e5b75018f15e"
+				},
+				{
 					"name": "Generate Developer Token",
 					"id": "9bcb4e1a-329e-4b2e-bbde-97ceb36bac04",
 					"protocolProfileBehavior": {
