@@ -12978,9 +12978,123 @@
 								"header": []
 							},
 							"response": []
+						},
+						{
+							"name": "Update Account Name",
+							"id": "e8e02418-122e-0a8a-84ac-562fc1ee0924",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Update Account Credentials",
+							"id": "212faf1a-2076-295f-6a41-0bbc22f77ce2",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Update Account Access",
+							"id": "c05afb80-32d4-c04e-a999-ee642317e692",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Account",
+							"id": "fc1cc568-9885-568b-acb1-b3d1254cfa85",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "7d564f91-5a05-27d8-9492-11aecb0f5374"
+				},
+				{
+					"name": "Achievements",
+					"item": [
+						{
+							"name": "List Achievements",
+							"id": "94d5ebef-c641-da7a-7faf-e29b40fe8b50",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Achievement",
+							"id": "3e14a479-d7e1-88a5-1be3-b6fb171eb188",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Achievement Admins",
+							"id": "e9a2cb36-7416-6435-1716-3a3ab957b560",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Create Achievement",
+							"id": "d0a8a5c7-e522-d910-a63c-23bfb846b965",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Create Achievement Admin",
+							"id": "99856f4a-2cbd-5371-9622-fea008e992b0",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Update Achievement",
+							"id": "58575696-3d4e-1a15-2652-a1ab7f1c3f0c",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Achievement",
+							"id": "9b42bde6-29ce-afd2-2a47-ede1b8d4c852",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Achievement Admin",
+							"id": "1f696b11-9026-3eef-ab15-97555c6c4c41",
+							"request": {
+								"method": null,
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "4c110e26-1748-82e0-1d78-e6fdf3152883"
 				},
 				{
 					"name": "Generate Developer Token",
