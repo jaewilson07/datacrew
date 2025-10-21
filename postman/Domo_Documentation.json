@@ -13260,7 +13260,112 @@
 						},
 						{
 							"name": "AI Service Layer",
-							"item": [],
+							"item": [
+								{
+									"name": "Text to SQL",
+									"item": [
+										{
+											"name": "List Models",
+											"id": "94117311-3e4b-0ec0-479a-1eb0914765e3",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Get Default Model",
+											"id": "8f0d1ef2-1576-22f2-e168-25a01a7181a9",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Run Model",
+											"id": "ee53d5c7-19ff-3b04-8667-aa6bbddfa4ae",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "cfea8167-c64b-d4f4-16b8-f7b33a1ca234"
+								},
+								{
+									"name": "Text Generation",
+									"item": [
+										{
+											"name": "List Models",
+											"id": "aceeeaef-ef73-b3e1-2f80-39fd537745ba",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Get Default Model",
+											"id": "f66d49c5-c961-c984-8fc2-6a203c5ea6b2",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Run Model",
+											"id": "4658685a-883b-3067-f91e-6c784251123f",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "d5630499-60e4-9538-b59b-bbe94d51a847"
+								},
+								{
+									"name": "Text to Beast Mode",
+									"item": [
+										{
+											"name": "List Models",
+											"id": "501b7858-6b21-0090-78f0-0b96be5b4920",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Get Default Model",
+											"id": "d5175fc5-bd3a-31c0-d71e-3b7af23192aa",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										},
+										{
+											"name": "Run Model",
+											"id": "06fcb343-7940-cd8c-d7ff-544e0678c16f",
+											"request": {
+												"method": null,
+												"header": []
+											},
+											"response": []
+										}
+									],
+									"id": "fcf4bd9a-a5d6-67c7-a501-f0eba740b3a3"
+								},
+								{
+									"name": "Text Summarization",
+									"item": [],
+									"id": "c0c9556a-af68-610b-1407-b7f76398cb15"
+								}
+							],
 							"id": "31d10223-d2d5-1386-6c95-f7ecd06e8619"
 						}
 					],
