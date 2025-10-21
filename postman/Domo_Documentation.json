@@ -12120,6 +12120,15 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "TEST - API Upload Test",
+			"id": "110a3b87-609a-af9d-daab-b9a9f5a2a583",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
