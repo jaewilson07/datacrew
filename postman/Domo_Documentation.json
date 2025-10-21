@@ -12740,33 +12740,6 @@
 								"header": []
 							},
 							"response": []
-						},
-						{
-							"name": "List Email Configurations",
-							"id": "ca7347c5-141c-01b5-d8b0-893b3b1ff75e",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "Get Login Settings",
-							"id": "aaab8ac2-8076-8337-5f2f-58db1d51f01f",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "Get Email Template",
-							"id": "4cd1b5dc-170f-ca79-fe9f-0cc828a5766a",
-							"request": {
-								"method": null,
-								"header": []
-							},
-							"response": []
 						}
 					],
 					"id": "cbb61cef-7fb2-f9c8-86be-f52b7b89ecb5"
