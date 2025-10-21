@@ -11558,6 +11558,11 @@
 					"id": "78af8ed1-f6cd-45ea-9bcb-8af9ec4e53f1"
 				},
 				{
+					"name": "Product_APIs_Merged",
+					"item": [],
+					"id": "0e319044-56e5-6bbb-b09e-9224c4b15519"
+				},
+				{
 					"name": "Generate Developer Token",
 					"id": "9bcb4e1a-329e-4b2e-bbde-97ceb36bac04",
 					"protocolProfileBehavior": {
@@ -12709,6 +12714,240 @@
 		{
 			"name": "Create File Share",
 			"id": "a89114af-1784-3e7d-eb31-79329140101a",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update File Share",
+			"id": "ffaad4f5-56c3-2a23-aae0-c0bb77bb544b",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update File Share Permissions",
+			"id": "1edf7542-fb86-b23a-8e77-ad279862ce9d",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete File Share",
+			"id": "cc4f4571-6a9a-950d-fa7b-663c001d3c08",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Jupyter Workspaces",
+			"id": "b5e684e0-57f9-9fc7-c5a2-1d3bd7f953db",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List User AI Models",
+			"id": "fe73759d-c57d-b892-1fdc-e979e702688d",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Jupyter Workspace",
+			"id": "12ef9438-5330-2999-6e1c-093026a676d0",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Alerts",
+			"id": "0ac53b6f-e131-6ca0-e411-1bb4deab010e",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Immediate Alerts",
+			"id": "4a2be241-9707-07c5-fe12-a136cc65999c",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Alert Triggered Preferences",
+			"id": "39840d6e-de63-e6a8-73b4-5c97b13a3350",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Search Alerts",
+			"id": "72754867-4ec4-4742-cf03-fa1e4724b417",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Alerts",
+			"id": "ba471512-6ff2-b790-6625-9adee3f47c01",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Alert",
+			"id": "30708582-0fab-4dec-e657-cbe04c4d63e9",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Alert Action",
+			"id": "f492802a-ba99-6e71-97a8-af1ce1d1df39",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Evaluations for Alert",
+			"id": "2aaccc9d-d9c3-cc60-6861-9aadc17a5156",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create Alert",
+			"id": "6728942b-3264-2ccb-c654-da44aced35cc",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Share Alert",
+			"id": "8045a758-bf20-af64-04d1-8689222163c4",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Alert",
+			"id": "dd8aba21-5241-9c0e-02d5-3acd555ef0ed",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Alert Rules",
+			"id": "0d1cb0b4-f301-5ff5-46da-7de4f01d76bb",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Alert Message",
+			"id": "4d5cb91d-c032-95f8-72c1-5be154c84fd6",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Alert",
+			"id": "bfaee2ec-028e-2bc8-d4a6-0b1e48655791",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Unshare Alert",
+			"id": "4983e633-d88c-2e0f-3c63-fdc02330de0e",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Datastores",
+			"id": "9a3bde8d-a713-7876-adb4-ac33801438f1",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Collections",
+			"id": "182c5bbe-1c82-202e-7570-6780a3292942",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Datastore",
+			"id": "16491e01-0996-410f-38ca-cb31f50be658",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Datastore Collections",
+			"id": "06787901-92bf-77ca-9f25-def809599421",
+			"request": {
+				"method": null,
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Collection",
+			"id": "221baae3-8c6d-505b-5503-445a95c95719",
 			"request": {
 				"method": null,
 				"header": []
